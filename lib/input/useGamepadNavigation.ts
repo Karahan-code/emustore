@@ -23,7 +23,9 @@ function isEditableTarget(target: EventTarget | null): boolean {
 }
 
 function getFocusableElements(): HTMLElement[] {
-  return Array.from(document.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter(
+  const modal = document.querySelector<HTMLElement>('[role="dialog"][aria-modal="true"]');
+  const scope: ParentNode = modal ?? document;
+  return Array.from(scope.querySelectorAll<HTMLElement>(FOCUSABLE_SELECTOR)).filter(
     (element) => element.getClientRects().length > 0 && element.getAttribute("aria-hidden") !== "true",
   );
 }
@@ -75,7 +77,9 @@ function moveFocus(direction: Direction): void {
 }
 
 function goBack(): void {
-  const closeControl = document.querySelector<HTMLElement>("[data-gamepad-close]");
+  const modal = document.querySelector<HTMLElement>('[role="dialog"][aria-modal="true"]');
+  const closeControl = modal?.querySelector<HTMLElement>("[data-gamepad-close]")
+    ?? document.querySelector<HTMLElement>("[data-gamepad-close]");
   if (closeControl) {
     closeControl.click();
     return;
@@ -102,6 +106,8 @@ function activateFocusedElement(): void {
 
 function activateSelectedFavorite(): void {
   const active = document.activeElement;
+  const modal = active instanceof Element ? active.closest<HTMLElement>('[role="dialog"][aria-modal="true"]') : null;
+  const scope: ParentNode = modal ?? document;
   if (active instanceof Element) {
     const ownFavorite = active.matches("[data-gamepad-favorite]")
       ? active
@@ -112,11 +118,13 @@ function activateSelectedFavorite(): void {
     }
   }
 
-  document.querySelector<HTMLElement>("[data-gamepad-favorite]")?.click();
+  scope.querySelector<HTMLElement>("[data-gamepad-favorite]")?.click();
 }
 
 function activateFilterToggle(): void {
-  document.querySelector<HTMLElement>("[data-gamepad-filters]")?.click();
+  const modal = document.querySelector<HTMLElement>('[role="dialog"][aria-modal="true"]');
+  const scope: ParentNode = modal ?? document;
+  scope.querySelector<HTMLElement>("[data-gamepad-filters]")?.click();
 }
 
 function dispatchCatalogStep(delta: -1 | 1): void {

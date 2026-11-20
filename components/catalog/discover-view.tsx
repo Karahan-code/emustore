@@ -49,7 +49,6 @@ export function DiscoverView({ items, locale, messages, searchQuery, selectedPla
             <div className="discover-hero__actions">
               <Link className="button button--white" href={detailsHref}>{messages.catalog.viewGame}<span aria-hidden="true"> ›</span></Link>
               <CollectionToggle item={featured} kind="favorite" locale={locale} messages={messages} />
-              <CollectionToggle item={featured} kind="queue" locale={locale} messages={messages} />
             </div>
           </div>
           <div className="discover-hero__art">
@@ -78,12 +77,12 @@ export function DiscoverView({ items, locale, messages, searchQuery, selectedPla
               onFocus={() => setSelectedIndex(index)}
               onClick={() => setSelectedIndex(index)}
             >
-              <ArtworkImage src={item.coverPath} alt="" title={item.title[locale]} className="discover-feature-row__art" sizes="74px" />
+              <ArtworkImage src={item.coverPath} alt="" title={item.title[locale]} className="discover-feature-row__art" sizes="74px" monogramOnly />
               <span className="discover-feature-row__copy">
                 <strong>{item.title[locale]}</strong>
                 <small>{PLATFORM_CATALOGS[item.catalogId].shortLabel} · {item.category[locale]}</small>
               </span>
-              <span className="discover-feature-row__score">{item.ratingScore ?? "—"}</span>
+              {item.ratingScore !== undefined ? <span className="discover-feature-row__score">{item.ratingScore}</span> : null}
             </button>
           ))}
         </aside>

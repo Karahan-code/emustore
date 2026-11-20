@@ -45,7 +45,7 @@ export function SearchDialog({ locale, messages }: SearchDialogProps) {
     event.preventDefault();
     const params = new URLSearchParams(searchParams.toString());
     params.set("view", "browse");
-    if (isPlatformCatalogId(params.get("platform"))) {
+    if (isPlatformCatalogId(params.get("platform")) || params.get("platform") === "all") {
       // Keep the selected platform.
     } else {
       params.set("platform", "ps1");

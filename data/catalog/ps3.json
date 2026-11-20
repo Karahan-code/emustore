@@ -7,11 +7,11 @@
     "category": { "en": "Simulation", "tr": "Simülasyon" },
     "title": { "en": "Basic Water", "tr": "Basic Water" },
     "description": {
-      "en": "An original PlayStation 3 flight-simulation homebrew project. This record describes the project package and does not provide a download.",
-      "tr": "PlayStation 3 için özgün bir uçuş simülasyonu homebrew projesi. Bu kayıt proje paketini tanımlar ve indirme sunmaz."
+      "en": "An original homebrew flight-simulation project for PlayStation 3.",
+      "tr": "PlayStation 3 için özgün bir uçuş simülasyonu homebrew projesi."
     },
     "developer": "Utku Halis",
-    "version": "development sample",
+    "version": "development build",
     "sizeBytes": 12582912,
     "sizeBytesEstimated": true,
     "fileFormat": "PlayStation 3 PKG package",
@@ -29,6 +29,18 @@
     ],
     "tags": ["homebrew", "flight-simulation", "open-source"],
     "sourceUrl": "https://github.com/utkuhalis/ps3-homebrew",
+    "sources": [
+      {
+        "id": "github-release-page",
+        "provider": "github-release",
+        "deliveryMode": "browser_verify",
+        "url": "https://github.com/utkuhalis/ps3-homebrew/releases",
+        "format": ".pkg",
+        "sizeBytes": 12582912,
+        "requiresVerification": true,
+        "priority": 1
+      }
+    ],
     "updatedAt": "2026-11-20T00:00:00.000Z",
     "sampleData": true
   }

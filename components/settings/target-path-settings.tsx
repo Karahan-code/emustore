@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, type FormEvent } from "react";
-import { PLATFORM_CATALOGS, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
+import { PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
 import type { Messages } from "@/lib/i18n/dictionaries";
 import {
   DEFAULT_SUGGESTED_PATHS,
@@ -114,7 +114,6 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
                   <div>
                     <span className="target-path-card__platform">{platformLabel}</span>
                   </div>
-                  <span className="target-path-card__key">{PLATFORM_CATALOGS[platform].defaultSuggestedTargetPathKey}</span>
                 </div>
                 <label className="target-path-field" htmlFor={inputId}>
                   <span>{messages.settings.pathLabel}</span>

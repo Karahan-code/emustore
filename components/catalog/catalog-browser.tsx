@@ -5,6 +5,7 @@ import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { CatalogFilterBar } from "@/components/catalog/catalog-filter-bar";
 import { DiscoverView } from "@/components/catalog/discover-view";
 import { GameCard } from "@/components/catalog/game-card";
+import { PlatformPills } from "@/components/catalog/platform-pills";
 import { isPlatformCatalogId, isPlatformExtension, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
 import {
   isCatalogItemType,
@@ -25,6 +26,33 @@ type ItemsResponse = {
   };
 };
 
+function mergeFacets(facets: CatalogFacets[]): CatalogFacets {
+  const categories = new Map<string, CatalogFacets["categories"][number]>();
+  const formats = new Map<string, CatalogFacets["formats"][number]>();
+  const types = new Set<CatalogItemType>();
+
+  for (const facet of facets) {
+    for (const category of facet.categories) categories.set(category.id, category);
+    for (const format of facet.formats) formats.set(format.extension, format);
+    for (const type of facet.types) types.add(type);
+  }
+
+  return {
+    categories: [...categories.values()].sort((left, right) => left.id.localeCompare(right.id)),
+    formats: [...formats.values()].sort((left, right) => left.extension.localeCompare(right.extension)),
+    types: [...types],
+  };
+}
+
+function sortItems(items: CatalogItem[], sort: CatalogSort, locale: Locale): CatalogItem[] {
+  return [...items].sort((left, right) => {
+    if (sort === "size") return left.sizeBytes - right.sizeBytes;
+    if (sort === "updated") return right.updatedAt.localeCompare(left.updatedAt);
+    if (sort === "rating") return (right.ratingScore ?? -1) - (left.ratingScore ?? -1);
+    return left.title[locale].localeCompare(right.title[locale], locale);
+  });
+}
+
 type CatalogBrowserProps = { locale: Locale };
 
 function normalizeExtension(value: string): string {
@@ -44,13 +72,22 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
   const searchString = searchParams.toString();
 
   const requestedPlatform = searchParams.get("platform");
-  const platform = isPlatformCatalogId(requestedPlatform) ? requestedPlatform : "ps1";
+  const platformSelection = requestedPlatform === "all"
+    ? "all"
+    : isPlatformCatalogId(requestedPlatform)
+      ? requestedPlatform
+      : "ps1";
+  const isAllPlatforms = platformSelection === "all";
+  const platform = isAllPlatforms ? "ps1" : platformSelection;
   const query = searchParams.get("q") ?? "";
   const typeValue = searchParams.get("type");
   const type = isCatalogItemType(typeValue) ? typeValue : "";
   const category = searchParams.get("category") ?? "";
   const formatValue = searchParams.get("format");
-  const format = formatValue && isPlatformExtension(platform, normalizeExtension(formatValue))
+  const isFormatSupported = formatValue && (isAllPlatforms
+    ? PLATFORM_CATALOG_IDS.some((catalogId) => isPlatformExtension(catalogId, normalizeExtension(formatValue)))
+    : isPlatformExtension(platform, normalizeExtension(formatValue)));
+  const format = formatValue && isFormatSupported
     ? normalizeExtension(formatValue)
     : "";
   const sortParam = searchParams.get("sort");
@@ -63,23 +100,26 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
   const [loadFailed, setLoadFailed] = useState(false);
   const [retryToken, setRetryToken] = useState(0);
 
-  const apiQuery = useMemo(() => {
-    const params = new URLSearchParams({
-      platform,
-      locale,
-      limit: "100",
-      offset: "0",
-      sort,
+  const apiRequests = useMemo(() => {
+    const platforms = isAllPlatforms ? PLATFORM_CATALOG_IDS : [platform];
+    return platforms.map((catalogId) => {
+      const params = new URLSearchParams({
+        platform: catalogId,
+        locale,
+        limit: "100",
+        offset: "0",
+        sort,
+      });
+      if (query.trim()) params.set("q", query.trim());
+      if (type) params.set("type", type);
+      if (category) params.set("category", category);
+      if (format && isPlatformExtension(catalogId, format)) params.set("format", format);
+      return { catalogId, query: params.toString() };
     });
-    if (query.trim()) params.set("q", query.trim());
-    if (type) params.set("type", type);
-    if (category) params.set("category", category);
-    if (format) params.set("format", format);
-    return params.toString();
-  }, [platform, locale, query, type, category, format, sort]);
+  }, [isAllPlatforms, platform, locale, query, type, category, format, sort]);
 
   const updateSearchParam = useCallback(
-    (key: "type" | "category" | "format" | "sort", value: string) => {
+    (key: "q" | "type" | "category" | "format" | "sort", value: string) => {
       const params = new URLSearchParams(searchString);
       if (value) params.set(key, value);
       else params.delete(key);
@@ -95,15 +135,15 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
     const params = new URLSearchParams(searchString);
     let changed = false;
 
-    if (requestedPlatform !== platform) {
-      params.set("platform", platform);
+    if (requestedPlatform !== platformSelection) {
+      params.set("platform", platformSelection);
       changed = true;
     }
     if (typeValue && !isCatalogItemType(typeValue)) {
       params.delete("type");
       changed = true;
     }
-    if (formatValue && !isPlatformExtension(platform, normalizeExtension(formatValue))) {
+    if (formatValue && !isFormatSupported) {
       params.delete("format");
       changed = true;
     } else if (formatValue && formatValue !== normalizeExtension(formatValue)) {
@@ -129,19 +169,36 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
       const nextQuery = params.toString();
       router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
     }
-  }, [formatValue, pathname, platform, query, requestedPlatform, router, searchString, typeValue]);
+  }, [formatValue, isFormatSupported, pathname, platformSelection, query, requestedPlatform, router, searchString, typeValue]);
 
   useEffect(() => {
     const controller = new AbortController();
     setIsLoading(true);
     setLoadFailed(false);
 
-    fetch(`/api/v1/items?${apiQuery}`, { cache: "no-store", signal: controller.signal })
-      .then(async (result) => {
-        if (!result.ok) throw new Error("Catalog request failed");
-        return (await result.json()) as ItemsResponse;
-      })
-      .then((nextResponse) => {
+    Promise.all(apiRequests.map(async ({ catalogId, query: requestQuery }) => {
+      const result = await fetch(`/api/v1/items?${requestQuery}`, { cache: "no-store", signal: controller.signal });
+      if (!result.ok) throw new Error(`Catalog request failed for ${catalogId}`);
+      return (await result.json()) as ItemsResponse;
+    }))
+      .then((responses) => {
+        const items = responses.flatMap((nextResponse, index) => {
+          const requestedCatalog = apiRequests[index].catalogId;
+          if (format && !isPlatformExtension(requestedCatalog, format)) return [];
+          return nextResponse.data;
+        });
+        const total = responses.reduce((count, nextResponse, index) => {
+          const requestedCatalog = apiRequests[index].catalogId;
+          return count + (format && !isPlatformExtension(requestedCatalog, format) ? 0 : nextResponse.meta.total);
+        }, 0);
+        const nextResponse: ItemsResponse = {
+          data: sortItems(items, sort, locale).slice(0, 100),
+          meta: {
+            platform: platformSelection,
+            total,
+            facets: mergeFacets(responses.map((entry) => entry.meta.facets)),
+          },
+        };
         setResponse(nextResponse);
         setLoadFailed(false);
       })
@@ -154,7 +211,7 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
       });
 
     return () => controller.abort();
-  }, [apiQuery, retryToken]);
+  }, [apiRequests, format, locale, platformSelection, retryToken, sort]);
 
   useEffect(() => {
     if (view !== "discover") {
@@ -206,7 +263,7 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
 
   const catalogItems = response?.data ?? [];
   const discoveryItems = discoverFeed?.length ? discoverFeed : catalogItems;
-  const activePlatformLabel = messages.navigation[platform];
+  const activePlatformLabel = isAllPlatforms ? messages.filters.all : messages.navigation[platform];
 
   return (
     <main className={`catalog-page catalog-page--${view}`} aria-busy={isLoading}>
@@ -229,11 +286,17 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
         <section className="browse-page" aria-labelledby="browse-library-title">
           <div className="browse-page__heading">
             <div>
-              <p className="eyebrow">{messages.navigation[platform]}</p>
+              <p className="eyebrow">{activePlatformLabel}</p>
               <h1 id="browse-library-title">{messages.catalog.browseLibrary}</h1>
             </div>
             <span className="browse-page__count">{interpolateResultCount(messages.catalog.resultCount, response?.meta.total ?? 0)}</span>
           </div>
+          <PlatformPills
+            locale={locale}
+            messages={messages}
+            selectedPlatform={platformSelection}
+            searchQuery={searchString}
+          />
           <CatalogFilterBar
             facets={response?.meta.facets ?? null}
             locale={locale}
@@ -241,6 +304,7 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
             type={type}
             category={category}
             format={format}
+            query={query}
             sort={sort}
             onChange={(key, value) => updateSearchParam(key, value)}
             onClear={clearFilters}

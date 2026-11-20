@@ -5,6 +5,7 @@ import { LocaleSwitcher } from "@/components/shell/locale-switcher";
 import { QuickFilterTabs } from "@/components/shell/quick-filter-tabs";
 import { SearchDialog } from "@/components/shell/search-dialog";
 import { SectionLinks } from "@/components/shell/section-links";
+import { ActiveRouteIconLink } from "@/components/shell/active-route-icon-link";
 import type { Locale } from "@/lib/catalog/types";
 import type { Messages } from "@/lib/i18n/dictionaries";
 import { APP_VERSION } from "@/lib/app-info";
@@ -35,24 +36,18 @@ export function ConsoleHeader({ locale, messages }: ConsoleHeaderProps) {
           <QuickFilterTabs locale={locale} messages={messages} />
         </Suspense>
 
-        <nav className="topbar-actions" aria-label={messages.navigation.brand}>
-          <Link className="topbar-icon-link" href={`/${locale}/favorites`} aria-label={messages.navigation.favorites} title={messages.navigation.favorites}>
-            <span aria-hidden="true">♡</span><small>{messages.navigation.favorites}</small>
-          </Link>
-          <Link className="topbar-icon-link" href={`/${locale}/downloads`} aria-label={messages.navigation.downloads} title={messages.navigation.downloads}>
-            <span aria-hidden="true">↓</span><small>{messages.navigation.downloads}</small>
-          </Link>
-          <Link className="topbar-icon-link" href={`/${locale}/settings`} aria-label={messages.navigation.settings} title={messages.navigation.settings}>
-            <span aria-hidden="true">⚙</span><small>{messages.navigation.settings}</small>
-          </Link>
-          <Link className="topbar-icon-link" href={`/${locale}/report`} aria-label={messages.navigation.report} title={messages.navigation.report}>
-            <span aria-hidden="true">!</span><small>{messages.navigation.report}</small>
-          </Link>
-          <Suspense fallback={<span className="locale-switcher locale-switcher--loading">EN/TR</span>}>
-            <LocaleSwitcher locale={locale} messages={messages} />
-          </Suspense>
-          <span className="section-hint section-hint--right" aria-hidden="true">R1</span>
-        </nav>
+        <Suspense fallback={<nav className="topbar-actions" aria-label={messages.navigation.brand} />}>
+          <nav className="topbar-actions" aria-label={messages.navigation.brand}>
+            <ActiveRouteIconLink locale={locale} route="favorites" label={messages.navigation.favorites} icon="♡" />
+            <ActiveRouteIconLink locale={locale} route="downloads" label={messages.navigation.downloads} icon="↓" />
+            <ActiveRouteIconLink locale={locale} route="settings" label={messages.navigation.settings} icon="⚙" />
+            <ActiveRouteIconLink locale={locale} route="report" label={messages.navigation.report} icon="!" />
+            <Suspense fallback={<span className="locale-switcher locale-switcher--loading">EN/TR</span>}>
+              <LocaleSwitcher locale={locale} messages={messages} />
+            </Suspense>
+            <span className="section-hint section-hint--right" aria-hidden="true">R1</span>
+          </nav>
+        </Suspense>
       </div>
     </header>
   );

@@ -1,16 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
 import { CollectionToggle } from "@/components/catalog/collection-toggle";
 import { GameCard } from "@/components/catalog/game-card";
 import { useCollections } from "@/components/shell/collections-provider";
 import { PLATFORM_CATALOGS, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
 import type { CatalogItem, Locale } from "@/lib/catalog/types";
+import type { QueueEntry } from "@/lib/catalog/collections";
 import { formatFileSize } from "@/lib/catalog/format";
 import type { Messages } from "@/lib/i18n/dictionaries";
 import { DEFAULT_SUGGESTED_PATHS, mergeTargetPathPreferences, TARGET_PATH_STORAGE_KEY, type TargetPathPreferences } from "@/lib/install/target-paths";
+import { createLinkCaptureAdapter } from "@/lib/install/link-capture";
 
 type SavedItemsViewProps = {
   kind: "favorites" | "queue";
@@ -22,6 +24,7 @@ type DetailResponse = { data: CatalogItem };
 
 export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) {
   const collections = useCollections();
+  const linkCaptureAdapter = useMemo(() => createLinkCaptureAdapter(), []);
   const references = kind === "favorites" ? collections.favorites : collections.queue;
   const referenceKey = references.map((reference) => `${reference.catalogId}:${reference.slug}`).join("|");
   const [items, setItems] = useState<CatalogItem[]>([]);
@@ -71,7 +74,14 @@ export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) 
   }, [collections.ready, locale, referenceKey]);
 
   const title = kind === "favorites" ? messages.favorites.title : messages.downloads.title;
-  const totalBytes = items.reduce((total, item) => total + item.sizeBytes, 0);
+  const totalBytes = kind === "queue"
+    ? items.reduce((total, item) => {
+        const entry = collections.queue.find((queueEntry) => queueEntry.catalogId === item.catalogId && queueEntry.slug === item.slug);
+        const source = item.sources.find((candidate) => candidate.id === entry?.sourceId)
+          ?? [...item.sources].sort((left, right) => left.priority - right.priority)[0];
+        return total + (entry?.sizeBytes ?? source?.sizeBytes ?? item.sizeBytes);
+      }, 0)
+    : items.reduce((total, item) => total + item.sizeBytes, 0);
 
   if (kind === "favorites") {
     return (
@@ -100,6 +110,10 @@ export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) 
         <p className="eyebrow">{messages.navigation.downloads}</p>
         <h1>{title}</h1>
         <p>{messages.downloads.queueNote}</p>
+        <span className={`connection-pill${linkCaptureAdapter.mode === "local" ? " connection-pill--local" : ""}`}>
+          <span className="connection-pill__dot" aria-hidden="true" />
+          <span>{linkCaptureAdapter.mode === "local" ? messages.downloads.localBridgeMode : messages.downloads.webPreviewMode}</span>
+        </span>
       </div>
       <div className="downloads-layout">
         <section className="downloads-queue" aria-labelledby="downloads-queue-title">
@@ -111,14 +125,33 @@ export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) 
           {failed ? <div className="status-panel status-panel--error" role="alert">{messages.errors.catalogUnavailable}</div> : null}
           {!loading && !failed && items.length === 0 ? <div className="status-panel status-panel--empty" role="status">{messages.downloads.empty}</div> : null}
           <div className="queue-list">
-            {items.map((item) => (
+            {items.map((item) => {
+              const queueEntry: QueueEntry | undefined = collections.queue.find((entry) => entry.catalogId === item.catalogId && entry.slug === item.slug);
+              const selectedSource = item.sources.find((source) => source.id === queueEntry?.sourceId)
+                ?? [...item.sources].sort((left, right) => left.priority - right.priority)[0];
+              const provider = queueEntry?.provider ?? selectedSource?.provider ?? messages.downloads.webPreviewMode;
+              const format = queueEntry?.format ?? selectedSource?.format ?? item.fileExtension;
+              const sizeBytes = queueEntry?.sizeBytes ?? selectedSource?.sizeBytes ?? item.sizeBytes;
+              const targetPath = queueEntry?.targetPath ?? paths[item.catalogId];
+              const sha256 = queueEntry?.sha256 ?? selectedSource?.sha256;
+
+              return (
               <article className="queue-row" key={`${item.catalogId}:${item.slug}`} data-gamepad-item>
                 <ArtworkImage src={item.coverPath} alt={item.title[locale]} title={item.title[locale]} className="queue-row__art" sizes="96px" />
                 <div className="queue-row__copy">
-                  <span className="queue-row__platform">{PLATFORM_CATALOGS[item.catalogId].shortLabel}</span>
+                  <span className="queue-row__platform">{PLATFORM_CATALOGS[item.catalogId].shortLabel} · {provider}</span>
                   <h3>{item.title[locale]}</h3>
-                  <span className="queue-row__path" title={paths[item.catalogId]}>{messages.downloads.targetPath}: {paths[item.catalogId]}</span>
-                  <span className="queue-row__size">{formatFileSize(item.sizeBytes, locale)}</span>
+                  <span className="queue-row__path" title={targetPath}>{messages.downloads.targetPath}: {targetPath}</span>
+                  <div className="queue-row__metadata">
+                    <span>{format.toUpperCase()}</span>
+                    <span>{formatFileSize(sizeBytes, locale)}</span>
+                    {sha256 ? <code title={sha256}>{messages.downloads.sha256}: {sha256.slice(0, 12)}…</code> : null}
+                  </div>
+                  {queueEntry?.resolvedUrl ? (
+                    <a className="queue-row__captured-link" href={queueEntry.resolvedUrl} target="_blank" rel="noreferrer">
+                      {messages.downloads.resolvedUrl}<span aria-hidden="true"> ↗</span>
+                    </a>
+                  ) : null}
                 </div>
                 <div className="queue-row__actions">
                   <Link className="queue-row__game-link" href={`/${locale}/games/${item.slug}?platform=${item.catalogId}`}>
@@ -127,7 +160,8 @@ export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) 
                   <CollectionToggle item={item} kind="queue" locale={locale} messages={messages} compact />
                 </div>
               </article>
-            ))}
+              );
+            })}
           </div>
         </section>
 

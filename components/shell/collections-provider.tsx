@@ -6,17 +6,19 @@ import {
   FAVORITES_STORAGE_KEY,
   hasCatalogReference,
   parseCatalogReferences,
+  parseCatalogQueueEntries,
   type CatalogReference,
+  type QueueEntry,
 } from "@/lib/catalog/collections";
 
 type CollectionsContextValue = {
   ready: boolean;
   favorites: CatalogReference[];
-  queue: CatalogReference[];
+  queue: QueueEntry[];
   isFavorite: (reference: CatalogReference) => boolean;
   isQueued: (reference: CatalogReference) => boolean;
   toggleFavorite: (reference: CatalogReference) => void;
-  toggleQueue: (reference: CatalogReference) => void;
+  addToQueue: (entry: QueueEntry) => void;
   removeFavorite: (reference: CatalogReference) => void;
   removeQueue: (reference: CatalogReference) => void;
 };
@@ -34,13 +36,13 @@ function toggleReference(
 
 export function CollectionsProvider({ children }: { children: ReactNode }) {
   const [favorites, setFavorites] = useState<CatalogReference[]>([]);
-  const [queue, setQueue] = useState<CatalogReference[]>([]);
+  const [queue, setQueue] = useState<QueueEntry[]>([]);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
     try {
       setFavorites(parseCatalogReferences(window.localStorage.getItem(FAVORITES_STORAGE_KEY)));
-      setQueue(parseCatalogReferences(window.localStorage.getItem(DOWNLOAD_QUEUE_STORAGE_KEY)));
+      setQueue(parseCatalogQueueEntries(window.localStorage.getItem(DOWNLOAD_QUEUE_STORAGE_KEY)));
     } catch {
       setFavorites([]);
       setQueue([]);
@@ -57,9 +59,12 @@ export function CollectionsProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  const toggleQueue = useCallback((reference: CatalogReference) => {
+  const addToQueue = useCallback((entry: QueueEntry) => {
     setQueue((current) => {
-      const next = toggleReference(current, reference);
+      const next = [
+        ...current.filter((currentEntry) => !(currentEntry.catalogId === entry.catalogId && currentEntry.slug === entry.slug)),
+        entry,
+      ];
       try { window.localStorage.setItem(DOWNLOAD_QUEUE_STORAGE_KEY, JSON.stringify(next)); } catch { /* keep this browser session usable */ }
       return next;
     });
@@ -88,10 +93,10 @@ export function CollectionsProvider({ children }: { children: ReactNode }) {
     isFavorite: (reference) => hasCatalogReference(favorites, reference),
     isQueued: (reference) => hasCatalogReference(queue, reference),
     toggleFavorite,
-    toggleQueue,
+    addToQueue,
     removeFavorite,
     removeQueue,
-  }), [favorites, queue, ready, removeFavorite, removeQueue, toggleFavorite, toggleQueue]);
+  }), [favorites, queue, ready, removeFavorite, removeQueue, toggleFavorite, addToQueue]);
 
   return <CollectionsContext.Provider value={value}>{children}</CollectionsContext.Provider>;
 }

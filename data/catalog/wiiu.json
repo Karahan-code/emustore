@@ -7,11 +7,11 @@
     "category": { "en": "Strategy / puzzle", "tr": "Strateji / bulmaca" },
     "title": { "en": "Planet Blupi (Wii U Port)", "tr": "Planet Blupi (Wii U Portu)" },
     "description": {
-      "en": "A Wii U homebrew port of the open-source strategy and puzzle game, with GamePad touchscreen support. Sample metadata only; no game files are distributed.",
-      "tr": "GamePad dokunmatik ekran desteği sunan, açık kaynaklı strateji ve bulmaca oyununun Wii U homebrew portu. Yalnızca örnek metaveridir; oyun dosyaları dağıtılmaz."
+      "en": "A Wii U homebrew port of the open-source strategy and puzzle game, with GamePad touchscreen support.",
+      "tr": "Açık kaynaklı strateji ve bulmaca oyununun GamePad dokunmatik destekli Wii U homebrew portu."
     },
     "developer": "vs-sr-dev and Planet Blupi contributors",
-    "version": "development sample",
+    "version": "development build",
     "sizeBytes": 41943040,
     "sizeBytesEstimated": true,
     "fileFormat": "Wii U RPX executable",
@@ -29,6 +29,18 @@
     ],
     "tags": ["homebrew", "open-source", "strategy", "puzzle"],
     "sourceUrl": "https://github.com/vs-sr-dev/wiiu-planetblupi",
+    "sources": [
+      {
+        "id": "github-release-page",
+        "provider": "github-release",
+        "deliveryMode": "browser_verify",
+        "url": "https://github.com/vs-sr-dev/wiiu-planetblupi/releases",
+        "format": ".rpx",
+        "sizeBytes": 41943040,
+        "requiresVerification": true,
+        "priority": 1
+      }
+    ],
     "updatedAt": "2026-11-20T00:00:00.000Z",
     "sampleData": true
   }

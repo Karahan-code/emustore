@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { CatalogFacets, CatalogItemType, CatalogSort, Locale } from "@/lib/catalog/types";
 import type { Messages } from "@/lib/i18n/dictionaries";
 
-type FilterKey = "type" | "category" | "format" | "sort";
+type FilterKey = "q" | "type" | "category" | "format" | "sort";
 
 type CatalogFilterBarProps = {
   facets: CatalogFacets | null;
@@ -13,6 +13,7 @@ type CatalogFilterBarProps = {
   type: CatalogItemType | "";
   category: string;
   format: string;
+  query: string;
   sort: CatalogSort;
   onChange: (key: FilterKey, value: string) => void;
   onClear: () => void;
@@ -27,6 +28,7 @@ export function CatalogFilterBar({
   type,
   category,
   format,
+  query,
   sort,
   onChange,
   onClear,
@@ -37,6 +39,19 @@ export function CatalogFilterBar({
   return (
     <div className="browse-filters">
       <div className="browse-filters__toolbar">
+        <label className="browse-search">
+          <span aria-hidden="true">⌕</span>
+          <input
+            type="search"
+            inputMode="search"
+            autoComplete="off"
+            maxLength={120}
+            value={query}
+            onChange={(event) => onChange("q", event.target.value)}
+            placeholder={messages.catalog.searchPlaceholder}
+            aria-label={messages.catalog.search}
+          />
+        </label>
         <button className={`filter-pill${open ? " filter-pill--active" : ""}`} type="button" onClick={() => setOpen((value) => !value)} aria-expanded={open} aria-controls="browse-filter-panel" data-gamepad-filters>
           <span aria-hidden="true">△</span>{messages.filters.title}
         </button>
@@ -51,7 +66,7 @@ export function CatalogFilterBar({
           </select>
           <span aria-hidden="true">⌄</span>
         </label>
-        {type || category || format ? (
+        {query || type || category || format ? (
           <button className="filter-clear" type="button" onClick={onClear}>{messages.filters.clear}</button>
         ) : null}
       </div>

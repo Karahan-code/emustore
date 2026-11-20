@@ -7,11 +7,11 @@
     "category": { "en": "Shoot 'em up", "tr": "Dikey kaydırmalı nişancı" },
     "title": { "en": "Wonderful Waking World (Switch Port)", "tr": "Wonderful Waking World (Switch Portu)" },
     "description": {
-      "en": "A homebrew Nintendo Switch port of the free Windows game. The original game data is obtained separately; this catalog does not distribute it.",
-      "tr": "Ücretsiz Windows oyununun Nintendo Switch homebrew portu. Orijinal oyun verileri ayrıca edinilir; bu katalog bunları dağıtmaz."
+      "en": "A Nintendo Switch homebrew port of the free Windows shoot 'em up.",
+      "tr": "Ücretsiz Windows nişancı oyununun Nintendo Switch homebrew portu."
     },
     "developer": "saekaze and contributors",
-    "version": "1.0.1 sample metadata",
+    "version": "1.0.1",
     "sizeBytes": 46137344,
     "sizeBytesEstimated": true,
     "fileFormat": "Nintendo Switch NRO homebrew executable",
@@ -29,6 +29,18 @@
     ],
     "tags": ["homebrew", "switch-port", "shoot-em-up"],
     "sourceUrl": "https://github.com/saekaze/thWWW-switch",
+    "sources": [
+      {
+        "id": "github-release-page",
+        "provider": "github-release",
+        "deliveryMode": "browser_verify",
+        "url": "https://github.com/saekaze/thWWW-switch/releases",
+        "format": ".nro",
+        "sizeBytes": 46137344,
+        "requiresVerification": true,
+        "priority": 1
+      }
+    ],
     "updatedAt": "2026-11-20T00:00:00.000Z",
     "sampleData": true
   }

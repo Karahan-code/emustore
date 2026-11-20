@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { CollectionToggle } from "@/components/catalog/collection-toggle";
+import { DownloadSourcePanel } from "@/components/catalog/download-source-panel";
 import { ScreenshotGallery } from "@/components/catalog/screenshot-gallery";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
 import { isPlatformCatalogId, PLATFORM_CATALOGS } from "@/lib/catalog/platforms";
@@ -76,7 +77,6 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
           <p className="detail-hero__description">{item.description[locale]}</p>
           <div className="detail-hero__actions">
             <CollectionToggle item={item} kind="favorite" locale={locale} messages={messages} />
-            <CollectionToggle item={item} kind="queue" locale={locale} messages={messages} />
           </div>
           <div className="detail-facts" aria-label={messages.details.title}>
             <div><span>{messages.details.category}</span><strong>{item.category[locale]}</strong></div>
@@ -100,6 +100,8 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
           </div>
         </div>
       </section>
+
+      <DownloadSourcePanel item={item} locale={locale} messages={messages} />
 
       <section className="detail-gallery-section" aria-labelledby="screenshots-heading">
         <div className="section-heading">

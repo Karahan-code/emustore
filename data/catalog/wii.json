@@ -7,11 +7,11 @@
     "category": { "en": "Platformer", "tr": "Platform" },
     "title": { "en": "SuperTux (Wii Port)", "tr": "SuperTux (Wii Portu)" },
     "description": {
-      "en": "A Wii homebrew port of the open-source side-scrolling platform game. Sample metadata only; no game package is hosted by this API.",
-      "tr": "Açık kaynaklı yandan kaydırmalı platform oyununun Wii homebrew portu. Yalnızca örnek metaveridir; bu API oyun paketi barındırmaz."
+      "en": "A Wii homebrew port of the open-source side-scrolling platform game.",
+      "tr": "Açık kaynaklı yandan kaydırmalı platform oyununun Wii homebrew portu."
     },
     "developer": "DeltaResero and SuperTux contributors",
-    "version": "development sample",
+    "version": "development build",
     "sizeBytes": 10485760,
     "sizeBytesEstimated": true,
     "fileFormat": "Wii DOL homebrew executable",
@@ -29,6 +29,18 @@
     ],
     "tags": ["homebrew", "open-source", "platformer"],
     "sourceUrl": "https://github.com/DeltaResero/SuperTux-Wii",
+    "sources": [
+      {
+        "id": "github-release-page",
+        "provider": "github-release",
+        "deliveryMode": "browser_verify",
+        "url": "https://github.com/DeltaResero/SuperTux-Wii/releases",
+        "format": ".dol",
+        "sizeBytes": 10485760,
+        "requiresVerification": true,
+        "priority": 1
+      }
+    ],
     "updatedAt": "2026-11-20T00:00:00.000Z",
     "sampleData": true
   }

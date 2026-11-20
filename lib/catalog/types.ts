@@ -17,6 +17,27 @@ export type CatalogScreenshot = {
   alt: LocalizedText;
 };
 
+export const DOWNLOAD_DELIVERY_MODES = [
+  "direct",
+  "browser_verify",
+  "github_api",
+  "debrid",
+] as const;
+export type DownloadDeliveryMode = (typeof DOWNLOAD_DELIVERY_MODES)[number];
+
+export type DownloadSource = {
+  id: string;
+  provider: string;
+  deliveryMode: DownloadDeliveryMode;
+  url: string;
+  format: string;
+  sizeBytes: number;
+  sha256?: string;
+  requiresVerification: boolean;
+  priority: number;
+  verifiedAt?: string;
+};
+
 export type CatalogItem = {
   slug: string;
   catalogId: PlatformCatalogId;
@@ -36,6 +57,7 @@ export type CatalogItem = {
   screenshots: CatalogScreenshot[];
   tags: string[];
   sourceUrl: string;
+  sources: DownloadSource[];
   updatedAt: string;
   sampleData: boolean;
 };

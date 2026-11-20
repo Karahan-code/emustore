@@ -81,10 +81,7 @@ export function ErrorReportForm({
 
   return (
     <section className="report-form-panel" aria-labelledby="report-form-heading">
-      <div className="report-form-panel__meta">
-        <h2 className="sr-only" id="report-form-heading">{messages.reports.title}</h2>
-        <span className="report-version">v{APP_VERSION}</span>
-      </div>
+      <h2 className="sr-only" id="report-form-heading">{messages.reports.title}</h2>
 
       <form className="report-form" onSubmit={submit} aria-busy={isSending}>
         <label className="report-field" htmlFor="report-category">

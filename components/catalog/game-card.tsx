@@ -38,9 +38,11 @@ export function GameCard({ item, locale, messages, searchQuery }: GameCardProps)
           <h3>{item.title[locale]}</h3>
           <div className="game-card__footer">
             <span>{item.fileExtension.toUpperCase()}</span>
-            <span className="game-card__score" aria-label={item.ratingScore === undefined ? messages.catalog.unrated : `${messages.catalog.score} ${item.ratingScore}`}>
-              {item.ratingScore === undefined ? "—" : item.ratingScore}
-            </span>
+            {item.ratingScore !== undefined ? (
+              <span className="game-card__score" aria-label={`${messages.catalog.score} ${item.ratingScore}`}>
+                {item.ratingScore}
+              </span>
+            ) : null}
           </div>
         </div>
       </Link>

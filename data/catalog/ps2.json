@@ -7,11 +7,11 @@
     "category": { "en": "First-person shooter", "tr": "Birinci şahıs nişancı" },
     "title": { "en": "Quake II (PS2 Port)", "tr": "Quake II (PS2 Portu)" },
     "description": {
-      "en": "An open-source PlayStation 2 port. The original game's data is not included and must be provided separately by the user.",
-      "tr": "Açık kaynaklı bir PlayStation 2 portu. Orijinal oyunun verileri pakete dahil değildir ve kullanıcı tarafından ayrıca sağlanmalıdır."
+      "en": "An open-source Quake II port for PlayStation 2. It requires the original game's data files.",
+      "tr": "PlayStation 2 için açık kaynaklı bir Quake II portu; orijinal oyun verileri gerekir."
     },
     "developer": "glampert and contributors",
-    "version": "development sample",
+    "version": "development build",
     "sizeBytes": 18874368,
     "sizeBytesEstimated": true,
     "fileFormat": "ELF executable",
@@ -29,6 +29,18 @@
     ],
     "tags": ["homebrew", "open-source", "fps"],
     "sourceUrl": "https://github.com/glampert/quake2-ps2",
+    "sources": [
+      {
+        "id": "github-release-page",
+        "provider": "github-release",
+        "deliveryMode": "browser_verify",
+        "url": "https://github.com/glampert/quake2-ps2/releases",
+        "format": ".elf",
+        "sizeBytes": 18874368,
+        "requiresVerification": true,
+        "priority": 1
+      }
+    ],
     "updatedAt": "2026-11-20T00:00:00.000Z",
     "sampleData": true
   }

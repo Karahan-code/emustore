@@ -11,6 +11,7 @@ import {
 } from "@/lib/catalog/platforms";
 import {
   CATALOG_ITEM_TYPES,
+  DOWNLOAD_DELIVERY_MODES,
   LOCALES,
   type CatalogItem,
   type CatalogPage,
@@ -49,6 +50,38 @@ function isScreenshot(value: unknown): boolean {
   );
 }
 
+function isHttpUrl(value: unknown): value is string {
+  if (typeof value !== "string") return false;
+
+  try {
+    const url = new URL(value);
+    return (url.protocol === "https:" || url.protocol === "http:") && !url.username && !url.password;
+  } catch {
+    return false;
+  }
+}
+
+function isDownloadSource(value: unknown): boolean {
+  if (!isRecord(value)) return false;
+
+  return (
+    typeof value.id === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value.id) &&
+    typeof value.provider === "string" && value.provider.trim() !== "" && value.provider.length <= 80 &&
+    typeof value.deliveryMode === "string" && DOWNLOAD_DELIVERY_MODES.some((mode) => mode === value.deliveryMode) &&
+    isHttpUrl(value.url) &&
+    typeof value.format === "string" && /^\.[a-z0-9]{1,12}$/i.test(value.format) &&
+    typeof value.sizeBytes === "number" && Number.isSafeInteger(value.sizeBytes) && value.sizeBytes > 0 &&
+    (value.sha256 === undefined || (typeof value.sha256 === "string" && /^[a-f0-9]{64}$/i.test(value.sha256))) &&
+    typeof value.requiresVerification === "boolean" &&
+    typeof value.priority === "number" && Number.isSafeInteger(value.priority) && value.priority >= 0 &&
+    (value.verifiedAt === undefined || (typeof value.verifiedAt === "string" && !Number.isNaN(Date.parse(value.verifiedAt))))
+  );
+}
+
+function isDownloadSourceForPlatform(value: unknown, platform: PlatformCatalogId): boolean {
+  return isDownloadSource(value) && isRecord(value) && isPlatformExtension(platform, value.format as string);
+}
+
 function isCatalogItemForPlatform(
   value: unknown,
   platform: PlatformCatalogId,
@@ -84,6 +117,9 @@ function isCatalogItemForPlatform(
     value.tags.every((tag) => typeof tag === "string") &&
     typeof value.sourceUrl === "string" &&
     value.sourceUrl.startsWith("https://") &&
+    Array.isArray(value.sources) &&
+    value.sources.length > 0 &&
+    value.sources.every((source) => isDownloadSourceForPlatform(source, platform)) &&
     typeof value.updatedAt === "string" &&
     !Number.isNaN(Date.parse(value.updatedAt)) &&
     typeof value.sampleData === "boolean"

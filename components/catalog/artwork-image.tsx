@@ -10,6 +10,7 @@ type ArtworkImageProps = {
   className?: string;
   sizes?: string;
   priority?: boolean;
+  monogramOnly?: boolean;
 };
 
 export function ArtworkImage({
@@ -19,6 +20,7 @@ export function ArtworkImage({
   className = "",
   sizes = "(max-width: 800px) 90vw, 40vw",
   priority = false,
+  monogramOnly = false,
 }: ArtworkImageProps) {
   const [unavailable, setUnavailable] = useState(false);
 
@@ -31,8 +33,8 @@ export function ArtworkImage({
       {unavailable ? (
         <div className="artwork-fallback" role="img" aria-label={alt}>
           <span className="artwork-fallback__mark" aria-hidden="true">{initials || "ES"}</span>
-          <span className="artwork-fallback__title">{title}</span>
-          <span className="artwork-fallback__caption">EmuStore</span>
+          {monogramOnly ? null : <span className="artwork-fallback__title">{title}</span>}
+          {monogramOnly ? null : <span className="artwork-fallback__caption">EmuStore</span>}
         </div>
       ) : (
         <Image

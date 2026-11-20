@@ -277,17 +277,23 @@ See [`LICENSE`](LICENSE) for details.
 <!-- 
 
 Yapılacaklar:
-1- Önyüz Blackbox, Overdrive'ın benzeri olacak.
-2- Oyunların title, description, file size gibi bir sürü stringleri olacak. Bunlar apilerle mi yoksa el ile kendimiz mi yazacağız bilmiyorum.
+1- Önyüz Blackbox, Overdrive'ın benzeri olacak.✅
+2- Oyunların title, description, file size gibi bir sürü stringleri olacak. Bunlar apilerle mi yoksa el ile kendimiz mi yazacağız bilmiyorum.✅
 3- Oyunların iconu kutu(cover) görseli olacak, kendi sayfasında birkaç farklı fotoğrafı
-olacak.
-4- Detaylı APİ, JSON string backend kurulacak.
-5- Her konsol oyunlarının(iso,nsp...) nereye kurulacağını otomatik bulan sistem bulunacak.Ayarlardan bu dosya yolları değiştirilebilir olacak.
-6-Anasayfada filtreleme seçenekleri olacak.
-7-Dualsense navigasyona uygun olacak.
-8-Klavye kullanımı ps5'in kendi klavyesini tetikleyecek.
-9-Mail yoluyla (veya başka bir şekilde) iletilen hata raporlama seçeneği olacak.
-10-İngilizce, Türkçe dil seçeneği olacak.
+olacak.✅
+4- Detaylı APİ, JSON string backend kurulacak.✅
+5- Her konsol oyunlarının(iso,nsp...) nereye kurulacağını otomatik bulan sistem bulunacak.Ayarlardan bu dosya yolları değiştirilebilir olacak.✅
+6-Anasayfada filtreleme seçenekleri olacak.✅
+7-Dualsense navigasyona uygun olacak.✅
+8-Klavye kullanımı ps5'in kendi klavyesini tetikleyecek.✅
+9-Mail yoluyla (veya başka bir şekilde) iletilen hata raporlama seçeneği olacak.✅
+10-İngilizce, Türkçe dil seçeneği olacak.✅
 
+11- Dualsense (options) tuşu ile ayarlara gidilecek bunu da aşağıdaki kontrol bilgilendirmelerinde gösterilecek.
+12- Discover kısmına masaüstündeki kısım eklenecek.
+13- Header düzeltilecek icon isim sola geri kalanlar ortaya sağ kısım aynı kalacak.
+14- Deneme oyunları ve linkleri eklenecek.
+15- Ayarlar en alta uygulama güncelleme kısmı eklenecek. Backendde yeni sürü çıkınca otomatik güncelleme bildirimi ve güncelleme özelliği getirilecek.
+16- UI ses efectleri eklenecek.
 
 -->

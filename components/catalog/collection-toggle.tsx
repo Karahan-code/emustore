@@ -20,7 +20,9 @@ export function CollectionToggle({ item, kind, locale, messages, compact = false
     : collections.isQueued(reference);
   const label = kind === "favorite"
     ? active ? messages.catalog.removeFavorite : messages.catalog.addFavorite
-    : active ? messages.downloads.remove : messages.catalog.addToQueue;
+    : messages.downloads.remove;
+
+  if (kind === "queue" && !active) return null;
 
   return (
     <button
@@ -31,7 +33,7 @@ export function CollectionToggle({ item, kind, locale, messages, compact = false
       title={label}
       disabled={!collections.ready}
       data-gamepad-favorite={kind === "favorite" ? "true" : undefined}
-      onClick={() => kind === "favorite" ? collections.toggleFavorite(reference) : collections.toggleQueue(reference)}
+      onClick={() => kind === "favorite" ? collections.toggleFavorite(reference) : collections.removeQueue(reference)}
     >
       <span aria-hidden="true">{kind === "favorite" ? active ? "♥" : "♡" : active ? "×" : "↓"}</span>
       {!compact ? <span>{label}</span> : null}

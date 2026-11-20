@@ -7,8 +7,8 @@
     "category": { "en": "Action RPG", "tr": "Aksiyon RPG" },
     "title": { "en": "Magic Castle", "tr": "Magic Castle" },
     "description": {
-      "en": "A Net Yaroze action RPG and dungeon crawler completed and released as a homebrew title. Sample metadata only; no game image is distributed here.",
-      "tr": "Tamamlanıp homebrew oyunu olarak yayımlanan bir Net Yaroze aksiyon RPG ve zindan keşif oyunu. Yalnızca örnek metaveridir; burada oyun imajı dağıtılmaz."
+      "en": "A Net Yaroze action RPG and dungeon crawler developed for the original PlayStation.",
+      "tr": "Tamamlanmış, homebrew olarak yayımlanmış bir Net Yaroze aksiyon RPG'si ve zindan keşif oyunu."
     },
     "developer": "Team Kaiga",
     "version": "1.0",
@@ -29,6 +29,18 @@
     ],
     "tags": ["homebrew", "net-yaroze", "dungeon-crawler"],
     "sourceUrl": "https://www.psx-place.com/resources/magic-castle.1105/",
+    "sources": [
+      {
+        "id": "psx-place-resource",
+        "provider": "psx-place",
+        "deliveryMode": "browser_verify",
+        "url": "https://www.psx-place.com/resources/magic-castle.1105/",
+        "format": ".chd",
+        "sizeBytes": 352321536,
+        "requiresVerification": true,
+        "priority": 1
+      }
+    ],
     "updatedAt": "2026-11-20T00:00:00.000Z",
     "sampleData": true
   }
