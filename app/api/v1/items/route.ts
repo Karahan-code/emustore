@@ -96,8 +96,8 @@ export async function GET(request: Request): Promise<Response> {
   }
 
   const sortValue = params.get("sort") ?? "title";
-  if (sortValue !== "title" && sortValue !== "size" && sortValue !== "updated") {
-    return apiError("BAD_REQUEST", "Sort must be title, size, or updated.", 400);
+  if (sortValue !== "title" && sortValue !== "size" && sortValue !== "updated" && sortValue !== "rating") {
+    return apiError("BAD_REQUEST", "Sort must be title, size, updated, or rating.", 400);
   }
 
   const sort: CatalogSort = sortValue;

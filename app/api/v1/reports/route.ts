@@ -1,8 +1,9 @@
 import { randomUUID } from "node:crypto";
 import { apiError, apiJson } from "@/lib/api/responses";
+import { isPlatformCatalogId, type PlatformCatalogId } from "@/lib/catalog/platforms";
 import { isLocale } from "@/lib/catalog/types";
 
-const MAX_BODY_BYTES = 8 * 1024;
+const MAX_BODY_BYTES = 32 * 1024;
 const REPORT_CATEGORIES = [
   "bug",
   "compatibility",
@@ -14,6 +15,7 @@ const ALLOWED_REPORT_FIELDS = new Set([
   "category",
   "message",
   "locale",
+  "platform",
   "steps",
   "itemSlug",
   "route",
@@ -27,6 +29,7 @@ type ErrorReport = {
   category: ReportCategory;
   message: string;
   locale: "en" | "tr";
+  platform?: PlatformCatalogId;
   steps?: string;
   itemSlug?: string;
   route?: string;
@@ -51,7 +54,7 @@ function parseReport(value: unknown): ErrorReport | undefined {
   if (!isRecord(value)) return undefined;
   if (Object.keys(value).some((key) => !ALLOWED_REPORT_FIELDS.has(key))) return undefined;
 
-  const { category, message, locale, steps, itemSlug, route, clientVersion, contactEmail } = value;
+  const { category, message, locale, platform, steps, itemSlug, route, clientVersion, contactEmail } = value;
   if (
     typeof category !== "string" ||
     !REPORT_CATEGORIES.some((validCategory) => validCategory === category) ||
@@ -59,6 +62,7 @@ function parseReport(value: unknown): ErrorReport | undefined {
     message.trim().length < 5 ||
     message.length > 4_000 ||
     !isLocale(locale) ||
+    (platform !== undefined && !isPlatformCatalogId(platform)) ||
     !optionalString(value, "steps", 4_000) ||
     !optionalString(value, "itemSlug", 120) ||
     !optionalString(value, "route", 500) ||
@@ -83,6 +87,7 @@ function parseReport(value: unknown): ErrorReport | undefined {
     category: category as ReportCategory,
     message: message.trim(),
     locale,
+    ...(isPlatformCatalogId(platform) ? { platform } : {}),
     ...(typeof steps === "string" ? { steps: steps.trim() } : {}),
     ...(typeof itemSlug === "string" ? { itemSlug } : {}),
     ...(typeof route === "string" ? { route } : {}),
@@ -105,7 +110,7 @@ export async function POST(request: Request): Promise<Response> {
   }
 
   if (new TextEncoder().encode(body).byteLength > MAX_BODY_BYTES) {
-    return apiError("BAD_REQUEST", "The report body exceeds the 8 KB limit.", 400);
+    return apiError("BAD_REQUEST", "The report body exceeds the 32 KB limit.", 400);
   }
 
   let parsedBody: unknown;

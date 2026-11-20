@@ -2,7 +2,7 @@
 <p align="center">
   <img src="public/icon.png" width="140" alt="EmuStore Logo" border-radious="50px">
 </p>
-<h2 align="center">EmuStore</h2>
+<h2 align="center">Ɛmustore</h2>
 
 <h3 align="center">A Homebrew Emulator Game Store for PlayStation 5</h3>
 
@@ -16,7 +16,7 @@
   </a>
   <a href="https://github.com/Karahan-code/emustore/stargazers">
     <img src="https://img.shields.io/github/stars/Karahan-code/emustore?style=for-the-badge" alt="Stars">
-  </a>
+  </a> <br>
   <a href="https://github.com/Karahan-code/emustore/releases">
     <img src="https://img.shields.io/github/downloads/Karahan-code/emustore/total?style=for-the-badge" alt="Downloads">
   </a>

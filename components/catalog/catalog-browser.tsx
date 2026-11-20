@@ -3,9 +3,9 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { CatalogFilterBar } from "@/components/catalog/catalog-filter-bar";
-import { FeaturedSpotlight } from "@/components/catalog/featured-spotlight";
+import { DiscoverView } from "@/components/catalog/discover-view";
 import { GameCard } from "@/components/catalog/game-card";
-import { isPlatformCatalogId, isPlatformExtension, PLATFORM_CATALOGS, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
+import { isPlatformCatalogId, isPlatformExtension, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
 import {
   isCatalogItemType,
   type CatalogFacets,
@@ -14,9 +14,7 @@ import {
   type CatalogSort,
   type Locale,
 } from "@/lib/catalog/types";
-import { getMessages, interpolate } from "@/lib/i18n/dictionaries";
-
-const QUICK_CATALOG_EVENT = "emustore:catalog-step";
+import { getMessages } from "@/lib/i18n/dictionaries";
 
 type ItemsResponse = {
   data: CatalogItem[];
@@ -35,7 +33,7 @@ function normalizeExtension(value: string): string {
 }
 
 function isCatalogSort(value: string | null): value is CatalogSort {
-  return value === "title" || value === "size" || value === "updated";
+  return value === "title" || value === "size" || value === "updated" || value === "rating";
 }
 
 export function CatalogBrowser({ locale }: CatalogBrowserProps) {
@@ -57,9 +55,10 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
     : "";
   const sortParam = searchParams.get("sort");
   const sort: CatalogSort = isCatalogSort(sortParam) ? sortParam : "title";
+  const view = searchParams.get("view") === "browse" ? "browse" : "discover";
 
-  const [searchDraft, setSearchDraft] = useState(query);
   const [response, setResponse] = useState<ItemsResponse | null>(null);
+  const [discoverFeed, setDiscoverFeed] = useState<CatalogItem[] | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [loadFailed, setLoadFailed] = useState(false);
   const [retryToken, setRetryToken] = useState(0);
@@ -80,20 +79,17 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
   }, [platform, locale, query, type, category, format, sort]);
 
   const updateSearchParam = useCallback(
-    (key: "q" | "type" | "category" | "format" | "sort", value: string) => {
+    (key: "type" | "category" | "format" | "sort", value: string) => {
       const params = new URLSearchParams(searchString);
       if (value) params.set(key, value);
       else params.delete(key);
+      params.set("view", "browse");
       params.delete("offset");
       const nextQuery = params.toString();
       router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
     },
     [pathname, router, searchString],
   );
-
-  useEffect(() => {
-    setSearchDraft(query);
-  }, [query]);
 
   useEffect(() => {
     const params = new URLSearchParams(searchString);
@@ -123,18 +119,17 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
       params.set("q", query.slice(0, 120));
       changed = true;
     }
+    const viewValue = params.get("view");
+    if (viewValue && viewValue !== "discover" && viewValue !== "browse") {
+      params.set("view", "discover");
+      changed = true;
+    }
 
     if (changed) {
       const nextQuery = params.toString();
       router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
     }
   }, [formatValue, pathname, platform, query, requestedPlatform, router, searchString, typeValue]);
-
-  useEffect(() => {
-    if (searchDraft.trim() === query.trim()) return;
-    const timeout = window.setTimeout(() => updateSearchParam("q", searchDraft.trim()), 280);
-    return () => window.clearTimeout(timeout);
-  }, [query, searchDraft, updateSearchParam]);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -161,152 +156,119 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
     return () => controller.abort();
   }, [apiQuery, retryToken]);
 
+  useEffect(() => {
+    if (view !== "discover") {
+      setDiscoverFeed(null);
+      return;
+    }
+
+    const controller = new AbortController();
+    Promise.all(PLATFORM_CATALOG_IDS.map(async (catalogId) => {
+      const params = new URLSearchParams({
+        platform: catalogId,
+        locale,
+        limit: "20",
+        offset: "0",
+        sort: "rating",
+      });
+      try {
+        const result = await fetch(`/api/v1/items?${params.toString()}`, {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+        if (!result.ok) return [] as CatalogItem[];
+        return ((await result.json()) as ItemsResponse).data;
+      } catch (error) {
+        if (error instanceof Error && error.name === "AbortError") throw error;
+        return [] as CatalogItem[];
+      }
+    }))
+      .then((catalogs) => {
+        const combined = catalogs.flat();
+        const activeIndex = combined.findIndex((item) => item.catalogId === platform);
+        if (activeIndex > 4) combined.unshift(...combined.splice(activeIndex, 1));
+        setDiscoverFeed(combined);
+      })
+      .catch((error: unknown) => {
+        if (!(error instanceof Error && error.name === "AbortError")) setDiscoverFeed([]);
+      });
+
+    return () => controller.abort();
+  }, [locale, platform, retryToken, view]);
+
   const clearFilters = useCallback(() => {
     const params = new URLSearchParams(searchString);
-    for (const key of ["q", "type", "category", "format", "offset"]) params.delete(key);
+    for (const key of ["q", "type", "category", "format", "sort", "offset"]) params.delete(key);
+    params.set("view", "browse");
     const nextQuery = params.toString();
     router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
   }, [pathname, router, searchString]);
 
-  useEffect(() => {
-    const onQuickCatalogStep = (event: Event) => {
-      const delta = (event as CustomEvent<{ delta?: number }>).detail?.delta;
-      if (delta !== -1 && delta !== 1) return;
-
-      const currentIndex = PLATFORM_CATALOG_IDS.indexOf(platform);
-      const nextIndex = (currentIndex + delta + PLATFORM_CATALOG_IDS.length) % PLATFORM_CATALOG_IDS.length;
-      const nextPlatform = PLATFORM_CATALOG_IDS[nextIndex];
-      const params = new URLSearchParams(searchString);
-      params.set("platform", nextPlatform);
-      params.delete("category");
-      params.delete("format");
-      params.delete("offset");
-      router.push(`/${locale}?${params.toString()}`, { scroll: false });
-    };
-
-    window.addEventListener(QUICK_CATALOG_EVENT, onQuickCatalogStep);
-    return () => window.removeEventListener(QUICK_CATALOG_EVENT, onQuickCatalogStep);
-  }, [locale, platform, router, searchString]);
-
   const catalogItems = response?.data ?? [];
-  const featured = catalogItems[0];
-  const remainingItems = catalogItems;
-  const activePlatformLabel = PLATFORM_CATALOGS[platform].label;
+  const discoveryItems = discoverFeed?.length ? discoverFeed : catalogItems;
+  const activePlatformLabel = messages.navigation[platform];
 
   return (
-    <main className="catalog-page">
-      <section className="catalog-intro">
-        <div>
-          <p className="eyebrow"><span className="status-dot" />{activePlatformLabel}</p>
-          <h1>{interpolate(messages.catalog.title, { platform: PLATFORM_CATALOGS[platform].shortLabel })}</h1>
-          <p className="catalog-intro__description">
-            {interpolate(messages.catalog.description, { platform: activePlatformLabel })}
-          </p>
-        </div>
-        <div className="catalog-intro__index" aria-hidden="true">
-          <span>EMUSTORE / CATALOG</span>
-          <strong>{platform.toUpperCase()}</strong>
-        </div>
-      </section>
-
-      <section className="catalog-controls" aria-label={messages.filters.title}>
-        <form
-          className="search-form"
-          onSubmit={(event) => {
-            event.preventDefault();
-            updateSearchParam("q", searchDraft.trim());
-          }}
-        >
-          <label htmlFor="catalog-search">{messages.catalog.search}</label>
-          <div className="search-form__field">
-            <span className="search-form__icon" aria-hidden="true">⌕</span>
-            <input
-              id="catalog-search"
-              type="search"
-              inputMode="search"
-              autoComplete="off"
-              spellCheck={false}
-              maxLength={120}
-              value={searchDraft}
-              onChange={(event) => setSearchDraft(event.target.value)}
-              placeholder={messages.catalog.searchPlaceholder}
-            />
-            <kbd className="search-form__shortcut" aria-hidden="true">↵</kbd>
-          </div>
-        </form>
-
-        <CatalogFilterBar
-          facets={response?.meta.facets ?? null}
-          locale={locale}
-          messages={messages}
-          type={type}
-          category={category}
-          format={format}
-          sort={sort}
-          onChange={(key, value) => updateSearchParam(key, value)}
-          onClear={clearFilters}
-        />
-      </section>
-
+    <main className={`catalog-page catalog-page--${view}`} aria-busy={isLoading}>
       {loadFailed ? (
         <div className="status-panel status-panel--error" role="alert">
-          <p>{messages.errors.catalogUnavailable} {messages.catalog.loadError}</p>
+          <p>{messages.errors.catalogUnavailable}</p>
           <button className="button button--quiet" type="button" onClick={() => setRetryToken((value) => value + 1)}>
             {messages.catalog.retry}
           </button>
         </div>
       ) : null}
 
-      {isLoading && !response ? (
-        <div className="status-panel" role="status">{messages.catalog.loading}</div>
+      {isLoading && !response ? <div className="status-panel" role="status">…</div> : null}
+
+      {!loadFailed && view === "discover" && discoveryItems.length > 0 ? (
+        <DiscoverView items={discoveryItems} locale={locale} messages={messages} searchQuery={searchString} selectedPlatform={platform} />
       ) : null}
 
-      {featured && !loadFailed ? (
-        <>
-          <FeaturedSpotlight
-            item={featured}
+      {!loadFailed && view === "browse" ? (
+        <section className="browse-page" aria-labelledby="browse-library-title">
+          <div className="browse-page__heading">
+            <div>
+              <p className="eyebrow">{messages.navigation[platform]}</p>
+              <h1 id="browse-library-title">{messages.catalog.browseLibrary}</h1>
+            </div>
+            <span className="browse-page__count">{interpolateResultCount(messages.catalog.resultCount, response?.meta.total ?? 0)}</span>
+          </div>
+          <CatalogFilterBar
+            facets={response?.meta.facets ?? null}
             locale={locale}
             messages={messages}
-            searchQuery={searchString}
+            type={type}
+            category={category}
+            format={format}
+            sort={sort}
+            onChange={(key, value) => updateSearchParam(key, value)}
+            onClear={clearFilters}
           />
-          <section className="catalog-results" aria-labelledby="catalog-results-title">
-            <div className="section-heading">
-              <div>
-                <p className="eyebrow">{messages.navigation[platform]}</p>
-                <h2 id="catalog-results-title">
-                  {interpolate(messages.catalog.browse, { platform: PLATFORM_CATALOGS[platform].shortLabel })}
-                </h2>
-              </div>
-              <span className="result-count">
-                {interpolate(messages.catalog.resultCount, { count: response?.meta.total ?? 0 })}
-              </span>
+          {catalogItems.length > 0 ? (
+            <div className="game-grid">
+              {catalogItems.map((item) => (
+                <GameCard key={`${item.catalogId}:${item.slug}`} item={item} locale={locale} messages={messages} searchQuery={searchString} />
+              ))}
             </div>
-            {remainingItems.length > 0 ? (
-              <div className="game-grid">
-                {remainingItems.map((item) => (
-                  <GameCard
-                    key={`${item.catalogId}:${item.slug}`}
-                    item={item}
-                    locale={locale}
-                    messages={messages}
-                    searchQuery={searchString}
-                  />
-                ))}
-              </div>
-            ) : null}
-          </section>
-        </>
+          ) : !isLoading ? (
+            <div className="status-panel status-panel--empty" role="status">
+              <p>{messages.catalog.noResults}</p>
+              <button className="text-action" type="button" onClick={clearFilters}>{messages.filters.clear}</button>
+            </div>
+          ) : null}
+        </section>
       ) : null}
 
-      {!isLoading && !loadFailed && response && response.data.length === 0 ? (
-        <div className="status-panel status-panel--empty" role="status">
-          <span className="status-panel__mark" aria-hidden="true">⌕</span>
-          <p>{messages.catalog.noResults}</p>
-          <button className="text-action" type="button" onClick={clearFilters}>
-            {messages.filters.clear}
-          </button>
-        </div>
+      {!loadFailed && !isLoading && discoverFeed !== null && discoveryItems.length === 0 && view === "discover" ? (
+        <div className="status-panel status-panel--empty" role="status">{messages.catalog.noResults}</div>
       ) : null}
+
+      <span className="sr-only">{activePlatformLabel}</span>
     </main>
   );
+}
+
+function interpolateResultCount(template: string, count: number): string {
+  return template.replace("{count}", String(count));
 }

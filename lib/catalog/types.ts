@@ -29,6 +29,7 @@ export type CatalogItem = {
   version: string;
   sizeBytes: number;
   sizeBytesEstimated: boolean;
+  ratingScore?: number;
   fileFormat: string;
   fileExtension: string;
   coverPath: string;
@@ -39,7 +40,7 @@ export type CatalogItem = {
   sampleData: boolean;
 };
 
-export type CatalogSort = "title" | "size" | "updated";
+export type CatalogSort = "title" | "size" | "updated" | "rating";
 
 export type CatalogQuery = {
   platform: PlatformCatalogId;

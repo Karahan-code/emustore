@@ -14,7 +14,7 @@ const FOCUSABLE_SELECTOR = [
 ].join(",");
 
 const EDITABLE_SELECTOR = "input, textarea, select, [contenteditable='true']";
-const QUICK_CATALOG_EVENT = "emustore:catalog-step";
+const QUICK_CATALOG_EVENT = "emustore:section-step";
 const NAVIGATION_REPEAT_MS = 230;
 const AXIS_THRESHOLD = 0.55;
 
@@ -75,6 +75,12 @@ function moveFocus(direction: Direction): void {
 }
 
 function goBack(): void {
+  const closeControl = document.querySelector<HTMLElement>("[data-gamepad-close]");
+  if (closeControl) {
+    closeControl.click();
+    return;
+  }
+
   if (document.activeElement instanceof HTMLElement && isEditableTarget(document.activeElement)) {
     document.activeElement.blur();
     return;
@@ -92,6 +98,25 @@ function goBack(): void {
 function activateFocusedElement(): void {
   const active = document.activeElement;
   if (active instanceof HTMLElement && active !== document.body) active.click();
+}
+
+function activateSelectedFavorite(): void {
+  const active = document.activeElement;
+  if (active instanceof Element) {
+    const ownFavorite = active.matches("[data-gamepad-favorite]")
+      ? active
+      : active.closest("[data-gamepad-item]")?.querySelector("[data-gamepad-favorite]");
+    if (ownFavorite instanceof HTMLElement) {
+      ownFavorite.click();
+      return;
+    }
+  }
+
+  document.querySelector<HTMLElement>("[data-gamepad-favorite]")?.click();
+}
+
+function activateFilterToggle(): void {
+  document.querySelector<HTMLElement>("[data-gamepad-filters]")?.click();
 }
 
 function dispatchCatalogStep(delta: -1 | 1): void {
@@ -126,7 +151,10 @@ export function useGamepadNavigation(): void {
 
     const keyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
-        if (isEditableTarget(event.target)) {
+        if (document.querySelector("[data-gamepad-close]")) {
+          event.preventDefault();
+          goBack();
+        } else if (isEditableTarget(event.target)) {
           (event.target as HTMLElement).blur();
         } else {
           event.preventDefault();
@@ -185,6 +213,8 @@ export function useGamepadNavigation(): void {
 
       if (justPressed(pad, 0)) activateFocusedElement();
       if (justPressed(pad, 1)) goBack();
+      if (justPressed(pad, 2)) activateSelectedFavorite();
+      if (justPressed(pad, 3)) activateFilterToggle();
       if (justPressed(pad, 4)) dispatchCatalogStep(-1);
       if (justPressed(pad, 5)) dispatchCatalogStep(1);
       animationFrame = window.requestAnimationFrame(poll);

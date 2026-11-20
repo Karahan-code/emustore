@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
+import { CollectionToggle } from "@/components/catalog/collection-toggle";
 import { ScreenshotGallery } from "@/components/catalog/screenshot-gallery";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
 import { isPlatformCatalogId, PLATFORM_CATALOGS } from "@/lib/catalog/platforms";
@@ -17,7 +19,15 @@ function getSingleParam(value: string | string[] | undefined): string | undefine
   return Array.isArray(value) ? value[0] : value;
 }
 
-export default async function GameDetailPage({ params, searchParams }: GameDetailPageProps) {
+export default function GameDetailPage(props: GameDetailPageProps) {
+  return (
+    <Suspense fallback={<main className="detail-page" aria-busy="true"><div className="status-panel" aria-hidden="true"><span className="status-dot" /></div></main>}>
+      <GameDetailContent {...props} />
+    </Suspense>
+  );
+}
+
+async function GameDetailContent({ params, searchParams }: GameDetailPageProps) {
   const [{ locale: localeParam, slug }, query] = await Promise.all([params, searchParams]);
   const platformParam = getSingleParam(query.platform);
   if (!isLocale(localeParam) || !isPlatformCatalogId(platformParam)) notFound();
@@ -35,6 +45,7 @@ export default async function GameDetailPage({ params, searchParams }: GameDetai
   }
   backParams.set("platform", item.catalogId);
   const backHref = `/${locale}?${backParams.toString()}`;
+  const reportParams = new URLSearchParams({ platform: item.catalogId, itemSlug: item.slug });
 
   return (
     <main className="detail-page">
@@ -63,6 +74,10 @@ export default async function GameDetailPage({ params, searchParams }: GameDetai
           <p className="eyebrow"><span className="status-dot" />{platform.label}</p>
           <h1>{item.title[locale]}</h1>
           <p className="detail-hero__description">{item.description[locale]}</p>
+          <div className="detail-hero__actions">
+            <CollectionToggle item={item} kind="favorite" locale={locale} messages={messages} />
+            <CollectionToggle item={item} kind="queue" locale={locale} messages={messages} />
+          </div>
           <div className="detail-facts" aria-label={messages.details.title}>
             <div><span>{messages.details.category}</span><strong>{item.category[locale]}</strong></div>
             <div><span>{messages.details.developer}</span><strong>{item.developer}</strong></div>
@@ -79,6 +94,9 @@ export default async function GameDetailPage({ params, searchParams }: GameDetai
             <a href={item.sourceUrl} target="_blank" rel="noreferrer">
               {messages.details.source}<span aria-hidden="true"> ↗</span>
             </a>
+            <Link href={`/${locale}/report?${reportParams.toString()}`}>
+              {messages.details.reportItem}
+            </Link>
           </div>
         </div>
       </section>

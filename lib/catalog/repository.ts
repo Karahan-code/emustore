@@ -70,6 +70,8 @@ function isCatalogItemForPlatform(
     Number.isSafeInteger(value.sizeBytes) &&
     value.sizeBytes >= 0 &&
     typeof value.sizeBytesEstimated === "boolean" &&
+    (value.ratingScore === undefined ||
+      (typeof value.ratingScore === "number" && Number.isFinite(value.ratingScore) && value.ratingScore >= 0 && value.ratingScore <= 100)) &&
     typeof value.fileFormat === "string" &&
     typeof value.fileExtension === "string" &&
     isPlatformExtension(platform, value.fileExtension) &&
@@ -165,6 +167,9 @@ export function queryCatalog(query: CatalogQuery): CatalogPage {
   matches = [...matches].sort((left, right) => {
     if (query.sort === "size") return left.sizeBytes - right.sizeBytes;
     if (query.sort === "updated") return right.updatedAt.localeCompare(left.updatedAt);
+    if (query.sort === "rating") {
+      return (right.ratingScore ?? -1) - (left.ratingScore ?? -1);
+    }
 
     return left.title[query.locale].localeCompare(right.title[query.locale], query.locale);
   });
