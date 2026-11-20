@@ -1,0 +1,35 @@
+[
+  {
+    "slug": "wonderful-waking-world-switch",
+    "catalogId": "switch",
+    "type": "homebrew",
+    "categoryId": "shoot-em-up",
+    "category": { "en": "Shoot 'em up", "tr": "Dikey kaydırmalı nişancı" },
+    "title": { "en": "Wonderful Waking World (Switch Port)", "tr": "Wonderful Waking World (Switch Portu)" },
+    "description": {
+      "en": "A homebrew Nintendo Switch port of the free Windows game. The original game data is obtained separately; this catalog does not distribute it.",
+      "tr": "Ücretsiz Windows oyununun Nintendo Switch homebrew portu. Orijinal oyun verileri ayrıca edinilir; bu katalog bunları dağıtmaz."
+    },
+    "developer": "saekaze and contributors",
+    "version": "1.0.1 sample metadata",
+    "sizeBytes": 46137344,
+    "sizeBytesEstimated": true,
+    "fileFormat": "Nintendo Switch NRO homebrew executable",
+    "fileExtension": ".nro",
+    "coverPath": "/images/catalog/switch/wonderful-waking-world-switch/cover.webp",
+    "screenshots": [
+      {
+        "src": "/images/catalog/switch/wonderful-waking-world-switch/screenshot-01.webp",
+        "alt": { "en": "Wonderful Waking World sample gameplay screenshot", "tr": "Wonderful Waking World örnek oynanış ekran görüntüsü" }
+      },
+      {
+        "src": "/images/catalog/switch/wonderful-waking-world-switch/screenshot-02.webp",
+        "alt": { "en": "Wonderful Waking World sample stage screenshot", "tr": "Wonderful Waking World örnek bölüm ekran görüntüsü" }
+      }
+    ],
+    "tags": ["homebrew", "switch-port", "shoot-em-up"],
+    "sourceUrl": "https://github.com/saekaze/thWWW-switch",
+    "updatedAt": "2026-11-20T00:00:00.000Z",
+    "sampleData": true
+  }
+]

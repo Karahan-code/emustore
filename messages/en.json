@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "brand": "EmuStore",
+    "tagline": "Console discovery, focused.",
+    "catalogs": "Console catalogs",
+    "catalogCount": "{count} console catalogs",
+    "ps1": "PS1",
+    "ps2": "PS2",
+    "ps3": "PS3",
+    "switch": "Switch",
+    "wii": "Wii",
+    "wiiu": "Wii U",
+    "settings": "Settings",
+    "switchLanguage": "Switch language"
+  },
+  "catalog": {
+    "title": "{platform} Catalog",
+    "description": "Browse the {platform} catalog.",
+    "featured": "Featured spotlight",
+    "browse": "Browse {platform}",
+    "search": "Search this catalog",
+    "searchPlaceholder": "Search titles, descriptions, or tags",
+    "noResults": "No items match these filters.",
+    "resultCount": "{count} items",
+    "loading": "Loading catalog…",
+    "loadError": "The catalog could not be loaded.",
+    "retry": "Retry",
+    "viewDetails": "View details"
+  },
+  "filters": {
+    "title": "Filters",
+    "platform": "Console",
+    "category": "Category",
+    "type": "Type",
+    "format": "File format",
+    "sort": "Sort by",
+    "sortTitle": "Title",
+    "sortSize": "File size",
+    "sortUpdated": "Recently updated",
+    "all": "All",
+    "game": "Game",
+    "homebrew": "Homebrew",
+    "emulator": "Emulator",
+    "utility": "Utility",
+    "clear": "Clear filters"
+  },
+  "details": {
+    "title": "Game details",
+    "description": "Description",
+    "screenshots": "Screenshots",
+    "developer": "Developer",
+    "version": "Version",
+    "fileSize": "File size",
+    "estimatedSize": "Estimated sample size",
+    "format": "Format",
+    "category": "Category",
+    "source": "Project source",
+    "sourceAttribution": "Developer and attribution",
+    "sampleData": "Sample metadata",
+    "showScreenshot": "Show screenshot {index}",
+    "galleryUnavailable": "Screenshots are not available yet.",
+    "backToCatalog": "Back to {platform} catalog"
+  },
+  "settings": {
+    "title": "Settings",
+    "catalogs": "Console catalogs",
+    "targetPaths": "Suggested target paths",
+    "targetPathsDescription": "Choose a preferred destination for each console. A browser can save these preferences but cannot inspect console storage or install files.",
+    "save": "Save settings",
+    "saved": "Settings saved"
+  },
+  "reports": {
+    "title": "Report a problem",
+    "category": "Problem type",
+    "message": "What happened?",
+    "steps": "Steps to reproduce",
+    "contactEmail": "Email address (optional)",
+    "submit": "Send report",
+    "submitted": "Report received",
+    "failed": "The report could not be sent. Please try again later.",
+    "categories": {
+      "bug": "Bug",
+      "compatibility": "Compatibility",
+      "installation": "Installation",
+      "content": "Catalog content",
+      "other": "Other"
+    }
+  },
+  "controller": {
+    "navigationHint": "D-pad / arrow keys: navigate · X / Enter: select · O / Escape: back · L1 / R1: switch catalogs"
+  },
+  "errors": {
+    "badRequest": "The request is invalid.",
+    "platformRequired": "Choose a console catalog.",
+    "itemNotFound": "This item was not found in the selected console catalog.",
+    "reportingUnavailable": "Report delivery is not configured.",
+    "catalogUnavailable": "Catalog service is unavailable.",
+    "detailsNotFound": "This item is not available in the selected catalog."
+  }
+}

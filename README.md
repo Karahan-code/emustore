@@ -272,3 +272,22 @@ See [`LICENSE`](LICENSE) for details.
 *Homebrew. Emulation. One Store.*
 
 </p>
+
+
+<!-- 
+
+Yapılacaklar:
+1- Önyüz Blackbox, Overdrive'ın benzeri olacak.
+2- Oyunların title, description, file size gibi bir sürü stringleri olacak. Bunlar apilerle mi yoksa el ile kendimiz mi yazacağız bilmiyorum.
+3- Oyunların iconu kutu(cover) görseli olacak, kendi sayfasında birkaç farklı fotoğrafı
+olacak.
+4- Detaylı APİ, JSON string backend kurulacak.
+5- Her konsol oyunlarının(iso,nsp...) nereye kurulacağını otomatik bulan sistem bulunacak.Ayarlardan bu dosya yolları değiştirilebilir olacak.
+6-Anasayfada filtreleme seçenekleri olacak.
+7-Dualsense navigasyona uygun olacak.
+8-Klavye kullanımı ps5'in kendi klavyesini tetikleyecek.
+9-Mail yoluyla (veya başka bir şekilde) iletilen hata raporlama seçeneği olacak.
+10-İngilizce, Türkçe dil seçeneği olacak.
+
+
+-->

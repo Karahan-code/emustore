@@ -1,0 +1,100 @@
+{
+  "navigation": {
+    "brand": "EmuStore",
+    "tagline": "Konsol keşfi, odaklı.",
+    "catalogs": "Konsol katalogları",
+    "catalogCount": "{count} konsol kataloğu",
+    "ps1": "PS1",
+    "ps2": "PS2",
+    "ps3": "PS3",
+    "switch": "Switch",
+    "wii": "Wii",
+    "wiiu": "Wii U",
+    "settings": "Ayarlar",
+    "switchLanguage": "Dili değiştir"
+  },
+  "catalog": {
+    "title": "{platform} Kataloğu",
+    "description": "{platform} kataloğuna göz atın.",
+    "featured": "Öne çıkan",
+    "browse": "{platform} kataloğuna göz atın",
+    "search": "Bu katalogda ara",
+    "searchPlaceholder": "Başlık, açıklama veya etiket ara",
+    "noResults": "Bu filtrelerle eşleşen öğe yok.",
+    "resultCount": "{count} öğe",
+    "loading": "Katalog yükleniyor…",
+    "loadError": "Katalog yüklenemedi.",
+    "retry": "Tekrar dene",
+    "viewDetails": "Detayları görüntüle"
+  },
+  "filters": {
+    "title": "Filtreler",
+    "platform": "Konsol",
+    "category": "Kategori",
+    "type": "Tür",
+    "format": "Dosya biçimi",
+    "sort": "Sıralama",
+    "sortTitle": "Başlık",
+    "sortSize": "Dosya boyutu",
+    "sortUpdated": "Son güncellenen",
+    "all": "Tümü",
+    "game": "Oyun",
+    "homebrew": "Homebrew",
+    "emulator": "Emülatör",
+    "utility": "Araç",
+    "clear": "Filtreleri temizle"
+  },
+  "details": {
+    "title": "Oyun detayları",
+    "description": "Açıklama",
+    "screenshots": "Ekran görüntüleri",
+    "developer": "Geliştirici",
+    "version": "Sürüm",
+    "fileSize": "Dosya boyutu",
+    "estimatedSize": "Tahmini örnek boyutu",
+    "format": "Biçim",
+    "category": "Kategori",
+    "source": "Proje kaynağı",
+    "sourceAttribution": "Geliştirici ve atıf",
+    "sampleData": "Örnek metaveri",
+    "showScreenshot": "{index}. ekran görüntüsünü göster",
+    "galleryUnavailable": "Ekran görüntüleri henüz mevcut değil.",
+    "backToCatalog": "{platform} kataloğuna dön"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "catalogs": "Konsol katalogları",
+    "targetPaths": "Önerilen hedef yollar",
+    "targetPathsDescription": "Her konsol için tercih edilen hedefi seçin. Tarayıcı bu tercihleri kaydedebilir ancak konsol depolamasını inceleyemez veya dosya kuramaz.",
+    "save": "Ayarları kaydet",
+    "saved": "Ayarlar kaydedildi"
+  },
+  "reports": {
+    "title": "Sorun bildir",
+    "category": "Sorun türü",
+    "message": "Ne oldu?",
+    "steps": "Yeniden oluşturma adımları",
+    "contactEmail": "E-posta adresi (isteğe bağlı)",
+    "submit": "Raporu gönder",
+    "submitted": "Rapor alındı",
+    "failed": "Rapor gönderilemedi. Lütfen daha sonra tekrar deneyin.",
+    "categories": {
+      "bug": "Hata",
+      "compatibility": "Uyumluluk",
+      "installation": "Kurulum",
+      "content": "Katalog içeriği",
+      "other": "Diğer"
+    }
+  },
+  "controller": {
+    "navigationHint": "D-pad / ok tuşları: gezin · X / Enter: seç · O / Escape: geri · L1 / R1: katalog değiştir"
+  },
+  "errors": {
+    "badRequest": "İstek geçersiz.",
+    "platformRequired": "Bir konsol kataloğu seçin.",
+    "itemNotFound": "Seçilen konsol kataloğunda bu öğe bulunamadı.",
+    "reportingUnavailable": "Rapor iletimi yapılandırılmamış.",
+    "catalogUnavailable": "Katalog hizmetine ulaşılamıyor.",
+    "detailsNotFound": "Bu öğe seçilen katalogda bulunamadı."
+  }
+}
