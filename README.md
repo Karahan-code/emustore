@@ -1,9 +1,8 @@
-#
 
 <p align="center">
   <img src="public/icon.png" width="140" alt="EmuStore Logo" border-radious="50px">
 </p>
-<h2 align="center"> 🎮 EmuStore</h2>
+<h2 align="center">EmuStore</h2>
 
 <h3 align="center">A Homebrew Emulator Game Store for PlayStation 5</h3>
 
@@ -28,6 +27,8 @@
 
 ## ✨ About
 
+> 🚧 EmuStore is currently under active development.
+
 **EmuStore** is a PlayStation 5 homebrew store project designed to provide a clean, fast and console-friendly way to discover and manage homebrew applications, emulators, tools and utilities.
 
 The project is designed specifically around the experience of using a store directly on a PS5 rather than behaving like a conventional web dashboard.
@@ -37,30 +38,19 @@ The project is designed specifically around the experience of using a store dire
 - 🎮 Console-focused user interface
 - 🏪 Homebrew application store
 - 🕹️ Emulator discovery
-- 🧰 Homebrew tools & utilities
-- 📦 Application installation and updates
-- 📚 Installed application library
 - 🔎 Fast search and categorization
-- 🎨 Modern dark gaming interface
 - 🎛️ Controller-friendly navigation
 
 ---
 
-## 🚀 Latest Release
-
-### `v0.1.0 — Initial Development Release`
-
-> 🚧 EmuStore is currently under active development.
 
 **Current development focus:**
 
 - Store UI
 - Home screen
 - Emulator catalog
-- Homebrew catalog
 - Platform categories
 - Application details
-- Library system
 - Installation/update architecture
 
 ---
