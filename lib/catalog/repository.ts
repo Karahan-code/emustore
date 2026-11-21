@@ -44,9 +44,34 @@ function isLocalizedText(value: unknown): value is LocalizedText {
 function isScreenshot(value: unknown): boolean {
   return (
     isRecord(value) &&
-    typeof value.src === "string" &&
-    value.src.startsWith("/images/catalog/") &&
+    isArtworkReference(value.src) &&
     isLocalizedText(value.alt)
+  );
+}
+
+function isArtworkReference(value: unknown): boolean {
+  if (value === undefined || value === "") return true;
+  if (typeof value !== "string") return false;
+  if (value.startsWith("/")) return value.startsWith("/images/catalog/");
+
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" && !url.username && !url.password;
+  } catch {
+    return false;
+  }
+}
+
+function isArtworkMetadata(value: unknown): boolean {
+  if (!isRecord(value)) return false;
+
+  return (
+    (value.query === undefined || (typeof value.query === "string" && value.query.trim() !== "" && value.query.length <= 160)) &&
+    (value.steamGridDbId === undefined || (Number.isSafeInteger(value.steamGridDbId) && Number(value.steamGridDbId) > 0)) &&
+    (value.rawgSlug === undefined || (typeof value.rawgSlug === "string" && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(value.rawgSlug))) &&
+    (value.syncedAt === undefined || (typeof value.syncedAt === "string" && !Number.isNaN(Date.parse(value.syncedAt)))) &&
+    (value.coverProvider === undefined || value.coverProvider === "steamgriddb" || value.coverProvider === "rawg") &&
+    (value.screenshotProvider === undefined || value.screenshotProvider === "rawg")
   );
 }
 
@@ -108,11 +133,10 @@ function isCatalogItemForPlatform(
     typeof value.fileFormat === "string" &&
     typeof value.fileExtension === "string" &&
     isPlatformExtension(platform, value.fileExtension) &&
-    typeof value.coverPath === "string" &&
-    value.coverPath.startsWith(`/images/catalog/${platform}/`) &&
+    isArtworkReference(value.coverPath) &&
     Array.isArray(value.screenshots) &&
-    value.screenshots.length > 0 &&
     value.screenshots.every(isScreenshot) &&
+    (value.artwork === undefined || isArtworkMetadata(value.artwork)) &&
     Array.isArray(value.tags) &&
     value.tags.every((tag) => typeof tag === "string") &&
     typeof value.sourceUrl === "string" &&

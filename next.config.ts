@@ -7,6 +7,13 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
+  images: {
+    remotePatterns: [
+      { protocol: "https", hostname: "cdn.steamgriddb.com" },
+      { protocol: "https", hostname: "cdn2.steamgriddb.com" },
+      { protocol: "https", hostname: "media.rawg.io" },
+    ],
+  },
   turbopack: {
     rules: {
       "*.css": {

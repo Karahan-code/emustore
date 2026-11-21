@@ -13,8 +13,17 @@ export const CATALOG_ITEM_TYPES = [
 export type CatalogItemType = (typeof CATALOG_ITEM_TYPES)[number];
 
 export type CatalogScreenshot = {
-  src: string;
+  src?: string;
   alt: LocalizedText;
+};
+
+export type CatalogArtwork = {
+  query?: string;
+  steamGridDbId?: number;
+  rawgSlug?: string;
+  syncedAt?: string;
+  coverProvider?: "steamgriddb" | "rawg";
+  screenshotProvider?: "rawg";
 };
 
 export const DOWNLOAD_DELIVERY_MODES = [
@@ -53,8 +62,9 @@ export type CatalogItem = {
   ratingScore?: number;
   fileFormat: string;
   fileExtension: string;
-  coverPath: string;
+  coverPath?: string;
   screenshots: CatalogScreenshot[];
+  artwork?: CatalogArtwork;
   tags: string[];
   sourceUrl: string;
   sources: DownloadSource[];

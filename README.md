@@ -158,23 +158,23 @@ The development interface can then be accessed locally through the configured Ne
 - [x] Project initialization
 - [x] Initial UI
 - [x] Development environment
-- [ ] EmuStore branding
-- [ ] Finalize design system
+- [x] EmuStore branding
+- [x] Finalize design system
 
 ### Phase 2 — Store
 
-- [ ] Home screen
+- [x] Home screen
 - [ ] Featured applications
-- [ ] Application cards
-- [ ] Search
-- [ ] Categories
-- [ ] Platform pages
-- [ ] Application detail pages
+- [x] Application cards
+- [x] Search
+- [x] Categories
+- [x] Platform pages
+- [x] Application detail pages
 
 ### Phase 3 — Library
 
 - [ ] Installed applications
-- [ ] Favorites
+- [x] Favorites
 - [ ] Version tracking
 - [ ] Update detection
 - [ ] Update interface

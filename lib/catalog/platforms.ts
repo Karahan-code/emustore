@@ -87,6 +87,7 @@ export const PLATFORM_CATALOGS = {
       { label: "WUX compressed disc image", extensions: [".wux"] },
       { label: "WUA archive", extensions: [".wua"] },
       { label: "RPX executable", extensions: [".rpx"] },
+      { label: "Wii U homebrew bundle", extensions: [".wuhb"] },
     ],
   },
 } as const satisfies Record<PlatformCatalogId, PlatformCatalogDefinition>;
