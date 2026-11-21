@@ -9,6 +9,7 @@ import { InputNavigation } from "@/components/shell/input-navigation";
 import { SearchDialog } from "@/components/shell/search-dialog";
 import { SectionNavigation } from "@/components/shell/section-navigation";
 import { UiSoundEffects } from "@/components/shell/ui-sound-effects";
+import { UpdateNotifier } from "@/components/shell/update-notifier";
 import { isLocale, type Locale } from "@/lib/catalog/types";
 import { getMessages } from "@/lib/i18n/dictionaries";
 import "../globals.css";
@@ -64,6 +65,7 @@ export default async function LocaleLayout({
             <div className="app-shell__content">{children}</div>
           </div>
           <ControllerHintBar messages={messages} />
+          <UpdateNotifier locale={locale} messages={messages} />
         </CollectionsProvider>
       </body>
     </html>

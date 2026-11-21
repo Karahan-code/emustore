@@ -97,7 +97,7 @@ export function DiscoverView({ items, locale, messages, searchQuery, selectedPla
               title={featured.title[locale]}
               className="discover-hero__cover"
               sizes="(max-width: 760px) 42vw, 24vw"
-              priority
+              eager
             />
           </div>
         </article>

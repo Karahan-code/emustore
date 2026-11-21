@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 type ArtworkImageProps = {
   src?: string;
@@ -9,7 +9,7 @@ type ArtworkImageProps = {
   title: string;
   className?: string;
   sizes?: string;
-  priority?: boolean;
+  eager?: boolean;
   monogramOnly?: boolean;
 };
 
@@ -19,13 +19,12 @@ export function ArtworkImage({
   title,
   className = "",
   sizes = "(max-width: 800px) 90vw, 40vw",
-  priority = false,
+  eager = false,
   monogramOnly = false,
 }: ArtworkImageProps) {
   const hasSource = typeof src === "string" && src.trim() !== "";
-  const [unavailable, setUnavailable] = useState(!hasSource);
-
-  useEffect(() => setUnavailable(!hasSource), [hasSource, src]);
+  const [failedSrc, setFailedSrc] = useState<string | null>(null);
+  const unavailable = !hasSource || failedSrc === src;
 
   const initials = title.trim().slice(0, 2).toLocaleUpperCase();
 
@@ -43,12 +42,12 @@ export function ArtworkImage({
           alt={alt}
           fill
           sizes={sizes}
-          priority={priority}
-          loading={priority ? "eager" : "lazy"}
+          loading={eager ? "eager" : "lazy"}
+          fetchPriority={eager ? "high" : undefined}
           unoptimized
           referrerPolicy="no-referrer"
           className="artwork-frame__image"
-          onError={() => setUnavailable(true)}
+          onError={() => setFailedSrc(src ?? null)}
         />
       )}
     </div>

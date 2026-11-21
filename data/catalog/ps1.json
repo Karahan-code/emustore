@@ -1,47 +1,4306 @@
 [
   {
-    "slug": "magic-castle",
+    "slug": "resident-evil-2-ps1",
     "catalogId": "ps1",
     "type": "game",
-    "categoryId": "action-rpg",
-    "category": { "en": "Action RPG", "tr": "Aksiyon RPG" },
-    "title": { "en": "Magic Castle", "tr": "Magic Castle" },
-    "description": {
-      "en": "A Net Yaroze action RPG and dungeon crawler developed for the original PlayStation.",
-      "tr": "Tamamlanmış, homebrew olarak yayımlanmış bir Net Yaroze aksiyon RPG'si ve zindan keşif oyunu."
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
     },
-    "developer": "Team Kaiga",
-    "version": "1.0",
-    "sizeBytes": 352321536,
+    "title": {
+      "en": "Resident Evil 2 (1998)",
+      "tr": "Resident Evil 2 (1998)"
+    },
+    "description": {
+      "en": "Action title released in 1998 for PlayStation 1 (Metacritic 90/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Aksiyon oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
+    "ratingScore": 90,
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "/images/catalog/ps1/magic-castle/cover.webp",
+    "coverPath": "https://media.rawg.io/media/games/d64/d646810b629081cc12aec49ed9f49441.jpg",
     "screenshots": [
       {
-        "src": "/images/catalog/ps1/magic-castle/screenshot-01.webp",
-        "alt": { "en": "Magic Castle sample gameplay screenshot", "tr": "Magic Castle örnek oynanış ekran görüntüsü" }
+        "src": "https://media.rawg.io/media/screenshots/666/6663aaa821121053170b9d74dd593976.jpg",
+        "alt": {
+          "en": "Resident Evil 2 (1998) screenshot 1",
+          "tr": "Resident Evil 2 (1998) ekran görüntüsü 1"
+        }
       },
       {
-        "src": "/images/catalog/ps1/magic-castle/screenshot-02.webp",
-        "alt": { "en": "Magic Castle sample dungeon screenshot", "tr": "Magic Castle örnek zindan ekran görüntüsü" }
-      }
-    ],
-    "tags": ["homebrew", "net-yaroze", "dungeon-crawler"],
-    "sourceUrl": "https://www.psx-place.com/resources/magic-castle.1105/",
-    "sources": [
+        "src": "https://media.rawg.io/media/screenshots/720/7208757f6bf59caa7bb4a15347b32894.jpg",
+        "alt": {
+          "en": "Resident Evil 2 (1998) screenshot 2",
+          "tr": "Resident Evil 2 (1998) ekran görüntüsü 2"
+        }
+      },
       {
-        "id": "psx-place-resource",
-        "provider": "psx-place",
-        "deliveryMode": "browser_verify",
-        "url": "https://www.psx-place.com/resources/magic-castle.1105/",
-        "format": ".chd",
-        "sizeBytes": 352321536,
-        "requiresVerification": true,
-        "priority": 1
+        "src": "https://media.rawg.io/media/screenshots/85f/85f86edca3dc83ba974063611d1450f1.jpg",
+        "alt": {
+          "en": "Resident Evil 2 (1998) screenshot 3",
+          "tr": "Resident Evil 2 (1998) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5b8/5b88cc449fb78e08c99a84d7adc51c35.jpg",
+        "alt": {
+          "en": "Resident Evil 2 (1998) screenshot 4",
+          "tr": "Resident Evil 2 (1998) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/293/29367639d7c8fa0b54427fb45b54c727.jpg",
+        "alt": {
+          "en": "Resident Evil 2 (1998) screenshot 5",
+          "tr": "Resident Evil 2 (1998) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/04b/04bb0af3c2f3a9593c29793a8774adde.jpg",
+        "alt": {
+          "en": "Resident Evil 2 (1998) screenshot 6",
+          "tr": "Resident Evil 2 (1998) ekran görüntüsü 6"
+        }
       }
     ],
-    "updatedAt": "2026-11-20T00:00:00.000Z",
-    "sampleData": true
+    "artwork": {
+      "query": "Resident Evil 2 (1998)",
+      "rawgSlug": "resident-evil-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "third-person",
+      "horror"
+    ],
+    "sourceUrl": "https://rawg.io/games/resident-evil-2",
+    "sources": [],
+    "updatedAt": "2026-10-17T18:08:05.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "oddworld-abes-oddysee-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Oddworld: Abe's Oddysee",
+      "tr": "Oddworld: Abe's Oddysee"
+    },
+    "description": {
+      "en": "Platformer / Action title released in 1997 for PlayStation 1 (Metacritic 85/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Platform / Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/2ae/2aedae90b1377a0f3e5ce54d24f8e41a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/268/268976f935b78965d4612b3ca0d6596d.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Oddysee screenshot 1",
+          "tr": "Oddworld: Abe's Oddysee ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ea6/ea6921adef68d78a0e265aaf7e408df0.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Oddysee screenshot 2",
+          "tr": "Oddworld: Abe's Oddysee ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/32a/32ac63a8b83bf604a0ae7e31f087572b.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Oddysee screenshot 3",
+          "tr": "Oddworld: Abe's Oddysee ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/39c/39c22e51c137bd6eb32fcbad0c4f59dd.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Oddysee screenshot 4",
+          "tr": "Oddworld: Abe's Oddysee ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/61f/61fc8a9569141c23608e95e8376aadaa.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Oddysee screenshot 5",
+          "tr": "Oddworld: Abe's Oddysee ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/968/968605b1ddb6de07e212ca6ab2ebf838.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Oddysee screenshot 6",
+          "tr": "Oddworld: Abe's Oddysee ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Oddworld: Abe's Oddysee",
+      "rawgSlug": "oddworld-abes-oddysee",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "steam-trading-cards",
+      "2d"
+    ],
+    "sourceUrl": "https://rawg.io/games/oddworld-abes-oddysee",
+    "sources": [],
+    "updatedAt": "2026-11-18T00:37:04.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "resident-evil-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Resident Evil",
+      "tr": "Resident Evil"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1996 for PlayStation 1 (Metacritic 91/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/510/51039d0ec5dc8c3e08ae4374dfceecec.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d4/9d4ecb66c0c6c1aa5d8d138f140ee11f.jpg",
+        "alt": {
+          "en": "Resident Evil screenshot 1",
+          "tr": "Resident Evil ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/727/7279f7cc4fc5b96a9601a12ce8e9c6bd.jpg",
+        "alt": {
+          "en": "Resident Evil screenshot 2",
+          "tr": "Resident Evil ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/98b/98b1cc296a5ec9cab7124ffc1500d27c.jpg",
+        "alt": {
+          "en": "Resident Evil screenshot 3",
+          "tr": "Resident Evil ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/28c/28c3a4eab19fb2921f62f7e272d22c36.jpg",
+        "alt": {
+          "en": "Resident Evil screenshot 4",
+          "tr": "Resident Evil ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ef5/ef5e82570862fbbdc1efbd1af1a6b624.jpg",
+        "alt": {
+          "en": "Resident Evil screenshot 5",
+          "tr": "Resident Evil ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/49b/49b452971778df5b136819d5a008781a.jpg",
+        "alt": {
+          "en": "Resident Evil screenshot 6",
+          "tr": "Resident Evil ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Resident Evil",
+      "rawgSlug": "resident-evil",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "gameplay-feature-multiple-endings",
+      "playstation-platinum-range-releases",
+      "1990s-2",
+      "games-made-into-books",
+      "games-made-into-comics"
+    ],
+    "sourceUrl": "https://rawg.io/games/resident-evil",
+    "sources": [],
+    "updatedAt": "2026-11-21T08:45:25.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "final-fantasy-vii-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Final Fantasy VII (1997)",
+      "tr": "Final Fantasy VII (1997)"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 1997 for PlayStation 1 (Metacritic 83/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Macera / Aksiyon oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/6c0/6c00ee85d1344f58c469e8e47fd8ae7c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/be5/be56be936c65efe4d40eba39ffad9efe.jpg",
+        "alt": {
+          "en": "Final Fantasy VII (1997) screenshot 1",
+          "tr": "Final Fantasy VII (1997) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4fe/4fee132ff182780824297878dc73fbcb.jpg",
+        "alt": {
+          "en": "Final Fantasy VII (1997) screenshot 2",
+          "tr": "Final Fantasy VII (1997) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/324/324ed2e7f2a9433491540aca45d1f335.jpg",
+        "alt": {
+          "en": "Final Fantasy VII (1997) screenshot 3",
+          "tr": "Final Fantasy VII (1997) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/eb4/eb43b999daa2bf753d4b9dd063731219.jpg",
+        "alt": {
+          "en": "Final Fantasy VII (1997) screenshot 4",
+          "tr": "Final Fantasy VII (1997) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bda/bda19414ed731f96536fb8b27fe2d105.jpg",
+        "alt": {
+          "en": "Final Fantasy VII (1997) screenshot 5",
+          "tr": "Final Fantasy VII (1997) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3fa/3fac3ff5a65c3439b11365686e0bbebd.jpg",
+        "alt": {
+          "en": "Final Fantasy VII (1997) screenshot 6",
+          "tr": "Final Fantasy VII (1997) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Final Fantasy VII (1997)",
+      "rawgSlug": "final-fantasy-vii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg"
+    ],
+    "sourceUrl": "https://rawg.io/games/final-fantasy-vii",
+    "sources": [],
+    "updatedAt": "2026-10-26T08:38:00.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "ufo-enemy-unknown-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "X-COM: UFO Defense",
+      "tr": "X-COM: UFO Defense"
+    },
+    "description": {
+      "en": "Strategy title released in 1993 for PlayStation 1 (Score 74/100).",
+      "tr": "1993 yılında çıkan PlayStation 1 için Strateji oyunu (Puan 74/100)."
+    },
+    "developer": "RAWG",
+    "version": "1993",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 74,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/010/0101f021b2dc123c98969fda7e4bcd92.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f3b/f3b2c05594a9572c81092428fc60099a.jpg",
+        "alt": {
+          "en": "X-COM: UFO Defense screenshot 1",
+          "tr": "X-COM: UFO Defense ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f12/f12e03e88d86727eb541a6a5c638719b.jpg",
+        "alt": {
+          "en": "X-COM: UFO Defense screenshot 2",
+          "tr": "X-COM: UFO Defense ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/eb1/eb17cba4194ee42966674ad7fa6c3753.jpg",
+        "alt": {
+          "en": "X-COM: UFO Defense screenshot 3",
+          "tr": "X-COM: UFO Defense ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c93/c9342f0ce2b5b36256278ca603c59774.jpg",
+        "alt": {
+          "en": "X-COM: UFO Defense screenshot 4",
+          "tr": "X-COM: UFO Defense ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/712/7127636b4069b04fe3c82b319007159a.jpg",
+        "alt": {
+          "en": "X-COM: UFO Defense screenshot 5",
+          "tr": "X-COM: UFO Defense ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/901/9016d94c791742f5f269df0a54150365.jpg",
+        "alt": {
+          "en": "X-COM: UFO Defense screenshot 6",
+          "tr": "X-COM: UFO Defense ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "X-COM: UFO Defense",
+      "rawgSlug": "ufo-enemy-unknown",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "sci-fi",
+      "difficult",
+      "classic"
+    ],
+    "sourceUrl": "https://rawg.io/games/ufo-enemy-unknown",
+    "sources": [],
+    "updatedAt": "2026-08-31T21:06:14.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tomb-raider-ii-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Tomb Raider II",
+      "tr": "Tomb Raider II"
+    },
+    "description": {
+      "en": "Platformer / Shooter title released in 1997 for PlayStation 1 (Metacritic 69/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Platform / Nişancı oyunu (Metacritic 69/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 69,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/cfc/cfc91eccc1de338b75a0576310ccbcec.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/53d/53de369b7c7da59c1239372516a994fd.jpg",
+        "alt": {
+          "en": "Tomb Raider II screenshot 1",
+          "tr": "Tomb Raider II ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/25a/25a1eb80d147338e146ded5869cae121.jpg",
+        "alt": {
+          "en": "Tomb Raider II screenshot 2",
+          "tr": "Tomb Raider II ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b8f/b8f3a793bf1303384f90b0940c32e7b6.jpg",
+        "alt": {
+          "en": "Tomb Raider II screenshot 3",
+          "tr": "Tomb Raider II ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/24d/24d8b5980a1a1540f35f62f1a23709ea.jpg",
+        "alt": {
+          "en": "Tomb Raider II screenshot 4",
+          "tr": "Tomb Raider II ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/380/380ab9c9961666ed685403ad4fb79304.jpg",
+        "alt": {
+          "en": "Tomb Raider II screenshot 5",
+          "tr": "Tomb Raider II ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2ed/2ed351e77c941c33dc52ac49c39b4d6b.jpg",
+        "alt": {
+          "en": "Tomb Raider II screenshot 6",
+          "tr": "Tomb Raider II ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tomb Raider II",
+      "rawgSlug": "tomb-raider-ii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "third-person",
+      "classic",
+      "female-protagonist"
+    ],
+    "sourceUrl": "https://rawg.io/games/tomb-raider-ii",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:59:53.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "worms-armageddon-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Worms Armageddon",
+      "tr": "Worms Armageddon"
+    },
+    "description": {
+      "en": "Strategy title released in 1999 for PlayStation 1 (Score 86/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Strateji oyunu (Puan 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/96a/96a48ac7487d9db9179d83170afcb16a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/df2/df2c33c4ca5829e815d70d64c4deb2d1.jpg",
+        "alt": {
+          "en": "Worms Armageddon screenshot 1",
+          "tr": "Worms Armageddon ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/981/9812e7ee95ec6e8059cb24669a1761cf.jpg",
+        "alt": {
+          "en": "Worms Armageddon screenshot 2",
+          "tr": "Worms Armageddon ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/add/adde497f28cde969d1588de90cefb28c.jpg",
+        "alt": {
+          "en": "Worms Armageddon screenshot 3",
+          "tr": "Worms Armageddon ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/00f/00fc0fd17e2fefb4e9b348410740ea01.jpg",
+        "alt": {
+          "en": "Worms Armageddon screenshot 4",
+          "tr": "Worms Armageddon ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c6a/c6ad91855a42bf8617f22723246a7f1b.jpg",
+        "alt": {
+          "en": "Worms Armageddon screenshot 5",
+          "tr": "Worms Armageddon ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2e3/2e314e9e035862ff959e1df43230441d.jpg",
+        "alt": {
+          "en": "Worms Armageddon screenshot 6",
+          "tr": "Worms Armageddon ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Worms Armageddon",
+      "rawgSlug": "worms-armageddon",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "co-op",
+      "cooperative",
+      "2d"
+    ],
+    "sourceUrl": "https://rawg.io/games/worms-armageddon",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:27.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "star-wars-dark-forces-2-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Star Wars: Dark Forces",
+      "tr": "Star Wars: Dark Forces"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1995 for PlayStation 1 (Score 73/100).",
+      "tr": "1995 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Puan 73/100)."
+    },
+    "developer": "RAWG",
+    "version": "1995",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 73,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/5ad/5ad8b055d14c14fd626d5eb42f218bc6.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/5c7/5c7781d721b1a489ebeab74dca56b062.jpg",
+        "alt": {
+          "en": "Star Wars: Dark Forces screenshot 1",
+          "tr": "Star Wars: Dark Forces ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f8a/f8ac146376d9946c9f8c80b0a88f17b8.jpg",
+        "alt": {
+          "en": "Star Wars: Dark Forces screenshot 2",
+          "tr": "Star Wars: Dark Forces ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1b7/1b7a8b13ec1eebffc8869fcb21a9be7a.jpg",
+        "alt": {
+          "en": "Star Wars: Dark Forces screenshot 3",
+          "tr": "Star Wars: Dark Forces ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2e7/2e7df47dbd826d0e9a54b559209db92f.jpg",
+        "alt": {
+          "en": "Star Wars: Dark Forces screenshot 4",
+          "tr": "Star Wars: Dark Forces ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c16/c16792bd3cb78ee07f1ae8c490c666d1.jpg",
+        "alt": {
+          "en": "Star Wars: Dark Forces screenshot 5",
+          "tr": "Star Wars: Dark Forces ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/949/949b762b24801aae6a86583ee32f0214.jpg",
+        "alt": {
+          "en": "Star Wars: Dark Forces screenshot 6",
+          "tr": "Star Wars: Dark Forces ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Star Wars: Dark Forces",
+      "rawgSlug": "star-wars-dark-forces-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-cloud",
+      "first-person",
+      "sci-fi",
+      "fps"
+    ],
+    "sourceUrl": "https://rawg.io/games/star-wars-dark-forces-2",
+    "sources": [],
+    "updatedAt": "2026-07-21T16:32:59.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "crash-bandicoot-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Crash Bandicoot",
+      "tr": "Crash Bandicoot"
+    },
+    "description": {
+      "en": "Platformer / Action title released in 1996 for PlayStation 1 (Score 83/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Platform / Aksiyon oyunu (Puan 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/bc1/bc141ec3f4ca8d1d14f0ab4e4f9e654d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8b4/8b4571baa92c91ab5b483d0cb85b4e11.jpg",
+        "alt": {
+          "en": "Crash Bandicoot screenshot 1",
+          "tr": "Crash Bandicoot ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e97/e97fc37d7d25c8ee5ca7cc5888caec75.jpg",
+        "alt": {
+          "en": "Crash Bandicoot screenshot 2",
+          "tr": "Crash Bandicoot ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/31a/31a1d90b70f1bfd56d7d1b814be1c835.jpg",
+        "alt": {
+          "en": "Crash Bandicoot screenshot 3",
+          "tr": "Crash Bandicoot ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6d5/6d53e2bf39ff22caa7e25fa0608a3a17.jpg",
+        "alt": {
+          "en": "Crash Bandicoot screenshot 4",
+          "tr": "Crash Bandicoot ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fce/fcecad4add6e039db595cecd28413f75.jpg",
+        "alt": {
+          "en": "Crash Bandicoot screenshot 5",
+          "tr": "Crash Bandicoot ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/941/9410c99f1ed0405a0c3b4f1e4eb89dd2.jpg",
+        "alt": {
+          "en": "Crash Bandicoot screenshot 6",
+          "tr": "Crash Bandicoot ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Crash Bandicoot",
+      "rawgSlug": "crash-bandicoot",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "playstation-platinum-range-releases",
+      "playstation-the-best-series",
+      "console-generation-exclusives-playstation",
+      "playstation-greatest-hits-releases",
+      "crash-bandicoot-series"
+    ],
+    "sourceUrl": "https://rawg.io/games/crash-bandicoot",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:55:16.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "quake-2-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Quake II",
+      "tr": "Quake II"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1997 for PlayStation 1 (Score 83/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Puan 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/0c5/0c5fcdf04048200da14b90e0e6cfaf6b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/734/7348ea07bea4f6f99e2f416bc9dc9203.jpg",
+        "alt": {
+          "en": "Quake II screenshot 1",
+          "tr": "Quake II ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/169/169179a5661508abbe346f33974f3c1c.jpg",
+        "alt": {
+          "en": "Quake II screenshot 2",
+          "tr": "Quake II ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/684/6844ea94cc2e531d391b1e6c9742a33f.jpg",
+        "alt": {
+          "en": "Quake II screenshot 3",
+          "tr": "Quake II ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/738/738003ce211851eb31a23b175abfb7ef.jpg",
+        "alt": {
+          "en": "Quake II screenshot 4",
+          "tr": "Quake II ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/da3/da33b094d6bb93948cbefec145edd524.jpg",
+        "alt": {
+          "en": "Quake II screenshot 5",
+          "tr": "Quake II ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b01/b0147044a5ccd2133dedf17a84e10f45.jpg",
+        "alt": {
+          "en": "Quake II screenshot 6",
+          "tr": "Quake II ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Quake II",
+      "rawgSlug": "quake-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "steam-cloud",
+      "atmospheric",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/quake-2",
+    "sources": [],
+    "updatedAt": "2026-10-27T05:00:00.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tomb-raider-chronicles-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Tomb Raider V: Chronicles",
+      "tr": "Tomb Raider V: Chronicles"
+    },
+    "description": {
+      "en": "Shooter / Adventure title released in 2000 for PlayStation 1 (Score 67/100).",
+      "tr": "2000 yılında çıkan PlayStation 1 için Nişancı / Macera oyunu (Puan 67/100)."
+    },
+    "developer": "RAWG",
+    "version": "2000",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 67,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/ff1/ff1f2c5ca5bd645b6ab10e15c0bcce23.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f7a/f7ae674ad38448c9fba7c85d64cd381e.jpg",
+        "alt": {
+          "en": "Tomb Raider V: Chronicles screenshot 1",
+          "tr": "Tomb Raider V: Chronicles ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fe7/fe7c4c45b227857b7b006f8d20f795b5.jpg",
+        "alt": {
+          "en": "Tomb Raider V: Chronicles screenshot 2",
+          "tr": "Tomb Raider V: Chronicles ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8ad/8adb3b867c5f09647aade62a230ef0fc.jpg",
+        "alt": {
+          "en": "Tomb Raider V: Chronicles screenshot 3",
+          "tr": "Tomb Raider V: Chronicles ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5d7/5d75515714bbe444cc1283c798057d4d.jpg",
+        "alt": {
+          "en": "Tomb Raider V: Chronicles screenshot 4",
+          "tr": "Tomb Raider V: Chronicles ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/555/5557c0a32b57ee37468e178416bf04fa.jpg",
+        "alt": {
+          "en": "Tomb Raider V: Chronicles screenshot 5",
+          "tr": "Tomb Raider V: Chronicles ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a27/a275a61bfac74d602c8ed11348d14710.jpg",
+        "alt": {
+          "en": "Tomb Raider V: Chronicles screenshot 6",
+          "tr": "Tomb Raider V: Chronicles ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tomb Raider V: Chronicles",
+      "rawgSlug": "tomb-raider-chronicles",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "third-person",
+      "classic",
+      "female-protagonist",
+      "action-adventure"
+    ],
+    "sourceUrl": "https://rawg.io/games/tomb-raider-chronicles",
+    "sources": [],
+    "updatedAt": "2026-10-23T11:26:54.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "crash-bandicoot-warped-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Crash Bandicoot 3: Warped",
+      "tr": "Crash Bandicoot 3: Warped"
+    },
+    "description": {
+      "en": "Platformer / Action title released in 1998 for PlayStation 1 (Metacritic 91/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Platform / Aksiyon oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/837/837a609b0584db5d03534c8e767861b1.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/dc7/dc7fb4fedf8ad8a1754287f6a32a787c_rqbUCMw.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 3: Warped screenshot 1",
+          "tr": "Crash Bandicoot 3: Warped ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/066/066b39c732ff6ddd316ea6b0a4de6ea6.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 3: Warped screenshot 2",
+          "tr": "Crash Bandicoot 3: Warped ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b46/b468ed4ef9805bfa3dc4f9d94708fe67.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 3: Warped screenshot 3",
+          "tr": "Crash Bandicoot 3: Warped ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6a6/6a6dafd5047620bc3fa31d092df4ec44.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 3: Warped screenshot 4",
+          "tr": "Crash Bandicoot 3: Warped ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f10/f10bf2f6b9f0ac7dd0f0e5661ce99924.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 3: Warped screenshot 5",
+          "tr": "Crash Bandicoot 3: Warped ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4c8/4c89f5030af265560642ec511e5ff0f4.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 3: Warped screenshot 6",
+          "tr": "Crash Bandicoot 3: Warped ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Crash Bandicoot 3: Warped",
+      "rawgSlug": "crash-bandicoot-warped",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "exclusive",
+      "platformer",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/crash-bandicoot-warped",
+    "sources": [],
+    "updatedAt": "2026-08-30T18:55:05.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "crash-bandicoot-2-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Crash Bandicoot 2: Cortex Strikes Back",
+      "tr": "Crash Bandicoot 2: Cortex Strikes Back"
+    },
+    "description": {
+      "en": "Platformer title released in 1997 for PlayStation 1 (Score 86/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Platform oyunu (Puan 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/a84/a84dc4980063ce934705ea5d8d241939.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/0b2/0b2b0ad4e1e77192b2e1c1025b85069c.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 2: Cortex Strikes Back screenshot 1",
+          "tr": "Crash Bandicoot 2: Cortex Strikes Back ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/395/3959c282e79f33068c0ed8f684a02c27.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 2: Cortex Strikes Back screenshot 2",
+          "tr": "Crash Bandicoot 2: Cortex Strikes Back ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dbe/dbed9e034f20e4a3623a6a072eaba130.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 2: Cortex Strikes Back screenshot 3",
+          "tr": "Crash Bandicoot 2: Cortex Strikes Back ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ec/1ecf1b0e83b2d34c671dfc47d6614572.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 2: Cortex Strikes Back screenshot 4",
+          "tr": "Crash Bandicoot 2: Cortex Strikes Back ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dab/dabf4ab51199cd4f0726fa6970f0b62d.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 2: Cortex Strikes Back screenshot 5",
+          "tr": "Crash Bandicoot 2: Cortex Strikes Back ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/42e/42e790a59723a7f8987dcf99e321fb01.jpg",
+        "alt": {
+          "en": "Crash Bandicoot 2: Cortex Strikes Back screenshot 6",
+          "tr": "Crash Bandicoot 2: Cortex Strikes Back ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Crash Bandicoot 2: Cortex Strikes Back",
+      "rawgSlug": "crash-bandicoot-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "exclusive",
+      "platformers",
+      "platformer",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/crash-bandicoot-2",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:54:53.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tomb-raider-the-last-revelation-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Tomb Raider IV: The Last Revelation",
+      "tr": "Tomb Raider IV: The Last Revelation"
+    },
+    "description": {
+      "en": "Shooter / Adventure title released in 1999 for PlayStation 1 (Score 75/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Nişancı / Macera oyunu (Puan 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/cff/cff82846d13e80b50529db058367d221.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/392/3926f993c25a49d73e750f01d187f4b5.jpg",
+        "alt": {
+          "en": "Tomb Raider IV: The Last Revelation screenshot 1",
+          "tr": "Tomb Raider IV: The Last Revelation ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f0a/f0a4e381e37033edf69db63785333806.jpg",
+        "alt": {
+          "en": "Tomb Raider IV: The Last Revelation screenshot 2",
+          "tr": "Tomb Raider IV: The Last Revelation ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/693/693b8a4d713b69cfc1be91f9fa3cc433.jpg",
+        "alt": {
+          "en": "Tomb Raider IV: The Last Revelation screenshot 3",
+          "tr": "Tomb Raider IV: The Last Revelation ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/27c/27cce8cee8dba8dfc6779ab21c8950b6.jpg",
+        "alt": {
+          "en": "Tomb Raider IV: The Last Revelation screenshot 4",
+          "tr": "Tomb Raider IV: The Last Revelation ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ef8/ef8022f5a725ba64c71a1a414701fefa.jpg",
+        "alt": {
+          "en": "Tomb Raider IV: The Last Revelation screenshot 5",
+          "tr": "Tomb Raider IV: The Last Revelation ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4ba/4ba6176314aaaff708fee3f9bd74388a.jpg",
+        "alt": {
+          "en": "Tomb Raider IV: The Last Revelation screenshot 6",
+          "tr": "Tomb Raider IV: The Last Revelation ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tomb Raider IV: The Last Revelation",
+      "rawgSlug": "tomb-raider-the-last-revelation",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "third-person",
+      "classic",
+      "female-protagonist",
+      "action-adventure"
+    ],
+    "sourceUrl": "https://rawg.io/games/tomb-raider-the-last-revelation",
+    "sources": [],
+    "updatedAt": "2026-09-18T11:25:35.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "quake-iii-arena-1999-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Quake III Arena",
+      "tr": "Quake III Arena"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1999 for PlayStation 1 (Score 87/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Puan 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/2f2/2f2eb93e32d400677b0b27f4686f7b4f.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c61/c6164c0b74d510ee7657cab07888dd03.jpg",
+        "alt": {
+          "en": "Quake III Arena screenshot 1",
+          "tr": "Quake III Arena ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2bd/2bda7e7358587215533748f41ec00e67.jpg",
+        "alt": {
+          "en": "Quake III Arena screenshot 2",
+          "tr": "Quake III Arena ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/48a/48a536a149976eca826a55139a933340.jpg",
+        "alt": {
+          "en": "Quake III Arena screenshot 3",
+          "tr": "Quake III Arena ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a23/a231315a4f1417ff64b1c6d203e6b552.jpg",
+        "alt": {
+          "en": "Quake III Arena screenshot 4",
+          "tr": "Quake III Arena ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9bc/9bcf4e1102727eea8207e3402e7a44ce.jpg",
+        "alt": {
+          "en": "Quake III Arena screenshot 5",
+          "tr": "Quake III Arena ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2d5/2d5ffc18bfb0567bea5bb8c19b6fe3da.jpg",
+        "alt": {
+          "en": "Quake III Arena screenshot 6",
+          "tr": "Quake III Arena ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Quake III Arena",
+      "rawgSlug": "quake-iii-arena-1999",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "steam-cloud",
+      "first-person",
+      "sci-fi"
+    ],
+    "sourceUrl": "https://rawg.io/games/quake-iii-arena-1999",
+    "sources": [],
+    "updatedAt": "2026-10-08T18:57:40.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "final-fantasy-ix-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Final Fantasy IX",
+      "tr": "Final Fantasy IX"
+    },
+    "description": {
+      "en": "Adventure / RPG title released in 2000 for PlayStation 1 (Metacritic 84/100).",
+      "tr": "2000 yılında çıkan PlayStation 1 için Macera / RPG oyunu (Metacritic 84/100)."
+    },
+    "developer": "RAWG",
+    "version": "2000",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 84,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/826/82626e2d7ee7d96656fb9838c2ef7302.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/59d/59d17999a5d83ebd50fb66cdbe842eab.jpg",
+        "alt": {
+          "en": "Final Fantasy IX screenshot 1",
+          "tr": "Final Fantasy IX ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bd9/bd9126c06ef386db79320b913b73946b.jpg",
+        "alt": {
+          "en": "Final Fantasy IX screenshot 2",
+          "tr": "Final Fantasy IX ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/62b/62bfc0fc68b6124e16c0e985aabc8615.jpg",
+        "alt": {
+          "en": "Final Fantasy IX screenshot 3",
+          "tr": "Final Fantasy IX ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7c9/7c9affeda8b6963e19ee552cfe26d61b.jpg",
+        "alt": {
+          "en": "Final Fantasy IX screenshot 4",
+          "tr": "Final Fantasy IX ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/509/509f123d08645dd918e2202adc24b481.jpg",
+        "alt": {
+          "en": "Final Fantasy IX screenshot 5",
+          "tr": "Final Fantasy IX ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a1b/a1bdf16857511bfdcee915a328647adb.jpg",
+        "alt": {
+          "en": "Final Fantasy IX screenshot 6",
+          "tr": "Final Fantasy IX ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Final Fantasy IX",
+      "rawgSlug": "final-fantasy-ix",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/final-fantasy-ix",
+    "sources": [],
+    "updatedAt": "2026-10-26T08:37:58.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metal-gear-solid-1-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Metal Gear Solid",
+      "tr": "Metal Gear Solid"
+    },
+    "description": {
+      "en": "Action title released in 1998 for PlayStation 1 (Metacritic 94/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Aksiyon oyunu (Metacritic 94/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 94,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/bbc/bbce6f1659d35ffc16aed8b66e9990a1.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f22/f2220a7412d41e7242d90e06e4d13e4f.jpg",
+        "alt": {
+          "en": "Metal Gear Solid screenshot 1",
+          "tr": "Metal Gear Solid ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/103/1033c7398e4007b315cd2c780dd1c044.jpg",
+        "alt": {
+          "en": "Metal Gear Solid screenshot 2",
+          "tr": "Metal Gear Solid ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/80f/80f3f4aad1e511c2a6f70cc7964a13ab.jpg",
+        "alt": {
+          "en": "Metal Gear Solid screenshot 3",
+          "tr": "Metal Gear Solid ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ca9/ca9ddc69761db536810e17f1aa81148c.jpg",
+        "alt": {
+          "en": "Metal Gear Solid screenshot 4",
+          "tr": "Metal Gear Solid ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dd1/dd10d889d25bdc0b3b5f8b91df754fcb.jpg",
+        "alt": {
+          "en": "Metal Gear Solid screenshot 5",
+          "tr": "Metal Gear Solid ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/208/208869f4456a168dedf58459d0c41773.jpg",
+        "alt": {
+          "en": "Metal Gear Solid screenshot 6",
+          "tr": "Metal Gear Solid ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Metal Gear Solid",
+      "rawgSlug": "metal-gear-solid-1",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "exclusive",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/metal-gear-solid-1",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:54:28.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "legacy-of-kain-soul-reaver-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Legacy of Kain: Soul Reaver",
+      "tr": "Legacy of Kain: Soul Reaver"
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 1999 for PlayStation 1 (Metacritic 91/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Platform / Macera oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/84d/84da5a0c948592becea7a022e151a8b0.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/336/3368fde646e599594debcfe972dbfef2.jpg",
+        "alt": {
+          "en": "Legacy of Kain: Soul Reaver screenshot 1",
+          "tr": "Legacy of Kain: Soul Reaver ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/973/9735fa098b47e2cfe73d4fd471178ae2.jpg",
+        "alt": {
+          "en": "Legacy of Kain: Soul Reaver screenshot 2",
+          "tr": "Legacy of Kain: Soul Reaver ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c21/c21f13aadb1d2635cb27b920fa179fd1.jpg",
+        "alt": {
+          "en": "Legacy of Kain: Soul Reaver screenshot 3",
+          "tr": "Legacy of Kain: Soul Reaver ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/040/040f6b4303c2481f65183fa1d7abf659.jpg",
+        "alt": {
+          "en": "Legacy of Kain: Soul Reaver screenshot 4",
+          "tr": "Legacy of Kain: Soul Reaver ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e7/9e749555da709a64da64a7051d518e1c.jpg",
+        "alt": {
+          "en": "Legacy of Kain: Soul Reaver screenshot 5",
+          "tr": "Legacy of Kain: Soul Reaver ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5d8/5d808188eb3d3202347743f5f927315e.jpg",
+        "alt": {
+          "en": "Legacy of Kain: Soul Reaver screenshot 6",
+          "tr": "Legacy of Kain: Soul Reaver ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Legacy of Kain: Soul Reaver",
+      "rawgSlug": "legacy-of-kain-soul-reaver",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/legacy-of-kain-soul-reaver",
+    "sources": [],
+    "updatedAt": "2026-09-24T10:44:26.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "worms-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Worms",
+      "tr": "Worms"
+    },
+    "description": {
+      "en": "Strategy / Arcade title released in 1995 for PlayStation 1 (Score 76/100).",
+      "tr": "1995 yılında çıkan PlayStation 1 için Strateji / Arcade oyunu (Puan 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "1995",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/8fc/8fcc2ff5c7bcdb58199b1a4326817ceb.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8a5/8a552b7ff88f5162a8215f8cd2875f4f.jpg",
+        "alt": {
+          "en": "Worms screenshot 1",
+          "tr": "Worms ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6a8/6a862e213bc2f36c456a392d58c64f79.jpg",
+        "alt": {
+          "en": "Worms screenshot 2",
+          "tr": "Worms ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/434/4344bc0b0f722cfb1bd38bfb111bac5e.jpg",
+        "alt": {
+          "en": "Worms screenshot 3",
+          "tr": "Worms ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/02c/02cdd7404af4e0dd2f3a788ba294d5ca.jpg",
+        "alt": {
+          "en": "Worms screenshot 4",
+          "tr": "Worms ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2e7/2e785a4f5c1f0a84299a1007ab3bcfb5.jpg",
+        "alt": {
+          "en": "Worms screenshot 5",
+          "tr": "Worms ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d3/9d3e99ee50662c6d190d350697c72d7a.jpg",
+        "alt": {
+          "en": "Worms screenshot 6",
+          "tr": "Worms ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Worms",
+      "rawgSlug": "worms",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "2d",
+      "classic",
+      "retro"
+    ],
+    "sourceUrl": "https://rawg.io/games/worms",
+    "sources": [],
+    "updatedAt": "2026-10-03T18:20:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "grand-theft-auto-2-1999-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Grand Theft Auto 2",
+      "tr": "Grand Theft Auto 2"
+    },
+    "description": {
+      "en": "Racing / Action title released in 1999 for PlayStation 1 (Metacritic 70/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Yarış / Aksiyon oyunu (Metacritic 70/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 70,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/623/623eff489e5fcfd3d684e902d3efad8b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/989/98958b3ea7aa183dc9f3963bf2ac59b2.jpg",
+        "alt": {
+          "en": "Grand Theft Auto 2 screenshot 1",
+          "tr": "Grand Theft Auto 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1f4/1f4e9f489f28cea260f5a6ee29982ea3.jpg",
+        "alt": {
+          "en": "Grand Theft Auto 2 screenshot 2",
+          "tr": "Grand Theft Auto 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/25d/25dc34015c215885c9056a55bb770912.jpg",
+        "alt": {
+          "en": "Grand Theft Auto 2 screenshot 3",
+          "tr": "Grand Theft Auto 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/703/7030e1bd0458c509682631df7bc22821.jpg",
+        "alt": {
+          "en": "Grand Theft Auto 2 screenshot 4",
+          "tr": "Grand Theft Auto 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/906/90637bc5d974c120167683c9912a20ca.jpg",
+        "alt": {
+          "en": "Grand Theft Auto 2 screenshot 5",
+          "tr": "Grand Theft Auto 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/35e/35e469f0cea01e82fd5dc9b8935d3ee0.jpg",
+        "alt": {
+          "en": "Grand Theft Auto 2 screenshot 6",
+          "tr": "Grand Theft Auto 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Grand Theft Auto 2",
+      "rawgSlug": "grand-theft-auto-2-1999",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "open-world",
+      "2d",
+      "gore"
+    ],
+    "sourceUrl": "https://rawg.io/games/grand-theft-auto-2-1999",
+    "sources": [],
+    "updatedAt": "2026-11-13T14:19:34.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "final-fantasy-viii-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "rpg",
+    "category": {
+      "en": "RPG",
+      "tr": "RPG"
+    },
+    "title": {
+      "en": "FINAL FANTASY VIII",
+      "tr": "FINAL FANTASY VIII"
+    },
+    "description": {
+      "en": "RPG title released in 1999 for PlayStation 1 (Metacritic 90/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için RPG oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/f77/f77510051b6a61decc35c5257193fc9e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e36/e36375d17c71328adf39ead2b9254fe9.jpg",
+        "alt": {
+          "en": "FINAL FANTASY VIII screenshot 1",
+          "tr": "FINAL FANTASY VIII ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7e5/7e550abc0aadd540c33917cf70e6eed9.jpg",
+        "alt": {
+          "en": "FINAL FANTASY VIII screenshot 2",
+          "tr": "FINAL FANTASY VIII ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/943/943d315d2103ed56a0592d317587bf91.jpg",
+        "alt": {
+          "en": "FINAL FANTASY VIII screenshot 3",
+          "tr": "FINAL FANTASY VIII ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b1e/b1e6645df7be98114533e5d6691f65fc.jpg",
+        "alt": {
+          "en": "FINAL FANTASY VIII screenshot 4",
+          "tr": "FINAL FANTASY VIII ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bc3/bc31ec71aea3a517433308f2d5451a0e.jpg",
+        "alt": {
+          "en": "FINAL FANTASY VIII screenshot 5",
+          "tr": "FINAL FANTASY VIII ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6c7/6c74b7375ed4a451f229a50523040ce3.jpg",
+        "alt": {
+          "en": "FINAL FANTASY VIII screenshot 6",
+          "tr": "FINAL FANTASY VIII ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "FINAL FANTASY VIII",
+      "rawgSlug": "final-fantasy-viii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/final-fantasy-viii",
+    "sources": [],
+    "updatedAt": "2026-10-26T08:37:59.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "grand-theft-auto-1998-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Grand Theft Auto",
+      "tr": "Grand Theft Auto"
+    },
+    "description": {
+      "en": "Action title released in 1997 for PlayStation 1 (Score 77/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Aksiyon oyunu (Puan 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/786/786f9a212646c793ccbad196cba2cf36.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f5/8f577f88855945518d24edf59dba9dff.jpg",
+        "alt": {
+          "en": "Grand Theft Auto screenshot 1",
+          "tr": "Grand Theft Auto ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aab/aabcb87421c5e3f5af4ac39d62b01eae.jpg",
+        "alt": {
+          "en": "Grand Theft Auto screenshot 2",
+          "tr": "Grand Theft Auto ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/311/31181ab4311854dcccb0da8dcb25a8d1.jpg",
+        "alt": {
+          "en": "Grand Theft Auto screenshot 3",
+          "tr": "Grand Theft Auto ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ab1/ab1f0c435afa5678392dae0da2db484e.jpg",
+        "alt": {
+          "en": "Grand Theft Auto screenshot 4",
+          "tr": "Grand Theft Auto ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9b7/9b7995efbe72ca11c11bdc0101c69eae.jpg",
+        "alt": {
+          "en": "Grand Theft Auto screenshot 5",
+          "tr": "Grand Theft Auto ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/afb/afbe0f8a33778e5434155eaf9b97076b.jpg",
+        "alt": {
+          "en": "Grand Theft Auto screenshot 6",
+          "tr": "Grand Theft Auto ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Grand Theft Auto",
+      "rawgSlug": "grand-theft-auto-1998",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "open-world",
+      "2d",
+      "classic"
+    ],
+    "sourceUrl": "https://rawg.io/games/grand-theft-auto-1998",
+    "sources": [],
+    "updatedAt": "2026-10-24T14:15:24.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "x-com-terror-from-the-deep-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "X-COM: Terror From the Deep",
+      "tr": "X-COM: Terror From the Deep"
+    },
+    "description": {
+      "en": "Strategy title released in 1995 for PlayStation 1 (Score 69/100).",
+      "tr": "1995 yılında çıkan PlayStation 1 için Strateji oyunu (Puan 69/100)."
+    },
+    "developer": "RAWG",
+    "version": "1995",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 69,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/75c/75c109a3b66c84787f137d948292c44a_DIwNRKi.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/4ec/4ec63f00bdd2bdf3fe19bd0a59910e30.jpg",
+        "alt": {
+          "en": "X-COM: Terror From the Deep screenshot 1",
+          "tr": "X-COM: Terror From the Deep ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6ff/6ff1a760b98206cfb32948907f206c13.jpg",
+        "alt": {
+          "en": "X-COM: Terror From the Deep screenshot 2",
+          "tr": "X-COM: Terror From the Deep ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dd7/dd7cdc4e83f4d6cb693906dfadcafcb1.jpg",
+        "alt": {
+          "en": "X-COM: Terror From the Deep screenshot 3",
+          "tr": "X-COM: Terror From the Deep ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/900/9000e6e3187ee636cea5c5df668cc0a3.jpg",
+        "alt": {
+          "en": "X-COM: Terror From the Deep screenshot 4",
+          "tr": "X-COM: Terror From the Deep ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3a6/3a6182d431ff46299db603d92404b725.jpg",
+        "alt": {
+          "en": "X-COM: Terror From the Deep screenshot 5",
+          "tr": "X-COM: Terror From the Deep ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/549/549286cf139d5ba1d59501fa7103f58c.jpg",
+        "alt": {
+          "en": "X-COM: Terror From the Deep screenshot 6",
+          "tr": "X-COM: Terror From the Deep ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "X-COM: Terror From the Deep",
+      "rawgSlug": "x-com-terror-from-the-deep",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "sci-fi",
+      "horror",
+      "difficult",
+      "classic"
+    ],
+    "sourceUrl": "https://rawg.io/games/x-com-terror-from-the-deep",
+    "sources": [],
+    "updatedAt": "2026-04-02T11:11:33.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "final-doom-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Final DOOM",
+      "tr": "Final DOOM"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1996 for PlayStation 1 (Score 83/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Puan 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/6cc/6ccd31115c74d58edb41d0855567d00f.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/fd9/fd95d43b694daa6065c84b3341ac0b27.jpg",
+        "alt": {
+          "en": "Final DOOM screenshot 1",
+          "tr": "Final DOOM ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/766/76643890b8a8ea42aeaea8617c99d133.jpg",
+        "alt": {
+          "en": "Final DOOM screenshot 2",
+          "tr": "Final DOOM ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/875/875d1a5f30c1e1b4f053e37cb46e2f8e.jpg",
+        "alt": {
+          "en": "Final DOOM screenshot 3",
+          "tr": "Final DOOM ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f99/f994797b2d361a898012411046db6a12.jpg",
+        "alt": {
+          "en": "Final DOOM screenshot 4",
+          "tr": "Final DOOM ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cc7/cc76b17e043684b13bf70496ce9df795.jpg",
+        "alt": {
+          "en": "Final DOOM screenshot 5",
+          "tr": "Final DOOM ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cec/cec71d7ccc02925322a66f43e047d7e5.jpg",
+        "alt": {
+          "en": "Final DOOM screenshot 6",
+          "tr": "Final DOOM ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Final DOOM",
+      "rawgSlug": "final-doom",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/final-doom",
+    "sources": [],
+    "updatedAt": "2026-09-22T03:50:22.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "castlevania-sotn-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Castlevania: Symphony of the Night",
+      "tr": "Castlevania: Symphony of the Night"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 1997 for PlayStation 1 (Metacritic 93/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Macera / Aksiyon oyunu (Metacritic 93/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 93,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/45d/45da4dc311d84b79230317d7b24a3dec.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/114/114e8be5bec2594bb15c6dbd28fd0f5d.jpg",
+        "alt": {
+          "en": "Castlevania: Symphony of the Night screenshot 1",
+          "tr": "Castlevania: Symphony of the Night ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/004/0046de9d8b1d386c91c6f70395116795_xgozPZN.jpg",
+        "alt": {
+          "en": "Castlevania: Symphony of the Night screenshot 2",
+          "tr": "Castlevania: Symphony of the Night ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b27/b27766efe4c292c68c8fc64e08fe7c48.jpg",
+        "alt": {
+          "en": "Castlevania: Symphony of the Night screenshot 3",
+          "tr": "Castlevania: Symphony of the Night ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/499/499d826cb2bc5a005f0bc740ec0a7466_Vx90HsY.jpg",
+        "alt": {
+          "en": "Castlevania: Symphony of the Night screenshot 4",
+          "tr": "Castlevania: Symphony of the Night ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/48b/48b76457666ccfed4cd5e0e86a388db6_UCG7PYb.jpg",
+        "alt": {
+          "en": "Castlevania: Symphony of the Night screenshot 5",
+          "tr": "Castlevania: Symphony of the Night ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/261/2611127d7c893b61b325ffafb8f1b13c.jpg",
+        "alt": {
+          "en": "Castlevania: Symphony of the Night screenshot 6",
+          "tr": "Castlevania: Symphony of the Night ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Castlevania: Symphony of the Night",
+      "rawgSlug": "castlevania-sotn",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "rpg",
+      "music",
+      "achievements",
+      "battle"
+    ],
+    "sourceUrl": "https://rawg.io/games/castlevania-sotn",
+    "sources": [],
+    "updatedAt": "2026-10-17T02:23:04.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "doom-2-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "DOOM",
+      "tr": "DOOM"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1993 for PlayStation 1 (Metacritic 83/100).",
+      "tr": "1993 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1993",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/47b/47b50d880be8453bf9cda6e5c007bc26.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ed8/ed891c2d8a68424565d3a23d46f665eb.jpg",
+        "alt": {
+          "en": "DOOM screenshot 1",
+          "tr": "DOOM ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a93/a930d68632e464389342740897f45e1d.jpg",
+        "alt": {
+          "en": "DOOM screenshot 2",
+          "tr": "DOOM ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f92/f92d7160c5694bd519bfc9fbcd364fec.jpg",
+        "alt": {
+          "en": "DOOM screenshot 3",
+          "tr": "DOOM ekran görüntüsü 3"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "DOOM",
+      "rawgSlug": "doom-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "first-person",
+      "sci-fi",
+      "horror",
+      "fps"
+    ],
+    "sourceUrl": "https://rawg.io/games/doom-2",
+    "sources": [],
+    "updatedAt": "2026-11-15T03:31:12.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "oddworld-abes-exoddus-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Oddworld: Abe's Exoddus",
+      "tr": "Oddworld: Abe's Exoddus"
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 1998 for PlayStation 1 (Score 82/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Platform / Macera oyunu (Puan 82/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 82,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/ba5/ba5f0dd05f44cc48c918683764e3a125.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2ef/2ef3de460e645166d52ff900317deacb.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Exoddus screenshot 1",
+          "tr": "Oddworld: Abe's Exoddus ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ccb/ccb105e88f819c5e00938c42f127c4b2.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Exoddus screenshot 2",
+          "tr": "Oddworld: Abe's Exoddus ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5c3/5c3301cd13b744a2677f854d3418156a.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Exoddus screenshot 3",
+          "tr": "Oddworld: Abe's Exoddus ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/af2/af2b7402a0749aa0df11fff2159dc269.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Exoddus screenshot 4",
+          "tr": "Oddworld: Abe's Exoddus ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e3c/e3cefcaa08fa9e23785b6b35e0430277.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Exoddus screenshot 5",
+          "tr": "Oddworld: Abe's Exoddus ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c51/c517ee2a821c6e92227c4fd52d287713.jpg",
+        "alt": {
+          "en": "Oddworld: Abe's Exoddus screenshot 6",
+          "tr": "Oddworld: Abe's Exoddus ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Oddworld: Abe's Exoddus",
+      "rawgSlug": "oddworld-abes-exoddus",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "2d",
+      "funny",
+      "classic"
+    ],
+    "sourceUrl": "https://rawg.io/games/oddworld-abes-exoddus",
+    "sources": [],
+    "updatedAt": "2026-11-18T00:37:02.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "spyro-the-dragon-2007-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Spyro the Dragon",
+      "tr": "Spyro the Dragon"
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 1998 for PlayStation 1 (Score 84/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Platform / Macera oyunu (Puan 84/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 84,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/243/2434639122ce19d4811048cd11ab5ba0.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/7a3/7a3527964b9227b22aff358e277e2b01.jpg",
+        "alt": {
+          "en": "Spyro the Dragon screenshot 1",
+          "tr": "Spyro the Dragon ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/025/025908f265275bd5cde0157e36a43384.jpg",
+        "alt": {
+          "en": "Spyro the Dragon screenshot 2",
+          "tr": "Spyro the Dragon ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ae8/ae81442b0ba0630dc063b18f1cb88884.jpg",
+        "alt": {
+          "en": "Spyro the Dragon screenshot 3",
+          "tr": "Spyro the Dragon ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/765/765f4471838bc39e4e3f31c804b6dfc3.jpg",
+        "alt": {
+          "en": "Spyro the Dragon screenshot 4",
+          "tr": "Spyro the Dragon ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a57/a570994d77c3539a8c8a488f8ddc525a.jpg",
+        "alt": {
+          "en": "Spyro the Dragon screenshot 5",
+          "tr": "Spyro the Dragon ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/54a/54a2d4b3aa9306e6e71305cc010c1600.jpg",
+        "alt": {
+          "en": "Spyro the Dragon screenshot 6",
+          "tr": "Spyro the Dragon ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Spyro the Dragon",
+      "rawgSlug": "spyro-the-dragon-2007",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "platformer",
+      "adventure",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/spyro-the-dragon-2007",
+    "sources": [],
+    "updatedAt": "2026-11-17T20:30:43.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "syndicate-wars-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Syndicate Wars",
+      "tr": "Syndicate Wars"
+    },
+    "description": {
+      "en": "Strategy / Action title released in 1996 for PlayStation 1 (Score 56/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Strateji / Aksiyon oyunu (Puan 56/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 56,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/458/458b15ae352f92a2cb160d16c03dd4cf.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/869/86953bea568ccdcb8e5a65a9ad92934f.jpg",
+        "alt": {
+          "en": "Syndicate Wars screenshot 1",
+          "tr": "Syndicate Wars ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/98e/98e062f336e0d41c89c7cbcedd6e4220.jpg",
+        "alt": {
+          "en": "Syndicate Wars screenshot 2",
+          "tr": "Syndicate Wars ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/87c/87cdf9da76edf33cb683bd466a686097.jpg",
+        "alt": {
+          "en": "Syndicate Wars screenshot 3",
+          "tr": "Syndicate Wars ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f01/f01708e97b85e9a6a38c38b1d270fcf4.jpg",
+        "alt": {
+          "en": "Syndicate Wars screenshot 4",
+          "tr": "Syndicate Wars ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5b9/5b90947d1f5d044ef34279042a87fecc.jpg",
+        "alt": {
+          "en": "Syndicate Wars screenshot 5",
+          "tr": "Syndicate Wars ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dd1/dd14730f98e976a77a330688d3e8b312.jpg",
+        "alt": {
+          "en": "Syndicate Wars screenshot 6",
+          "tr": "Syndicate Wars ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Syndicate Wars",
+      "rawgSlug": "syndicate-wars",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "strategy",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/syndicate-wars",
+    "sources": [],
+    "updatedAt": "2026-07-31T13:59:16.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "worms-pinball-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "Worms Pinball",
+      "tr": "Worms Pinball"
+    },
+    "description": {
+      "en": "Casual title released in 2011 for PlayStation 1 (Score 42/100).",
+      "tr": "2011 yılında çıkan PlayStation 1 için Günlük oyunu (Puan 42/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 42,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/df5/df5eee47410d0625f4f2ef708c95faf9.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/710/71019caeb1ac85078ec6571d091891bc.jpg",
+        "alt": {
+          "en": "Worms Pinball screenshot 1",
+          "tr": "Worms Pinball ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9be/9bebd24ece4944fbca0fb43f120018f8.jpg",
+        "alt": {
+          "en": "Worms Pinball screenshot 2",
+          "tr": "Worms Pinball ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b69/b6971f0344f71f674b8f2896fb969d5f.jpg",
+        "alt": {
+          "en": "Worms Pinball screenshot 3",
+          "tr": "Worms Pinball ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/712/712ce0b97588b54e5722634791cbbdf0.jpg",
+        "alt": {
+          "en": "Worms Pinball screenshot 4",
+          "tr": "Worms Pinball ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/38b/38b99db7e68db386cdacd38e371b228b.jpg",
+        "alt": {
+          "en": "Worms Pinball screenshot 5",
+          "tr": "Worms Pinball ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0b7/0b75ae10d909a9f1ab5a66c6138078fa.jpg",
+        "alt": {
+          "en": "Worms Pinball screenshot 6",
+          "tr": "Worms Pinball ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Worms Pinball",
+      "rawgSlug": "worms-pinball",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "exclusive",
+      "pinball",
+      "casual",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/worms-pinball",
+    "sources": [],
+    "updatedAt": "2026-01-30T19:52:45.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "silent-hill-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Silent Hill",
+      "tr": "Silent Hill"
+    },
+    "description": {
+      "en": "Action title released in 1999 for PlayStation 1 (Metacritic 86/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Aksiyon oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/15d/15db2360d1130ba8c10573586588b0bd.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/eb4/eb4dc938cb3467681355bd4e67765a8c.jpg",
+        "alt": {
+          "en": "Silent Hill screenshot 1",
+          "tr": "Silent Hill ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9f6/9f610b866680c7b8892c857093d9b603.jpg",
+        "alt": {
+          "en": "Silent Hill screenshot 2",
+          "tr": "Silent Hill ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/52b/52bc69b7fcf330c8f57063af77c8789d.jpg",
+        "alt": {
+          "en": "Silent Hill screenshot 3",
+          "tr": "Silent Hill ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/690/6900a9b2e72b04189736dad80f6b98dd.jpg",
+        "alt": {
+          "en": "Silent Hill screenshot 4",
+          "tr": "Silent Hill ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7f3/7f3ccfc1a53ee57ddfb43fb009c7e8ea.jpg",
+        "alt": {
+          "en": "Silent Hill screenshot 5",
+          "tr": "Silent Hill ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/eb2/eb28922addfc37ddf9d1fb8072c247ea.jpg",
+        "alt": {
+          "en": "Silent Hill screenshot 6",
+          "tr": "Silent Hill ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Silent Hill",
+      "rawgSlug": "silent-hill",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "great-soundtrack",
+      "horror",
+      "exclusive",
+      "survival-horror"
+    ],
+    "sourceUrl": "https://rawg.io/games/silent-hill",
+    "sources": [],
+    "updatedAt": "2026-11-21T05:51:06.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "spyro-2-riptos-rage-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "arcade",
+    "category": {
+      "en": "Arcade",
+      "tr": "Arcade"
+    },
+    "title": {
+      "en": "Spyro 2: Ripto's Rage!",
+      "tr": "Spyro 2: Ripto's Rage!"
+    },
+    "description": {
+      "en": "Arcade / Platformer title released in 1999 for PlayStation 1 (Score 83/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Arcade / Platform oyunu (Puan 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/8da/8da6960974c2348585e6e99603c52126.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/65d/65d0f15c475cf51efd86aa9a2391524a.jpg",
+        "alt": {
+          "en": "Spyro 2: Ripto's Rage! screenshot 1",
+          "tr": "Spyro 2: Ripto's Rage! ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/613/613c141ffd6313dfdf4d5c29a68982bf.jpg",
+        "alt": {
+          "en": "Spyro 2: Ripto's Rage! screenshot 2",
+          "tr": "Spyro 2: Ripto's Rage! ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d69/d6983e58b0e1cbbaf9605fa910c0ed53.jpg",
+        "alt": {
+          "en": "Spyro 2: Ripto's Rage! screenshot 3",
+          "tr": "Spyro 2: Ripto's Rage! ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9c9/9c91b139cc208098a2c87c69436ce5e7.jpg",
+        "alt": {
+          "en": "Spyro 2: Ripto's Rage! screenshot 4",
+          "tr": "Spyro 2: Ripto's Rage! ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a53/a53f6d1ac8cd114acdd6540ee469a936.jpg",
+        "alt": {
+          "en": "Spyro 2: Ripto's Rage! screenshot 5",
+          "tr": "Spyro 2: Ripto's Rage! ekran görüntüsü 5"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Spyro 2: Ripto's Rage!",
+      "rawgSlug": "spyro-2-riptos-rage",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "arcade",
+      "platformer",
+      "adventure",
+      "action"
+    ],
+    "sourceUrl": "https://rawg.io/games/spyro-2-riptos-rage",
+    "sources": [],
+    "updatedAt": "2026-09-22T17:10:13.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metal-slug-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "METAL SLUG",
+      "tr": "METAL SLUG"
+    },
+    "description": {
+      "en": "Casual / Arcade title released in 1996 for PlayStation 1 (Score 83/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Günlük / Arcade oyunu (Puan 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/3c3/3c39531ddeb8cf8c12ab3f0b6ec968d3.jpeg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8fc/8fc0f0b362c415057a0fa09ffae215ed.jpg",
+        "alt": {
+          "en": "METAL SLUG screenshot 1",
+          "tr": "METAL SLUG ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b05/b05fcd181e60ebef77bf0b8fec162960.jpg",
+        "alt": {
+          "en": "METAL SLUG screenshot 2",
+          "tr": "METAL SLUG ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/df6/df6c95b2ce3bbd230ae5ef563186011c.jpg",
+        "alt": {
+          "en": "METAL SLUG screenshot 3",
+          "tr": "METAL SLUG ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f9d/f9d269f0c0d4560012361a0b9521d6d6.jpg",
+        "alt": {
+          "en": "METAL SLUG screenshot 4",
+          "tr": "METAL SLUG ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/002/0020e86c93e1d4b8030cae37319293f7.jpg",
+        "alt": {
+          "en": "METAL SLUG screenshot 5",
+          "tr": "METAL SLUG ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/51c/51c646a7fb7c2ed09f2f33b846eea601.jpg",
+        "alt": {
+          "en": "METAL SLUG screenshot 6",
+          "tr": "METAL SLUG ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "METAL SLUG",
+      "rawgSlug": "metal-slug",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/metal-slug",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:55:53.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "mdk-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "MDK",
+      "tr": "MDK"
+    },
+    "description": {
+      "en": "Action title released in 1997 for PlayStation 1 (Score 71/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Aksiyon oyunu (Puan 71/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 71,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/19c/19ca7f49ab8f11e213de811f260f6786.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c9c/c9ca76922550c1cdfbb0ccdd988cad72.jpg",
+        "alt": {
+          "en": "MDK screenshot 1",
+          "tr": "MDK ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8fc/8fc2c0cf7fd631754fc6ad59be4495e4.jpg",
+        "alt": {
+          "en": "MDK screenshot 2",
+          "tr": "MDK ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aea/aea3cd455936e6ed7ca97d39bd8d3d81.jpg",
+        "alt": {
+          "en": "MDK screenshot 3",
+          "tr": "MDK ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/538/5383483110456046892d458008ed6c0d.jpg",
+        "alt": {
+          "en": "MDK screenshot 4",
+          "tr": "MDK ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/324/324bf7fb7ddfea9dbe5846395b5751b4.jpg",
+        "alt": {
+          "en": "MDK screenshot 5",
+          "tr": "MDK ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c73/c732ba86a1937b35afc76a2ca48f6ace.jpg",
+        "alt": {
+          "en": "MDK screenshot 6",
+          "tr": "MDK ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "MDK",
+      "rawgSlug": "mdk",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "classic",
+      "third-person-shooter",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/mdk",
+    "sources": [],
+    "updatedAt": "2026-07-21T17:03:03.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "hexen-for-windows-95-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "HeXen: Beyond Heretic",
+      "tr": "HeXen: Beyond Heretic"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1995 for PlayStation 1 (Score 76/100).",
+      "tr": "1995 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Puan 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "1995",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/0fa/0fa357fe0160e2b592a6fafff0e6683e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/35a/35a486c5f5e47a14e01f6f5087ea8262.jpg",
+        "alt": {
+          "en": "HeXen: Beyond Heretic screenshot 1",
+          "tr": "HeXen: Beyond Heretic ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/411/411e183000457322571ff3cc70956c7c.jpg",
+        "alt": {
+          "en": "HeXen: Beyond Heretic screenshot 2",
+          "tr": "HeXen: Beyond Heretic ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0ad/0ad8d0eca097e7e5c9ce382d0651e9cb.jpg",
+        "alt": {
+          "en": "HeXen: Beyond Heretic screenshot 3",
+          "tr": "HeXen: Beyond Heretic ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fff/fff5b69dd4c89f6d622fe1e8cd4d067d.jpg",
+        "alt": {
+          "en": "HeXen: Beyond Heretic screenshot 4",
+          "tr": "HeXen: Beyond Heretic ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e9/9e922e2d2ab3db06dd9da95beffe8195.jpg",
+        "alt": {
+          "en": "HeXen: Beyond Heretic screenshot 5",
+          "tr": "HeXen: Beyond Heretic ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ee3/ee3600773008cf19d761dc6b59ce3dbb.jpg",
+        "alt": {
+          "en": "HeXen: Beyond Heretic screenshot 6",
+          "tr": "HeXen: Beyond Heretic ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "HeXen: Beyond Heretic",
+      "rawgSlug": "hexen-for-windows-95",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "rpg",
+      "cooperative",
+      "fps"
+    ],
+    "sourceUrl": "https://rawg.io/games/hexen-for-windows-95",
+    "sources": [],
+    "updatedAt": "2026-09-22T04:36:27.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "medievil-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "MediEvil I",
+      "tr": "MediEvil I"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 1998 for PlayStation 1 (Metacritic 67/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Macera / Aksiyon oyunu (Metacritic 67/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 67,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/1a8/1a870c422546de20efd4b0477aed1846.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e10/e1088b6f1448a3afd7b7f703f83ebc32.jpg",
+        "alt": {
+          "en": "MediEvil I screenshot 1",
+          "tr": "MediEvil I ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a88/a88b721dcfc4376702e22238d1d93a2a.jpg",
+        "alt": {
+          "en": "MediEvil I screenshot 2",
+          "tr": "MediEvil I ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dea/dea30b29ca620a94d644dda271dfe4bd.jpg",
+        "alt": {
+          "en": "MediEvil I screenshot 3",
+          "tr": "MediEvil I ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/582/58227e8b6db6af7567da36decc68f705.jpg",
+        "alt": {
+          "en": "MediEvil I screenshot 4",
+          "tr": "MediEvil I ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7f5/7f556ed1272751bf6507f30153aff09c.jpg",
+        "alt": {
+          "en": "MediEvil I screenshot 5",
+          "tr": "MediEvil I ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7d7/7d76e4f3378f3616de2500e3f595532d.jpg",
+        "alt": {
+          "en": "MediEvil I screenshot 6",
+          "tr": "MediEvil I ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "MediEvil I",
+      "rawgSlug": "medievil",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "adventure",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/medievil",
+    "sources": [],
+    "updatedAt": "2026-09-24T10:15:55.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-messenger-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "educational",
+    "category": {
+      "en": "Educational",
+      "tr": "Eğitici"
+    },
+    "title": {
+      "en": "Louvre: The Final Curse",
+      "tr": "Louvre: The Final Curse"
+    },
+    "description": {
+      "en": "Educational / Adventure title released in 2001 for PlayStation 1 (Metacritic 61/100).",
+      "tr": "2001 yılında çıkan PlayStation 1 için Eğitici / Macera oyunu (Metacritic 61/100)."
+    },
+    "developer": "RAWG",
+    "version": "2001",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 61,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/2e8/2e8063435066d63339f137fc71a73f4e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/5af/5af37fa862befca958650378e867f964.jpg",
+        "alt": {
+          "en": "Louvre: The Final Curse screenshot 1",
+          "tr": "Louvre: The Final Curse ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/953/953acff7586194556db659e6b3546875.jpg",
+        "alt": {
+          "en": "Louvre: The Final Curse screenshot 2",
+          "tr": "Louvre: The Final Curse ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e1/9e181c9c105de516dab1b067334c3ef3.jpg",
+        "alt": {
+          "en": "Louvre: The Final Curse screenshot 3",
+          "tr": "Louvre: The Final Curse ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c7b/c7bc7029d088e4b7784d28e00d3ece5d.jpg",
+        "alt": {
+          "en": "Louvre: The Final Curse screenshot 4",
+          "tr": "Louvre: The Final Curse ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/417/4171eaa106533a8c8a993088c698c5bf.jpg",
+        "alt": {
+          "en": "Louvre: The Final Curse screenshot 5",
+          "tr": "Louvre: The Final Curse ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/056/0566603165f5c0a8735384784997f64a.jpg",
+        "alt": {
+          "en": "Louvre: The Final Curse screenshot 6",
+          "tr": "Louvre: The Final Curse ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Louvre: The Final Curse",
+      "rawgSlug": "the-messenger",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "2d",
+      "educational",
+      "adventure",
+      "action"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-messenger",
+    "sources": [],
+    "updatedAt": "2025-04-14T18:28:28.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "diablo-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Diablo",
+      "tr": "Diablo"
+    },
+    "description": {
+      "en": "Action / RPG title released in 1996 for PlayStation 1 (Metacritic 94/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Aksiyon / RPG oyunu (Metacritic 94/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 94,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/923/923a5dd13b6e79dd23ab2d09934f0e8d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b0c/b0cbda2b3b1e42de773ae747363d6095.jpg",
+        "alt": {
+          "en": "Diablo screenshot 1",
+          "tr": "Diablo ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c1b/c1bbbede6e8f0926e1813ae1cb7a1f80_9FXOLVk.jpg",
+        "alt": {
+          "en": "Diablo screenshot 2",
+          "tr": "Diablo ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/617/617cc168a8e366fc15dbd130b53c9a1b.jpg",
+        "alt": {
+          "en": "Diablo screenshot 3",
+          "tr": "Diablo ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9f8/9f81f38bee7b596b51b06ae5b040e65a.jpg",
+        "alt": {
+          "en": "Diablo screenshot 4",
+          "tr": "Diablo ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/493/493692329598ca9f7b5d28f14bd77b22.jpg",
+        "alt": {
+          "en": "Diablo screenshot 5",
+          "tr": "Diablo ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0bc/0bc8e5be32e201b2f9b833ddb6122adb.jpg",
+        "alt": {
+          "en": "Diablo screenshot 6",
+          "tr": "Diablo ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Diablo",
+      "rawgSlug": "diablo",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "cooperative",
+      "role-playing",
+      "action"
+    ],
+    "sourceUrl": "https://rawg.io/games/diablo",
+    "sources": [],
+    "updatedAt": "2026-10-30T08:59:56.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tekken-3-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "fighting",
+    "category": {
+      "en": "Fighting",
+      "tr": "Dövüş"
+    },
+    "title": {
+      "en": "Tekken 3",
+      "tr": "Tekken 3"
+    },
+    "description": {
+      "en": "Fighting title released in 1997 for PlayStation 1 (Metacritic 96/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Dövüş oyunu (Metacritic 96/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 96,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/4aa/4aa1440932f4a12d9d0ea70a5e2164f6.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/78b/78bc6da0a5957f2013fff93b698b7cb6_OHGlt5j.jpg",
+        "alt": {
+          "en": "Tekken 3 screenshot 1",
+          "tr": "Tekken 3 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/227/227b8bb79a9c242381bde640bc19647d.jpg",
+        "alt": {
+          "en": "Tekken 3 screenshot 2",
+          "tr": "Tekken 3 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/168/1686c77d1759c0d6749cdf8b5726bd45.jpg",
+        "alt": {
+          "en": "Tekken 3 screenshot 3",
+          "tr": "Tekken 3 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/774/774629dfbbe67ce0b7c2c0f960a5ec7b.jpg",
+        "alt": {
+          "en": "Tekken 3 screenshot 4",
+          "tr": "Tekken 3 ekran görüntüsü 4"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tekken 3",
+      "rawgSlug": "tekken-3",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "exclusive",
+      "fighting",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/tekken-3",
+    "sources": [],
+    "updatedAt": "2026-11-19T23:58:05.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "duke-nukem-3d-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Duke Nukem 3D",
+      "tr": "Duke Nukem 3D"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1996 for PlayStation 1 (Metacritic 84/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Metacritic 84/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 84,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/4e2/4e2270713ba0d59ea1dba61158ff842e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c2a/c2a8e47cc09826c6744609d0b0d4c49b_vslVHgi.jpg",
+        "alt": {
+          "en": "Duke Nukem 3D screenshot 1",
+          "tr": "Duke Nukem 3D ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a2b/a2b4ff0d23f5f42d04ea8c98fc72f251.jpg",
+        "alt": {
+          "en": "Duke Nukem 3D screenshot 2",
+          "tr": "Duke Nukem 3D ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cad/cad7e456a6b385ad04a0345aab4e8834_Kb8M7Lz.jpg",
+        "alt": {
+          "en": "Duke Nukem 3D screenshot 3",
+          "tr": "Duke Nukem 3D ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e70/e70f4da5313f2a1d7750c9aea017135e.jpg",
+        "alt": {
+          "en": "Duke Nukem 3D screenshot 4",
+          "tr": "Duke Nukem 3D ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3e6/3e67995acb61763d6476d7192cf43ec4_vdVwJ0N.jpg",
+        "alt": {
+          "en": "Duke Nukem 3D screenshot 5",
+          "tr": "Duke Nukem 3D ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/48b/48b92bed1a813b0aa715b45815f87be9.jpg",
+        "alt": {
+          "en": "Duke Nukem 3D screenshot 6",
+          "tr": "Duke Nukem 3D ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Duke Nukem 3D",
+      "rawgSlug": "duke-nukem-3d",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "cooperative",
+      "first-person",
+      "fps"
+    ],
+    "sourceUrl": "https://rawg.io/games/duke-nukem-3d",
+    "sources": [],
+    "updatedAt": "2026-11-15T03:31:44.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "harry-potter-and-the-philosophers-stone-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Harry Potter and the Sorcerer's Stone",
+      "tr": "Harry Potter and the Sorcerer's Stone"
+    },
+    "description": {
+      "en": "Platformer / Arcade title released in 2001 for PlayStation 1 (Metacritic 60/100).",
+      "tr": "2001 yılında çıkan PlayStation 1 için Platform / Arcade oyunu (Metacritic 60/100)."
+    },
+    "developer": "RAWG",
+    "version": "2001",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 60,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/fd6/fd6e2692bd4eeb470bccbf282155839b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d16/d16fb6f5b7a05f23efe5e584423d9607.jpg",
+        "alt": {
+          "en": "Harry Potter and the Sorcerer's Stone screenshot 1",
+          "tr": "Harry Potter and the Sorcerer's Stone ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c38/c383ffbc5ee7b4c93aec5622abab9cba.jpg",
+        "alt": {
+          "en": "Harry Potter and the Sorcerer's Stone screenshot 2",
+          "tr": "Harry Potter and the Sorcerer's Stone ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/723/723f7759487600ce46b1b608c9cd2ce2.jpg",
+        "alt": {
+          "en": "Harry Potter and the Sorcerer's Stone screenshot 3",
+          "tr": "Harry Potter and the Sorcerer's Stone ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/22a/22a7bb558d043a838dab6d251734c681.jpg",
+        "alt": {
+          "en": "Harry Potter and the Sorcerer's Stone screenshot 4",
+          "tr": "Harry Potter and the Sorcerer's Stone ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2a6/2a6398f6149455c9eb093f9bb7d45635.jpg",
+        "alt": {
+          "en": "Harry Potter and the Sorcerer's Stone screenshot 5",
+          "tr": "Harry Potter and the Sorcerer's Stone ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e21/e21c3393e658b2333d26563ab8fdedc3.jpg",
+        "alt": {
+          "en": "Harry Potter and the Sorcerer's Stone screenshot 6",
+          "tr": "Harry Potter and the Sorcerer's Stone ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Harry Potter and the Sorcerer's Stone",
+      "rawgSlug": "harry-potter-and-the-philosophers-stone",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "platformer",
+      "arcade",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/harry-potter-and-the-philosophers-stone",
+    "sources": [],
+    "updatedAt": "2026-10-30T08:59:50.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "oddworld-munchs-oddysee-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Oddworld: Munch's Oddysee (1997)",
+      "tr": "Oddworld: Munch's Oddysee (1997)"
+    },
+    "description": {
+      "en": "Strategy / Adventure title released in 2001 for PlayStation 1 (Score 69/100).",
+      "tr": "2001 yılında çıkan PlayStation 1 için Strateji / Macera oyunu (Puan 69/100)."
+    },
+    "developer": "RAWG",
+    "version": "2001",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 69,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/6a1/6a18cc31c5662a272af468f7d85c7528.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/cde/cdeec34ebeed439fc7c9b5c2bb77ec2a.jpg",
+        "alt": {
+          "en": "Oddworld: Munch's Oddysee (1997) screenshot 1",
+          "tr": "Oddworld: Munch's Oddysee (1997) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a51/a51b5dfcd2b0fdeede4f84afd3154969.jpg",
+        "alt": {
+          "en": "Oddworld: Munch's Oddysee (1997) screenshot 2",
+          "tr": "Oddworld: Munch's Oddysee (1997) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6de/6de38ec856168c4fec982e30a986cdf8.jpg",
+        "alt": {
+          "en": "Oddworld: Munch's Oddysee (1997) screenshot 3",
+          "tr": "Oddworld: Munch's Oddysee (1997) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d25/d25d7a8fbd1c5871e29e0b8c009c7f29.jpg",
+        "alt": {
+          "en": "Oddworld: Munch's Oddysee (1997) screenshot 4",
+          "tr": "Oddworld: Munch's Oddysee (1997) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/960/9603f4fe9b72ec1b002668400a94a7b3.jpg",
+        "alt": {
+          "en": "Oddworld: Munch's Oddysee (1997) screenshot 5",
+          "tr": "Oddworld: Munch's Oddysee (1997) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c91/c91a6fe5eaf4791aca6fe51a39ad719b.jpg",
+        "alt": {
+          "en": "Oddworld: Munch's Oddysee (1997) screenshot 6",
+          "tr": "Oddworld: Munch's Oddysee (1997) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Oddworld: Munch's Oddysee (1997)",
+      "rawgSlug": "oddworld-munchs-oddysee",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-trading-cards",
+      "partial-controller-support",
+      "classic"
+    ],
+    "sourceUrl": "https://rawg.io/games/oddworld-munchs-oddysee",
+    "sources": [],
+    "updatedAt": "2025-08-17T14:36:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "pandemonium-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Pandemonium!",
+      "tr": "Pandemonium!"
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 1996 for PlayStation 1 (Score 65/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Platform / Macera oyunu (Puan 65/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 65,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/8b8/8b8348ef4dc763cb3ddf579c4a20bedd.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b2c/b2c45a30320d57733f60328241e35be8.jpg",
+        "alt": {
+          "en": "Pandemonium! screenshot 1",
+          "tr": "Pandemonium! ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dde/dde68c089ca51c7e25693a0ed5c2318c.jpg",
+        "alt": {
+          "en": "Pandemonium! screenshot 2",
+          "tr": "Pandemonium! ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c45/c45b3ce5336b2b0e58bb198efe901799.jpg",
+        "alt": {
+          "en": "Pandemonium! screenshot 3",
+          "tr": "Pandemonium! ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f7a/f7a4c6fd10b39237cca5930ee9d67a97.jpg",
+        "alt": {
+          "en": "Pandemonium! screenshot 4",
+          "tr": "Pandemonium! ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6f4/6f47706fb3f8b0dfdd2b75e9387122c0.jpg",
+        "alt": {
+          "en": "Pandemonium! screenshot 5",
+          "tr": "Pandemonium! ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/25c/25c4899ac2ede71b8ef7597c4803a310.jpg",
+        "alt": {
+          "en": "Pandemonium! screenshot 6",
+          "tr": "Pandemonium! ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Pandemonium!",
+      "rawgSlug": "pandemonium",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "platformer",
+      "adventure",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/pandemonium",
+    "sources": [],
+    "updatedAt": "2026-02-12T18:42:44.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "spider-man-2000-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Spider-Man (2000)",
+      "tr": "Spider-Man (2000)"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2000 for PlayStation 1 (Metacritic 87/100).",
+      "tr": "2000 yılında çıkan PlayStation 1 için Macera / Aksiyon oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2000",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/1cf/1cf9e301f1d27172546dcabc2f6cb597.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/772/7726b749fb283d2d22851ce48f615cff.jpg",
+        "alt": {
+          "en": "Spider-Man (2000) screenshot 1",
+          "tr": "Spider-Man (2000) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/967/9672e65d8cb5122c4a0783d9ab2707fc.jpg",
+        "alt": {
+          "en": "Spider-Man (2000) screenshot 2",
+          "tr": "Spider-Man (2000) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/547/5475ae9548b839ee0aaddc74186d1dd7.jpg",
+        "alt": {
+          "en": "Spider-Man (2000) screenshot 3",
+          "tr": "Spider-Man (2000) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7ad/7ad1300ff08d75a435339bf00667552d.jpg",
+        "alt": {
+          "en": "Spider-Man (2000) screenshot 4",
+          "tr": "Spider-Man (2000) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/90f/90fea5088e05b074661c77d8f81c21c0.jpg",
+        "alt": {
+          "en": "Spider-Man (2000) screenshot 5",
+          "tr": "Spider-Man (2000) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d7a/d7ad457321463ad6084fd308f2f289c5.jpg",
+        "alt": {
+          "en": "Spider-Man (2000) screenshot 6",
+          "tr": "Spider-Man (2000) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Spider-Man (2000)",
+      "rawgSlug": "spider-man-2000",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "narration",
+      "superhero",
+      "boss",
+      "spider",
+      "color"
+    ],
+    "sourceUrl": "https://rawg.io/games/spider-man-2000",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:54:45.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metal-slug-2-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "METAL SLUG 2",
+      "tr": "METAL SLUG 2"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 1998 for PlayStation 1 (Score 81/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Nişancı / Aksiyon oyunu (Puan 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/b10/b10ec870bdea34d4947e1ac3b0f1461a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/98e/98e14ebabafd41ebf17581b65e1f6fb1.jpg",
+        "alt": {
+          "en": "METAL SLUG 2 screenshot 1",
+          "tr": "METAL SLUG 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/69e/69e1d3ab0ac1b5e2789e083b5cad160d.jpg",
+        "alt": {
+          "en": "METAL SLUG 2 screenshot 2",
+          "tr": "METAL SLUG 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/558/558c45be51bc1115e243c46280832a1b.jpg",
+        "alt": {
+          "en": "METAL SLUG 2 screenshot 3",
+          "tr": "METAL SLUG 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d81/d81199e377c648c67ac4495f9c62d552.jpg",
+        "alt": {
+          "en": "METAL SLUG 2 screenshot 4",
+          "tr": "METAL SLUG 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/607/6077b36f20462846807243ea11f50090.jpg",
+        "alt": {
+          "en": "METAL SLUG 2 screenshot 5",
+          "tr": "METAL SLUG 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5b4/5b46201ffe2bc08fff4546c6aacd92b8.jpg",
+        "alt": {
+          "en": "METAL SLUG 2 screenshot 6",
+          "tr": "METAL SLUG 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "METAL SLUG 2",
+      "rawgSlug": "metal-slug-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/metal-slug-2",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:57:21.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-sims-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "simulation",
+    "category": {
+      "en": "Simulation",
+      "tr": "Simülasyon"
+    },
+    "title": {
+      "en": "The Sims",
+      "tr": "The Sims"
+    },
+    "description": {
+      "en": "Simulation title released in 2000 for PlayStation 1 (Metacritic 88/100).",
+      "tr": "2000 yılında çıkan PlayStation 1 için Simülasyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2000",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/639/639b45004ba5ff983d790f39641393c7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e3b/e3b6f9afe556e5bc08aa439e52137cad.jpg",
+        "alt": {
+          "en": "The Sims screenshot 1",
+          "tr": "The Sims ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f19/f19708740488b8b7e344295504b79472.jpg",
+        "alt": {
+          "en": "The Sims screenshot 2",
+          "tr": "The Sims ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/99d/99d60a87b8a9cabb56fefe6919ec6cc9.jpg",
+        "alt": {
+          "en": "The Sims screenshot 3",
+          "tr": "The Sims ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/47f/47fef7e4a501555c6f89acbcd7a1ef87.jpg",
+        "alt": {
+          "en": "The Sims screenshot 4",
+          "tr": "The Sims ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/03b/03b7637e26f24a4a56902801bd26fae9.jpg",
+        "alt": {
+          "en": "The Sims screenshot 5",
+          "tr": "The Sims ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fb6/fb6b2dc1cd1a4644a3f98f136ea13f13.jpg",
+        "alt": {
+          "en": "The Sims screenshot 6",
+          "tr": "The Sims ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Sims",
+      "rawgSlug": "the-sims",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "sandbox",
+      "console",
+      "pack",
+      "simulation",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-sims",
+    "sources": [],
+    "updatedAt": "2026-11-21T07:18:06.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "theme-hospital-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Theme Hospital",
+      "tr": "Theme Hospital"
+    },
+    "description": {
+      "en": "Strategy / Simulation title released in 1997 for PlayStation 1 (Score 86/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Strateji / Simülasyon oyunu (Puan 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "1997",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/screenshots/fc5/fc52d6a48ea3596563f4853c71ea8028.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ea3/ea352c543fdd669b6dedc9d72093c06e.jpg",
+        "alt": {
+          "en": "Theme Hospital screenshot 1",
+          "tr": "Theme Hospital ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/012/012f7397e610297c0a2cdca5a92b4320.jpg",
+        "alt": {
+          "en": "Theme Hospital screenshot 2",
+          "tr": "Theme Hospital ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d51/d51cc27c7bfaac3292a96e20671de95c.jpg",
+        "alt": {
+          "en": "Theme Hospital screenshot 3",
+          "tr": "Theme Hospital ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e4/9e42453371953f89f8732e972ac1b3f7.jpg",
+        "alt": {
+          "en": "Theme Hospital screenshot 4",
+          "tr": "Theme Hospital ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a4a/a4a7ea011f962a1c976e64f6930a6696.jpg",
+        "alt": {
+          "en": "Theme Hospital screenshot 5",
+          "tr": "Theme Hospital ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8ea/8eab642745d523e1e59cfe18a6060fc4.jpg",
+        "alt": {
+          "en": "Theme Hospital screenshot 6",
+          "tr": "Theme Hospital ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Theme Hospital",
+      "rawgSlug": "theme-hospital",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "strategy",
+      "simulation",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/theme-hospital",
+    "sources": [],
+    "updatedAt": "2026-08-21T19:38:27.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tomb-raider-1996-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Tomb Raider (1996)",
+      "tr": "Tomb Raider (1996)"
+    },
+    "description": {
+      "en": "Action title released in 1996 for PlayStation 1 (Metacritic 88/100).",
+      "tr": "1996 yılında çıkan PlayStation 1 için Aksiyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "1996",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/44f/44f1fd0d156a5a6ee47ec00b90441b15.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/87f/87f113bb6650bb462cc50e9cfc068e27.jpg",
+        "alt": {
+          "en": "Tomb Raider (1996) screenshot 1",
+          "tr": "Tomb Raider (1996) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bf4/bf47834c042de0f5839052fac04f31fa.jpg",
+        "alt": {
+          "en": "Tomb Raider (1996) screenshot 2",
+          "tr": "Tomb Raider (1996) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ac5/ac5275be7d98142b01a6c00391b3e42d.jpg",
+        "alt": {
+          "en": "Tomb Raider (1996) screenshot 3",
+          "tr": "Tomb Raider (1996) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3f8/3f849e682488129493866c3acc415b39.jpg",
+        "alt": {
+          "en": "Tomb Raider (1996) screenshot 4",
+          "tr": "Tomb Raider (1996) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0bd/0bdcf409f368a4768c0b0a3a100c8160.jpg",
+        "alt": {
+          "en": "Tomb Raider (1996) screenshot 5",
+          "tr": "Tomb Raider (1996) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/808/808d416876e0de5591e63fd71ca20e2a.jpg",
+        "alt": {
+          "en": "Tomb Raider (1996) screenshot 6",
+          "tr": "Tomb Raider (1996) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tomb Raider (1996)",
+      "rawgSlug": "tomb-raider-1996",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "city",
+      "treasure",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/tomb-raider-1996",
+    "sources": [],
+    "updatedAt": "2026-10-28T14:38:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "resident-evil-3-nemesis-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Resident Evil 3: Nemesis",
+      "tr": "Resident Evil 3: Nemesis"
+    },
+    "description": {
+      "en": "Action title released in 1999 for PlayStation 1 (Metacritic 75/100).",
+      "tr": "1999 yılında çıkan PlayStation 1 için Aksiyon oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "1999",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/1b2/1b28e8ecb335bfdfbb85510d82810fbb.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b9b/b9bee4017197d132b8c55da5e6e89c57.jpg",
+        "alt": {
+          "en": "Resident Evil 3: Nemesis screenshot 1",
+          "tr": "Resident Evil 3: Nemesis ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8ba/8ba6b04f3b8d66f6a21e412c9313548b.jpg",
+        "alt": {
+          "en": "Resident Evil 3: Nemesis screenshot 2",
+          "tr": "Resident Evil 3: Nemesis ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5d5/5d5d9be3878ddb7d775026a427cb7e27.jpg",
+        "alt": {
+          "en": "Resident Evil 3: Nemesis screenshot 3",
+          "tr": "Resident Evil 3: Nemesis ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/563/5636280bee1ba1b12e06ec63e383259c.jpg",
+        "alt": {
+          "en": "Resident Evil 3: Nemesis screenshot 4",
+          "tr": "Resident Evil 3: Nemesis ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/83f/83fd0f6aa49b913b89385959e64d8719.jpg",
+        "alt": {
+          "en": "Resident Evil 3: Nemesis screenshot 5",
+          "tr": "Resident Evil 3: Nemesis ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/931/931e8afaa88d05a7e7389c3b1fcf9d66.jpg",
+        "alt": {
+          "en": "Resident Evil 3: Nemesis screenshot 6",
+          "tr": "Resident Evil 3: Nemesis ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Resident Evil 3: Nemesis",
+      "rawgSlug": "resident-evil-3-nemesis",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "female-protagonist",
+      "zombies",
+      "exclusive"
+    ],
+    "sourceUrl": "https://rawg.io/games/resident-evil-3-nemesis",
+    "sources": [],
+    "updatedAt": "2026-11-21T08:46:42.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "deathtrap-dungeon-ps1",
+    "catalogId": "ps1",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Deathtrap Dungeon",
+      "tr": "Deathtrap Dungeon"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 1998 for PlayStation 1 (Score 53/100).",
+      "tr": "1998 yılında çıkan PlayStation 1 için Macera / Aksiyon oyunu (Puan 53/100)."
+    },
+    "developer": "RAWG",
+    "version": "1998",
+    "sizeBytes": 524288000,
+    "sizeBytesEstimated": true,
+    "ratingScore": 53,
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
+    "coverPath": "https://media.rawg.io/media/games/91b/91bd28ff21189e0b8a838d1412a392c1.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a29/a29281408b690ee7ddf65292ca171ba3.jpg",
+        "alt": {
+          "en": "Deathtrap Dungeon screenshot 1",
+          "tr": "Deathtrap Dungeon ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/745/745022e462a625f1b778e235130f70f1.jpg",
+        "alt": {
+          "en": "Deathtrap Dungeon screenshot 2",
+          "tr": "Deathtrap Dungeon ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c36/c362dbc7c7e13daa428889fe3a819c2c.jpg",
+        "alt": {
+          "en": "Deathtrap Dungeon screenshot 3",
+          "tr": "Deathtrap Dungeon ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/164/16412219a4552e83edac6eb18f98483f.jpg",
+        "alt": {
+          "en": "Deathtrap Dungeon screenshot 4",
+          "tr": "Deathtrap Dungeon ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1a0/1a00bcb4a06ef4cd02a26a584da856b1.jpg",
+        "alt": {
+          "en": "Deathtrap Dungeon screenshot 5",
+          "tr": "Deathtrap Dungeon ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/64c/64c5bc6b32252b8063b04027235b7a59.jpg",
+        "alt": {
+          "en": "Deathtrap Dungeon screenshot 6",
+          "tr": "Deathtrap Dungeon ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Deathtrap Dungeon",
+      "rawgSlug": "deathtrap-dungeon",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "adventure",
+      "action",
+      "ps1"
+    ],
+    "sourceUrl": "https://rawg.io/games/deathtrap-dungeon",
+    "sources": [],
+    "updatedAt": "2025-08-17T14:39:20.000Z",
+    "sampleData": false
   }
 ]

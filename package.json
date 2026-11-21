@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "validate:catalog": "node scripts/validate-catalog.mjs",
+    "seed:games": "node scripts/seed-popular-games.mjs",
     "sync:artwork": "node scripts/sync-artwork.mjs"
   },
   "dependencies": {

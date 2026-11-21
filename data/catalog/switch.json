@@ -1,47 +1,4345 @@
 [
   {
-    "slug": "wonderful-waking-world-switch",
+    "slug": "the-witcher-3-wild-hunt-switch",
     "catalogId": "switch",
-    "type": "homebrew",
-    "categoryId": "shoot-em-up",
-    "category": { "en": "Shoot 'em up", "tr": "Dikey kaydırmalı nişancı" },
-    "title": { "en": "Wonderful Waking World (Switch Port)", "tr": "Wonderful Waking World (Switch Portu)" },
-    "description": {
-      "en": "A Nintendo Switch homebrew port of the free Windows shoot 'em up.",
-      "tr": "Ücretsiz Windows nişancı oyununun Nintendo Switch homebrew portu."
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
     },
-    "developer": "saekaze and contributors",
-    "version": "1.0.1",
-    "sizeBytes": 46137344,
+    "title": {
+      "en": "The Witcher 3: Wild Hunt",
+      "tr": "The Witcher 3: Wild Hunt"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2015 for Nintendo Switch (Metacritic 92/100).",
+      "tr": "2015 yılında çıkan Nintendo Switch için Aksiyon / RPG oyunu (Metacritic 92/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
-    "fileFormat": "Nintendo Switch NRO homebrew executable",
-    "fileExtension": ".nro",
-    "coverPath": "/images/catalog/switch/wonderful-waking-world-switch/cover.webp",
+    "ratingScore": 92,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
     "screenshots": [
       {
-        "src": "/images/catalog/switch/wonderful-waking-world-switch/screenshot-01.webp",
-        "alt": { "en": "Wonderful Waking World sample gameplay screenshot", "tr": "Wonderful Waking World örnek oynanış ekran görüntüsü" }
+        "src": "https://media.rawg.io/media/screenshots/1ac/1ac19f31974314855ad7be266adeb500.jpg",
+        "alt": {
+          "en": "The Witcher 3: Wild Hunt screenshot 1",
+          "tr": "The Witcher 3: Wild Hunt ekran görüntüsü 1"
+        }
       },
       {
-        "src": "/images/catalog/switch/wonderful-waking-world-switch/screenshot-02.webp",
-        "alt": { "en": "Wonderful Waking World sample stage screenshot", "tr": "Wonderful Waking World örnek bölüm ekran görüntüsü" }
-      }
-    ],
-    "tags": ["homebrew", "switch-port", "shoot-em-up"],
-    "sourceUrl": "https://github.com/saekaze/thWWW-switch",
-    "sources": [
+        "src": "https://media.rawg.io/media/screenshots/6a0/6a08afca95261a2fe221ea9e01d28762.jpg",
+        "alt": {
+          "en": "The Witcher 3: Wild Hunt screenshot 2",
+          "tr": "The Witcher 3: Wild Hunt ekran görüntüsü 2"
+        }
+      },
       {
-        "id": "github-release-page",
-        "provider": "github-release",
-        "deliveryMode": "browser_verify",
-        "url": "https://github.com/saekaze/thWWW-switch/releases",
-        "format": ".nro",
-        "sizeBytes": 46137344,
-        "requiresVerification": true,
-        "priority": 1
+        "src": "https://media.rawg.io/media/screenshots/cdd/cdd31b6b4a687425a87b5ce231ac89d7.jpg",
+        "alt": {
+          "en": "The Witcher 3: Wild Hunt screenshot 3",
+          "tr": "The Witcher 3: Wild Hunt ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/862/862397b153221a625922d3bb66337834.jpg",
+        "alt": {
+          "en": "The Witcher 3: Wild Hunt screenshot 4",
+          "tr": "The Witcher 3: Wild Hunt ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/166/166787c442a45f52f4f230c33fd7d605.jpg",
+        "alt": {
+          "en": "The Witcher 3: Wild Hunt screenshot 5",
+          "tr": "The Witcher 3: Wild Hunt ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f63/f6373ee614046d81503d63f167181803.jpg",
+        "alt": {
+          "en": "The Witcher 3: Wild Hunt screenshot 6",
+          "tr": "The Witcher 3: Wild Hunt ekran görüntüsü 6"
+        }
       }
     ],
-    "updatedAt": "2026-11-20T00:00:00.000Z",
-    "sampleData": true
+    "artwork": {
+      "query": "The Witcher 3: Wild Hunt",
+      "rawgSlug": "the-witcher-3-wild-hunt",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-witcher-3-wild-hunt",
+    "sources": [],
+    "updatedAt": "2026-11-14T09:15:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "portal-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Portal",
+      "tr": "Portal"
+    },
+    "description": {
+      "en": "Action / Puzzle title released in 2007 for Nintendo Switch (Metacritic 90/100).",
+      "tr": "2007 yılında çıkan Nintendo Switch için Aksiyon / Bulmaca oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/99e/99e94bd55eb75fa6e75c3dcbb1a570b2.jpg",
+        "alt": {
+          "en": "Portal screenshot 1",
+          "tr": "Portal ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2f0/2f0297a46934d9fa914c626902b1ce20.jpg",
+        "alt": {
+          "en": "Portal screenshot 2",
+          "tr": "Portal ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3b3/3b3713fbca6194dfc4d6e8a8d006d354.jpg",
+        "alt": {
+          "en": "Portal screenshot 3",
+          "tr": "Portal ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c6f/c6f9afc3e4dd51068b22f04acbc6ca99.jpg",
+        "alt": {
+          "en": "Portal screenshot 4",
+          "tr": "Portal ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/748/74841207eec76ebc7fc03210168bfb7e.jpg",
+        "alt": {
+          "en": "Portal screenshot 5",
+          "tr": "Portal ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e72/e7256b4caedf099bcb8ebd332f892334.jpg",
+        "alt": {
+          "en": "Portal screenshot 6",
+          "tr": "Portal ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Portal",
+      "rawgSlug": "portal",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/portal",
+    "sources": [],
+    "updatedAt": "2026-11-14T09:15:36.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-elder-scrolls-v-skyrim-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "The Elder Scrolls V: Skyrim",
+      "tr": "The Elder Scrolls V: Skyrim"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2011 for Nintendo Switch (Metacritic 94/100).",
+      "tr": "2011 yılında çıkan Nintendo Switch için Aksiyon / RPG oyunu (Metacritic 94/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 94,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3bd/3bd2710bd1ffb6664fdea7b83afd067e.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 1",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d4e/d4e9b13f54748584ccbd6f998094dade.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 2",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/599/59946a630e9c7871003763d63184404a.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 3",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c5d/c5dad426038d7d12f933eedbeab48ff3.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 4",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b32/b326fa01c82db82edd41ed299886ee44.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 5",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/091/091e95b49d5a22de036698fc731395a2.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 6",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Elder Scrolls V: Skyrim",
+      "rawgSlug": "the-elder-scrolls-v-skyrim",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-elder-scrolls-v-skyrim",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:12:47.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bioshock-infinite-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "BioShock Infinite",
+      "tr": "BioShock Infinite"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2013 for Nintendo Switch (Metacritic 94/100).",
+      "tr": "2013 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 94/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 94,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/bf0/bf07e2c6d2c888d372917d9ef453c8a4.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 1",
+          "tr": "BioShock Infinite ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d3/9d38833952812ad7888a6dc21699934f.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 2",
+          "tr": "BioShock Infinite ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/595/59572d257b6797986e4eabcd1ee023fd.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 3",
+          "tr": "BioShock Infinite ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f71/f71c23eb76f050d6180490e82d58d799.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 4",
+          "tr": "BioShock Infinite ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/871/8713411d5332ceb2b4092073a6f5f3f2.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 5",
+          "tr": "BioShock Infinite ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/985/985b56daa78e0a23133518d4226e9f97.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 6",
+          "tr": "BioShock Infinite ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BioShock Infinite",
+      "rawgSlug": "bioshock-infinite",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/bioshock-infinite",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:00:19.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "limbo-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Limbo",
+      "tr": "Limbo"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2010 for Nintendo Switch (Metacritic 88/100).",
+      "tr": "2010 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/512/512f4bc2092016478ddcb9e7e60aeec0.jpg",
+        "alt": {
+          "en": "Limbo screenshot 1",
+          "tr": "Limbo ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/63d/63d30699e8fcab9c808e6714d9d3fd59.jpg",
+        "alt": {
+          "en": "Limbo screenshot 2",
+          "tr": "Limbo ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/de0/de04bbc0fd9904071ef25bf23113c8c4.jpg",
+        "alt": {
+          "en": "Limbo screenshot 3",
+          "tr": "Limbo ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/eed/eedbbca4ae2debf2d4e23e55d1f6cff7.jpg",
+        "alt": {
+          "en": "Limbo screenshot 4",
+          "tr": "Limbo ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/59f/59f472b3ed7b414777a29213d70b4d17.jpg",
+        "alt": {
+          "en": "Limbo screenshot 5",
+          "tr": "Limbo ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e58/e58d31146e4a9e3786dabcbfc30126bc.jpg",
+        "alt": {
+          "en": "Limbo screenshot 6",
+          "tr": "Limbo ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Limbo",
+      "rawgSlug": "limbo",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "2d",
+      "horror"
+    ],
+    "sourceUrl": "https://rawg.io/games/limbo",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:24.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "doom-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "DOOM (2016)",
+      "tr": "DOOM (2016)"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2016 for Nintendo Switch (Metacritic 85/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/353/353c1e834e7da7d6ceaa6beaff529c29.jpg",
+        "alt": {
+          "en": "DOOM (2016) screenshot 1",
+          "tr": "DOOM (2016) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e50/e50f822107b8cc6af57aa21d76524149.jpg",
+        "alt": {
+          "en": "DOOM (2016) screenshot 2",
+          "tr": "DOOM (2016) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ae9/ae9e9f7bfe19c63bd16151f81f81a7ed.jpg",
+        "alt": {
+          "en": "DOOM (2016) screenshot 3",
+          "tr": "DOOM (2016) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/14e/14e33eccb109558b0524761340ff2023.jpg",
+        "alt": {
+          "en": "DOOM (2016) screenshot 4",
+          "tr": "DOOM (2016) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/45d/45d16955ac9e90141b726684a07db02a.jpg",
+        "alt": {
+          "en": "DOOM (2016) screenshot 5",
+          "tr": "DOOM (2016) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b77/b77629938389a41160d3b2a56eaed568.jpg",
+        "alt": {
+          "en": "DOOM (2016) screenshot 6",
+          "tr": "DOOM (2016) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "DOOM (2016)",
+      "rawgSlug": "doom",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/doom",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:46:01.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "cyberpunk-2077-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Cyberpunk 2077",
+      "tr": "Cyberpunk 2077"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2020 for Nintendo Switch (Metacritic 73/100).",
+      "tr": "2020 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 73/100)."
+    },
+    "developer": "RAWG",
+    "version": "2020",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 73,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/814/814c25d6fd1fd34a4e6dade645a3bda7.jpg",
+        "alt": {
+          "en": "Cyberpunk 2077 screenshot 1",
+          "tr": "Cyberpunk 2077 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2ab/2ab0b67e68b6ede6b19d80094b6f7f2a_qTSfS2g.jpg",
+        "alt": {
+          "en": "Cyberpunk 2077 screenshot 2",
+          "tr": "Cyberpunk 2077 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cd2/cd22af9d6ac593440defac6082760e4a.jpg",
+        "alt": {
+          "en": "Cyberpunk 2077 screenshot 3",
+          "tr": "Cyberpunk 2077 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9b5/9b51535beb9d9e416cb9aac874091334.jpg",
+        "alt": {
+          "en": "Cyberpunk 2077 screenshot 4",
+          "tr": "Cyberpunk 2077 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d84/d84d3a16c1e2cb24dcf73e0108d78455.jpg",
+        "alt": {
+          "en": "Cyberpunk 2077 screenshot 5",
+          "tr": "Cyberpunk 2077 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a55/a5583c11e4fd11a9eb5d52e8ddd41ac3.jpg",
+        "alt": {
+          "en": "Cyberpunk 2077 screenshot 6",
+          "tr": "Cyberpunk 2077 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Cyberpunk 2077",
+      "rawgSlug": "cyberpunk-2077",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/cyberpunk-2077",
+    "sources": [],
+    "updatedAt": "2026-11-15T05:37:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "terraria-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Terraria",
+      "tr": "Terraria"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2011 for Nintendo Switch (Metacritic 81/100).",
+      "tr": "2011 yılında çıkan Nintendo Switch için Platform / Bağımsız oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3af/3afd69426804e7162edbe03cd9f8d0f4.jpg",
+        "alt": {
+          "en": "Terraria screenshot 1",
+          "tr": "Terraria ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/48c/48c7e3e1268467b91b24c7da7c6539df.jpg",
+        "alt": {
+          "en": "Terraria screenshot 2",
+          "tr": "Terraria ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/84b/84b447d4df99d42ffe479c7feb438171.jpg",
+        "alt": {
+          "en": "Terraria screenshot 3",
+          "tr": "Terraria ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/de0/de053efd6104719567d23fb0dad58b92.jpg",
+        "alt": {
+          "en": "Terraria screenshot 4",
+          "tr": "Terraria ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/490/4907be07a7771c8a7f0eb30c3a1fadc0.jpg",
+        "alt": {
+          "en": "Terraria screenshot 5",
+          "tr": "Terraria ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/485/485ce1d6c733357664be153777097af1.jpg",
+        "alt": {
+          "en": "Terraria screenshot 6",
+          "tr": "Terraria ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Terraria",
+      "rawgSlug": "terraria",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/terraria",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:00:22.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "warframe-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Warframe",
+      "tr": "Warframe"
+    },
+    "description": {
+      "en": "Shooter / Multiplayer title released in 2013 for Nintendo Switch (Metacritic 73/100).",
+      "tr": "2013 yılında çıkan Nintendo Switch için Nişancı / Çok Oyunculu oyunu (Metacritic 73/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 73,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2e1/2e15c9f4cca692ebca67b7652e559f6d.jpg",
+        "alt": {
+          "en": "Warframe screenshot 1",
+          "tr": "Warframe ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/70d/70de629465e39f8108aa533df9cff554.jpg",
+        "alt": {
+          "en": "Warframe screenshot 2",
+          "tr": "Warframe ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b3a/b3a368123558e7f4010e8b68518d6412.jpg",
+        "alt": {
+          "en": "Warframe screenshot 3",
+          "tr": "Warframe ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fd2/fd2225327c9dca60c9acea0edca8c5fc.jpg",
+        "alt": {
+          "en": "Warframe screenshot 4",
+          "tr": "Warframe ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/34e/34e3c0d71551f07c3bb709fe12f18ca2.jpg",
+        "alt": {
+          "en": "Warframe screenshot 5",
+          "tr": "Warframe ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/977/977735a2fad2bc47917424e20e9dff56.jpg",
+        "alt": {
+          "en": "Warframe screenshot 6",
+          "tr": "Warframe ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Warframe",
+      "rawgSlug": "warframe",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "steam-trading-cards",
+      "rpg",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/warframe",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:11:11.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "rocket-league-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Rocket League",
+      "tr": "Rocket League"
+    },
+    "description": {
+      "en": "Racing / Indie title released in 2015 for Nintendo Switch (Metacritic 86/100).",
+      "tr": "2015 yılında çıkan Nintendo Switch için Yarış / Bağımsız oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/6a0/6a0745d9dcd0f7a368d372260baf91aa.jpg",
+        "alt": {
+          "en": "Rocket League screenshot 1",
+          "tr": "Rocket League ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5ea/5ea8ab6a35f189489b2ec8713d4f1619.jpg",
+        "alt": {
+          "en": "Rocket League screenshot 2",
+          "tr": "Rocket League ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/508/5083fd170bf10606afd12afc7d17db04.jpg",
+        "alt": {
+          "en": "Rocket League screenshot 3",
+          "tr": "Rocket League ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/02d/02d36e8e01a9f1063c6431ce09324e24.jpg",
+        "alt": {
+          "en": "Rocket League screenshot 4",
+          "tr": "Rocket League ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/036/036ddade8156ac52ecf8de593123d12c.jpg",
+        "alt": {
+          "en": "Rocket League screenshot 5",
+          "tr": "Rocket League ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/861/8615727f6e52f1632ae38d71e9e4c800.jpg",
+        "alt": {
+          "en": "Rocket League screenshot 6",
+          "tr": "Rocket League ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Rocket League",
+      "rawgSlug": "rocket-league",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/rocket-league",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:09:20.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "batman-arkham-knight-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Batman: Arkham Knight",
+      "tr": "Batman: Arkham Knight"
+    },
+    "description": {
+      "en": "Action title released in 2015 for Nintendo Switch (Metacritic 81/100).",
+      "tr": "2015 yılında çıkan Nintendo Switch için Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ed/1ed7f33789fdb79dbe7ae346f7b24fdf.jpg",
+        "alt": {
+          "en": "Batman: Arkham Knight screenshot 1",
+          "tr": "Batman: Arkham Knight ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c19/c19a4d55f1fa9661b32d43e110a5dbff.jpg",
+        "alt": {
+          "en": "Batman: Arkham Knight screenshot 2",
+          "tr": "Batman: Arkham Knight ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b87/b873d09e51115514cb1445a954dbca9e.jpg",
+        "alt": {
+          "en": "Batman: Arkham Knight screenshot 3",
+          "tr": "Batman: Arkham Knight ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cbe/cbee51d83cafbe75224336859ddfc27e.jpg",
+        "alt": {
+          "en": "Batman: Arkham Knight screenshot 4",
+          "tr": "Batman: Arkham Knight ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d2a/d2ab2d0f10e778c1a867c999515c3f9a.jpg",
+        "alt": {
+          "en": "Batman: Arkham Knight screenshot 5",
+          "tr": "Batman: Arkham Knight ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/172/172a4d61d4b6d3b77f19f5826de439f2.jpg",
+        "alt": {
+          "en": "Batman: Arkham Knight screenshot 6",
+          "tr": "Batman: Arkham Knight ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Batman: Arkham Knight",
+      "rawgSlug": "batman-arkham-knight",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/batman-arkham-knight",
+    "sources": [],
+    "updatedAt": "2026-10-19T10:54:02.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "apex-legends-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Apex Legends",
+      "tr": "Apex Legends"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2019 for Nintendo Switch (Metacritic 80/100).",
+      "tr": "2019 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2019",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a59/a593423f503eae7f29cd642827cda18d.jpg",
+        "alt": {
+          "en": "Apex Legends screenshot 1",
+          "tr": "Apex Legends ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e7a/e7a1e5ec1b9861c340cdbef43bb47678.jpg",
+        "alt": {
+          "en": "Apex Legends screenshot 2",
+          "tr": "Apex Legends ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/76e/76e5b435f9ba8ed79da0e5dd25762075.jpg",
+        "alt": {
+          "en": "Apex Legends screenshot 3",
+          "tr": "Apex Legends ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b4b/b4b3c320a4a3965d5da85406dcd05b77.jpg",
+        "alt": {
+          "en": "Apex Legends screenshot 4",
+          "tr": "Apex Legends ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/52a/52a0266fde34d2a24f4ad6aee3da5051.jpg",
+        "alt": {
+          "en": "Apex Legends screenshot 5",
+          "tr": "Apex Legends ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/05a/05a9a772ede23255689d1218b3b9a728.jpg",
+        "alt": {
+          "en": "Apex Legends screenshot 6",
+          "tr": "Apex Legends ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Apex Legends",
+      "rawgSlug": "apex-legends",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric",
+      "co-op",
+      "first-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/apex-legends",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:27:28.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "hollow-knight-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Hollow Knight",
+      "tr": "Hollow Knight"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2017 for Nintendo Switch (Metacritic 88/100).",
+      "tr": "2017 yılında çıkan Nintendo Switch için Platform / Bağımsız oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2017",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/6b3/6b309936c1fe07e9b7fa5e62a372790d.jpg",
+        "alt": {
+          "en": "Hollow Knight screenshot 1",
+          "tr": "Hollow Knight ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1a7/1a7a69db58c19d323f1dfbcc340d3f1e.jpg",
+        "alt": {
+          "en": "Hollow Knight screenshot 2",
+          "tr": "Hollow Knight ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/723/7237d0c546b0d17a6a226f38823081d4.jpg",
+        "alt": {
+          "en": "Hollow Knight screenshot 3",
+          "tr": "Hollow Knight ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/331/331095489397e7387681d921e8e472d4.jpg",
+        "alt": {
+          "en": "Hollow Knight screenshot 4",
+          "tr": "Hollow Knight ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5db/5db89e896496352c8f0a0a0bd545bd6d.jpg",
+        "alt": {
+          "en": "Hollow Knight screenshot 5",
+          "tr": "Hollow Knight ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/843/843e06c9c5b26c309b47bd7075320dae.jpg",
+        "alt": {
+          "en": "Hollow Knight screenshot 6",
+          "tr": "Hollow Knight ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Hollow Knight",
+      "rawgSlug": "hollow-knight",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/hollow-knight",
+    "sources": [],
+    "updatedAt": "2026-11-18T00:44:55.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "little-nightmares-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Little Nightmares",
+      "tr": "Little Nightmares"
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 2017 for Nintendo Switch (Metacritic 81/100).",
+      "tr": "2017 yılında çıkan Nintendo Switch için Platform / Macera oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2017",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/00a/00a53be1dcfba6c63ac6807637c4a45a.jpg",
+        "alt": {
+          "en": "Little Nightmares screenshot 1",
+          "tr": "Little Nightmares ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/78a/78aa666996cf9d2708f529c18784262f.jpg",
+        "alt": {
+          "en": "Little Nightmares screenshot 2",
+          "tr": "Little Nightmares ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/96d/96d356977066c0c2159ed7ef3f470cab.jpg",
+        "alt": {
+          "en": "Little Nightmares screenshot 3",
+          "tr": "Little Nightmares ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3dc/3dc7c607ff7873eaa84a8d69eac26335.jpg",
+        "alt": {
+          "en": "Little Nightmares screenshot 4",
+          "tr": "Little Nightmares ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a83/a83cce4aae86d8ed0b7c8d933231b9bf.jpg",
+        "alt": {
+          "en": "Little Nightmares screenshot 5",
+          "tr": "Little Nightmares ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0c6/0c6642fb4a74893a4c950528791fe7dd.jpg",
+        "alt": {
+          "en": "Little Nightmares screenshot 6",
+          "tr": "Little Nightmares ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Little Nightmares",
+      "rawgSlug": "little-nightmares",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/little-nightmares",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:13:50.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-walking-dead-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "The Walking Dead: Season 1",
+      "tr": "The Walking Dead: Season 1"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2012 for Nintendo Switch (Metacritic 92/100).",
+      "tr": "2012 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 92/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 92,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d38/d38c78ec9cc707bf42652452235dbe8c.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 1",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bdb/bdb7dd4891bfbb0a80cd49b36ffd1a20.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 2",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/72b/72b67d15b5ae5538734bac2b195f2976.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 3",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/74d/74d6a18a7b5592777de8f6a7cdbc91f8.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 4",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/52a/52aca015b4748b1b0bbbacf33110e983.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 5",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/94b/94b6701276d06b5b562890601fd6abaa.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 6",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Walking Dead: Season 1",
+      "rawgSlug": "the-walking-dead",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "story-rich",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-walking-dead",
+    "sources": [],
+    "updatedAt": "2026-10-17T02:32:01.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bioshock-2-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "BioShock 2",
+      "tr": "BioShock 2"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2010 for Nintendo Switch (Metacritic 88/100).",
+      "tr": "2010 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/157/15742f2f67eacff546738e1ab5c19d20.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a13/a130b342c9830f9c56d65c204638fe17.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 1",
+          "tr": "BioShock 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f38/f38a519f1545ef5cda66676c155cc5b8.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 2",
+          "tr": "BioShock 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/996/996d1459d3f2ec1f03daba488d96c521.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 3",
+          "tr": "BioShock 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8da/8daab3b2c3d9e355f636e7d408a08315.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 4",
+          "tr": "BioShock 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f5c/f5c713b706c6b153b6a22ca1b08a1f5a.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 5",
+          "tr": "BioShock 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b7c/b7c32275a6be8134744322f1204ce176.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 6",
+          "tr": "BioShock 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BioShock 2",
+      "rawgSlug": "bioshock-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/bioshock-2",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:10:04.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "stardew-valley-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Stardew Valley",
+      "tr": "Stardew Valley"
+    },
+    "description": {
+      "en": "Indie / RPG title released in 2016 for Nintendo Switch (Metacritic 89/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Bağımsız / RPG oyunu (Metacritic 89/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 89,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b72/b722b1746256f64ce5e15558d1ac7613.jpg",
+        "alt": {
+          "en": "Stardew Valley screenshot 1",
+          "tr": "Stardew Valley ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/733/7330aea66ef9de06bb201e1d3f10ff70.jpg",
+        "alt": {
+          "en": "Stardew Valley screenshot 2",
+          "tr": "Stardew Valley ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0a6/0a6dfc3ef9ac018b737427405e686e23.jpg",
+        "alt": {
+          "en": "Stardew Valley screenshot 3",
+          "tr": "Stardew Valley ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/366/3668bbdd41a682c76370fc81691150bc.jpg",
+        "alt": {
+          "en": "Stardew Valley screenshot 4",
+          "tr": "Stardew Valley ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e25/e25137cf398c743153d64993160487f1.jpg",
+        "alt": {
+          "en": "Stardew Valley screenshot 5",
+          "tr": "Stardew Valley ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b64/b6419e71b81f36ab7bc62a6614cb5b85.jpg",
+        "alt": {
+          "en": "Stardew Valley screenshot 6",
+          "tr": "Stardew Valley ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Stardew Valley",
+      "rawgSlug": "stardew-valley",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/stardew-valley",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:36:44.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "hotline-miami-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Hotline Miami",
+      "tr": "Hotline Miami"
+    },
+    "description": {
+      "en": "Indie / Shooter title released in 2012 for Nintendo Switch (Metacritic 85/100).",
+      "tr": "2012 yılında çıkan Nintendo Switch için Bağımsız / Nişancı oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/38b/38b9bb0de0a380434b78587e132b2e21.jpg",
+        "alt": {
+          "en": "Hotline Miami screenshot 1",
+          "tr": "Hotline Miami ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e7a/e7a11a669aa609b9b3b0c7aeab2dc804.jpg",
+        "alt": {
+          "en": "Hotline Miami screenshot 2",
+          "tr": "Hotline Miami ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/88b/88b907144995e57c45ee043c59dd6810.jpg",
+        "alt": {
+          "en": "Hotline Miami screenshot 3",
+          "tr": "Hotline Miami ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/53f/53fd44fd759bc571b1445898c50b418e.jpg",
+        "alt": {
+          "en": "Hotline Miami screenshot 4",
+          "tr": "Hotline Miami ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ddd/dddc7151559716c7c0dddb05874496da.jpg",
+        "alt": {
+          "en": "Hotline Miami screenshot 5",
+          "tr": "Hotline Miami ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b2a/b2a25c20510e3111a13d56a9751cadd7.jpg",
+        "alt": {
+          "en": "Hotline Miami screenshot 6",
+          "tr": "Hotline Miami ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Hotline Miami",
+      "rawgSlug": "hotline-miami",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "atmospheric",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/hotline-miami",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:38:34.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bioshock-remastered-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "BioShock Remastered",
+      "tr": "BioShock Remastered"
+    },
+    "description": {
+      "en": "Shooter title released in 2016 for Nintendo Switch (Score 85/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Nişancı oyunu (Puan 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c70/c709280e11aabec614d0aafb5779114a.jpg",
+        "alt": {
+          "en": "BioShock Remastered screenshot 1",
+          "tr": "BioShock Remastered ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/414/41463563e721aa62c605cd0bf8350af3.jpg",
+        "alt": {
+          "en": "BioShock Remastered screenshot 2",
+          "tr": "BioShock Remastered ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/76d/76d11a76541bcfa63de3ef8fe5a5a668.jpg",
+        "alt": {
+          "en": "BioShock Remastered screenshot 3",
+          "tr": "BioShock Remastered ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/25a/25ac07efdbf90a2d7e626353ebadc565.jpg",
+        "alt": {
+          "en": "BioShock Remastered screenshot 4",
+          "tr": "BioShock Remastered ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0f6/0f69943b1d81710ba2fdcac27d248ca9.jpg",
+        "alt": {
+          "en": "BioShock Remastered screenshot 5",
+          "tr": "BioShock Remastered ekran görüntüsü 5"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BioShock Remastered",
+      "rawgSlug": "bioshock-remastered",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/bioshock-remastered",
+    "sources": [],
+    "updatedAt": "2026-11-14T20:29:45.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "outlast-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Outlast",
+      "tr": "Outlast"
+    },
+    "description": {
+      "en": "Indie / Action title released in 2013 for Nintendo Switch (Metacritic 80/100).",
+      "tr": "2013 yılında çıkan Nintendo Switch için Bağımsız / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/83f/83ff600f8e2dd8507e7961d3e9f32126.jpg",
+        "alt": {
+          "en": "Outlast screenshot 1",
+          "tr": "Outlast ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/283/283c90039e31e07f99979ccb445cf7b7.jpg",
+        "alt": {
+          "en": "Outlast screenshot 2",
+          "tr": "Outlast ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/03f/03f4171763bda5824da07fc087cec609.jpg",
+        "alt": {
+          "en": "Outlast screenshot 3",
+          "tr": "Outlast ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/37a/37acd5ef186c8e018cbd64751b21f064.jpg",
+        "alt": {
+          "en": "Outlast screenshot 4",
+          "tr": "Outlast ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/242/2426226b9eb1a7de43b8bf01ecb2c291.jpg",
+        "alt": {
+          "en": "Outlast screenshot 5",
+          "tr": "Outlast ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d06/d06d3baecb6da0ac9e53b40ade32d5f2.jpg",
+        "alt": {
+          "en": "Outlast screenshot 6",
+          "tr": "Outlast ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Outlast",
+      "rawgSlug": "outlast",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/outlast",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:46:34.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "hellblade-senuas-sacrifice-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Hellblade: Senua's Sacrifice",
+      "tr": "Hellblade: Senua's Sacrifice"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2017 for Nintendo Switch (Metacritic 83/100).",
+      "tr": "2017 yılında çıkan Nintendo Switch için Bağımsız / Macera oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2017",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/662/66282cb9d0c743ca5d8cb8a1585c8207.jpg",
+        "alt": {
+          "en": "Hellblade: Senua's Sacrifice screenshot 1",
+          "tr": "Hellblade: Senua's Sacrifice ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ab2/ab28d353366cb9ed674758a25a3763e7.jpg",
+        "alt": {
+          "en": "Hellblade: Senua's Sacrifice screenshot 2",
+          "tr": "Hellblade: Senua's Sacrifice ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e43/e4362535f3d105d23315c5780ed67f8b.jpg",
+        "alt": {
+          "en": "Hellblade: Senua's Sacrifice screenshot 3",
+          "tr": "Hellblade: Senua's Sacrifice ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/567/567f1353c4163e59236450ea29136b51.jpg",
+        "alt": {
+          "en": "Hellblade: Senua's Sacrifice screenshot 4",
+          "tr": "Hellblade: Senua's Sacrifice ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d83/d83116e14bfdfeb89a530334072c3051.jpg",
+        "alt": {
+          "en": "Hellblade: Senua's Sacrifice screenshot 5",
+          "tr": "Hellblade: Senua's Sacrifice ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/261/2616c962157e03b5adae8686427aaa18.jpg",
+        "alt": {
+          "en": "Hellblade: Senua's Sacrifice screenshot 6",
+          "tr": "Hellblade: Senua's Sacrifice ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Hellblade: Senua's Sacrifice",
+      "rawgSlug": "hellblade-senuas-sacrifice",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/hellblade-senuas-sacrifice",
+    "sources": [],
+    "updatedAt": "2026-10-23T14:08:47.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "assassins-creed-iv-black-flag-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Assassin’s Creed IV: Black Flag",
+      "tr": "Assassin’s Creed IV: Black Flag"
+    },
+    "description": {
+      "en": "Action title released in 2013 for Nintendo Switch (Metacritic 85/100).",
+      "tr": "2013 yılında çıkan Nintendo Switch için Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/46d/46de97777c05efb26597b215735dcd84.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 1",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/162/162503bb903edd7cfddf2a49ecdf5b7d.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 2",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9ad/9ad8aa17d3f2be9545273f895e481280.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 3",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b02/b02b168d04889304aac23e47f5314721.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 4",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ad8/ad8439bc9ed7d2f88deb836c9cff23d2.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 5",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/398/398abeb965880c1c3310a6a4ad9c71b8.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 6",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Assassin’s Creed IV: Black Flag",
+      "rawgSlug": "assassins-creed-iv-black-flag",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/assassins-creed-iv-black-flag",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:04:11.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "hitman-absolution-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Hitman: Absolution",
+      "tr": "Hitman: Absolution"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for Nintendo Switch (Metacritic 79/100).",
+      "tr": "2012 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/d46/d46373f39458670305704ef089387520.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/1b9/1b935461ecbdaf9ce51a8d3f02d6848e.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 1",
+          "tr": "Hitman: Absolution ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/53c/53c2e650009d65f1a8587fbef7c44e89.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 2",
+          "tr": "Hitman: Absolution ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/69b/69bf3d7eda87b1e9c382276e3b4fa987.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 3",
+          "tr": "Hitman: Absolution ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2b5/2b5454013919650e315f6d2c249c4978.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 4",
+          "tr": "Hitman: Absolution ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c40/c401710fe96692996a4091afdac694d8.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 5",
+          "tr": "Hitman: Absolution ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3c4/3c44380232b0e07918d3a4d9647fc606.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 6",
+          "tr": "Hitman: Absolution ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Hitman: Absolution",
+      "rawgSlug": "hitman-absolution",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "story-rich",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/hitman-absolution",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:50:12.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "la-noire-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "L.A. Noire",
+      "tr": "L.A. Noire"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2011 for Nintendo Switch (Metacritic 83/100).",
+      "tr": "2011 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c08/c0823f02236f076a7a36ff5f3571558e.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 1",
+          "tr": "L.A. Noire ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dee/dee71bfc43834357e15e1d35d2c507c8.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 2",
+          "tr": "L.A. Noire ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/69f/69fdec37afd586f274316a69e92303f1.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 3",
+          "tr": "L.A. Noire ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4c0/4c0f154b51525e93ce8f2f18197c82ee.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 4",
+          "tr": "L.A. Noire ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/87b/87bf0f4ababb76a87b7ac82a282e44c6.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 5",
+          "tr": "L.A. Noire ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5e0/5e05bd7135d8e8d8dfb92eb7e3d57181.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 6",
+          "tr": "L.A. Noire ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "L.A. Noire",
+      "rawgSlug": "la-noire",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "rpg",
+      "story-rich",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/la-noire",
+    "sources": [],
+    "updatedAt": "2026-10-28T11:59:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "super-meat-boy-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Super Meat Boy",
+      "tr": "Super Meat Boy"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2010 for Nintendo Switch (Metacritic 87/100).",
+      "tr": "2010 yılında çıkan Nintendo Switch için Platform / Bağımsız oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/e04/e04963f3ac4c4fa83a1dc0b9231e50db.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b1e/b1e6c4d530035326da66fb85ae57519b.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 1",
+          "tr": "Super Meat Boy ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/09f/09f743bc5acc26aba844b3a092cdcddf.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 2",
+          "tr": "Super Meat Boy ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/995/9951726156ed69933ec1eff9a65c0e60.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 3",
+          "tr": "Super Meat Boy ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/db4/db4747c3913bd81e3e6754bb51a34838.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 4",
+          "tr": "Super Meat Boy ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e1d/e1d4006f82564f0d654f2959042a3acc.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 5",
+          "tr": "Super Meat Boy ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/14c/14c8b551343374231fa07987e5a2d9e3.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 6",
+          "tr": "Super Meat Boy ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Super Meat Boy",
+      "rawgSlug": "super-meat-boy",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/super-meat-boy",
+    "sources": [],
+    "updatedAt": "2026-10-24T13:48:33.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metro-last-light-redux-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Metro: Last Light Redux",
+      "tr": "Metro: Last Light Redux"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2014 for Nintendo Switch (Metacritic 76/100).",
+      "tr": "2014 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/7a4/7a45e4cdc5b07f316d49cf147b083b27.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/111/11118bdcf7cd62d35f63826c79983e16.jpg",
+        "alt": {
+          "en": "Metro: Last Light Redux screenshot 1",
+          "tr": "Metro: Last Light Redux ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/11b/11b420a51d555aad055e37916b112fd1.jpg",
+        "alt": {
+          "en": "Metro: Last Light Redux screenshot 2",
+          "tr": "Metro: Last Light Redux ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7ba/7ba241860b68b0a5fe0cda616bde2596.jpg",
+        "alt": {
+          "en": "Metro: Last Light Redux screenshot 3",
+          "tr": "Metro: Last Light Redux ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d3/9d3b567749527447580bcb9df1c894bb.jpg",
+        "alt": {
+          "en": "Metro: Last Light Redux screenshot 4",
+          "tr": "Metro: Last Light Redux ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/97d/97dd78e4e9051b1529313480789b63ab.jpg",
+        "alt": {
+          "en": "Metro: Last Light Redux screenshot 5",
+          "tr": "Metro: Last Light Redux ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0d2/0d26738855784b7997b1569fa4979400.jpg",
+        "alt": {
+          "en": "Metro: Last Light Redux screenshot 6",
+          "tr": "Metro: Last Light Redux ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Metro: Last Light Redux",
+      "rawgSlug": "metro-last-light-redux",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/metro-last-light-redux",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:40:13.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metro-redux-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Metro 2033 Redux",
+      "tr": "Metro 2033 Redux"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2014 for Nintendo Switch (Metacritic 88/100).",
+      "tr": "2014 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/4fb/4fb548e4816c84d1d70f1a228fb167cc.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/432/432cf94eb1f25d7415f05def5d18cedc.jpg",
+        "alt": {
+          "en": "Metro 2033 Redux screenshot 1",
+          "tr": "Metro 2033 Redux ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/82c/82cb9461b5ad0ebdb6edc4b3acdfb731.jpg",
+        "alt": {
+          "en": "Metro 2033 Redux screenshot 2",
+          "tr": "Metro 2033 Redux ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b95/b957aad3c646822893fe084ae6bf7652.jpg",
+        "alt": {
+          "en": "Metro 2033 Redux screenshot 3",
+          "tr": "Metro 2033 Redux ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f5/8f5ebd97e68dd1e16d008c7be452afd7.jpg",
+        "alt": {
+          "en": "Metro 2033 Redux screenshot 4",
+          "tr": "Metro 2033 Redux ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dd5/dd59314b82f1d7eb3631a6fa54af3072.jpg",
+        "alt": {
+          "en": "Metro 2033 Redux screenshot 5",
+          "tr": "Metro 2033 Redux ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/19b/19b46c6f0cb02c9e3791d15d8da4bbf1.jpg",
+        "alt": {
+          "en": "Metro 2033 Redux screenshot 6",
+          "tr": "Metro 2033 Redux ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Metro 2033 Redux",
+      "rawgSlug": "metro-redux",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/metro-redux",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:40:43.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "hades-2018-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Hades",
+      "tr": "Hades"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2020 for Nintendo Switch (Metacritic 93/100).",
+      "tr": "2020 yılında çıkan Nintendo Switch için Bağımsız / Macera oyunu (Metacritic 93/100)."
+    },
+    "developer": "RAWG",
+    "version": "2020",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 93,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/1f4/1f47a270b8f241e4676b14d39ec620f7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/546/546826ed2cde2dec94e1b470c8cbb9ac.jpg",
+        "alt": {
+          "en": "Hades screenshot 1",
+          "tr": "Hades ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0aa/0aa5e778c3cf8f47e3ee7f8e0185eb16.jpg",
+        "alt": {
+          "en": "Hades screenshot 2",
+          "tr": "Hades ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a06/a0649473a36bb879cef146a244d9cb54.jpg",
+        "alt": {
+          "en": "Hades screenshot 3",
+          "tr": "Hades ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f70/f7079ac3e96a5da13c8cfda6fb9fe249.jpg",
+        "alt": {
+          "en": "Hades screenshot 4",
+          "tr": "Hades ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8d4/8d4d9c4ffe01ad0addc29353a895d562.jpg",
+        "alt": {
+          "en": "Hades screenshot 5",
+          "tr": "Hades ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ece/eceaae77766d7f7b0fdfa4f3bb4eff98.jpg",
+        "alt": {
+          "en": "Hades screenshot 6",
+          "tr": "Hades ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Hades",
+      "rawgSlug": "hades-2018",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg"
+    ],
+    "sourceUrl": "https://rawg.io/games/hades-2018",
+    "sources": [],
+    "updatedAt": "2026-11-20T18:07:28.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bioshock-2-remastered-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "BioShock 2 Remastered",
+      "tr": "BioShock 2 Remastered"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2016 for Nintendo Switch (Score 80/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Aksiyon / RPG oyunu (Puan 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/7c4/7c448374df84b607f67ce9182a3a3ca7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f8f/f8f97169e49ff503f182cb480c75d377.jpg",
+        "alt": {
+          "en": "BioShock 2 Remastered screenshot 1",
+          "tr": "BioShock 2 Remastered ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/be7/be7ba98fad14386322335d9d87f4cf05.jpg",
+        "alt": {
+          "en": "BioShock 2 Remastered screenshot 2",
+          "tr": "BioShock 2 Remastered ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d0e/d0e70feaab57195e8286f3501e95fc5e.jpg",
+        "alt": {
+          "en": "BioShock 2 Remastered screenshot 3",
+          "tr": "BioShock 2 Remastered ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f6e/f6e3977b58906b54d43232262521e7c6.jpg",
+        "alt": {
+          "en": "BioShock 2 Remastered screenshot 4",
+          "tr": "BioShock 2 Remastered ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/932/932a57c6958406a255b36d90d7eb62cd.jpg",
+        "alt": {
+          "en": "BioShock 2 Remastered screenshot 5",
+          "tr": "BioShock 2 Remastered ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dd5/dd5c9b494d356ecc6b06115e51bf95c4.jpg",
+        "alt": {
+          "en": "BioShock 2 Remastered screenshot 6",
+          "tr": "BioShock 2 Remastered ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BioShock 2 Remastered",
+      "rawgSlug": "bioshock-2-remastered",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/bioshock-2-remastered",
+    "sources": [],
+    "updatedAt": "2026-09-01T16:57:53.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "nierautomata-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "NieR:Automata",
+      "tr": "NieR:Automata"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2017 for Nintendo Switch (Metacritic 86/100).",
+      "tr": "2017 yılında çıkan Nintendo Switch için Aksiyon / RPG oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2017",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/5a4/5a44112251d70a25291cc33757220fce.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/286/28651ead277f96a8b950ded95b617b25.jpg",
+        "alt": {
+          "en": "NieR:Automata screenshot 1",
+          "tr": "NieR:Automata ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/818/8186c49e4788cb1a9d346689afeff9e4.jpg",
+        "alt": {
+          "en": "NieR:Automata screenshot 2",
+          "tr": "NieR:Automata ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/974/9747126200ff91b7b9515c4484e562a5.jpg",
+        "alt": {
+          "en": "NieR:Automata screenshot 3",
+          "tr": "NieR:Automata ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f49/f498382127612aaa8d834e3c3eb2be33.jpg",
+        "alt": {
+          "en": "NieR:Automata screenshot 4",
+          "tr": "NieR:Automata ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/667/667f82af0d448aaec6cc119eb7ab6909.jpg",
+        "alt": {
+          "en": "NieR:Automata screenshot 5",
+          "tr": "NieR:Automata ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/48f/48fdff19cfe1dc37d86a20af01cc4bb8.jpg",
+        "alt": {
+          "en": "NieR:Automata screenshot 6",
+          "tr": "NieR:Automata ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "NieR:Automata",
+      "rawgSlug": "nierautomata",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/nierautomata",
+    "sources": [],
+    "updatedAt": "2026-11-20T06:52:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "minecraft-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Minecraft",
+      "tr": "Minecraft"
+    },
+    "description": {
+      "en": "Action / Arcade title released in 2009 for Nintendo Switch (Metacritic 83/100).",
+      "tr": "2009 yılında çıkan Nintendo Switch için Aksiyon / Arcade oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/324/32454b11adde40d87c046f310f0d710d.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 1",
+          "tr": "Minecraft ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/268/2689f04cbcabb467dd4948e30fe90f51.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 2",
+          "tr": "Minecraft ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e83/e83fbaf3a8bdf1cdd855acf8fc90d2fe.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 3",
+          "tr": "Minecraft ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a02/a021bf48ee5e492026e6464b3751cf35.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 4",
+          "tr": "Minecraft ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0cc/0cc6c1534e782b9d040c665a1f78c6f7.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 5",
+          "tr": "Minecraft ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3f6/3f66dd84a110f796a80baa4539430b68.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 6",
+          "tr": "Minecraft ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Minecraft",
+      "rawgSlug": "minecraft",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "multiplayer",
+      "sandbox",
+      "3d",
+      "crafting",
+      "building"
+    ],
+    "sourceUrl": "https://rawg.io/games/minecraft",
+    "sources": [],
+    "updatedAt": "2026-11-15T19:12:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "fall-guys-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Fall Guys: Ultimate Knockout",
+      "tr": "Fall Guys: Ultimate Knockout"
+    },
+    "description": {
+      "en": "Action / Casual title released in 2020 for Nintendo Switch (Metacritic 80/100).",
+      "tr": "2020 yılında çıkan Nintendo Switch için Aksiyon / Günlük oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2020",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/5eb/5eb49eb2fa0738fdb5bacea557b1bc57.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/1c5/1c5d40d58ac34b04576ffd7072989eea.jpg",
+        "alt": {
+          "en": "Fall Guys: Ultimate Knockout screenshot 1",
+          "tr": "Fall Guys: Ultimate Knockout ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5a7/5a7accdc9cc61aa844b2d4f64f4c94b3.jpeg",
+        "alt": {
+          "en": "Fall Guys: Ultimate Knockout screenshot 2",
+          "tr": "Fall Guys: Ultimate Knockout ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/37c/37cecc1f17ad71b26fbbc5a651a4fe9b.jpg",
+        "alt": {
+          "en": "Fall Guys: Ultimate Knockout screenshot 3",
+          "tr": "Fall Guys: Ultimate Knockout ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9c7/9c7a057ff1ce9122e66847b0eeedd20f.jpg",
+        "alt": {
+          "en": "Fall Guys: Ultimate Knockout screenshot 4",
+          "tr": "Fall Guys: Ultimate Knockout ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/af7/af7ccaa5f7c2826d9f41cd0fd5c16d4d.jpg",
+        "alt": {
+          "en": "Fall Guys: Ultimate Knockout screenshot 5",
+          "tr": "Fall Guys: Ultimate Knockout ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4b1/4b118c6bc02c21ffcac1cb44717666a9.jpg",
+        "alt": {
+          "en": "Fall Guys: Ultimate Knockout screenshot 6",
+          "tr": "Fall Guys: Ultimate Knockout ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Fall Guys: Ultimate Knockout",
+      "rawgSlug": "fall-guys",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "steam-achievements",
+      "full-controller-support",
+      "online-multiplayer",
+      "cross-platform-multiplayer",
+      "action"
+    ],
+    "sourceUrl": "https://rawg.io/games/fall-guys",
+    "sources": [],
+    "updatedAt": "2026-10-20T02:04:46.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "resident-evil-7-biohazard-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Resident Evil 7: Biohazard",
+      "tr": "Resident Evil 7: Biohazard"
+    },
+    "description": {
+      "en": "Shooter / Adventure title released in 2017 for Nintendo Switch (Metacritic 85/100).",
+      "tr": "2017 yılında çıkan Nintendo Switch için Nişancı / Macera oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2017",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/cee/cee577e2097a59b77193fe2bce94667d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/9c7/9c7016a1d1a8f66d67266e35452a3cf4.jpg",
+        "alt": {
+          "en": "Resident Evil 7: Biohazard screenshot 1",
+          "tr": "Resident Evil 7: Biohazard ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/315/3152c8a5165faaefc5429ab54399e3a6.jpg",
+        "alt": {
+          "en": "Resident Evil 7: Biohazard screenshot 2",
+          "tr": "Resident Evil 7: Biohazard ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/753/753c32daa8a2685f6aecc052e85197f7.jpg",
+        "alt": {
+          "en": "Resident Evil 7: Biohazard screenshot 3",
+          "tr": "Resident Evil 7: Biohazard ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3f9/3f916c888d9e135adb456399550fd03e.jpg",
+        "alt": {
+          "en": "Resident Evil 7: Biohazard screenshot 4",
+          "tr": "Resident Evil 7: Biohazard ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9bd/9bd7368147200c3e1e615950c4f3fc73.jpg",
+        "alt": {
+          "en": "Resident Evil 7: Biohazard screenshot 5",
+          "tr": "Resident Evil 7: Biohazard ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/804/804d33ab33db680543a6df814c15c8e3.jpg",
+        "alt": {
+          "en": "Resident Evil 7: Biohazard screenshot 6",
+          "tr": "Resident Evil 7: Biohazard ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Resident Evil 7: Biohazard",
+      "rawgSlug": "resident-evil-7-biohazard",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/resident-evil-7-biohazard",
+    "sources": [],
+    "updatedAt": "2026-11-21T08:46:05.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bastion-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Bastion",
+      "tr": "Bastion"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2011 for Nintendo Switch (Metacritic 86/100).",
+      "tr": "2011 yılında çıkan Nintendo Switch için Bağımsız / Macera oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/24c/24c8d0fb4059edb73e8ee2157a17b1c1.jpg",
+        "alt": {
+          "en": "Bastion screenshot 1",
+          "tr": "Bastion ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2f1/2f18e80782d107945b11b6d02a16ab8d.jpg",
+        "alt": {
+          "en": "Bastion screenshot 2",
+          "tr": "Bastion ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7de/7ded4f413b6670b37b8047a0565b5a6c.jpg",
+        "alt": {
+          "en": "Bastion screenshot 3",
+          "tr": "Bastion ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d36/d36f5867baf7af7506765702b9ff7c84.jpg",
+        "alt": {
+          "en": "Bastion screenshot 4",
+          "tr": "Bastion ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c0b/c0b36461930db0284a10635c9776daf7.jpg",
+        "alt": {
+          "en": "Bastion screenshot 5",
+          "tr": "Bastion ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4c5/4c5996a474a68ae141a2fb9247a2cdac.jpg",
+        "alt": {
+          "en": "Bastion screenshot 6",
+          "tr": "Bastion ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Bastion",
+      "rawgSlug": "bastion",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/bastion",
+    "sources": [],
+    "updatedAt": "2026-10-22T10:35:10.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "paladins-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Paladins",
+      "tr": "Paladins"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2016 for Nintendo Switch (Metacritic 78/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Metacritic 78/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 78,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/d2c/d2c74dacd89fd817c2deb625b01adb1a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/014/014f87c62cbff3027ddcf9779f2ac18c.jpg",
+        "alt": {
+          "en": "Paladins screenshot 1",
+          "tr": "Paladins ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d48/d488374a06516f9e801ba067fb2469e8.jpg",
+        "alt": {
+          "en": "Paladins screenshot 2",
+          "tr": "Paladins ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/43f/43f109d255699d139723b15bcf0e7d10.jpg",
+        "alt": {
+          "en": "Paladins screenshot 3",
+          "tr": "Paladins ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/737/73717d42eba514f3231df9980206d350.jpg",
+        "alt": {
+          "en": "Paladins screenshot 4",
+          "tr": "Paladins ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dc6/dc6e1c1b47a3f53cdaa6bbab7dc8b1b5.jpg",
+        "alt": {
+          "en": "Paladins screenshot 5",
+          "tr": "Paladins ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0cc/0cc3a18b8fdaecfdfe9b6551c32e9297.jpg",
+        "alt": {
+          "en": "Paladins screenshot 6",
+          "tr": "Paladins ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Paladins",
+      "rawgSlug": "paladins",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "steam-achievements",
+      "multiplayer",
+      "steam-trading-cards",
+      "co-op",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/paladins",
+    "sources": [],
+    "updatedAt": "2026-11-01T10:48:17.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "ark-survival-evolved-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "ARK: Survival Evolved",
+      "tr": "ARK: Survival Evolved"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2015 for Nintendo Switch (Metacritic 70/100).",
+      "tr": "2015 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 70/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 70,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/58a/58ac7f6569259dcc0b60b921869b19fc.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/660/660811527f1b41a42ae101148295d66b.jpg",
+        "alt": {
+          "en": "ARK: Survival Evolved screenshot 1",
+          "tr": "ARK: Survival Evolved ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e53/e53ac4ceecd06dee0ff0f2cff2117d3a.jpg",
+        "alt": {
+          "en": "ARK: Survival Evolved screenshot 2",
+          "tr": "ARK: Survival Evolved ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c77/c7786494eae003730f22e118c4442e98.jpg",
+        "alt": {
+          "en": "ARK: Survival Evolved screenshot 3",
+          "tr": "ARK: Survival Evolved ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4f6/4f65f028427f46e923ba557e80d910f2.jpg",
+        "alt": {
+          "en": "ARK: Survival Evolved screenshot 4",
+          "tr": "ARK: Survival Evolved ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bfe/bfe582a512a2f50473dd35831efb7b56.jpg",
+        "alt": {
+          "en": "ARK: Survival Evolved screenshot 5",
+          "tr": "ARK: Survival Evolved ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fb2/fb2aa1404293b03b44c27c16302d2b16.jpg",
+        "alt": {
+          "en": "ARK: Survival Evolved screenshot 6",
+          "tr": "ARK: Survival Evolved ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "ARK: Survival Evolved",
+      "rawgSlug": "ark-survival-evolved",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/ark-survival-evolved",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:03:24.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "cities-skylines-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Cities: Skylines",
+      "tr": "Cities: Skylines"
+    },
+    "description": {
+      "en": "Strategy / Simulation title released in 2015 for Nintendo Switch (Metacritic 85/100).",
+      "tr": "2015 yılında çıkan Nintendo Switch için Strateji / Simülasyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/25c/25c4776ab5723d5d735d8bf617ca12d9.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c0c/c0c098666e5ee532a8b1459fce1b3a01.jpg",
+        "alt": {
+          "en": "Cities: Skylines screenshot 1",
+          "tr": "Cities: Skylines ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/702/7021e966d68ab8ccc76f859d30d925fe.jpg",
+        "alt": {
+          "en": "Cities: Skylines screenshot 2",
+          "tr": "Cities: Skylines ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/15d/15dc7309784c53b75ae05ec95c347d9e.jpg",
+        "alt": {
+          "en": "Cities: Skylines screenshot 3",
+          "tr": "Cities: Skylines ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2e7/2e7924d7f3bf1a61498ece6e89edd26c.jpg",
+        "alt": {
+          "en": "Cities: Skylines screenshot 4",
+          "tr": "Cities: Skylines ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/030/0308db992eac77d507240ae7d6874dd1.jpg",
+        "alt": {
+          "en": "Cities: Skylines screenshot 5",
+          "tr": "Cities: Skylines ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e03/e03e7124d4aea8276a6281fb760fb5ce.jpg",
+        "alt": {
+          "en": "Cities: Skylines screenshot 6",
+          "tr": "Cities: Skylines ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Cities: Skylines",
+      "rawgSlug": "cities-skylines",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/cities-skylines",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:37:25.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "undertale-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Undertale",
+      "tr": "Undertale"
+    },
+    "description": {
+      "en": "Indie / RPG title released in 2015 for Nintendo Switch (Metacritic 92/100).",
+      "tr": "2015 yılında çıkan Nintendo Switch için Bağımsız / RPG oyunu (Metacritic 92/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 92,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/ffe/ffed87105b14f5beff72ff44a7793fd5.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f06/f0657f2790937cf09c34f0aa65e81d7d.jpg",
+        "alt": {
+          "en": "Undertale screenshot 1",
+          "tr": "Undertale ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1af/1af4cbbe6aaaad4661d627f545969a62.jpg",
+        "alt": {
+          "en": "Undertale screenshot 2",
+          "tr": "Undertale ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/030/0302c932c7ba686f2674bc48ad0e941c.jpg",
+        "alt": {
+          "en": "Undertale screenshot 3",
+          "tr": "Undertale ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/33d/33d07448d2df02e23bba54764ca09a18.jpg",
+        "alt": {
+          "en": "Undertale screenshot 4",
+          "tr": "Undertale ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/173/17361724f3e371c5ba14b1db9e166bd9.jpg",
+        "alt": {
+          "en": "Undertale screenshot 5",
+          "tr": "Undertale ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e19/e19de998e419b52aea601dd83615d060.jpg",
+        "alt": {
+          "en": "Undertale screenshot 6",
+          "tr": "Undertale ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Undertale",
+      "rawgSlug": "undertale",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "great-soundtrack",
+      "rpg",
+      "story-rich",
+      "2d"
+    ],
+    "sourceUrl": "https://rawg.io/games/undertale",
+    "sources": [],
+    "updatedAt": "2026-11-14T13:18:45.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "unturned-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Unturned",
+      "tr": "Unturned"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2014 for Nintendo Switch (Score 55/100).",
+      "tr": "2014 yılında çıkan Nintendo Switch için Nişancı / Aksiyon oyunu (Puan 55/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 55,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/18c/18ca24ed4b700668c36b11ebc35f3d23.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d4/9d47e01a1cf7bb9e1631209508871bad.jpg",
+        "alt": {
+          "en": "Unturned screenshot 1",
+          "tr": "Unturned ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/73d/73d4d368858bd642406b48b13f57b51b.jpg",
+        "alt": {
+          "en": "Unturned screenshot 2",
+          "tr": "Unturned ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/512/5125113bf634a7453a76fb3dd0a9caa8.jpg",
+        "alt": {
+          "en": "Unturned screenshot 3",
+          "tr": "Unturned ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f67/f678bfbaf7fcc9c27e3db05ba1a64c24.jpg",
+        "alt": {
+          "en": "Unturned screenshot 4",
+          "tr": "Unturned ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bcf/bcf6ea78a7101e7af450eea9ab5d35f8.jpg",
+        "alt": {
+          "en": "Unturned screenshot 5",
+          "tr": "Unturned ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9f1/9f17aae472a62e2edec200a137ea09e5.jpg",
+        "alt": {
+          "en": "Unturned screenshot 6",
+          "tr": "Unturned ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Unturned",
+      "rawgSlug": "unturned",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/unturned",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:31:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "brothers-a-tale-of-two-sons-2-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Brothers: A Tale of Two Sons",
+      "tr": "Brothers: A Tale of Two Sons"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2013 for Nintendo Switch (Metacritic 90/100).",
+      "tr": "2013 yılında çıkan Nintendo Switch için Bağımsız / Macera oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/b6b/b6b20bfc4b34e312dbc8aac53c95a348.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/14d/14dcdb86ae346a69022ab5837016fdc1.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 1",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5e7/5e71a4ccee940eb51a6110535f79d4ed.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 2",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/709/70954b4dac5e2a4966293ce0c7dbc6c4.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 3",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/08f/08fd4301c46d14aed67c9d7f98b12ec0.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 4",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5bd/5bd04279767fc7febc37e460da236b28.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 5",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/900/900738abfbca21ada3170e5f9dc7a333.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 6",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Brothers: A Tale of Two Sons",
+      "rawgSlug": "brothers-a-tale-of-two-sons-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/brothers-a-tale-of-two-sons-2",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:04:59.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "inside-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "INSIDE",
+      "tr": "INSIDE"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2016 for Nintendo Switch (Metacritic 87/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/d5a/d5a24f9f71315427fa6e966fdd98dfa6.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3a0/3a049846766e09f8883badea6538e736.jpg",
+        "alt": {
+          "en": "INSIDE screenshot 1",
+          "tr": "INSIDE ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b58/b58b50e9da6b409fd223912039c4cba7.jpg",
+        "alt": {
+          "en": "INSIDE screenshot 2",
+          "tr": "INSIDE ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7d0/7d07f39a90bc1ed2dea7186580b49c7a.jpg",
+        "alt": {
+          "en": "INSIDE screenshot 3",
+          "tr": "INSIDE ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/411/4116e5d3ccdf2bdcf6e4ee4eedf7caa2.jpg",
+        "alt": {
+          "en": "INSIDE screenshot 4",
+          "tr": "INSIDE ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e6b/e6b8b49e33a11f4ae875d1ce5b236cc8.jpg",
+        "alt": {
+          "en": "INSIDE screenshot 5",
+          "tr": "INSIDE ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/eb2/eb2b33954421291b98e2ae11fba72f7d.jpg",
+        "alt": {
+          "en": "INSIDE screenshot 6",
+          "tr": "INSIDE ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "INSIDE",
+      "rawgSlug": "inside",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/inside",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:33.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sega-mega-drive-and-genesis-classics-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "SEGA Mega Drive and Genesis Classics",
+      "tr": "SEGA Mega Drive and Genesis Classics"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2010 for Nintendo Switch (Metacritic 76/100).",
+      "tr": "2010 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/0fd/0fd84d36596a83ef2e5a35f63a072218.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a98/a98a26bc099f56ad0f89fa7f51b7e839.jpg",
+        "alt": {
+          "en": "SEGA Mega Drive and Genesis Classics screenshot 1",
+          "tr": "SEGA Mega Drive and Genesis Classics ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8c5/8c5a93e3103406ad15f9030d3262d79b.jpg",
+        "alt": {
+          "en": "SEGA Mega Drive and Genesis Classics screenshot 2",
+          "tr": "SEGA Mega Drive and Genesis Classics ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/041/04196ceb413c23c824054897a2d9ce96.jpg",
+        "alt": {
+          "en": "SEGA Mega Drive and Genesis Classics screenshot 3",
+          "tr": "SEGA Mega Drive and Genesis Classics ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/018/018f00f6e05f18b901d4dec3e289f0f0.jpg",
+        "alt": {
+          "en": "SEGA Mega Drive and Genesis Classics screenshot 4",
+          "tr": "SEGA Mega Drive and Genesis Classics ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f5e/f5e32500f6fb16aae8622f0beb115fe9.jpg",
+        "alt": {
+          "en": "SEGA Mega Drive and Genesis Classics screenshot 5",
+          "tr": "SEGA Mega Drive and Genesis Classics ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/052/05295a43cd5274c6e8b74752fd51dfcb.jpg",
+        "alt": {
+          "en": "SEGA Mega Drive and Genesis Classics screenshot 6",
+          "tr": "SEGA Mega Drive and Genesis Classics ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "SEGA Mega Drive and Genesis Classics",
+      "rawgSlug": "sega-mega-drive-and-genesis-classics",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "rpg",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/sega-mega-drive-and-genesis-classics",
+    "sources": [],
+    "updatedAt": "2026-09-11T12:00:12.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "firewatch-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Firewatch",
+      "tr": "Firewatch"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2016 for Nintendo Switch (Metacritic 81/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Bağımsız / Macera oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/0be/0bea0a08a4d954337305391b778a7f37.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e86/e86b8c787467f28f816eb59c5a7e8799.jpg",
+        "alt": {
+          "en": "Firewatch screenshot 1",
+          "tr": "Firewatch ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5fd/5fd10bf8857d575d25029712eff7a555.jpg",
+        "alt": {
+          "en": "Firewatch screenshot 2",
+          "tr": "Firewatch ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/12a/12a71dc55e86960b7f0185f12c3affe2.jpg",
+        "alt": {
+          "en": "Firewatch screenshot 3",
+          "tr": "Firewatch ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/992/9923c31af79cb7a17e24c4ef47d50217.jpg",
+        "alt": {
+          "en": "Firewatch screenshot 4",
+          "tr": "Firewatch ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2fd/2fde2721efe9480d2ccd7c204649edab.jpg",
+        "alt": {
+          "en": "Firewatch screenshot 5",
+          "tr": "Firewatch ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d96/d96edb4fac41f4c39871ac750893cdec.jpg",
+        "alt": {
+          "en": "Firewatch screenshot 6",
+          "tr": "Firewatch ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Firewatch",
+      "rawgSlug": "firewatch",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich",
+      "horror",
+      "exploration"
+    ],
+    "sourceUrl": "https://rawg.io/games/firewatch",
+    "sources": [],
+    "updatedAt": "2026-10-27T14:22:56.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "brawlhalla-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "Brawlhalla",
+      "tr": "Brawlhalla"
+    },
+    "description": {
+      "en": "Casual / Indie title released in 2014 for Nintendo Switch (Score 64/100).",
+      "tr": "2014 yılında çıkan Nintendo Switch için Günlük / Bağımsız oyunu (Puan 64/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 64,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/68e/68e9226c1c45af8bab290580f7456be2.jpg",
+        "alt": {
+          "en": "Brawlhalla screenshot 1",
+          "tr": "Brawlhalla ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/440/4409227ccd02e3a1d4de7894d04ef62d.jpg",
+        "alt": {
+          "en": "Brawlhalla screenshot 2",
+          "tr": "Brawlhalla ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/df9/df9063e1a20d9ab1bd1e1deb693c17b6.jpg",
+        "alt": {
+          "en": "Brawlhalla screenshot 3",
+          "tr": "Brawlhalla ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/537/537f4a9f7cbc8be0e5e9a8943b09e124.jpg",
+        "alt": {
+          "en": "Brawlhalla screenshot 4",
+          "tr": "Brawlhalla ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/50d/50d0c17d79e3210c20a4c6cc16b49e31.jpg",
+        "alt": {
+          "en": "Brawlhalla screenshot 5",
+          "tr": "Brawlhalla ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a8c/a8ca6fcb3c8df773c4cfd5101682edab.jpg",
+        "alt": {
+          "en": "Brawlhalla screenshot 6",
+          "tr": "Brawlhalla ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Brawlhalla",
+      "rawgSlug": "brawlhalla",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "steam-trading-cards",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/brawlhalla",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:18.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "assassins-creed-odyssey-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Assassin's Creed Odyssey",
+      "tr": "Assassin's Creed Odyssey"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2018 for Nintendo Switch (Metacritic 85/100).",
+      "tr": "2018 yılında çıkan Nintendo Switch için Aksiyon / RPG oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2018",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/c6b/c6bd26767c1053fef2b10bb852943559.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/412/412b1dd5c880b80d8404451d3ff44360.jpg",
+        "alt": {
+          "en": "Assassin's Creed Odyssey screenshot 1",
+          "tr": "Assassin's Creed Odyssey ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9b5/9b59a790deab688ea923e0cd7b0cadbd_sNpbwUf.jpg",
+        "alt": {
+          "en": "Assassin's Creed Odyssey screenshot 2",
+          "tr": "Assassin's Creed Odyssey ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b09/b09a53fb76ea832671599a5f287ab34a.jpg",
+        "alt": {
+          "en": "Assassin's Creed Odyssey screenshot 3",
+          "tr": "Assassin's Creed Odyssey ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2f9/2f993667330526171e4056c0a0663437.jpg",
+        "alt": {
+          "en": "Assassin's Creed Odyssey screenshot 4",
+          "tr": "Assassin's Creed Odyssey ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6d8/6d8c268dff506f890478e6a0a492858b.jpg",
+        "alt": {
+          "en": "Assassin's Creed Odyssey screenshot 5",
+          "tr": "Assassin's Creed Odyssey ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/588/5883818edafd22c8a2e1a45bf6fe07b1.jpg",
+        "alt": {
+          "en": "Assassin's Creed Odyssey screenshot 6",
+          "tr": "Assassin's Creed Odyssey ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Assassin's Creed Odyssey",
+      "rawgSlug": "assassins-creed-odyssey",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "steam-trading-cards",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/assassins-creed-odyssey",
+    "sources": [],
+    "updatedAt": "2026-11-15T14:28:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "no-mans-sky-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "No Man's Sky",
+      "tr": "No Man's Sky"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2016 for Nintendo Switch (Metacritic 75/100).",
+      "tr": "2016 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/174/1743b3dd185bda4a7be349347d4064df.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/34a/34a9f8a7a487e90c51d0ed1782a122f8.jpg",
+        "alt": {
+          "en": "No Man's Sky screenshot 1",
+          "tr": "No Man's Sky ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/77d/77d311572d90024a03d1ac722a2d21d3.jpg",
+        "alt": {
+          "en": "No Man's Sky screenshot 2",
+          "tr": "No Man's Sky ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6a7/6a766ebcc837efc2d324a44a81959a3a.jpg",
+        "alt": {
+          "en": "No Man's Sky screenshot 3",
+          "tr": "No Man's Sky ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d0d/d0d758329f0f48b4afaa1b5493c904db.jpg",
+        "alt": {
+          "en": "No Man's Sky screenshot 4",
+          "tr": "No Man's Sky ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/53a/53a2c5e50e9c27efa5796e928000af92.jpg",
+        "alt": {
+          "en": "No Man's Sky screenshot 5",
+          "tr": "No Man's Sky ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b51/b5196300fae35706f1165443c56b3c7c.jpg",
+        "alt": {
+          "en": "No Man's Sky screenshot 6",
+          "tr": "No Man's Sky ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "No Man's Sky",
+      "rawgSlug": "no-mans-sky",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/no-mans-sky",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:25:20.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "alien-isolation-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Alien: Isolation",
+      "tr": "Alien: Isolation"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2014 for Nintendo Switch (Metacritic 81/100).",
+      "tr": "2014 yılında çıkan Nintendo Switch için Macera / Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/daa/daaee07fcb40744d90cf8142f94a241f.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/df3/df311b578fbaa587c8ba2d768bcf18d7.jpg",
+        "alt": {
+          "en": "Alien: Isolation screenshot 1",
+          "tr": "Alien: Isolation ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b46/b46d5ddcbf7650df4d7eedf1e886bcdb.jpg",
+        "alt": {
+          "en": "Alien: Isolation screenshot 2",
+          "tr": "Alien: Isolation ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/37a/37a8f38809062d7e68d32c537e23862d.jpg",
+        "alt": {
+          "en": "Alien: Isolation screenshot 3",
+          "tr": "Alien: Isolation ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/89c/89c46fe1576b925f4c00cc9b6620877a.jpg",
+        "alt": {
+          "en": "Alien: Isolation screenshot 4",
+          "tr": "Alien: Isolation ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d06/d0612058778cdf798a747c80a491b55f.jpg",
+        "alt": {
+          "en": "Alien: Isolation screenshot 5",
+          "tr": "Alien: Isolation ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e12/e12d1635f074c536a16bc50a6b3f56cc.jpg",
+        "alt": {
+          "en": "Alien: Isolation screenshot 6",
+          "tr": "Alien: Isolation ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Alien: Isolation",
+      "rawgSlug": "alien-isolation",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/alien-isolation",
+    "sources": [],
+    "updatedAt": "2026-10-06T06:21:09.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "disco-elysium-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Disco Elysium",
+      "tr": "Disco Elysium"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2019 for Nintendo Switch (Metacritic 91/100).",
+      "tr": "2019 yılında çıkan Nintendo Switch için Bağımsız / Macera oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "2019",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/840/8408ad3811289a6a5830cae60fb0b62a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/6a0/6a0ec32ec86894561d88ede9f165a343.jpg",
+        "alt": {
+          "en": "Disco Elysium screenshot 1",
+          "tr": "Disco Elysium ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f86/f867d4742a343639a29f82b71fcb6bb6.jpg",
+        "alt": {
+          "en": "Disco Elysium screenshot 2",
+          "tr": "Disco Elysium ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1e0/1e0dbe1bf2bc3e65a4c9dcc259140a88.jpg",
+        "alt": {
+          "en": "Disco Elysium screenshot 3",
+          "tr": "Disco Elysium ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/972/972b2c15a9ae299546fad2b3c2fe6b7a.jpg",
+        "alt": {
+          "en": "Disco Elysium screenshot 4",
+          "tr": "Disco Elysium ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d4/9d4f4828438089af6d03992f5c0ae275.jpg",
+        "alt": {
+          "en": "Disco Elysium screenshot 5",
+          "tr": "Disco Elysium ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c43/c434bb25b5a1f5c48eb5ee0b2b09b8dd.jpg",
+        "alt": {
+          "en": "Disco Elysium screenshot 6",
+          "tr": "Disco Elysium ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Disco Elysium",
+      "rawgSlug": "disco-elysium",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "rpg",
+      "story-rich",
+      "role-playing",
+      "isometric"
+    ],
+    "sourceUrl": "https://rawg.io/games/disco-elysium",
+    "sources": [],
+    "updatedAt": "2026-10-30T14:04:14.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "cuphead-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Cuphead",
+      "tr": "Cuphead"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2017 for Nintendo Switch (Metacritic 87/100).",
+      "tr": "2017 yılında çıkan Nintendo Switch için Platform / Bağımsız oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2017",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f07/f07f356b4d50a0035efcb6abf3834e4e.jpg",
+        "alt": {
+          "en": "Cuphead screenshot 1",
+          "tr": "Cuphead ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bf8/bf8dd4951e4dbd0c608881c367a60a24.jpg",
+        "alt": {
+          "en": "Cuphead screenshot 2",
+          "tr": "Cuphead ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/344/344d6cb35e3dbc0faba8659a5a78e67a.jpg",
+        "alt": {
+          "en": "Cuphead screenshot 3",
+          "tr": "Cuphead ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ade/ade103b6a1ce035f5e7f25c65b6bbe42.jpg",
+        "alt": {
+          "en": "Cuphead screenshot 4",
+          "tr": "Cuphead ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5c1/5c19e99a6d4a2fcd8037587ff1505b11.jpg",
+        "alt": {
+          "en": "Cuphead screenshot 5",
+          "tr": "Cuphead ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dc5/dc5d251100154f7502b4b8510591cc5d.jpg",
+        "alt": {
+          "en": "Cuphead screenshot 6",
+          "tr": "Cuphead ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Cuphead",
+      "rawgSlug": "cuphead",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/cuphead",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:45:27.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "darksiders-switch",
+    "catalogId": "switch",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Darksiders",
+      "tr": "Darksiders"
+    },
+    "description": {
+      "en": "Action title released in 2010 for Nintendo Switch (Metacritic 83/100).",
+      "tr": "2010 yılında çıkan Nintendo Switch için Aksiyon oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 4294967296,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "NSP package",
+    "fileExtension": ".nsp",
+    "coverPath": "https://media.rawg.io/media/games/8d4/8d46786ca86b1d95f3dc7e700e2dc4dd.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/5f8/5f81dd045727d7d3df37434051f3e58d.jpg",
+        "alt": {
+          "en": "Darksiders screenshot 1",
+          "tr": "Darksiders ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/75e/75e92dea166ed012b13c0f6d21fc8e74.jpg",
+        "alt": {
+          "en": "Darksiders screenshot 2",
+          "tr": "Darksiders ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a12/a12169b5688d52e883c01357ab54498b.jpg",
+        "alt": {
+          "en": "Darksiders screenshot 3",
+          "tr": "Darksiders ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f45/f45af019f64f15d1ede88066288f131e.jpg",
+        "alt": {
+          "en": "Darksiders screenshot 4",
+          "tr": "Darksiders ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/df5/df58cef5989e5f6ad3ae9a65694e45c3.jpg",
+        "alt": {
+          "en": "Darksiders screenshot 5",
+          "tr": "Darksiders ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1f2/1f2f13dd3ab8dee76853c78958a729a2.jpg",
+        "alt": {
+          "en": "Darksiders screenshot 6",
+          "tr": "Darksiders ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Darksiders",
+      "rawgSlug": "darksiders",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "rpg",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/darksiders",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:05:06.000Z",
+    "sampleData": false
   }
 ]

@@ -25,6 +25,21 @@
 
 ---
 
+## 📸 Preview (Alpha Footage)
+
+<p align="center">
+  <sub><em>⚠️ Early alpha footage (v0.1.0) — UI, artwork, and features are subject to change.</em></sub>
+</p>
+<p align="center">
+  <img src="public/alphaimg/1.png" alt="EmuStore Alpha Footage - Library View" width="100%" />
+</p>
+<p align="center">
+  <img src="public/alphaimg/2.png" alt="EmuStore Alpha Footage - Library View" width="100%" />
+</p>
+<p align="center">
+  <img src="public/alphaimg/3.png" alt="EmuStore Alpha Footage - Library View" width="100%" />
+</p>
+
 ## ✨ About
 
 > 🚧 EmuStore is currently under active development.

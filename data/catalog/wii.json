@@ -1,47 +1,4352 @@
 [
   {
-    "slug": "supertux-wii",
+    "slug": "resident-evil-4-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Resident Evil 4 (2005)",
+      "tr": "Resident Evil 4 (2005)"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2005 for Nintendo Wii (Metacritic 83/100).",
+      "tr": "2005 yılında çıkan Nintendo Wii için Nişancı / Aksiyon oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2005",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/fee/fee0100afd87b52bfbd33e26689fa26c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d26/d26bbb090817a799df765d2fd4e90d33.jpg",
+        "alt": {
+          "en": "Resident Evil 4 (2005) screenshot 1",
+          "tr": "Resident Evil 4 (2005) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/af5/af57e087289820d3d77fa5538b3a33d7.jpg",
+        "alt": {
+          "en": "Resident Evil 4 (2005) screenshot 2",
+          "tr": "Resident Evil 4 (2005) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/83e/83e7f1f0b4c9b8666348d703f905bda8.jpg",
+        "alt": {
+          "en": "Resident Evil 4 (2005) screenshot 3",
+          "tr": "Resident Evil 4 (2005) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b11/b119cb469f2dac1a6cde79b6db6cd1a7.jpg",
+        "alt": {
+          "en": "Resident Evil 4 (2005) screenshot 4",
+          "tr": "Resident Evil 4 (2005) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/258/2584d15b9bcff1c715deb8b51919672a.jpg",
+        "alt": {
+          "en": "Resident Evil 4 (2005) screenshot 5",
+          "tr": "Resident Evil 4 (2005) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/adb/adbe6b1841ca2509fc9ac04e063d3a65.jpg",
+        "alt": {
+          "en": "Resident Evil 4 (2005) screenshot 6",
+          "tr": "Resident Evil 4 (2005) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Resident Evil 4 (2005)",
+      "rawgSlug": "resident-evil-4",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/resident-evil-4",
+    "sources": [],
+    "updatedAt": "2026-11-01T10:49:54.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "call-of-duty-black-ops-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Call of Duty: Black Ops",
+      "tr": "Call of Duty: Black Ops"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2010 for Nintendo Wii (Metacritic 81/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Nişancı / Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/410/41033a495ce8f7fd4b0934bdb975f12a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a02/a027c280854d5e2f5356f87665dd524a.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops screenshot 1",
+          "tr": "Call of Duty: Black Ops ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6fb/6fba712fa9ca9ffada775b77e4dcff74.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops screenshot 2",
+          "tr": "Call of Duty: Black Ops ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e8d/e8dfc3e3614f83b968898eb2adbd5e64.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops screenshot 3",
+          "tr": "Call of Duty: Black Ops ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7be/7be0d2082caa1eebf28a901f0ccb3561.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops screenshot 4",
+          "tr": "Call of Duty: Black Ops ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/892/89281338b206f0d06bae96beb00aa9dd.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops screenshot 5",
+          "tr": "Call of Duty: Black Ops ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e7/9e7aa6f83ffdfc7ec57f78d1dcdaf0fa.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops screenshot 6",
+          "tr": "Call of Duty: Black Ops ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Call of Duty: Black Ops",
+      "rawgSlug": "call-of-duty-black-ops",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "co-op",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/call-of-duty-black-ops",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:41:50.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "call-of-duty-modern-warfare-3-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Call of Duty: Modern Warfare 3",
+      "tr": "Call of Duty: Modern Warfare 3"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2011 for Nintendo Wii (Metacritic 85/100).",
+      "tr": "2011 yılında çıkan Nintendo Wii için Nişancı / Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/e9c/e9c042d14515eb3ff7cb4db9fe78e435.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2d0/2d088eaa8dfffa81caed030adb832f50.jpg",
+        "alt": {
+          "en": "Call of Duty: Modern Warfare 3 screenshot 1",
+          "tr": "Call of Duty: Modern Warfare 3 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/220/220ab5f4d052cab06b54d284e3e6ca85.jpg",
+        "alt": {
+          "en": "Call of Duty: Modern Warfare 3 screenshot 2",
+          "tr": "Call of Duty: Modern Warfare 3 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/795/795ddfe820efcef3c67d5170c08e4ffb.jpg",
+        "alt": {
+          "en": "Call of Duty: Modern Warfare 3 screenshot 3",
+          "tr": "Call of Duty: Modern Warfare 3 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4ea/4ea0b45d4ef5b1ddb2fbee16aa58b061.jpg",
+        "alt": {
+          "en": "Call of Duty: Modern Warfare 3 screenshot 4",
+          "tr": "Call of Duty: Modern Warfare 3 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/780/7805e988c2ba06cff804f2ff56981d27.jpg",
+        "alt": {
+          "en": "Call of Duty: Modern Warfare 3 screenshot 5",
+          "tr": "Call of Duty: Modern Warfare 3 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cd7/cd782cf22623a81cab4fcb7e8194e672.jpg",
+        "alt": {
+          "en": "Call of Duty: Modern Warfare 3 screenshot 6",
+          "tr": "Call of Duty: Modern Warfare 3 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Call of Duty: Modern Warfare 3",
+      "rawgSlug": "call-of-duty-modern-warfare-3",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-cloud",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/call-of-duty-modern-warfare-3",
+    "sources": [],
+    "updatedAt": "2026-10-28T11:59:31.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-lord-of-the-rings-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "LEGO The Lord of the Rings",
+      "tr": "LEGO The Lord of the Rings"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2012 for Nintendo Wii (Metacritic 80/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/89a/89a700d3c6a76bd0610ca89ccd20da54.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/036/03670030b13fc5075106b9d37e17f889.jpg",
+        "alt": {
+          "en": "LEGO The Lord of the Rings screenshot 1",
+          "tr": "LEGO The Lord of the Rings ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5d2/5d2ccbdb01ab44ce4aed48483a3b0630.jpg",
+        "alt": {
+          "en": "LEGO The Lord of the Rings screenshot 2",
+          "tr": "LEGO The Lord of the Rings ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1db/1db82ef7c6c0b8e083eb03a735c8bef9.jpg",
+        "alt": {
+          "en": "LEGO The Lord of the Rings screenshot 3",
+          "tr": "LEGO The Lord of the Rings ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/47a/47abcad8e68eceeb708da0e233c4f034.jpg",
+        "alt": {
+          "en": "LEGO The Lord of the Rings screenshot 4",
+          "tr": "LEGO The Lord of the Rings ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aeb/aebd43936bd0ccec5a3e3aaa480ff679.jpg",
+        "alt": {
+          "en": "LEGO The Lord of the Rings screenshot 5",
+          "tr": "LEGO The Lord of the Rings ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/07f/07f86d4a18ce01065702da6b6b9b3751.jpg",
+        "alt": {
+          "en": "LEGO The Lord of the Rings screenshot 6",
+          "tr": "LEGO The Lord of the Rings ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO The Lord of the Rings",
+      "rawgSlug": "lego-lord-of-the-rings",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-lord-of-the-rings",
+    "sources": [],
+    "updatedAt": "2026-10-03T07:29:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tomb-raider-underworld-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Tomb Raider: Underworld",
+      "tr": "Tomb Raider: Underworld"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2008 for Nintendo Wii (Metacritic 80/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/341/3413d7275fb1e919f00a925df8288b77.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f89/f891c2dfc79b0cd08b1b13501c930105.jpg",
+        "alt": {
+          "en": "Tomb Raider: Underworld screenshot 1",
+          "tr": "Tomb Raider: Underworld ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b6b/b6bbb8c00812942f12b312e6f0616b3b.jpg",
+        "alt": {
+          "en": "Tomb Raider: Underworld screenshot 2",
+          "tr": "Tomb Raider: Underworld ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d48/d48d7a4972acf02dc6adee0b1f4cc090.jpg",
+        "alt": {
+          "en": "Tomb Raider: Underworld screenshot 3",
+          "tr": "Tomb Raider: Underworld ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c1b/c1bdf73969bf79ac3c3ec407a26e5d21.jpg",
+        "alt": {
+          "en": "Tomb Raider: Underworld screenshot 4",
+          "tr": "Tomb Raider: Underworld ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9a2/9a2e9e36d8622c2b2f5564f8e7285caa.jpg",
+        "alt": {
+          "en": "Tomb Raider: Underworld screenshot 5",
+          "tr": "Tomb Raider: Underworld ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5b9/5b9699e6709dd877ce84180ef0b8c6dc.jpg",
+        "alt": {
+          "en": "Tomb Raider: Underworld screenshot 6",
+          "tr": "Tomb Raider: Underworld ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tomb Raider: Underworld",
+      "rawgSlug": "tomb-raider-underworld",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "third-person",
+      "exploration",
+      "female-protagonist"
+    ],
+    "sourceUrl": "https://rawg.io/games/tomb-raider-underworld",
+    "sources": [],
+    "updatedAt": "2026-10-02T19:31:23.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "call-of-duty-world-at-war-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Call of Duty: World at War",
+      "tr": "Call of Duty: World at War"
+    },
+    "description": {
+      "en": "Shooter title released in 2008 for Nintendo Wii (Metacritic 83/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Nişancı oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/da1/da15524e850ee9791b32973b748e08d5.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8a1/8a1f2cdaaaf8aa19441d890858d01d70.jpg",
+        "alt": {
+          "en": "Call of Duty: World at War screenshot 1",
+          "tr": "Call of Duty: World at War ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/afe/afe6afc104621713ea0c8c5c5dc17149.jpg",
+        "alt": {
+          "en": "Call of Duty: World at War screenshot 2",
+          "tr": "Call of Duty: World at War ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b53/b535859c3a2a6f80f3c68398dbd39a79.jpg",
+        "alt": {
+          "en": "Call of Duty: World at War screenshot 3",
+          "tr": "Call of Duty: World at War ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/baf/baf3982d7d0b65c4e74a38386641b07e.jpg",
+        "alt": {
+          "en": "Call of Duty: World at War screenshot 4",
+          "tr": "Call of Duty: World at War ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/18d/18d0c96f64a6f2093a7097265b831ce9.jpg",
+        "alt": {
+          "en": "Call of Duty: World at War screenshot 5",
+          "tr": "Call of Duty: World at War ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b7b/b7bac2bff127258d92a266dd6a9adef7.jpg",
+        "alt": {
+          "en": "Call of Duty: World at War screenshot 6",
+          "tr": "Call of Duty: World at War ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Call of Duty: World at War",
+      "rawgSlug": "call-of-duty-world-at-war",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "great-soundtrack",
+      "co-op",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/call-of-duty-world-at-war",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:42:21.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "world-of-goo-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "educational",
+    "category": {
+      "en": "Educational",
+      "tr": "Eğitici"
+    },
+    "title": {
+      "en": "World of Goo",
+      "tr": "World of Goo"
+    },
+    "description": {
+      "en": "Educational / Puzzle title released in 2008 for Nintendo Wii (Metacritic 90/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Eğitici / Bulmaca oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/d03/d030347839f74454afcd1008248b08ae.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/44b/44bb511be323062b35e64dac6bc4dda0.jpg",
+        "alt": {
+          "en": "World of Goo screenshot 1",
+          "tr": "World of Goo ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c18/c1840fcf75ad14bcaffc5c10a2d929f3.jpg",
+        "alt": {
+          "en": "World of Goo screenshot 2",
+          "tr": "World of Goo ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2c1/2c1a9ea80f4d50edc64caa5c8be9208f.jpg",
+        "alt": {
+          "en": "World of Goo screenshot 3",
+          "tr": "World of Goo ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/46f/46f070838b9087b8f2b44ab5aed5ba12.jpg",
+        "alt": {
+          "en": "World of Goo screenshot 4",
+          "tr": "World of Goo ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dde/dde84b4351694f58b7bc28dd9c907a64.jpg",
+        "alt": {
+          "en": "World of Goo screenshot 5",
+          "tr": "World of Goo ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7bb/7bb50d061107afc3680b0d31d6206a95.jpg",
+        "alt": {
+          "en": "World of Goo screenshot 6",
+          "tr": "World of Goo ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "World of Goo",
+      "rawgSlug": "world-of-goo",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/world-of-goo",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "modern-warfare-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Call of Duty 4: Modern Warfare",
+      "tr": "Call of Duty 4: Modern Warfare"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2007 for Nintendo Wii (Metacritic 92/100).",
+      "tr": "2007 yılında çıkan Nintendo Wii için Nişancı / Aksiyon oyunu (Metacritic 92/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 92,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/9fb/9fbaea2168caea1f806546dfdaaeb1da.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e8e/e8e92ec1aff7d7767662614d6b47e1c6.jpg",
+        "alt": {
+          "en": "Call of Duty 4: Modern Warfare screenshot 1",
+          "tr": "Call of Duty 4: Modern Warfare ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3a7/3a716eecfb1b6cbc85d90c36534177a4.jpg",
+        "alt": {
+          "en": "Call of Duty 4: Modern Warfare screenshot 2",
+          "tr": "Call of Duty 4: Modern Warfare ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/982/982c8f523d6d83159f6b9bbca20665d5.jpg",
+        "alt": {
+          "en": "Call of Duty 4: Modern Warfare screenshot 3",
+          "tr": "Call of Duty 4: Modern Warfare ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c9e/c9e72793428ed326cf1587c630cc02ca.jpg",
+        "alt": {
+          "en": "Call of Duty 4: Modern Warfare screenshot 4",
+          "tr": "Call of Duty 4: Modern Warfare ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e1/9e1e7d81d2b3ae15091c0f038c14f369.jpg",
+        "alt": {
+          "en": "Call of Duty 4: Modern Warfare screenshot 5",
+          "tr": "Call of Duty 4: Modern Warfare ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/de9/de931d605285d86431a07d9f5530230b.jpg",
+        "alt": {
+          "en": "Call of Duty 4: Modern Warfare screenshot 6",
+          "tr": "Call of Duty 4: Modern Warfare ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Call of Duty 4: Modern Warfare",
+      "rawgSlug": "modern-warfare",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/modern-warfare",
+    "sources": [],
+    "updatedAt": "2026-10-29T08:12:20.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bully-scholarship-edition-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Bully: Scholarship Edition",
+      "tr": "Bully: Scholarship Edition"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2008 for Nintendo Wii (Metacritic 72/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 72/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 72,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/e2b/e2b2bf36ff4af8f8495d2f4e08b1d392.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/78b/78b17cb7ee47fb7726f7e24bfb6806dc.jpg",
+        "alt": {
+          "en": "Bully: Scholarship Edition screenshot 1",
+          "tr": "Bully: Scholarship Edition ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/15e/15ed1a97ce96297c6f5fbe9079394587.jpg",
+        "alt": {
+          "en": "Bully: Scholarship Edition screenshot 2",
+          "tr": "Bully: Scholarship Edition ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/672/672364a9b8b1806b20424f9ef197d18e.jpg",
+        "alt": {
+          "en": "Bully: Scholarship Edition screenshot 3",
+          "tr": "Bully: Scholarship Edition ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b7e/b7e0381dfa4a1108a9ae2faddc8957c1.jpg",
+        "alt": {
+          "en": "Bully: Scholarship Edition screenshot 4",
+          "tr": "Bully: Scholarship Edition ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f4b/f4bbd7c876d8844dea26f1c03a9d9fd5.jpg",
+        "alt": {
+          "en": "Bully: Scholarship Edition screenshot 5",
+          "tr": "Bully: Scholarship Edition ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/218/218a60a3e57398f3bbd2da01ce1e04e8.jpg",
+        "alt": {
+          "en": "Bully: Scholarship Edition screenshot 6",
+          "tr": "Bully: Scholarship Edition ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Bully: Scholarship Edition",
+      "rawgSlug": "bully-scholarship-edition",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/bully-scholarship-edition",
+    "sources": [],
+    "updatedAt": "2026-09-10T18:21:25.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tomb-raider-anniversary-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Tomb Raider: Anniversary",
+      "tr": "Tomb Raider: Anniversary"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2007 for Nintendo Wii (Metacritic 83/100).",
+      "tr": "2007 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/791/791abcd56601482964f0fee6d8ab6a61.jpeg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/6da/6dada7b369848680060d1cb84144599c.jpg",
+        "alt": {
+          "en": "Tomb Raider: Anniversary screenshot 1",
+          "tr": "Tomb Raider: Anniversary ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3e6/3e67ebe84c56b3fc5fc7355139238af2.jpg",
+        "alt": {
+          "en": "Tomb Raider: Anniversary screenshot 2",
+          "tr": "Tomb Raider: Anniversary ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1a5/1a5afe1c6a6bf4dd66e1b919c4e6df80.jpg",
+        "alt": {
+          "en": "Tomb Raider: Anniversary screenshot 3",
+          "tr": "Tomb Raider: Anniversary ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7ff/7ff0b4891538a4dc1fa10e0336e1d808.jpg",
+        "alt": {
+          "en": "Tomb Raider: Anniversary screenshot 4",
+          "tr": "Tomb Raider: Anniversary ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/872/8722b88f555cbd0ff6b486752a117e09.jpg",
+        "alt": {
+          "en": "Tomb Raider: Anniversary screenshot 5",
+          "tr": "Tomb Raider: Anniversary ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b2e/b2e1ab70e60451eafdc9c748102ecb5a.jpg",
+        "alt": {
+          "en": "Tomb Raider: Anniversary screenshot 6",
+          "tr": "Tomb Raider: Anniversary ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tomb Raider: Anniversary",
+      "rawgSlug": "tomb-raider-anniversary",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "third-person",
+      "partial-controller-support",
+      "classic",
+      "female-protagonist"
+    ],
+    "sourceUrl": "https://rawg.io/games/tomb-raider-anniversary",
+    "sources": [],
+    "updatedAt": "2026-10-02T19:31:25.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "need-for-speed-hot-pursuit-2-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Need For Speed: Hot Pursuit",
+      "tr": "Need For Speed: Hot Pursuit"
+    },
+    "description": {
+      "en": "Racing / Arcade title released in 2010 for Nintendo Wii (Metacritic 86/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Yarış / Arcade oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/367/367463d43c2a1465f27e830b5b1334ee.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/fcd/fcd2de939064eff5a8b6b53cca256e07.jpg",
+        "alt": {
+          "en": "Need For Speed: Hot Pursuit screenshot 1",
+          "tr": "Need For Speed: Hot Pursuit ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a40/a4083dff4da425436f28daa91059914d.jpg",
+        "alt": {
+          "en": "Need For Speed: Hot Pursuit screenshot 2",
+          "tr": "Need For Speed: Hot Pursuit ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ece/ece127829ebfd354e1c7044d3695c3b4.jpg",
+        "alt": {
+          "en": "Need For Speed: Hot Pursuit screenshot 3",
+          "tr": "Need For Speed: Hot Pursuit ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/49a/49a5c4ada5939dd932096907757629e3.jpg",
+        "alt": {
+          "en": "Need For Speed: Hot Pursuit screenshot 4",
+          "tr": "Need For Speed: Hot Pursuit ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/970/9707821ac12b01f8ae0d605a8472d464.jpg",
+        "alt": {
+          "en": "Need For Speed: Hot Pursuit screenshot 5",
+          "tr": "Need For Speed: Hot Pursuit ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a4b/a4b9988573b5c5750b7d55c4b565ddef.jpg",
+        "alt": {
+          "en": "Need For Speed: Hot Pursuit screenshot 6",
+          "tr": "Need For Speed: Hot Pursuit ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Need For Speed: Hot Pursuit",
+      "rawgSlug": "need-for-speed-hot-pursuit-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/need-for-speed-hot-pursuit-2",
+    "sources": [],
+    "updatedAt": "2026-11-18T00:36:57.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "far-cry-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Far Cry",
+      "tr": "Far Cry"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2004 for Nintendo Wii (Metacritic 89/100).",
+      "tr": "2004 yılında çıkan Nintendo Wii için Nişancı / Aksiyon oyunu (Metacritic 89/100)."
+    },
+    "developer": "RAWG",
+    "version": "2004",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 89,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/2ee/2eef5ed5e82c28d1299ecc2a0e60f2cb.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/38b/38b5f39e5fdbb92c1c7ce3794bda4427.jpg",
+        "alt": {
+          "en": "Far Cry screenshot 1",
+          "tr": "Far Cry ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/86d/86d51467fdeb636f7553551d06f2bb80.jpg",
+        "alt": {
+          "en": "Far Cry screenshot 2",
+          "tr": "Far Cry ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cb9/cb985b4422419dea14ce3b08ceab379a.jpg",
+        "alt": {
+          "en": "Far Cry screenshot 3",
+          "tr": "Far Cry ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/056/05620d449113a3d25ae67cb8404bec26.jpg",
+        "alt": {
+          "en": "Far Cry screenshot 4",
+          "tr": "Far Cry ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/243/24359310312bc8215b367b9c9dd01432.jpg",
+        "alt": {
+          "en": "Far Cry screenshot 5",
+          "tr": "Far Cry ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/842/84218e4c5eed83835bd49585fe4340ad.jpg",
+        "alt": {
+          "en": "Far Cry screenshot 6",
+          "tr": "Far Cry ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Far Cry",
+      "rawgSlug": "far-cry",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/far-cry",
+    "sources": [],
+    "updatedAt": "2026-11-21T05:59:48.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "star-wars-the-force-unleashed-2-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "STAR WARS: The Force Unleashed II",
+      "tr": "STAR WARS: The Force Unleashed II"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2010 for Nintendo Wii (Metacritic 59/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 59/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 59,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/693/693952316d4b90984a92e7ab0f5c9b81.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c1a/c1a09c717ab1c2ae396a4fb5945240c9.jpg",
+        "alt": {
+          "en": "STAR WARS: The Force Unleashed II screenshot 1",
+          "tr": "STAR WARS: The Force Unleashed II ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2ae/2ae73a92ce68280f233a208aa3c6b163.jpg",
+        "alt": {
+          "en": "STAR WARS: The Force Unleashed II screenshot 2",
+          "tr": "STAR WARS: The Force Unleashed II ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c8a/c8a6d63911623e78e3c6ba8360529a5e.jpg",
+        "alt": {
+          "en": "STAR WARS: The Force Unleashed II screenshot 3",
+          "tr": "STAR WARS: The Force Unleashed II ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b8b/b8b673b314a491ce45c013d5b4961d0f.jpg",
+        "alt": {
+          "en": "STAR WARS: The Force Unleashed II screenshot 4",
+          "tr": "STAR WARS: The Force Unleashed II ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/18d/18dea87e79a8bf4495cfcc7c64f4f8b4.jpg",
+        "alt": {
+          "en": "STAR WARS: The Force Unleashed II screenshot 5",
+          "tr": "STAR WARS: The Force Unleashed II ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c7d/c7d992f4e65ac523c3a1a96f4f3d1031.jpg",
+        "alt": {
+          "en": "STAR WARS: The Force Unleashed II screenshot 6",
+          "tr": "STAR WARS: The Force Unleashed II ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "STAR WARS: The Force Unleashed II",
+      "rawgSlug": "star-wars-the-force-unleashed-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-cloud",
+      "story-rich",
+      "third-person",
+      "sci-fi"
+    ],
+    "sourceUrl": "https://rawg.io/games/star-wars-the-force-unleashed-2",
+    "sources": [],
+    "updatedAt": "2026-10-23T17:21:14.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "rayman-origins-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "Rayman Origins",
+      "tr": "Rayman Origins"
+    },
+    "description": {
+      "en": "Family / Platformer title released in 2011 for Nintendo Wii (Metacritic 86/100).",
+      "tr": "2011 yılında çıkan Nintendo Wii için Aile / Platform oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/375/375f84d018242d7519a230f623981217.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2ad/2ada4e79b5f0ae20f3e1cf14bf972120.jpg",
+        "alt": {
+          "en": "Rayman Origins screenshot 1",
+          "tr": "Rayman Origins ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/345/3450cd96b759085b56a44fc4ff318ba3.jpg",
+        "alt": {
+          "en": "Rayman Origins screenshot 2",
+          "tr": "Rayman Origins ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/79c/79c15d5f52e2f48d841165536c96e22d.jpg",
+        "alt": {
+          "en": "Rayman Origins screenshot 3",
+          "tr": "Rayman Origins ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7c1/7c1d97372419cf225edb175f19bc4297.jpg",
+        "alt": {
+          "en": "Rayman Origins screenshot 4",
+          "tr": "Rayman Origins ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3b1/3b1b73fb0b3089aeaefdedc652161f36.jpg",
+        "alt": {
+          "en": "Rayman Origins screenshot 5",
+          "tr": "Rayman Origins ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ae7/ae7a6ef9e9de7344219a613170414569.jpg",
+        "alt": {
+          "en": "Rayman Origins screenshot 6",
+          "tr": "Rayman Origins ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Rayman Origins",
+      "rawgSlug": "rayman-origins",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "great-soundtrack",
+      "co-op",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/rayman-origins",
+    "sources": [],
+    "updatedAt": "2026-10-24T14:38:37.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-star-wars-tcs-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "LEGO Star Wars - The Complete Saga",
+      "tr": "LEGO Star Wars - The Complete Saga"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2007 for Nintendo Wii (Metacritic 77/100).",
+      "tr": "2007 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/cf3/cf39c637f18800b6d3f65d640a8ebbaa.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f4/8f4f636857df49c86e6d28e16b1d9cc8.jpg",
+        "alt": {
+          "en": "LEGO Star Wars - The Complete Saga screenshot 1",
+          "tr": "LEGO Star Wars - The Complete Saga ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/06a/06a90cd9aa432ce192e3f5f1fa44102e.jpg",
+        "alt": {
+          "en": "LEGO Star Wars - The Complete Saga screenshot 2",
+          "tr": "LEGO Star Wars - The Complete Saga ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/916/91607d87b765a8d2de90c017c49f9444.jpg",
+        "alt": {
+          "en": "LEGO Star Wars - The Complete Saga screenshot 3",
+          "tr": "LEGO Star Wars - The Complete Saga ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/14f/14fec151c826a1f6f8cea3b49b0cb34a.jpg",
+        "alt": {
+          "en": "LEGO Star Wars - The Complete Saga screenshot 4",
+          "tr": "LEGO Star Wars - The Complete Saga ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/69a/69a33286a34461e2ff3e5c7b1531d8b7.jpg",
+        "alt": {
+          "en": "LEGO Star Wars - The Complete Saga screenshot 5",
+          "tr": "LEGO Star Wars - The Complete Saga ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c2b/c2bc8dd9f0c3c7f59068a9cc98a1d8db.jpg",
+        "alt": {
+          "en": "LEGO Star Wars - The Complete Saga screenshot 6",
+          "tr": "LEGO Star Wars - The Complete Saga ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Star Wars - The Complete Saga",
+      "rawgSlug": "lego-star-wars-tcs",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-star-wars-tcs",
+    "sources": [],
+    "updatedAt": "2026-09-01T16:58:41.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-batman-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO Batman",
+      "tr": "LEGO Batman"
+    },
+    "description": {
+      "en": "Family / Action title released in 2008 for Nintendo Wii (Metacritic 80/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Aile / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/9f7/9f750cb69a31a42648f45e3681abed3a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/efa/efadd7fbae3685f22147aa4a895d86ee.jpg",
+        "alt": {
+          "en": "LEGO Batman screenshot 1",
+          "tr": "LEGO Batman ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/082/0829b48478741b4edf7fa495f6f11245.jpg",
+        "alt": {
+          "en": "LEGO Batman screenshot 2",
+          "tr": "LEGO Batman ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/36b/36b9776d7de30827a0bc0c7484bd5570.jpg",
+        "alt": {
+          "en": "LEGO Batman screenshot 3",
+          "tr": "LEGO Batman ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/163/1639f545e4a8621fd814b2b18392a15e.jpg",
+        "alt": {
+          "en": "LEGO Batman screenshot 4",
+          "tr": "LEGO Batman ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/22d/22ddf5febfafa39cdc5800e45e7c04b2.jpg",
+        "alt": {
+          "en": "LEGO Batman screenshot 5",
+          "tr": "LEGO Batman ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e2f/e2faf30a8431d253150062a5ccaf7413.jpg",
+        "alt": {
+          "en": "LEGO Batman screenshot 6",
+          "tr": "LEGO Batman ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Batman",
+      "rawgSlug": "lego-batman",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "co-op",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-batman",
+    "sources": [],
+    "updatedAt": "2026-10-03T07:28:16.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-batman-2-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO Batman 2 DC Super Heroes",
+      "tr": "LEGO Batman 2 DC Super Heroes"
+    },
+    "description": {
+      "en": "Family / Action title released in 2012 for Nintendo Wii (Metacritic 75/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii için Aile / Aksiyon oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/3c1/3c139f67a73f0bf5ce0d8f2abf83c0d0.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b2f/b2fd7f7d295b617eb8cf92551927c867.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 1",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/55b/55b240a005dbdaf47aba505ec4900fe8.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 2",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4b1/4b1adfba9643cb8e6b0c6dc580dadbea.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 3",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ad/1ad1eb0e1774d9a5594748adc2a20bf0.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 4",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2d8/2d8705867c3f35581fd74c344ed401b4.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 5",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c41/c41cff648cade4b473a14231075d51e9.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 6",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Batman 2 DC Super Heroes",
+      "rawgSlug": "lego-batman-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "co-op",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-batman-2",
+    "sources": [],
+    "updatedAt": "2026-10-03T07:30:30.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "prince-of-persia-the-two-thrones-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Prince of Persia: The Two Thrones",
+      "tr": "Prince of Persia: The Two Thrones"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2005 for Nintendo Wii (Metacritic 85/100).",
+      "tr": "2005 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2005",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/807/807f8303d9be7d35f07a4eab1f55feb9.jpg",
+        "alt": {
+          "en": "Prince of Persia: The Two Thrones screenshot 1",
+          "tr": "Prince of Persia: The Two Thrones ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/df9/df9139b28e8ac4b48ed526c905d38e30.jpg",
+        "alt": {
+          "en": "Prince of Persia: The Two Thrones screenshot 2",
+          "tr": "Prince of Persia: The Two Thrones ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b77/b77571fe5b19daf8c81dbd120c4b4aff.jpg",
+        "alt": {
+          "en": "Prince of Persia: The Two Thrones screenshot 3",
+          "tr": "Prince of Persia: The Two Thrones ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a8c/a8ca726fdb9fbda44f2fca641c5b5092.jpg",
+        "alt": {
+          "en": "Prince of Persia: The Two Thrones screenshot 4",
+          "tr": "Prince of Persia: The Two Thrones ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/85f/85f3967a6a4008547a15389b4d322011.jpg",
+        "alt": {
+          "en": "Prince of Persia: The Two Thrones screenshot 5",
+          "tr": "Prince of Persia: The Two Thrones ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a9f/a9f3de86a095f4db35cac65003952e61.jpg",
+        "alt": {
+          "en": "Prince of Persia: The Two Thrones screenshot 6",
+          "tr": "Prince of Persia: The Two Thrones ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Prince of Persia: The Two Thrones",
+      "rawgSlug": "prince-of-persia-the-two-thrones",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/prince-of-persia-the-two-thrones",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:03:21.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "cave-story-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Cave Story+",
+      "tr": "Cave Story+"
+    },
+    "description": {
+      "en": "Indie / Platformer title released in 2010 for Nintendo Wii (Metacritic 83/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Bağımsız / Platform oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/4f2/4f2246a85225b7a91d63990fe540b7c4.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/354/35419c61c2761e0caf5bda59dfb379da.jpg",
+        "alt": {
+          "en": "Cave Story+ screenshot 1",
+          "tr": "Cave Story+ ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/28c/28c1b69a6d270c2e7e851e0cf02bcc51.jpg",
+        "alt": {
+          "en": "Cave Story+ screenshot 2",
+          "tr": "Cave Story+ ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/09d/09df2a3c0e0ae9a100d2ae7ab5c56919.jpg",
+        "alt": {
+          "en": "Cave Story+ screenshot 3",
+          "tr": "Cave Story+ ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1c4/1c46a22518c5b6f42ced5b2b99c0790c.jpg",
+        "alt": {
+          "en": "Cave Story+ screenshot 4",
+          "tr": "Cave Story+ ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5df/5dfe0e5273a3900e88eef6a4e4a07810.jpg",
+        "alt": {
+          "en": "Cave Story+ screenshot 5",
+          "tr": "Cave Story+ ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3d4/3d455c294f17dfdaa819f8f36a7aaad7.jpg",
+        "alt": {
+          "en": "Cave Story+ screenshot 6",
+          "tr": "Cave Story+ ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Cave Story+",
+      "rawgSlug": "cave-story",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "great-soundtrack",
+      "story-rich",
+      "2d"
+    ],
+    "sourceUrl": "https://rawg.io/games/cave-story",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:05:17.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "mini-ninjas-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "Mini Ninjas",
+      "tr": "Mini Ninjas"
+    },
+    "description": {
+      "en": "Family / Adventure title released in 2009 for Nintendo Wii (Metacritic 74/100).",
+      "tr": "2009 yılında çıkan Nintendo Wii için Aile / Macera oyunu (Metacritic 74/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 74,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/157/1571cdfb52888191eabaf53c2b897240.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8b7/8b7a25ee849058fe41090a2e2623e2ac.jpg",
+        "alt": {
+          "en": "Mini Ninjas screenshot 1",
+          "tr": "Mini Ninjas ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1f5/1f5c22676e3fe0630158794fcb0780e2.jpg",
+        "alt": {
+          "en": "Mini Ninjas screenshot 2",
+          "tr": "Mini Ninjas ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/771/771414c4990e99881ac80bc7d330f474.jpg",
+        "alt": {
+          "en": "Mini Ninjas screenshot 3",
+          "tr": "Mini Ninjas ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f5e/f5ef2724d9db223670efae937f39c248.jpg",
+        "alt": {
+          "en": "Mini Ninjas screenshot 4",
+          "tr": "Mini Ninjas ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4bd/4bda1b764d39dca62baf803402a0836d.jpg",
+        "alt": {
+          "en": "Mini Ninjas screenshot 5",
+          "tr": "Mini Ninjas ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/71f/71f9686713715b7c8712b9ad738bbb20.jpg",
+        "alt": {
+          "en": "Mini Ninjas screenshot 6",
+          "tr": "Mini Ninjas ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Mini Ninjas",
+      "rawgSlug": "mini-ninjas",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "open-world",
+      "third-person",
+      "funny"
+    ],
+    "sourceUrl": "https://rawg.io/games/mini-ninjas",
+    "sources": [],
+    "updatedAt": "2026-04-12T14:07:43.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-harry-potter-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO Harry Potter: Years 1-4",
+      "tr": "LEGO Harry Potter: Years 1-4"
+    },
+    "description": {
+      "en": "Family / Platformer title released in 2010 for Nintendo Wii (Metacritic 79/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Aile / Platform oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/694/6940fa3fbe0d836e4a272c468e65e480.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d6d/d6d8cbeb9160ec2dc138fcbc9c7ba3cf.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 1-4 screenshot 1",
+          "tr": "LEGO Harry Potter: Years 1-4 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/301/301550cbe46391d6efd00183a9491eda.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 1-4 screenshot 2",
+          "tr": "LEGO Harry Potter: Years 1-4 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/328/3283c8fcc9c85ecb8ce76822861d1324.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 1-4 screenshot 3",
+          "tr": "LEGO Harry Potter: Years 1-4 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/795/7952972e10cc78718d291f094827b3ba.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 1-4 screenshot 4",
+          "tr": "LEGO Harry Potter: Years 1-4 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ea7/ea79b3df76351ff71b91520518ab9050.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 1-4 screenshot 5",
+          "tr": "LEGO Harry Potter: Years 1-4 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/20b/20b8255eb93f310f86731612ffe5444b.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 1-4 screenshot 6",
+          "tr": "LEGO Harry Potter: Years 1-4 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Harry Potter: Years 1-4",
+      "rawgSlug": "lego-harry-potter",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "co-op",
+      "open-world",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-harry-potter",
+    "sources": [],
+    "updatedAt": "2026-10-03T07:30:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metal-slug-3-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "METAL SLUG 3",
+      "tr": "METAL SLUG 3"
+    },
+    "description": {
+      "en": "Casual / Arcade title released in 2000 for Nintendo Wii (Score 79/100).",
+      "tr": "2000 yılında çıkan Nintendo Wii için Günlük / Arcade oyunu (Puan 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2000",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/df1/df1a27300bf1e4696734b437d81b0fcf.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/67c/67cca01ffc66931a1171fee0d26cba5a.jpg",
+        "alt": {
+          "en": "METAL SLUG 3 screenshot 1",
+          "tr": "METAL SLUG 3 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ac6/ac6fcd40728c289785e1d9de9ee7f5b0.jpg",
+        "alt": {
+          "en": "METAL SLUG 3 screenshot 2",
+          "tr": "METAL SLUG 3 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4f7/4f76a2394ef4eb9eeb5f6d275a991bb5.jpg",
+        "alt": {
+          "en": "METAL SLUG 3 screenshot 3",
+          "tr": "METAL SLUG 3 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/499/499c34edb63f194da49a61ac83e9ce2c.jpg",
+        "alt": {
+          "en": "METAL SLUG 3 screenshot 4",
+          "tr": "METAL SLUG 3 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5aa/5aa04c1416dd0df86eb4b1d5cb5ee11a.jpg",
+        "alt": {
+          "en": "METAL SLUG 3 screenshot 5",
+          "tr": "METAL SLUG 3 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8fe/8fed5672827e139cd7981fbf05319e23.jpg",
+        "alt": {
+          "en": "METAL SLUG 3 screenshot 6",
+          "tr": "METAL SLUG 3 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "METAL SLUG 3",
+      "rawgSlug": "metal-slug-3",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/metal-slug-3",
+    "sources": [],
+    "updatedAt": "2026-07-04T18:10:17.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bittrip-runner-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "BIT.TRIP RUNNER",
+      "tr": "BIT.TRIP RUNNER"
+    },
+    "description": {
+      "en": "Indie / Arcade title released in 2010 for Nintendo Wii (Score 67/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Bağımsız / Arcade oyunu (Puan 67/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 67,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/72f/72f1e176e1affdf7a6c0e49e167080d7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b8b/b8bd41b5408bee7521824e03aef604c4.jpg",
+        "alt": {
+          "en": "BIT.TRIP RUNNER screenshot 1",
+          "tr": "BIT.TRIP RUNNER ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/446/4464be380f28feac7a40ee9c4ce027f7.jpg",
+        "alt": {
+          "en": "BIT.TRIP RUNNER screenshot 2",
+          "tr": "BIT.TRIP RUNNER ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/324/324fb190a456b785006f6cff40216df1.jpg",
+        "alt": {
+          "en": "BIT.TRIP RUNNER screenshot 3",
+          "tr": "BIT.TRIP RUNNER ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/436/4367756a1cbf06f5b5b8116392c782b5.jpg",
+        "alt": {
+          "en": "BIT.TRIP RUNNER screenshot 4",
+          "tr": "BIT.TRIP RUNNER ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cd9/cd97063c13598ea515ec91a0e59deaf4.jpg",
+        "alt": {
+          "en": "BIT.TRIP RUNNER screenshot 5",
+          "tr": "BIT.TRIP RUNNER ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/237/2373baa2d9815a0297c614e739efd56b.jpg",
+        "alt": {
+          "en": "BIT.TRIP RUNNER screenshot 6",
+          "tr": "BIT.TRIP RUNNER ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BIT.TRIP RUNNER",
+      "rawgSlug": "bittrip-runner",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/bittrip-runner",
+    "sources": [],
+    "updatedAt": "2026-01-15T09:59:49.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "back-to-the-future-the-game-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Back to the Future: The Game",
+      "tr": "Back to the Future: The Game"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2010 for Nintendo Wii (Metacritic 74/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 74/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 74,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/e2e/e2eac90903c56886e39d21ac71b958e5.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ed/1eddbf90d824ea989d798fb211a72bec.jpg",
+        "alt": {
+          "en": "Back to the Future: The Game screenshot 1",
+          "tr": "Back to the Future: The Game ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cf3/cf302f7b1891422de0cd4acbebc470cd.jpg",
+        "alt": {
+          "en": "Back to the Future: The Game screenshot 2",
+          "tr": "Back to the Future: The Game ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/61c/61c251bbb087666ac2428aebf5faf270.jpg",
+        "alt": {
+          "en": "Back to the Future: The Game screenshot 3",
+          "tr": "Back to the Future: The Game ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ebc/ebcb2b031ac8c83ab648cc17c790c91c.jpg",
+        "alt": {
+          "en": "Back to the Future: The Game screenshot 4",
+          "tr": "Back to the Future: The Game ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/185/18561036fa6f87e9219dd7282a1a6065.jpg",
+        "alt": {
+          "en": "Back to the Future: The Game screenshot 5",
+          "tr": "Back to the Future: The Game ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bdf/bdf3b8a24bf58de36e0b1ac19a771561.jpg",
+        "alt": {
+          "en": "Back to the Future: The Game screenshot 6",
+          "tr": "Back to the Future: The Game ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Back to the Future: The Game",
+      "rawgSlug": "back-to-the-future-the-game",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "sci-fi",
+      "funny",
+      "comedy",
+      "point-click"
+    ],
+    "sourceUrl": "https://rawg.io/games/back-to-the-future-the-game",
+    "sources": [],
+    "updatedAt": "2026-09-24T17:29:02.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "broken-sword-1-dc-espanol-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Broken Sword 1 - Shadow of the Templars (The Director's Cut)",
+      "tr": "Broken Sword 1 - Shadow of the Templars (The Director's Cut)"
+    },
+    "description": {
+      "en": "Adventure / Puzzle title released in 2009 for Nintendo Wii (Score 80/100).",
+      "tr": "2009 yılında çıkan Nintendo Wii için Macera / Bulmaca oyunu (Puan 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/a3f/a3fb21a739b6abf7ceee3dead89a73d7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/8ab/8ab4051b51383df6c78a10e1928052c8.jpg",
+        "alt": {
+          "en": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) screenshot 1",
+          "tr": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1f0/1f0e6c79668c374354f6ca3f473be4c9.jpg",
+        "alt": {
+          "en": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) screenshot 2",
+          "tr": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d22/d22c1bfc716fa8aa6a71b2e1b5699448.jpg",
+        "alt": {
+          "en": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) screenshot 3",
+          "tr": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/04f/04f02a7d35cadcf061bd0f1648ebb05b.jpg",
+        "alt": {
+          "en": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) screenshot 4",
+          "tr": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d74/d74029462fb8675c07458fb7b5f0f6b7.jpg",
+        "alt": {
+          "en": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) screenshot 5",
+          "tr": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9f5/9f50f19ca083f3918377947bb496c71b.jpg",
+        "alt": {
+          "en": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) screenshot 6",
+          "tr": "Broken Sword 1 - Shadow of the Templars (The Director's Cut) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Broken Sword 1 - Shadow of the Templars (The Director's Cut)",
+      "rawgSlug": "broken-sword-1-dc-espanol",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "2d",
+      "third-person",
+      "classic"
+    ],
+    "sourceUrl": "https://rawg.io/games/broken-sword-1-dc-espanol",
+    "sources": [],
+    "updatedAt": "2026-05-31T13:40:19.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "pirates-3-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "educational",
+    "category": {
+      "en": "Educational",
+      "tr": "Eğitici"
+    },
+    "title": {
+      "en": "Sid Meier's Pirates!",
+      "tr": "Sid Meier's Pirates!"
+    },
+    "description": {
+      "en": "Educational / Adventure title released in 2004 for Nintendo Wii (Metacritic 88/100).",
+      "tr": "2004 yılında çıkan Nintendo Wii için Eğitici / Macera oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2004",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/7ca/7ca90d463ea0c0252e7d01afe897ffa8.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/032/03274203980716f8d900aa08a09bb686.jpg",
+        "alt": {
+          "en": "Sid Meier's Pirates! screenshot 1",
+          "tr": "Sid Meier's Pirates! ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c9f/c9f438c48fc0929895823a8a0de3b7b9.jpg",
+        "alt": {
+          "en": "Sid Meier's Pirates! screenshot 2",
+          "tr": "Sid Meier's Pirates! ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/31d/31dca00528064dc55315bd143c540a84.jpg",
+        "alt": {
+          "en": "Sid Meier's Pirates! screenshot 3",
+          "tr": "Sid Meier's Pirates! ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4b8/4b81b8d8931b5647207089ae453ae087.jpg",
+        "alt": {
+          "en": "Sid Meier's Pirates! screenshot 4",
+          "tr": "Sid Meier's Pirates! ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0ce/0ce113126b5c13126876acf9a4d8cd4c.jpg",
+        "alt": {
+          "en": "Sid Meier's Pirates! screenshot 5",
+          "tr": "Sid Meier's Pirates! ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c24/c24ea6557b3be596f4a6d0316eda3f2e.jpg",
+        "alt": {
+          "en": "Sid Meier's Pirates! screenshot 6",
+          "tr": "Sid Meier's Pirates! ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sid Meier's Pirates!",
+      "rawgSlug": "pirates-3",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "rpg",
+      "open-world",
+      "exploration"
+    ],
+    "sourceUrl": "https://rawg.io/games/pirates-3",
+    "sources": [],
+    "updatedAt": "2026-08-24T16:10:37.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "uno-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "UNO",
+      "tr": "UNO"
+    },
+    "description": {
+      "en": "Casual / Family title released in 2016 for Nintendo Wii (Metacritic 66/100).",
+      "tr": "2016 yılında çıkan Nintendo Wii için Günlük / Aile oyunu (Metacritic 66/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 66,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/ef9/ef96c016bdc6f6d708085536df3d07ae.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/849/849e30e5ffd46d0b73bcd4ba612f901a.jpg",
+        "alt": {
+          "en": "UNO screenshot 1",
+          "tr": "UNO ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fb3/fb35ee8c3be8fc061fa4d78ead18c8c9.jpg",
+        "alt": {
+          "en": "UNO screenshot 2",
+          "tr": "UNO ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2da/2da0f31182b501410595f31361ca4502.jpg",
+        "alt": {
+          "en": "UNO screenshot 3",
+          "tr": "UNO ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7ba/7ba8e287949cc6eefcd79c13b0798ac6.jpg",
+        "alt": {
+          "en": "UNO screenshot 4",
+          "tr": "UNO ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6ec/6ecef8aafa409301d5244c554cd6db12.jpg",
+        "alt": {
+          "en": "UNO screenshot 5",
+          "tr": "UNO ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/29a/29ac5a4b78eb66571d05bc2b9f249070.jpg",
+        "alt": {
+          "en": "UNO screenshot 6",
+          "tr": "UNO ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "UNO",
+      "rawgSlug": "uno",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/uno",
+    "sources": [],
+    "updatedAt": "2026-06-18T16:07:22.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "fifa-14-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "sports",
+    "category": {
+      "en": "Sports",
+      "tr": "Spor"
+    },
+    "title": {
+      "en": "FIFA 14",
+      "tr": "FIFA 14"
+    },
+    "description": {
+      "en": "Sports title released in 2013 for Nintendo Wii (Metacritic 86/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii için Spor oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/9ca/9ca31615beee447f3ae1dc9b3b736dce.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b30/b30793b3b7ec8130dfd5b08ff678c230.jpg",
+        "alt": {
+          "en": "FIFA 14 screenshot 1",
+          "tr": "FIFA 14 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/871/871e28a7b11b3b37f4231d617dff91eb.jpg",
+        "alt": {
+          "en": "FIFA 14 screenshot 2",
+          "tr": "FIFA 14 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/479/479c1bf3bfcbadf1f3bed43301372a50.jpg",
+        "alt": {
+          "en": "FIFA 14 screenshot 3",
+          "tr": "FIFA 14 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dbf/dbffede4d5291a8b5eddf5c48fe022e9.jpg",
+        "alt": {
+          "en": "FIFA 14 screenshot 4",
+          "tr": "FIFA 14 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ce9/ce98eab56e8dca51a07557df1d6543df.jpg",
+        "alt": {
+          "en": "FIFA 14 screenshot 5",
+          "tr": "FIFA 14 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/156/15685a2a8e722e1176ee6897feb8db50.jpg",
+        "alt": {
+          "en": "FIFA 14 screenshot 6",
+          "tr": "FIFA 14 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "FIFA 14",
+      "rawgSlug": "fifa-14",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "3d",
+      "online",
+      "mod",
+      "football",
+      "soccer"
+    ],
+    "sourceUrl": "https://rawg.io/games/fifa-14",
+    "sources": [],
+    "updatedAt": "2026-05-02T02:58:36.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "swords-and-soldiers-hd-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "Swords and Soldiers HD",
+      "tr": "Swords and Soldiers HD"
+    },
+    "description": {
+      "en": "Casual / Strategy title released in 2010 for Nintendo Wii (Score 53/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Günlük / Strateji oyunu (Puan 53/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 53,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/f10/f10e7cafed6665861c58187b2ae3b310.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/0b8/0b8214eb623afe41abbeb6c752f23124.jpg",
+        "alt": {
+          "en": "Swords and Soldiers HD screenshot 1",
+          "tr": "Swords and Soldiers HD ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/614/61484dd567248a131a5515c0a4e65bd4.jpg",
+        "alt": {
+          "en": "Swords and Soldiers HD screenshot 2",
+          "tr": "Swords and Soldiers HD ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/79c/79c08c27118dd3c45736427c67532b68.jpg",
+        "alt": {
+          "en": "Swords and Soldiers HD screenshot 3",
+          "tr": "Swords and Soldiers HD ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/faa/faa38f06a29f3f66f022c5463299f836.jpg",
+        "alt": {
+          "en": "Swords and Soldiers HD screenshot 4",
+          "tr": "Swords and Soldiers HD ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/891/8913310a7566fbe5c80926229a65d6ac.jpg",
+        "alt": {
+          "en": "Swords and Soldiers HD screenshot 5",
+          "tr": "Swords and Soldiers HD ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/360/360591f20279ee7a8d649fdc492164fb.jpg",
+        "alt": {
+          "en": "Swords and Soldiers HD screenshot 6",
+          "tr": "Swords and Soldiers HD ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Swords and Soldiers HD",
+      "rawgSlug": "swords-and-soldiers-hd",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "2d",
+      "steam-leaderboards"
+    ],
+    "sourceUrl": "https://rawg.io/games/swords-and-soldiers-hd",
+    "sources": [],
+    "updatedAt": "2025-04-14T18:28:05.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-harry-potter-years-5-7-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "LEGO Harry Potter: Years 5-7",
+      "tr": "LEGO Harry Potter: Years 5-7"
+    },
+    "description": {
+      "en": "Action title released in 2011 for Nintendo Wii (Metacritic 80/100).",
+      "tr": "2011 yılında çıkan Nintendo Wii için Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/6ad/6ad0779bd730077eb28aa3a50394ed5c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e6d/e6d785a9d0fea4e9de4cfdb1c8debdf6.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 5-7 screenshot 1",
+          "tr": "LEGO Harry Potter: Years 5-7 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/578/5783e915aa2f17da256054861a382711.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 5-7 screenshot 2",
+          "tr": "LEGO Harry Potter: Years 5-7 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d4c/d4ca0ab37d9dbe70ecaed9e733d500f0.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 5-7 screenshot 3",
+          "tr": "LEGO Harry Potter: Years 5-7 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/085/085e3c0551795c296d35682ea4eb362f.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 5-7 screenshot 4",
+          "tr": "LEGO Harry Potter: Years 5-7 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5e0/5e05939c0d719a3d1e1be091d007c8ae.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 5-7 screenshot 5",
+          "tr": "LEGO Harry Potter: Years 5-7 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9ef/9efae0993ce88afba6ebcb90ef8fb71b.jpg",
+        "alt": {
+          "en": "LEGO Harry Potter: Years 5-7 screenshot 6",
+          "tr": "LEGO Harry Potter: Years 5-7 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Harry Potter: Years 5-7",
+      "rawgSlug": "lego-harry-potter-years-5-7",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "co-op",
+      "open-world",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-harry-potter-years-5-7",
+    "sources": [],
+    "updatedAt": "2026-10-03T07:30:44.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "nfs-undercover-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Need For Speed Undercover",
+      "tr": "Need For Speed Undercover"
+    },
+    "description": {
+      "en": "Racing / Arcade title released in 2008 for Nintendo Wii (Metacritic 65/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Yarış / Arcade oyunu (Metacritic 65/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 65,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/4ad/4ad6ab9cfe8146224330598a4a62fb14.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b81/b81554a2ec8e3bbd9f65ccd5f9a6bd20.jpg",
+        "alt": {
+          "en": "Need For Speed Undercover screenshot 1",
+          "tr": "Need For Speed Undercover ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7a4/7a487b007498d0fa04a88dc65d223a19.jpg",
+        "alt": {
+          "en": "Need For Speed Undercover screenshot 2",
+          "tr": "Need For Speed Undercover ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6fc/6fc4c14537710a2a4fa919bd45c27865.jpg",
+        "alt": {
+          "en": "Need For Speed Undercover screenshot 3",
+          "tr": "Need For Speed Undercover ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/858/858bb0fd61458a51d25cba6b1a900623.jpg",
+        "alt": {
+          "en": "Need For Speed Undercover screenshot 4",
+          "tr": "Need For Speed Undercover ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/617/61718a120b719d4d26e5bcd5183741e4.jpg",
+        "alt": {
+          "en": "Need For Speed Undercover screenshot 5",
+          "tr": "Need For Speed Undercover ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e4/9e46948ba3ffa83088e3d83565763fbe.jpg",
+        "alt": {
+          "en": "Need For Speed Undercover screenshot 6",
+          "tr": "Need For Speed Undercover ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Need For Speed Undercover",
+      "rawgSlug": "nfs-undercover",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "story-rich",
+      "open-world",
+      "partial-controller-support"
+    ],
+    "sourceUrl": "https://rawg.io/games/nfs-undercover",
+    "sources": [],
+    "updatedAt": "2026-06-24T15:03:37.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sniper-elite-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Sniper Elite",
+      "tr": "Sniper Elite"
+    },
+    "description": {
+      "en": "Action title released in 2005 for Nintendo Wii (Metacritic 76/100).",
+      "tr": "2005 yılında çıkan Nintendo Wii için Aksiyon oyunu (Metacritic 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "2005",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/a8a/a8adfa5d6c07c7ee2afbb9535dafec48.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/9f2/9f25ddfc153140ba2822dc3b448787ec.jpg",
+        "alt": {
+          "en": "Sniper Elite screenshot 1",
+          "tr": "Sniper Elite ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d54/d54c043d8a54520053d5900fd751b880.jpg",
+        "alt": {
+          "en": "Sniper Elite screenshot 2",
+          "tr": "Sniper Elite ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c3f/c3f21ce29fa5fa9c4235d3ebe6ff3fd1.jpg",
+        "alt": {
+          "en": "Sniper Elite screenshot 3",
+          "tr": "Sniper Elite ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a06/a066d11652d2ff7a187a920e8e5c3014.jpg",
+        "alt": {
+          "en": "Sniper Elite screenshot 4",
+          "tr": "Sniper Elite ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f5e/f5e2fce40ee7a18416d02cb44d8440b4.jpg",
+        "alt": {
+          "en": "Sniper Elite screenshot 5",
+          "tr": "Sniper Elite ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4ee/4eee82eef132e9bb49449449550c1956.jpg",
+        "alt": {
+          "en": "Sniper Elite screenshot 6",
+          "tr": "Sniper Elite ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sniper Elite",
+      "rawgSlug": "sniper-elite",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "steam-trading-cards",
+      "co-op",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/sniper-elite",
+    "sources": [],
+    "updatedAt": "2026-10-26T08:38:16.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tcs-sc-double-agent-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Tom Clancy's Splinter Cell Double Agent",
+      "tr": "Tom Clancy's Splinter Cell Double Agent"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2006 for Nintendo Wii (Metacritic 80/100).",
+      "tr": "2006 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2006",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/33d/33d72d63a624f17431d39922359c7bf8.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a97/a97bcc6fab8284cc2c0345fcb16f0038.jpg",
+        "alt": {
+          "en": "Tom Clancy's Splinter Cell Double Agent screenshot 1",
+          "tr": "Tom Clancy's Splinter Cell Double Agent ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f93/f935b9723f918d0ed039ef31fa56b503.jpg",
+        "alt": {
+          "en": "Tom Clancy's Splinter Cell Double Agent screenshot 2",
+          "tr": "Tom Clancy's Splinter Cell Double Agent ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dc2/dc2526773b304d68f1c49c3787e2782b.jpg",
+        "alt": {
+          "en": "Tom Clancy's Splinter Cell Double Agent screenshot 3",
+          "tr": "Tom Clancy's Splinter Cell Double Agent ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f0e/f0e14e250ac61e729e833d0fe83788a5.jpg",
+        "alt": {
+          "en": "Tom Clancy's Splinter Cell Double Agent screenshot 4",
+          "tr": "Tom Clancy's Splinter Cell Double Agent ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/914/914c6d7c3111b7026668b1abe916c6b5.jpg",
+        "alt": {
+          "en": "Tom Clancy's Splinter Cell Double Agent screenshot 5",
+          "tr": "Tom Clancy's Splinter Cell Double Agent ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/689/6896793696ca5a3f3a5269abffac17b3.jpg",
+        "alt": {
+          "en": "Tom Clancy's Splinter Cell Double Agent screenshot 6",
+          "tr": "Tom Clancy's Splinter Cell Double Agent ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tom Clancy's Splinter Cell Double Agent",
+      "rawgSlug": "tcs-sc-double-agent",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "cooperative",
+      "third-person",
+      "stealth"
+    ],
+    "sourceUrl": "https://rawg.io/games/tcs-sc-double-agent",
+    "sources": [],
+    "updatedAt": "2026-09-20T20:02:55.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-star-wars-iii-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "arcade",
+    "category": {
+      "en": "Arcade",
+      "tr": "Arcade"
+    },
+    "title": {
+      "en": "LEGO Star Wars III - The Clone Wars",
+      "tr": "LEGO Star Wars III - The Clone Wars"
+    },
+    "description": {
+      "en": "Arcade / Family title released in 2011 for Nintendo Wii (Metacritic 76/100).",
+      "tr": "2011 yılında çıkan Nintendo Wii için Arcade / Aile oyunu (Metacritic 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/55f/55f3e8983c17a0ef9e6b18aedd4f6794.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/bca/bca2d95865dcacb14259ec4bb1f53993.jpg",
+        "alt": {
+          "en": "LEGO Star Wars III - The Clone Wars screenshot 1",
+          "tr": "LEGO Star Wars III - The Clone Wars ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/af2/af2419e41f086406885a23404881fec6.jpg",
+        "alt": {
+          "en": "LEGO Star Wars III - The Clone Wars screenshot 2",
+          "tr": "LEGO Star Wars III - The Clone Wars ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dfd/dfd5085d2a9bf08b6700bc325c1d757e.jpg",
+        "alt": {
+          "en": "LEGO Star Wars III - The Clone Wars screenshot 3",
+          "tr": "LEGO Star Wars III - The Clone Wars ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/911/9111187c5d7b2f02cff953f5922dcd52.jpg",
+        "alt": {
+          "en": "LEGO Star Wars III - The Clone Wars screenshot 4",
+          "tr": "LEGO Star Wars III - The Clone Wars ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e84/e840443076b66e38310fdbf5ba71ce35.jpg",
+        "alt": {
+          "en": "LEGO Star Wars III - The Clone Wars screenshot 5",
+          "tr": "LEGO Star Wars III - The Clone Wars ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e6d/e6dbb90d2a1737241992d7fd1a5e9c64.jpg",
+        "alt": {
+          "en": "LEGO Star Wars III - The Clone Wars screenshot 6",
+          "tr": "LEGO Star Wars III - The Clone Wars ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Star Wars III - The Clone Wars",
+      "rawgSlug": "lego-star-wars-iii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "steam-cloud",
+      "co-op",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-star-wars-iii",
+    "sources": [],
+    "updatedAt": "2026-08-31T21:06:08.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "and-yet-it-moves-wii",
     "catalogId": "wii",
     "type": "game",
     "categoryId": "platformer",
-    "category": { "en": "Platformer", "tr": "Platform" },
-    "title": { "en": "SuperTux (Wii Port)", "tr": "SuperTux (Wii Portu)" },
-    "description": {
-      "en": "A Wii homebrew port of the open-source side-scrolling platform game.",
-      "tr": "Açık kaynaklı yandan kaydırmalı platform oyununun Wii homebrew portu."
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
     },
-    "developer": "DeltaResero and SuperTux contributors",
-    "version": "development build",
-    "sizeBytes": 10485760,
+    "title": {
+      "en": "And Yet It Moves",
+      "tr": "And Yet It Moves"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2009 for Nintendo Wii (Metacritic 75/100).",
+      "tr": "2009 yılında çıkan Nintendo Wii için Platform / Bağımsız oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 1610612736,
     "sizeBytesEstimated": true,
-    "fileFormat": "Wii DOL homebrew executable",
-    "fileExtension": ".dol",
-    "coverPath": "/images/catalog/wii/supertux-wii/cover.webp",
+    "ratingScore": 75,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/1ef/1ef455141543c9e27ef0856a68a52b48.jpg",
     "screenshots": [
       {
-        "src": "/images/catalog/wii/supertux-wii/screenshot-01.webp",
-        "alt": { "en": "SuperTux Wii sample gameplay screenshot", "tr": "SuperTux Wii örnek oynanış ekran görüntüsü" }
+        "src": "https://media.rawg.io/media/screenshots/301/3016e492c6a575c22928d0f1aab4ca91.jpg",
+        "alt": {
+          "en": "And Yet It Moves screenshot 1",
+          "tr": "And Yet It Moves ekran görüntüsü 1"
+        }
       },
       {
-        "src": "/images/catalog/wii/supertux-wii/screenshot-02.webp",
-        "alt": { "en": "SuperTux Wii sample level screenshot", "tr": "SuperTux Wii örnek bölüm ekran görüntüsü" }
-      }
-    ],
-    "tags": ["homebrew", "open-source", "platformer"],
-    "sourceUrl": "https://github.com/DeltaResero/SuperTux-Wii",
-    "sources": [
+        "src": "https://media.rawg.io/media/screenshots/96c/96c160e10b05f313a93e7a1fedd94b1c.jpg",
+        "alt": {
+          "en": "And Yet It Moves screenshot 2",
+          "tr": "And Yet It Moves ekran görüntüsü 2"
+        }
+      },
       {
-        "id": "github-release-page",
-        "provider": "github-release",
-        "deliveryMode": "browser_verify",
-        "url": "https://github.com/DeltaResero/SuperTux-Wii/releases",
-        "format": ".dol",
-        "sizeBytes": 10485760,
-        "requiresVerification": true,
-        "priority": 1
+        "src": "https://media.rawg.io/media/screenshots/90f/90fd5ae6eb6163ab8e20227f3eda6f21.jpg",
+        "alt": {
+          "en": "And Yet It Moves screenshot 3",
+          "tr": "And Yet It Moves ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f12/f128627a830d69f7402baa76259b325e.jpg",
+        "alt": {
+          "en": "And Yet It Moves screenshot 4",
+          "tr": "And Yet It Moves ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cb5/cb5abcded18b6a2136cf4aba95fee5c1.jpg",
+        "alt": {
+          "en": "And Yet It Moves screenshot 5",
+          "tr": "And Yet It Moves ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/394/394c6c9d3255eabd932dc283a606b97a.jpg",
+        "alt": {
+          "en": "And Yet It Moves screenshot 6",
+          "tr": "And Yet It Moves ekran görüntüsü 6"
+        }
       }
     ],
-    "updatedAt": "2026-11-20T00:00:00.000Z",
-    "sampleData": true
+    "artwork": {
+      "query": "And Yet It Moves",
+      "rawgSlug": "and-yet-it-moves",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "2d",
+      "partial-controller-support",
+      "surreal"
+    ],
+    "sourceUrl": "https://rawg.io/games/and-yet-it-moves",
+    "sources": [],
+    "updatedAt": "2025-11-04T17:31:27.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "toribash-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Toribash",
+      "tr": "Toribash"
+    },
+    "description": {
+      "en": "Strategy / Indie title released in 2010 for Nintendo Wii (Score 66/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Strateji / Bağımsız oyunu (Puan 66/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 66,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/dd9/dd9737bb37509aa151c3ba92c8e5f992.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/390/39016329ae87f7c37c78c165c9d2d792.jpg",
+        "alt": {
+          "en": "Toribash screenshot 1",
+          "tr": "Toribash ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2bf/2bfd46ee27f3b1166e9e47509feb8be0.jpg",
+        "alt": {
+          "en": "Toribash screenshot 2",
+          "tr": "Toribash ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6e6/6e628aef71340a801a0b3e262de93d33.jpg",
+        "alt": {
+          "en": "Toribash screenshot 3",
+          "tr": "Toribash ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/75a/75abcb6845192f2ef97fa2ad8ab3acf1.jpg",
+        "alt": {
+          "en": "Toribash screenshot 4",
+          "tr": "Toribash ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b4d/b4dd7f457caf17ad10ed0bd042dcce1b.jpg",
+        "alt": {
+          "en": "Toribash screenshot 5",
+          "tr": "Toribash ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/856/856f3231a883f86b7437ed2e397311a5.jpg",
+        "alt": {
+          "en": "Toribash screenshot 6",
+          "tr": "Toribash ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Toribash",
+      "rawgSlug": "toribash",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-trading-cards",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/toribash",
+    "sources": [],
+    "updatedAt": "2026-08-18T18:59:56.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "rec-room-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Rec Room",
+      "tr": "Rec Room"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2016 for Nintendo Wii (Score 60/100).",
+      "tr": "2016 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Puan 60/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 60,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/35a/35a5b7aba92cb3cac5e3dde272336edf.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2ba/2ba01cfc3f85e89f426e1b02ed094300.jpg",
+        "alt": {
+          "en": "Rec Room screenshot 1",
+          "tr": "Rec Room ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/219/2196057a87426d7c78567ffa1e0b4570.jpg",
+        "alt": {
+          "en": "Rec Room screenshot 2",
+          "tr": "Rec Room ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8e8/8e8d114e4ad6ee6729ae3a56bf7414e2.jpg",
+        "alt": {
+          "en": "Rec Room screenshot 3",
+          "tr": "Rec Room ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7f3/7f39646d2ef520d3cc2cbb7052d7e758.jpg",
+        "alt": {
+          "en": "Rec Room screenshot 4",
+          "tr": "Rec Room ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/655/6553346f1f7bf52777c5a5069f10bb32.jpg",
+        "alt": {
+          "en": "Rec Room screenshot 5",
+          "tr": "Rec Room ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/613/613646a4b973de2d6f5e88fc65658998.jpg",
+        "alt": {
+          "en": "Rec Room screenshot 6",
+          "tr": "Rec Room ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Rec Room",
+      "rawgSlug": "rec-room",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "multiplayer",
+      "co-op",
+      "cooperative",
+      "first-person",
+      "online-co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/rec-room",
+    "sources": [],
+    "updatedAt": "2025-08-30T09:51:14.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "toki-tori-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "Toki Tori",
+      "tr": "Toki Tori"
+    },
+    "description": {
+      "en": "Casual / Indie title released in 2008 for Nintendo Wii (Metacritic 80/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Günlük / Bağımsız oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/2bb/2bbcb4cbb748512b386eedc0d2f1cfc7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2a6/2a6500efeec05b147a2fb45b2b6d90fc.jpg",
+        "alt": {
+          "en": "Toki Tori screenshot 1",
+          "tr": "Toki Tori ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/509/5098553b73fb4c6394e2255365a8ba68.jpg",
+        "alt": {
+          "en": "Toki Tori screenshot 2",
+          "tr": "Toki Tori ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0af/0afdbaa4cb37f11f477278b2efde9ab6.jpg",
+        "alt": {
+          "en": "Toki Tori screenshot 3",
+          "tr": "Toki Tori ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9a5/9a541abd2eb2e985561d4b6a834b61c5.jpg",
+        "alt": {
+          "en": "Toki Tori screenshot 4",
+          "tr": "Toki Tori ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/182/18233ad2b946262a73761fc7f5542183.jpg",
+        "alt": {
+          "en": "Toki Tori screenshot 5",
+          "tr": "Toki Tori ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/df2/df2d4861c558e0d88b23455ae3d7d315.jpg",
+        "alt": {
+          "en": "Toki Tori screenshot 6",
+          "tr": "Toki Tori ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Toki Tori",
+      "rawgSlug": "toki-tori",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "2d",
+      "partial-controller-support"
+    ],
+    "sourceUrl": "https://rawg.io/games/toki-tori",
+    "sources": [],
+    "updatedAt": "2025-11-04T17:32:05.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "need-for-speed-carbon-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Need For Speed Carbon",
+      "tr": "Need For Speed Carbon"
+    },
+    "description": {
+      "en": "Racing / Arcade title released in 2006 for Nintendo Wii (Metacritic 77/100).",
+      "tr": "2006 yılında çıkan Nintendo Wii için Yarış / Arcade oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2006",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/35f/35f815a22c4678b4fe76073f0f56df8e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2a7/2a791437591cc550259f913b0bd22749.jpg",
+        "alt": {
+          "en": "Need For Speed Carbon screenshot 1",
+          "tr": "Need For Speed Carbon ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6d7/6d7a74dbaa11a6034cec0c6644b4f543.jpg",
+        "alt": {
+          "en": "Need For Speed Carbon screenshot 2",
+          "tr": "Need For Speed Carbon ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8e4/8e4c5536af6c3843f0839d094235abe5.jpg",
+        "alt": {
+          "en": "Need For Speed Carbon screenshot 3",
+          "tr": "Need For Speed Carbon ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d78/d78c5f85f81b1fb8fbb69fd64fc0ec7f.jpg",
+        "alt": {
+          "en": "Need For Speed Carbon screenshot 4",
+          "tr": "Need For Speed Carbon ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/04e/04e66530954f5f6ef8addacfeb66d9f6.jpg",
+        "alt": {
+          "en": "Need For Speed Carbon screenshot 5",
+          "tr": "Need For Speed Carbon ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a2d/a2d8b0dd41b45dc24dd356bd87e25e1b.jpg",
+        "alt": {
+          "en": "Need For Speed Carbon screenshot 6",
+          "tr": "Need For Speed Carbon ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Need For Speed Carbon",
+      "rawgSlug": "need-for-speed-carbon",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "racing",
+      "arcade",
+      "wii"
+    ],
+    "sourceUrl": "https://rawg.io/games/need-for-speed-carbon",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:06.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-indiana-jones-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO Indiana Jones: The Original Adventures",
+      "tr": "LEGO Indiana Jones: The Original Adventures"
+    },
+    "description": {
+      "en": "Family / Platformer title released in 2007 for Nintendo Wii (Metacritic 78/100).",
+      "tr": "2007 yılında çıkan Nintendo Wii için Aile / Platform oyunu (Metacritic 78/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 78,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/eec/eeccbd9e91dd1696ddb1dffef99aec72.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/54d/54dee3f539e2554a9e08eff78c6665e7.jpg",
+        "alt": {
+          "en": "LEGO Indiana Jones: The Original Adventures screenshot 1",
+          "tr": "LEGO Indiana Jones: The Original Adventures ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5a8/5a86ce736de57cae1c1b74a94828ca62.jpg",
+        "alt": {
+          "en": "LEGO Indiana Jones: The Original Adventures screenshot 2",
+          "tr": "LEGO Indiana Jones: The Original Adventures ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/412/412a8dfc5b4b126399dea560ff1cceb3.jpg",
+        "alt": {
+          "en": "LEGO Indiana Jones: The Original Adventures screenshot 3",
+          "tr": "LEGO Indiana Jones: The Original Adventures ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/889/889bdd53c5740d8dfaa08a2b0b1afb79.jpg",
+        "alt": {
+          "en": "LEGO Indiana Jones: The Original Adventures screenshot 4",
+          "tr": "LEGO Indiana Jones: The Original Adventures ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fb4/fb4a83e4bd248c8747468174864f1566.jpg",
+        "alt": {
+          "en": "LEGO Indiana Jones: The Original Adventures screenshot 5",
+          "tr": "LEGO Indiana Jones: The Original Adventures ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a17/a17afc19bbe8be15279b1014691d8ddd.jpg",
+        "alt": {
+          "en": "LEGO Indiana Jones: The Original Adventures screenshot 6",
+          "tr": "LEGO Indiana Jones: The Original Adventures ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Indiana Jones: The Original Adventures",
+      "rawgSlug": "lego-indiana-jones",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-cloud",
+      "partial-controller-support",
+      "funny",
+      "comedy"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-indiana-jones",
+    "sources": [],
+    "updatedAt": "2026-07-26T08:22:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "super-mario-galaxy-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Super Mario Galaxy",
+      "tr": "Super Mario Galaxy"
+    },
+    "description": {
+      "en": "Platformer title released in 2007 for Nintendo Wii (Metacritic 97/100).",
+      "tr": "2007 yılında çıkan Nintendo Wii için Platform oyunu (Metacritic 97/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 97,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/936/936f0ffac0b3c9f5c8d185f610ed2631.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/83f/83f80635904e97cfc4f13708723a058c.jpg",
+        "alt": {
+          "en": "Super Mario Galaxy screenshot 1",
+          "tr": "Super Mario Galaxy ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/95e/95ed0d6e674b7901cde508c16c5947ad.jpg",
+        "alt": {
+          "en": "Super Mario Galaxy screenshot 2",
+          "tr": "Super Mario Galaxy ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/78f/78f185aeb72e8be1bb80962653a1fc58.jpg",
+        "alt": {
+          "en": "Super Mario Galaxy screenshot 3",
+          "tr": "Super Mario Galaxy ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8a8/8a8368744220217f3702629bb03d15f9.jpg",
+        "alt": {
+          "en": "Super Mario Galaxy screenshot 4",
+          "tr": "Super Mario Galaxy ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7b5/7b504c79196501e7afa776492dc5d9fb.jpg",
+        "alt": {
+          "en": "Super Mario Galaxy screenshot 5",
+          "tr": "Super Mario Galaxy ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f69/f69710b403ca2a72f5273137cd1fa538.jpg",
+        "alt": {
+          "en": "Super Mario Galaxy screenshot 6",
+          "tr": "Super Mario Galaxy ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Super Mario Galaxy",
+      "rawgSlug": "super-mario-galaxy",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "console",
+      "planet",
+      "gravity",
+      "nes",
+      "mario"
+    ],
+    "sourceUrl": "https://rawg.io/games/super-mario-galaxy",
+    "sources": [],
+    "updatedAt": "2026-10-17T02:19:41.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "driver-san-francisco-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Driver San Francisco",
+      "tr": "Driver San Francisco"
+    },
+    "description": {
+      "en": "Racing / Arcade title released in 2011 for Nintendo Wii (Metacritic 80/100).",
+      "tr": "2011 yılında çıkan Nintendo Wii için Yarış / Arcade oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/cce/ccee39dd9977482f655f22ad35de61ce.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/89e/89ebf611a7792ef1667e5a332ef3ca11.jpg",
+        "alt": {
+          "en": "Driver San Francisco screenshot 1",
+          "tr": "Driver San Francisco ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fdf/fdfe749ddebec8ea605e3035bbbcf1eb.jpg",
+        "alt": {
+          "en": "Driver San Francisco screenshot 2",
+          "tr": "Driver San Francisco ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c1c/c1cffcd044f56be7493dc8894c29e554.jpg",
+        "alt": {
+          "en": "Driver San Francisco screenshot 3",
+          "tr": "Driver San Francisco ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/095/095adf2bba11ac19fbff8757655d19ae.jpg",
+        "alt": {
+          "en": "Driver San Francisco screenshot 4",
+          "tr": "Driver San Francisco ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cf2/cf296a5ec16ffaa0b86feef26167435f.jpg",
+        "alt": {
+          "en": "Driver San Francisco screenshot 5",
+          "tr": "Driver San Francisco ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5a3/5a344b14f4fc9a6df54304f9b1c1e0de.jpg",
+        "alt": {
+          "en": "Driver San Francisco screenshot 6",
+          "tr": "Driver San Francisco ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Driver San Francisco",
+      "rawgSlug": "driver-san-francisco",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "multiplayer",
+      "crime",
+      "character",
+      "city",
+      "thriller"
+    ],
+    "sourceUrl": "https://rawg.io/games/driver-san-francisco",
+    "sources": [],
+    "updatedAt": "2026-10-18T17:00:57.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "alone-in-the-dark-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Alone in the Dark (2008)",
+      "tr": "Alone in the Dark (2008)"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2008 for Nintendo Wii (Metacritic 55/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 55/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 55,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/068/0686934f91304843c9ad37ec55c3ac1d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/675/6751a07948b71ebb166b60e9d0b99ad9.jpg",
+        "alt": {
+          "en": "Alone in the Dark (2008) screenshot 1",
+          "tr": "Alone in the Dark (2008) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6ff/6ffb8ca3a5b0521be74f28d674fcbd39.jpg",
+        "alt": {
+          "en": "Alone in the Dark (2008) screenshot 2",
+          "tr": "Alone in the Dark (2008) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/09b/09b2eb4fda5006c9ccaa888964924628.jpg",
+        "alt": {
+          "en": "Alone in the Dark (2008) screenshot 3",
+          "tr": "Alone in the Dark (2008) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/029/02902a9594b7ae491642e8849ae3a210.jpg",
+        "alt": {
+          "en": "Alone in the Dark (2008) screenshot 4",
+          "tr": "Alone in the Dark (2008) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/412/4129877d19467235e9faecabdda830b3.jpg",
+        "alt": {
+          "en": "Alone in the Dark (2008) screenshot 5",
+          "tr": "Alone in the Dark (2008) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/05d/05db78ff8332585c4ff2abe4e9c3ed24.jpg",
+        "alt": {
+          "en": "Alone in the Dark (2008) screenshot 6",
+          "tr": "Alone in the Dark (2008) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Alone in the Dark (2008)",
+      "rawgSlug": "alone-in-the-dark",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "open-world",
+      "first-person",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/alone-in-the-dark",
+    "sources": [],
+    "updatedAt": "2026-09-24T17:29:34.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sonic-the-hedgehog-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Sonic the Hedgehog (1991)",
+      "tr": "Sonic the Hedgehog (1991)"
+    },
+    "description": {
+      "en": "Platformer title released in 1991 for Nintendo Wii (Score 83/100).",
+      "tr": "1991 yılında çıkan Nintendo Wii için Platform oyunu (Puan 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "1991",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/373/373a9a1f664de6e4c31f08644729e2db.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/53e/53e284e056724ec04a60fad7e2b6c026.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog (1991) screenshot 1",
+          "tr": "Sonic the Hedgehog (1991) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4c8/4c829bfbb97ca03807081f3c1c36e927.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog (1991) screenshot 2",
+          "tr": "Sonic the Hedgehog (1991) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3a2/3a26e4687c6f74eeed072d959a9089dd.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog (1991) screenshot 3",
+          "tr": "Sonic the Hedgehog (1991) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/efe/efe24f8417ae1c8dcb58d9b2e3553e41.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog (1991) screenshot 4",
+          "tr": "Sonic the Hedgehog (1991) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4a4/4a4f95676145f6f96a213710d625db06.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog (1991) screenshot 5",
+          "tr": "Sonic the Hedgehog (1991) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b7c/b7ca1bfcf722e92eb99acbdb6daeaccc.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog (1991) screenshot 6",
+          "tr": "Sonic the Hedgehog (1991) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sonic the Hedgehog (1991)",
+      "rawgSlug": "sonic-the-hedgehog",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "great-soundtrack",
+      "2d",
+      "partial-controller-support",
+      "classic"
+    ],
+    "sourceUrl": "https://rawg.io/games/sonic-the-hedgehog",
+    "sources": [],
+    "updatedAt": "2026-10-16T16:22:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sonic-sega-all-stars-racing-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Sonic & SEGA All-Stars Racing",
+      "tr": "Sonic & SEGA All-Stars Racing"
+    },
+    "description": {
+      "en": "Racing title released in 2010 for Nintendo Wii (Metacritic 65/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Yarış oyunu (Metacritic 65/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 65,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/4d5/4d558909512d99baeca227b50ff34595.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d6c/d6c723bc78b1dcaee91dc657074ecd8d.jpg",
+        "alt": {
+          "en": "Sonic & SEGA All-Stars Racing screenshot 1",
+          "tr": "Sonic & SEGA All-Stars Racing ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/708/7088ec7e31f1105d9765b624ce80dad1.jpg",
+        "alt": {
+          "en": "Sonic & SEGA All-Stars Racing screenshot 2",
+          "tr": "Sonic & SEGA All-Stars Racing ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1e0/1e0e7f086f846740362f1d29d0b03b00.jpg",
+        "alt": {
+          "en": "Sonic & SEGA All-Stars Racing screenshot 3",
+          "tr": "Sonic & SEGA All-Stars Racing ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/857/857a3aeeee1c4572cd24ab290307fa59.jpg",
+        "alt": {
+          "en": "Sonic & SEGA All-Stars Racing screenshot 4",
+          "tr": "Sonic & SEGA All-Stars Racing ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7e5/7e5a79b9e4314390325e82f714001821.jpg",
+        "alt": {
+          "en": "Sonic & SEGA All-Stars Racing screenshot 5",
+          "tr": "Sonic & SEGA All-Stars Racing ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d0e/d0e10ba9ea20e1c021b4bc99418e724e.jpeg",
+        "alt": {
+          "en": "Sonic & SEGA All-Stars Racing screenshot 6",
+          "tr": "Sonic & SEGA All-Stars Racing ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sonic & SEGA All-Stars Racing",
+      "rawgSlug": "sonic-sega-all-stars-racing",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "great-soundtrack",
+      "split-screen",
+      "controller"
+    ],
+    "sourceUrl": "https://rawg.io/games/sonic-sega-all-stars-racing",
+    "sources": [],
+    "updatedAt": "2025-11-16T19:26:07.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sonic-the-hedgehog-4-episode-1-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "Sonic the Hedgehog 4 - Episode I",
+      "tr": "Sonic the Hedgehog 4 - Episode I"
+    },
+    "description": {
+      "en": "Casual / Platformer title released in 2010 for Nintendo Wii (Score 57/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii için Günlük / Platform oyunu (Puan 57/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 57,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/screenshots/b55/b55aebdabe22bdff8136007e4b6eef58.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3db/3db81d3ed4532e30bebf9650a6116c43.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 4 - Episode I screenshot 1",
+          "tr": "Sonic the Hedgehog 4 - Episode I ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/724/724cfe13bbe3b9f17d7cce5234dc6dab.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 4 - Episode I screenshot 2",
+          "tr": "Sonic the Hedgehog 4 - Episode I ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8bb/8bbf0ffcb13ab12de193704f55508dee.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 4 - Episode I screenshot 3",
+          "tr": "Sonic the Hedgehog 4 - Episode I ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/059/05922c0a5ddcf5ee7073a1bf36251007.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 4 - Episode I screenshot 4",
+          "tr": "Sonic the Hedgehog 4 - Episode I ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5ef/5ef6af2b9cf23de0528b77b62abfe413.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 4 - Episode I screenshot 5",
+          "tr": "Sonic the Hedgehog 4 - Episode I ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a6b/a6b4a80ac1a23bdd917332f76e0e57b8.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 4 - Episode I screenshot 6",
+          "tr": "Sonic the Hedgehog 4 - Episode I ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sonic the Hedgehog 4 - Episode I",
+      "rawgSlug": "sonic-the-hedgehog-4-episode-1",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "great-soundtrack",
+      "2d",
+      "partial-controller-support",
+      "family-friendly"
+    ],
+    "sourceUrl": "https://rawg.io/games/sonic-the-hedgehog-4-episode-1",
+    "sources": [],
+    "updatedAt": "2026-06-24T15:04:16.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "super-mario-bros-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Super Mario Bros.",
+      "tr": "Super Mario Bros."
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 1985 for Nintendo Wii (Score 86/100).",
+      "tr": "1985 yılında çıkan Nintendo Wii için Platform / Macera oyunu (Puan 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "1985",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/154/154fea9689109f26c49c6a2db6263ef9.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/467/467575d8104e886bfeb7fc3b1fbb0700.jpg",
+        "alt": {
+          "en": "Super Mario Bros. screenshot 1",
+          "tr": "Super Mario Bros. ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/62c/62cf19d93f5e68537e8006d24a89f51c.jpg",
+        "alt": {
+          "en": "Super Mario Bros. screenshot 2",
+          "tr": "Super Mario Bros. ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c27/c2786b1d93e5feaec58c5be508bc883e.jpg",
+        "alt": {
+          "en": "Super Mario Bros. screenshot 3",
+          "tr": "Super Mario Bros. ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b2b/b2b139b9b05d2477bdd6f5fedfb47bfd.jpg",
+        "alt": {
+          "en": "Super Mario Bros. screenshot 4",
+          "tr": "Super Mario Bros. ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a3c/a3ccd83786304ee526ed0f901cd730e8.jpg",
+        "alt": {
+          "en": "Super Mario Bros. screenshot 5",
+          "tr": "Super Mario Bros. ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/130/13050bb564b2239932b365c427e0e869.jpg",
+        "alt": {
+          "en": "Super Mario Bros. screenshot 6",
+          "tr": "Super Mario Bros. ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Super Mario Bros.",
+      "rawgSlug": "super-mario-bros",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "platformer",
+      "adventure",
+      "action"
+    ],
+    "sourceUrl": "https://rawg.io/games/super-mario-bros",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:21.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "dirt-2-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Colin McRae: DiRT 2",
+      "tr": "Colin McRae: DiRT 2"
+    },
+    "description": {
+      "en": "Racing / Arcade title released in 2009 for Nintendo Wii (Metacritic 88/100).",
+      "tr": "2009 yılında çıkan Nintendo Wii için Yarış / Arcade oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/9de/9de9d9c51e2867486222a7b3e0fb6062.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ce9/ce9bae34abf720f0d2ac4961f9de7bc2.jpg",
+        "alt": {
+          "en": "Colin McRae: DiRT 2 screenshot 1",
+          "tr": "Colin McRae: DiRT 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/054/0548c2cb0199cd1ac464d0c457d223f7.jpg",
+        "alt": {
+          "en": "Colin McRae: DiRT 2 screenshot 2",
+          "tr": "Colin McRae: DiRT 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b33/b33185004e4e474a47cb5a868747e132.jpg",
+        "alt": {
+          "en": "Colin McRae: DiRT 2 screenshot 3",
+          "tr": "Colin McRae: DiRT 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e5c/e5c5bcd83a2817953b0dc0b3070687ce.jpg",
+        "alt": {
+          "en": "Colin McRae: DiRT 2 screenshot 4",
+          "tr": "Colin McRae: DiRT 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/524/524028b7525bbe017f7a413bc913fcb0.jpg",
+        "alt": {
+          "en": "Colin McRae: DiRT 2 screenshot 5",
+          "tr": "Colin McRae: DiRT 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f0a/f0a2bdf533092bf0357011b0acc61404.jpg",
+        "alt": {
+          "en": "Colin McRae: DiRT 2 screenshot 6",
+          "tr": "Colin McRae: DiRT 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Colin McRae: DiRT 2",
+      "rawgSlug": "dirt-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "multiplayer",
+      "physics",
+      "online",
+      "cars",
+      "car"
+    ],
+    "sourceUrl": "https://rawg.io/games/dirt-2",
+    "sources": [],
+    "updatedAt": "2026-04-13T09:06:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sonic-the-hedgehog-2-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Sonic the Hedgehog 2",
+      "tr": "Sonic the Hedgehog 2"
+    },
+    "description": {
+      "en": "Platformer / Arcade title released in 1992 for Nintendo Wii (Metacritic 78/100).",
+      "tr": "1992 yılında çıkan Nintendo Wii için Platform / Arcade oyunu (Metacritic 78/100)."
+    },
+    "developer": "RAWG",
+    "version": "1992",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 78,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/2c3/2c3363eb1ae202b9e4e7520d3f14ab2e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/4ca/4ca52a75bc88b162271545064b0c811f.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 2 screenshot 1",
+          "tr": "Sonic the Hedgehog 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/342/3429cb71330e76c75f9dff41140aa9ab.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 2 screenshot 2",
+          "tr": "Sonic the Hedgehog 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e59/e5908d1e60039b1cf3c01df108828aa5.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 2 screenshot 3",
+          "tr": "Sonic the Hedgehog 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8dd/8ddbdf58b8a08124992756f843cf9c51.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 2 screenshot 4",
+          "tr": "Sonic the Hedgehog 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/efb/efbf5566869c5ee66dfb963ab9ade1ef.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 2 screenshot 5",
+          "tr": "Sonic the Hedgehog 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f8f/f8f326bb26a51ca57070c528f8157abf.jpg",
+        "alt": {
+          "en": "Sonic the Hedgehog 2 screenshot 6",
+          "tr": "Sonic the Hedgehog 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sonic the Hedgehog 2",
+      "rawgSlug": "sonic-the-hedgehog-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "great-soundtrack",
+      "cooperative",
+      "2d"
+    ],
+    "sourceUrl": "https://rawg.io/games/sonic-the-hedgehog-2",
+    "sources": [],
+    "updatedAt": "2026-10-30T08:59:55.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "star-wars-the-force-unleashed-wii",
+    "catalogId": "wii",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Star Wars: The Force Unleashed",
+      "tr": "Star Wars: The Force Unleashed"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2008 for Nintendo Wii (Metacritic 69/100).",
+      "tr": "2008 yılında çıkan Nintendo Wii için Macera / Aksiyon oyunu (Metacritic 69/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 1610612736,
+    "sizeBytesEstimated": true,
+    "ratingScore": 69,
+    "fileFormat": "WBFS image",
+    "fileExtension": ".wbfs",
+    "coverPath": "https://media.rawg.io/media/games/932/93221053809511fde4a0c6a9fddaf558.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e7b/e7b173c7fa9883b7b1cb22425d4bd3f4.jpeg",
+        "alt": {
+          "en": "Star Wars: The Force Unleashed screenshot 1",
+          "tr": "Star Wars: The Force Unleashed ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f88/f88550d646f3a857f949ae89509fd8c6.jpeg",
+        "alt": {
+          "en": "Star Wars: The Force Unleashed screenshot 2",
+          "tr": "Star Wars: The Force Unleashed ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b91/b918b322b4eea60516d8cdd191bae16a.jpeg",
+        "alt": {
+          "en": "Star Wars: The Force Unleashed screenshot 3",
+          "tr": "Star Wars: The Force Unleashed ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bad/badaed1fb862e8039583f54d10e13328.jpeg",
+        "alt": {
+          "en": "Star Wars: The Force Unleashed screenshot 4",
+          "tr": "Star Wars: The Force Unleashed ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b30/b30a075c72a5b8d5e39f32e358366854.jpeg",
+        "alt": {
+          "en": "Star Wars: The Force Unleashed screenshot 5",
+          "tr": "Star Wars: The Force Unleashed ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/070/0704dbe1b079ebc799024a9c90ba6902.jpeg",
+        "alt": {
+          "en": "Star Wars: The Force Unleashed screenshot 6",
+          "tr": "Star Wars: The Force Unleashed ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Star Wars: The Force Unleashed",
+      "rawgSlug": "star-wars-the-force-unleashed",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "story",
+      "galaxy",
+      "adventure",
+      "action",
+      "wii"
+    ],
+    "sourceUrl": "https://rawg.io/games/star-wars-the-force-unleashed",
+    "sources": [],
+    "updatedAt": "2026-10-23T17:21:21.000Z",
+    "sampleData": false
   }
 ]

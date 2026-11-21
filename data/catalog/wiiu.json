@@ -1,47 +1,4329 @@
 [
   {
-    "slug": "planet-blupi-wiiu",
+    "slug": "terraria-wiiu",
     "catalogId": "wiiu",
     "type": "game",
-    "categoryId": "strategy-puzzle",
-    "category": { "en": "Strategy / puzzle", "tr": "Strateji / bulmaca" },
-    "title": { "en": "Planet Blupi (Wii U Port)", "tr": "Planet Blupi (Wii U Portu)" },
-    "description": {
-      "en": "A Wii U homebrew port of the open-source strategy and puzzle game, with GamePad touchscreen support.",
-      "tr": "Açık kaynaklı strateji ve bulmaca oyununun GamePad dokunmatik destekli Wii U homebrew portu."
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
     },
-    "developer": "vs-sr-dev and Planet Blupi contributors",
-    "version": "development build",
-    "sizeBytes": 41943040,
+    "title": {
+      "en": "Terraria",
+      "tr": "Terraria"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2011 for Nintendo Wii U (Metacritic 81/100).",
+      "tr": "2011 yılında çıkan Nintendo Wii U için Platform / Bağımsız oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 3221225472,
     "sizeBytesEstimated": true,
-    "fileFormat": "Wii U RPX executable",
-    "fileExtension": ".rpx",
-    "coverPath": "/images/catalog/wiiu/planet-blupi-wiiu/cover.webp",
+    "ratingScore": 81,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg",
     "screenshots": [
       {
-        "src": "/images/catalog/wiiu/planet-blupi-wiiu/screenshot-01.webp",
-        "alt": { "en": "Planet Blupi Wii U sample gameplay screenshot", "tr": "Planet Blupi Wii U örnek oynanış ekran görüntüsü" }
+        "src": "https://media.rawg.io/media/screenshots/3af/3afd69426804e7162edbe03cd9f8d0f4.jpg",
+        "alt": {
+          "en": "Terraria screenshot 1",
+          "tr": "Terraria ekran görüntüsü 1"
+        }
       },
       {
-        "src": "/images/catalog/wiiu/planet-blupi-wiiu/screenshot-02.webp",
-        "alt": { "en": "Planet Blupi Wii U sample GamePad screenshot", "tr": "Planet Blupi Wii U örnek GamePad ekran görüntüsü" }
-      }
-    ],
-    "tags": ["homebrew", "open-source", "strategy", "puzzle"],
-    "sourceUrl": "https://github.com/vs-sr-dev/wiiu-planetblupi",
-    "sources": [
+        "src": "https://media.rawg.io/media/screenshots/48c/48c7e3e1268467b91b24c7da7c6539df.jpg",
+        "alt": {
+          "en": "Terraria screenshot 2",
+          "tr": "Terraria ekran görüntüsü 2"
+        }
+      },
       {
-        "id": "github-release-page",
-        "provider": "github-release",
-        "deliveryMode": "browser_verify",
-        "url": "https://github.com/vs-sr-dev/wiiu-planetblupi/releases",
-        "format": ".rpx",
-        "sizeBytes": 41943040,
-        "requiresVerification": true,
-        "priority": 1
+        "src": "https://media.rawg.io/media/screenshots/84b/84b447d4df99d42ffe479c7feb438171.jpg",
+        "alt": {
+          "en": "Terraria screenshot 3",
+          "tr": "Terraria ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/de0/de053efd6104719567d23fb0dad58b92.jpg",
+        "alt": {
+          "en": "Terraria screenshot 4",
+          "tr": "Terraria ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/490/4907be07a7771c8a7f0eb30c3a1fadc0.jpg",
+        "alt": {
+          "en": "Terraria screenshot 5",
+          "tr": "Terraria ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/485/485ce1d6c733357664be153777097af1.jpg",
+        "alt": {
+          "en": "Terraria screenshot 6",
+          "tr": "Terraria ekran görüntüsü 6"
+        }
       }
     ],
-    "updatedAt": "2026-11-20T00:00:00.000Z",
-    "sampleData": true
+    "artwork": {
+      "query": "Terraria",
+      "rawgSlug": "terraria",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/terraria",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:00:22.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "assassins-creed-iv-black-flag-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Assassin’s Creed IV: Black Flag",
+      "tr": "Assassin’s Creed IV: Black Flag"
+    },
+    "description": {
+      "en": "Action title released in 2013 for Nintendo Wii U (Metacritic 85/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/46d/46de97777c05efb26597b215735dcd84.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 1",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/162/162503bb903edd7cfddf2a49ecdf5b7d.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 2",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9ad/9ad8aa17d3f2be9545273f895e481280.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 3",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b02/b02b168d04889304aac23e47f5314721.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 4",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ad8/ad8439bc9ed7d2f88deb836c9cff23d2.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 5",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/398/398abeb965880c1c3310a6a4ad9c71b8.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 6",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Assassin’s Creed IV: Black Flag",
+      "rawgSlug": "assassins-creed-iv-black-flag",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/assassins-creed-iv-black-flag",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:04:11.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "super-meat-boy-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Super Meat Boy",
+      "tr": "Super Meat Boy"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2010 for Nintendo Wii U (Metacritic 87/100).",
+      "tr": "2010 yılında çıkan Nintendo Wii U için Platform / Bağımsız oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/e04/e04963f3ac4c4fa83a1dc0b9231e50db.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b1e/b1e6c4d530035326da66fb85ae57519b.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 1",
+          "tr": "Super Meat Boy ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/09f/09f743bc5acc26aba844b3a092cdcddf.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 2",
+          "tr": "Super Meat Boy ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/995/9951726156ed69933ec1eff9a65c0e60.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 3",
+          "tr": "Super Meat Boy ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/db4/db4747c3913bd81e3e6754bb51a34838.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 4",
+          "tr": "Super Meat Boy ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e1d/e1d4006f82564f0d654f2959042a3acc.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 5",
+          "tr": "Super Meat Boy ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/14c/14c8b551343374231fa07987e5a2d9e3.jpg",
+        "alt": {
+          "en": "Super Meat Boy screenshot 6",
+          "tr": "Super Meat Boy ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Super Meat Boy",
+      "rawgSlug": "super-meat-boy",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/super-meat-boy",
+    "sources": [],
+    "updatedAt": "2026-10-24T13:48:33.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "minecraft-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Minecraft",
+      "tr": "Minecraft"
+    },
+    "description": {
+      "en": "Action / Arcade title released in 2009 for Nintendo Wii U (Metacritic 83/100).",
+      "tr": "2009 yılında çıkan Nintendo Wii U için Aksiyon / Arcade oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/324/32454b11adde40d87c046f310f0d710d.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 1",
+          "tr": "Minecraft ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/268/2689f04cbcabb467dd4948e30fe90f51.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 2",
+          "tr": "Minecraft ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e83/e83fbaf3a8bdf1cdd855acf8fc90d2fe.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 3",
+          "tr": "Minecraft ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a02/a021bf48ee5e492026e6464b3751cf35.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 4",
+          "tr": "Minecraft ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0cc/0cc6c1534e782b9d040c665a1f78c6f7.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 5",
+          "tr": "Minecraft ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3f6/3f66dd84a110f796a80baa4539430b68.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 6",
+          "tr": "Minecraft ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Minecraft",
+      "rawgSlug": "minecraft",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "multiplayer",
+      "sandbox",
+      "3d",
+      "crafting",
+      "building"
+    ],
+    "sourceUrl": "https://rawg.io/games/minecraft",
+    "sources": [],
+    "updatedAt": "2026-11-15T19:12:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "watch-dogs-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Watch Dogs",
+      "tr": "Watch Dogs"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2014 for Nintendo Wii U (Metacritic 77/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/879/879c930f9c6787c920153fa2df452eb3.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/6f0/6f072ce2d5d33350bfb2554e58e8a41b.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 1",
+          "tr": "Watch Dogs ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f4/8f47d4bfd8599ec9c3d0e81191ecd7c6.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 2",
+          "tr": "Watch Dogs ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c87/c87c3e6fac1ceed68605f6da0bf40b30.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 3",
+          "tr": "Watch Dogs ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2bd/2bd61fd5bad2458417e55f373a3097a2.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 4",
+          "tr": "Watch Dogs ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a64/a64cf2b3fcfd721cd244a853549781a8.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 5",
+          "tr": "Watch Dogs ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/75d/75d8c7a73df54bc579ffde1662354791.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 6",
+          "tr": "Watch Dogs ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Watch Dogs",
+      "rawgSlug": "watch-dogs",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "rpg",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/watch-dogs",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:00:41.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "deus-ex-human-revolution-directors-cut-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Deus Ex: Human Revolution - Director's Cut",
+      "tr": "Deus Ex: Human Revolution - Director's Cut"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2013 for Nintendo Wii U (Metacritic 91/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Aksiyon / RPG oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/a12/a12f806432cb385bc286f0935c49cd14.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3e2/3e2b3388b8e54e8e0c19ff1c1d4de6e5.jpg",
+        "alt": {
+          "en": "Deus Ex: Human Revolution - Director's Cut screenshot 1",
+          "tr": "Deus Ex: Human Revolution - Director's Cut ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/070/070ab0b7ddf6316c5c6e343137dafb77.jpg",
+        "alt": {
+          "en": "Deus Ex: Human Revolution - Director's Cut screenshot 2",
+          "tr": "Deus Ex: Human Revolution - Director's Cut ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b6a/b6a98b0ad3b1d798a34e9897c4196c80.jpg",
+        "alt": {
+          "en": "Deus Ex: Human Revolution - Director's Cut screenshot 3",
+          "tr": "Deus Ex: Human Revolution - Director's Cut ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/25a/25a851708fa44ba10b8387b64153bc16.jpg",
+        "alt": {
+          "en": "Deus Ex: Human Revolution - Director's Cut screenshot 4",
+          "tr": "Deus Ex: Human Revolution - Director's Cut ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5cf/5cf27961533e2b16b7d9c893edb2dc04.jpg",
+        "alt": {
+          "en": "Deus Ex: Human Revolution - Director's Cut screenshot 5",
+          "tr": "Deus Ex: Human Revolution - Director's Cut ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/910/91075d1c39ca838e7e37ff908be49bec.jpg",
+        "alt": {
+          "en": "Deus Ex: Human Revolution - Director's Cut screenshot 6",
+          "tr": "Deus Ex: Human Revolution - Director's Cut ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Deus Ex: Human Revolution - Director's Cut",
+      "rawgSlug": "deus-ex-human-revolution-directors-cut",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/deus-ex-human-revolution-directors-cut",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:09:39.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "assassins-creed-iii-2-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Assassin’s Creed III",
+      "tr": "Assassin’s Creed III"
+    },
+    "description": {
+      "en": "Action title released in 2012 for Nintendo Wii U (Metacritic 80/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/275/2759da6fcaa8f81f21800926168c85f6.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/078/0781f8511a92fa31fea44ad56d13f7a7.jpg",
+        "alt": {
+          "en": "Assassin’s Creed III screenshot 1",
+          "tr": "Assassin’s Creed III ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/044/0442a134b0bd6f703f84ca9905176f0f.jpg",
+        "alt": {
+          "en": "Assassin’s Creed III screenshot 2",
+          "tr": "Assassin’s Creed III ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cf7/cf721a31dc4c6187c0715587d9dcaed5.jpg",
+        "alt": {
+          "en": "Assassin’s Creed III screenshot 3",
+          "tr": "Assassin’s Creed III ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/edd/edda41d9bd671c9556c392c7c48ff141.jpg",
+        "alt": {
+          "en": "Assassin’s Creed III screenshot 4",
+          "tr": "Assassin’s Creed III ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b7b/b7b98bee0fd0ff1f1e79ba8fb94ff864.jpg",
+        "alt": {
+          "en": "Assassin’s Creed III screenshot 5",
+          "tr": "Assassin’s Creed III ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b5e/b5e79ea8adddfd6886332fca2c93914d.jpg",
+        "alt": {
+          "en": "Assassin’s Creed III screenshot 6",
+          "tr": "Assassin’s Creed III ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Assassin’s Creed III",
+      "rawgSlug": "assassins-creed-iii-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "story-rich",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/assassins-creed-iii-2",
+    "sources": [],
+    "updatedAt": "2026-11-14T12:00:43.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "darksiders-warmastered-edition-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Darksiders Warmastered Edition",
+      "tr": "Darksiders Warmastered Edition"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2016 for Nintendo Wii U (Metacritic 79/100).",
+      "tr": "2016 yılında çıkan Nintendo Wii U için Aksiyon / RPG oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2016",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/1f1/1f1888e1308959dfd3be4c144a81d19c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/4c2/4c228a8e5c8c1965e98f9b449277f65d.jpg",
+        "alt": {
+          "en": "Darksiders Warmastered Edition screenshot 1",
+          "tr": "Darksiders Warmastered Edition ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/acf/acff7948771222dcd9cf42ac6ca9d1a5.jpg",
+        "alt": {
+          "en": "Darksiders Warmastered Edition screenshot 2",
+          "tr": "Darksiders Warmastered Edition ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6a0/6a0ba9fc17733469c50937d26c603581.jpg",
+        "alt": {
+          "en": "Darksiders Warmastered Edition screenshot 3",
+          "tr": "Darksiders Warmastered Edition ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c68/c689a3759a5409711e3259d4e6bce4d4.jpg",
+        "alt": {
+          "en": "Darksiders Warmastered Edition screenshot 4",
+          "tr": "Darksiders Warmastered Edition ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/057/057c2eb728b5ba7c5fe4cdf622dd04b3.jpg",
+        "alt": {
+          "en": "Darksiders Warmastered Edition screenshot 5",
+          "tr": "Darksiders Warmastered Edition ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/48a/48a28e4260dd61aad5ac78e01f007fa2.jpg",
+        "alt": {
+          "en": "Darksiders Warmastered Edition screenshot 6",
+          "tr": "Darksiders Warmastered Edition ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Darksiders Warmastered Edition",
+      "rawgSlug": "darksiders-warmastered-edition",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/darksiders-warmastered-edition",
+    "sources": [],
+    "updatedAt": "2026-09-03T02:50:24.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "dont-starve-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Don't Starve",
+      "tr": "Don't Starve"
+    },
+    "description": {
+      "en": "Indie title released in 2013 for Nintendo Wii U (Metacritic 79/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Bağımsız oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/f3e/f3eec35c6218dcfd93a537751e6bfa61.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d06/d061140f778a759f7c0d717fe629f048.jpg",
+        "alt": {
+          "en": "Don't Starve screenshot 1",
+          "tr": "Don't Starve ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9c0/9c06a0c9f7568648af7c6c6bb763291a.jpg",
+        "alt": {
+          "en": "Don't Starve screenshot 2",
+          "tr": "Don't Starve ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8c2/8c279e5005b808dd3549e13f28ddef9f.jpg",
+        "alt": {
+          "en": "Don't Starve screenshot 3",
+          "tr": "Don't Starve ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2f0/2f0be6227524b1a0e89e29a8c37fbbe7.jpg",
+        "alt": {
+          "en": "Don't Starve screenshot 4",
+          "tr": "Don't Starve ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b49/b4974c2119ddbeaab744831394cf2a58.jpg",
+        "alt": {
+          "en": "Don't Starve screenshot 5",
+          "tr": "Don't Starve ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/96e/96ee2772ed7130d6a9513f70dd498c1c.jpg",
+        "alt": {
+          "en": "Don't Starve screenshot 6",
+          "tr": "Don't Starve ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Don't Starve",
+      "rawgSlug": "dont-starve",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/dont-starve",
+    "sources": [],
+    "updatedAt": "2026-10-08T18:56:23.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "rayman-legends-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Rayman Legends",
+      "tr": "Rayman Legends"
+    },
+    "description": {
+      "en": "Platformer title released in 2013 for Nintendo Wii U (Metacritic 89/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Platform oyunu (Metacritic 89/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 89,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/85c/85c8ae70e7cdf0105f06ef6bdce63b8b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/764/764cccdd8d67c27011222cac72c3b87b.jpg",
+        "alt": {
+          "en": "Rayman Legends screenshot 1",
+          "tr": "Rayman Legends ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8e2/8e2e6cef21e4ba2755337089d60f9672.jpg",
+        "alt": {
+          "en": "Rayman Legends screenshot 2",
+          "tr": "Rayman Legends ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a8d/a8d250cc8fb0f333bb9d6d7596b4f60e.jpg",
+        "alt": {
+          "en": "Rayman Legends screenshot 3",
+          "tr": "Rayman Legends ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/758/7584c1f985342a9ef41f5082d4c1d303.jpg",
+        "alt": {
+          "en": "Rayman Legends screenshot 4",
+          "tr": "Rayman Legends ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/172/172ca9c377683562348231c9437ca4e8.jpg",
+        "alt": {
+          "en": "Rayman Legends screenshot 5",
+          "tr": "Rayman Legends ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/40f/40f87cd596ff59404b4a2b7893cc8510.jpg",
+        "alt": {
+          "en": "Rayman Legends screenshot 6",
+          "tr": "Rayman Legends ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Rayman Legends",
+      "rawgSlug": "rayman-legends",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "co-op",
+      "cooperative"
+    ],
+    "sourceUrl": "https://rawg.io/games/rayman-legends",
+    "sources": [],
+    "updatedAt": "2026-10-03T13:51:02.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "guacamelee-super-turbo-championship-edition-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Guacamelee! Super Turbo Championship Edition",
+      "tr": "Guacamelee! Super Turbo Championship Edition"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2014 for Nintendo Wii U (Metacritic 86/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Platform / Bağımsız oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/fc8/fc838d98c9b944e6a15176eabf40bee8.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/57e/57e96295a697993e07f2092590591a53.jpg",
+        "alt": {
+          "en": "Guacamelee! Super Turbo Championship Edition screenshot 1",
+          "tr": "Guacamelee! Super Turbo Championship Edition ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fa8/fa845699f9fa03b365c236b9309dc209.jpg",
+        "alt": {
+          "en": "Guacamelee! Super Turbo Championship Edition screenshot 2",
+          "tr": "Guacamelee! Super Turbo Championship Edition ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/894/8941b7f5e7297c6d94f01d621802d1ce.jpg",
+        "alt": {
+          "en": "Guacamelee! Super Turbo Championship Edition screenshot 3",
+          "tr": "Guacamelee! Super Turbo Championship Edition ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/309/309aa6d0ad2d160c00cc4dd0ab2e5710.jpg",
+        "alt": {
+          "en": "Guacamelee! Super Turbo Championship Edition screenshot 4",
+          "tr": "Guacamelee! Super Turbo Championship Edition ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dd7/dd77e6673800d62e5f5fc2a02ff1f101.jpg",
+        "alt": {
+          "en": "Guacamelee! Super Turbo Championship Edition screenshot 5",
+          "tr": "Guacamelee! Super Turbo Championship Edition ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5b9/5b918848041dae705e80b94029dc0437.jpg",
+        "alt": {
+          "en": "Guacamelee! Super Turbo Championship Edition screenshot 6",
+          "tr": "Guacamelee! Super Turbo Championship Edition ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Guacamelee! Super Turbo Championship Edition",
+      "rawgSlug": "guacamelee-super-turbo-championship-edition",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/guacamelee-super-turbo-championship-edition",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:07:22.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-legend-of-zelda-breath-of-the-wild-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "The Legend of Zelda: Breath of the Wild",
+      "tr": "The Legend of Zelda: Breath of the Wild"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2017 for Nintendo Wii U (Metacritic 97/100).",
+      "tr": "2017 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 97/100)."
+    },
+    "developer": "RAWG",
+    "version": "2017",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 97,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/cc1/cc196a5ad763955d6532cdba236f730c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3c4/3c4a8f6b1994def75e73e1cb64624e7f.jpg",
+        "alt": {
+          "en": "The Legend of Zelda: Breath of the Wild screenshot 1",
+          "tr": "The Legend of Zelda: Breath of the Wild ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f5/8f5d4264b12090bb7aa5626fcfb5be18.jpg",
+        "alt": {
+          "en": "The Legend of Zelda: Breath of the Wild screenshot 2",
+          "tr": "The Legend of Zelda: Breath of the Wild ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b77/b771adc0585c655f8a747d3160e5325a.jpg",
+        "alt": {
+          "en": "The Legend of Zelda: Breath of the Wild screenshot 3",
+          "tr": "The Legend of Zelda: Breath of the Wild ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ef7/ef7d89471e5c0dc5553c249b2c34d9cd.jpg",
+        "alt": {
+          "en": "The Legend of Zelda: Breath of the Wild screenshot 4",
+          "tr": "The Legend of Zelda: Breath of the Wild ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1e5/1e58e8a064da6906f09dba1edb3fdea6.jpg",
+        "alt": {
+          "en": "The Legend of Zelda: Breath of the Wild screenshot 5",
+          "tr": "The Legend of Zelda: Breath of the Wild ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bef/bef44f5547b97d44c5e14f8773f9876c.jpg",
+        "alt": {
+          "en": "The Legend of Zelda: Breath of the Wild screenshot 6",
+          "tr": "The Legend of Zelda: Breath of the Wild ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Legend of Zelda: Breath of the Wild",
+      "rawgSlug": "the-legend-of-zelda-breath-of-the-wild",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "rpg",
+      "open-world",
+      "sandbox",
+      "action-adventure",
+      "exclusive"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-legend-of-zelda-breath-of-the-wild",
+    "sources": [],
+    "updatedAt": "2026-11-14T09:15:35.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sniper-elite-v2-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Sniper Elite V2",
+      "tr": "Sniper Elite V2"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for Nintendo Wii U (Metacritic 66/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Nişancı / Aksiyon oyunu (Metacritic 66/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 66,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/03d/03d17d237f9541b67a13f9425ced4ca4.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e63/e63934ed3dfef1d7b1ddf0961ffdc674.jpg",
+        "alt": {
+          "en": "Sniper Elite V2 screenshot 1",
+          "tr": "Sniper Elite V2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ac0/ac0a0e333f22ff2e95026af81e5d78a4.jpg",
+        "alt": {
+          "en": "Sniper Elite V2 screenshot 2",
+          "tr": "Sniper Elite V2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/482/4822b64c23a7a2f568c4a930a5281480.jpg",
+        "alt": {
+          "en": "Sniper Elite V2 screenshot 3",
+          "tr": "Sniper Elite V2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6ee/6ee31790369212fe95d6d7ecb0370c51.jpg",
+        "alt": {
+          "en": "Sniper Elite V2 screenshot 4",
+          "tr": "Sniper Elite V2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c79/c79fa8e5b8e940007e603fac532284fb.jpg",
+        "alt": {
+          "en": "Sniper Elite V2 screenshot 5",
+          "tr": "Sniper Elite V2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5de/5de678ffb17027729fcc2b7976ed2500.jpg",
+        "alt": {
+          "en": "Sniper Elite V2 screenshot 6",
+          "tr": "Sniper Elite V2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sniper Elite V2",
+      "rawgSlug": "sniper-elite-v2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/sniper-elite-v2",
+    "sources": [],
+    "updatedAt": "2026-10-26T08:38:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bayonetta-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Bayonetta",
+      "tr": "Bayonetta"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2009 for Nintendo Wii U (Metacritic 90/100).",
+      "tr": "2009 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/bee/bee483efadcf9d7e657e52184316a34e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f6a/f6a75633a2e5ffd281ce7d5fb41ffba7.jpg",
+        "alt": {
+          "en": "Bayonetta screenshot 1",
+          "tr": "Bayonetta ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e18/e18750c1ec5ebfad2ba8222b04d0f469.jpg",
+        "alt": {
+          "en": "Bayonetta screenshot 2",
+          "tr": "Bayonetta ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/573/57348b88f0755d343127c4951db0dad5.jpg",
+        "alt": {
+          "en": "Bayonetta screenshot 3",
+          "tr": "Bayonetta ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2d6/2d6caebf606d2d153e61716b260bd9d9.jpg",
+        "alt": {
+          "en": "Bayonetta screenshot 4",
+          "tr": "Bayonetta ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/262/2628dacce5bf8a5ca384ff3b9a47acac.jpg",
+        "alt": {
+          "en": "Bayonetta screenshot 5",
+          "tr": "Bayonetta ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fb0/fb068001f510fbeae587c81a3398066f.jpg",
+        "alt": {
+          "en": "Bayonetta screenshot 6",
+          "tr": "Bayonetta ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Bayonetta",
+      "rawgSlug": "bayonetta",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/bayonetta",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:06:32.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "cod-black-ops-ii-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Call of Duty: Black Ops II",
+      "tr": "Call of Duty: Black Ops II"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for Nintendo Wii U (Metacritic 74/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Nişancı / Aksiyon oyunu (Metacritic 74/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 74,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/8ee/8eed88e297441ef9202b5d1d35d7d86f.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c5c/c5c52956aaa535f92067f8dbb94ed792.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops II screenshot 1",
+          "tr": "Call of Duty: Black Ops II ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/898/898c3ea7d05d437208adf5c7098b87d4.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops II screenshot 2",
+          "tr": "Call of Duty: Black Ops II ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/490/490cd725bd80c0bc2359a0405ee21213.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops II screenshot 3",
+          "tr": "Call of Duty: Black Ops II ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fd0/fd0fe49f4a55f6f1af36aaacf0d92051.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops II screenshot 4",
+          "tr": "Call of Duty: Black Ops II ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b75/b7525f0077cf7d7ec6c055f2b51614ef.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops II screenshot 5",
+          "tr": "Call of Duty: Black Ops II ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f7/8f75918847ba00b554ed6ba2e9cef848.jpg",
+        "alt": {
+          "en": "Call of Duty: Black Ops II screenshot 6",
+          "tr": "Call of Duty: Black Ops II ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Call of Duty: Black Ops II",
+      "rawgSlug": "cod-black-ops-ii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/cod-black-ops-ii",
+    "sources": [],
+    "updatedAt": "2026-10-29T08:13:36.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-binding-of-isaac-rebirth-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "The Binding of Isaac: Rebirth",
+      "tr": "The Binding of Isaac: Rebirth"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2014 for Nintendo Wii U (Metacritic 86/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Aksiyon / RPG oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/926/926928beb8a9f9b31cf202965aa4cbbc.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/886/8868959a867dd17c052fcc0ee509a981.jpg",
+        "alt": {
+          "en": "The Binding of Isaac: Rebirth screenshot 1",
+          "tr": "The Binding of Isaac: Rebirth ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e98/e98badaa2c8c7f0c1851a1fec5d8ad40.jpg",
+        "alt": {
+          "en": "The Binding of Isaac: Rebirth screenshot 2",
+          "tr": "The Binding of Isaac: Rebirth ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/697/697cb3a925d77c1b75915a13adce38a2.jpg",
+        "alt": {
+          "en": "The Binding of Isaac: Rebirth screenshot 3",
+          "tr": "The Binding of Isaac: Rebirth ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bb8/bb8ff7c151f6b81704d6aa7ecbb17f99.jpg",
+        "alt": {
+          "en": "The Binding of Isaac: Rebirth screenshot 4",
+          "tr": "The Binding of Isaac: Rebirth ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c61/c61f14b30a0033f051f514c29968eb6f.jpg",
+        "alt": {
+          "en": "The Binding of Isaac: Rebirth screenshot 5",
+          "tr": "The Binding of Isaac: Rebirth ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c77/c77dcb4a0fc85e72d080c2ce8eef1586.jpg",
+        "alt": {
+          "en": "The Binding of Isaac: Rebirth screenshot 6",
+          "tr": "The Binding of Isaac: Rebirth ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Binding of Isaac: Rebirth",
+      "rawgSlug": "the-binding-of-isaac-rebirth",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-binding-of-isaac-rebirth",
+    "sources": [],
+    "updatedAt": "2026-10-19T18:45:49.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-the-hobbit-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO The Hobbit",
+      "tr": "LEGO The Hobbit"
+    },
+    "description": {
+      "en": "Family / Adventure title released in 2014 for Nintendo Wii U (Metacritic 70/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Aile / Macera oyunu (Metacritic 70/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 70,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/e4f/e4fb3fd188f61fabec48dca22e6ef28a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/7e9/7e9ae48a6de740ca5dfffdc09b899efb.jpg",
+        "alt": {
+          "en": "LEGO The Hobbit screenshot 1",
+          "tr": "LEGO The Hobbit ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c62/c62cf9bd131a9c9bf2f8cc8762bb27e8.jpg",
+        "alt": {
+          "en": "LEGO The Hobbit screenshot 2",
+          "tr": "LEGO The Hobbit ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/643/64306be3966640d1add6b7d67a826af0.jpg",
+        "alt": {
+          "en": "LEGO The Hobbit screenshot 3",
+          "tr": "LEGO The Hobbit ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0a8/0a8514f9474d9b83945c536a98679f8a.jpg",
+        "alt": {
+          "en": "LEGO The Hobbit screenshot 4",
+          "tr": "LEGO The Hobbit ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fec/fec43529a3c98bd310464ecd5a8c2047.jpg",
+        "alt": {
+          "en": "LEGO The Hobbit screenshot 5",
+          "tr": "LEGO The Hobbit ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/537/5378930282ff652f9074dc8d92b7ab06.jpg",
+        "alt": {
+          "en": "LEGO The Hobbit screenshot 6",
+          "tr": "LEGO The Hobbit ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO The Hobbit",
+      "rawgSlug": "lego-the-hobbit",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-the-hobbit",
+    "sources": [],
+    "updatedAt": "2026-09-07T17:33:39.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "darksiders-ii-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Darksiders II",
+      "tr": "Darksiders II"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2012 for Nintendo Wii U (Metacritic 83/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Aksiyon / RPG oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/848/8482235332f4518da363c3cb4e5cd075.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a65/a651814c2a4d6bfd74927eccf1de53d7.jpg",
+        "alt": {
+          "en": "Darksiders II screenshot 1",
+          "tr": "Darksiders II ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8e1/8e15782a9aeb0982242fd26963825905.jpg",
+        "alt": {
+          "en": "Darksiders II screenshot 2",
+          "tr": "Darksiders II ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/563/563a99d1f659ff79fdff6537f9987803.jpg",
+        "alt": {
+          "en": "Darksiders II screenshot 3",
+          "tr": "Darksiders II ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/de1/de175baf087f6681905c5d1d29b804b8.jpg",
+        "alt": {
+          "en": "Darksiders II screenshot 4",
+          "tr": "Darksiders II ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/501/50141e450770c785ed10f60070f5d314.jpg",
+        "alt": {
+          "en": "Darksiders II screenshot 5",
+          "tr": "Darksiders II ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/625/625dea93a0769abb387c2121d7d92602.jpg",
+        "alt": {
+          "en": "Darksiders II screenshot 6",
+          "tr": "Darksiders II ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Darksiders II",
+      "rawgSlug": "darksiders-ii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "war",
+      "combat",
+      "battle",
+      "character",
+      "soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/darksiders-ii",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:50:48.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "child-of-light-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Child of Light",
+      "tr": "Child of Light"
+    },
+    "description": {
+      "en": "Indie / RPG title released in 2014 for Nintendo Wii U (Metacritic 77/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Bağımsız / RPG oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/c47/c4796c4c49e7e06ad328e07aa8944cdd.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c4d/c4d4258f356a7a98c9c5a80ee3d327a3.jpg",
+        "alt": {
+          "en": "Child of Light screenshot 1",
+          "tr": "Child of Light ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f83/f83657eaf6a4495727438d85d8998406.jpg",
+        "alt": {
+          "en": "Child of Light screenshot 2",
+          "tr": "Child of Light ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/92d/92de66f73120bff78db21a20e1c4c633.jpg",
+        "alt": {
+          "en": "Child of Light screenshot 3",
+          "tr": "Child of Light ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dff/dff1371dc31257bf4c0b1a868cfbac46.jpg",
+        "alt": {
+          "en": "Child of Light screenshot 4",
+          "tr": "Child of Light ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2ee/2ee12e20bff8c0b88029dbb7ecd7285b.jpg",
+        "alt": {
+          "en": "Child of Light screenshot 5",
+          "tr": "Child of Light ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/204/2046d9a3f85787da2dfec8c6679d9ecf.jpg",
+        "alt": {
+          "en": "Child of Light screenshot 6",
+          "tr": "Child of Light ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Child of Light",
+      "rawgSlug": "child-of-light",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/child-of-light",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:05:21.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "mass-effect-3-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Mass Effect 3",
+      "tr": "Mass Effect 3"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2012 for Nintendo Wii U (Metacritic 90/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Aksiyon / RPG oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/315/3156817d3ac1f341da73de6495fb28f5.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/941/941a038fc6c03b8f038923f9ac9372b6.jpg",
+        "alt": {
+          "en": "Mass Effect 3 screenshot 1",
+          "tr": "Mass Effect 3 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/506/50699ae662eb07519b6c0c8edf42428e.jpg",
+        "alt": {
+          "en": "Mass Effect 3 screenshot 2",
+          "tr": "Mass Effect 3 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d5c/d5c1d4652454e9e38cdc74b33d83ea51.jpg",
+        "alt": {
+          "en": "Mass Effect 3 screenshot 3",
+          "tr": "Mass Effect 3 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f18/f183846d83d01ee4c876bf2f4bcd7e71.jpg",
+        "alt": {
+          "en": "Mass Effect 3 screenshot 4",
+          "tr": "Mass Effect 3 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d88/d88529b8aebb30f44aa0e5010f4d66f1.jpg",
+        "alt": {
+          "en": "Mass Effect 3 screenshot 5",
+          "tr": "Mass Effect 3 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/627/6272369f00b3288eb1319515377087b4.jpg",
+        "alt": {
+          "en": "Mass Effect 3 screenshot 6",
+          "tr": "Mass Effect 3 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Mass Effect 3",
+      "rawgSlug": "mass-effect-3",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "rpg",
+      "space",
+      "combat",
+      "story",
+      "romance"
+    ],
+    "sourceUrl": "https://rawg.io/games/mass-effect-3",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:15:50.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-swapper-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "The Swapper",
+      "tr": "The Swapper"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2013 for Nintendo Wii U (Metacritic 87/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/6fc/6fcb1c529c764700d55f3bbc1b0fbb5b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/585/585d7d78e9494533b86f80b689448f77.jpg",
+        "alt": {
+          "en": "The Swapper screenshot 1",
+          "tr": "The Swapper ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/153/1538f0b74d0d4aea13e2e51279e567f5.jpg",
+        "alt": {
+          "en": "The Swapper screenshot 2",
+          "tr": "The Swapper ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5e0/5e03afab7d2f0a14b453cef5d7d39910.jpg",
+        "alt": {
+          "en": "The Swapper screenshot 3",
+          "tr": "The Swapper ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a18/a18e6dfec023dfd082acd7ed1f5ad88a.jpg",
+        "alt": {
+          "en": "The Swapper screenshot 4",
+          "tr": "The Swapper ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3a3/3a3f115480441c0bafc11ce77b0f0498.jpg",
+        "alt": {
+          "en": "The Swapper screenshot 5",
+          "tr": "The Swapper ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c71/c713227ea712c319781d759b3bd914f5.jpg",
+        "alt": {
+          "en": "The Swapper screenshot 6",
+          "tr": "The Swapper ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Swapper",
+      "rawgSlug": "the-swapper",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "atmospheric",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-swapper",
+    "sources": [],
+    "updatedAt": "2026-09-08T08:23:53.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "resident-evil-revelations-biohazard-revelations-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Resident Evil Revelations",
+      "tr": "Resident Evil Revelations"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2012 for Nintendo Wii U (Metacritic 77/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/89a/89ac2742fcfeba3b95ac94457af766ef.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/dc2/dc23f696d6b0e1c0384beb27acec1033.jpg",
+        "alt": {
+          "en": "Resident Evil Revelations screenshot 1",
+          "tr": "Resident Evil Revelations ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/295/295e595838e5d9299c0a9cb955d9dc97.jpg",
+        "alt": {
+          "en": "Resident Evil Revelations screenshot 2",
+          "tr": "Resident Evil Revelations ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f0/8f04d8b8633545125f505a8a005e180c_tl5lc3O.jpg",
+        "alt": {
+          "en": "Resident Evil Revelations screenshot 3",
+          "tr": "Resident Evil Revelations ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f80/f801989e3794c70596ad2f7827f4787d.jpg",
+        "alt": {
+          "en": "Resident Evil Revelations screenshot 4",
+          "tr": "Resident Evil Revelations ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/24d/24dac64da237af2ceab96b5e46f392e2_pS2ubIE.jpg",
+        "alt": {
+          "en": "Resident Evil Revelations screenshot 5",
+          "tr": "Resident Evil Revelations ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/81d/81dfacfba4f911a23a97b89d955ff03b.jpg",
+        "alt": {
+          "en": "Resident Evil Revelations screenshot 6",
+          "tr": "Resident Evil Revelations ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Resident Evil Revelations",
+      "rawgSlug": "resident-evil-revelations-biohazard-revelations",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/resident-evil-revelations-biohazard-revelations",
+    "sources": [],
+    "updatedAt": "2026-10-17T18:06:36.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "never-alone-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "Never Alone",
+      "tr": "Never Alone"
+    },
+    "description": {
+      "en": "Casual / Indie title released in 2014 for Nintendo Wii U (Metacritic 70/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Günlük / Bağımsız oyunu (Metacritic 70/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 70,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/23a/23acbd56da0c30bca0227967a5720c96.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a58/a587ec07e66390b39ce27e991d0c9f5a.jpg",
+        "alt": {
+          "en": "Never Alone screenshot 1",
+          "tr": "Never Alone ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f71/f715b037551e77a7c64a254223ba8082.jpg",
+        "alt": {
+          "en": "Never Alone screenshot 2",
+          "tr": "Never Alone ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/20b/20bf9927bd24b4c0460739a8a8d262d6.jpg",
+        "alt": {
+          "en": "Never Alone screenshot 3",
+          "tr": "Never Alone ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0ff/0ff877336a1109122d7935eac26e647c.jpg",
+        "alt": {
+          "en": "Never Alone screenshot 4",
+          "tr": "Never Alone ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7c5/7c541ca8d2129667356e2c774cc0d643.jpg",
+        "alt": {
+          "en": "Never Alone screenshot 5",
+          "tr": "Never Alone ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/446/44619950afd1e9aa7706f522003bae13.jpg",
+        "alt": {
+          "en": "Never Alone screenshot 6",
+          "tr": "Never Alone ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Never Alone",
+      "rawgSlug": "never-alone",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "great-soundtrack",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/never-alone",
+    "sources": [],
+    "updatedAt": "2026-10-24T13:52:47.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-marvel-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO Marvel Super Heroes",
+      "tr": "LEGO Marvel Super Heroes"
+    },
+    "description": {
+      "en": "Family / Adventure title released in 2013 for Nintendo Wii U (Metacritic 78/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Aile / Macera oyunu (Metacritic 78/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 78,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/a87/a8743bdee8627c55bb9f2f01b9136ac1.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/0c4/0c455af3e4b6dc05824c9842c2712aa1.jpg",
+        "alt": {
+          "en": "LEGO Marvel Super Heroes screenshot 1",
+          "tr": "LEGO Marvel Super Heroes ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ffd/ffd5be8a612ee733dbb56babb092ac65.jpg",
+        "alt": {
+          "en": "LEGO Marvel Super Heroes screenshot 2",
+          "tr": "LEGO Marvel Super Heroes ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/71b/71b985dec036a127d8f9461d1ee47384.jpg",
+        "alt": {
+          "en": "LEGO Marvel Super Heroes screenshot 3",
+          "tr": "LEGO Marvel Super Heroes ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a31/a31388acd152e05c8085339add878a75.jpg",
+        "alt": {
+          "en": "LEGO Marvel Super Heroes screenshot 4",
+          "tr": "LEGO Marvel Super Heroes ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9a4/9a43ac846e777026d7d7ac8a3e864e8b.jpg",
+        "alt": {
+          "en": "LEGO Marvel Super Heroes screenshot 5",
+          "tr": "LEGO Marvel Super Heroes ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d43/d4326a36f7d0de4312a1260c6df499a1.jpg",
+        "alt": {
+          "en": "LEGO Marvel Super Heroes screenshot 6",
+          "tr": "LEGO Marvel Super Heroes ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Marvel Super Heroes",
+      "rawgSlug": "lego-marvel",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-marvel",
+    "sources": [],
+    "updatedAt": "2026-07-26T07:47:21.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "steamworld-dig-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "SteamWorld Dig",
+      "tr": "SteamWorld Dig"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2013 for Nintendo Wii U (Metacritic 76/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/e07/e07737df8469bf32d132ba9eaffc3461.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a08/a08e582235daba84e83f492c09c9d8c2.jpg",
+        "alt": {
+          "en": "SteamWorld Dig screenshot 1",
+          "tr": "SteamWorld Dig ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5bd/5bd98f1b85b335223b410c9f039a79fc.jpg",
+        "alt": {
+          "en": "SteamWorld Dig screenshot 2",
+          "tr": "SteamWorld Dig ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e36/e3624ca8c98281dfb1191f135c8b427e.jpg",
+        "alt": {
+          "en": "SteamWorld Dig screenshot 3",
+          "tr": "SteamWorld Dig ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1fe/1fe5aa7b0d43baeaefc417ea96ec3f53.jpg",
+        "alt": {
+          "en": "SteamWorld Dig screenshot 4",
+          "tr": "SteamWorld Dig ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6c1/6c19170a1e67620031859e4cd5c30161.jpg",
+        "alt": {
+          "en": "SteamWorld Dig screenshot 5",
+          "tr": "SteamWorld Dig ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5ca/5caff16ca5c17e072d8a82f55aaa223c.jpg",
+        "alt": {
+          "en": "SteamWorld Dig screenshot 6",
+          "tr": "SteamWorld Dig ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "SteamWorld Dig",
+      "rawgSlug": "steamworld-dig",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/steamworld-dig",
+    "sources": [],
+    "updatedAt": "2026-09-30T18:19:11.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "thomas-was-alone-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "Thomas Was Alone",
+      "tr": "Thomas Was Alone"
+    },
+    "description": {
+      "en": "Family / Indie title released in 2012 for Nintendo Wii U (Metacritic 77/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Aile / Bağımsız oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/6c8/6c8cb4780ce30b76b944cf656e8fff49.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ee0/ee08ed6ce84878c24c2964c598bd1c30.jpg",
+        "alt": {
+          "en": "Thomas Was Alone screenshot 1",
+          "tr": "Thomas Was Alone ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a2f/a2f2ea269e8fb402ab9340a99f7bdf95.jpg",
+        "alt": {
+          "en": "Thomas Was Alone screenshot 2",
+          "tr": "Thomas Was Alone ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/25e/25e4d4321eef7e048e3977da0bfcf97e.jpg",
+        "alt": {
+          "en": "Thomas Was Alone screenshot 3",
+          "tr": "Thomas Was Alone ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/570/570252b30ed6f939a3dae20a23af667c.jpg",
+        "alt": {
+          "en": "Thomas Was Alone screenshot 4",
+          "tr": "Thomas Was Alone ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bf9/bf9a0e2e6d8bb8bf2d83e9b72da376ad.jpg",
+        "alt": {
+          "en": "Thomas Was Alone screenshot 5",
+          "tr": "Thomas Was Alone ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d30/d302429848567f10f59c033e142eb486.jpg",
+        "alt": {
+          "en": "Thomas Was Alone screenshot 6",
+          "tr": "Thomas Was Alone ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Thomas Was Alone",
+      "rawgSlug": "thomas-was-alone",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "atmospheric",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/thomas-was-alone",
+    "sources": [],
+    "updatedAt": "2026-08-18T09:46:44.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "scribblenauts-unlimited-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "Scribblenauts Unlimited",
+      "tr": "Scribblenauts Unlimited"
+    },
+    "description": {
+      "en": "Casual / Strategy title released in 2012 for Nintendo Wii U (Metacritic 75/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Günlük / Strateji oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/42d/42d770eb49f2ba01cd4045e0d92af7a9.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/1c8/1c8f0187045a88faa85cc1472f1ddf94.jpg",
+        "alt": {
+          "en": "Scribblenauts Unlimited screenshot 1",
+          "tr": "Scribblenauts Unlimited ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3d6/3d6506fc11734e50a6341389643447de.jpg",
+        "alt": {
+          "en": "Scribblenauts Unlimited screenshot 2",
+          "tr": "Scribblenauts Unlimited ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/328/3289320d4fce2fa6a6c25ee6c75659bd.jpg",
+        "alt": {
+          "en": "Scribblenauts Unlimited screenshot 3",
+          "tr": "Scribblenauts Unlimited ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/490/49057fdf51d0a8ea6bc4a6f66a83d759.jpg",
+        "alt": {
+          "en": "Scribblenauts Unlimited screenshot 4",
+          "tr": "Scribblenauts Unlimited ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b30/b3099785c149c5a84421f1f0d4d1d792.jpg",
+        "alt": {
+          "en": "Scribblenauts Unlimited screenshot 5",
+          "tr": "Scribblenauts Unlimited ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/30e/30e75b232fa9d733a100a1694c54a64d.jpg",
+        "alt": {
+          "en": "Scribblenauts Unlimited screenshot 6",
+          "tr": "Scribblenauts Unlimited ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Scribblenauts Unlimited",
+      "rawgSlug": "scribblenauts-unlimited",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/scribblenauts-unlimited",
+    "sources": [],
+    "updatedAt": "2026-06-27T08:33:58.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "race-the-sun-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Race The Sun",
+      "tr": "Race The Sun"
+    },
+    "description": {
+      "en": "Racing / Arcade title released in 2013 for Nintendo Wii U (Metacritic 79/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Yarış / Arcade oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/a01/a01b34c722ceec784817381eb1824fa5.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f7d/f7d51d1cbfa05108dc2f068253f005f7.jpg",
+        "alt": {
+          "en": "Race The Sun screenshot 1",
+          "tr": "Race The Sun ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fa2/fa2ec61178e355960f103be1390a7095.jpg",
+        "alt": {
+          "en": "Race The Sun screenshot 2",
+          "tr": "Race The Sun ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bf8/bf8854424e05452b0ed24a99182b273d.jpg",
+        "alt": {
+          "en": "Race The Sun screenshot 3",
+          "tr": "Race The Sun ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/07d/07d6568bd9acd64cd8671b616e5cccbb.jpg",
+        "alt": {
+          "en": "Race The Sun screenshot 4",
+          "tr": "Race The Sun ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a63/a633b8c4f2d262867f7f0e813469d1d5.jpg",
+        "alt": {
+          "en": "Race The Sun screenshot 5",
+          "tr": "Race The Sun ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8a9/8a99948c671bb4d1b69032e7df9523b6.jpg",
+        "alt": {
+          "en": "Race The Sun screenshot 6",
+          "tr": "Race The Sun ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Race The Sun",
+      "rawgSlug": "race-the-sun",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/race-the-sun",
+    "sources": [],
+    "updatedAt": "2026-08-31T21:07:00.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "oddworld-new-n-tasty-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Oddworld: New 'n' Tasty",
+      "tr": "Oddworld: New 'n' Tasty"
+    },
+    "description": {
+      "en": "Indie / Platformer title released in 2014 for Nintendo Wii U (Metacritic 87/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Bağımsız / Platform oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/ba0/ba006ef12175ad4773e5964c320099c4.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3b3/3b3265c8e59a00b27b5bdb851f379702.jpg",
+        "alt": {
+          "en": "Oddworld: New 'n' Tasty screenshot 1",
+          "tr": "Oddworld: New 'n' Tasty ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f2a/f2a06a16b324a6da6dc467566520a6c7.jpg",
+        "alt": {
+          "en": "Oddworld: New 'n' Tasty screenshot 2",
+          "tr": "Oddworld: New 'n' Tasty ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/afe/afe78d00babba2e849b364e2585472ec.jpg",
+        "alt": {
+          "en": "Oddworld: New 'n' Tasty screenshot 3",
+          "tr": "Oddworld: New 'n' Tasty ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/148/1481ef9012488f2af4f398a53eb1bc17.jpg",
+        "alt": {
+          "en": "Oddworld: New 'n' Tasty screenshot 4",
+          "tr": "Oddworld: New 'n' Tasty ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/71e/71ee55bc12eccd6f0f989aa7c80540e1.jpg",
+        "alt": {
+          "en": "Oddworld: New 'n' Tasty screenshot 5",
+          "tr": "Oddworld: New 'n' Tasty ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ce/1cef0e43881643b55f246f01c5a1c41a.jpg",
+        "alt": {
+          "en": "Oddworld: New 'n' Tasty screenshot 6",
+          "tr": "Oddworld: New 'n' Tasty ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Oddworld: New 'n' Tasty",
+      "rawgSlug": "oddworld-new-n-tasty",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/oddworld-new-n-tasty",
+    "sources": [],
+    "updatedAt": "2026-10-26T22:45:24.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "call-of-duty-ghosts-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Call of Duty: Ghosts",
+      "tr": "Call of Duty: Ghosts"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2013 for Nintendo Wii U (Metacritic 68/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Nişancı / Aksiyon oyunu (Metacritic 68/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 68,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/eb2/eb24800b4491701eca481e7c990bce4a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3f2/3f21894803ada962c35916a3c746cdc3.jpg",
+        "alt": {
+          "en": "Call of Duty: Ghosts screenshot 1",
+          "tr": "Call of Duty: Ghosts ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b9a/b9a5bc515240ea3c79e1168b87801026.jpg",
+        "alt": {
+          "en": "Call of Duty: Ghosts screenshot 2",
+          "tr": "Call of Duty: Ghosts ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4ff/4ff947b7d7dda31d8d38f07f0e2e6f6d.jpg",
+        "alt": {
+          "en": "Call of Duty: Ghosts screenshot 3",
+          "tr": "Call of Duty: Ghosts ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/33d/33dc5d93122b1694d7cfc9ecf1ea41fa.jpg",
+        "alt": {
+          "en": "Call of Duty: Ghosts screenshot 4",
+          "tr": "Call of Duty: Ghosts ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fa6/fa6d1535c3360e02255adc1ccdec2177.jpg",
+        "alt": {
+          "en": "Call of Duty: Ghosts screenshot 5",
+          "tr": "Call of Duty: Ghosts ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/995/995b74b5a90631fb7d32445ced766a5f.jpg",
+        "alt": {
+          "en": "Call of Duty: Ghosts screenshot 6",
+          "tr": "Call of Duty: Ghosts ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Call of Duty: Ghosts",
+      "rawgSlug": "call-of-duty-ghosts",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/call-of-duty-ghosts",
+    "sources": [],
+    "updatedAt": "2026-10-29T08:13:03.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "sonic-all-stars-racing-transformed-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Sonic & All-Stars Racing Transformed",
+      "tr": "Sonic & All-Stars Racing Transformed"
+    },
+    "description": {
+      "en": "Racing / Family title released in 2012 for Nintendo Wii U (Metacritic 79/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Yarış / Aile oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/0c1/0c1c9965ba59166ab986a663ab2252dc.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/260/2601a1a078ce7c0b4ca01043c3c7d468.jpg",
+        "alt": {
+          "en": "Sonic & All-Stars Racing Transformed screenshot 1",
+          "tr": "Sonic & All-Stars Racing Transformed ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aea/aeaf8f1c238c9997ae5cd9e2290028ea.jpg",
+        "alt": {
+          "en": "Sonic & All-Stars Racing Transformed screenshot 2",
+          "tr": "Sonic & All-Stars Racing Transformed ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cda/cda9b84c47174142a909a2d977d646b8.jpg",
+        "alt": {
+          "en": "Sonic & All-Stars Racing Transformed screenshot 3",
+          "tr": "Sonic & All-Stars Racing Transformed ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bfd/bfd69b12be2cf62960870b7a0ffc383b.jpg",
+        "alt": {
+          "en": "Sonic & All-Stars Racing Transformed screenshot 4",
+          "tr": "Sonic & All-Stars Racing Transformed ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e2e/e2e878654907905039797ed8c2bec5ce.jpg",
+        "alt": {
+          "en": "Sonic & All-Stars Racing Transformed screenshot 5",
+          "tr": "Sonic & All-Stars Racing Transformed ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1df/1df2b1a23e561ce7be4b30401c4700ae.jpg",
+        "alt": {
+          "en": "Sonic & All-Stars Racing Transformed screenshot 6",
+          "tr": "Sonic & All-Stars Racing Transformed ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Sonic & All-Stars Racing Transformed",
+      "rawgSlug": "sonic-all-stars-racing-transformed",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/sonic-all-stars-racing-transformed",
+    "sources": [],
+    "updatedAt": "2026-08-21T19:11:47.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "how-to-survive-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "How to Survive",
+      "tr": "How to Survive"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2013 for Nintendo Wii U (Metacritic 60/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 60/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 60,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/73a/73a2c7af85d51bbdb20516bf2128fd7d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/281/2814ef38de302736fe14cb6fdd2dc54a.jpg",
+        "alt": {
+          "en": "How to Survive screenshot 1",
+          "tr": "How to Survive ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d19/d1986d03b6af5279a683846796c64377.jpg",
+        "alt": {
+          "en": "How to Survive screenshot 2",
+          "tr": "How to Survive ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/24f/24fdc48b0b22d585b6266aaeeba4ee8e.jpg",
+        "alt": {
+          "en": "How to Survive screenshot 3",
+          "tr": "How to Survive ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3a5/3a5f81a869865f3e2247c348a7ddfc4d.jpg",
+        "alt": {
+          "en": "How to Survive screenshot 4",
+          "tr": "How to Survive ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6fd/6fd45db9a037dc91dfeaa0cfc9972219.jpg",
+        "alt": {
+          "en": "How to Survive screenshot 5",
+          "tr": "How to Survive ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/285/285653514a0eb00c4e29e48aeb52d46a.jpg",
+        "alt": {
+          "en": "How to Survive screenshot 6",
+          "tr": "How to Survive ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "How to Survive",
+      "rawgSlug": "how-to-survive",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/how-to-survive",
+    "sources": [],
+    "updatedAt": "2026-05-23T12:29:23.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-batman-2-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO Batman 2 DC Super Heroes",
+      "tr": "LEGO Batman 2 DC Super Heroes"
+    },
+    "description": {
+      "en": "Family / Action title released in 2012 for Nintendo Wii U (Metacritic 75/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Aile / Aksiyon oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/3c1/3c139f67a73f0bf5ce0d8f2abf83c0d0.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b2f/b2fd7f7d295b617eb8cf92551927c867.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 1",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/55b/55b240a005dbdaf47aba505ec4900fe8.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 2",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4b1/4b1adfba9643cb8e6b0c6dc580dadbea.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 3",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ad/1ad1eb0e1774d9a5594748adc2a20bf0.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 4",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2d8/2d8705867c3f35581fd74c344ed401b4.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 5",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c41/c41cff648cade4b473a14231075d51e9.jpg",
+        "alt": {
+          "en": "LEGO Batman 2 DC Super Heroes screenshot 6",
+          "tr": "LEGO Batman 2 DC Super Heroes ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Batman 2 DC Super Heroes",
+      "rawgSlug": "lego-batman-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "co-op",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-batman-2",
+    "sources": [],
+    "updatedAt": "2026-10-03T07:30:30.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "stealth-inc-2-game-of-clones-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Stealth Inc 2: A Game of Clones",
+      "tr": "Stealth Inc 2: A Game of Clones"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2014 for Nintendo Wii U (Metacritic 79/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Bağımsız / Macera oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/2ff/2ffe731b3388bd795f94c38e9afed60f.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3fa/3fa2b40d4c0d0db51a6c53a399a5a270.jpg",
+        "alt": {
+          "en": "Stealth Inc 2: A Game of Clones screenshot 1",
+          "tr": "Stealth Inc 2: A Game of Clones ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/686/6869758b64912a4434a614476e86eda0.jpg",
+        "alt": {
+          "en": "Stealth Inc 2: A Game of Clones screenshot 2",
+          "tr": "Stealth Inc 2: A Game of Clones ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d8/9d84da23459962e99859e760c931eecf.jpg",
+        "alt": {
+          "en": "Stealth Inc 2: A Game of Clones screenshot 3",
+          "tr": "Stealth Inc 2: A Game of Clones ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7d3/7d371e0621590e2492e51f16d31bc4bb.jpg",
+        "alt": {
+          "en": "Stealth Inc 2: A Game of Clones screenshot 4",
+          "tr": "Stealth Inc 2: A Game of Clones ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6fc/6fc27e630e536803ccda2cb0cffb4ca8.jpg",
+        "alt": {
+          "en": "Stealth Inc 2: A Game of Clones screenshot 5",
+          "tr": "Stealth Inc 2: A Game of Clones ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cbc/cbc8cd817f72062fe71feac9ae0a444c.jpg",
+        "alt": {
+          "en": "Stealth Inc 2: A Game of Clones screenshot 6",
+          "tr": "Stealth Inc 2: A Game of Clones ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Stealth Inc 2: A Game of Clones",
+      "rawgSlug": "stealth-inc-2-game-of-clones",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-trading-cards",
+      "2d",
+      "partial-controller-support"
+    ],
+    "sourceUrl": "https://rawg.io/games/stealth-inc-2-game-of-clones",
+    "sources": [],
+    "updatedAt": "2025-05-31T20:22:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "little-inferno-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Little Inferno",
+      "tr": "Little Inferno"
+    },
+    "description": {
+      "en": "Adventure / Puzzle title released in 2012 for Nintendo Wii U (Metacritic 68/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Macera / Bulmaca oyunu (Metacritic 68/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 68,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/d79/d794c9198ec994cc12ede5ebd4672623.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/977/9778ffad3045c263c85c034f3eded26f.jpg",
+        "alt": {
+          "en": "Little Inferno screenshot 1",
+          "tr": "Little Inferno ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/06f/06f21a0b4e3bfbe02ed15e7e803a625a.jpg",
+        "alt": {
+          "en": "Little Inferno screenshot 2",
+          "tr": "Little Inferno ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/887/887a3871dd70bc489e0c9d264004cc36.jpg",
+        "alt": {
+          "en": "Little Inferno screenshot 3",
+          "tr": "Little Inferno ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4a3/4a344762165728f6644b4367ca1069d4.jpg",
+        "alt": {
+          "en": "Little Inferno screenshot 4",
+          "tr": "Little Inferno ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/689/6893fd3c032aad2d07239dae8f8e3e46.jpg",
+        "alt": {
+          "en": "Little Inferno screenshot 5",
+          "tr": "Little Inferno ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6e6/6e64e4635ffcad0c24ca2bd6af7b0cb4_umsMJi6.jpg",
+        "alt": {
+          "en": "Little Inferno screenshot 6",
+          "tr": "Little Inferno ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Little Inferno",
+      "rawgSlug": "little-inferno",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich",
+      "2d"
+    ],
+    "sourceUrl": "https://rawg.io/games/little-inferno",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:17.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "lego-batman-3-beyond-gotham-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "LEGO Batman 3: Beyond Gotham",
+      "tr": "LEGO Batman 3: Beyond Gotham"
+    },
+    "description": {
+      "en": "Family / Adventure title released in 2014 for Nintendo Wii U (Metacritic 75/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Aile / Macera oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/a8c/a8cd58ee985ab6d509370bddada91dbd.jpeg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/9b7/9b79cd562d8e4b299244987e33e1a3c6.jpg",
+        "alt": {
+          "en": "LEGO Batman 3: Beyond Gotham screenshot 1",
+          "tr": "LEGO Batman 3: Beyond Gotham ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9ff/9ffa09e2dd0a286aadf489811ddeec4f.jpg",
+        "alt": {
+          "en": "LEGO Batman 3: Beyond Gotham screenshot 2",
+          "tr": "LEGO Batman 3: Beyond Gotham ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/55f/55fcae3dd36ecffc22a16c8716197d92.jpg",
+        "alt": {
+          "en": "LEGO Batman 3: Beyond Gotham screenshot 3",
+          "tr": "LEGO Batman 3: Beyond Gotham ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9c5/9c55e70c4d4cf2216aa2e9bbb0abd85f.jpg",
+        "alt": {
+          "en": "LEGO Batman 3: Beyond Gotham screenshot 4",
+          "tr": "LEGO Batman 3: Beyond Gotham ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aad/aada2737c71991f29db2ee47fc733297.jpg",
+        "alt": {
+          "en": "LEGO Batman 3: Beyond Gotham screenshot 5",
+          "tr": "LEGO Batman 3: Beyond Gotham ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e82/e82158ca4eb7e5927b71db758272317e.jpg",
+        "alt": {
+          "en": "LEGO Batman 3: Beyond Gotham screenshot 6",
+          "tr": "LEGO Batman 3: Beyond Gotham ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "LEGO Batman 3: Beyond Gotham",
+      "rawgSlug": "lego-batman-3-beyond-gotham",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/lego-batman-3-beyond-gotham",
+    "sources": [],
+    "updatedAt": "2026-05-03T14:06:19.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tom-clancys-splinter-cell-blacklist-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Tom Clancy’s Splinter Cell Blacklist",
+      "tr": "Tom Clancy’s Splinter Cell Blacklist"
+    },
+    "description": {
+      "en": "Action title released in 2013 for Nintendo Wii U (Metacritic 81/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/de9/de93cd3e51d2c57e33bbf7dade34f25a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a3a/a3ab33764d8ae5b9690e4b9f5ac1e308.jpg",
+        "alt": {
+          "en": "Tom Clancy’s Splinter Cell Blacklist screenshot 1",
+          "tr": "Tom Clancy’s Splinter Cell Blacklist ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/98e/98ecf315b32bcc2ff826433f3102dedf.jpg",
+        "alt": {
+          "en": "Tom Clancy’s Splinter Cell Blacklist screenshot 2",
+          "tr": "Tom Clancy’s Splinter Cell Blacklist ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ba8/ba8a4865039ad3502d5d0df9038d014b.jpg",
+        "alt": {
+          "en": "Tom Clancy’s Splinter Cell Blacklist screenshot 3",
+          "tr": "Tom Clancy’s Splinter Cell Blacklist ekran görüntüsü 3"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tom Clancy’s Splinter Cell Blacklist",
+      "rawgSlug": "tom-clancys-splinter-cell-blacklist",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "cooperative",
+      "action",
+      "wiiu"
+    ],
+    "sourceUrl": "https://rawg.io/games/tom-clancys-splinter-cell-blacklist",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:47:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "need-for-speed-most-wanted-a-criterion-game-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "racing",
+    "category": {
+      "en": "Racing",
+      "tr": "Yarış"
+    },
+    "title": {
+      "en": "Need for Speed: Most Wanted - A Criterion Game",
+      "tr": "Need for Speed: Most Wanted - A Criterion Game"
+    },
+    "description": {
+      "en": "Racing / Arcade title released in 2012 for Nintendo Wii U (Metacritic 82/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Yarış / Arcade oyunu (Metacritic 82/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 82,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/228/228e21229213695c8f6697a6b3387a2b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/bdd/bddb49e66d144a468d722997eb229859.jpg",
+        "alt": {
+          "en": "Need for Speed: Most Wanted - A Criterion Game screenshot 1",
+          "tr": "Need for Speed: Most Wanted - A Criterion Game ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/be2/be2ac1a543af17b0251717e0e7c31695.jpg",
+        "alt": {
+          "en": "Need for Speed: Most Wanted - A Criterion Game screenshot 2",
+          "tr": "Need for Speed: Most Wanted - A Criterion Game ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3b4/3b44386304e76de2b0cc321d97dedbb4.jpg",
+        "alt": {
+          "en": "Need for Speed: Most Wanted - A Criterion Game screenshot 3",
+          "tr": "Need for Speed: Most Wanted - A Criterion Game ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4e1/4e12f5c28c68ee88dce5dc2bb2bbd5e9.jpg",
+        "alt": {
+          "en": "Need for Speed: Most Wanted - A Criterion Game screenshot 4",
+          "tr": "Need for Speed: Most Wanted - A Criterion Game ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/750/75049a19a2150de8e9e776e4250d669b.jpg",
+        "alt": {
+          "en": "Need for Speed: Most Wanted - A Criterion Game screenshot 5",
+          "tr": "Need for Speed: Most Wanted - A Criterion Game ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ab6/ab647c19feef46fb610040eb5f6fcbbb.jpg",
+        "alt": {
+          "en": "Need for Speed: Most Wanted - A Criterion Game screenshot 6",
+          "tr": "Need for Speed: Most Wanted - A Criterion Game ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Need for Speed: Most Wanted - A Criterion Game",
+      "rawgSlug": "need-for-speed-most-wanted-a-criterion-game",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "open-world",
+      "first-person",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/need-for-speed-most-wanted-a-criterion-game",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:50:16.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "giana-sisters-twisted-dreams-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Giana Sisters: Twisted Dreams",
+      "tr": "Giana Sisters: Twisted Dreams"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2012 for Nintendo Wii U (Metacritic 77/100).",
+      "tr": "2012 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/e5b/e5be8c031ac0dbd85bf058947d480375.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/0ae/0ae065017c221ecc33656335bf019300.jpg",
+        "alt": {
+          "en": "Giana Sisters: Twisted Dreams screenshot 1",
+          "tr": "Giana Sisters: Twisted Dreams ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ca3/ca3f88337bceed3ed4158fc95e37a573.jpg",
+        "alt": {
+          "en": "Giana Sisters: Twisted Dreams screenshot 2",
+          "tr": "Giana Sisters: Twisted Dreams ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5c9/5c92f10c25e2c49771e376631bfe4422.jpg",
+        "alt": {
+          "en": "Giana Sisters: Twisted Dreams screenshot 3",
+          "tr": "Giana Sisters: Twisted Dreams ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/53d/53d9a95e250303fd8e11beb335edc014.jpg",
+        "alt": {
+          "en": "Giana Sisters: Twisted Dreams screenshot 4",
+          "tr": "Giana Sisters: Twisted Dreams ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/57a/57ab104ab13cad8d2fb25cffcc9fb6ce.jpg",
+        "alt": {
+          "en": "Giana Sisters: Twisted Dreams screenshot 5",
+          "tr": "Giana Sisters: Twisted Dreams ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4bf/4bf40cf1062a383101401e02101a1714.jpg",
+        "alt": {
+          "en": "Giana Sisters: Twisted Dreams screenshot 6",
+          "tr": "Giana Sisters: Twisted Dreams ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Giana Sisters: Twisted Dreams",
+      "rawgSlug": "giana-sisters-twisted-dreams",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/giana-sisters-twisted-dreams",
+    "sources": [],
+    "updatedAt": "2026-06-24T04:44:07.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-bridge-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "casual",
+    "category": {
+      "en": "Casual",
+      "tr": "Günlük"
+    },
+    "title": {
+      "en": "The Bridge",
+      "tr": "The Bridge"
+    },
+    "description": {
+      "en": "Casual / Strategy title released in 2013 for Nintendo Wii U (Metacritic 74/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Günlük / Strateji oyunu (Metacritic 74/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 74,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/5a3/5a36930b16d9b1949d8c8c92b5a28d89.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/5d1/5d197787b018e63c629c59c5972556a2.jpg",
+        "alt": {
+          "en": "The Bridge screenshot 1",
+          "tr": "The Bridge ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/13d/13d1dd5fde714c7a4dc3614f0b45adf0.jpg",
+        "alt": {
+          "en": "The Bridge screenshot 2",
+          "tr": "The Bridge ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3b4/3b4f9cdde8859cbdd58c714dba0975e5.jpg",
+        "alt": {
+          "en": "The Bridge screenshot 3",
+          "tr": "The Bridge ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dcc/dcc8161df480b80833dad4f32009ac9e.jpg",
+        "alt": {
+          "en": "The Bridge screenshot 4",
+          "tr": "The Bridge ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1c3/1c30ed16facebdce9e44771c28fbdf0a.jpg",
+        "alt": {
+          "en": "The Bridge screenshot 5",
+          "tr": "The Bridge ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e2c/e2c9babe809b23b77ddc01f1562d03c4.jpg",
+        "alt": {
+          "en": "The Bridge screenshot 6",
+          "tr": "The Bridge ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Bridge",
+      "rawgSlug": "the-bridge",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-bridge",
+    "sources": [],
+    "updatedAt": "2026-04-17T08:56:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "steamworld-heist-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "SteamWorld Heist",
+      "tr": "SteamWorld Heist"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2015 for Nintendo Wii U (Metacritic 81/100).",
+      "tr": "2015 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/e49/e49256363789d1dec316edf8ebb27ccf.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ead/ead0a4f9dcdd1084fbb0da8ea5a26a5e.jpg",
+        "alt": {
+          "en": "SteamWorld Heist screenshot 1",
+          "tr": "SteamWorld Heist ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ff9/ff9005e66eefc3e9e908f8a918a575aa.jpg",
+        "alt": {
+          "en": "SteamWorld Heist screenshot 2",
+          "tr": "SteamWorld Heist ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/05b/05b1ddd7e6a33f716be0d6c6fa8d1b8c.jpg",
+        "alt": {
+          "en": "SteamWorld Heist screenshot 3",
+          "tr": "SteamWorld Heist ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/874/8749c4db3181be3ac374a0fd3d63a4f7.jpg",
+        "alt": {
+          "en": "SteamWorld Heist screenshot 4",
+          "tr": "SteamWorld Heist ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6ce/6ce002980f0e02d3b9e57308ee85c220.jpg",
+        "alt": {
+          "en": "SteamWorld Heist screenshot 5",
+          "tr": "SteamWorld Heist ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/31e/31e4803dc0504d17b9b90fb0494a7a56.jpg",
+        "alt": {
+          "en": "SteamWorld Heist screenshot 6",
+          "tr": "SteamWorld Heist ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "SteamWorld Heist",
+      "rawgSlug": "steamworld-heist",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/steamworld-heist",
+    "sources": [],
+    "updatedAt": "2026-05-13T13:06:26.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "ducktales-remastered-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "DuckTales: Remastered",
+      "tr": "DuckTales: Remastered"
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 2013 for Nintendo Wii U (Metacritic 73/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Platform / Macera oyunu (Metacritic 73/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 73,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/36d/36dbcc51d45ae1105c7cb744a5fa6e2a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/f3b/f3b6c8ffe4e70f46c06b7fcc760e9021.jpg",
+        "alt": {
+          "en": "DuckTales: Remastered screenshot 1",
+          "tr": "DuckTales: Remastered ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1d4/1d4b3877a02e941af2823014a0cfb7fc.jpg",
+        "alt": {
+          "en": "DuckTales: Remastered screenshot 2",
+          "tr": "DuckTales: Remastered ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/64e/64e2f41f7edb589cefa1c2e61d3af5a0.jpg",
+        "alt": {
+          "en": "DuckTales: Remastered screenshot 3",
+          "tr": "DuckTales: Remastered ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/544/54482e102add461c078bfc0390f82dac.jpg",
+        "alt": {
+          "en": "DuckTales: Remastered screenshot 4",
+          "tr": "DuckTales: Remastered ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/68a/68a3b8509d86dea206ac2b3f87e47ef0.jpg",
+        "alt": {
+          "en": "DuckTales: Remastered screenshot 5",
+          "tr": "DuckTales: Remastered ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9be/9be239ed29939d49444bccd5e78aff03.jpg",
+        "alt": {
+          "en": "DuckTales: Remastered screenshot 6",
+          "tr": "DuckTales: Remastered ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "DuckTales: Remastered",
+      "rawgSlug": "ducktales-remastered",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/ducktales-remastered",
+    "sources": [],
+    "updatedAt": "2026-09-18T17:16:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "octodad-dadliest-catch-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Octodad: Dadliest Catch",
+      "tr": "Octodad: Dadliest Catch"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2014 for Nintendo Wii U (Metacritic 69/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 69/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 69,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/41e/41e431c48530788de5e8bddf8dcfba32.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2aa/2aa959ae5d165e71ff2ad6a4c786a40e.jpg",
+        "alt": {
+          "en": "Octodad: Dadliest Catch screenshot 1",
+          "tr": "Octodad: Dadliest Catch ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/710/710805c893915ad147cae5747ee7d67e.jpg",
+        "alt": {
+          "en": "Octodad: Dadliest Catch screenshot 2",
+          "tr": "Octodad: Dadliest Catch ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/99a/99ad8171b01ba658df76c4695cd970fb.jpg",
+        "alt": {
+          "en": "Octodad: Dadliest Catch screenshot 3",
+          "tr": "Octodad: Dadliest Catch ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/604/6042d45056d8714275b7eabcb69bbb3c.jpg",
+        "alt": {
+          "en": "Octodad: Dadliest Catch screenshot 4",
+          "tr": "Octodad: Dadliest Catch ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/feb/feb7fa52ae067d50a6de9cc3f272e201.jpg",
+        "alt": {
+          "en": "Octodad: Dadliest Catch screenshot 5",
+          "tr": "Octodad: Dadliest Catch ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/295/295008d55b7573928896178ed3260ca9.jpg",
+        "alt": {
+          "en": "Octodad: Dadliest Catch screenshot 6",
+          "tr": "Octodad: Dadliest Catch ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Octodad: Dadliest Catch",
+      "rawgSlug": "octodad-dadliest-catch",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/octodad-dadliest-catch",
+    "sources": [],
+    "updatedAt": "2026-10-04T16:16:54.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "qube-directors-cut-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Q.U.B.E: Director's Cut",
+      "tr": "Q.U.B.E: Director's Cut"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2014 for Nintendo Wii U (Score 65/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Bağımsız / Macera oyunu (Puan 65/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 65,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/0cf/0cfe4ec4dcffb8fcac999d7176c69176.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/7d8/7d8706f3747152502e5aefde70ae2b07.jpg",
+        "alt": {
+          "en": "Q.U.B.E: Director's Cut screenshot 1",
+          "tr": "Q.U.B.E: Director's Cut ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/93f/93f445604c342b62f4b92c0526646bb0.jpg",
+        "alt": {
+          "en": "Q.U.B.E: Director's Cut screenshot 2",
+          "tr": "Q.U.B.E: Director's Cut ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1f2/1f2058343dff9aa229f8f9fd0b5050d6.jpg",
+        "alt": {
+          "en": "Q.U.B.E: Director's Cut screenshot 3",
+          "tr": "Q.U.B.E: Director's Cut ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/186/186736b56ab2ea876640a14f6fcbbd3f.jpg",
+        "alt": {
+          "en": "Q.U.B.E: Director's Cut screenshot 4",
+          "tr": "Q.U.B.E: Director's Cut ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8de/8de48000bdc859234d2107ef50bb9992.jpg",
+        "alt": {
+          "en": "Q.U.B.E: Director's Cut screenshot 5",
+          "tr": "Q.U.B.E: Director's Cut ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cc7/cc74b35c06eb626aae8e8606825606e7.jpg",
+        "alt": {
+          "en": "Q.U.B.E: Director's Cut screenshot 6",
+          "tr": "Q.U.B.E: Director's Cut ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Q.U.B.E: Director's Cut",
+      "rawgSlug": "qube-directors-cut",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "first-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/qube-directors-cut",
+    "sources": [],
+    "updatedAt": "2026-09-10T06:55:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "shantae-and-the-pirates-curse-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Shantae and the Pirate's Curse",
+      "tr": "Shantae and the Pirate's Curse"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2014 for Nintendo Wii U (Score 77/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Puan 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/a5a/a5a8e5820043aa1285643f3d243e5664.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/278/27817df725db28c419a52c6a9eb72d17.jpg",
+        "alt": {
+          "en": "Shantae and the Pirate's Curse screenshot 1",
+          "tr": "Shantae and the Pirate's Curse ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/06b/06be29221d0be39538782d4730f34e3f.jpg",
+        "alt": {
+          "en": "Shantae and the Pirate's Curse screenshot 2",
+          "tr": "Shantae and the Pirate's Curse ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4bb/4bb1d8bb001d7d3f01700720cbcd1e91.jpg",
+        "alt": {
+          "en": "Shantae and the Pirate's Curse screenshot 3",
+          "tr": "Shantae and the Pirate's Curse ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b29/b293d6990726d7a71e5e378f939030e1.jpg",
+        "alt": {
+          "en": "Shantae and the Pirate's Curse screenshot 4",
+          "tr": "Shantae and the Pirate's Curse ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/998/998d0c39b84d73d583748407890767fe.jpg",
+        "alt": {
+          "en": "Shantae and the Pirate's Curse screenshot 5",
+          "tr": "Shantae and the Pirate's Curse ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e54/e5496ded5ac9e6945f180389ac50904f.jpg",
+        "alt": {
+          "en": "Shantae and the Pirate's Curse screenshot 6",
+          "tr": "Shantae and the Pirate's Curse ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Shantae and the Pirate's Curse",
+      "rawgSlug": "shantae-and-the-pirates-curse",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/shantae-and-the-pirates-curse",
+    "sources": [],
+    "updatedAt": "2026-09-13T12:25:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "teslagrad-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Teslagrad",
+      "tr": "Teslagrad"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2013 for Nintendo Wii U (Metacritic 77/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/351/351ee0915fcd5a64e976791794039d5c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/4ae/4aebd2bf2ace2416c651b8b995dee458.jpg",
+        "alt": {
+          "en": "Teslagrad screenshot 1",
+          "tr": "Teslagrad ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/609/60909bce76b2d5c360e102c71fe931c3.jpg",
+        "alt": {
+          "en": "Teslagrad screenshot 2",
+          "tr": "Teslagrad ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3ba/3baacdc8a6c29593b6182c6f24673111.jpg",
+        "alt": {
+          "en": "Teslagrad screenshot 3",
+          "tr": "Teslagrad ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e89/e896cf7b68be953702b2bb72162b7485.jpg",
+        "alt": {
+          "en": "Teslagrad screenshot 4",
+          "tr": "Teslagrad ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/451/451c496586f9a15410059b3a3604372c.jpg",
+        "alt": {
+          "en": "Teslagrad screenshot 5",
+          "tr": "Teslagrad ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/221/221ada6c4ac62d073100968f632bdeb3.jpg",
+        "alt": {
+          "en": "Teslagrad screenshot 6",
+          "tr": "Teslagrad ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Teslagrad",
+      "rawgSlug": "teslagrad",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/teslagrad",
+    "sources": [],
+    "updatedAt": "2026-09-23T00:42:34.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "back-to-bed-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Back to Bed",
+      "tr": "Back to Bed"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2014 for Nintendo Wii U (Metacritic 57/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 57/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 57,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/43a/43a648790000e1317c81c268cf6c0ed7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/803/80324d9b3bc10688e835cddf25381518.jpg",
+        "alt": {
+          "en": "Back to Bed screenshot 1",
+          "tr": "Back to Bed ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/372/372223b237c408a8dd0c2560164e9970.jpg",
+        "alt": {
+          "en": "Back to Bed screenshot 2",
+          "tr": "Back to Bed ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aa1/aa12f8823ac0027a0d9f820c535adcea.jpg",
+        "alt": {
+          "en": "Back to Bed screenshot 3",
+          "tr": "Back to Bed ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ed4/ed4ee31f75c6c33f97f314bfacaf2906.jpg",
+        "alt": {
+          "en": "Back to Bed screenshot 4",
+          "tr": "Back to Bed ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2c7/2c72205534420596e8e67bae007ac56f.jpg",
+        "alt": {
+          "en": "Back to Bed screenshot 5",
+          "tr": "Back to Bed ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/18d/18d5cc23c187171d3d6cd61d9ff42cde.jpeg",
+        "alt": {
+          "en": "Back to Bed screenshot 6",
+          "tr": "Back to Bed ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Back to Bed",
+      "rawgSlug": "back-to-bed",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/back-to-bed",
+    "sources": [],
+    "updatedAt": "2025-08-05T23:24:34.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "ziggurat-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Ziggurat",
+      "tr": "Ziggurat"
+    },
+    "description": {
+      "en": "Shooter / Indie title released in 2014 for Nintendo Wii U (Metacritic 75/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Nişancı / Bağımsız oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/929/92962e1c3902b9a89b91c09c8f1a17b2.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/6e1/6e19741dfdc026921eecc4312b23cbb1.jpg",
+        "alt": {
+          "en": "Ziggurat screenshot 1",
+          "tr": "Ziggurat ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d03/d03e8d53a93bacd54816ef5ca5df536d.jpg",
+        "alt": {
+          "en": "Ziggurat screenshot 2",
+          "tr": "Ziggurat ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f72/f72a037289685aa13a23ac577c106143.jpg",
+        "alt": {
+          "en": "Ziggurat screenshot 3",
+          "tr": "Ziggurat ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/899/899f86bf809ba08dbd2fd1fc3f2fb470.jpg",
+        "alt": {
+          "en": "Ziggurat screenshot 4",
+          "tr": "Ziggurat ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8da/8da0d06596ad51d058f5f9b68647c253.jpg",
+        "alt": {
+          "en": "Ziggurat screenshot 5",
+          "tr": "Ziggurat ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/982/982bbcc2a70c0b7a1e20ed5764e82eb9.jpg",
+        "alt": {
+          "en": "Ziggurat screenshot 6",
+          "tr": "Ziggurat ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Ziggurat",
+      "rawgSlug": "ziggurat",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/ziggurat",
+    "sources": [],
+    "updatedAt": "2025-12-13T18:46:42.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bittrip-presents-runner2-future-legend-of-rhythm-a-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien",
+      "tr": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2013 for Nintendo Wii U (Metacritic 85/100).",
+      "tr": "2013 yılında çıkan Nintendo Wii U için Macera / Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/screenshots/695/69511e8a8ec8edf9b85c3e68190844a4.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e4e/e4ecc33b9fa3f6d474f73f8f688342ea.jpg",
+        "alt": {
+          "en": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien screenshot 1",
+          "tr": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/88d/88d97d659a1b4b10d7875cae4b9a8411.jpg",
+        "alt": {
+          "en": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien screenshot 2",
+          "tr": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2cf/2cf30233c2c8fce0548b51c71433915c.jpg",
+        "alt": {
+          "en": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien screenshot 3",
+          "tr": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/062/0626aa87280f49ef3727d9f6f61937ff.jpg",
+        "alt": {
+          "en": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien screenshot 4",
+          "tr": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9f9/9f999b33d058d59af95de7df415370ed.jpg",
+        "alt": {
+          "en": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien screenshot 5",
+          "tr": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/050/050d81ca442f4253ce593da0b297affc.jpg",
+        "alt": {
+          "en": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien screenshot 6",
+          "tr": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien",
+      "rawgSlug": "bittrip-presents-runner2-future-legend-of-rhythm-a",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/bittrip-presents-runner2-future-legend-of-rhythm-a",
+    "sources": [],
+    "updatedAt": "2025-11-24T18:09:16.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "shovel-knight-wiiu",
+    "catalogId": "wiiu",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Shovel Knight",
+      "tr": "Shovel Knight"
+    },
+    "description": {
+      "en": "Indie / Platformer title released in 2014 for Nintendo Wii U (Metacritic 85/100).",
+      "tr": "2014 yılında çıkan Nintendo Wii U için Bağımsız / Platform oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 3221225472,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "WUA archive",
+    "fileExtension": ".wua",
+    "coverPath": "https://media.rawg.io/media/games/0a5/0a5085a3fbe26be9cf9f96ff8c12746d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/412/41226929f331cba18b1d9388003fe0ed.jpg",
+        "alt": {
+          "en": "Shovel Knight screenshot 1",
+          "tr": "Shovel Knight ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ab5/ab5f06327e1a245779aedbdfe23ff8cf.jpg",
+        "alt": {
+          "en": "Shovel Knight screenshot 2",
+          "tr": "Shovel Knight ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/daa/daa5a0adb9568ab4fe7f911d2477bdce.jpg",
+        "alt": {
+          "en": "Shovel Knight screenshot 3",
+          "tr": "Shovel Knight ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b21/b21e7c389cba940b2a934bfcd5ce5996.jpg",
+        "alt": {
+          "en": "Shovel Knight screenshot 4",
+          "tr": "Shovel Knight ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/897/897e28cb1e44914887f891aac1490f98.jpg",
+        "alt": {
+          "en": "Shovel Knight screenshot 5",
+          "tr": "Shovel Knight ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c8e/c8e0a76f931ea3ffbb52585a2b07efc5.jpg",
+        "alt": {
+          "en": "Shovel Knight screenshot 6",
+          "tr": "Shovel Knight ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Shovel Knight",
+      "rawgSlug": "shovel-knight",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/shovel-knight",
+    "sources": [],
+    "updatedAt": "2026-10-09T07:43:57.000Z",
+    "sampleData": false
   }
 ]

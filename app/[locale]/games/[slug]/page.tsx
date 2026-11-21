@@ -78,7 +78,7 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
             title={item.title[locale]}
             className="detail-cover"
             sizes="(max-width: 800px) 72vw, 32vw"
-            priority
+            eager
           />
           {item.sampleData ? <span className="sample-badge">{messages.details.sampleData}</span> : null}
         </div>

@@ -29,7 +29,6 @@ export function ScreenshotGallery({ screenshots, title, locale, messages }: Scre
         title={title}
         className="screenshot-gallery__main"
         sizes="(max-width: 900px) 92vw, 70vw"
-        priority
       />
       {screenshots.length > 1 ? (
         <div className="screenshot-gallery__thumbnails" aria-label={messages.details.screenshots}>

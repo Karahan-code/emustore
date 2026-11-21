@@ -33,6 +33,12 @@ function getFocusableElements(): HTMLElement[] {
   );
 }
 
+function focusAndReveal(element: HTMLElement | undefined): void {
+  if (!element) return;
+  element.focus({ preventScroll: true });
+  element.scrollIntoView({ block: "nearest", inline: "nearest" });
+}
+
 function moveFocus(direction: Direction): void {
   const focusable = getFocusableElements();
   if (focusable.length === 0) return;
@@ -40,7 +46,7 @@ function moveFocus(direction: Direction): void {
   const active = document.activeElement instanceof HTMLElement ? document.activeElement : null;
   const activeIndex = active ? focusable.indexOf(active) : -1;
   if (activeIndex < 0) {
-    (direction === "left" || direction === "up" ? focusable.at(-1) : focusable[0])?.focus();
+    focusAndReveal(direction === "left" || direction === "up" ? focusable.at(-1) : focusable[0]);
     return;
   }
 
@@ -69,14 +75,14 @@ function moveFocus(direction: Direction): void {
   }
 
   if (next) {
-    next.focus();
+    focusAndReveal(next);
     return;
   }
 
   const currentPosition = activeIndex;
   const wrappedPosition = currentPosition + (direction === "left" || direction === "up" ? -1 : 1);
   const wrapped = (wrappedPosition + focusable.length) % focusable.length;
-  focusable[wrapped]?.focus();
+  focusAndReveal(focusable[wrapped]);
 }
 
 function goBack(): void {

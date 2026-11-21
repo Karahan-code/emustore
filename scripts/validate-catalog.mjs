@@ -18,6 +18,7 @@ const { PLATFORM_CATALOGS, PLATFORM_CATALOG_IDS } = await import(
 );
 
 const deliveryModes = new Set(["direct", "browser_verify", "github_api", "debrid"]);
+const itemTypes = new Set(["game", "homebrew", "emulator", "utility"]);
 const problems = [];
 const globalSlugs = new Set();
 let itemCount = 0;
@@ -163,6 +164,25 @@ for (const platform of PLATFORM_CATALOG_IDS) {
       globalSlugs.add(item.slug);
     }
     if (item.catalogId !== platform) problems.push(`${context}: catalogId must match "${platform}".`);
+    if (!itemTypes.has(item.type)) {
+      problems.push(`${context}: type must be game, homebrew, emulator, or utility.`);
+    }
+    const allowedExtensions = new Set(
+      PLATFORM_CATALOGS[platform].formats.flatMap((format) => format.extensions.map((extension) => extension.toLowerCase())),
+    );
+    if (typeof item.fileExtension !== "string" || !allowedExtensions.has(item.fileExtension.toLowerCase())) {
+      problems.push(`${context}: fileExtension must be an allowed extension for ${platform}.`);
+    }
+    if (
+      item.ratingScore !== undefined &&
+      (typeof item.ratingScore !== "number" || !Number.isFinite(item.ratingScore) || item.ratingScore < 0 || item.ratingScore > 100)
+    ) {
+      problems.push(`${context}: ratingScore must be a finite number between 0 and 100.`);
+    }
+    const itemSourceUrl = typeof item.sourceUrl === "string" ? safeUrl(item.sourceUrl) : null;
+    if (!itemSourceUrl || itemSourceUrl.protocol !== "https:" || itemSourceUrl.username || itemSourceUrl.password) {
+      problems.push(`${context}: sourceUrl must be a valid HTTPS URL without credentials.`);
+    }
     checkArtworkReference(item.coverPath, context + " coverPath");
     if (!Array.isArray(item.screenshots)) {
       problems.push(context + ": screenshots must be an array.");
@@ -183,8 +203,8 @@ for (const platform of PLATFORM_CATALOG_IDS) {
     }
     if (item.artwork !== undefined) checkArtworkMetadata(item.artwork, context + " artwork");
 
-    if (!Array.isArray(item.sources) || item.sources.length === 0) {
-      problems.push(`${context}: sources must contain at least one source.`);
+    if (!Array.isArray(item.sources)) {
+      problems.push(`${context}: sources must be an array.`);
       continue;
     }
 

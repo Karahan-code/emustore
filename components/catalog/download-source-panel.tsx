@@ -114,8 +114,19 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
         <span className="result-count">{String(sources.length).padStart(2, "0")}</span>
         <button className="icon-button" type="button" onClick={() => setIsOpen(false)} data-gamepad-close aria-label={messages.details.closeSources}>×</button>
       </div>
-      <p className="download-sources__notice">{messages.details.sourceNotice}</p>
+      {sources.length > 0 ? <p className="download-sources__notice">{messages.details.sourceNotice}</p> : null}
       {feedback ? <p className="source-feedback" role="status" aria-live="polite">{feedback}</p> : null}
+      {sources.length === 0 ? (
+        <div className="download-source-empty" role="status">
+          <p className="download-source-empty__title">{messages.details.noSourcesTitle}</p>
+          <p className="download-source-empty__description">{messages.details.noSourcesDescription}</p>
+          <div className="download-source-empty__actions">
+            <button className="button button--quiet" type="button" onClick={() => setIsOpen(false)}>
+              {messages.details.closeSources}
+            </button>
+          </div>
+        </div>
+      ) : (
       <div className="download-source-list">
         {sources.map((source) => (
           <article className="download-source-card" key={`${item.slug}:${source.id}`}>
@@ -155,6 +166,7 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
           </article>
         ))}
       </div>
+      )}
 
     </section>
         </div>

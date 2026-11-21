@@ -52,7 +52,7 @@ function isScreenshot(value: unknown): boolean {
 function isArtworkReference(value: unknown): boolean {
   if (value === undefined || value === "") return true;
   if (typeof value !== "string") return false;
-  if (value.startsWith("/")) return value.startsWith("/images/catalog/");
+  if (value.startsWith("/")) return !value.startsWith("//");
 
   try {
     const url = new URL(value);
@@ -142,7 +142,6 @@ function isCatalogItemForPlatform(
     typeof value.sourceUrl === "string" &&
     value.sourceUrl.startsWith("https://") &&
     Array.isArray(value.sources) &&
-    value.sources.length > 0 &&
     value.sources.every((source) => isDownloadSourceForPlatform(source, platform)) &&
     typeof value.updatedAt === "string" &&
     !Number.isNaN(Date.parse(value.updatedAt)) &&

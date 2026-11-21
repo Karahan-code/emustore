@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AppUpdatePanel } from "@/components/settings/app-update-panel";
 import { TargetPathSettings } from "@/components/settings/target-path-settings";
 import { UiSoundToggle } from "@/components/settings/ui-sound-toggle";
+import { APP_VERSION } from "@/lib/app-info";
 import { isLocale } from "@/lib/catalog/types";
 import { getMessages } from "@/lib/i18n/dictionaries";
 
@@ -33,6 +35,8 @@ export default async function SettingsPage({ params }: SettingsPageProps) {
           {messages.navigation.report}<span aria-hidden="true"> ↗</span>
         </Link>
       </section>
+
+      <AppUpdatePanel locale={localeParam} messages={messages} currentVersion={APP_VERSION} />
     </main>
   );
 }

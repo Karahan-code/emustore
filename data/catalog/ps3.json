@@ -1,47 +1,4352 @@
 [
   {
-    "slug": "basic-water",
+    "slug": "grand-theft-auto-v-ps3",
     "catalogId": "ps3",
-    "type": "homebrew",
-    "categoryId": "simulation",
-    "category": { "en": "Simulation", "tr": "Simülasyon" },
-    "title": { "en": "Basic Water", "tr": "Basic Water" },
-    "description": {
-      "en": "An original homebrew flight-simulation project for PlayStation 3.",
-      "tr": "PlayStation 3 için özgün bir uçuş simülasyonu homebrew projesi."
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
     },
-    "developer": "Utku Halis",
-    "version": "development build",
-    "sizeBytes": 12582912,
+    "title": {
+      "en": "Grand Theft Auto V",
+      "tr": "Grand Theft Auto V"
+    },
+    "description": {
+      "en": "Action title released in 2013 for PlayStation 3 (Metacritic 92/100).",
+      "tr": "2013 yılında çıkan PlayStation 3 için Aksiyon oyunu (Metacritic 92/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 6442450944,
     "sizeBytesEstimated": true,
-    "fileFormat": "PlayStation 3 PKG package",
-    "fileExtension": ".pkg",
-    "coverPath": "/images/catalog/ps3/basic-water/cover.webp",
+    "ratingScore": 92,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
     "screenshots": [
       {
-        "src": "/images/catalog/ps3/basic-water/screenshot-01.webp",
-        "alt": { "en": "Basic Water sample flight screenshot", "tr": "Basic Water örnek uçuş ekran görüntüsü" }
+        "src": "https://media.rawg.io/media/screenshots/f95/f9518b1d99210c0cae21fc09e95b4e31.jpg",
+        "alt": {
+          "en": "Grand Theft Auto V screenshot 1",
+          "tr": "Grand Theft Auto V ekran görüntüsü 1"
+        }
       },
       {
-        "src": "/images/catalog/ps3/basic-water/screenshot-02.webp",
-        "alt": { "en": "Basic Water sample cockpit screenshot", "tr": "Basic Water örnek kokpit ekran görüntüsü" }
-      }
-    ],
-    "tags": ["homebrew", "flight-simulation", "open-source"],
-    "sourceUrl": "https://github.com/utkuhalis/ps3-homebrew",
-    "sources": [
+        "src": "https://media.rawg.io/media/screenshots/a5c/a5c95ea539c87d5f538763e16e18fb99.jpg",
+        "alt": {
+          "en": "Grand Theft Auto V screenshot 2",
+          "tr": "Grand Theft Auto V ekran görüntüsü 2"
+        }
+      },
       {
-        "id": "github-release-page",
-        "provider": "github-release",
-        "deliveryMode": "browser_verify",
-        "url": "https://github.com/utkuhalis/ps3-homebrew/releases",
-        "format": ".pkg",
-        "sizeBytes": 12582912,
-        "requiresVerification": true,
-        "priority": 1
+        "src": "https://media.rawg.io/media/screenshots/a7e/a7e990bc574f4d34e03b5926361d1ee7.jpg",
+        "alt": {
+          "en": "Grand Theft Auto V screenshot 3",
+          "tr": "Grand Theft Auto V ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/eb0/eb0a2c0de9194a635fc0cd04f5a29ae7.jpg",
+        "alt": {
+          "en": "Grand Theft Auto V screenshot 4",
+          "tr": "Grand Theft Auto V ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ec7/ec7f05fb82290fea9647b7879fe9a6bf.jpg",
+        "alt": {
+          "en": "Grand Theft Auto V screenshot 5",
+          "tr": "Grand Theft Auto V ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/260/260559fbefce0b36c66ae5e280c7d774.jpg",
+        "alt": {
+          "en": "Grand Theft Auto V screenshot 6",
+          "tr": "Grand Theft Auto V ekran görüntüsü 6"
+        }
       }
     ],
-    "updatedAt": "2026-11-20T00:00:00.000Z",
-    "sampleData": true
+    "artwork": {
+      "query": "Grand Theft Auto V",
+      "rawgSlug": "grand-theft-auto-v",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/grand-theft-auto-v",
+    "sources": [],
+    "updatedAt": "2026-11-15T10:46:59.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "portal-2-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Portal 2",
+      "tr": "Portal 2"
+    },
+    "description": {
+      "en": "Shooter / Puzzle title released in 2011 for PlayStation 3 (Metacritic 95/100).",
+      "tr": "2011 yılında çıkan PlayStation 3 için Nişancı / Bulmaca oyunu (Metacritic 95/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 95,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/221/221a03c11e5ff9f765d62f60d4b4cbf5.jpg",
+        "alt": {
+          "en": "Portal 2 screenshot 1",
+          "tr": "Portal 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/173/1737ff43c14f40294011a209b1012875.jpg",
+        "alt": {
+          "en": "Portal 2 screenshot 2",
+          "tr": "Portal 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b11/b11a2ae0664f0e8a1ef2346f99df26e1.jpg",
+        "alt": {
+          "en": "Portal 2 screenshot 3",
+          "tr": "Portal 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9b1/9b107a790909b31918ebe2f40547cc85.jpg",
+        "alt": {
+          "en": "Portal 2 screenshot 4",
+          "tr": "Portal 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d05/d058fc7f7fa6128916c311eb14267fed.jpg",
+        "alt": {
+          "en": "Portal 2 screenshot 5",
+          "tr": "Portal 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/415/41543dcc12dffc8e97d85a56ad42cda8.jpg",
+        "alt": {
+          "en": "Portal 2 screenshot 6",
+          "tr": "Portal 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Portal 2",
+      "rawgSlug": "portal-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/portal-2",
+    "sources": [],
+    "updatedAt": "2026-11-18T17:48:53.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "counter-strike-global-offensive-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Counter-Strike: Global Offensive",
+      "tr": "Counter-Strike: Global Offensive"
+    },
+    "description": {
+      "en": "Shooter title released in 2012 for PlayStation 3 (Metacritic 81/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Nişancı oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/736/73619bd336c894d6941d926bfd563946.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ff1/ff16661bb15f7969b44f6c4118870e44.jpg",
+        "alt": {
+          "en": "Counter-Strike: Global Offensive screenshot 1",
+          "tr": "Counter-Strike: Global Offensive ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/41b/41bb769d247412eac3336dec934aed72.jpg",
+        "alt": {
+          "en": "Counter-Strike: Global Offensive screenshot 2",
+          "tr": "Counter-Strike: Global Offensive ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/754/754545acdbf71f56e8902a07c7d20696.jpg",
+        "alt": {
+          "en": "Counter-Strike: Global Offensive screenshot 3",
+          "tr": "Counter-Strike: Global Offensive ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fd8/fd873cab4c66db0b8e85d8a66e940074.jpg",
+        "alt": {
+          "en": "Counter-Strike: Global Offensive screenshot 4",
+          "tr": "Counter-Strike: Global Offensive ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7db/7db2954f7908b6749c36a5f3c9052f65.jpg",
+        "alt": {
+          "en": "Counter-Strike: Global Offensive screenshot 5",
+          "tr": "Counter-Strike: Global Offensive ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/337/337a3e98b5933f456a2b37b59fab5f39.jpg",
+        "alt": {
+          "en": "Counter-Strike: Global Offensive screenshot 6",
+          "tr": "Counter-Strike: Global Offensive ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Counter-Strike: Global Offensive",
+      "rawgSlug": "counter-strike-global-offensive",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-trading-cards",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/counter-strike-global-offensive",
+    "sources": [],
+    "updatedAt": "2026-11-02T11:41:42.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "portal-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Portal",
+      "tr": "Portal"
+    },
+    "description": {
+      "en": "Action / Puzzle title released in 2007 for PlayStation 3 (Metacritic 90/100).",
+      "tr": "2007 yılında çıkan PlayStation 3 için Aksiyon / Bulmaca oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/99e/99e94bd55eb75fa6e75c3dcbb1a570b2.jpg",
+        "alt": {
+          "en": "Portal screenshot 1",
+          "tr": "Portal ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2f0/2f0297a46934d9fa914c626902b1ce20.jpg",
+        "alt": {
+          "en": "Portal screenshot 2",
+          "tr": "Portal ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3b3/3b3713fbca6194dfc4d6e8a8d006d354.jpg",
+        "alt": {
+          "en": "Portal screenshot 3",
+          "tr": "Portal ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c6f/c6f9afc3e4dd51068b22f04acbc6ca99.jpg",
+        "alt": {
+          "en": "Portal screenshot 4",
+          "tr": "Portal ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/748/74841207eec76ebc7fc03210168bfb7e.jpg",
+        "alt": {
+          "en": "Portal screenshot 5",
+          "tr": "Portal ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e72/e7256b4caedf099bcb8ebd332f892334.jpg",
+        "alt": {
+          "en": "Portal screenshot 6",
+          "tr": "Portal ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Portal",
+      "rawgSlug": "portal",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/portal",
+    "sources": [],
+    "updatedAt": "2026-11-14T09:15:36.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "tomb-raider-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Tomb Raider",
+      "tr": "Tomb Raider"
+    },
+    "description": {
+      "en": "Action title released in 2013 for PlayStation 3 (Metacritic 86/100).",
+      "tr": "2013 yılında çıkan PlayStation 3 için Aksiyon oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/021/021c4e21a1824d2526f925eff6324653.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/4f9/4f9d5efdecfb63cb99f1baa4c0ceb3bf.jpg",
+        "alt": {
+          "en": "Tomb Raider screenshot 1",
+          "tr": "Tomb Raider ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/80f/80f373082b2a74da3f9c3fe2b877dcd0.jpg",
+        "alt": {
+          "en": "Tomb Raider screenshot 2",
+          "tr": "Tomb Raider ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a87/a8733e877f8fbe45e4a727c22a06aa2e.jpg",
+        "alt": {
+          "en": "Tomb Raider screenshot 3",
+          "tr": "Tomb Raider ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3f9/3f91678c6805a76419fa4ea3a045a909.jpg",
+        "alt": {
+          "en": "Tomb Raider screenshot 4",
+          "tr": "Tomb Raider ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/417/4170bf07be43a8d8249193883f87f1c1.jpg",
+        "alt": {
+          "en": "Tomb Raider screenshot 5",
+          "tr": "Tomb Raider ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2a4/2a4250f83ad9e959d8b4ca9376ae34ea.jpg",
+        "alt": {
+          "en": "Tomb Raider screenshot 6",
+          "tr": "Tomb Raider ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Tomb Raider",
+      "rawgSlug": "tomb-raider",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric",
+      "rpg"
+    ],
+    "sourceUrl": "https://rawg.io/games/tomb-raider",
+    "sources": [],
+    "updatedAt": "2026-10-26T06:13:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-elder-scrolls-v-skyrim-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "The Elder Scrolls V: Skyrim",
+      "tr": "The Elder Scrolls V: Skyrim"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2011 for PlayStation 3 (Metacritic 94/100).",
+      "tr": "2011 yılında çıkan PlayStation 3 için Aksiyon / RPG oyunu (Metacritic 94/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 94,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3bd/3bd2710bd1ffb6664fdea7b83afd067e.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 1",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d4e/d4e9b13f54748584ccbd6f998094dade.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 2",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/599/59946a630e9c7871003763d63184404a.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 3",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c5d/c5dad426038d7d12f933eedbeab48ff3.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 4",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b32/b326fa01c82db82edd41ed299886ee44.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 5",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/091/091e95b49d5a22de036698fc731395a2.jpg",
+        "alt": {
+          "en": "The Elder Scrolls V: Skyrim screenshot 6",
+          "tr": "The Elder Scrolls V: Skyrim ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Elder Scrolls V: Skyrim",
+      "rawgSlug": "the-elder-scrolls-v-skyrim",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-elder-scrolls-v-skyrim",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:12:47.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bioshock-infinite-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "BioShock Infinite",
+      "tr": "BioShock Infinite"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2013 for PlayStation 3 (Metacritic 94/100).",
+      "tr": "2013 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 94/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 94,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/bf0/bf07e2c6d2c888d372917d9ef453c8a4.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 1",
+          "tr": "BioShock Infinite ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9d3/9d38833952812ad7888a6dc21699934f.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 2",
+          "tr": "BioShock Infinite ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/595/59572d257b6797986e4eabcd1ee023fd.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 3",
+          "tr": "BioShock Infinite ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f71/f71c23eb76f050d6180490e82d58d799.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 4",
+          "tr": "BioShock Infinite ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/871/8713411d5332ceb2b4092073a6f5f3f2.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 5",
+          "tr": "BioShock Infinite ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/985/985b56daa78e0a23133518d4226e9f97.jpg",
+        "alt": {
+          "en": "BioShock Infinite screenshot 6",
+          "tr": "BioShock Infinite ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BioShock Infinite",
+      "rawgSlug": "bioshock-infinite",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/bioshock-infinite",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:00:19.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "borderlands-2-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Borderlands 2",
+      "tr": "Borderlands 2"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for PlayStation 3 (Metacritic 89/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 89/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 89,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/49c/49c3dfa4ce2f6f140cc4825868e858cb.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/adb/adbbb37113618ee107459cd5c344f2a8.jpg",
+        "alt": {
+          "en": "Borderlands 2 screenshot 1",
+          "tr": "Borderlands 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/616/61643dd96e936d29eb68cf53b2334e53.jpg",
+        "alt": {
+          "en": "Borderlands 2 screenshot 2",
+          "tr": "Borderlands 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/864/8644946ba14a03ab69f0766c42a03f80.jpg",
+        "alt": {
+          "en": "Borderlands 2 screenshot 3",
+          "tr": "Borderlands 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f87/f87ad2b8f02b56e36c57b25cf8eac042.jpg",
+        "alt": {
+          "en": "Borderlands 2 screenshot 4",
+          "tr": "Borderlands 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/194/194e0962afa272604300001718a07793.jpg",
+        "alt": {
+          "en": "Borderlands 2 screenshot 5",
+          "tr": "Borderlands 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/297/29716964351ecd82545f1de3a50dfc4e.jpg",
+        "alt": {
+          "en": "Borderlands 2 screenshot 6",
+          "tr": "Borderlands 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Borderlands 2",
+      "rawgSlug": "borderlands-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/borderlands-2",
+    "sources": [],
+    "updatedAt": "2026-10-28T11:59:54.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "life-is-strange-episode-1-2-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Life is Strange",
+      "tr": "Life is Strange"
+    },
+    "description": {
+      "en": "Adventure title released in 2015 for PlayStation 3 (Metacritic 83/100).",
+      "tr": "2015 yılında çıkan PlayStation 3 için Macera oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/562/562553814dd54e001a541e4ee83a591c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/edf/edfcbdf85f02f871263dabf1b4f0aa87.jpg",
+        "alt": {
+          "en": "Life is Strange screenshot 1",
+          "tr": "Life is Strange ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4c6/4c6da2f36396d4ed51f82ba6159fa39b.jpg",
+        "alt": {
+          "en": "Life is Strange screenshot 2",
+          "tr": "Life is Strange ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6aa/6aa56ef1485c8b287a913fa842883daa.jpg",
+        "alt": {
+          "en": "Life is Strange screenshot 3",
+          "tr": "Life is Strange ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cb1/cb148b52fe857f5b0b83ae9c01f56d8e.jpg",
+        "alt": {
+          "en": "Life is Strange screenshot 4",
+          "tr": "Life is Strange ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aea/aea38b33b90054f8fe4cc8bb05253b1d.jpg",
+        "alt": {
+          "en": "Life is Strange screenshot 5",
+          "tr": "Life is Strange ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c1d/c1d6333b2da0f920e8de10c14d3c6093.jpg",
+        "alt": {
+          "en": "Life is Strange screenshot 6",
+          "tr": "Life is Strange ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Life is Strange",
+      "rawgSlug": "life-is-strange-episode-1-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/life-is-strange-episode-1-2",
+    "sources": [],
+    "updatedAt": "2026-11-01T10:54:46.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bioshock-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "BioShock",
+      "tr": "BioShock"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2007 for PlayStation 3 (Metacritic 96/100).",
+      "tr": "2007 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 96/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 96,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/bc0/bc06a29ceac58652b684deefe7d56099.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/01f/01f62d7064838a5c3202acfc61503487.jpg",
+        "alt": {
+          "en": "BioShock screenshot 1",
+          "tr": "BioShock ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7f5/7f517e07e36e4af5a7c0b86a7d42853f.jpg",
+        "alt": {
+          "en": "BioShock screenshot 2",
+          "tr": "BioShock ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/aca/aca089b963a42ec4cbf56b5e5334af8e.jpg",
+        "alt": {
+          "en": "BioShock screenshot 3",
+          "tr": "BioShock ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3aa/3aa6f71eba1d64e671bd45826ca96560.jpg",
+        "alt": {
+          "en": "BioShock screenshot 4",
+          "tr": "BioShock ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d8e/d8ed29c7c0b41e4013588847944ed446.jpg",
+        "alt": {
+          "en": "BioShock screenshot 5",
+          "tr": "BioShock ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/146/146e418797aca19296f90d259207414c.jpg",
+        "alt": {
+          "en": "BioShock screenshot 6",
+          "tr": "BioShock ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BioShock",
+      "rawgSlug": "bioshock",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/bioshock",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:40:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "limbo-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Limbo",
+      "tr": "Limbo"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2010 for PlayStation 3 (Metacritic 88/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/512/512f4bc2092016478ddcb9e7e60aeec0.jpg",
+        "alt": {
+          "en": "Limbo screenshot 1",
+          "tr": "Limbo ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/63d/63d30699e8fcab9c808e6714d9d3fd59.jpg",
+        "alt": {
+          "en": "Limbo screenshot 2",
+          "tr": "Limbo ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/de0/de04bbc0fd9904071ef25bf23113c8c4.jpg",
+        "alt": {
+          "en": "Limbo screenshot 3",
+          "tr": "Limbo ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/eed/eedbbca4ae2debf2d4e23e55d1f6cff7.jpg",
+        "alt": {
+          "en": "Limbo screenshot 4",
+          "tr": "Limbo ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/59f/59f472b3ed7b414777a29213d70b4d17.jpg",
+        "alt": {
+          "en": "Limbo screenshot 5",
+          "tr": "Limbo ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e58/e58d31146e4a9e3786dabcbfc30126bc.jpg",
+        "alt": {
+          "en": "Limbo screenshot 6",
+          "tr": "Limbo ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Limbo",
+      "rawgSlug": "limbo",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "2d",
+      "horror"
+    ],
+    "sourceUrl": "https://rawg.io/games/limbo",
+    "sources": [],
+    "updatedAt": "2026-10-30T09:00:24.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "terraria-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Terraria",
+      "tr": "Terraria"
+    },
+    "description": {
+      "en": "Platformer / Indie title released in 2011 for PlayStation 3 (Metacritic 81/100).",
+      "tr": "2011 yılında çıkan PlayStation 3 için Platform / Bağımsız oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3af/3afd69426804e7162edbe03cd9f8d0f4.jpg",
+        "alt": {
+          "en": "Terraria screenshot 1",
+          "tr": "Terraria ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/48c/48c7e3e1268467b91b24c7da7c6539df.jpg",
+        "alt": {
+          "en": "Terraria screenshot 2",
+          "tr": "Terraria ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/84b/84b447d4df99d42ffe479c7feb438171.jpg",
+        "alt": {
+          "en": "Terraria screenshot 3",
+          "tr": "Terraria ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/de0/de053efd6104719567d23fb0dad58b92.jpg",
+        "alt": {
+          "en": "Terraria screenshot 4",
+          "tr": "Terraria ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/490/4907be07a7771c8a7f0eb30c3a1fadc0.jpg",
+        "alt": {
+          "en": "Terraria screenshot 5",
+          "tr": "Terraria ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/485/485ce1d6c733357664be153777097af1.jpg",
+        "alt": {
+          "en": "Terraria screenshot 6",
+          "tr": "Terraria ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Terraria",
+      "rawgSlug": "terraria",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/terraria",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:00:22.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "grand-theft-auto-iv-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Grand Theft Auto IV",
+      "tr": "Grand Theft Auto IV"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2008 for PlayStation 3 (Metacritic 95/100).",
+      "tr": "2008 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 95/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 95,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/4a0/4a0a1316102366260e6f38fd2a9cfdce.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/07f/07f7cf80741ff306e4eca982c3e64ac8.jpg",
+        "alt": {
+          "en": "Grand Theft Auto IV screenshot 1",
+          "tr": "Grand Theft Auto IV ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fef/fefd51ec13aa33acbd796ef79bcef7cb.jpg",
+        "alt": {
+          "en": "Grand Theft Auto IV screenshot 2",
+          "tr": "Grand Theft Auto IV ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b78/b78ffd258d5793be704c380e572748bc.jpg",
+        "alt": {
+          "en": "Grand Theft Auto IV screenshot 3",
+          "tr": "Grand Theft Auto IV ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/17c/17c85ab9dfc4fda8e1e5ba72932ef2bf.jpg",
+        "alt": {
+          "en": "Grand Theft Auto IV screenshot 4",
+          "tr": "Grand Theft Auto IV ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a12/a12ca99cc74c1e7eba7100b0891dd1e0.jpg",
+        "alt": {
+          "en": "Grand Theft Auto IV screenshot 5",
+          "tr": "Grand Theft Auto IV ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b25/b254f9729ae3f36a9ccffccaa01d5cf6.jpg",
+        "alt": {
+          "en": "Grand Theft Auto IV screenshot 6",
+          "tr": "Grand Theft Auto IV ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Grand Theft Auto IV",
+      "rawgSlug": "grand-theft-auto-iv",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "co-op",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/grand-theft-auto-iv",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:49:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "grand-theft-auto-san-andreas-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Grand Theft Auto: San Andreas",
+      "tr": "Grand Theft Auto: San Andreas"
+    },
+    "description": {
+      "en": "Action title released in 2004 for PlayStation 3 (Metacritic 93/100).",
+      "tr": "2004 yılında çıkan PlayStation 3 için Aksiyon oyunu (Metacritic 93/100)."
+    },
+    "developer": "RAWG",
+    "version": "2004",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 93,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/960/960b601d9541cec776c5fa42a00bf6c4.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/679/679c267107151f01696d3c8ea71ac650.jpg",
+        "alt": {
+          "en": "Grand Theft Auto: San Andreas screenshot 1",
+          "tr": "Grand Theft Auto: San Andreas ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/560/560610b498ef079e1f45ec83b039cbc7.jpg",
+        "alt": {
+          "en": "Grand Theft Auto: San Andreas screenshot 2",
+          "tr": "Grand Theft Auto: San Andreas ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c8c/c8cf7ea395e6aa2e46abee36d9d2d699.jpg",
+        "alt": {
+          "en": "Grand Theft Auto: San Andreas screenshot 3",
+          "tr": "Grand Theft Auto: San Andreas ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/191/191445072d9e85b6ad7ffed5152fc17a.jpg",
+        "alt": {
+          "en": "Grand Theft Auto: San Andreas screenshot 4",
+          "tr": "Grand Theft Auto: San Andreas ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bfe/bfe3c652960e2b6869c608a58d69d327.jpg",
+        "alt": {
+          "en": "Grand Theft Auto: San Andreas screenshot 5",
+          "tr": "Grand Theft Auto: San Andreas ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/436/436134f55bd10cfd7a6fd1ded7487355.jpg",
+        "alt": {
+          "en": "Grand Theft Auto: San Andreas screenshot 6",
+          "tr": "Grand Theft Auto: San Andreas ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Grand Theft Auto: San Andreas",
+      "rawgSlug": "grand-theft-auto-san-andreas",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/grand-theft-auto-san-andreas",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:42:55.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metal-gear-solid-v-the-phantom-pain-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Metal Gear Solid V: The Phantom Pain",
+      "tr": "Metal Gear Solid V: The Phantom Pain"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2015 for PlayStation 3 (Metacritic 91/100).",
+      "tr": "2015 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "2015",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/490/49016e06ae2103881ff6373248843069.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/fa0/fa0cb095629729fb990079d0ec135dae.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: The Phantom Pain screenshot 1",
+          "tr": "Metal Gear Solid V: The Phantom Pain ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/768/768087f6fbfae3b1fa7533c38bda35a0.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: The Phantom Pain screenshot 2",
+          "tr": "Metal Gear Solid V: The Phantom Pain ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/40b/40bf3a64adc8e3b6ffadd1420b1bd250.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: The Phantom Pain screenshot 3",
+          "tr": "Metal Gear Solid V: The Phantom Pain ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/344/3447022b021fb337970aaa16e9adfa1f.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: The Phantom Pain screenshot 4",
+          "tr": "Metal Gear Solid V: The Phantom Pain ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/410/41074cb7d1a80e15b16e5166f121c0e0.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: The Phantom Pain screenshot 5",
+          "tr": "Metal Gear Solid V: The Phantom Pain ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/535/5358bcad9e3c51816ffb923fcdd9938a.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: The Phantom Pain screenshot 6",
+          "tr": "Metal Gear Solid V: The Phantom Pain ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Metal Gear Solid V: The Phantom Pain",
+      "rawgSlug": "metal-gear-solid-v-the-phantom-pain",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/metal-gear-solid-v-the-phantom-pain",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:00:45.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "shadow-of-mordor-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Middle-earth: Shadow of Mordor",
+      "tr": "Middle-earth: Shadow of Mordor"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2014 for PlayStation 3 (Metacritic 85/100).",
+      "tr": "2014 yılında çıkan PlayStation 3 için Aksiyon / RPG oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/d1a/d1a2e99ade53494c6330a0ed945fe823.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/123/1239cbfc3e25664170e8c1d5049a6d91.jpg",
+        "alt": {
+          "en": "Middle-earth: Shadow of Mordor screenshot 1",
+          "tr": "Middle-earth: Shadow of Mordor ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/47c/47cf2d5a0c37a6262a431a490a57d58d.jpg",
+        "alt": {
+          "en": "Middle-earth: Shadow of Mordor screenshot 2",
+          "tr": "Middle-earth: Shadow of Mordor ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e7/9e7f6fad3ee317a7edf7f3bc6001ba9d.jpg",
+        "alt": {
+          "en": "Middle-earth: Shadow of Mordor screenshot 3",
+          "tr": "Middle-earth: Shadow of Mordor ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/97f/97fdbb526196705e25ee503bc248b63f.jpg",
+        "alt": {
+          "en": "Middle-earth: Shadow of Mordor screenshot 4",
+          "tr": "Middle-earth: Shadow of Mordor ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/770/77011e668d64fe192691d56f364fb561.jpg",
+        "alt": {
+          "en": "Middle-earth: Shadow of Mordor screenshot 5",
+          "tr": "Middle-earth: Shadow of Mordor ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1f2/1f2851c47112ca8e1edf7c2c377632a9.jpg",
+        "alt": {
+          "en": "Middle-earth: Shadow of Mordor screenshot 6",
+          "tr": "Middle-earth: Shadow of Mordor ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Middle-earth: Shadow of Mordor",
+      "rawgSlug": "shadow-of-mordor",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/shadow-of-mordor",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:00:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "the-walking-dead-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "The Walking Dead: Season 1",
+      "tr": "The Walking Dead: Season 1"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2012 for PlayStation 3 (Metacritic 92/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 92/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 92,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d38/d38c78ec9cc707bf42652452235dbe8c.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 1",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bdb/bdb7dd4891bfbb0a80cd49b36ffd1a20.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 2",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/72b/72b67d15b5ae5538734bac2b195f2976.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 3",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/74d/74d6a18a7b5592777de8f6a7cdbc91f8.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 4",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/52a/52aca015b4748b1b0bbbacf33110e983.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 5",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/94b/94b6701276d06b5b562890601fd6abaa.jpg",
+        "alt": {
+          "en": "The Walking Dead: Season 1 screenshot 6",
+          "tr": "The Walking Dead: Season 1 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "The Walking Dead: Season 1",
+      "rawgSlug": "the-walking-dead",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "story-rich",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/the-walking-dead",
+    "sources": [],
+    "updatedAt": "2026-10-17T02:32:01.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "bioshock-2-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "BioShock 2",
+      "tr": "BioShock 2"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2010 for PlayStation 3 (Metacritic 88/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/157/15742f2f67eacff546738e1ab5c19d20.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a13/a130b342c9830f9c56d65c204638fe17.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 1",
+          "tr": "BioShock 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f38/f38a519f1545ef5cda66676c155cc5b8.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 2",
+          "tr": "BioShock 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/996/996d1459d3f2ec1f03daba488d96c521.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 3",
+          "tr": "BioShock 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8da/8daab3b2c3d9e355f636e7d408a08315.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 4",
+          "tr": "BioShock 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f5c/f5c713b706c6b153b6a22ca1b08a1f5a.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 5",
+          "tr": "BioShock 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b7c/b7c32275a6be8134744322f1204ce176.jpg",
+        "alt": {
+          "en": "BioShock 2 screenshot 6",
+          "tr": "BioShock 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "BioShock 2",
+      "rawgSlug": "bioshock-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/bioshock-2",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:10:04.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "mirrors-edge-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Mirror's Edge",
+      "tr": "Mirror's Edge"
+    },
+    "description": {
+      "en": "Action title released in 2008 for PlayStation 3 (Metacritic 81/100).",
+      "tr": "2008 yılında çıkan PlayStation 3 için Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/8e4/8e4de3f54ac659e08a7ba6a2b731682a.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/38b/38bb5b035c811402248bbc19297d5183.jpg",
+        "alt": {
+          "en": "Mirror's Edge screenshot 1",
+          "tr": "Mirror's Edge ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4b6/4b6daf2d868abed65984f6ba308eb5f6.jpg",
+        "alt": {
+          "en": "Mirror's Edge screenshot 2",
+          "tr": "Mirror's Edge ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b07/b07d46f11697eb8ee5002d37d9ddc696.jpg",
+        "alt": {
+          "en": "Mirror's Edge screenshot 3",
+          "tr": "Mirror's Edge ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ddd/ddde2f1b028ded72097066b504db6f8b.jpg",
+        "alt": {
+          "en": "Mirror's Edge screenshot 4",
+          "tr": "Mirror's Edge ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a8b/a8b9fe7b7e04ff20405e40fb31cfe56e.jpg",
+        "alt": {
+          "en": "Mirror's Edge screenshot 5",
+          "tr": "Mirror's Edge ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/741/741957fcdece6895a653bf51786838e9.jpg",
+        "alt": {
+          "en": "Mirror's Edge screenshot 6",
+          "tr": "Mirror's Edge ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Mirror's Edge",
+      "rawgSlug": "mirrors-edge",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "great-soundtrack",
+      "first-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/mirrors-edge",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:09:49.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "far-cry-3-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Far Cry 3",
+      "tr": "Far Cry 3"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for PlayStation 3 (Metacritic 88/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 88/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 88,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/15c/15c95a4915f88a3e89c821526afe05fc.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/98e/98e4c2a0c3e84b3d2718f8801bba0fcc.jpg",
+        "alt": {
+          "en": "Far Cry 3 screenshot 1",
+          "tr": "Far Cry 3 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/87e/87e9ca5542b3e8da43d488c9252e20fe.jpg",
+        "alt": {
+          "en": "Far Cry 3 screenshot 2",
+          "tr": "Far Cry 3 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0a9/0a9ff8bbfa49024159bcd884ce7128c3.jpg",
+        "alt": {
+          "en": "Far Cry 3 screenshot 3",
+          "tr": "Far Cry 3 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/971/971d3582a42ede482b9d90b47b50ac32.jpg",
+        "alt": {
+          "en": "Far Cry 3 screenshot 4",
+          "tr": "Far Cry 3 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/174/174333d080f475d5718219ef6e01d3f4.jpg",
+        "alt": {
+          "en": "Far Cry 3 screenshot 5",
+          "tr": "Far Cry 3 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/03d/03dcdb4292bcc6ccc2719c88202f4965.jpg",
+        "alt": {
+          "en": "Far Cry 3 screenshot 6",
+          "tr": "Far Cry 3 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Far Cry 3",
+      "rawgSlug": "far-cry-3",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "rpg",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/far-cry-3",
+    "sources": [],
+    "updatedAt": "2026-11-21T06:01:37.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "wolfenstein-the-new-order-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Wolfenstein: The New Order",
+      "tr": "Wolfenstein: The New Order"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2014 for PlayStation 3 (Metacritic 81/100).",
+      "tr": "2014 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/c80/c80bcf321da44d69b18a06c04d942662.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/23a/23af906d70f57be798bbd83da986c6db.jpg",
+        "alt": {
+          "en": "Wolfenstein: The New Order screenshot 1",
+          "tr": "Wolfenstein: The New Order ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b71/b716cf4d51be00d9561df3d1588383c4.jpg",
+        "alt": {
+          "en": "Wolfenstein: The New Order screenshot 2",
+          "tr": "Wolfenstein: The New Order ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/439/4395d5364559ca15ac8e1becb100daea.jpg",
+        "alt": {
+          "en": "Wolfenstein: The New Order screenshot 3",
+          "tr": "Wolfenstein: The New Order ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0de/0de321f22cd1f5a7d0fb6b471f63c2d8.jpg",
+        "alt": {
+          "en": "Wolfenstein: The New Order screenshot 4",
+          "tr": "Wolfenstein: The New Order ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/900/900e962d31b5ace3fb66bfd388d352cf.jpg",
+        "alt": {
+          "en": "Wolfenstein: The New Order screenshot 5",
+          "tr": "Wolfenstein: The New Order ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a1d/a1d6bd9f3617e0787da4b0f8389fe1f0.jpg",
+        "alt": {
+          "en": "Wolfenstein: The New Order screenshot 6",
+          "tr": "Wolfenstein: The New Order ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Wolfenstein: The New Order",
+      "rawgSlug": "wolfenstein-the-new-order",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/wolfenstein-the-new-order",
+    "sources": [],
+    "updatedAt": "2026-10-26T06:42:32.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "spec-ops-the-line-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Spec Ops: The Line",
+      "tr": "Spec Ops: The Line"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for PlayStation 3 (Metacritic 76/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 76/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 76,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/b49/b4912b5dbfc7ed8927b65f05b8507f6c.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/a17/a17ff71c8774a3b70375a869b3881244.jpg",
+        "alt": {
+          "en": "Spec Ops: The Line screenshot 1",
+          "tr": "Spec Ops: The Line ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e5a/e5aaa5d242144ab80ef8264c96516dcc.jpg",
+        "alt": {
+          "en": "Spec Ops: The Line screenshot 2",
+          "tr": "Spec Ops: The Line ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f36/f36e756c36d36fe8ffe73a4b39acbebf.jpg",
+        "alt": {
+          "en": "Spec Ops: The Line screenshot 3",
+          "tr": "Spec Ops: The Line ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/437/437ad0efe43adcad4284f5f48d03559f.jpg",
+        "alt": {
+          "en": "Spec Ops: The Line screenshot 4",
+          "tr": "Spec Ops: The Line ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9e2/9e26af47a676b061f288ff269e91a8f1.jpg",
+        "alt": {
+          "en": "Spec Ops: The Line screenshot 5",
+          "tr": "Spec Ops: The Line ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2d9/2d9a5dd6a25c04e49accca5358782152.jpg",
+        "alt": {
+          "en": "Spec Ops: The Line screenshot 6",
+          "tr": "Spec Ops: The Line ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Spec Ops: The Line",
+      "rawgSlug": "spec-ops-the-line",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/spec-ops-the-line",
+    "sources": [],
+    "updatedAt": "2026-11-20T08:08:20.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "saints-row-the-third-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Saints Row: The Third",
+      "tr": "Saints Row: The Third"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2011 for PlayStation 3 (Metacritic 84/100).",
+      "tr": "2011 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 84/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 84,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/d69/d69810315bd7e226ea2d21f9156af629.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ac0/ac00b015e9c51f52a24631c44676f81b.jpg",
+        "alt": {
+          "en": "Saints Row: The Third screenshot 1",
+          "tr": "Saints Row: The Third ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4e8/4e8cb89dc1ac9b3a9b68ad34f1dbc744.jpg",
+        "alt": {
+          "en": "Saints Row: The Third screenshot 2",
+          "tr": "Saints Row: The Third ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cc2/cc205478d728ad862c0e9da48df5db05.jpg",
+        "alt": {
+          "en": "Saints Row: The Third screenshot 3",
+          "tr": "Saints Row: The Third ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6a4/6a4976a45c96960e72d05362375908e4.jpg",
+        "alt": {
+          "en": "Saints Row: The Third screenshot 4",
+          "tr": "Saints Row: The Third ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e26/e26e0f29195d3682e6e9e9f5a74f6250.jpg",
+        "alt": {
+          "en": "Saints Row: The Third screenshot 5",
+          "tr": "Saints Row: The Third ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/215/215fbd506ac8c1a24cb2bf9b9a4d5b92.jpg",
+        "alt": {
+          "en": "Saints Row: The Third screenshot 6",
+          "tr": "Saints Row: The Third ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Saints Row: The Third",
+      "rawgSlug": "saints-row-the-third",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "great-soundtrack",
+      "rpg",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/saints-row-the-third",
+    "sources": [],
+    "updatedAt": "2026-10-20T02:03:34.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "fallout-new-vegas-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Fallout: New Vegas",
+      "tr": "Fallout: New Vegas"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2010 for PlayStation 3 (Metacritic 84/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 84/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 84,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/995/9951d9d55323d08967640f7b9ab3e342.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/5b3/5b39206a3b241688fbd69467d75151b8.jpg",
+        "alt": {
+          "en": "Fallout: New Vegas screenshot 1",
+          "tr": "Fallout: New Vegas ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/286/2861a20b67d61263b5b790cb1ab5e330.jpg",
+        "alt": {
+          "en": "Fallout: New Vegas screenshot 2",
+          "tr": "Fallout: New Vegas ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7c5/7c5083ee282a2ea3d6248361592cf8af.jpg",
+        "alt": {
+          "en": "Fallout: New Vegas screenshot 3",
+          "tr": "Fallout: New Vegas ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/704/704c2186d4d1e73ca30e4a3f904f7a6c.jpg",
+        "alt": {
+          "en": "Fallout: New Vegas screenshot 4",
+          "tr": "Fallout: New Vegas ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/502/502aacc7e1e71435c29e4dae7ce6c1f3.jpg",
+        "alt": {
+          "en": "Fallout: New Vegas screenshot 5",
+          "tr": "Fallout: New Vegas ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/afe/afecd18ebd303b5cc450777f6beb1dd5.jpg",
+        "alt": {
+          "en": "Fallout: New Vegas screenshot 6",
+          "tr": "Fallout: New Vegas ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Fallout: New Vegas",
+      "rawgSlug": "fallout-new-vegas",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "atmospheric",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/fallout-new-vegas",
+    "sources": [],
+    "updatedAt": "2026-11-21T08:49:42.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "borderlands-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Borderlands",
+      "tr": "Borderlands"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2009 for PlayStation 3 (Metacritic 81/100).",
+      "tr": "2009 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 81/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 81,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/c6b/c6bfece1daf8d06bc0a60632ac78e5bf.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/153/153b36d06eaa5a3ff45cea30a572a169.jpg",
+        "alt": {
+          "en": "Borderlands screenshot 1",
+          "tr": "Borderlands ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3e8/3e8622a82c5c4fd1b7b33afa6e574fa3.jpg",
+        "alt": {
+          "en": "Borderlands screenshot 2",
+          "tr": "Borderlands ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/64e/64e0e5c81cdff075721b8455c34c350c.jpg",
+        "alt": {
+          "en": "Borderlands screenshot 3",
+          "tr": "Borderlands ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/669/6693c7ffd9e40cc380ce2dc1c7b2d518.jpg",
+        "alt": {
+          "en": "Borderlands screenshot 4",
+          "tr": "Borderlands ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/47e/47eaf455aded5fe47efc9a5a35dd90a0.jpg",
+        "alt": {
+          "en": "Borderlands screenshot 5",
+          "tr": "Borderlands ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2cf/2cffe85c573b796a8071785a4c4f8847.jpg",
+        "alt": {
+          "en": "Borderlands screenshot 6",
+          "tr": "Borderlands ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Borderlands",
+      "rawgSlug": "borderlands",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "steam-cloud",
+      "rpg"
+    ],
+    "sourceUrl": "https://rawg.io/games/borderlands",
+    "sources": [],
+    "updatedAt": "2026-11-18T21:41:08.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "dishonored-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Dishonored",
+      "tr": "Dishonored"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2012 for PlayStation 3 (Metacritic 91/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/4e6/4e6e8e7f50c237d76f38f3c885dae3d2.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/683/68302a7d6425b77f73b550d74d12c149.jpg",
+        "alt": {
+          "en": "Dishonored screenshot 1",
+          "tr": "Dishonored ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3be/3be77e78cc70a27dd8afe5228a4a4603.jpg",
+        "alt": {
+          "en": "Dishonored screenshot 2",
+          "tr": "Dishonored ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ed4/ed45a4d528eb22d30048654c43ba4854.jpg",
+        "alt": {
+          "en": "Dishonored screenshot 3",
+          "tr": "Dishonored ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/903/903a31cf943126bf46c5db2be9bc8116.jpg",
+        "alt": {
+          "en": "Dishonored screenshot 4",
+          "tr": "Dishonored ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9cb/9cb61afd240b902b943c850ddf5c60c9.jpg",
+        "alt": {
+          "en": "Dishonored screenshot 5",
+          "tr": "Dishonored ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ad8/ad8a34687cf34713bc59580d568248e8.jpg",
+        "alt": {
+          "en": "Dishonored screenshot 6",
+          "tr": "Dishonored ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Dishonored",
+      "rawgSlug": "dishonored",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/dishonored",
+    "sources": [],
+    "updatedAt": "2026-11-20T08:30:15.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "injustice-gods-among-us-ultimate-edition-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "arcade",
+    "category": {
+      "en": "Arcade",
+      "tr": "Arcade"
+    },
+    "title": {
+      "en": "Injustice: Gods Among Us Ultimate Edition",
+      "tr": "Injustice: Gods Among Us Ultimate Edition"
+    },
+    "description": {
+      "en": "Arcade / Action title released in 2013 for PlayStation 3 (Metacritic 80/100).",
+      "tr": "2013 yılında çıkan PlayStation 3 için Arcade / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/234/23410661770ae13eac11066980834367.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d5a/d5ae88f0e4e6d5558550cc76967f702d.jpg",
+        "alt": {
+          "en": "Injustice: Gods Among Us Ultimate Edition screenshot 1",
+          "tr": "Injustice: Gods Among Us Ultimate Edition ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/cab/cab011ad99d98ce321f8444cd2710686.jpg",
+        "alt": {
+          "en": "Injustice: Gods Among Us Ultimate Edition screenshot 2",
+          "tr": "Injustice: Gods Among Us Ultimate Edition ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/46c/46cc7cfdc64f5338135f2a72da87ac88.jpg",
+        "alt": {
+          "en": "Injustice: Gods Among Us Ultimate Edition screenshot 3",
+          "tr": "Injustice: Gods Among Us Ultimate Edition ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/032/03288e337bc2c89830370cc4d271f28f.jpg",
+        "alt": {
+          "en": "Injustice: Gods Among Us Ultimate Edition screenshot 4",
+          "tr": "Injustice: Gods Among Us Ultimate Edition ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/067/06750098636883e86b7fa555be21b748.jpg",
+        "alt": {
+          "en": "Injustice: Gods Among Us Ultimate Edition screenshot 5",
+          "tr": "Injustice: Gods Among Us Ultimate Edition ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/92c/92cbd636e0181822d5e6b1f1a5ce8205.jpg",
+        "alt": {
+          "en": "Injustice: Gods Among Us Ultimate Edition screenshot 6",
+          "tr": "Injustice: Gods Among Us Ultimate Edition ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Injustice: Gods Among Us Ultimate Edition",
+      "rawgSlug": "injustice-gods-among-us-ultimate-edition",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/injustice-gods-among-us-ultimate-edition",
+    "sources": [],
+    "updatedAt": "2026-11-16T11:15:31.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "assassins-creed-iv-black-flag-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Assassin’s Creed IV: Black Flag",
+      "tr": "Assassin’s Creed IV: Black Flag"
+    },
+    "description": {
+      "en": "Action title released in 2013 for PlayStation 3 (Metacritic 85/100).",
+      "tr": "2013 yılında çıkan PlayStation 3 için Aksiyon oyunu (Metacritic 85/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 85,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/46d/46de97777c05efb26597b215735dcd84.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 1",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/162/162503bb903edd7cfddf2a49ecdf5b7d.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 2",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9ad/9ad8aa17d3f2be9545273f895e481280.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 3",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/b02/b02b168d04889304aac23e47f5314721.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 4",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ad8/ad8439bc9ed7d2f88deb836c9cff23d2.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 5",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/398/398abeb965880c1c3310a6a4ad9c71b8.jpg",
+        "alt": {
+          "en": "Assassin’s Creed IV: Black Flag screenshot 6",
+          "tr": "Assassin’s Creed IV: Black Flag ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Assassin’s Creed IV: Black Flag",
+      "rawgSlug": "assassins-creed-iv-black-flag",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/assassins-creed-iv-black-flag",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:04:11.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "hitman-absolution-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Hitman: Absolution",
+      "tr": "Hitman: Absolution"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for PlayStation 3 (Metacritic 79/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 79/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 79,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/d46/d46373f39458670305704ef089387520.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/1b9/1b935461ecbdaf9ce51a8d3f02d6848e.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 1",
+          "tr": "Hitman: Absolution ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/53c/53c2e650009d65f1a8587fbef7c44e89.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 2",
+          "tr": "Hitman: Absolution ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/69b/69bf3d7eda87b1e9c382276e3b4fa987.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 3",
+          "tr": "Hitman: Absolution ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2b5/2b5454013919650e315f6d2c249c4978.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 4",
+          "tr": "Hitman: Absolution ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c40/c401710fe96692996a4091afdac694d8.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 5",
+          "tr": "Hitman: Absolution ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3c4/3c44380232b0e07918d3a4d9647fc606.jpg",
+        "alt": {
+          "en": "Hitman: Absolution screenshot 6",
+          "tr": "Hitman: Absolution ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Hitman: Absolution",
+      "rawgSlug": "hitman-absolution",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "story-rich",
+      "third-person"
+    ],
+    "sourceUrl": "https://rawg.io/games/hitman-absolution",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:50:12.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "la-noire-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "L.A. Noire",
+      "tr": "L.A. Noire"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2011 for PlayStation 3 (Metacritic 83/100).",
+      "tr": "2011 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2011",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/c08/c0823f02236f076a7a36ff5f3571558e.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 1",
+          "tr": "L.A. Noire ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dee/dee71bfc43834357e15e1d35d2c507c8.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 2",
+          "tr": "L.A. Noire ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/69f/69fdec37afd586f274316a69e92303f1.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 3",
+          "tr": "L.A. Noire ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4c0/4c0f154b51525e93ce8f2f18197c82ee.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 4",
+          "tr": "L.A. Noire ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/87b/87bf0f4ababb76a87b7ac82a282e44c6.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 5",
+          "tr": "L.A. Noire ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5e0/5e05bd7135d8e8d8dfb92eb7e3d57181.jpg",
+        "alt": {
+          "en": "L.A. Noire screenshot 6",
+          "tr": "L.A. Noire ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "L.A. Noire",
+      "rawgSlug": "la-noire",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "rpg",
+      "story-rich",
+      "open-world"
+    ],
+    "sourceUrl": "https://rawg.io/games/la-noire",
+    "sources": [],
+    "updatedAt": "2026-10-28T11:59:29.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "dead-space-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Dead Space (2008)",
+      "tr": "Dead Space (2008)"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2008 for PlayStation 3 (Metacritic 86/100).",
+      "tr": "2008 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2008",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/ebd/ebdbb7eb52bd58b0e7fa4538d9757b60.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/83d/83db52cdc2646839d7f49bf21209e68c.jpg",
+        "alt": {
+          "en": "Dead Space (2008) screenshot 1",
+          "tr": "Dead Space (2008) ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/74e/74e4acf3288e4aee46bdbc8b3c0981a5.jpg",
+        "alt": {
+          "en": "Dead Space (2008) screenshot 2",
+          "tr": "Dead Space (2008) ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/4d2/4d2b8d60ae5b9e241a6ab65934709628.jpg",
+        "alt": {
+          "en": "Dead Space (2008) screenshot 3",
+          "tr": "Dead Space (2008) ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/80d/80dd9ee5711fcdaf374d07cf2a40a014.jpg",
+        "alt": {
+          "en": "Dead Space (2008) screenshot 4",
+          "tr": "Dead Space (2008) ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/03e/03e73f7b9da0c3bbfe1080434dc8db84.jpg",
+        "alt": {
+          "en": "Dead Space (2008) screenshot 5",
+          "tr": "Dead Space (2008) ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/552/55293d36d0de5c9adbd02b98031ca5d0.jpg",
+        "alt": {
+          "en": "Dead Space (2008) screenshot 6",
+          "tr": "Dead Space (2008) ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Dead Space (2008)",
+      "rawgSlug": "dead-space",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "full-controller-support",
+      "atmospheric",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/dead-space",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:09:45.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "mass-effect-2-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Mass Effect 2",
+      "tr": "Mass Effect 2"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2010 for PlayStation 3 (Metacritic 94/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Aksiyon / RPG oyunu (Metacritic 94/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 94,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/3cf/3cff89996570cf29a10eb9cd967dcf73.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/3e9/3e987ae85497ded8e4fea09634be9c0a.jpg",
+        "alt": {
+          "en": "Mass Effect 2 screenshot 1",
+          "tr": "Mass Effect 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/be5/be56c7c5c5b0f10644213f99051525f4.jpg",
+        "alt": {
+          "en": "Mass Effect 2 screenshot 2",
+          "tr": "Mass Effect 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/61c/61c0fb8a92ffdd64e9355202cbf1d3f2.jpg",
+        "alt": {
+          "en": "Mass Effect 2 screenshot 3",
+          "tr": "Mass Effect 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2aa/2aa8bf125cb9c7c20ee1d296a3c4a45e.jpg",
+        "alt": {
+          "en": "Mass Effect 2 screenshot 4",
+          "tr": "Mass Effect 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/90e/90ed4c6bb3c400ea3e825c47a09c41df.jpg",
+        "alt": {
+          "en": "Mass Effect 2 screenshot 5",
+          "tr": "Mass Effect 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/824/824e85651ba98e8539ef39b205428e88.jpg",
+        "alt": {
+          "en": "Mass Effect 2 screenshot 6",
+          "tr": "Mass Effect 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Mass Effect 2",
+      "rawgSlug": "mass-effect-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/mass-effect-2",
+    "sources": [],
+    "updatedAt": "2026-10-27T04:15:38.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "borderlands-the-pre-sequel-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Borderlands: The Pre-Sequel",
+      "tr": "Borderlands: The Pre-Sequel"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2014 for PlayStation 3 (Metacritic 75/100).",
+      "tr": "2014 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 75/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 75,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/530/5302dd22a190e664531236ca724e8726.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ee9/ee9f6de36d4b0bdaf43bd10a2ec56f4a.jpg",
+        "alt": {
+          "en": "Borderlands: The Pre-Sequel screenshot 1",
+          "tr": "Borderlands: The Pre-Sequel ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/6bd/6bd501390fb4e78141838c07a1a3580e.jpg",
+        "alt": {
+          "en": "Borderlands: The Pre-Sequel screenshot 2",
+          "tr": "Borderlands: The Pre-Sequel ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/99b/99b2d12cf0c1d4a2492f632465c4cf71.jpg",
+        "alt": {
+          "en": "Borderlands: The Pre-Sequel screenshot 3",
+          "tr": "Borderlands: The Pre-Sequel ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/579/5792b69c652c9b210122a686e9dd59e1.jpg",
+        "alt": {
+          "en": "Borderlands: The Pre-Sequel screenshot 4",
+          "tr": "Borderlands: The Pre-Sequel ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/706/7063852169f86cd4e70440de419353e8.jpg",
+        "alt": {
+          "en": "Borderlands: The Pre-Sequel screenshot 5",
+          "tr": "Borderlands: The Pre-Sequel ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/01c/01c6128a0c81ed34efd4433abea32a18.jpg",
+        "alt": {
+          "en": "Borderlands: The Pre-Sequel screenshot 6",
+          "tr": "Borderlands: The Pre-Sequel ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Borderlands: The Pre-Sequel",
+      "rawgSlug": "borderlands-the-pre-sequel",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/borderlands-the-pre-sequel",
+    "sources": [],
+    "updatedAt": "2026-10-25T14:39:47.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "metal-gear-solid-v-ground-zeroes-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Metal Gear Solid V: Ground Zeroes",
+      "tr": "Metal Gear Solid V: Ground Zeroes"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2014 for PlayStation 3 (Metacritic 80/100).",
+      "tr": "2014 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/7ac/7aca7ccf0e70cd0974cb899ab9e5158e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/d09/d095258c73a70e6c5089b9af2c64b2f6.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: Ground Zeroes screenshot 1",
+          "tr": "Metal Gear Solid V: Ground Zeroes ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/351/351157b8573878821cf3ac0ea00175ae.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: Ground Zeroes screenshot 2",
+          "tr": "Metal Gear Solid V: Ground Zeroes ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/512/5129df7049bc270ba6381fc06f48ab75.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: Ground Zeroes screenshot 3",
+          "tr": "Metal Gear Solid V: Ground Zeroes ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f9f/f9fb16022e1ee4d892a80ce1086d21db.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: Ground Zeroes screenshot 4",
+          "tr": "Metal Gear Solid V: Ground Zeroes ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a1f/a1fdda760d8aaadbc2adbf788e5a28f7.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: Ground Zeroes screenshot 5",
+          "tr": "Metal Gear Solid V: Ground Zeroes ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/05f/05f060b6adada26f48ec632562650883.jpg",
+        "alt": {
+          "en": "Metal Gear Solid V: Ground Zeroes screenshot 6",
+          "tr": "Metal Gear Solid V: Ground Zeroes ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Metal Gear Solid V: Ground Zeroes",
+      "rawgSlug": "metal-gear-solid-v-ground-zeroes",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/metal-gear-solid-v-ground-zeroes",
+    "sources": [],
+    "updatedAt": "2026-09-24T17:33:50.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "minecraft-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Minecraft",
+      "tr": "Minecraft"
+    },
+    "description": {
+      "en": "Action / Arcade title released in 2009 for PlayStation 3 (Metacritic 83/100).",
+      "tr": "2009 yılında çıkan PlayStation 3 için Aksiyon / Arcade oyunu (Metacritic 83/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 83,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/324/32454b11adde40d87c046f310f0d710d.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 1",
+          "tr": "Minecraft ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/268/2689f04cbcabb467dd4948e30fe90f51.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 2",
+          "tr": "Minecraft ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/e83/e83fbaf3a8bdf1cdd855acf8fc90d2fe.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 3",
+          "tr": "Minecraft ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a02/a021bf48ee5e492026e6464b3751cf35.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 4",
+          "tr": "Minecraft ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/0cc/0cc6c1534e782b9d040c665a1f78c6f7.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 5",
+          "tr": "Minecraft ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3f6/3f66dd84a110f796a80baa4539430b68.jpg",
+        "alt": {
+          "en": "Minecraft screenshot 6",
+          "tr": "Minecraft ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Minecraft",
+      "rawgSlug": "minecraft",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "multiplayer",
+      "sandbox",
+      "3d",
+      "crafting",
+      "building"
+    ],
+    "sourceUrl": "https://rawg.io/games/minecraft",
+    "sources": [],
+    "updatedAt": "2026-11-15T19:12:51.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "mass-effect-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Mass Effect",
+      "tr": "Mass Effect"
+    },
+    "description": {
+      "en": "Action / RPG title released in 2007 for PlayStation 3 (Metacritic 89/100).",
+      "tr": "2007 yılında çıkan PlayStation 3 için Aksiyon / RPG oyunu (Metacritic 89/100)."
+    },
+    "developer": "RAWG",
+    "version": "2007",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 89,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/a6c/a6ccd34125c594abf1a9c9821b9a715d.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2c7/2c710533fe55e02facda408ce681640e.jpg",
+        "alt": {
+          "en": "Mass Effect screenshot 1",
+          "tr": "Mass Effect ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f42/f42d116fcc691213ac11f651e231b214.jpg",
+        "alt": {
+          "en": "Mass Effect screenshot 2",
+          "tr": "Mass Effect ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5db/5db5afc10fa39739c96c05f455f5d253.jpg",
+        "alt": {
+          "en": "Mass Effect screenshot 3",
+          "tr": "Mass Effect ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/7af/7af44f9b67fe50d162d630f07ae6900b.jpg",
+        "alt": {
+          "en": "Mass Effect screenshot 4",
+          "tr": "Mass Effect ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/67e/67e4fa3122553e5ad52b97d0efecf0e1.jpg",
+        "alt": {
+          "en": "Mass Effect screenshot 5",
+          "tr": "Mass Effect ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/196/196268519e753a7d53fbee7040fde318.jpg",
+        "alt": {
+          "en": "Mass Effect screenshot 6",
+          "tr": "Mass Effect ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Mass Effect",
+      "rawgSlug": "mass-effect",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "atmospheric",
+      "great-soundtrack",
+      "rpg",
+      "story-rich"
+    ],
+    "sourceUrl": "https://rawg.io/games/mass-effect",
+    "sources": [],
+    "updatedAt": "2026-11-17T03:23:46.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "just-cause-2-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Just Cause 2",
+      "tr": "Just Cause 2"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2010 for PlayStation 3 (Metacritic 84/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 84/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 84,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/a3c/a3c529a12c896c0ef02db5b4741de2ba.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/34a/34a30f4a5a6f0e5c340d3c14456b8fcf.jpg",
+        "alt": {
+          "en": "Just Cause 2 screenshot 1",
+          "tr": "Just Cause 2 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/118/11867f9fe44372fb65beb2f2e15ae030.jpg",
+        "alt": {
+          "en": "Just Cause 2 screenshot 2",
+          "tr": "Just Cause 2 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5c1/5c144b4d26fe4c41bb35aa3878498b4f.jpg",
+        "alt": {
+          "en": "Just Cause 2 screenshot 3",
+          "tr": "Just Cause 2 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/39d/39d23cd38d9f6f9f45bf473c5ec4f49d.jpg",
+        "alt": {
+          "en": "Just Cause 2 screenshot 4",
+          "tr": "Just Cause 2 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/dde/ddef23e3e0f22bc174b757cf69cc5816.jpg",
+        "alt": {
+          "en": "Just Cause 2 screenshot 5",
+          "tr": "Just Cause 2 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/514/514908623cd01610f3e361887102e549.jpg",
+        "alt": {
+          "en": "Just Cause 2 screenshot 6",
+          "tr": "Just Cause 2 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Just Cause 2",
+      "rawgSlug": "just-cause-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/just-cause-2",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:10:01.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "batman-arkham-city-goty-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Batman: Arkham City - Game of the Year Edition",
+      "tr": "Batman: Arkham City - Game of the Year Edition"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2012 for PlayStation 3 (Metacritic 91/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/c50/c5085506fe4b5e20fc7aa5ace842c20b.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/7f0/7f06dde491c2e2e7a89d9375f016e0b1.jpg",
+        "alt": {
+          "en": "Batman: Arkham City - Game of the Year Edition screenshot 1",
+          "tr": "Batman: Arkham City - Game of the Year Edition ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/00f/00f1b94e6bee4ca226902ec724ef6cb6.jpg",
+        "alt": {
+          "en": "Batman: Arkham City - Game of the Year Edition screenshot 2",
+          "tr": "Batman: Arkham City - Game of the Year Edition ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/794/79445f5a4e6f145be0a9e8bfb8fe5c03.jpg",
+        "alt": {
+          "en": "Batman: Arkham City - Game of the Year Edition screenshot 3",
+          "tr": "Batman: Arkham City - Game of the Year Edition ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/700/700c6a91d1ea98e7ca3f53e44d6000f0.jpg",
+        "alt": {
+          "en": "Batman: Arkham City - Game of the Year Edition screenshot 4",
+          "tr": "Batman: Arkham City - Game of the Year Edition ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/590/5908186c284c2d02700064a968546d64.jpg",
+        "alt": {
+          "en": "Batman: Arkham City - Game of the Year Edition screenshot 5",
+          "tr": "Batman: Arkham City - Game of the Year Edition ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/712/712aef3ca77ad875dbaf058d0e5949b4.jpg",
+        "alt": {
+          "en": "Batman: Arkham City - Game of the Year Edition screenshot 6",
+          "tr": "Batman: Arkham City - Game of the Year Edition ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Batman: Arkham City - Game of the Year Edition",
+      "rawgSlug": "batman-arkham-city-goty",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/batman-arkham-city-goty",
+    "sources": [],
+    "updatedAt": "2026-11-16T11:15:52.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "journey-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "family",
+    "category": {
+      "en": "Family",
+      "tr": "Aile"
+    },
+    "title": {
+      "en": "Journey",
+      "tr": "Journey"
+    },
+    "description": {
+      "en": "Family / Indie title released in 2012 for PlayStation 3 (Metacritic 92/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Aile / Bağımsız oyunu (Metacritic 92/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 92,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/baf/baf9905270314e07e6850cffdb51df41.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/b3f/b3f7f9c7fc81de2417135f758470b806.jpg",
+        "alt": {
+          "en": "Journey screenshot 1",
+          "tr": "Journey ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/08b/08b24d5b3d2074f37500e938771edafa.jpg",
+        "alt": {
+          "en": "Journey screenshot 2",
+          "tr": "Journey ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/704/70438c6fad16044c53a67b5c63fda9a6.jpg",
+        "alt": {
+          "en": "Journey screenshot 3",
+          "tr": "Journey ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d3c/d3c6674838af8d63f2e8bc1d7da16a9d.jpg",
+        "alt": {
+          "en": "Journey screenshot 4",
+          "tr": "Journey ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f61/f61dc90adfc5796cd1a950f6eb5eb16e.jpg",
+        "alt": {
+          "en": "Journey screenshot 5",
+          "tr": "Journey ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/509/5094aeab0e11682a6792d09a0828154a.jpg",
+        "alt": {
+          "en": "Journey screenshot 6",
+          "tr": "Journey ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Journey",
+      "rawgSlug": "journey",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/journey",
+    "sources": [],
+    "updatedAt": "2026-11-15T15:21:42.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "batman-aa-goty-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Batman: Arkham Asylum Game of the Year Edition",
+      "tr": "Batman: Arkham Asylum Game of the Year Edition"
+    },
+    "description": {
+      "en": "Platformer / Adventure title released in 2010 for PlayStation 3 (Metacritic 91/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Platform / Macera oyunu (Metacritic 91/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 91,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/fd8/fd882c8267a44621a0de6f9cec77ae90.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/85b/85bb2ed59cc85c21bfdc068012dfc5c8.jpg",
+        "alt": {
+          "en": "Batman: Arkham Asylum Game of the Year Edition screenshot 1",
+          "tr": "Batman: Arkham Asylum Game of the Year Edition ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/05e/05ebf1dc9066bf43e9c45b31399e741d.jpg",
+        "alt": {
+          "en": "Batman: Arkham Asylum Game of the Year Edition screenshot 2",
+          "tr": "Batman: Arkham Asylum Game of the Year Edition ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ee2/ee2b4270a1eb48b0aa2ac3deb882ce9b.jpg",
+        "alt": {
+          "en": "Batman: Arkham Asylum Game of the Year Edition screenshot 3",
+          "tr": "Batman: Arkham Asylum Game of the Year Edition ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a43/a43dde8dcb6445387f429da88d50b703.jpg",
+        "alt": {
+          "en": "Batman: Arkham Asylum Game of the Year Edition screenshot 4",
+          "tr": "Batman: Arkham Asylum Game of the Year Edition ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/803/803acffeb45da0d884582991f380c6bf.jpg",
+        "alt": {
+          "en": "Batman: Arkham Asylum Game of the Year Edition screenshot 5",
+          "tr": "Batman: Arkham Asylum Game of the Year Edition ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/23e/23e14000ba6668b022633e3600c8c140.jpg",
+        "alt": {
+          "en": "Batman: Arkham Asylum Game of the Year Edition screenshot 6",
+          "tr": "Batman: Arkham Asylum Game of the Year Edition ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Batman: Arkham Asylum Game of the Year Edition",
+      "rawgSlug": "batman-aa-goty",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "atmospheric",
+      "steam-trading-cards"
+    ],
+    "sourceUrl": "https://rawg.io/games/batman-aa-goty",
+    "sources": [],
+    "updatedAt": "2026-11-16T11:15:53.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "xcom-enemy-unknown-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "XCOM: Enemy Unknown",
+      "tr": "XCOM: Enemy Unknown"
+    },
+    "description": {
+      "en": "Strategy title released in 2012 for PlayStation 3 (Metacritic 89/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Strateji oyunu (Metacritic 89/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 89,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/238/2383a172b4d50a7b44e07980eb7141ea.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/805/805471a778d484cdd5305b36f68ee1b6.jpg",
+        "alt": {
+          "en": "XCOM: Enemy Unknown screenshot 1",
+          "tr": "XCOM: Enemy Unknown ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3da/3dab13378be0dc687857c1899c2db3bd.jpg",
+        "alt": {
+          "en": "XCOM: Enemy Unknown screenshot 2",
+          "tr": "XCOM: Enemy Unknown ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1b9/1b9536d06fdc789caa3f839548178ba0.jpg",
+        "alt": {
+          "en": "XCOM: Enemy Unknown screenshot 3",
+          "tr": "XCOM: Enemy Unknown ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/bca/bca4db9d97ced7c3a42b2c7a90d4d28c.jpg",
+        "alt": {
+          "en": "XCOM: Enemy Unknown screenshot 4",
+          "tr": "XCOM: Enemy Unknown ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5a4/5a43d75d6517163772f492e2a5b278d6.jpg",
+        "alt": {
+          "en": "XCOM: Enemy Unknown screenshot 5",
+          "tr": "XCOM: Enemy Unknown ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/77f/77feafcf416de96e61d7a6461b8b29f7.jpg",
+        "alt": {
+          "en": "XCOM: Enemy Unknown screenshot 6",
+          "tr": "XCOM: Enemy Unknown ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "XCOM: Enemy Unknown",
+      "rawgSlug": "xcom-enemy-unknown",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/xcom-enemy-unknown",
+    "sources": [],
+    "updatedAt": "2026-10-08T18:56:22.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "mafia-ii-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Mafia II",
+      "tr": "Mafia II"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2010 for PlayStation 3 (Metacritic 77/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/9e5/9e5b274c7e3aa5e30beba31b834b0e7e.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/fc7/fc7af04e8ec2245f6520eea80a07f27b.jpg",
+        "alt": {
+          "en": "Mafia II screenshot 1",
+          "tr": "Mafia II ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/609/609942d823b3f143bd740422e89bc957.jpg",
+        "alt": {
+          "en": "Mafia II screenshot 2",
+          "tr": "Mafia II ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/884/88470240b56fe7e5b26e90855be8549c.jpg",
+        "alt": {
+          "en": "Mafia II screenshot 3",
+          "tr": "Mafia II ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c24/c24c38a52e37585e09e4d901f20e86dd.jpg",
+        "alt": {
+          "en": "Mafia II screenshot 4",
+          "tr": "Mafia II ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fa0/fa0b8f4a7479123c33ed9928a82c49e7.jpg",
+        "alt": {
+          "en": "Mafia II screenshot 5",
+          "tr": "Mafia II ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c9a/c9a3142299ef94565cfc72136ef58e4c.jpg",
+        "alt": {
+          "en": "Mafia II screenshot 6",
+          "tr": "Mafia II ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Mafia II",
+      "rawgSlug": "mafia-ii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/mafia-ii",
+    "sources": [],
+    "updatedAt": "2026-10-25T15:01:50.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "watch-dogs-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Watch Dogs",
+      "tr": "Watch Dogs"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2014 for PlayStation 3 (Metacritic 77/100).",
+      "tr": "2014 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 77/100)."
+    },
+    "developer": "RAWG",
+    "version": "2014",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 77,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/879/879c930f9c6787c920153fa2df452eb3.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/6f0/6f072ce2d5d33350bfb2554e58e8a41b.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 1",
+          "tr": "Watch Dogs ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/8f4/8f47d4bfd8599ec9c3d0e81191ecd7c6.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 2",
+          "tr": "Watch Dogs ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/c87/c87c3e6fac1ceed68605f6da0bf40b30.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 3",
+          "tr": "Watch Dogs ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/2bd/2bd61fd5bad2458417e55f373a3097a2.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 4",
+          "tr": "Watch Dogs ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a64/a64cf2b3fcfd721cd244a853549781a8.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 5",
+          "tr": "Watch Dogs ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/75d/75d8c7a73df54bc579ffde1662354791.jpg",
+        "alt": {
+          "en": "Watch Dogs screenshot 6",
+          "tr": "Watch Dogs ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Watch Dogs",
+      "rawgSlug": "watch-dogs",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "atmospheric",
+      "rpg",
+      "co-op"
+    ],
+    "sourceUrl": "https://rawg.io/games/watch-dogs",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:00:41.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "brothers-a-tale-of-two-sons-2-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "indie",
+    "category": {
+      "en": "Indie",
+      "tr": "Bağımsız"
+    },
+    "title": {
+      "en": "Brothers: A Tale of Two Sons",
+      "tr": "Brothers: A Tale of Two Sons"
+    },
+    "description": {
+      "en": "Indie / Adventure title released in 2013 for PlayStation 3 (Metacritic 90/100).",
+      "tr": "2013 yılında çıkan PlayStation 3 için Bağımsız / Macera oyunu (Metacritic 90/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 90,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/b6b/b6b20bfc4b34e312dbc8aac53c95a348.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/14d/14dcdb86ae346a69022ab5837016fdc1.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 1",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5e7/5e71a4ccee940eb51a6110535f79d4ed.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 2",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/709/70954b4dac5e2a4966293ce0c7dbc6c4.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 3",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/08f/08fd4301c46d14aed67c9d7f98b12ec0.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 4",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/5bd/5bd04279767fc7febc37e460da236b28.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 5",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/900/900738abfbca21ada3170e5f9dc7a333.jpg",
+        "alt": {
+          "en": "Brothers: A Tale of Two Sons screenshot 6",
+          "tr": "Brothers: A Tale of Two Sons ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Brothers: A Tale of Two Sons",
+      "rawgSlug": "brothers-a-tale-of-two-sons-2",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/brothers-a-tale-of-two-sons-2",
+    "sources": [],
+    "updatedAt": "2026-10-27T23:04:59.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "heavy-rain-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Heavy Rain",
+      "tr": "Heavy Rain"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2010 for PlayStation 3 (Metacritic 80/100).",
+      "tr": "2010 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2010",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/0af/0af85e8edddfa55368e47c539914a220.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2a0/2a0abc877b38468c38b12608e8f4e6e9.jpg",
+        "alt": {
+          "en": "Heavy Rain screenshot 1",
+          "tr": "Heavy Rain ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ce/1cea6b99424718659971772dcd34365c.jpg",
+        "alt": {
+          "en": "Heavy Rain screenshot 2",
+          "tr": "Heavy Rain ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a5b/a5b869636cb34edcc92cacc598d1a6ef.jpg",
+        "alt": {
+          "en": "Heavy Rain screenshot 3",
+          "tr": "Heavy Rain ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/daa/daa642d6610d252281237fd7e769e598.jpg",
+        "alt": {
+          "en": "Heavy Rain screenshot 4",
+          "tr": "Heavy Rain ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/949/949962605a08b75f58a7b0f4fbe4511b.jpg",
+        "alt": {
+          "en": "Heavy Rain screenshot 5",
+          "tr": "Heavy Rain ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/1ea/1ea689dd2ef1cbef6d9bc04562e739e9.jpg",
+        "alt": {
+          "en": "Heavy Rain screenshot 6",
+          "tr": "Heavy Rain ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Heavy Rain",
+      "rawgSlug": "heavy-rain",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "full-controller-support",
+      "steam-cloud",
+      "atmospheric"
+    ],
+    "sourceUrl": "https://rawg.io/games/heavy-rain",
+    "sources": [],
+    "updatedAt": "2026-11-15T16:37:24.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "brutal-legend-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "strategy",
+    "category": {
+      "en": "Strategy",
+      "tr": "Strateji"
+    },
+    "title": {
+      "en": "Brutal Legend",
+      "tr": "Brutal Legend"
+    },
+    "description": {
+      "en": "Strategy / Action title released in 2009 for PlayStation 3 (Metacritic 80/100).",
+      "tr": "2009 yılında çıkan PlayStation 3 için Strateji / Aksiyon oyunu (Metacritic 80/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 80,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/af7/af7a831001c5c32c46e950cc883b8cb7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/ded/ded6b47a8903f3ff9903f2068f132942.jpg",
+        "alt": {
+          "en": "Brutal Legend screenshot 1",
+          "tr": "Brutal Legend ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/252/252def39bf9e2630a2c7eb6a736171eb.jpg",
+        "alt": {
+          "en": "Brutal Legend screenshot 2",
+          "tr": "Brutal Legend ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/092/092467f790f3f594bb3f0886df02d9d0.jpg",
+        "alt": {
+          "en": "Brutal Legend screenshot 3",
+          "tr": "Brutal Legend ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9bb/9bb08c6e8ae706f90c106c8a7de57644.jpg",
+        "alt": {
+          "en": "Brutal Legend screenshot 4",
+          "tr": "Brutal Legend ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/d29/d298235806cffe6393aadf37ef6c0632.jpg",
+        "alt": {
+          "en": "Brutal Legend screenshot 5",
+          "tr": "Brutal Legend ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a30/a3059c047b76d09c8dfa19ce5ed0c8cf.jpg",
+        "alt": {
+          "en": "Brutal Legend screenshot 6",
+          "tr": "Brutal Legend ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Brutal Legend",
+      "rawgSlug": "brutal-legend",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud"
+    ],
+    "sourceUrl": "https://rawg.io/games/brutal-legend",
+    "sources": [],
+    "updatedAt": "2026-09-24T17:33:30.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "psychonauts-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "platformer",
+    "category": {
+      "en": "Platformer",
+      "tr": "Platform"
+    },
+    "title": {
+      "en": "Psychonauts",
+      "tr": "Psychonauts"
+    },
+    "description": {
+      "en": "Platformer / Action title released in 2005 for PlayStation 3 (Metacritic 87/100).",
+      "tr": "2005 yılında çıkan PlayStation 3 için Platform / Aksiyon oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2005",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/c89/c89ca70716080733d03724277df2c6c7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/2de/2dea22a973d765a5383940307b368268.jpg",
+        "alt": {
+          "en": "Psychonauts screenshot 1",
+          "tr": "Psychonauts ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/310/3103cb1e58a5d6bba1c356d8d1570920.jpg",
+        "alt": {
+          "en": "Psychonauts screenshot 2",
+          "tr": "Psychonauts ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/9c0/9c03e9baa71db649d849660067d07979.jpg",
+        "alt": {
+          "en": "Psychonauts screenshot 3",
+          "tr": "Psychonauts ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/f9a/f9a391f3d4a496195a5cbce41421fb03.jpg",
+        "alt": {
+          "en": "Psychonauts screenshot 4",
+          "tr": "Psychonauts ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/897/897ad883ed085ec7269fb0d235e41625.jpg",
+        "alt": {
+          "en": "Psychonauts screenshot 5",
+          "tr": "Psychonauts ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/224/224f218780ffdeeb1cec7062b8c61b41.jpg",
+        "alt": {
+          "en": "Psychonauts screenshot 6",
+          "tr": "Psychonauts ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Psychonauts",
+      "rawgSlug": "psychonauts",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "steam-cloud",
+      "steam-trading-cards",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/psychonauts",
+    "sources": [],
+    "updatedAt": "2026-10-27T13:18:40.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "max-payne-3-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "shooter",
+    "category": {
+      "en": "Shooter",
+      "tr": "Nişancı"
+    },
+    "title": {
+      "en": "Max Payne 3",
+      "tr": "Max Payne 3"
+    },
+    "description": {
+      "en": "Shooter / Action title released in 2012 for PlayStation 3 (Metacritic 87/100).",
+      "tr": "2012 yılında çıkan PlayStation 3 için Nişancı / Aksiyon oyunu (Metacritic 87/100)."
+    },
+    "developer": "RAWG",
+    "version": "2012",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 87,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/5bf/5bf88a28de96321c86561a65ee48e6c2.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/05b/05b7b6970c42861b24c97a829135f685.jpg",
+        "alt": {
+          "en": "Max Payne 3 screenshot 1",
+          "tr": "Max Payne 3 ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/770/7706c93f23fef77b8e500eb7ee06eee9.jpg",
+        "alt": {
+          "en": "Max Payne 3 screenshot 2",
+          "tr": "Max Payne 3 ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/898/89879b7064e612c95bf976d6abc2fa0c.jpg",
+        "alt": {
+          "en": "Max Payne 3 screenshot 3",
+          "tr": "Max Payne 3 ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/24f/24f3c80cfad97fe119a317dd7f1b3ffb.jpg",
+        "alt": {
+          "en": "Max Payne 3 screenshot 4",
+          "tr": "Max Payne 3 ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/961/96136b0c8c45e4a9df2d2482fb862a8e.jpg",
+        "alt": {
+          "en": "Max Payne 3 screenshot 5",
+          "tr": "Max Payne 3 ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/53a/53a90ec4b5ea59a217fd4cc075b877ad.jpg",
+        "alt": {
+          "en": "Max Payne 3 screenshot 6",
+          "tr": "Max Payne 3 ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Max Payne 3",
+      "rawgSlug": "max-payne-3",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "steam-achievements",
+      "multiplayer",
+      "atmospheric",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/max-payne-3",
+    "sources": [],
+    "updatedAt": "2026-10-19T18:45:25.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "assassins-creed-ii-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "action",
+    "category": {
+      "en": "Action",
+      "tr": "Aksiyon"
+    },
+    "title": {
+      "en": "Assassin's Creed II",
+      "tr": "Assassin's Creed II"
+    },
+    "description": {
+      "en": "Action title released in 2009 for PlayStation 3 (Metacritic 89/100).",
+      "tr": "2009 yılında çıkan PlayStation 3 için Aksiyon oyunu (Metacritic 89/100)."
+    },
+    "developer": "RAWG",
+    "version": "2009",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 89,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/1be/1bed7fae69d1004c09dfe1101d5a3a94.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/e73/e731183e3f545daa3283ca29f4f254cc.jpg",
+        "alt": {
+          "en": "Assassin's Creed II screenshot 1",
+          "tr": "Assassin's Creed II ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/fe9/fe9db29056872c1699dde43155c16329.jpg",
+        "alt": {
+          "en": "Assassin's Creed II screenshot 2",
+          "tr": "Assassin's Creed II ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/65b/65bced397e2946d6880238c6f9ffddb4_ai30aa1.jpg",
+        "alt": {
+          "en": "Assassin's Creed II screenshot 3",
+          "tr": "Assassin's Creed II ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/96e/96e16a1458f1606b2df4d1a623f62b61.jpg",
+        "alt": {
+          "en": "Assassin's Creed II screenshot 4",
+          "tr": "Assassin's Creed II ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/447/4470e0dace64fe81b0e1a8bafc0f4686.jpg",
+        "alt": {
+          "en": "Assassin's Creed II screenshot 5",
+          "tr": "Assassin's Creed II ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/02b/02bfb9bd79a284db6c9acf5fd30fb8d3.jpg",
+        "alt": {
+          "en": "Assassin's Creed II screenshot 6",
+          "tr": "Assassin's Creed II ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Assassin's Creed II",
+      "rawgSlug": "assassins-creed-ii",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "assassin",
+      "hero",
+      "swords",
+      "action",
+      "ps3"
+    ],
+    "sourceUrl": "https://rawg.io/games/assassins-creed-ii",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:09:56.000Z",
+    "sampleData": false
+  },
+  {
+    "slug": "saints-row-iv-ps3",
+    "catalogId": "ps3",
+    "type": "game",
+    "categoryId": "adventure",
+    "category": {
+      "en": "Adventure",
+      "tr": "Macera"
+    },
+    "title": {
+      "en": "Saints Row IV",
+      "tr": "Saints Row IV"
+    },
+    "description": {
+      "en": "Adventure / Action title released in 2013 for PlayStation 3 (Metacritic 86/100).",
+      "tr": "2013 yılında çıkan PlayStation 3 için Macera / Aksiyon oyunu (Metacritic 86/100)."
+    },
+    "developer": "RAWG",
+    "version": "2013",
+    "sizeBytes": 6442450944,
+    "sizeBytesEstimated": true,
+    "ratingScore": 86,
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
+    "coverPath": "https://media.rawg.io/media/games/e3d/e3ddc524c6292a435d01d97cc5f42ea7.jpg",
+    "screenshots": [
+      {
+        "src": "https://media.rawg.io/media/screenshots/aa1/aa1d57309779e9ad7abcde1dd042305f.jpg",
+        "alt": {
+          "en": "Saints Row IV screenshot 1",
+          "tr": "Saints Row IV ekran görüntüsü 1"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/641/64161143c49291cd617ab899e932e93d.jpg",
+        "alt": {
+          "en": "Saints Row IV screenshot 2",
+          "tr": "Saints Row IV ekran görüntüsü 2"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/a63/a6399d85d923e0ca0e23991b1fcc78dc.jpg",
+        "alt": {
+          "en": "Saints Row IV screenshot 3",
+          "tr": "Saints Row IV ekran görüntüsü 3"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/ad7/ad7111f5bc7e199a60daddafc3fe3d44.jpg",
+        "alt": {
+          "en": "Saints Row IV screenshot 4",
+          "tr": "Saints Row IV ekran görüntüsü 4"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/3c7/3c7bcf78505f5c273e5514d296a6499e.jpg",
+        "alt": {
+          "en": "Saints Row IV screenshot 5",
+          "tr": "Saints Row IV ekran görüntüsü 5"
+        }
+      },
+      {
+        "src": "https://media.rawg.io/media/screenshots/745/745e20f00ca4753803ada13c3d7a475a.jpg",
+        "alt": {
+          "en": "Saints Row IV screenshot 6",
+          "tr": "Saints Row IV ekran görüntüsü 6"
+        }
+      }
+    ],
+    "artwork": {
+      "query": "Saints Row IV",
+      "rawgSlug": "saints-row-iv",
+      "coverProvider": "rawg",
+      "screenshotProvider": "rawg"
+    },
+    "tags": [
+      "singleplayer",
+      "multiplayer",
+      "full-controller-support",
+      "steam-cloud",
+      "great-soundtrack"
+    ],
+    "sourceUrl": "https://rawg.io/games/saints-row-iv",
+    "sources": [],
+    "updatedAt": "2026-10-28T12:00:33.000Z",
+    "sampleData": false
   }
 ]
