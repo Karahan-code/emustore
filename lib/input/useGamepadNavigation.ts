@@ -1,6 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { playUiSound } from "@/lib/audio/ui-sfx";
+import { SEARCH_TOGGLE_EVENT } from "@/lib/input/events";
 
 type Direction = "up" | "down" | "left" | "right";
 
@@ -86,6 +89,7 @@ function goBack(): void {
   }
 
   if (document.activeElement instanceof HTMLElement && isEditableTarget(document.activeElement)) {
+    playUiSound("back");
     document.activeElement.blur();
     return;
   }
@@ -96,7 +100,10 @@ function goBack(): void {
     return;
   }
 
-  if (window.history.length > 1) window.history.back();
+  if (window.history.length > 1) {
+    playUiSound("back");
+    window.history.back();
+  }
 }
 
 function activateFocusedElement(): void {
@@ -119,12 +126,6 @@ function activateSelectedFavorite(): void {
   }
 
   scope.querySelector<HTMLElement>("[data-gamepad-favorite]")?.click();
-}
-
-function activateFilterToggle(): void {
-  const modal = document.querySelector<HTMLElement>('[role="dialog"][aria-modal="true"]');
-  const scope: ParentNode = modal ?? document;
-  scope.querySelector<HTMLElement>("[data-gamepad-filters]")?.click();
 }
 
 function dispatchCatalogStep(delta: -1 | 1): void {
@@ -151,6 +152,9 @@ function directionFromPad(pad: Gamepad): Direction | null {
 }
 
 export function useGamepadNavigation(): void {
+  const pathname = usePathname();
+  const router = useRouter();
+
   useEffect(() => {
     let animationFrame = 0;
     let lastDirection: Direction | null = null;
@@ -163,12 +167,35 @@ export function useGamepadNavigation(): void {
           event.preventDefault();
           goBack();
         } else if (isEditableTarget(event.target)) {
+          playUiSound("back");
           (event.target as HTMLElement).blur();
         } else {
           event.preventDefault();
           goBack();
         }
         return;
+      }
+
+      if (!event.metaKey && !event.ctrlKey && !event.altKey && !isEditableTarget(event.target)) {
+        if (event.key.toLowerCase() === "q" || event.key === "/") {
+          event.preventDefault();
+          window.dispatchEvent(new Event(SEARCH_TOGGLE_EVENT));
+          return;
+        }
+        if (event.key === ",") {
+          event.preventDefault();
+          const locale = pathname.split("/")[1] === "tr" ? "tr" : "en";
+          const settingsPath = "/" + locale + "/settings";
+          if (pathname === settingsPath) {
+            playUiSound("back");
+            if (window.history.length > 1) router.back();
+            else router.push("/" + locale + "?view=discover&platform=ps1");
+          } else {
+            playUiSound("confirm");
+            router.push(settingsPath);
+          }
+          return;
+        }
       }
 
       const directions: Record<string, Direction> = {
@@ -222,9 +249,21 @@ export function useGamepadNavigation(): void {
       if (justPressed(pad, 0)) activateFocusedElement();
       if (justPressed(pad, 1)) goBack();
       if (justPressed(pad, 2)) activateSelectedFavorite();
-      if (justPressed(pad, 3)) activateFilterToggle();
+      if (justPressed(pad, 3)) window.dispatchEvent(new Event(SEARCH_TOGGLE_EVENT));
       if (justPressed(pad, 4)) dispatchCatalogStep(-1);
       if (justPressed(pad, 5)) dispatchCatalogStep(1);
+      if (justPressed(pad, 9)) {
+        const locale = pathname.split("/")[1] === "tr" ? "tr" : "en";
+        const settingsPath = "/" + locale + "/settings";
+        if (pathname === settingsPath) {
+          playUiSound("back");
+          if (window.history.length > 1) router.back();
+          else router.push("/" + locale + "?view=discover&platform=ps1");
+        } else {
+          playUiSound("confirm");
+          router.push(settingsPath);
+        }
+      }
       animationFrame = window.requestAnimationFrame(poll);
     };
 
@@ -246,5 +285,5 @@ export function useGamepadNavigation(): void {
       window.removeEventListener("gamepaddisconnected", onGamepadConnected);
       if (animationFrame) window.cancelAnimationFrame(animationFrame);
     };
-  }, []);
+  }, [pathname, router]);
 }

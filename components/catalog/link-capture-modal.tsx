@@ -3,12 +3,16 @@
 import { useCallback, useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
 import { isPlatformExtension } from "@/lib/catalog/platforms";
 import type { CatalogItem, DownloadSource, Locale } from "@/lib/catalog/types";
-import type { Messages } from "@/lib/i18n/dictionaries";
+import { interpolate, type Messages } from "@/lib/i18n/dictionaries";
 import type { LinkCaptureAdapter } from "@/lib/install/link-capture";
 import { formatFileSize } from "@/lib/catalog/format";
 
 type LinkValidation =
-  | { url: string; titleWarning: boolean }
+  | {
+      url: string;
+      filenameWarning: boolean;
+      hostWarning: { expectedHost: string; actualHost: string } | null;
+    }
   | { error: "invalidUrl" | "extensionMissing" | "extensionUnsupported" | "extensionMismatch" };
 
 type LinkCaptureModalProps = {
@@ -28,6 +32,10 @@ function normalizeHint(value: string): string {
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]/g, "");
+}
+
+function normalizeHostname(value: string): string {
+  return value.toLowerCase().replace(/\.$/, "").replace(/^www\./, "");
 }
 
 function validateLink(rawUrl: string, item: CatalogItem, source: DownloadSource): LinkValidation {
@@ -58,9 +66,14 @@ function validateLink(rawUrl: string, item: CatalogItem, source: DownloadSource)
   const hints = [item.slug, item.title.en, item.title.tr]
     .map(normalizeHint)
     .filter((hint) => hint.length >= 4);
-  const titleWarning = !hints.some((hint) => searchableUrl.includes(hint));
+  const filenameWarning = !hints.some((hint) => searchableUrl.includes(hint));
+  const expectedHost = new URL(source.url).hostname;
+  const actualHost = url.hostname;
+  const hostWarning = normalizeHostname(actualHost) === normalizeHostname(expectedHost)
+    ? null
+    : { expectedHost, actualHost };
 
-  return { url: url.toString(), titleWarning };
+  return { url: url.toString(), filenameWarning, hostWarning };
 }
 
 export function LinkCaptureModal({
@@ -76,9 +89,10 @@ export function LinkCaptureModal({
   const details = messages.details;
   const [resolvedInput, setResolvedInput] = useState("");
   const [validationError, setValidationError] = useState<string | null>(null);
-  const [titleWarning, setTitleWarning] = useState(false);
+  const [filenameWarning, setFilenameWarning] = useState(false);
+  const [hostWarning, setHostWarning] = useState<{ expectedHost: string; actualHost: string } | null>(null);
   const [warningAccepted, setWarningAccepted] = useState(false);
-  const [verifiedUrl, setVerifiedUrl] = useState<string | null>(null);
+  const [checkedUrl, setCheckedUrl] = useState<string | null>(null);
   const [captureNotice, setCaptureNotice] = useState<string | null>(null);
   const urlInputRef = useRef<HTMLInputElement>(null);
   const dialogRef = useRef<HTMLElement>(null);
@@ -88,19 +102,21 @@ export function LinkCaptureModal({
     const result = validateLink(candidate, item, source);
     if ("error" in result) {
       setValidationError(details[result.error]);
-      setTitleWarning(false);
-      setVerifiedUrl(null);
+      setFilenameWarning(false);
+      setHostWarning(null);
+      setCheckedUrl(null);
       return;
     }
 
     setValidationError(null);
-    setTitleWarning(result.titleWarning);
-    if (result.titleWarning && !warningAccepted) {
-      setVerifiedUrl(null);
+    setFilenameWarning(result.filenameWarning);
+    setHostWarning(result.hostWarning);
+    if ((result.filenameWarning || result.hostWarning) && !warningAccepted) {
+      setCheckedUrl(null);
       return;
     }
 
-    setVerifiedUrl(result.url);
+    setCheckedUrl(result.url);
   }, [details, item, source, warningAccepted]);
 
   useEffect(() => {
@@ -111,14 +127,19 @@ export function LinkCaptureModal({
       (capture) => {
         setResolvedInput(capture.url);
         setCaptureNotice(details.downloadLinkCaptured);
+        setWarningAccepted(false);
         const result = validateLink(capture.url, item, source);
         if ("error" in result) {
           setValidationError(details[result.error]);
+          setFilenameWarning(false);
+          setHostWarning(null);
+          setCheckedUrl(null);
           return;
         }
         setValidationError(null);
-        setTitleWarning(result.titleWarning);
-        setVerifiedUrl(result.titleWarning ? null : result.url);
+        setFilenameWarning(result.filenameWarning);
+        setHostWarning(result.hostWarning);
+        setCheckedUrl(result.filenameWarning || result.hostWarning ? null : result.url);
       },
     );
 
@@ -129,8 +150,8 @@ export function LinkCaptureModal({
   }, [adapter, details, item, source]);
 
   useEffect(() => {
-    if (verifiedUrl) confirmationButtonRef.current?.focus();
-  }, [verifiedUrl]);
+    if (checkedUrl) confirmationButtonRef.current?.focus();
+  }, [checkedUrl]);
 
   function submitLink(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -154,6 +175,8 @@ export function LinkCaptureModal({
     }
   }
 
+  const hasLinkWarning = filenameWarning || hostWarning !== null;
+
   return (
     <div
       className="link-capture-overlay"
@@ -170,20 +193,20 @@ export function LinkCaptureModal({
         <div className="link-capture-dialog__header">
           <div>
             <p className="eyebrow">{item.title[locale]} · {source.provider}</p>
-            <h2 id="link-capture-title" tabIndex={-1}>{verifiedUrl ? details.linkVerifiedTitle : details.linkCaptureTitle}</h2>
+            <h2 id="link-capture-title" tabIndex={-1}>{checkedUrl ? details.linkFormatCheckedTitle : details.linkCaptureTitle}</h2>
           </div>
           <button className="icon-button" type="button" onClick={onClose} data-gamepad-close aria-label={details.closeCapture}>
             ×
           </button>
         </div>
 
-        {verifiedUrl ? (
+        {checkedUrl ? (
           <div className="link-capture-confirmation">
             {captureNotice ? <p className="source-feedback" role="status" aria-live="polite">{captureNotice}</p> : null}
-            <p className="link-capture-dialog__description">{details.linkFormatVerified}</p>
+            <p className="link-capture-dialog__description">{details.linkFormatChecked}</p>
             <div className="link-capture-confirmation__url">
               <span>{details.resolvedUrl}</span>
-              <code>{verifiedUrl}</code>
+              <code>{checkedUrl}</code>
             </div>
             <dl className="link-capture-confirmation__facts">
               <div><dt>{details.targetPath}</dt><dd>{targetPath}</dd></div>
@@ -192,8 +215,8 @@ export function LinkCaptureModal({
               <div><dt>{details.sha256}</dt><dd>{source.sha256 ? `${source.sha256.slice(0, 16)}…` : details.noTrustedChecksum}</dd></div>
             </dl>
             <div className="link-capture-dialog__actions">
-              <button className="button button--quiet" type="button" onClick={() => { setVerifiedUrl(null); setWarningAccepted(false); }}>{details.editLink}</button>
-              <button className="button button--white" type="button" ref={confirmationButtonRef} onClick={() => onConfirm(verifiedUrl)}>
+              <button className="button button--quiet" type="button" onClick={() => { setCheckedUrl(null); setWarningAccepted(false); }}>{details.editLink}</button>
+              <button className="button button--white" type="button" ref={confirmationButtonRef} onClick={() => onConfirm(checkedUrl)}>
                 {messages.downloads.addToQueue}
               </button>
             </div>
@@ -222,9 +245,10 @@ export function LinkCaptureModal({
                   onChange={(event) => {
                     setResolvedInput(event.target.value);
                     setValidationError(null);
-                    setTitleWarning(false);
+                    setFilenameWarning(false);
+                    setHostWarning(null);
                     setWarningAccepted(false);
-                    setVerifiedUrl(null);
+                    setCheckedUrl(null);
                     setCaptureNotice(null);
                   }}
                   placeholder="https://example.org/file.nro"
@@ -235,20 +259,23 @@ export function LinkCaptureModal({
               <small id="resolved-download-help">{details.pasteResolvedUrlHelp}</small>
 
               {validationError ? <p className="link-capture-error" role="alert">{validationError}</p> : null}
-              {titleWarning ? (
+              {hasLinkWarning ? (
                 <div className="link-capture-warning" role="alert">
-                  <p>{details.linkFilenameWarning}</p>
+                  {filenameWarning ? <p>{details.linkFilenameWarning}</p> : null}
+                  {hostWarning ? (
+                    <p>{interpolate(details.linkHostWarning, hostWarning)}</p>
+                  ) : null}
                   <label>
                     <input type="checkbox" checked={warningAccepted} onChange={(event) => setWarningAccepted(event.target.checked)} />
-                    <span>{details.acknowledgeLinkWarning}</span>
+                    <span>{details.acknowledgeLinkWarnings}</span>
                   </label>
                 </div>
               ) : null}
 
               <div className="link-capture-dialog__actions">
                 <button className="button button--quiet" type="button" onClick={onClose} data-gamepad-close>{details.cancelCapture}</button>
-                <button className="button button--white" type="submit" disabled={titleWarning && !warningAccepted}>
-                  {titleWarning ? details.continueToVerify : details.validateLink}
+                <button className="button button--white" type="submit" disabled={hasLinkWarning && !warningAccepted}>
+                  {hasLinkWarning ? details.continueToVerify : details.validateLink}
                 </button>
               </div>
             </form>

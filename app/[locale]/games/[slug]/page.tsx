@@ -5,9 +5,9 @@ import { CollectionToggle } from "@/components/catalog/collection-toggle";
 import { DownloadSourcePanel } from "@/components/catalog/download-source-panel";
 import { ScreenshotGallery } from "@/components/catalog/screenshot-gallery";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
-import { isPlatformCatalogId, PLATFORM_CATALOGS } from "@/lib/catalog/platforms";
+import { isPlatformCatalogId, PLATFORM_CATALOG_IDS, PLATFORM_CATALOGS } from "@/lib/catalog/platforms";
 import { formatFileSize } from "@/lib/catalog/format";
-import { getCatalogItem } from "@/lib/catalog/repository";
+import { getCatalogItem, getCatalogItems } from "@/lib/catalog/repository";
 import { isLocale } from "@/lib/catalog/types";
 import { getMessages } from "@/lib/i18n/dictionaries";
 
@@ -47,6 +47,18 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
   backParams.set("platform", item.catalogId);
   const backHref = `/${locale}?${backParams.toString()}`;
   const reportParams = new URLSearchParams({ platform: item.catalogId, itemSlug: item.slug });
+  const similarItems = PLATFORM_CATALOG_IDS
+    .flatMap((catalogId) => getCatalogItems(catalogId))
+    .filter((candidate) => candidate.slug !== item.slug)
+    .sort((left, right) => {
+      const rank = (candidate: typeof item) => candidate.categoryId === item.categoryId
+        ? 0
+        : candidate.catalogId === item.catalogId
+          ? 1
+          : 2;
+      return rank(left) - rank(right) || left.title[locale].localeCompare(right.title[locale], locale);
+    })
+    .slice(0, 8);
 
   return (
     <main className="detail-page">
@@ -76,6 +88,7 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
           <h1>{item.title[locale]}</h1>
           <p className="detail-hero__description">{item.description[locale]}</p>
           <div className="detail-hero__actions">
+            <DownloadSourcePanel item={item} locale={locale} messages={messages} />
             <CollectionToggle item={item} kind="favorite" locale={locale} messages={messages} />
           </div>
           <div className="detail-facts" aria-label={messages.details.title}>
@@ -101,8 +114,6 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
         </div>
       </section>
 
-      <DownloadSourcePanel item={item} locale={locale} messages={messages} />
-
       <section className="detail-gallery-section" aria-labelledby="screenshots-heading">
         <div className="section-heading">
           <div>
@@ -118,6 +129,35 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
           messages={messages}
         />
       </section>
+
+      {similarItems.length > 0 ? (
+        <section className="similar-games" aria-labelledby="similar-games-heading">
+          <div className="similar-games__heading">
+            <h2 id="similar-games-heading">{messages.catalog.similarGames}</h2>
+            <span className="result-count">{String(similarItems.length).padStart(2, "0")}</span>
+          </div>
+          <div className="similar-games__items">
+            {similarItems.map((similarItem) => (
+              <Link
+                className="similar-game"
+                href={"/" + locale + "/games/" + similarItem.slug + "?platform=" + similarItem.catalogId}
+                key={similarItem.catalogId + ":" + similarItem.slug}
+              >
+                <ArtworkImage
+                  src={similarItem.coverPath}
+                  alt={similarItem.title[locale]}
+                  title={similarItem.title[locale]}
+                  className="similar-game__art"
+                  sizes="180px"
+                  monogramOnly
+                />
+                <span className="similar-game__meta">{PLATFORM_CATALOGS[similarItem.catalogId].shortLabel} · {similarItem.category[locale]}</span>
+                <strong>{similarItem.title[locale]}</strong>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
     </main>
   );
 }

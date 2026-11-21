@@ -289,11 +289,14 @@ olacak.✅
 9-Mail yoluyla (veya başka bir şekilde) iletilen hata raporlama seçeneği olacak.✅
 10-İngilizce, Türkçe dil seçeneği olacak.✅
 
-11- Dualsense (options) tuşu ile ayarlara gidilecek bunu da aşağıdaki kontrol bilgilendirmelerinde gösterilecek.
-12- Discover kısmına masaüstündeki kısım eklenecek.
-13- Header düzeltilecek icon isim sola geri kalanlar ortaya sağ kısım aynı kalacak.
+11- Dualsense (options) tuşu ile ayarlara gidilecek bunu da aşağıdaki kontrol bilgilendirmelerinde gösterilecek.✅
+12-. Discover kısmına masaüstündeki (resimdeki) kısım eklenecek.✅
+13- Header düzeltilecek icon isim sola geri kalanlar ortaya sağ kısım aynı kalacak.✅
 14- Deneme oyunları ve linkleri eklenecek.
-15- Ayarlar en alta uygulama güncelleme kısmı eklenecek. Backendde yeni sürü çıkınca otomatik güncelleme bildirimi ve güncelleme özelliği getirilecek.
+15- Ayarlar en alta uygulama güncelleme kısmı eklenecek. Backendde yeni sürüm çıkınca otomatik güncelleme bildirimi ve güncelleme özelliği getirilecek.(github releases takibi)✅
 16- UI ses efectleri eklenecek.
+17- oyun sayfası Available sources kısmı kaldırılacak 'add favorities' buttonun yanına indirme kısmı açılacak. En altta buna benzer adlı bir tek satırlı kısım olacak✅
 
+18- topbar stiky kalacak aşağı gelince kayboluyor.
+19- oyunların json dosyaları okunacak resimleri eklenecek.
 -->

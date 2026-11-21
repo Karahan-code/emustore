@@ -6,7 +6,9 @@ import { CollectionsProvider } from "@/components/shell/collections-provider";
 import { ConsoleHeader } from "@/components/shell/console-header";
 import { ControllerHintBar } from "@/components/shell/controller-hint-bar";
 import { InputNavigation } from "@/components/shell/input-navigation";
+import { SearchDialog } from "@/components/shell/search-dialog";
 import { SectionNavigation } from "@/components/shell/section-navigation";
+import { UiSoundEffects } from "@/components/shell/ui-sound-effects";
 import { isLocale, type Locale } from "@/lib/catalog/types";
 import { getMessages } from "@/lib/i18n/dictionaries";
 import "../globals.css";
@@ -53,7 +55,9 @@ export default async function LocaleLayout({
     >
       <body className="min-h-full bg-console text-console-text">
         <CollectionsProvider>
-          <InputNavigation />
+          <Suspense fallback={null}><InputNavigation /></Suspense>
+          <UiSoundEffects />
+          <Suspense fallback={null}><SearchDialog locale={locale} messages={messages} /></Suspense>
           <Suspense fallback={null}><SectionNavigation locale={locale} /></Suspense>
           <div className="app-shell">
             <ConsoleHeader locale={locale} messages={messages} />

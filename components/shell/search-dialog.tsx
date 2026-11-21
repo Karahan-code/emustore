@@ -5,10 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { isPlatformCatalogId } from "@/lib/catalog/platforms";
 import type { Locale } from "@/lib/catalog/types";
 import type { Messages } from "@/lib/i18n/dictionaries";
-
-function isTextEntry(target: EventTarget | null): boolean {
-  return target instanceof Element && target.matches("input, textarea, select, [contenteditable='true']");
-}
+import { SEARCH_OPEN_EVENT, SEARCH_TOGGLE_EVENT } from "@/lib/input/events";
 
 type SearchDialogProps = { locale: Locale; messages: Messages };
 
@@ -30,16 +27,16 @@ export function SearchDialog({ locale, messages }: SearchDialogProps) {
   }, [isOpen]);
 
   const openSearch = useCallback(() => setIsOpen(true), []);
+  const toggleSearch = useCallback(() => setIsOpen((current) => !current), []);
 
   useEffect(() => {
-    const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key.toLowerCase() !== "q" || event.metaKey || event.ctrlKey || event.altKey || isTextEntry(event.target)) return;
-      event.preventDefault();
-      openSearch();
+    window.addEventListener(SEARCH_OPEN_EVENT, openSearch);
+    window.addEventListener(SEARCH_TOGGLE_EVENT, toggleSearch);
+    return () => {
+      window.removeEventListener(SEARCH_OPEN_EVENT, openSearch);
+      window.removeEventListener(SEARCH_TOGGLE_EVENT, toggleSearch);
     };
-    window.addEventListener("keydown", onKeyDown);
-    return () => window.removeEventListener("keydown", onKeyDown);
-  }, [openSearch]);
+  }, [openSearch, toggleSearch]);
 
   function submitSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -59,11 +56,6 @@ export function SearchDialog({ locale, messages }: SearchDialogProps) {
 
   return (
     <>
-      <button className="search-trigger" type="button" onClick={openSearch} aria-haspopup="dialog" aria-expanded={isOpen}>
-        <span aria-hidden="true">⌕</span>
-        <kbd>Q</kbd>
-        <span>{messages.navigation.search}</span>
-      </button>
       {isOpen ? (
         <div className="search-overlay" onMouseDown={(event) => { if (event.target === event.currentTarget) setIsOpen(false); }}>
           <section className="search-dialog" role="dialog" aria-modal="true" aria-labelledby="global-search-title">

@@ -8,7 +8,6 @@ export const PLATFORM_CATALOG_IDS = [
 ] as const;
 
 export type PlatformCatalogId = (typeof PLATFORM_CATALOG_IDS)[number];
-export type TargetPathKey = `paths.${PlatformCatalogId}`;
 
 export type PlatformFileFormat = {
   readonly label: string;
@@ -20,7 +19,6 @@ export type PlatformCatalogDefinition = {
   readonly label: string;
   readonly shortLabel: string;
   readonly formats: readonly PlatformFileFormat[];
-  readonly defaultSuggestedTargetPathKey: TargetPathKey;
 };
 
 export const PLATFORM_CATALOGS = {
@@ -35,7 +33,6 @@ export const PLATFORM_CATALOGS = {
       { label: "CCD/IMG disc image", extensions: [".ccd", ".img", ".sub"] },
       { label: "ISO disc image", extensions: [".iso"] },
     ],
-    defaultSuggestedTargetPathKey: "paths.ps1",
   },
   ps2: {
     id: "ps2",
@@ -48,7 +45,6 @@ export const PLATFORM_CATALOGS = {
       { label: "ZSO compressed image", extensions: [".zso"] },
       { label: "ELF executable", extensions: [".elf"] },
     ],
-    defaultSuggestedTargetPathKey: "paths.ps2",
   },
   ps3: {
     id: "ps3",
@@ -58,7 +54,6 @@ export const PLATFORM_CATALOGS = {
       { label: "PKG package", extensions: [".pkg"] },
       { label: "ISO disc image", extensions: [".iso"] },
     ],
-    defaultSuggestedTargetPathKey: "paths.ps3",
   },
   switch: {
     id: "switch",
@@ -70,7 +65,6 @@ export const PLATFORM_CATALOGS = {
       { label: "NSP package", extensions: [".nsp"] },
       { label: "XCI game-card image", extensions: [".xci"] },
     ],
-    defaultSuggestedTargetPathKey: "paths.switch",
   },
   wii: {
     id: "wii",
@@ -83,7 +77,6 @@ export const PLATFORM_CATALOGS = {
       { label: "GameCube/Wii compressed image", extensions: [".gcz"] },
       { label: "DOL homebrew executable", extensions: [".dol"] },
     ],
-    defaultSuggestedTargetPathKey: "paths.wii",
   },
   wiiu: {
     id: "wiiu",
@@ -95,7 +88,6 @@ export const PLATFORM_CATALOGS = {
       { label: "WUA archive", extensions: [".wua"] },
       { label: "RPX executable", extensions: [".rpx"] },
     ],
-    defaultSuggestedTargetPathKey: "paths.wiiu",
   },
 } as const satisfies Record<PlatformCatalogId, PlatformCatalogDefinition>;
 

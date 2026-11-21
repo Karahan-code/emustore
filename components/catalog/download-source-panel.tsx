@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { LinkCaptureModal } from "@/components/catalog/link-capture-modal";
 import { useCollections } from "@/components/shell/collections-provider";
 import { formatFileSize } from "@/lib/catalog/format";
@@ -28,10 +28,40 @@ function readSuggestedTargetPath(item: CatalogItem): string {
 export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePanelProps) {
   const collections = useCollections();
   const adapter = useMemo(() => createLinkCaptureAdapter(), []);
+  const launcherRef = useRef<HTMLButtonElement>(null);
+  const dialogRef = useRef<HTMLElement>(null);
+  const wasOpen = useRef(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [activeSource, setActiveSource] = useState<DownloadSource | null>(null);
   const [targetPath, setTargetPath] = useState(DEFAULT_SUGGESTED_PATHS[item.catalogId]);
   const [feedback, setFeedback] = useState<string | null>(null);
   const sources = useMemo(() => [...item.sources].sort((left, right) => left.priority - right.priority), [item.sources]);
+
+  useEffect(() => {
+    if (isOpen) {
+      dialogRef.current?.querySelector<HTMLElement>("button:not(:disabled), a[href]")?.focus();
+    } else if (wasOpen.current) {
+      launcherRef.current?.focus();
+    }
+    wasOpen.current = isOpen;
+  }, [isOpen]);
+
+  function trapDialogFocus(event: KeyboardEvent<HTMLElement>) {
+    if (event.key !== "Tab") return;
+    const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+      "a[href], button:not(:disabled), input:not(:disabled), [tabindex]:not([tabindex='-1'])",
+    );
+    if (!focusable?.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
 
   function addSourceToQueue(source: DownloadSource, resolvedUrl?: string, targetPathOverride?: string) {
     const selectedTargetPath = targetPathOverride ?? readSuggestedTargetPath(item);
@@ -58,6 +88,7 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
     if (source.deliveryMode === "browser_verify") {
       setTargetPath(readSuggestedTargetPath(item));
       setActiveSource(source);
+      setIsOpen(false);
       return;
     }
     if (source.deliveryMode === "direct" || source.deliveryMode === "github_api") {
@@ -68,13 +99,20 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
   }
 
   return (
-    <section className="download-sources" aria-labelledby="download-sources-title">
+    <>
+      <button ref={launcherRef} className="button button--white download-source-launcher" type="button" onClick={() => setIsOpen(true)} aria-haspopup="dialog" aria-expanded={isOpen}>
+        {messages.details.download}
+      </button>
+      {isOpen ? (
+        <div className="download-source-overlay" onMouseDown={(event) => { if (event.target === event.currentTarget) setIsOpen(false); }}>
+    <section className="download-source-dialog download-sources" role="dialog" aria-modal="true" aria-labelledby="download-sources-title" ref={dialogRef} onKeyDown={trapDialogFocus}>
       <div className="section-heading section-heading--compact">
         <div>
-          <p className="eyebrow">{messages.details.verification}</p>
+          <p className="eyebrow">{messages.details.download}</p>
           <h2 id="download-sources-title">{messages.details.downloadSources}</h2>
         </div>
         <span className="result-count">{String(sources.length).padStart(2, "0")}</span>
+        <button className="icon-button" type="button" onClick={() => setIsOpen(false)} data-gamepad-close aria-label={messages.details.closeSources}>×</button>
       </div>
       <p className="download-sources__notice">{messages.details.sourceNotice}</p>
       {feedback ? <p className="source-feedback" role="status" aria-live="polite">{feedback}</p> : null}
@@ -118,6 +156,9 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
         ))}
       </div>
 
+    </section>
+        </div>
+      ) : null}
       {activeSource ? (
         <LinkCaptureModal
           adapter={adapter}
@@ -126,13 +167,14 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
           targetPath={targetPath}
           locale={locale}
           messages={messages}
-          onClose={() => setActiveSource(null)}
+          onClose={() => { setActiveSource(null); setIsOpen(true); }}
           onConfirm={(resolvedUrl) => {
             addSourceToQueue(activeSource, resolvedUrl, targetPath);
             setActiveSource(null);
+            setIsOpen(true);
           }}
         />
       ) : null}
-    </section>
+    </>
   );
 }

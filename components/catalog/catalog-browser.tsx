@@ -224,7 +224,7 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
       const params = new URLSearchParams({
         platform: catalogId,
         locale,
-        limit: "20",
+        limit: "100",
         offset: "0",
         sort: "rating",
       });

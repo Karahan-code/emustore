@@ -21,8 +21,11 @@ export function SectionLinks({ locale, messages }: SectionLinksProps) {
   browseParams.delete("itemSlug");
   const browseActive = pathname === `/${locale}` && searchParams.get("view") === "browse";
 
+  const favoritesActive = pathname === "/" + locale + "/favorites";
+  const downloadsActive = pathname === "/" + locale + "/downloads";
+
   return (
-    <nav className="topbar-sections" aria-label={messages.navigation.discover}>
+    <nav className="topbar-sections" aria-label={messages.navigation.primaryNavigation}>
       <span className="section-hint" aria-hidden="true">L1</span>
       <Link className={`topbar-section${active ? " topbar-section--active" : ""}`} href={`/${locale}?${params.toString()}`} aria-current={active ? "page" : undefined}>
         {messages.navigation.discover}
@@ -30,6 +33,13 @@ export function SectionLinks({ locale, messages }: SectionLinksProps) {
       <Link className={`topbar-section${browseActive ? " topbar-section--active" : ""}`} href={`/${locale}?${browseParams.toString()}`} aria-current={browseActive ? "page" : undefined}>
         {messages.navigation.browse}
       </Link>
+      <Link className={"topbar-section" + (favoritesActive ? " topbar-section--active" : "")} href={"/" + locale + "/favorites"} aria-current={favoritesActive ? "page" : undefined}>
+        {messages.navigation.favorites}
+      </Link>
+      <Link className={"topbar-section" + (downloadsActive ? " topbar-section--active" : "")} href={"/" + locale + "/downloads"} aria-current={downloadsActive ? "page" : undefined}>
+        {messages.navigation.downloads}
+      </Link>
+      <span className="section-hint" aria-hidden="true">R1</span>
     </nav>
   );
 }

@@ -1,6 +1,8 @@
 {
   "navigation": {
     "brand": "EmuStore",
+    "primaryNavigation": "Primary navigation",
+    "utilities": "Utilities",
     "search": "Search",
     "discover": "Discover",
     "browse": "Browse",
@@ -26,6 +28,10 @@
     "description": "Browse the {platform} catalog.",
     "featured": "Featured spotlight",
     "popularNow": "Popular now",
+    "theLibrary": "The library",
+    "titleCount": "{count} titles",
+    "librarySearchPlaceholder": "Search the library",
+    "similarGames": "Similar games",
     "browseLibrary": "Browse library",
     "score": "Score",
     "unrated": "Not rated",
@@ -66,6 +72,8 @@
     "title": "Game details",
     "verification": "Sources",
     "downloadSources": "Available sources",
+    "download": "Download",
+    "closeSources": "Close download sources",
     "sourceNotice": "Sources point to open-source project pages. EmuStore does not host game files.",
     "deliveryMode": "Delivery mode",
     "deliveryModes": {
@@ -91,11 +99,12 @@
     "extensionUnsupported": "This extension is not supported by the selected console.",
     "extensionMismatch": "The link extension does not match this source format.",
     "linkFilenameWarning": "The URL does not appear to include this game's title or slug. Check it carefully before continuing.",
-    "acknowledgeLinkWarning": "I checked this link and want to continue.",
     "validateLink": "Validate link",
     "continueToVerify": "Continue",
-    "linkVerifiedTitle": "Link Verified",
-    "linkFormatVerified": "The URL scheme and extension passed local checks. The file contents and checksum were not verified.",
+    "linkHostWarning": "This URL's host differs from the source page. Expected: {expectedHost}; pasted: {actualHost}. Check the host before continuing.",
+    "acknowledgeLinkWarnings": "I reviewed the warnings and want to continue.",
+    "linkFormatCheckedTitle": "Link format checked",
+    "linkFormatChecked": "This URL passed local format checks. In Web Preview Mode, EmuStore does not inspect the remote file contents or verify the host's integrity or SHA-256 checksum.",
     "resolvedUrl": "Resolved URL",
     "targetPath": "Target path preference",
     "editLink": "Edit link",
@@ -138,7 +147,10 @@
     "unsaved": "You have unsaved changes.",
     "invalidPath": "Each path must contain between 1 and 256 characters.",
     "storageUnavailable": "Browser storage is unavailable. Changes could not be saved.",
-    "storageNote": "Preferences are stored in this browser's local storage."
+    "storageNote": "Preferences are stored in this browser's local storage.",
+    "uiSounds": "UI Sound Effects",
+    "uiSoundsDescription": "Subtle console tones for focus, selection, dialogs, and back actions. Stored in this browser.",
+    "uiSoundsEnabled": "Enable sound effects"
   },
   "reports": {
     "title": "Report a problem",
@@ -209,6 +221,8 @@
   "controller": {
     "controlsLabel": "Controller controls",
     "select": "Select",
+    "search": "Search",
+    "options": "Options",
     "filters": "Filters",
     "favorite": "Favorite",
     "back": "Back",

@@ -1,6 +1,8 @@
 {
   "navigation": {
     "brand": "EmuStore",
+    "primaryNavigation": "Ana gezinme",
+    "utilities": "Yardımcı kontroller",
     "search": "Ara",
     "discover": "Keşfet",
     "browse": "Göz at",
@@ -26,6 +28,10 @@
     "description": "{platform} kataloğuna göz atın.",
     "featured": "Öne çıkan",
     "popularNow": "Şimdi popüler",
+    "theLibrary": "Kütüphane",
+    "titleCount": "{count} başlık",
+    "librarySearchPlaceholder": "Kütüphanede ara",
+    "similarGames": "Buna benzer",
     "browseLibrary": "Kütüphaneye göz at",
     "score": "Puan",
     "unrated": "Puanlanmamış",
@@ -66,6 +72,8 @@
     "title": "Oyun detayları",
     "verification": "Kaynaklar",
     "downloadSources": "Mevcut kaynaklar",
+    "download": "İndir",
+    "closeSources": "İndirme kaynaklarını kapat",
     "sourceNotice": "Kaynaklar açık kaynaklı proje sayfalarına yönlendirir. EmuStore oyun dosyası barındırmaz.",
     "deliveryMode": "İletim yöntemi",
     "deliveryModes": {
@@ -91,11 +99,12 @@
     "extensionUnsupported": "Bu uzantı seçili konsolda desteklenmiyor.",
     "extensionMismatch": "Bağlantının uzantısı bu kaynak biçimiyle eşleşmiyor.",
     "linkFilenameWarning": "URL bu oyunun başlığını veya slug değerini içermiyor gibi görünüyor. Devam etmeden önce bağlantıyı kontrol edin.",
-    "acknowledgeLinkWarning": "Bağlantıyı kontrol ettim ve devam etmek istiyorum.",
     "validateLink": "Bağlantıyı doğrula",
     "continueToVerify": "Devam et",
-    "linkVerifiedTitle": "Bağlantı doğrulandı",
-    "linkFormatVerified": "URL şeması ve uzantısı yerel kontrollerden geçti. Dosya içeriği ve sağlama toplamı doğrulanmadı.",
+    "linkHostWarning": "Bu URL'nin ana bilgisayarı kaynak sayfasından farklı. Beklenen: {expectedHost}; yapıştırılan: {actualHost}. Devam etmeden önce ana bilgisayarı kontrol edin.",
+    "acknowledgeLinkWarnings": "Uyarıları inceledim ve devam etmek istiyorum.",
+    "linkFormatCheckedTitle": "Bağlantı biçimi kontrol edildi",
+    "linkFormatChecked": "Bu URL yerel biçim denetimlerinden geçti. Web Önizleme Modunda EmuStore uzaktaki dosyanın içeriğini incelemez, ana bilgisayarın bütünlüğünü veya SHA-256 sağlama toplamını doğrulamaz.",
     "resolvedUrl": "Çözümlenen URL",
     "targetPath": "Hedef yol tercihi",
     "editLink": "Bağlantıyı düzenle",
@@ -138,7 +147,10 @@
     "unsaved": "Kaydedilmemiş değişiklikler var.",
     "invalidPath": "Her yol 1 ile 256 karakter arasında olmalıdır.",
     "storageUnavailable": "Tarayıcı depolaması kullanılamıyor. Değişiklikler kaydedilemedi.",
-    "storageNote": "Tercihler bu tarayıcının yerel depolamasında saklanır."
+    "storageNote": "Tercihler bu tarayıcının yerel depolamasında saklanır.",
+    "uiSounds": "Arayüz ses efektleri",
+    "uiSoundsDescription": "Odak, seçim, pencereler ve geri işlemleri için hafif konsol sesleri. Bu tarayıcıda saklanır.",
+    "uiSoundsEnabled": "Ses efektlerini etkinleştir"
   },
   "reports": {
     "title": "Sorun bildir",
@@ -209,6 +221,8 @@
   "controller": {
     "controlsLabel": "Kontrolcü kontrolleri",
     "select": "Seç",
+    "search": "Ara",
+    "options": "Options",
     "filters": "Filtreler",
     "favorite": "Favori",
     "back": "Geri",

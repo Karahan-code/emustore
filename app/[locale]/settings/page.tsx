@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { TargetPathSettings } from "@/components/settings/target-path-settings";
+import { UiSoundToggle } from "@/components/settings/ui-sound-toggle";
 import { isLocale } from "@/lib/catalog/types";
 import { getMessages } from "@/lib/i18n/dictionaries";
 
@@ -21,6 +22,7 @@ export default async function SettingsPage({ params }: SettingsPageProps) {
       </section>
 
       <TargetPathSettings messages={messages} />
+      <UiSoundToggle messages={messages} />
 
       <section className="report-callout">
         <div>
