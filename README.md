@@ -25,7 +25,26 @@
 
 ---
 
-## 📸 Preview (Alpha Footage)
+
+## ✨ About
+
+> 🚧 EmuStore is currently under active development.
+
+**EmuStore** is a PlayStation 5 homebrew application designed to provide a clean, fast, and console-friendly way to browse and download emulator games directly into each emulator's target directory.
+
+Built specifically around a native PS5 and DualSense experience rather than behaving like a conventional web dashboard, it automatically routes downloads for supported platforms (`PS1`, `PS2`, `PS3`, `Switch`, `Wii`, `Wii U`) straight to their corresponding emulator folders—with fully customizable paths in Settings.
+
+### 🎯 Main Goals
+
+- 🎮 Console-focused user interface
+- 🏪 Homebrew application store
+- 🕹️ Game install directly to your emulator folders
+- 🔎 Fast search and categorization
+- 🎛️ Controller-friendly navigation
+
+---
+
+## 🖼️ Screenshots
 
 <p align="center">
   <sub><em>⚠️ Early alpha footage (v0.1.0) — UI, artwork, and features are subject to change.</em></sub>
@@ -39,61 +58,6 @@
 <p align="center">
   <img src="public/alphaimg/3.png" alt="EmuStore Alpha Footage - Library View" width="100%" />
 </p>
-
-## ✨ About
-
-> 🚧 EmuStore is currently under active development.
-
-**EmuStore** is a PlayStation 5 homebrew store project designed to provide a clean, fast and console-friendly way to discover and manage homebrew applications, emulators, tools and utilities.
-
-The project is designed specifically around the experience of using a store directly on a PS5 rather than behaving like a conventional web dashboard.
-
-### 🎯 Main Goals
-
-- 🎮 Console-focused user interface
-- 🏪 Homebrew application store
-- 🕹️ Emulator discovery
-- 🔎 Fast search and categorization
-- 🎛️ Controller-friendly navigation
-
----
-
-
-**Current development focus:**
-
-- Store UI
-- Home screen
-- Emulator catalog
-- Platform categories
-- Application details
-- Installation/update architecture
-
----
-
-## 🖼️ Screenshots
-
-> Screenshots will be added as the PS5 UI reaches the first public preview.
-
-<p align="center">
-</p>
-
-<p align="center">
-</p>
-
----
-
-
-## 🎮 Supported Platforms
-
-EmuStore can provide metadata and application support for projects targeting platforms such as:
-
-- PlayStation
-- Nintendo
-- Sega
-- Arcade
-- Atari
-- Other retro platforms
-
 
 ---
 
@@ -191,13 +155,13 @@ The development interface can then be accessed locally through the configured Ne
 - [ ] Installed applications
 - [x] Favorites
 - [ ] Version tracking
-- [ ] Update detection
-- [ ] Update interface
+- [x] Update detection
+- [x] Update interface
 
 ### Phase 4 — PS5 Integration
 
 - [ ] Native PS5 client
-- [ ] Controller navigation
+- [x] Controller navigation
 - [ ] Package management
 - [ ] Installation workflow
 - [ ] Update workflow
@@ -220,22 +184,6 @@ EmuStore is intended as a platform for homebrew applications, emulators, tools a
 EmuStore does **not** intend to distribute copyrighted commercial game ROMs, ISOs or other unauthorized copies of copyrighted content.
 
 Users are responsible for ensuring that the software, game backups and other content they use comply with applicable laws and the rights of the respective copyright holders.
-
----
-
-## 🤝 Contributing
-
-Contributions, ideas and bug reports are welcome.
-
-Before submitting a pull request:
-
-1. Fork the repository.
-2. Create a feature branch.
-3. Make your changes.
-4. Test your changes.
-5. Submit a pull request.
-
-For larger changes, please open an issue first to discuss the proposed implementation.
 
 ---
 
@@ -280,14 +228,14 @@ See [`LICENSE`](LICENSE) for details.
 
 ---
 
-<p align="center">
+## 🤍 Special Thanks
 
-**EmuStore**
+Special thanks for these devalopers for awsome works. I drew a lot of inspiration from them.
 
-*Homebrew. Emulation. One Store.*
+- Overdrive creator <a href="https://github.com/Edigax">Edigax</a>
+- Blackbox creator <a href="https://github.com/D3ATHLY/blackbox">D3ATHLY</a>
 
-</p>
-
+---
 
 <!-- 
 
