@@ -47,6 +47,8 @@ export type DownloadSource = {
   verifiedAt?: string;
 };
 
+export type DownloadSourceInput = DownloadSource | string;
+
 export type CatalogItem = {
   slug: string;
   catalogId: PlatformCatalogId;
@@ -60,6 +62,10 @@ export type CatalogItem = {
   sizeBytes: number;
   sizeBytesEstimated: boolean;
   ratingScore?: number;
+  metacritic?: number;
+  rating?: number;
+  ratingsCount?: number;
+  releasedAt?: string;
   fileFormat: string;
   fileExtension: string;
   coverPath?: string;
@@ -72,7 +78,7 @@ export type CatalogItem = {
   sampleData: boolean;
 };
 
-export type CatalogSort = "title" | "size" | "updated" | "rating";
+export type CatalogSort = "popular" | "title" | "size" | "updated" | "rating";
 
 export type CatalogQuery = {
   platform: PlatformCatalogId;

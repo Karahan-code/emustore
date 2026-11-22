@@ -44,11 +44,23 @@ function mergeFacets(facets: CatalogFacets[]): CatalogFacets {
   };
 }
 
+function releaseSortKey(item: CatalogItem): string {
+  if (item.releasedAt) return item.releasedAt;
+  if (/^\d{4}$/.test(item.version)) return `${item.version}-01-01`;
+  return item.updatedAt;
+}
+
 function sortItems(items: CatalogItem[], sort: CatalogSort, locale: Locale): CatalogItem[] {
   return [...items].sort((left, right) => {
+    if (sort === "popular") return (right.ratingsCount ?? 0) - (left.ratingsCount ?? 0);
     if (sort === "size") return left.sizeBytes - right.sizeBytes;
-    if (sort === "updated") return right.updatedAt.localeCompare(left.updatedAt);
-    if (sort === "rating") return (right.ratingScore ?? -1) - (left.ratingScore ?? -1);
+    if (sort === "updated") return releaseSortKey(right).localeCompare(releaseSortKey(left));
+    if (sort === "rating") {
+      return (
+        (right.metacritic ?? right.ratingScore ?? -1) - (left.metacritic ?? left.ratingScore ?? -1) ||
+        (right.rating ?? 0) - (left.rating ?? 0)
+      );
+    }
     return left.title[locale].localeCompare(right.title[locale], locale);
   });
 }
@@ -61,7 +73,13 @@ function normalizeExtension(value: string): string {
 }
 
 function isCatalogSort(value: string | null): value is CatalogSort {
-  return value === "title" || value === "size" || value === "updated" || value === "rating";
+  return (
+    value === "popular" ||
+    value === "title" ||
+    value === "size" ||
+    value === "updated" ||
+    value === "rating"
+  );
 }
 
 export function CatalogBrowser({ locale }: CatalogBrowserProps) {
@@ -226,7 +244,7 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
         locale,
         limit: "100",
         offset: "0",
-        sort: "rating",
+        sort: "popular",
       });
       try {
         const result = await fetch(`/api/v1/items?${params.toString()}`, {
@@ -241,9 +259,18 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
       }
     }))
       .then((catalogs) => {
-        const combined = catalogs.flat();
-        const activeIndex = combined.findIndex((item) => item.catalogId === platform);
-        if (activeIndex > 4) combined.unshift(...combined.splice(activeIndex, 1));
+        const activePos = PLATFORM_CATALOG_IDS.indexOf(platform);
+        const orderedCatalogs = activePos > 0
+          ? [catalogs[activePos], ...catalogs.slice(0, activePos), ...catalogs.slice(activePos + 1)]
+          : catalogs;
+        const maxLength = orderedCatalogs.reduce((max, list) => Math.max(max, list.length), 0);
+        const combined: CatalogItem[] = [];
+        for (let rowIndex = 0; rowIndex < maxLength; rowIndex += 1) {
+          for (const list of orderedCatalogs) {
+            const candidate = list[rowIndex];
+            if (candidate) combined.push(candidate);
+          }
+        }
         setDiscoverFeed(combined);
       })
       .catch((error: unknown) => {

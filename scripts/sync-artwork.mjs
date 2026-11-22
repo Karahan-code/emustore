@@ -157,20 +157,19 @@ async function fetchJsonWithRetry(url, options, scheduleRequest) {
   }
 }
 
-async function findSteamGridDbId(item, query, artwork, steamGridDbKey, scheduleSteamGrid) {
-  if (Number.isSafeInteger(artwork.steamGridDbId) && artwork.steamGridDbId > 0) {
-    return artwork.steamGridDbId;
-  }
-
-  const endpoint = "https://www.steamgriddb.com/api/v2/search/autocomplete/" + encodeURIComponent(query);
+async function searchSteamGridDbAutocomplete(searchTerm, steamGridDbKey, scheduleSteamGrid) {
+  const endpoint = "https://www.steamgriddb.com/api/v2/search/autocomplete/" + encodeURIComponent(searchTerm);
   const response = await fetchJsonWithRetry(
     endpoint,
     { headers: { Authorization: "Bearer " + steamGridDbKey } },
     scheduleSteamGrid,
   );
-  const results = Array.isArray(response.data) ? response.data : [];
-  const normalizedQuery = normalizeName(query);
-  const normalizedBaseQuery = normalizeName(stripYearSuffix(query));
+  return Array.isArray(response.data) ? response.data : [];
+}
+
+function matchSteamGridResult(results, searchTerm, item) {
+  const normalizedQuery = normalizeName(searchTerm);
+  const normalizedBaseQuery = normalizeName(stripYearSuffix(searchTerm));
   const normalizedEn = normalizeName(item.title.en);
   const normalizedTr = normalizeName(item.title.tr);
 
@@ -196,26 +195,93 @@ async function findSteamGridDbId(item, query, artwork, steamGridDbKey, scheduleS
   return undefined;
 }
 
-async function findSteamGridDbCover(item, query, artwork, steamGridDbKey, scheduleSteamGrid) {
-  const id = await findSteamGridDbId(item, query, artwork, steamGridDbKey, scheduleSteamGrid);
-  if (!Number.isSafeInteger(id) || id <= 0) return null;
+async function findSteamGridDbId(item, query, artwork, steamGridDbKey, scheduleSteamGrid) {
+  if (Number.isSafeInteger(artwork.steamGridDbId) && artwork.steamGridDbId > 0) {
+    return artwork.steamGridDbId;
+  }
 
-  const endpoint = "https://www.steamgriddb.com/api/v2/grids/game/" + id + "?dimensions=600x900&types=static&nsfw=false&humor=false";
+  const results = await searchSteamGridDbAutocomplete(query, steamGridDbKey, scheduleSteamGrid);
+  const primaryId = matchSteamGridResult(results, query, item);
+  if (primaryId) return primaryId;
+
+  const trimmedQuery = stripYearSuffix(query);
+  if (trimmedQuery && trimmedQuery !== query) {
+    const fallbackResults = await searchSteamGridDbAutocomplete(trimmedQuery, steamGridDbKey, scheduleSteamGrid);
+    return matchSteamGridResult(fallbackResults, trimmedQuery, item);
+  }
+
+  return undefined;
+}
+
+function pickBestPortraitGrid(grids, maxAspectDelta) {
+  const candidates = grids.filter((grid) => {
+    if (!hasUrl(grid.url) || grid.nsfw === true || grid.humor === true) return false;
+    if (!Number.isFinite(grid.width) || !Number.isFinite(grid.height) || grid.height <= 0 || grid.width <= 0) {
+      return true;
+    }
+    if (grid.height <= grid.width) return false;
+    return Math.abs(grid.width / grid.height - 2 / 3) <= maxAspectDelta;
+  });
+
+  if (candidates.length === 0) return null;
+
+  candidates.sort((left, right) => {
+    const leftRatio = left.width && left.height ? Math.abs(left.width / left.height - 2 / 3) : 0.25;
+    const rightRatio = right.width && right.height ? Math.abs(right.width / right.height - 2 / 3) : 0.25;
+    if (Math.abs(leftRatio - rightRatio) > 0.015) return leftRatio - rightRatio;
+    const scoreDiff = (Number(right.upvotes ?? 0) || 0) - (Number(left.upvotes ?? 0) || 0);
+    if (scoreDiff !== 0) return scoreDiff;
+    return (Number(right.width ?? 0) || 0) - (Number(left.width ?? 0) || 0);
+  });
+
+  return candidates[0].url;
+}
+
+async function fetchSteamGridTier(id, queryString, steamGridDbKey, scheduleSteamGrid) {
+  const endpoint = `https://www.steamgriddb.com/api/v2/grids/game/${id}?${queryString}`;
   const response = await fetchJsonWithRetry(
     endpoint,
     { headers: { Authorization: "Bearer " + steamGridDbKey } },
     scheduleSteamGrid,
   );
-  const grids = Array.isArray(response.data) ? response.data : [];
-  const portrait = grids.find((grid) => {
-    if (!hasUrl(grid.url)) return false;
-    if (!Number.isFinite(grid.width) || !Number.isFinite(grid.height) || grid.height <= 0) return true;
-    return Math.abs(grid.width / grid.height - 2 / 3) < 0.035;
-  });
+  return Array.isArray(response.data) ? response.data : [];
+}
 
-  if (!portrait) return null;
+async function findSteamGridDbCover(item, query, artwork, steamGridDbKey, scheduleSteamGrid) {
+  const id = await findSteamGridDbId(item, query, artwork, steamGridDbKey, scheduleSteamGrid);
+  if (!Number.isSafeInteger(id) || id <= 0) return null;
+
+  const exactStaticGrids = await fetchSteamGridTier(
+    id,
+    "dimensions=600x900&types=static&nsfw=false&humor=false",
+    steamGridDbKey,
+    scheduleSteamGrid,
+  );
+  let coverUrl = pickBestPortraitGrid(exactStaticGrids, 0.05);
+
+  if (!coverUrl) {
+    const verticalStaticGrids = await fetchSteamGridTier(
+      id,
+      "types=static&nsfw=false&humor=false",
+      steamGridDbKey,
+      scheduleSteamGrid,
+    );
+    coverUrl = pickBestPortraitGrid(verticalStaticGrids, 0.15);
+  }
+
+  if (!coverUrl) {
+    const anyPortraitGrids = await fetchSteamGridTier(
+      id,
+      "dimensions=600x900&nsfw=false&humor=false",
+      steamGridDbKey,
+      scheduleSteamGrid,
+    );
+    coverUrl = pickBestPortraitGrid(anyPortraitGrids, 0.05);
+  }
+
+  if (!coverUrl) return null;
   artwork.steamGridDbId = id;
-  return portrait.url;
+  return coverUrl;
 }
 
 async function findRawgGame(item, query, artwork, rawgKey, scheduleRawg) {

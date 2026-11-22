@@ -19,7 +19,7 @@ type CatalogFilterBarProps = {
   onClear: () => void;
 };
 
-const SORTS: CatalogSort[] = ["title", "size", "updated", "rating"];
+const SORTS: CatalogSort[] = ["popular", "rating", "updated", "title", "size"];
 
 export function CatalogFilterBar({
   facets,
@@ -60,7 +60,7 @@ export function CatalogFilterBar({
           <select value={sort} onChange={(event) => onChange("sort", event.target.value)} aria-label={messages.filters.sort}>
             {SORTS.map((sortKey) => (
               <option value={sortKey} key={sortKey}>
-                {messages.filters[`sort${sortKey[0].toUpperCase()}${sortKey.slice(1)}` as "sortTitle" | "sortSize" | "sortUpdated" | "sortRating"]}
+                {messages.filters[`sort${sortKey[0].toUpperCase()}${sortKey.slice(1)}` as "sortPopular" | "sortTitle" | "sortSize" | "sortUpdated" | "sortRating"]}
               </option>
             ))}
           </select>

@@ -83,12 +83,12 @@ const GENRE_MAP = {
 };
 
 const ALLOWED_EXTENSIONS = {
-  ps1: new Set([".chd", ".cue", ".bin", ".pbp", ".ccd", ".img", ".sub", ".iso"]),
-  ps2: new Set([".iso", ".chd", ".cso", ".zso", ".elf"]),
-  ps3: new Set([".pkg", ".iso"]),
-  switch: new Set([".nro", ".nso", ".nsp", ".xci"]),
-  wii: new Set([".wbfs", ".iso", ".ciso", ".gcz", ".dol"]),
-  wiiu: new Set([".wud", ".wux", ".wua", ".rpx", ".wuhb"]),
+  ps1: new Set([".chd", ".cue", ".bin", ".pbp", ".ccd", ".img", ".sub", ".iso", ".zip", ".7z"]),
+  ps2: new Set([".iso", ".chd", ".cso", ".zso", ".elf", ".zip", ".7z"]),
+  ps3: new Set([".pkg", ".iso", ".zip", ".7z"]),
+  switch: new Set([".nro", ".nso", ".nsp", ".xci", ".zip", ".7z"]),
+  wii: new Set([".wbfs", ".iso", ".ciso", ".gcz", ".dol", ".zip", ".7z"]),
+  wiiu: new Set([".wud", ".wux", ".wua", ".rpx", ".wuhb", ".zip", ".7z"]),
 };
 
 function printUsage() {
@@ -495,7 +495,23 @@ function mapRawgGameToCatalogItem(game, platformId, existingIndex, usedSlugs, fo
 
   const mappedGenres = mapGenres(game.genres);
   const primaryCategory = mappedGenres[0];
-  const ratingScore = buildRatingScore(game);
+  const metacritic =
+    typeof game.metacritic === "number" && Number.isFinite(game.metacritic) && game.metacritic > 0 && game.metacritic <= 100
+      ? Math.round(game.metacritic)
+      : undefined;
+  const rating =
+    typeof game.rating === "number" && Number.isFinite(game.rating) && game.rating > 0 && game.rating <= 5
+      ? Math.round(game.rating * 100) / 100
+      : undefined;
+  const ratingsCount =
+    typeof game.ratings_count === "number" && Number.isSafeInteger(game.ratings_count) && game.ratings_count >= 0
+      ? game.ratings_count
+      : undefined;
+  const releasedAt =
+    typeof game.released === "string" && /^\d{4}-\d{2}-\d{2}$/.test(game.released)
+      ? game.released
+      : undefined;
+  const ratingScore = metacritic ?? buildRatingScore(game);
   const description = buildDescription(game, config.label, mappedGenres, ratingScore);
 
   const yearMatch = typeof game.released === "string" ? game.released.match(/^(\d{4})/) : null;
@@ -561,6 +577,10 @@ function mapRawgGameToCatalogItem(game, platformId, existingIndex, usedSlugs, fo
     sizeBytes,
     sizeBytesEstimated,
     ...(ratingScore !== undefined ? { ratingScore } : {}),
+    ...(metacritic !== undefined ? { metacritic } : {}),
+    ...(rating !== undefined ? { rating } : {}),
+    ...(ratingsCount !== undefined ? { ratingsCount } : {}),
+    ...(releasedAt !== undefined ? { releasedAt } : {}),
     fileFormat,
     fileExtension,
     ...(coverPath ? { coverPath } : {}),

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { CollectionToggle } from "@/components/catalog/collection-toggle";
 import { DownloadSourcePanel } from "@/components/catalog/download-source-panel";
+import { getDisplayScore, MetacriticBadge } from "@/components/catalog/metacritic-badge";
 import { ScreenshotGallery } from "@/components/catalog/screenshot-gallery";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
 import { isPlatformCatalogId, PLATFORM_CATALOG_IDS, PLATFORM_CATALOGS } from "@/lib/catalog/platforms";
@@ -39,6 +40,16 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
   const locale = localeParam;
   const messages = getMessages(locale);
   const platform = PLATFORM_CATALOGS[item.catalogId];
+  const displayScore = getDisplayScore(item);
+  const parsedRelease = item.releasedAt ? Date.parse(item.releasedAt) : Number.NaN;
+  const releaseLabel = !Number.isNaN(parsedRelease)
+    ? new Intl.DateTimeFormat(locale === "tr" ? "tr-TR" : "en-US", {
+        dateStyle: "medium",
+        timeZone: "UTC",
+      }).format(new Date(parsedRelease))
+    : /^\d{4}$/.test(item.version)
+      ? item.version
+      : null;
   const backParams = new URLSearchParams();
   for (const [key, value] of Object.entries(query)) {
     const singleValue = getSingleParam(value);
@@ -87,6 +98,28 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
           <p className="eyebrow"><span className="status-dot" />{platform.label}</p>
           <h1>{item.title[locale]}</h1>
           <p className="detail-hero__description">{item.description[locale]}</p>
+          <div className="detail-hero__meta">
+            <MetacriticBadge
+              score={displayScore}
+              label={messages.catalog.metacritic}
+              showLabel
+            />
+            {item.rating !== undefined ? (
+              <span
+                className="detail-hero__pill"
+                aria-label={`${messages.details.userRating} ${item.rating.toFixed(1)}`}
+              >
+                <span className="detail-hero__star" aria-hidden="true">★</span>
+                {item.rating.toFixed(1)}
+              </span>
+            ) : null}
+            {releaseLabel ? (
+              <span className="detail-hero__pill">{releaseLabel}</span>
+            ) : null}
+            <span className="detail-hero__pill">
+              {item.fileExtension.toUpperCase()} · {formatFileSize(item.sizeBytes, locale)}
+            </span>
+          </div>
           <div className="detail-hero__actions">
             <DownloadSourcePanel item={item} locale={locale} messages={messages} />
             <CollectionToggle item={item} kind="favorite" locale={locale} messages={messages} />
@@ -153,6 +186,14 @@ async function GameDetailContent({ params, searchParams }: GameDetailPageProps) 
                 />
                 <span className="similar-game__meta">{PLATFORM_CATALOGS[similarItem.catalogId].shortLabel} · {similarItem.category[locale]}</span>
                 <strong>{similarItem.title[locale]}</strong>
+                <span className="similar-game__footer">
+                  <span>{formatFileSize(similarItem.sizeBytes, locale)}</span>
+                  <MetacriticBadge
+                    score={getDisplayScore(similarItem)}
+                    label={messages.catalog.metacritic}
+                    size="sm"
+                  />
+                </span>
               </Link>
             ))}
           </div>

@@ -16,6 +16,8 @@ import {
   type CatalogItem,
   type CatalogPage,
   type CatalogQuery,
+  type DownloadSource,
+  type DownloadSourceInput,
   type LocalizedText,
 } from "@/lib/catalog/types";
 
@@ -26,6 +28,12 @@ const rawCatalogs: Record<PlatformCatalogId, unknown> = {
   switch: switchSeed,
   wii: wiiSeed,
   wiiu: wiiuSeed,
+};
+
+const WEB_PAGE_EXTENSIONS = new Set([".html", ".htm", ".php", ".asp", ".aspx", ".jsp"]);
+
+type RawCatalogItem = Omit<CatalogItem, "sources"> & {
+  sources: DownloadSourceInput[];
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -86,6 +94,39 @@ function isHttpUrl(value: unknown): value is string {
   }
 }
 
+function extractUrlExtension(url: URL): string | null {
+  const rawSegment = url.pathname.split("/").pop() ?? "";
+  if (!rawSegment) return null;
+
+  let decoded = rawSegment;
+  try {
+    decoded = decodeURIComponent(rawSegment);
+  } catch {
+    // Keep raw segment when percent-encoding is malformed.
+  }
+
+  const match = decoded.match(/(\.[a-z0-9]{1,12})$/i);
+  if (!match) return null;
+
+  const extension = match[1].toLowerCase();
+  return WEB_PAGE_EXTENSIONS.has(extension) ? null : extension;
+}
+
+function isPlainHttpsSourceUrl(value: unknown, platform: PlatformCatalogId): value is string {
+  if (typeof value !== "string") return false;
+
+  let url: URL;
+  try {
+    url = new URL(value);
+  } catch {
+    return false;
+  }
+
+  if (url.protocol !== "https:" || url.username || url.password) return false;
+  const detectedExtension = extractUrlExtension(url);
+  return detectedExtension === null || isPlatformExtension(platform, detectedExtension);
+}
+
 function isDownloadSource(value: unknown): boolean {
   if (!isRecord(value)) return false;
 
@@ -107,10 +148,47 @@ function isDownloadSourceForPlatform(value: unknown, platform: PlatformCatalogId
   return isDownloadSource(value) && isRecord(value) && isPlatformExtension(platform, value.format as string);
 }
 
+function normalizeDownloadSource(
+  entry: DownloadSourceInput,
+  itemFileExtension: string,
+  itemSizeBytes: number,
+  index: number,
+  usedIds: Set<string>,
+): DownloadSource {
+  if (typeof entry !== "string") {
+    return entry;
+  }
+
+  const url = new URL(entry);
+  const provider = url.hostname.replace(/^www\./i, "").slice(0, 80) || "manual-link";
+  const detectedExtension = extractUrlExtension(url);
+  const format = detectedExtension ?? itemFileExtension;
+  const deliveryMode = detectedExtension ? "direct" : "browser_verify";
+
+  let id = `manual-link-${index + 1}`;
+  let suffix = 2;
+  while (usedIds.has(id)) {
+    id = `manual-link-${index + 1}-${suffix}`;
+    suffix += 1;
+  }
+  usedIds.add(id);
+
+  return {
+    id,
+    provider,
+    deliveryMode,
+    url: entry,
+    format,
+    sizeBytes: itemSizeBytes > 0 ? itemSizeBytes : 1,
+    requiresVerification: false,
+    priority: index + 1,
+  };
+}
+
 function isCatalogItemForPlatform(
   value: unknown,
   platform: PlatformCatalogId,
-): value is CatalogItem {
+): value is RawCatalogItem {
   if (!isRecord(value)) return false;
 
   return (
@@ -130,6 +208,14 @@ function isCatalogItemForPlatform(
     typeof value.sizeBytesEstimated === "boolean" &&
     (value.ratingScore === undefined ||
       (typeof value.ratingScore === "number" && Number.isFinite(value.ratingScore) && value.ratingScore >= 0 && value.ratingScore <= 100)) &&
+    (value.metacritic === undefined ||
+      (typeof value.metacritic === "number" && Number.isFinite(value.metacritic) && value.metacritic >= 0 && value.metacritic <= 100)) &&
+    (value.rating === undefined ||
+      (typeof value.rating === "number" && Number.isFinite(value.rating) && value.rating >= 0 && value.rating <= 5)) &&
+    (value.ratingsCount === undefined ||
+      (typeof value.ratingsCount === "number" && Number.isSafeInteger(value.ratingsCount) && value.ratingsCount >= 0)) &&
+    (value.releasedAt === undefined ||
+      (typeof value.releasedAt === "string" && !Number.isNaN(Date.parse(value.releasedAt)))) &&
     typeof value.fileFormat === "string" &&
     typeof value.fileExtension === "string" &&
     isPlatformExtension(platform, value.fileExtension) &&
@@ -142,7 +228,9 @@ function isCatalogItemForPlatform(
     typeof value.sourceUrl === "string" &&
     value.sourceUrl.startsWith("https://") &&
     Array.isArray(value.sources) &&
-    value.sources.every((source) => isDownloadSourceForPlatform(source, platform)) &&
+    value.sources.every(
+      (source) => isDownloadSourceForPlatform(source, platform) || isPlainHttpsSourceUrl(source, platform),
+    ) &&
     typeof value.updatedAt === "string" &&
     !Number.isNaN(Date.parse(value.updatedAt)) &&
     typeof value.sampleData === "boolean"
@@ -156,12 +244,30 @@ function loadCatalog(platform: PlatformCatalogId): CatalogItem[] {
     throw new Error(`Catalog seed for ${platform} must be a JSON array.`);
   }
 
-  const items = rawItems.map((item, index) => {
-    if (!isCatalogItemForPlatform(item, platform)) {
+  const items: CatalogItem[] = rawItems.map((rawItem, index) => {
+    if (!isCatalogItemForPlatform(rawItem, platform)) {
       throw new Error(`Catalog seed for ${platform} has an invalid item at index ${index}.`);
     }
 
-    return item;
+    const usedSourceIds = new Set<string>();
+    for (const source of rawItem.sources) {
+      if (typeof source !== "string") {
+        usedSourceIds.add(source.id);
+      }
+    }
+
+    return {
+      ...rawItem,
+      sources: rawItem.sources.map((source, sourceIndex) =>
+        normalizeDownloadSource(
+          source,
+          rawItem.fileExtension,
+          rawItem.sizeBytes,
+          sourceIndex,
+          usedSourceIds,
+        ),
+      ),
+    };
   });
 
   const slugs = new Set<string>();
@@ -181,6 +287,12 @@ const catalogs = Object.fromEntries(
 
 function normalize(value: string, locale: CatalogQuery["locale"]): string {
   return value.normalize("NFKC").toLocaleLowerCase(locale === "tr" ? "tr-TR" : "en-US");
+}
+
+function releaseSortKey(item: CatalogItem): string {
+  if (item.releasedAt) return item.releasedAt;
+  if (/^\d{4}$/.test(item.version)) return `${item.version}-01-01`;
+  return item.updatedAt;
 }
 
 export function getCatalogItems(platform: PlatformCatalogId): readonly CatalogItem[] {
@@ -224,10 +336,16 @@ export function queryCatalog(query: CatalogQuery): CatalogPage {
   });
 
   matches = [...matches].sort((left, right) => {
+    if (query.sort === "popular") {
+      return (right.ratingsCount ?? 0) - (left.ratingsCount ?? 0);
+    }
     if (query.sort === "size") return left.sizeBytes - right.sizeBytes;
-    if (query.sort === "updated") return right.updatedAt.localeCompare(left.updatedAt);
+    if (query.sort === "updated") return releaseSortKey(right).localeCompare(releaseSortKey(left));
     if (query.sort === "rating") {
-      return (right.ratingScore ?? -1) - (left.ratingScore ?? -1);
+      return (
+        (right.metacritic ?? right.ratingScore ?? -1) - (left.metacritic ?? left.ratingScore ?? -1) ||
+        (right.rating ?? 0) - (left.rating ?? 0)
+      );
     }
 
     return left.title[query.locale].localeCompare(right.title[query.locale], query.locale);

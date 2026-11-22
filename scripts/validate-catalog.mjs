@@ -19,6 +19,7 @@ const { PLATFORM_CATALOGS, PLATFORM_CATALOG_IDS } = await import(
 
 const deliveryModes = new Set(["direct", "browser_verify", "github_api", "debrid"]);
 const itemTypes = new Set(["game", "homebrew", "emulator", "utility"]);
+const webPageExtensions = new Set([".html", ".htm", ".php", ".asp", ".aspx", ".jsp"]);
 const problems = [];
 const globalSlugs = new Set();
 let itemCount = 0;
@@ -69,6 +70,40 @@ function checkSource(source, platform, itemSlug, index) {
   }
   if (source.verifiedAt !== undefined && (typeof source.verifiedAt !== "string" || Number.isNaN(Date.parse(source.verifiedAt)))) {
     problems.push(`${context}: verifiedAt must be a valid date string when present.`);
+  }
+}
+
+function extractUrlExtension(url) {
+  const rawSegment = url.pathname.split("/").pop() ?? "";
+  if (!rawSegment) return null;
+
+  let decoded = rawSegment;
+  try {
+    decoded = decodeURIComponent(rawSegment);
+  } catch {
+    // Keep raw segment when percent-encoding is malformed.
+  }
+
+  const match = decoded.match(/(\.[a-z0-9]{1,12})$/i);
+  if (!match) return null;
+  const extension = match[1].toLowerCase();
+  return webPageExtensions.has(extension) ? null : extension;
+}
+
+function checkPlainSourceUrl(sourceUrl, platform, itemSlug, index) {
+  const context = `data/catalog/${platform}.json item "${itemSlug}" source ${index + 1}`;
+  const url = safeUrl(sourceUrl);
+  if (!url || url.protocol !== "https:" || url.username || url.password) {
+    problems.push(`${context}: plain URL source must be a valid HTTPS URL without credentials.`);
+    return;
+  }
+
+  const allowedExtensions = new Set(
+    PLATFORM_CATALOGS[platform].formats.flatMap((format) => format.extensions.map((extension) => extension.toLowerCase())),
+  );
+  const detectedExtension = extractUrlExtension(url);
+  if (detectedExtension !== null && !allowedExtensions.has(detectedExtension)) {
+    problems.push(`${context}: extension "${detectedExtension}" is not an allowed format for ${platform}.`);
   }
 }
 
@@ -179,6 +214,30 @@ for (const platform of PLATFORM_CATALOG_IDS) {
     ) {
       problems.push(`${context}: ratingScore must be a finite number between 0 and 100.`);
     }
+    if (
+      item.metacritic !== undefined &&
+      (typeof item.metacritic !== "number" || !Number.isFinite(item.metacritic) || item.metacritic < 0 || item.metacritic > 100)
+    ) {
+      problems.push(`${context}: metacritic must be a finite number between 0 and 100.`);
+    }
+    if (
+      item.rating !== undefined &&
+      (typeof item.rating !== "number" || !Number.isFinite(item.rating) || item.rating < 0 || item.rating > 5)
+    ) {
+      problems.push(`${context}: rating must be a finite number between 0 and 5.`);
+    }
+    if (
+      item.ratingsCount !== undefined &&
+      (!Number.isSafeInteger(item.ratingsCount) || item.ratingsCount < 0)
+    ) {
+      problems.push(`${context}: ratingsCount must be a non-negative safe integer.`);
+    }
+    if (
+      item.releasedAt !== undefined &&
+      (typeof item.releasedAt !== "string" || Number.isNaN(Date.parse(item.releasedAt)))
+    ) {
+      problems.push(`${context}: releasedAt must be a valid date string when present.`);
+    }
     const itemSourceUrl = typeof item.sourceUrl === "string" ? safeUrl(item.sourceUrl) : null;
     if (!itemSourceUrl || itemSourceUrl.protocol !== "https:" || itemSourceUrl.username || itemSourceUrl.password) {
       problems.push(`${context}: sourceUrl must be a valid HTTPS URL without credentials.`);
@@ -210,6 +269,12 @@ for (const platform of PLATFORM_CATALOG_IDS) {
 
     const sourceIds = new Set();
     item.sources.forEach((source, sourceIndex) => {
+      if (typeof source === "string") {
+        checkPlainSourceUrl(source, platform, item.slug ?? `#${index + 1}`, sourceIndex);
+        sourceCount += 1;
+        return;
+      }
+
       checkSource(source, platform, item.slug ?? `#${index + 1}`, sourceIndex);
       sourceCount += 1;
       if (isRecord(source) && typeof source.id === "string") {

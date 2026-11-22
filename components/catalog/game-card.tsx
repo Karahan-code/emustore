@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
-import type { CatalogItem, Locale } from "@/lib/catalog/types";
-import { formatFileSize } from "@/lib/catalog/format";
-import type { Messages } from "@/lib/i18n/dictionaries";
 import { CollectionToggle } from "@/components/catalog/collection-toggle";
+import { getDisplayScore, MetacriticBadge } from "@/components/catalog/metacritic-badge";
+import { formatFileSize } from "@/lib/catalog/format";
+import type { CatalogItem, Locale } from "@/lib/catalog/types";
+import type { Messages } from "@/lib/i18n/dictionaries";
 
 type GameCardProps = {
   item: CatalogItem;
@@ -15,6 +16,7 @@ type GameCardProps = {
 export function GameCard({ item, locale, messages, searchQuery }: GameCardProps) {
   const params = new URLSearchParams(searchQuery);
   params.set("platform", item.catalogId);
+  const displayScore = getDisplayScore(item);
 
   return (
     <article className="game-card" data-gamepad-item>
@@ -33,16 +35,16 @@ export function GameCard({ item, locale, messages, searchQuery }: GameCardProps)
         <div className="game-card__body">
           <div className="game-card__meta">
             <span className="game-card__category">{item.category[locale]}</span>
-            <span>{formatFileSize(item.sizeBytes, locale)}</span>
+            <span className="game-card__ext">{item.fileExtension.toUpperCase()}</span>
           </div>
           <h3>{item.title[locale]}</h3>
           <div className="game-card__footer">
-            <span>{item.fileExtension.toUpperCase()}</span>
-            {item.ratingScore !== undefined ? (
-              <span className="game-card__score" aria-label={`${messages.catalog.score} ${item.ratingScore}`}>
-                {item.ratingScore}
-              </span>
-            ) : null}
+            <span>{formatFileSize(item.sizeBytes, locale)}</span>
+            <MetacriticBadge
+              score={displayScore}
+              label={messages.catalog.metacritic}
+              size="sm"
+            />
           </div>
         </div>
       </Link>

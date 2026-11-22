@@ -32,6 +32,8 @@ export const PLATFORM_CATALOGS = {
       { label: "PBP package", extensions: [".pbp"] },
       { label: "CCD/IMG disc image", extensions: [".ccd", ".img", ".sub"] },
       { label: "ISO disc image", extensions: [".iso"] },
+      { label: "ZIP archive", extensions: [".zip"] },
+      { label: "7-Zip archive", extensions: [".7z"] },
     ],
   },
   ps2: {
@@ -44,6 +46,8 @@ export const PLATFORM_CATALOGS = {
       { label: "CSO compressed image", extensions: [".cso"] },
       { label: "ZSO compressed image", extensions: [".zso"] },
       { label: "ELF executable", extensions: [".elf"] },
+      { label: "ZIP archive", extensions: [".zip"] },
+      { label: "7-Zip archive", extensions: [".7z"] },
     ],
   },
   ps3: {
@@ -53,6 +57,8 @@ export const PLATFORM_CATALOGS = {
     formats: [
       { label: "PKG package", extensions: [".pkg"] },
       { label: "ISO disc image", extensions: [".iso"] },
+      { label: "ZIP archive", extensions: [".zip"] },
+      { label: "7-Zip archive", extensions: [".7z"] },
     ],
   },
   switch: {
@@ -64,6 +70,8 @@ export const PLATFORM_CATALOGS = {
       { label: "NSO executable", extensions: [".nso"] },
       { label: "NSP package", extensions: [".nsp"] },
       { label: "XCI game-card image", extensions: [".xci"] },
+      { label: "ZIP archive", extensions: [".zip"] },
+      { label: "7-Zip archive", extensions: [".7z"] },
     ],
   },
   wii: {
@@ -76,6 +84,8 @@ export const PLATFORM_CATALOGS = {
       { label: "CISO compressed image", extensions: [".ciso"] },
       { label: "GameCube/Wii compressed image", extensions: [".gcz"] },
       { label: "DOL homebrew executable", extensions: [".dol"] },
+      { label: "ZIP archive", extensions: [".zip"] },
+      { label: "7-Zip archive", extensions: [".7z"] },
     ],
   },
   wiiu: {
@@ -88,6 +98,8 @@ export const PLATFORM_CATALOGS = {
       { label: "WUA archive", extensions: [".wua"] },
       { label: "RPX executable", extensions: [".rpx"] },
       { label: "Wii U homebrew bundle", extensions: [".wuhb"] },
+      { label: "ZIP archive", extensions: [".zip"] },
+      { label: "7-Zip archive", extensions: [".7z"] },
     ],
   },
 } as const satisfies Record<PlatformCatalogId, PlatformCatalogDefinition>;

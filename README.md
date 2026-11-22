@@ -260,6 +260,6 @@ olacak.✅
 16- UI ses efectleri eklenecek.
 17- oyun sayfası Available sources kısmı kaldırılacak 'add favorities' buttonun yanına indirme kısmı açılacak. En altta buna benzer adlı bir tek satırlı kısım olacak✅
 
-18- topbar stiky kalacak aşağı gelince kayboluyor.
-19- oyunların json dosyaları okunacak resimleri eklenecek.
+18- topbar stiky kalacak aşağı gelince kayboluyor.✅
+19- oyunların json dosyaları okunacak resimleri eklenecek.✅
 -->
