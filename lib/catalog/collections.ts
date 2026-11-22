@@ -13,6 +13,7 @@ export const DOWNLOAD_ITEM_STATUSES = [
   "ready_to_install",
   "extracting",
   "installed",
+  "requires_browser_verify",
   "error",
 ] as const;
 export type DownloadItemStatus = (typeof DOWNLOAD_ITEM_STATUSES)[number];
@@ -27,6 +28,7 @@ export type QueueEntry = CatalogReference & {
   sha256?: string;
   targetPath?: string;
   resolvedUrl?: string;
+  browserUrl?: string;
   queuedAt?: string;
   status?: DownloadItemStatus;
   progress?: number;
@@ -78,6 +80,7 @@ export function isQueueEntry(value: unknown): value is QueueEntry {
     (candidate.sha256 === undefined || (typeof candidate.sha256 === "string" && /^[a-f0-9]{64}$/i.test(candidate.sha256))) &&
     (candidate.targetPath === undefined || (typeof candidate.targetPath === "string" && candidate.targetPath.length <= 256)) &&
     (candidate.resolvedUrl === undefined || isHttpUrl(candidate.resolvedUrl)) &&
+    (candidate.browserUrl === undefined || isHttpUrl(candidate.browserUrl)) &&
     (candidate.queuedAt === undefined || (typeof candidate.queuedAt === "string" && !Number.isNaN(Date.parse(candidate.queuedAt)))) &&
     (candidate.status === undefined || (typeof candidate.status === "string" && DOWNLOAD_ITEM_STATUSES.some((status) => status === candidate.status))) &&
     (candidate.progress === undefined || (typeof candidate.progress === "number" && Number.isFinite(candidate.progress) && candidate.progress >= 0 && candidate.progress <= 100)) &&

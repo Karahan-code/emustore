@@ -6,6 +6,7 @@
 #include <optional>
 #include <string>
 #include <string_view>
+#include <vector>
 
 inline std::string json_escape(std::string_view input) {
   std::string out;
@@ -119,6 +120,72 @@ inline std::optional<int64_t> json_get_int64(std::string_view body, std::string_
   } catch (...) {
     return std::nullopt;
   }
+}
+
+inline std::optional<std::vector<std::string>> json_get_string_array(
+    std::string_view body,
+    std::string_view key) {
+  size_t cursor = detail::find_json_value_start(body, key);
+  if (cursor == std::string_view::npos || cursor >= body.size() || body[cursor] != '[') {
+    return std::nullopt;
+  }
+  cursor += 1;
+
+  auto skip_ws = [&]() {
+    while (cursor < body.size() && std::isspace(static_cast<unsigned char>(body[cursor]))) {
+      cursor += 1;
+    }
+  };
+
+  std::vector<std::string> items;
+  skip_ws();
+  if (cursor < body.size() && body[cursor] == ']') {
+    return items;
+  }
+
+  while (cursor < body.size()) {
+    skip_ws();
+    if (cursor >= body.size() || body[cursor] != '"') {
+      return std::nullopt;
+    }
+    cursor += 1;
+
+    std::string element;
+    bool closed = false;
+    while (cursor < body.size()) {
+      char ch = body[cursor++];
+      if (ch == '"') {
+        closed = true;
+        break;
+      }
+      if (ch == '\\' && cursor < body.size()) {
+        char esc = body[cursor++];
+        switch (esc) {
+          case '"': element.push_back('"'); break;
+          case '\\': element.push_back('\\'); break;
+          case '/': element.push_back('/'); break;
+          case 'b': element.push_back('\b'); break;
+          case 'f': element.push_back('\f'); break;
+          case 'n': element.push_back('\n'); break;
+          case 'r': element.push_back('\r'); break;
+          case 't': element.push_back('\t'); break;
+          default: element.push_back(esc); break;
+        }
+      } else {
+        element.push_back(ch);
+      }
+    }
+    if (!closed) return std::nullopt;
+    items.push_back(std::move(element));
+
+    skip_ws();
+    if (cursor >= body.size()) return std::nullopt;
+    if (body[cursor] == ']') return items;
+    if (body[cursor] != ',') return std::nullopt;
+    cursor += 1;
+  }
+
+  return std::nullopt;
 }
 
 inline std::string url_decode(std::string_view input, bool plusAsSpace = true) {

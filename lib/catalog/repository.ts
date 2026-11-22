@@ -7,12 +7,14 @@ import wiiuSeed from "@/data/catalog/wiiu.json";
 import {
   isPlatformExtension,
   PLATFORM_CATALOG_IDS,
+  PLATFORM_CATALOGS,
   type PlatformCatalogId,
 } from "@/lib/catalog/platforms";
 import {
   CATALOG_ITEM_TYPES,
   DOWNLOAD_DELIVERY_MODES,
   LOCALES,
+  type CatalogFacets,
   type CatalogItem,
   type CatalogPage,
   type CatalogQuery,
@@ -135,12 +137,14 @@ function isDownloadSource(value: unknown): boolean {
     typeof value.provider === "string" && value.provider.trim() !== "" && value.provider.length <= 80 &&
     typeof value.deliveryMode === "string" && DOWNLOAD_DELIVERY_MODES.some((mode) => mode === value.deliveryMode) &&
     isHttpUrl(value.url) &&
+    (value.browserUrl === undefined || isHttpUrl(value.browserUrl)) &&
     typeof value.format === "string" && /^\.[a-z0-9]{1,12}$/i.test(value.format) &&
     typeof value.sizeBytes === "number" && Number.isSafeInteger(value.sizeBytes) && value.sizeBytes > 0 &&
     (value.sha256 === undefined || (typeof value.sha256 === "string" && /^[a-f0-9]{64}$/i.test(value.sha256))) &&
     typeof value.requiresVerification === "boolean" &&
     typeof value.priority === "number" && Number.isSafeInteger(value.priority) && value.priority >= 0 &&
-    (value.verifiedAt === undefined || (typeof value.verifiedAt === "string" && !Number.isNaN(Date.parse(value.verifiedAt))))
+    (value.verifiedAt === undefined || (typeof value.verifiedAt === "string" && !Number.isNaN(Date.parse(value.verifiedAt)))) &&
+    (value.sourceCheckedAt === undefined || (typeof value.sourceCheckedAt === "string" && !Number.isNaN(Date.parse(value.sourceCheckedAt))))
   );
 }
 
@@ -237,9 +241,21 @@ function isCatalogItemForPlatform(
   );
 }
 
-function loadCatalog(platform: PlatformCatalogId): CatalogItem[] {
-  const rawItems = rawCatalogs[platform];
+function getPlatformFormatLabel(
+  platform: PlatformCatalogId,
+  extension: string,
+): string | null {
+  const normalized = extension.toLowerCase();
+  const match = PLATFORM_CATALOGS[platform].formats.find((format) =>
+    format.extensions.some((candidate) => candidate.toLowerCase() === normalized),
+  );
+  return match ? match.label : null;
+}
 
+export function parseAndNormalizeCatalog(
+  platform: PlatformCatalogId,
+  rawItems: unknown,
+): CatalogItem[] {
   if (!Array.isArray(rawItems)) {
     throw new Error(`Catalog seed for ${platform} must be a JSON array.`);
   }
@@ -256,17 +272,54 @@ function loadCatalog(platform: PlatformCatalogId): CatalogItem[] {
       }
     }
 
+    const normalizedEntries = rawItem.sources.map((source, sourceIndex) => ({
+      isStructured: typeof source !== "string",
+      source: normalizeDownloadSource(
+        source,
+        rawItem.fileExtension,
+        rawItem.sizeBytes,
+        sourceIndex,
+        usedSourceIds,
+      ),
+    }));
+
+    const primaryEntry = [...normalizedEntries].sort(
+      (left, right) => left.source.priority - right.source.priority,
+    )[0];
+
+    let resolvedSizeBytes = rawItem.sizeBytes;
+    let resolvedSizeEstimated = rawItem.sizeBytesEstimated;
+    let resolvedFileExtension = rawItem.fileExtension;
+    let resolvedFileFormat = rawItem.fileFormat;
+
+    if (primaryEntry) {
+      const primarySource = primaryEntry.source;
+      const hasValidPrimarySize =
+        Number.isSafeInteger(primarySource.sizeBytes) && primarySource.sizeBytes > 0;
+      const hasStructuredRealSize = primaryEntry.isStructured && hasValidPrimarySize;
+
+      if (hasStructuredRealSize) {
+        resolvedSizeBytes = primarySource.sizeBytes;
+        resolvedSizeEstimated = false;
+      } else if (rawItem.sizeBytes <= 0 && hasValidPrimarySize) {
+        resolvedSizeBytes = primarySource.sizeBytes;
+      }
+
+      const primaryFormatLower = primarySource.format.toLowerCase();
+      if (isPlatformExtension(platform, primaryFormatLower)) {
+        resolvedFileExtension = primaryFormatLower;
+        resolvedFileFormat =
+          getPlatformFormatLabel(platform, resolvedFileExtension) ?? rawItem.fileFormat;
+      }
+    }
+
     return {
       ...rawItem,
-      sources: rawItem.sources.map((source, sourceIndex) =>
-        normalizeDownloadSource(
-          source,
-          rawItem.fileExtension,
-          rawItem.sizeBytes,
-          sourceIndex,
-          usedSourceIds,
-        ),
-      ),
+      sizeBytes: resolvedSizeBytes,
+      sizeBytesEstimated: resolvedSizeEstimated,
+      fileExtension: resolvedFileExtension,
+      fileFormat: resolvedFileFormat,
+      sources: normalizedEntries.map((entry) => entry.source),
     };
   });
 
@@ -279,6 +332,10 @@ function loadCatalog(platform: PlatformCatalogId): CatalogItem[] {
   }
 
   return items;
+}
+
+function loadCatalog(platform: PlatformCatalogId): CatalogItem[] {
+  return parseAndNormalizeCatalog(platform, rawCatalogs[platform]);
 }
 
 const catalogs = Object.fromEntries(
@@ -306,14 +363,50 @@ export function getCatalogItem(
   return catalogs[platform].find((item) => item.slug === slug);
 }
 
-export function queryCatalog(query: CatalogQuery): CatalogPage {
+export function findCatalogItemBySlug(slug: string): CatalogItem | undefined {
+  for (const platform of PLATFORM_CATALOG_IDS) {
+    const match = getCatalogItem(platform, slug);
+    if (match) return match;
+  }
+  return undefined;
+}
+
+export function buildCatalogFacets(
+  platform: PlatformCatalogId,
+  items: readonly CatalogItem[],
+): CatalogFacets {
+  const categoryMap = new Map(
+    items.map((item) => [item.categoryId, item.category]),
+  );
+
+  return {
+    categories: [...categoryMap.entries()].map(([id, label]) => ({ id, label })),
+    types: [...new Set(items.map((item) => item.type))],
+    formats: PLATFORM_CATALOGS[platform].formats.flatMap((formatDefinition) =>
+      formatDefinition.extensions.map((extension) => ({
+        extension,
+        label: formatDefinition.label,
+      })),
+    ),
+  };
+}
+
+export function getCatalogFacets(platform: PlatformCatalogId): CatalogFacets {
+  return buildCatalogFacets(platform, getCatalogItems(platform));
+}
+
+export function queryCatalogItems(
+  items: readonly CatalogItem[],
+  query: Omit<CatalogQuery, "platform">,
+): CatalogPage {
   const normalizedQuery = query.q ? normalize(query.q.trim(), query.locale) : "";
   const normalizedFormat = query.format?.toLowerCase();
 
-  let matches = catalogs[query.platform].filter((item) => {
+  let matches = items.filter((item) => {
     if (query.type && item.type !== query.type) return false;
     if (query.category && item.categoryId !== query.category) return false;
     if (normalizedFormat && item.fileExtension.toLowerCase() !== normalizedFormat) return false;
+    if (query.downloadableOnly && item.sources.length === 0) return false;
 
     if (normalizedQuery) {
       const searchable = [
@@ -357,4 +450,8 @@ export function queryCatalog(query: CatalogQuery): CatalogPage {
     limit: query.limit,
     offset: query.offset,
   };
+}
+
+export function queryCatalog(query: CatalogQuery): CatalogPage {
+  return queryCatalogItems(catalogs[query.platform], query);
 }

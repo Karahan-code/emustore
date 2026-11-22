@@ -111,8 +111,8 @@
     },
     "developer": "RAWG",
     "version": "2007",
-    "sizeBytes": 4294967296,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2806875472,
+    "sizeBytesEstimated": false,
     "ratingScore": 90,
     "metacritic": 90,
     "rating": 4.48,
@@ -181,7 +181,19 @@
       "story-rich"
     ],
     "sourceUrl": "https://rawg.io/games/portal",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/portal-01007-bb-017812000v-0/Portal%20%5B01007BB017812000%5D%5Bv0%5D.nsp",
+        "format": ".nsp",
+        "sizeBytes": 2806875472,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:54:47.359Z"
+      }
+    ],
     "updatedAt": "2026-11-14T09:15:36.000Z",
     "sampleData": false
   },
@@ -3076,8 +3088,8 @@
     },
     "developer": "RAWG",
     "version": "2011",
-    "sizeBytes": 4294967296,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 1042661422,
+    "sizeBytesEstimated": false,
     "ratingScore": 86,
     "metacritic": 86,
     "rating": 4.15,
@@ -3146,7 +3158,19 @@
       "atmospheric"
     ],
     "sourceUrl": "https://rawg.io/games/bastion",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/bastion-010038600-b-27-e-000-usv-0/Bastion%5B010038600B27E000%5D%5BUS%5D%5Bv0%5D.nsp",
+        "format": ".nsp",
+        "sizeBytes": 1042661422,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T18:00:39.063Z"
+      }
+    ],
     "updatedAt": "2026-10-22T10:35:10.000Z",
     "sampleData": false
   },

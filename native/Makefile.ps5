@@ -11,7 +11,7 @@ STRIP    := $(PS5_PAYLOAD_SDK)/bin/prospero-strip
 CXXFLAGS := -std=c++17 -O2 -Wall -Wextra -D__PS5__ -D__PROSPERO__ -Isrc
 LDFLAGS  := -lz -lpthread
 
-SRCS     := src/main.cpp src/fs_service.cpp src/zip_extractor.cpp src/download_manager.cpp
+SRCS     := src/main.cpp src/catalog_sync.cpp src/fs_service.cpp src/zip_extractor.cpp src/source_resolver.cpp src/download_manager.cpp
 OBJS     := $(SRCS:.cpp=.o)
 TARGET   := emustore-daemon.elf
 

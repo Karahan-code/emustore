@@ -5,11 +5,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:standalone": "node scripts/build-standalone.mjs",
     "start": "next start",
     "lint": "eslint",
     "validate:catalog": "node scripts/validate-catalog.mjs",
     "seed:games": "node scripts/seed-popular-games.mjs",
-    "sync:artwork": "node scripts/sync-artwork.mjs"
+    "sync:artwork": "node scripts/sync-artwork.mjs",
+    "sync:sources": "node scripts/sync-sources.mjs",
+    "check:sources": "node scripts/check-sources.mjs",
+    "export:beta-list": "node scripts/export-beta-list.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.77.0",

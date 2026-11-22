@@ -18,6 +18,14 @@ export function LocaleSwitcher({ locale, messages }: LocaleSwitcherProps) {
   const query = searchParams.toString();
   const href = query ? `${localizedPath}?${query}` : localizedPath;
 
+  function handleLocaleClick() {
+    try {
+      window.localStorage.setItem("emustore:locale", nextLocale);
+    } catch {
+      // Ignore storage quota or privacy-mode failures.
+    }
+  }
+
   return (
     <Link
       className="locale-switcher"
@@ -25,6 +33,7 @@ export function LocaleSwitcher({ locale, messages }: LocaleSwitcherProps) {
       lang={nextLocale}
       aria-label={messages.navigation.switchLanguage}
       title={messages.navigation.switchLanguage}
+      onClick={handleLocaleClick}
     >
       <span className={locale === "en" ? "locale-switcher__active" : ""}>EN</span>
       <span className="locale-switcher__divider" aria-hidden="true">/</span>

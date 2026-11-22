@@ -35,6 +35,7 @@ struct DownloadRecordSnapshot {
   std::string targetDir;
   std::string archivePath;
   std::string installedPath;
+  std::string browserUrl;
   std::string status;
   int progress = 0;
   uint64_t bytesDownloaded = 0;

@@ -2,13 +2,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppUpdatePanel } from "@/components/settings/app-update-panel";
 import { ArchiveInstallSettings } from "@/components/settings/archive-install-settings";
+import { OtaCatalogSettings } from "@/components/settings/ota-catalog-settings";
 import { TargetPathSettings } from "@/components/settings/target-path-settings";
 import { UiSoundToggle } from "@/components/settings/ui-sound-toggle";
 import { APP_VERSION } from "@/lib/app-info";
-import { isLocale } from "@/lib/catalog/types";
+import { isLocale, LOCALES, type Locale } from "@/lib/catalog/types";
 import { getMessages } from "@/lib/i18n/dictionaries";
 
 type SettingsPageProps = { params: Promise<{ locale: string }> };
+
+export function generateStaticParams(): Array<{ locale: Locale }> {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 export default async function SettingsPage({ params }: SettingsPageProps) {
   const { locale: localeParam } = await params;
@@ -27,6 +32,7 @@ export default async function SettingsPage({ params }: SettingsPageProps) {
       <TargetPathSettings messages={messages} />
       <ArchiveInstallSettings messages={messages} />
       <UiSoundToggle messages={messages} />
+      <OtaCatalogSettings locale={localeParam} messages={messages} />
 
       <section className="report-callout">
         <div>

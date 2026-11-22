@@ -13,7 +13,8 @@ type ActiveRouteIconLinkProps = {
 
 export function ActiveRouteIconLink({ locale, route, label, icon }: ActiveRouteIconLinkProps) {
   const href = `/${locale}/${route}`;
-  const active = usePathname() === href;
+  const normalizedPath = usePathname().replace(/\/+$/, "") || "/";
+  const active = normalizedPath === href;
 
   return (
     <Link

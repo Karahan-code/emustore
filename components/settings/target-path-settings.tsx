@@ -6,9 +6,12 @@ import type { Messages } from "@/lib/i18n/dictionaries";
 import {
   DEFAULT_SUGGESTED_PATHS,
   isValidSuggestedPath,
+  isVirtualPlaceholderPath,
   listExtensionsForPlatform,
-  mergeTargetPathPreferences,
-  TARGET_PATH_STORAGE_KEY,
+  normalizeSuggestedPath,
+  readTargetPathPreferences,
+  resetTargetPathPreferences,
+  writeTargetPathPreferences,
   type TargetPathPreferences,
 } from "@/lib/install/target-paths";
 import {
@@ -50,8 +53,7 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
     queueMicrotask(() => {
       if (!active) return;
       try {
-        const stored = window.localStorage.getItem(TARGET_PATH_STORAGE_KEY);
-        if (stored) setPaths(mergeTargetPathPreferences(JSON.parse(stored) as unknown));
+        setPaths(readTargetPathPreferences());
       } catch {
         setNotice("storage");
       } finally {
@@ -74,21 +76,23 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
     }
   }, [pickerPlatform, pickerListing]);
 
-  async function loadPickerDirectory(dirPath = "") {
+  async function loadPickerDirectory(dirPath = ""): Promise<NativeDirectoryListing | null> {
     setPickerLoading(true);
     const listing = await nativeBridge.listDirectory(dirPath);
     setPickerLoading(false);
     if (listing) {
       setPickerListing(listing);
     }
+    return listing;
   }
 
   async function openFolderPicker(platform: PlatformCatalogId) {
     setPickerPlatform(platform);
+    setPickerListing(null);
     const currentValue = paths[platform]?.trim() ?? "";
-    const initialPath = /^(?:USB|SD):/i.test(currentValue) ? "" : currentValue;
-    await loadPickerDirectory(initialPath);
-    if (!pickerListing && initialPath) {
+    const initialPath = isVirtualPlaceholderPath(currentValue) ? "" : currentValue;
+    const loaded = await loadPickerDirectory(initialPath);
+    if (!loaded && initialPath) {
       await loadPickerDirectory("");
     }
   }
@@ -111,12 +115,15 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
   }
 
   function persist(nextPaths: TargetPathPreferences, noticeType: Exclude<Notice, "invalid" | null>) {
-    try {
-      window.localStorage.setItem(TARGET_PATH_STORAGE_KEY, JSON.stringify(nextPaths));
-      setPaths(nextPaths);
+    const normalized = Object.fromEntries(
+      PLATFORM_CATALOG_IDS.map((platform) => [platform, normalizeSuggestedPath(nextPaths[platform])]),
+    ) as TargetPathPreferences;
+
+    if (writeTargetPathPreferences(normalized)) {
+      setPaths(normalized);
       setDirty(false);
       setNotice(noticeType);
-    } catch {
+    } else {
       setNotice("storage");
     }
   }
@@ -128,26 +135,21 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
       return;
     }
 
-    const normalized = Object.fromEntries(
-      PLATFORM_CATALOG_IDS.map((platform) => [platform, paths[platform].trim()]),
-    ) as TargetPathPreferences;
-    persist(normalized, "saved");
+    persist(paths, "saved");
   }
 
   function restoreOne(platform: (typeof PLATFORM_CATALOG_IDS)[number]) {
-    setPaths((current) => ({ ...current, [platform]: DEFAULT_SUGGESTED_PATHS[platform] }));
-    setDirty(true);
-    setNotice(null);
+    const nextPaths = { ...paths, [platform]: DEFAULT_SUGGESTED_PATHS[platform] };
+    persist(nextPaths, "reset");
   }
 
   function restoreAll() {
     const defaults = { ...DEFAULT_SUGGESTED_PATHS };
     setPaths(defaults);
     setDirty(false);
-    try {
-      window.localStorage.removeItem(TARGET_PATH_STORAGE_KEY);
+    if (resetTargetPathPreferences()) {
       setNotice("reset");
-    } catch {
+    } else {
       setNotice("storage");
     }
   }
@@ -170,9 +172,16 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
     <section className="settings-panel" aria-labelledby="target-paths-heading">
       <div className="settings-panel__heading">
         <div>
-          <p className="eyebrow"><span className="status-dot" />{messages.settings.browserStorage}</p>
+          <p className="eyebrow">
+            <span className="status-dot" />
+            {daemonConnected ? messages.settings.nativeDaemonConnected : messages.settings.browserStorage}
+          </p>
           <h2 id="target-paths-heading">{messages.settings.targetPaths}</h2>
-          <p className="settings-panel__description">{messages.settings.targetPathsDescription}</p>
+          <p className="settings-panel__description">
+            {daemonConnected
+              ? messages.settings.targetPathsNativeDescription
+              : messages.settings.targetPathsDescription}
+          </p>
         </div>
         <button className="text-action settings-panel__reset-all" type="button" onClick={restoreAll} disabled={!ready}>
           {messages.settings.resetAll}
@@ -251,7 +260,9 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
           </button>
         </div>
       </form>
-      <p className="settings-panel__footnote">{messages.settings.storageNote}</p>
+      <p className="settings-panel__footnote">
+        {daemonConnected ? messages.settings.storageNativeNote : messages.settings.storageNote}
+      </p>
 
       {pickerPlatform ? (
         <div
@@ -335,10 +346,10 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
                 type="button"
                 disabled={!pickerListing?.path}
                 onClick={() => {
-                  if (pickerListing?.path) {
-                    setPaths((current) => ({ ...current, [pickerPlatform]: pickerListing.path }));
-                    setDirty(true);
-                    setNotice(null);
+                  if (pickerListing?.path && isValidSuggestedPath(pickerListing.path)) {
+                    const selectedPath = normalizeSuggestedPath(pickerListing.path);
+                    const nextPaths = { ...paths, [pickerPlatform]: selectedPath };
+                    persist(nextPaths, "saved");
                   }
                   setPickerPlatform(null);
                 }}

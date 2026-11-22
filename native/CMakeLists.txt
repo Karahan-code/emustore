@@ -12,8 +12,10 @@ find_package(CURL QUIET)
 
 add_executable(emustore-daemon
   src/main.cpp
+  src/catalog_sync.cpp
   src/fs_service.cpp
   src/zip_extractor.cpp
+  src/source_resolver.cpp
   src/download_manager.cpp
 )
 
@@ -45,5 +47,5 @@ elseif(WIN32)
 endif()
 
 if(WIN32)
-  target_link_libraries(emustore-daemon PRIVATE ws2_32)
+  target_link_libraries(emustore-daemon PRIVATE ws2_32 shell32)
 endif()

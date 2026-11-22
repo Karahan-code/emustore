@@ -41,6 +41,7 @@ export type NativeDownloadRecord = {
   targetDir: string;
   archivePath?: string;
   installedPath?: string;
+  browserUrl?: string;
   status: DownloadItemStatus;
   progress: number;
   bytesDownloaded: number;
@@ -64,6 +65,37 @@ export type InstallArchiveOptions = {
   deleteArchive?: boolean;
   flattenSingleRoot?: boolean;
   targetDir?: string;
+};
+
+export type NativeCatalogPlatformStatus = {
+  cached: boolean;
+  updatedAt: string | null;
+  bytes: number;
+};
+
+export type NativeCatalogStatus = {
+  ok: boolean;
+  cacheDir: string;
+  lastSyncedAt: string | null;
+  platforms: Partial<Record<PlatformCatalogId, NativeCatalogPlatformStatus>>;
+};
+
+export type NativeCatalogSyncPlatformResult = {
+  updated: boolean;
+  skipped: boolean;
+  bytes: number;
+  error: string | null;
+};
+
+export type NativeCatalogSyncResult = {
+  ok: boolean;
+  baseUrl?: string;
+  syncedAt?: string;
+  updatedCount?: number;
+  skippedCount?: number;
+  errorCount?: number;
+  error?: string;
+  platforms?: Partial<Record<PlatformCatalogId, NativeCatalogSyncPlatformResult>>;
 };
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -283,6 +315,72 @@ export class NativeBridgeClient {
     return isRecord(response) && typeof response.id === "string"
       ? (response as unknown as NativeDownloadRecord)
       : null;
+  }
+
+  async getNativeCatalogStatus(): Promise<NativeCatalogStatus | null> {
+    const payload = await this.requestJson<unknown>("/api/native/catalog/status");
+    if (!isRecord(payload) || payload.ok !== true) return null;
+    return payload as unknown as NativeCatalogStatus;
+  }
+
+  async fetchNativeCachedCatalog(platform: PlatformCatalogId): Promise<unknown | null> {
+    const baseUrl = await this.resolveBaseUrl();
+    if (baseUrl === null) return null;
+
+    try {
+      const response = await fetch(`${baseUrl}/api/native/catalog/${encodeURIComponent(platform)}`, {
+        cache: "no-store",
+        headers: { Accept: "application/json" },
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      });
+      if (response.status === 404 || !response.ok) return null;
+      return (await response.json()) as unknown;
+    } catch {
+      return null;
+    }
+  }
+
+  async syncNativeCatalog(
+    baseUrl?: string,
+    platforms?: PlatformCatalogId[],
+  ): Promise<NativeCatalogSyncResult | null> {
+    const daemonBaseUrl = await this.resolveBaseUrl();
+    if (daemonBaseUrl === null) return null;
+
+    try {
+      const bodyPayload: Record<string, unknown> = {};
+      if (baseUrl && baseUrl.trim() !== "") {
+        bodyPayload.baseUrl = baseUrl.trim();
+      }
+      if (platforms && platforms.length > 0) {
+        bodyPayload.platforms = platforms;
+      }
+
+      const response = await fetch(`${daemonBaseUrl}/api/native/catalog/sync`, {
+        method: "POST",
+        cache: "no-store",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(bodyPayload),
+        signal: AbortSignal.timeout(30_000),
+      });
+
+      const payload: unknown = await response.json().catch(() => null);
+      if (!isRecord(payload)) return null;
+      return payload as unknown as NativeCatalogSyncResult;
+    } catch {
+      this.clearCache();
+      return null;
+    }
+  }
+
+  async clearNativeCatalogCache(): Promise<boolean> {
+    const response = await this.requestJson<unknown>("/api/native/catalog", {
+      method: "DELETE",
+    });
+    return response !== null;
   }
 }
 

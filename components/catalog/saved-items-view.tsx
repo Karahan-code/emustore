@@ -7,7 +7,9 @@ import { CollectionToggle } from "@/components/catalog/collection-toggle";
 import { GameCard } from "@/components/catalog/game-card";
 import { DownloadsPanel } from "@/components/downloads/downloads-panel";
 import { useCollections } from "@/components/shell/collections-provider";
+import { useOtaCatalog } from "@/components/shell/ota-catalog-provider";
 import { PLATFORM_CATALOGS, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
+import { getLiveCatalogItem } from "@/lib/catalog/ota-store";
 import type { CatalogItem, Locale } from "@/lib/catalog/types";
 import type { QueueEntry } from "@/lib/catalog/collections";
 import { formatFileSize } from "@/lib/catalog/format";
@@ -21,58 +23,37 @@ type SavedItemsViewProps = {
   messages: Messages;
 };
 
-type DetailResponse = { data: CatalogItem };
-
 export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) {
   const collections = useCollections();
+  const otaCatalog = useOtaCatalog();
   const linkCaptureAdapter = useMemo(() => createLinkCaptureAdapter(), []);
   const references = kind === "favorites" ? collections.favorites : collections.queue;
-  const referenceKey = references.map((reference) => `${reference.catalogId}:${reference.slug}`).join("|");
-  const [items, setItems] = useState<CatalogItem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [failed, setFailed] = useState(false);
   const [paths, setPaths] = useState<TargetPathPreferences>({ ...DEFAULT_SUGGESTED_PATHS });
 
   useEffect(() => {
-    try {
-      const stored = window.localStorage.getItem(TARGET_PATH_STORAGE_KEY);
-      setPaths(mergeTargetPathPreferences(stored ? JSON.parse(stored) as unknown : null));
-    } catch {
-      setPaths({ ...DEFAULT_SUGGESTED_PATHS });
-    }
+    let cancelled = false;
+    queueMicrotask(() => {
+      if (cancelled) return;
+      try {
+        const stored = window.localStorage.getItem(TARGET_PATH_STORAGE_KEY);
+        setPaths(mergeTargetPathPreferences(stored ? JSON.parse(stored) as unknown : null));
+      } catch {
+        setPaths({ ...DEFAULT_SUGGESTED_PATHS });
+      }
+    });
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
-  useEffect(() => {
-    if (!collections.ready) return;
-    const controller = new AbortController();
-    setLoading(true);
-    setFailed(false);
+  const items = useMemo<CatalogItem[]>(() => {
+    if (!collections.ready) return [];
+    return references
+      .map((reference) => getLiveCatalogItem(otaCatalog, reference.catalogId, reference.slug))
+      .filter((item): item is CatalogItem => item !== undefined);
+  }, [collections.ready, otaCatalog, references]);
 
-    Promise.all(references.map(async (reference) => {
-      const query = new URLSearchParams({ platform: reference.catalogId, locale });
-      try {
-        const response = await fetch(`/api/v1/items/${encodeURIComponent(reference.slug)}?${query}`, {
-          cache: "no-store",
-          signal: controller.signal,
-        });
-        if (!response.ok) return undefined;
-        return ((await response.json()) as DetailResponse).data;
-      } catch (error) {
-        if (error instanceof Error && error.name === "AbortError") throw error;
-        return undefined;
-      }
-    }))
-      .then((results) => setItems(results.filter((item): item is CatalogItem => item !== undefined)))
-      .catch((error: unknown) => {
-        if (error instanceof Error && error.name === "AbortError") return;
-        setFailed(true);
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) setLoading(false);
-      });
-
-    return () => controller.abort();
-  }, [collections.ready, locale, referenceKey]);
+  const loading = !collections.ready;
 
   const title = kind === "favorites" ? messages.favorites.title : messages.downloads.title;
   const totalBytes = kind === "queue"
@@ -96,8 +77,7 @@ export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) 
           <h1>{title}</h1>
         </div>
         {loading ? <div className="status-panel" role="status">…</div> : null}
-        {failed ? <div className="status-panel status-panel--error" role="alert">{messages.errors.catalogUnavailable}</div> : null}
-        {!loading && !failed && items.length === 0 ? <div className="status-panel status-panel--empty" role="status">{messages.favorites.empty}</div> : null}
+        {!loading && items.length === 0 ? <div className="status-panel status-panel--empty" role="status">{messages.favorites.empty}</div> : null}
         {items.length > 0 ? (
           <div className="game-grid">
             {items.map((item) => (
@@ -127,8 +107,7 @@ export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) 
             <span className="result-count">{items.length}</span>
           </div>
           {loading ? <div className="status-panel" role="status">…</div> : null}
-          {failed ? <div className="status-panel status-panel--error" role="alert">{messages.errors.catalogUnavailable}</div> : null}
-          {!loading && !failed && items.length === 0 ? <div className="status-panel status-panel--empty" role="status">{messages.downloads.empty}</div> : null}
+          {!loading && items.length === 0 ? <div className="status-panel status-panel--empty" role="status">{messages.downloads.empty}</div> : null}
           <div className="queue-list">
             {items.map((item) => {
               const queueEntry: QueueEntry | undefined = collections.queue.find((entry) => entry.catalogId === item.catalogId && entry.slug === item.slug);

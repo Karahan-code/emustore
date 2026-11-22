@@ -9,20 +9,21 @@ type SectionLinksProps = { locale: Locale; messages: Messages };
 
 export function SectionLinks({ locale, messages }: SectionLinksProps) {
   const pathname = usePathname();
+  const normalizedPath = pathname.replace(/\/+$/, "") || "/";
   const searchParams = useSearchParams();
   const params = new URLSearchParams(searchParams.toString());
   params.set("view", "discover");
   if (!params.has("platform")) params.set("platform", "ps1");
   for (const key of ["q", "type", "category", "format", "sort", "offset", "itemSlug"]) params.delete(key);
-  const active = pathname === `/${locale}` && searchParams.get("view") !== "browse";
+  const active = normalizedPath === `/${locale}` && searchParams.get("view") !== "browse";
   const browseParams = new URLSearchParams(searchParams.toString());
   browseParams.set("view", "browse");
   if (!browseParams.has("platform")) browseParams.set("platform", "ps1");
   browseParams.delete("itemSlug");
-  const browseActive = pathname === `/${locale}` && searchParams.get("view") === "browse";
+  const browseActive = normalizedPath === `/${locale}` && searchParams.get("view") === "browse";
 
-  const favoritesActive = pathname === "/" + locale + "/favorites";
-  const downloadsActive = pathname === "/" + locale + "/downloads";
+  const favoritesActive = normalizedPath === "/" + locale + "/favorites";
+  const downloadsActive = normalizedPath === "/" + locale + "/downloads";
 
   return (
     <nav className="topbar-sections" aria-label={messages.navigation.primaryNavigation}>

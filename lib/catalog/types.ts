@@ -39,12 +39,14 @@ export type DownloadSource = {
   provider: string;
   deliveryMode: DownloadDeliveryMode;
   url: string;
+  browserUrl?: string;
   format: string;
   sizeBytes: number;
   sha256?: string;
   requiresVerification: boolean;
   priority: number;
   verifiedAt?: string;
+  sourceCheckedAt?: string;
 };
 
 export type DownloadSourceInput = DownloadSource | string;
@@ -86,6 +88,7 @@ export type CatalogQuery = {
   type?: CatalogItemType;
   category?: string;
   format?: string;
+  downloadableOnly?: boolean;
   locale: Locale;
   limit: number;
   offset: number;

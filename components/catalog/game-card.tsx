@@ -17,6 +17,7 @@ export function GameCard({ item, locale, messages, searchQuery }: GameCardProps)
   const params = new URLSearchParams(searchQuery);
   params.set("platform", item.catalogId);
   const displayScore = getDisplayScore(item);
+  const sourceCount = item.sources.length;
 
   return (
     <article className="game-card" data-gamepad-item>
@@ -39,7 +40,24 @@ export function GameCard({ item, locale, messages, searchQuery }: GameCardProps)
           </div>
           <h3>{item.title[locale]}</h3>
           <div className="game-card__footer">
-            <span>{formatFileSize(item.sizeBytes, locale)}</span>
+            <span className="game-card__size-group">
+              <span>{formatFileSize(item.sizeBytes, locale)}</span>
+              {sourceCount > 0 ? (
+                <span
+                  className="game-card__ready-badge"
+                  title={
+                    sourceCount > 1
+                      ? messages.catalog.mirrorCount.replace("{count}", String(sourceCount))
+                      : messages.catalog.downloadableBadge
+                  }
+                >
+                  <span className="game-card__ready-dot" aria-hidden="true" />
+                  {sourceCount > 1
+                    ? `${messages.catalog.downloadableBadge} · ${sourceCount}`
+                    : messages.catalog.downloadableBadge}
+                </span>
+              ) : null}
+            </span>
             <MetacriticBadge
               score={displayScore}
               label={messages.catalog.metacritic}

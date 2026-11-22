@@ -1,12 +1,14 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { CatalogFilterBar } from "@/components/catalog/catalog-filter-bar";
 import { DiscoverView } from "@/components/catalog/discover-view";
 import { GameCard } from "@/components/catalog/game-card";
 import { PlatformPills } from "@/components/catalog/platform-pills";
+import { useOtaCatalog } from "@/components/shell/ota-catalog-provider";
 import { isPlatformCatalogId, isPlatformExtension, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
+import { getLiveCatalogFacets, queryLiveCatalog } from "@/lib/catalog/ota-store";
 import {
   isCatalogItemType,
   type CatalogFacets,
@@ -22,6 +24,7 @@ type ItemsResponse = {
   meta: {
     platform: string;
     total: number;
+    downloadableCount: number;
     facets: CatalogFacets;
   };
 };
@@ -88,6 +91,7 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const searchString = searchParams.toString();
+  const otaCatalog = useOtaCatalog();
 
   const requestedPlatform = searchParams.get("platform");
   const platformSelection = requestedPlatform === "all"
@@ -110,34 +114,103 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
     : "";
   const sortParam = searchParams.get("sort");
   const sort: CatalogSort = isCatalogSort(sortParam) ? sortParam : "title";
+  const downloadableValue = searchParams.get("downloadable");
+  const downloadableOnly = downloadableValue === "1";
   const view = searchParams.get("view") === "browse" ? "browse" : "discover";
 
-  const [response, setResponse] = useState<ItemsResponse | null>(null);
-  const [discoverFeed, setDiscoverFeed] = useState<CatalogItem[] | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
-  const [loadFailed, setLoadFailed] = useState(false);
-  const [retryToken, setRetryToken] = useState(0);
+  const isBrowse = view === "browse";
 
-  const apiRequests = useMemo(() => {
-    const platforms = isAllPlatforms ? PLATFORM_CATALOG_IDS : [platform];
-    return platforms.map((catalogId) => {
-      const params = new URLSearchParams({
+  const response = useMemo<ItemsResponse | null>(() => {
+    if (!isBrowse) return null;
+
+    const platforms = isAllPlatforms ? [...PLATFORM_CATALOG_IDS] : [platform];
+    const results = platforms.map((catalogId) => {
+      const baseQuery = {
+        platform: catalogId,
+        q: query.trim() || undefined,
+        type: type || undefined,
+        category: category || undefined,
+        format: format && isPlatformExtension(catalogId, format) ? format : undefined,
+        locale,
+        limit: 100,
+        offset: 0,
+        sort,
+      };
+      return {
+        catalogId,
+        page: queryLiveCatalog(otaCatalog, {
+          ...baseQuery,
+          downloadableOnly: downloadableOnly || undefined,
+        }),
+        downloadableTotal: downloadableOnly
+          ? null
+          : queryLiveCatalog(otaCatalog, {
+            ...baseQuery,
+            limit: 1,
+            downloadableOnly: true,
+          }).total,
+        facets: getLiveCatalogFacets(otaCatalog, catalogId),
+      };
+    });
+
+    const items = results.flatMap(({ catalogId, page }) => {
+      if (format && !isPlatformExtension(catalogId, format)) return [];
+      return page.items;
+    });
+    const total = results.reduce(
+      (count, { catalogId, page }) =>
+        count + (format && !isPlatformExtension(catalogId, format) ? 0 : page.total),
+      0,
+    );
+    const downloadableCount = downloadableOnly
+      ? total
+      : results.reduce(
+        (count, { catalogId, downloadableTotal }) =>
+          count + (format && !isPlatformExtension(catalogId, format) ? 0 : downloadableTotal ?? 0),
+        0,
+      );
+
+    return {
+      data: sortItems(items, sort, locale).slice(0, 100),
+      meta: {
+        platform: platformSelection,
+        total,
+        downloadableCount,
+        facets: mergeFacets(results.map((entry) => entry.facets)),
+      },
+    };
+  }, [category, downloadableOnly, format, isAllPlatforms, isBrowse, locale, otaCatalog, platform, platformSelection, query, sort, type]);
+
+  const discoverFeed = useMemo<CatalogItem[] | null>(() => {
+    if (view !== "discover") return null;
+
+    const catalogs = PLATFORM_CATALOG_IDS.map((catalogId) =>
+      queryLiveCatalog(otaCatalog, {
         platform: catalogId,
         locale,
-        limit: "100",
-        offset: "0",
-        sort,
-      });
-      if (query.trim()) params.set("q", query.trim());
-      if (type) params.set("type", type);
-      if (category) params.set("category", category);
-      if (format && isPlatformExtension(catalogId, format)) params.set("format", format);
-      return { catalogId, query: params.toString() };
-    });
-  }, [isAllPlatforms, platform, locale, query, type, category, format, sort]);
+        limit: 100,
+        offset: 0,
+        sort: "popular",
+      }).items,
+    );
+
+    const activePos = PLATFORM_CATALOG_IDS.indexOf(platform);
+    const orderedCatalogs = activePos > 0
+      ? [catalogs[activePos], ...catalogs.slice(0, activePos), ...catalogs.slice(activePos + 1)]
+      : catalogs;
+    const maxLength = orderedCatalogs.reduce((max, list) => Math.max(max, list.length), 0);
+    const combined: CatalogItem[] = [];
+    for (let rowIndex = 0; rowIndex < maxLength; rowIndex += 1) {
+      for (const list of orderedCatalogs) {
+        const candidate = list[rowIndex];
+        if (candidate) combined.push(candidate);
+      }
+    }
+    return combined;
+  }, [locale, otaCatalog, platform, view]);
 
   const updateSearchParam = useCallback(
-    (key: "q" | "type" | "category" | "format" | "sort", value: string) => {
+    (key: "q" | "type" | "category" | "format" | "sort" | "downloadable", value: string) => {
       const params = new URLSearchParams(searchString);
       if (value) params.set(key, value);
       else params.delete(key);
@@ -173,6 +246,10 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
       params.delete("sort");
       changed = true;
     }
+    if (downloadableValue && downloadableValue !== "1") {
+      params.delete("downloadable");
+      changed = true;
+    }
     if (query.length > 120) {
       params.set("q", query.slice(0, 120));
       changed = true;
@@ -187,129 +264,27 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
       const nextQuery = params.toString();
       router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
     }
-  }, [formatValue, isFormatSupported, pathname, platformSelection, query, requestedPlatform, router, searchString, typeValue]);
-
-  useEffect(() => {
-    const controller = new AbortController();
-    setIsLoading(true);
-    setLoadFailed(false);
-
-    Promise.all(apiRequests.map(async ({ catalogId, query: requestQuery }) => {
-      const result = await fetch(`/api/v1/items?${requestQuery}`, { cache: "no-store", signal: controller.signal });
-      if (!result.ok) throw new Error(`Catalog request failed for ${catalogId}`);
-      return (await result.json()) as ItemsResponse;
-    }))
-      .then((responses) => {
-        const items = responses.flatMap((nextResponse, index) => {
-          const requestedCatalog = apiRequests[index].catalogId;
-          if (format && !isPlatformExtension(requestedCatalog, format)) return [];
-          return nextResponse.data;
-        });
-        const total = responses.reduce((count, nextResponse, index) => {
-          const requestedCatalog = apiRequests[index].catalogId;
-          return count + (format && !isPlatformExtension(requestedCatalog, format) ? 0 : nextResponse.meta.total);
-        }, 0);
-        const nextResponse: ItemsResponse = {
-          data: sortItems(items, sort, locale).slice(0, 100),
-          meta: {
-            platform: platformSelection,
-            total,
-            facets: mergeFacets(responses.map((entry) => entry.meta.facets)),
-          },
-        };
-        setResponse(nextResponse);
-        setLoadFailed(false);
-      })
-      .catch((error: unknown) => {
-        if (error instanceof Error && error.name === "AbortError") return;
-        setLoadFailed(true);
-      })
-      .finally(() => {
-        if (!controller.signal.aborted) setIsLoading(false);
-      });
-
-    return () => controller.abort();
-  }, [apiRequests, format, locale, platformSelection, retryToken, sort]);
-
-  useEffect(() => {
-    if (view !== "discover") {
-      setDiscoverFeed(null);
-      return;
-    }
-
-    const controller = new AbortController();
-    Promise.all(PLATFORM_CATALOG_IDS.map(async (catalogId) => {
-      const params = new URLSearchParams({
-        platform: catalogId,
-        locale,
-        limit: "100",
-        offset: "0",
-        sort: "popular",
-      });
-      try {
-        const result = await fetch(`/api/v1/items?${params.toString()}`, {
-          cache: "no-store",
-          signal: controller.signal,
-        });
-        if (!result.ok) return [] as CatalogItem[];
-        return ((await result.json()) as ItemsResponse).data;
-      } catch (error) {
-        if (error instanceof Error && error.name === "AbortError") throw error;
-        return [] as CatalogItem[];
-      }
-    }))
-      .then((catalogs) => {
-        const activePos = PLATFORM_CATALOG_IDS.indexOf(platform);
-        const orderedCatalogs = activePos > 0
-          ? [catalogs[activePos], ...catalogs.slice(0, activePos), ...catalogs.slice(activePos + 1)]
-          : catalogs;
-        const maxLength = orderedCatalogs.reduce((max, list) => Math.max(max, list.length), 0);
-        const combined: CatalogItem[] = [];
-        for (let rowIndex = 0; rowIndex < maxLength; rowIndex += 1) {
-          for (const list of orderedCatalogs) {
-            const candidate = list[rowIndex];
-            if (candidate) combined.push(candidate);
-          }
-        }
-        setDiscoverFeed(combined);
-      })
-      .catch((error: unknown) => {
-        if (!(error instanceof Error && error.name === "AbortError")) setDiscoverFeed([]);
-      });
-
-    return () => controller.abort();
-  }, [locale, platform, retryToken, view]);
+  }, [downloadableValue, formatValue, isFormatSupported, pathname, platformSelection, query, requestedPlatform, router, searchString, typeValue]);
 
   const clearFilters = useCallback(() => {
     const params = new URLSearchParams(searchString);
-    for (const key of ["q", "type", "category", "format", "sort", "offset"]) params.delete(key);
+    for (const key of ["q", "type", "category", "format", "sort", "downloadable", "offset"]) params.delete(key);
     params.set("view", "browse");
     const nextQuery = params.toString();
     router.replace(nextQuery ? `${pathname}?${nextQuery}` : pathname, { scroll: false });
   }, [pathname, router, searchString]);
 
   const catalogItems = response?.data ?? [];
-  const discoveryItems = discoverFeed?.length ? discoverFeed : catalogItems;
+  const discoveryItems = discoverFeed ?? catalogItems;
   const activePlatformLabel = isAllPlatforms ? messages.filters.all : messages.navigation[platform];
 
   return (
-    <main className={`catalog-page catalog-page--${view}`} aria-busy={isLoading}>
-      {loadFailed ? (
-        <div className="status-panel status-panel--error" role="alert">
-          <p>{messages.errors.catalogUnavailable}</p>
-          <button className="button button--quiet" type="button" onClick={() => setRetryToken((value) => value + 1)}>
-            {messages.catalog.retry}
-          </button>
-        </div>
-      ) : null}
-
-      {isLoading && !response ? <div className="status-panel" role="status">…</div> : null}
-
-      {!loadFailed && view === "discover" && discoveryItems.length > 0 ? (
+    <main className={`catalog-page catalog-page--${view}`}>
+      {view === "discover" && discoveryItems.length > 0 ? (
         <DiscoverView items={discoveryItems} locale={locale} messages={messages} searchQuery={searchString} selectedPlatform={platform} />
       ) : null}
 
-      {!loadFailed && view === "browse" ? (
+      {view === "browse" ? (
         <section className="browse-page" aria-labelledby="browse-library-title">
           <div className="browse-page__heading">
             <div>
@@ -333,6 +308,8 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
             format={format}
             query={query}
             sort={sort}
+            downloadableOnly={downloadableOnly}
+            downloadableCount={response?.meta.downloadableCount ?? 0}
             onChange={(key, value) => updateSearchParam(key, value)}
             onClear={clearFilters}
           />
@@ -342,16 +319,16 @@ export function CatalogBrowser({ locale }: CatalogBrowserProps) {
                 <GameCard key={`${item.catalogId}:${item.slug}`} item={item} locale={locale} messages={messages} searchQuery={searchString} />
               ))}
             </div>
-          ) : !isLoading ? (
+          ) : (
             <div className="status-panel status-panel--empty" role="status">
               <p>{messages.catalog.noResults}</p>
               <button className="text-action" type="button" onClick={clearFilters}>{messages.filters.clear}</button>
             </div>
-          ) : null}
+          )}
         </section>
       ) : null}
 
-      {!loadFailed && !isLoading && discoverFeed !== null && discoveryItems.length === 0 && view === "discover" ? (
+      {discoverFeed !== null && discoveryItems.length === 0 && view === "discover" ? (
         <div className="status-panel status-panel--empty" role="status">{messages.catalog.noResults}</div>
       ) : null}
 

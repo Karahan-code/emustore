@@ -204,15 +204,15 @@
     },
     "developer": "RAWG",
     "version": "2012",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2410229902,
+    "sizeBytesEstimated": false,
     "ratingScore": 81,
     "metacritic": 81,
     "rating": 3.57,
     "ratingsCount": 3651,
     "releasedAt": "2012-08-21",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "ZIP archive",
+    "fileExtension": ".zip",
     "coverPath": "https://cdn2.steamgriddb.com/grid/c6a8488de86eddf87c84edf4136a1126.png",
     "screenshots": [
       {
@@ -274,7 +274,19 @@
       "co-op"
     ],
     "sourceUrl": "https://rawg.io/games/counter-strike-global-offensive",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/counter-strike-global-offensive-ps3-psn-usa/Counter-Strike%20-%20Global%20Offensive%20(USA).zip",
+        "format": ".zip",
+        "sizeBytes": 2410229902,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:27:55.099Z"
+      }
+    ],
     "updatedAt": "2026-11-02T11:41:42.000Z",
     "sampleData": false
   },
@@ -1041,8 +1053,8 @@
     },
     "developer": "RAWG",
     "version": "2011",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 318570496,
+    "sizeBytesEstimated": false,
     "ratingScore": 81,
     "metacritic": 81,
     "rating": 4.08,
@@ -1111,7 +1123,19 @@
       "steam-cloud"
     ],
     "sourceUrl": "https://rawg.io/games/terraria",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/terraria-ps3-edition/Terraria%20(Europe)%20(En%2CFr%2CDe%2CEs%2CIt).iso",
+        "format": ".iso",
+        "sizeBytes": 318570496,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:29:57.476Z"
+      }
+    ],
     "updatedAt": "2026-10-25T15:00:22.000Z",
     "sampleData": false
   },
@@ -1320,8 +1344,8 @@
     },
     "developer": "RAWG",
     "version": "2015",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 21303656448,
+    "sizeBytesEstimated": false,
     "ratingScore": 91,
     "metacritic": 91,
     "rating": 4.16,
@@ -1390,7 +1414,19 @@
       "steam-cloud"
     ],
     "sourceUrl": "https://rawg.io/games/metal-gear-solid-v-the-phantom-pain",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/metal-gear-solid-v-the-phantom-pain_202406/Metal%20Gear%20Solid%20V%20The%20Phantom%20Pain.iso",
+        "format": ".iso",
+        "sizeBytes": 21303656448,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:30:41.632Z"
+      }
+    ],
     "updatedAt": "2026-10-28T12:00:45.000Z",
     "sampleData": false
   },
@@ -1597,8 +1633,8 @@
     },
     "developer": "RAWG",
     "version": "2010",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 7824310272,
+    "sizeBytesEstimated": false,
     "ratingScore": 88,
     "metacritic": 88,
     "rating": 4.07,
@@ -1667,7 +1703,19 @@
       "atmospheric"
     ],
     "sourceUrl": "https://rawg.io/games/bioshock-2",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/bioshock_2_argentine_release_dump/Bioshock%202.iso",
+        "format": ".iso",
+        "sizeBytes": 7824310272,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:31:10.068Z"
+      }
+    ],
     "updatedAt": "2026-10-28T12:10:04.000Z",
     "sampleData": false
   },
@@ -1969,15 +2017,15 @@
     },
     "developer": "RAWG",
     "version": "2012",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 5753766458,
+    "sizeBytesEstimated": false,
     "ratingScore": 76,
     "metacritic": 76,
     "rating": 4.1,
     "ratingsCount": 1958,
     "releasedAt": "2012-06-26",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "7-Zip archive",
+    "fileExtension": ".7z",
     "coverPath": "https://cdn2.steamgriddb.com/grid/0f575f79f610cfa057a51cd284e4b827.png",
     "screenshots": [
       {
@@ -2039,7 +2087,19 @@
       "steam-cloud"
     ],
     "sourceUrl": "https://rawg.io/games/spec-ops-the-line",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/spec-ops-the-line.-7z/Spec%20Ops%20The%20Line.7z",
+        "format": ".7z",
+        "sizeBytes": 5753766458,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:31:49.514Z"
+      }
+    ],
     "updatedAt": "2026-11-20T08:08:20.000Z",
     "sampleData": false
   },
@@ -3085,8 +3145,8 @@
     },
     "developer": "RAWG",
     "version": "2014",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 3039078400,
+    "sizeBytesEstimated": false,
     "ratingScore": 80,
     "metacritic": 80,
     "rating": 3.91,
@@ -3155,7 +3215,19 @@
       "atmospheric"
     ],
     "sourceUrl": "https://rawg.io/games/metal-gear-solid-v-ground-zeroes",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/metal-gear-solid-v-ground-zeroes_202404/Metal%20Gear%20Solid%20V%20Ground%20Zeroes.iso",
+        "format": ".iso",
+        "sizeBytes": 3039078400,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:33:59.912Z"
+      }
+    ],
     "updatedAt": "2026-09-24T17:33:50.000Z",
     "sampleData": false
   },
@@ -3922,8 +3994,8 @@
     },
     "developer": "RAWG",
     "version": "2014",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 17712545792,
+    "sizeBytesEstimated": false,
     "ratingScore": 77,
     "metacritic": 77,
     "rating": 3.6,
@@ -3992,7 +4064,19 @@
       "co-op"
     ],
     "sourceUrl": "https://rawg.io/games/watch-dogs",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/watch-dogs_202508/Watch%20Dogs.iso",
+        "format": ".iso",
+        "sizeBytes": 17712545792,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:35:58.016Z"
+      }
+    ],
     "updatedAt": "2026-10-28T12:00:41.000Z",
     "sampleData": false
   },
@@ -4015,15 +4099,15 @@
     },
     "developer": "RAWG",
     "version": "2013",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 656828690,
+    "sizeBytesEstimated": false,
     "ratingScore": 90,
     "metacritic": 90,
     "rating": 4.18,
     "ratingsCount": 1647,
     "releasedAt": "2013-08-07",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "7-Zip archive",
+    "fileExtension": ".7z",
     "coverPath": "https://cdn2.steamgriddb.com/grid/075647d73efd90ca8bce86297c93e106.png",
     "screenshots": [
       {
@@ -4085,7 +4169,19 @@
       "atmospheric"
     ],
     "sourceUrl": "https://rawg.io/games/brothers-a-tale-of-two-sons-2",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/brothers-a-tale-of-two-sons-europe-Ps3/Brothers%20a%20Tale%20of%20Two%20Sons%20(PS3-rubinho146).7z",
+        "format": ".7z",
+        "sizeBytes": 656828690,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:36:05.093Z"
+      }
+    ],
     "updatedAt": "2026-10-27T23:04:59.000Z",
     "sampleData": false
   },
@@ -4108,15 +4204,15 @@
     },
     "developer": "RAWG",
     "version": "2010",
-    "sizeBytes": 6442450944,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 23925063660,
+    "sizeBytesEstimated": false,
     "ratingScore": 80,
     "metacritic": 80,
     "rating": 4.12,
     "ratingsCount": 2496,
     "releasedAt": "2010-02-17",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "7-Zip archive",
+    "fileExtension": ".7z",
     "coverPath": "https://cdn2.steamgriddb.com/grid/931d35c12aaf15a8091baaae8ccb3e18.png",
     "screenshots": [
       {
@@ -4178,7 +4274,19 @@
       "atmospheric"
     ],
     "sourceUrl": "https://rawg.io/games/heavy-rain",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/heavy-rain-europe-ps3/Heavy%20Rain%20(PS3).7z",
+        "format": ".7z",
+        "sizeBytes": 23925063660,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:36:17.082Z"
+      }
+    ],
     "updatedAt": "2026-11-15T16:37:24.000Z",
     "sampleData": false
   },

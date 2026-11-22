@@ -4,10 +4,10 @@
 </p>
 <h2 align="center">Ɛmustore</h2>
 
-<h3 align="center">A Homebrew Emulator Game Store for PlayStation 5</h3>
+<h3 align="center">A Homebrew Emulator Game Store for Pc and PlayStation 5</h3>
 
 <p align="center">
-  A modern, console-focused homebrew store experience for jailbroken PS5 systems.
+  A modern, console-focused homebrew store experience for Pc and jailbroken PS5 systems.
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 
 > 🚧 EmuStore is currently under active development.
 
-**EmuStore** is a PlayStation 5 homebrew application designed to provide a clean, fast, and console-friendly way to browse and download emulator games directly into each emulator's target directory.
+**EmuStore** is a Pc and PlayStation 5 homebrew application designed to provide a clean, fast, and console-friendly way to browse and download emulator games directly into each emulator's target directory.
 
 Built specifically around a native PS5 and DualSense experience rather than behaving like a conventional web dashboard, it automatically routes downloads for supported platforms (`PS1`, `PS2`, `PS3`, `Switch`, `Wii`, `Wii U`) straight to their corresponding emulator folders—with fully customizable paths in Settings.
 
@@ -59,42 +59,6 @@ Built specifically around a native PS5 and DualSense experience rather than beha
   <img src="public/alphaimg/3.png" alt="EmuStore Alpha Footage - Library View" width="100%" />
 </p>
 
----
-
-## 🧩 Features
-
-### Store
-
-- Featured applications
-- Recently updated applications
-- Categories
-- Platform filtering
-- Application search
-- Application details
-
-### Application Pages
-
-Each application can provide:
-
-- Application name
-- Description
-- Developer
-- Version
-- Compatibility
-- Screenshots
-- Changelog
-- Installation status
-- Update status
-- Official project link
-
-### Library
-
-The library is designed to keep track of:
-
-- Installed applications
-- Favorites
-- Available updates
-- Application versions
 
 ---
 
@@ -143,7 +107,6 @@ The development interface can then be accessed locally through the configured Ne
 ### Phase 2 — Store
 
 - [x] Home screen
-- [ ] Featured applications
 - [x] Application cards
 - [x] Search
 - [x] Categories
@@ -152,15 +115,15 @@ The development interface can then be accessed locally through the configured Ne
 
 ### Phase 3 — Library
 
-- [ ] Installed applications
+- [x] Installed Games
 - [x] Favorites
-- [ ] Version tracking
-- [x] Update detection
-- [x] Update interface
+- [x] Version tracking
+- [ ] Game Update interface
 
-### Phase 4 — PS5 Integration
+### Phase 4 — PS5, PC Integration
 
 - [ ] Native PS5 client
+- [x] Native Pc client
 - [x] Controller navigation
 - [ ] Package management
 - [ ] Installation workflow
@@ -263,3 +226,4 @@ olacak.✅
 18- topbar stiky kalacak aşağı gelince kayboluyor.✅
 19- oyunların json dosyaları okunacak resimleri eklenecek.✅
 -->
+

@@ -18,7 +18,8 @@ export function SectionNavigation({ locale }: { locale: Locale }) {
       const delta = (event as CustomEvent<{ delta?: number }>).detail?.delta;
       if (delta !== -1 && delta !== 1) return;
 
-      const currentSection = pathname === `/${locale}/downloads`
+      const normalizedPath = pathname.replace(/\/+$/, "") || "/";
+      const currentSection = normalizedPath === `/${locale}/downloads`
         ? "downloads"
         : searchParams.get("view") === "browse"
           ? "browse"

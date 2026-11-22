@@ -53,6 +53,12 @@ function checkSource(source, platform, itemSlug, index) {
   if (!url || !["http:", "https:"].includes(url.protocol) || url.username || url.password) {
     problems.push(`${context}: url must be a valid HTTP or HTTPS URL without credentials.`);
   }
+  if (source.browserUrl !== undefined) {
+    const browserUrl = typeof source.browserUrl === "string" ? safeUrl(source.browserUrl) : null;
+    if (!browserUrl || !["http:", "https:"].includes(browserUrl.protocol) || browserUrl.username || browserUrl.password) {
+      problems.push(`${context}: browserUrl must be a valid HTTP or HTTPS URL without credentials.`);
+    }
+  }
   if (typeof source.format !== "string" || !allowedExtensions.has(source.format.toLowerCase())) {
     problems.push(`${context}: format must be an allowed extension for ${platform}.`);
   }
@@ -70,6 +76,9 @@ function checkSource(source, platform, itemSlug, index) {
   }
   if (source.verifiedAt !== undefined && (typeof source.verifiedAt !== "string" || Number.isNaN(Date.parse(source.verifiedAt)))) {
     problems.push(`${context}: verifiedAt must be a valid date string when present.`);
+  }
+  if (source.sourceCheckedAt !== undefined && (typeof source.sourceCheckedAt !== "string" || Number.isNaN(Date.parse(source.sourceCheckedAt)))) {
+    problems.push(`${context}: sourceCheckedAt must be a valid date string when present.`);
   }
 }
 

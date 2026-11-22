@@ -3,9 +3,14 @@
 import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react";
 import { LinkCaptureModal } from "@/components/catalog/link-capture-modal";
 import { useCollections } from "@/components/shell/collections-provider";
+import type { DownloadItemStatus } from "@/lib/catalog/collections";
 import { formatFileSize } from "@/lib/catalog/format";
 import { isArchiveFormat } from "@/lib/install/install-preferences";
-import { DEFAULT_SUGGESTED_PATHS, mergeTargetPathPreferences, TARGET_PATH_STORAGE_KEY } from "@/lib/install/target-paths";
+import {
+  DEFAULT_SUGGESTED_PATHS,
+  readTargetPathPreferences,
+  TARGET_PATHS_UPDATED_EVENT,
+} from "@/lib/install/target-paths";
 import { createLinkCaptureAdapter } from "@/lib/install/link-capture";
 import { nativeBridge } from "@/lib/native/bridge";
 import type { CatalogItem, DownloadSource, Locale } from "@/lib/catalog/types";
@@ -18,13 +23,7 @@ type DownloadSourcePanelProps = {
 };
 
 function readSuggestedTargetPath(item: CatalogItem): string {
-  try {
-    const saved = window.localStorage.getItem(TARGET_PATH_STORAGE_KEY);
-    const preferences = mergeTargetPathPreferences(saved ? JSON.parse(saved) as unknown : null);
-    return preferences[item.catalogId];
-  } catch {
-    return DEFAULT_SUGGESTED_PATHS[item.catalogId];
-  }
+  return readTargetPathPreferences()[item.catalogId] ?? DEFAULT_SUGGESTED_PATHS[item.catalogId];
 }
 
 export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePanelProps) {
@@ -36,8 +35,26 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
   const [isOpen, setIsOpen] = useState(false);
   const [activeSource, setActiveSource] = useState<DownloadSource | null>(null);
   const [targetPath, setTargetPath] = useState(DEFAULT_SUGGESTED_PATHS[item.catalogId]);
+  const [submittingSourceId, setSubmittingSourceId] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<string | null>(null);
   const sources = useMemo(() => [...item.sources].sort((left, right) => left.priority - right.priority), [item.sources]);
+  const queuedEntry = useMemo(
+    () => collections.queue.find((entry) => entry.catalogId === item.catalogId && entry.slug === item.slug),
+    [collections.queue, item.catalogId, item.slug],
+  );
+
+  useEffect(() => {
+    const syncTargetPath = () => {
+      setTargetPath(readSuggestedTargetPath(item));
+    };
+    queueMicrotask(syncTargetPath);
+    window.addEventListener(TARGET_PATHS_UPDATED_EVENT, syncTargetPath);
+    window.addEventListener("storage", syncTargetPath);
+    return () => {
+      window.removeEventListener(TARGET_PATHS_UPDATED_EVENT, syncTargetPath);
+      window.removeEventListener("storage", syncTargetPath);
+    };
+  }, [item]);
 
   useEffect(() => {
     if (isOpen) {
@@ -70,60 +87,73 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
     resolvedUrl?: string,
     targetPathOverride?: string,
   ) {
-    const selectedTargetPath = targetPathOverride ?? readSuggestedTargetPath(item);
-    setTargetPath(selectedTargetPath);
-    const effectiveUrl = resolvedUrl ?? (source.deliveryMode === "direct" ? source.url : undefined);
-    const archive = isArchiveFormat(source.format);
-    let downloadId: string | undefined;
-    let status: "ready_to_install" | "installed" | "queued" | "downloading" | "paused" | "extracting" | "error" =
-      archive ? "ready_to_install" : "installed";
-    let progress = 100;
-    let installedPath: string | undefined = archive ? undefined : selectedTargetPath;
+    setSubmittingSourceId(source.id);
+    try {
+      const selectedTargetPath = targetPathOverride ?? readSuggestedTargetPath(item);
+      setTargetPath(selectedTargetPath);
+      const effectiveUrl = resolvedUrl ?? (source.deliveryMode === "direct" ? source.url : undefined);
+      const archive = isArchiveFormat(source.format);
+      let downloadId: string | undefined;
+      let status: DownloadItemStatus = archive ? "ready_to_install" : "installed";
+      let progress = 100;
+      let installedPath: string | undefined = archive ? undefined : selectedTargetPath;
+      let browserUrl = source.browserUrl;
+      let errorMessage: string | undefined;
 
-    if (effectiveUrl) {
-      const health = await nativeBridge.getHealth();
-      if (health) {
-        const started = await nativeBridge.startDownload({
-          catalogId: item.catalogId,
-          slug: item.slug,
-          title: item.title[locale],
-          url: effectiveUrl,
-          format: source.format,
-          targetDir: selectedTargetPath,
-          sizeBytes: source.sizeBytes,
-          ...(source.sha256 ? { sha256: source.sha256 } : {}),
-        });
-        if (started) {
-          downloadId = started.id;
-          status = started.status;
-          progress = started.progress;
-          installedPath = started.installedPath;
+      if (effectiveUrl) {
+        const health = await nativeBridge.getHealth();
+        if (health) {
+          const started = await nativeBridge.startDownload({
+            catalogId: item.catalogId,
+            slug: item.slug,
+            title: item.title[locale],
+            url: effectiveUrl,
+            format: source.format,
+            targetDir: selectedTargetPath,
+            sizeBytes: source.sizeBytes,
+            ...(source.sha256 ? { sha256: source.sha256 } : {}),
+          });
+          if (started) {
+            downloadId = started.id;
+            status = started.status;
+            progress = started.progress;
+            installedPath = started.installedPath;
+            browserUrl = started.browserUrl ?? browserUrl;
+            errorMessage = started.error;
+          }
         }
       }
-    }
 
-    collections.addToQueue({
-      catalogId: item.catalogId,
-      slug: item.slug,
-      sourceId: source.id,
-      provider: source.provider,
-      deliveryMode: source.deliveryMode,
-      requiresVerification: source.requiresVerification,
-      format: source.format,
-      sizeBytes: source.sizeBytes,
-      ...(source.sha256 ? { sha256: source.sha256 } : {}),
-      targetPath: selectedTargetPath,
-      ...(effectiveUrl ? { resolvedUrl: effectiveUrl } : {}),
-      queuedAt: new Date().toISOString(),
-      status,
-      progress,
-      ...(downloadId ? { downloadId } : {}),
-      ...(installedPath ? { installedPath } : {}),
-    });
-    setFeedback(resolvedUrl ? messages.downloads.linkCaptured : messages.downloads.addedToQueue);
+      collections.addToQueue({
+        catalogId: item.catalogId,
+        slug: item.slug,
+        sourceId: source.id,
+        provider: source.provider,
+        deliveryMode: source.deliveryMode,
+        requiresVerification: source.requiresVerification,
+        format: source.format,
+        sizeBytes: source.sizeBytes,
+        ...(source.sha256 ? { sha256: source.sha256 } : {}),
+        targetPath: selectedTargetPath,
+        ...(effectiveUrl ? { resolvedUrl: effectiveUrl } : {}),
+        ...(browserUrl ? { browserUrl } : {}),
+        queuedAt: new Date().toISOString(),
+        status,
+        progress,
+        ...(downloadId ? { downloadId } : {}),
+        ...(installedPath ? { installedPath } : {}),
+        ...(errorMessage ? { errorMessage } : {}),
+      });
+      setFeedback(
+        `${source.provider} — ${resolvedUrl ? messages.downloads.linkCaptured : messages.downloads.addedToQueue}`,
+      );
+    } finally {
+      setSubmittingSourceId(null);
+    }
   }
 
   function selectSource(source: DownloadSource) {
+    if (submittingSourceId === source.id) return;
     setFeedback(null);
     if (source.deliveryMode === "browser_verify") {
       setTargetPath(readSuggestedTargetPath(item));
@@ -167,15 +197,24 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
           </div>
         </div>
       ) : (
-      <div className="download-source-list">
-        {sources.map((source) => (
-          <article className="download-source-card" key={`${item.slug}:${source.id}`}>
+      <div className={`download-source-list${sources.length === 1 ? " download-source-list--single" : ""}`}>
+        {sources.map((source) => {
+          const isThisSourceQueued = queuedEntry?.sourceId === source.id;
+          return (
+          <article className={`download-source-card${isThisSourceQueued ? " download-source-card--queued" : ""}`} key={`${item.slug}:${source.id}`}>
             <div className="download-source-card__heading">
               <div>
                 <span className="download-source-card__provider">{source.provider}</span>
-                <span className={`source-status${source.requiresVerification ? " source-status--verify" : " source-status--direct"}`}>
-                  {source.requiresVerification ? messages.details.verificationRequired : messages.details.direct}
-                </span>
+                <div className="download-source-card__badges">
+                  <span className={`source-status${source.requiresVerification ? " source-status--verify" : " source-status--direct"}`}>
+                    {source.requiresVerification ? messages.details.verificationRequired : messages.details.direct}
+                  </span>
+                  {isThisSourceQueued ? (
+                    <span className="source-status source-status--queued">
+                      {messages.catalog.queued}
+                    </span>
+                  ) : null}
+                </div>
               </div>
               <span className="extension-chip">{source.format.toUpperCase()}</span>
             </div>
@@ -192,19 +231,20 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
             </div>
 
             <div className="download-source-card__footer">
-              <a className="source-page-link" href={source.url} target="_blank" rel="noreferrer">
+              <a className="source-page-link" href={source.browserUrl ?? source.url} target="_blank" rel="noreferrer">
                 {messages.details.openSourcePage}<span aria-hidden="true"> ↗</span>
               </a>
               {source.deliveryMode === "debrid" ? (
                 <button className="button button--quiet" type="button" disabled>{messages.details.debridUnavailable}</button>
               ) : (
-                <button className="button button--quiet" type="button" onClick={() => selectSource(source)}>
+                <button className="button button--quiet" type="button" disabled={submittingSourceId === source.id} onClick={() => selectSource(source)}>
                   {source.deliveryMode === "browser_verify" ? messages.details.verifyAndCapture : messages.downloads.addToQueue}
                 </button>
               )}
             </div>
           </article>
-        ))}
+          );
+        })}
       </div>
       )}
 

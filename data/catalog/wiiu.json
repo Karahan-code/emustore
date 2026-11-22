@@ -1599,8 +1599,8 @@
     },
     "developer": "RAWG",
     "version": "2012",
-    "sizeBytes": 3221225472,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 8557730037,
+    "sizeBytesEstimated": false,
     "ratingScore": 83,
     "metacritic": 83,
     "rating": 3.74,
@@ -1669,7 +1669,19 @@
       "soundtrack"
     ],
     "sourceUrl": "https://rawg.io/games/darksiders-ii",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/darksiders-ii-us/Darksiders%20II%20(US).wua",
+        "format": ".wua",
+        "sizeBytes": 8557730037,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:50:25.888Z"
+      }
+    ],
     "updatedAt": "2026-10-25T14:50:48.000Z",
     "sampleData": false
   },

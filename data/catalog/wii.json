@@ -111,15 +111,15 @@
     },
     "developer": "RAWG",
     "version": "2010",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4583569840,
+    "sizeBytesEstimated": false,
     "ratingScore": 81,
     "metacritic": 81,
     "rating": 4.06,
     "ratingsCount": 1879,
     "releasedAt": "2010-11-09",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "7-Zip archive",
+    "fileExtension": ".7z",
     "coverPath": "https://cdn2.steamgriddb.com/grid/b9b065288cf8d4eba8b9ac1ad9c52aaf.png",
     "screenshots": [
       {
@@ -181,7 +181,19 @@
       "story-rich"
     ],
     "sourceUrl": "https://rawg.io/games/call-of-duty-black-ops",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/call-of-duty-black-ops-wii-scrubber-pal.-7z/Call%20Of%20Duty%20Black%20Ops%20%5BWII-Scrubber%5D%5BPAL%5D.7z",
+        "format": ".7z",
+        "sizeBytes": 4583569840,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:37:56.714Z"
+      }
+    ],
     "updatedAt": "2026-11-18T21:41:50.000Z",
     "sampleData": false
   },
@@ -204,15 +216,15 @@
     },
     "developer": "RAWG",
     "version": "2011",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4540154556,
+    "sizeBytesEstimated": false,
     "ratingScore": 85,
     "metacritic": 85,
     "rating": 3.79,
     "ratingsCount": 1661,
     "releasedAt": "2011-11-08",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "7-Zip archive",
+    "fileExtension": ".7z",
     "coverPath": "https://cdn2.steamgriddb.com/grid/0966a2a1d72914b40a6c29a88b44e104.jpg",
     "screenshots": [
       {
@@ -274,7 +286,19 @@
       "co-op"
     ],
     "sourceUrl": "https://rawg.io/games/call-of-duty-modern-warfare-3",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/call-of-duty-modern-warfare-3-multi-wii-scrubber-pal.-7z/Call%20Of%20Duty%20Modern%20Warfare%203%20%5BMULTI%5D%5BWII-Scrubber%5D%5BPAL%5D.7z",
+        "format": ".7z",
+        "sizeBytes": 4540154556,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:38:02.925Z"
+      }
+    ],
     "updatedAt": "2026-10-28T11:59:31.000Z",
     "sampleData": false
   },
@@ -297,15 +321,15 @@
     },
     "developer": "RAWG",
     "version": "2012",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2511903052,
+    "sizeBytesEstimated": false,
     "ratingScore": 80,
     "metacritic": 80,
     "rating": 3.56,
     "ratingsCount": 627,
     "releasedAt": "2012-10-30",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "ZIP archive",
+    "fileExtension": ".zip",
     "coverPath": "https://cdn2.steamgriddb.com/grid/4c1fc9aaa624c235037b9fae1ec34d1f.png",
     "screenshots": [
       {
@@ -367,7 +391,19 @@
       "steam-cloud"
     ],
     "sourceUrl": "https://rawg.io/games/lego-lord-of-the-rings",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/lego-the-lord-of-the-rings-usa-en-fr-es-pt/LEGO%20The%20Lord%20of%20the%20Rings%20(USA)%20(EnFrEsPt).zip",
+        "format": ".zip",
+        "sizeBytes": 2511903052,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:38:10.672Z"
+      }
+    ],
     "updatedAt": "2026-10-03T07:29:15.000Z",
     "sampleData": false
   },
@@ -483,15 +519,15 @@
     },
     "developer": "RAWG",
     "version": "2008",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2005005052,
+    "sizeBytesEstimated": false,
     "ratingScore": 83,
     "metacritic": 83,
     "rating": 3.97,
     "ratingsCount": 1219,
     "releasedAt": "2008-11-11",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "ZIP archive",
+    "fileExtension": ".zip",
     "coverPath": "https://cdn2.steamgriddb.com/grid/74382b603df4a14cc8dc4ea375ddbc64.png",
     "screenshots": [
       {
@@ -553,7 +589,19 @@
       "cooperative"
     ],
     "sourceUrl": "https://rawg.io/games/call-of-duty-world-at-war",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/call-of-duty-world-at-war-korea/Call%20of%20Duty%20-%20World%20at%20War%20(Korea).zip",
+        "format": ".zip",
+        "sizeBytes": 2005005052,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:38:30.674Z"
+      }
+    ],
     "updatedAt": "2026-11-18T21:42:21.000Z",
     "sampleData": false
   },
@@ -762,8 +810,8 @@
     },
     "developer": "RAWG",
     "version": "2008",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 3535798272,
+    "sizeBytesEstimated": false,
     "ratingScore": 72,
     "metacritic": 72,
     "rating": 4.13,
@@ -832,7 +880,19 @@
       "story-rich"
     ],
     "sourceUrl": "https://rawg.io/games/bully-scholarship-edition",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/bully-scholarship-edition-rb-7-e-54/Bully-%20Scholarship%20Edition%5BRB7E54%5D.wbfs",
+        "format": ".wbfs",
+        "sizeBytes": 3535798272,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:39:04.632Z"
+      }
+    ],
     "updatedAt": "2026-09-10T18:21:25.000Z",
     "sampleData": false
   },
@@ -1227,15 +1287,15 @@
     },
     "developer": "RAWG",
     "version": "2011",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4699979776,
+    "sizeBytesEstimated": false,
     "ratingScore": 86,
     "metacritic": 86,
     "rating": 4.13,
     "ratingsCount": 762,
     "releasedAt": "2011-11-15",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
     "coverPath": "https://cdn2.steamgriddb.com/grid/cb1a716a70ad58a2f02792dcc8db2039.png",
     "screenshots": [
       {
@@ -1297,7 +1357,19 @@
       "cooperative"
     ],
     "sourceUrl": "https://rawg.io/games/rayman-origins",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/rayman-origins-usa-en-fr-es.nkit/Rayman%20Origins%20(USA)%20(En%2CFr%2CEs).iso",
+        "format": ".iso",
+        "sizeBytes": 4699979776,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:40:01.374Z"
+      }
+    ],
     "updatedAt": "2026-10-24T14:38:37.000Z",
     "sampleData": false
   },
@@ -1320,15 +1392,15 @@
     },
     "developer": "RAWG",
     "version": "2007",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4703911936,
+    "sizeBytesEstimated": false,
     "ratingScore": 77,
     "metacritic": 77,
     "rating": 4.1,
     "ratingsCount": 643,
     "releasedAt": "2007-11-06",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
     "coverPath": "https://cdn2.steamgriddb.com/grid/e14dc01aadd6ee3cee4ef338fd966b35.png",
     "screenshots": [
       {
@@ -1390,7 +1462,19 @@
       "great-soundtrack"
     ],
     "sourceUrl": "https://rawg.io/games/lego-star-wars-tcs",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/Lgostrwrscompledt/Lego%20Star%20Wars%20-%20The%20Complete%20Saga.iso",
+        "format": ".iso",
+        "sizeBytes": 4703911936,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:40:23.303Z"
+      }
+    ],
     "updatedAt": "2026-09-01T16:58:41.000Z",
     "sampleData": false
   },
@@ -2709,15 +2793,15 @@
     },
     "developer": "RAWG",
     "version": "2011",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 910016301,
+    "sizeBytesEstimated": false,
     "ratingScore": 80,
     "metacritic": 80,
     "rating": 3.71,
     "ratingsCount": 296,
     "releasedAt": "2011-11-11",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "7-Zip archive",
+    "fileExtension": ".7z",
     "coverPath": "https://cdn2.steamgriddb.com/grid/52099e3b6dbb3e25ef3012da2791a842.png",
     "screenshots": [
       {
@@ -2779,7 +2863,19 @@
       "cooperative"
     ],
     "sourceUrl": "https://rawg.io/games/lego-harry-potter-years-5-7",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/lego-harry-potter-years-5-7-usa-en-fr-es-pt.-7z/LEGO%20Harry%20Potter%20-%20Years%205-7%20(USA)%20(En%2CFr%2CEs%2CPt).7z",
+        "format": ".7z",
+        "sizeBytes": 910016301,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:43:19.628Z"
+      }
+    ],
     "updatedAt": "2026-10-03T07:30:44.000Z",
     "sampleData": false
   },
@@ -3081,15 +3177,15 @@
     },
     "developer": "RAWG",
     "version": "2011",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4699979776,
+    "sizeBytesEstimated": false,
     "ratingScore": 76,
     "metacritic": 76,
     "rating": 3.78,
     "ratingsCount": 270,
     "releasedAt": "2011-03-21",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
     "coverPath": "https://cdn2.steamgriddb.com/grid/8e1a34fb2a04d0abe810f423b25ca00b.png",
     "screenshots": [
       {
@@ -3151,7 +3247,19 @@
       "open-world"
     ],
     "sourceUrl": "https://rawg.io/games/lego-star-wars-iii",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/ovvabc123-lego_star_wars_iii_the_clone_wars_europe_australia_en_fr_de_es_it_da_rev-1/LEGO%20Star%20Wars%20III%20-%20The%20Clone%20Wars%20(Europe%2C%20Australia)%20(En%2CFr%2CDe%2CEs%2CIt%2CDa)%20(Rev%201).iso",
+        "format": ".iso",
+        "sizeBytes": 4699979776,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:43:52.074Z"
+      }
+    ],
     "updatedAt": "2026-08-31T21:06:08.000Z",
     "sampleData": false
   },
@@ -3544,15 +3652,15 @@
     },
     "developer": "RAWG",
     "version": "2006",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4699979776,
+    "sizeBytesEstimated": false,
     "ratingScore": 77,
     "metacritic": 77,
     "rating": 3.95,
     "ratingsCount": 780,
     "releasedAt": "2006-10-30",
-    "fileFormat": "WBFS image",
-    "fileExtension": ".wbfs",
+    "fileFormat": "ISO disc image",
+    "fileExtension": ".iso",
     "coverPath": "https://cdn2.steamgriddb.com/grid/8eb8c14637ad7f04b17390e3c4b16ec9.png",
     "screenshots": [
       {
@@ -3614,7 +3722,19 @@
       "wii"
     ],
     "sourceUrl": "https://rawg.io/games/need-for-speed-carbon",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/ovvabc123-need_for_speed_carbon_europe/Need%20for%20Speed%20-%20Carbon%20(Europe).iso",
+        "format": ".iso",
+        "sizeBytes": 4699979776,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:44:41.506Z"
+      }
+    ],
     "updatedAt": "2026-10-30T09:00:06.000Z",
     "sampleData": false
   },
@@ -3730,8 +3850,8 @@
     },
     "developer": "RAWG",
     "version": "2007",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 3510632448,
+    "sizeBytesEstimated": false,
     "ratingScore": 97,
     "metacritic": 97,
     "rating": 4.35,
@@ -3800,7 +3920,19 @@
       "mario"
     ],
     "sourceUrl": "https://rawg.io/games/super-mario-galaxy",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/super-mario-galaxy-europe-en-fr-de-es-it/Super%20Mario%20Galaxy%20(Europe)%20(En%2CFr%2CDe%2CEs%2CIt).wbfs",
+        "format": ".wbfs",
+        "sizeBytes": 3510632448,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:45:07.815Z"
+      }
+    ],
     "updatedAt": "2026-10-17T02:19:41.000Z",
     "sampleData": false
   },
@@ -4101,8 +4233,8 @@
     },
     "developer": "RAWG",
     "version": "2010",
-    "sizeBytes": 1610612736,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2724200448,
+    "sizeBytesEstimated": false,
     "ratingScore": 65,
     "metacritic": 65,
     "rating": 3.7,
@@ -4169,7 +4301,19 @@
       "controller"
     ],
     "sourceUrl": "https://rawg.io/games/sonic-sega-all-stars-racing",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/sonic-sega-all-stars-racing-europe-en-fr-de-es-it_202605/Sonic%20%26%20Sega%20All-Stars%20Racing%20(Europe)%20(En%2CFr%2CDe%2CEs%2CIt).wbfs",
+        "format": ".wbfs",
+        "sizeBytes": 2724200448,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:46:04.385Z"
+      }
+    ],
     "updatedAt": "2025-11-16T19:26:07.000Z",
     "sampleData": false
   },

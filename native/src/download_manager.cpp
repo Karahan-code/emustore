@@ -3,13 +3,13 @@
 #include <algorithm>
 #include <cctype>
 #include <chrono>
-#include <cstdio>
 #include <filesystem>
 #include <fstream>
 #include <vector>
 
 #include "json_util.hpp"
 #include "platform.hpp"
+#include "source_resolver.hpp"
 #include "zip_extractor.hpp"
 
 #ifdef EMUSTORE_USE_CURL
@@ -22,12 +22,41 @@ namespace fs = std::filesystem;
 
 namespace {
 
+constexpr const char* kDownloadUserAgent =
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) EmuStore/0.1 Chrome/126.0.0.0 Safari/537.36";
+
 bool is_archive_ext(const std::string& format) {
   std::string lower;
   for (char ch : format) {
     lower.push_back(static_cast<char>(std::tolower(static_cast<unsigned char>(ch))));
   }
   return lower == ".zip" || lower == ".7z";
+}
+
+std::string trim_ascii(const std::string& value) {
+  size_t first = value.find_first_not_of(" \t\r\n");
+  if (first == std::string::npos) return "";
+  size_t last = value.find_last_not_of(" \t\r\n");
+  return value.substr(first, last - first + 1);
+}
+
+int parse_http_status_line(const std::string& line) {
+  size_t space = line.find(' ');
+  if (space == std::string::npos) return 0;
+  size_t start = line.find_first_not_of(' ', space);
+  if (start == std::string::npos) return 0;
+  try {
+    return std::stoi(line.substr(start, 3));
+  } catch (...) {
+    return 0;
+  }
+}
+
+std::string format_guard_http_error(int status) {
+  if (status == 401) return "HTTP 401: Source requires login.";
+  if (status == 403) return "HTTP 403: Access forbidden by host.";
+  if (status == 404) return "HTTP 404: File not found.";
+  return "HTTP " + std::to_string(status) + ": Download rejected by remote host.";
 }
 
 std::string sanitize_filename(const std::string& raw) {
@@ -212,6 +241,29 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
     format = task->snapshot.format;
   }
 
+  ResolvedSource resolved = resolve_download_source(url, format);
+  if (!resolved.ok) {
+    std::error_code ec;
+    fs::path partFs = to_fs_path(partPath);
+    fs::remove(partFs, ec);
+    fs::remove(partFs.parent_path(), ec);
+
+    std::lock_guard<std::mutex> lock(mutex_);
+    task->snapshot.speedBps = 0;
+    if (!resolved.browserUrl.empty()) {
+      task->snapshot.browserUrl = resolved.browserUrl;
+    }
+    task->snapshot.status = resolved.requiresBrowserVerify ? "requires_browser_verify" : "error";
+    task->snapshot.error = resolved.error.empty() ? "Source verification failed." : resolved.error;
+    return;
+  }
+
+  url = resolved.finalUrl;
+  if (resolved.contentLength > 0) {
+    std::lock_guard<std::mutex> lock(mutex_);
+    task->snapshot.totalBytes = resolved.contentLength;
+  }
+
   std::error_code ec;
   fs::path partFs = to_fs_path(partPath);
   fs::create_directories(partFs.parent_path(), ec);
@@ -241,6 +293,9 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
     std::chrono::steady_clock::time_point lastSampleAt;
     uint64_t lastSampleBytes;
     bool truncatedOn200;
+    int lastStatus;
+    std::string finalContentType;
+    std::string guardError;
   };
 
   std::ofstream outFile(partFs, existingBytes > 0 ? (std::ios::binary | std::ios::app) : (std::ios::binary | std::ios::trunc));
@@ -257,6 +312,9 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
       std::chrono::steady_clock::now(),
       0,
       false,
+      0,
+      "",
+      "",
     };
 
     CURL* curl = curl_easy_init();
@@ -267,11 +325,24 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
         size_t total = size * nitems;
         auto* c = static_cast<CurlContext*>(userdata);
         std::string line(buffer, total);
-        if (line.rfind("HTTP/", 0) == 0 && line.find(" 200 ") != std::string::npos && c->baseOffset > 0 && !c->truncatedOn200) {
-          c->outFile->close();
-          c->outFile->open(to_fs_path(c->task->partPath), std::ios::binary | std::ios::trunc);
-          c->baseOffset = 0;
-          c->truncatedOn200 = true;
+        if (line.rfind("HTTP/", 0) == 0) {
+          c->lastStatus = parse_http_status_line(line);
+          c->finalContentType.clear();
+          if (c->lastStatus == 200 && c->baseOffset > 0 && !c->truncatedOn200) {
+            c->outFile->close();
+            c->outFile->open(to_fs_path(c->task->partPath), std::ios::binary | std::ios::trunc);
+            c->baseOffset = 0;
+            c->truncatedOn200 = true;
+          }
+        } else {
+          size_t colon = line.find(':');
+          if (colon != std::string::npos) {
+            std::string key = trim_ascii(line.substr(0, colon));
+            for (char& ch : key) ch = static_cast<char>(std::tolower(static_cast<unsigned char>(ch)));
+            if (key == "content-type") {
+              c->finalContentType = trim_ascii(line.substr(colon + 1));
+            }
+          }
         }
         return total;
       };
@@ -279,6 +350,16 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
       auto writeCb = +[](char* ptr, size_t size, size_t nmemb, void* userdata) -> size_t {
         auto* c = static_cast<CurlContext*>(userdata);
         if (c->task->cancelRequested.load() || c->task->pauseRequested.load()) return 0;
+
+        if (c->lastStatus != 0 && (c->lastStatus < 200 || c->lastStatus >= 300)) {
+          c->guardError = format_guard_http_error(c->lastStatus);
+          return 0;
+        }
+        if (is_html_content_type(c->finalContentType)) {
+          c->guardError = "Server returned HTML page instead of file.";
+          return 0;
+        }
+
         size_t bytes = size * nmemb;
         c->outFile->write(ptr, static_cast<std::streamsize>(bytes));
         if (!*c->outFile) return 0;
@@ -312,9 +393,9 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
 
       curl_easy_setopt(curl, CURLOPT_URL, url.c_str());
       curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
-      curl_easy_setopt(curl, CURLOPT_MAXREDIRS, 8L);
-      curl_easy_setopt(curl, CURLOPT_FAILONERROR, 1L);
-      curl_easy_setopt(curl, CURLOPT_USERAGENT, "EmuStoreDaemon/0.1");
+      curl_easy_setopt(curl, CURLOPT_MAXREDIRS, 10L);
+      curl_easy_setopt(curl, CURLOPT_FAILONERROR, 0L);
+      curl_easy_setopt(curl, CURLOPT_USERAGENT, kDownloadUserAgent);
       curl_easy_setopt(curl, CURLOPT_CONNECTTIMEOUT, 15L);
       curl_easy_setopt(curl, CURLOPT_LOW_SPEED_LIMIT, 1024L);
       curl_easy_setopt(curl, CURLOPT_LOW_SPEED_TIME, 30L);
@@ -330,10 +411,18 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
       curl_easy_setopt(curl, CURLOPT_NOPROGRESS, 0L);
 
       CURLcode res = curl_easy_perform(curl);
+      long finalCode = 0;
+      curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &finalCode);
       curl_easy_cleanup(curl);
       outFile.close();
 
-      if (res == CURLE_OK) {
+      if (!ctx.guardError.empty()) {
+        errorMsg = ctx.guardError;
+      } else if (finalCode != 0 && (finalCode < 200 || finalCode >= 300)) {
+        errorMsg = format_guard_http_error(static_cast<int>(finalCode));
+      } else if (is_html_content_type(ctx.finalContentType)) {
+        errorMsg = "Server returned HTML page instead of file.";
+      } else if (res == CURLE_OK) {
         downloadSucceeded = true;
       } else if (task->pauseRequested.load() || task->cancelRequested.load()) {
         return;
@@ -356,14 +445,18 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
   if (!WinHttpCrackUrl(wUrl.c_str(), 0, 0, &uc)) {
     errorMsg = "Invalid HTTP/HTTPS download URL.";
   } else {
-    HINTERNET hSession = WinHttpOpen(L"EmuStoreDaemon/0.1", WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, nullptr, nullptr, 0);
+    HINTERNET hSession = WinHttpOpen(utf8_to_wide(kDownloadUserAgent).c_str(), WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, nullptr, nullptr, 0);
     HINTERNET hConnect = hSession ? WinHttpConnect(hSession, hostBuf, uc.nPort, 0) : nullptr;
     DWORD flags = uc.nScheme == INTERNET_SCHEME_HTTPS ? WINHTTP_FLAG_SECURE : 0;
     HINTERNET hRequest = hConnect ? WinHttpOpenRequest(hConnect, L"GET", pathBuf, nullptr, nullptr, nullptr, flags) : nullptr;
 
-    if (hRequest && existingBytes > 0) {
-      std::wstring rangeHdr = L"Range: bytes=" + std::to_wstring(existingBytes) + L"-";
-      WinHttpAddRequestHeaders(hRequest, rangeHdr.c_str(), static_cast<DWORD>(-1), WINHTTP_ADDREQ_FLAG_ADD);
+    if (hRequest) {
+      DWORD redirectPolicy = WINHTTP_OPTION_REDIRECT_POLICY_ALWAYS;
+      WinHttpSetOption(hRequest, WINHTTP_OPTION_REDIRECT_POLICY, &redirectPolicy, sizeof(redirectPolicy));
+      if (existingBytes > 0) {
+        std::wstring rangeHdr = L"Range: bytes=" + std::to_wstring(existingBytes) + L"-";
+        WinHttpAddRequestHeaders(hRequest, rangeHdr.c_str(), static_cast<DWORD>(-1), WINHTTP_ADDREQ_FLAG_ADD);
+      }
     }
 
     if (!hRequest || !WinHttpSendRequest(hRequest, nullptr, 0, nullptr, 0, 0, 0) || !WinHttpReceiveResponse(hRequest, nullptr)) {
@@ -373,8 +466,17 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
       DWORD statusSize = sizeof(statusCode);
       WinHttpQueryHeaders(hRequest, WINHTTP_QUERY_STATUS_CODE | WINHTTP_QUERY_FLAG_NUMBER, nullptr, &statusCode, &statusSize, nullptr);
 
+      wchar_t ctBuf[256]{};
+      DWORD ctSize = sizeof(ctBuf);
+      std::string ct;
+      if (WinHttpQueryHeaders(hRequest, WINHTTP_QUERY_CONTENT_TYPE, nullptr, ctBuf, &ctSize, nullptr)) {
+        ct = wide_to_utf8(ctBuf);
+      }
+
       if (statusCode < 200 || statusCode >= 300) {
-        errorMsg = "HTTP server returned status " + std::to_string(statusCode);
+        errorMsg = format_guard_http_error(static_cast<int>(statusCode));
+      } else if (is_html_content_type(ct)) {
+        errorMsg = "Server returned HTML page instead of file.";
       } else {
         if (statusCode == 200 && existingBytes > 0) existingBytes = 0;
 
@@ -382,7 +484,9 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
         DWORD lenBufBytes = sizeof(lenBuf);
         uint64_t contentLen = 0;
         if (WinHttpQueryHeaders(hRequest, WINHTTP_QUERY_CONTENT_LENGTH, nullptr, lenBuf, &lenBufBytes, nullptr)) {
-          contentLen = std::stoull(wide_to_utf8(lenBuf));
+          try {
+            contentLen = std::stoull(wide_to_utf8(lenBuf));
+          } catch (...) {}
         }
         uint64_t totalExpected = contentLen > 0 ? (existingBytes + contentLen) : task->snapshot.totalBytes;
 
@@ -455,6 +559,11 @@ void DownloadManager::run_download_worker(const std::shared_ptr<ManagedDownload>
 #endif
 
   if (!downloadSucceeded) {
+    if (!task->pauseRequested.load()) {
+      fs::remove(partFs, ec);
+      fs::remove(partFs.parent_path(), ec);
+    }
+
     std::lock_guard<std::mutex> lock(mutex_);
     if (!task->pauseRequested.load() && !task->cancelRequested.load()) {
       task->snapshot.status = "error";
@@ -551,6 +660,9 @@ std::string download_snapshot_to_json(const DownloadRecordSnapshot& item) {
   }
   if (!item.installedPath.empty()) {
     out += "\"installedPath\":" + json_string(item.installedPath) + ",";
+  }
+  if (!item.browserUrl.empty()) {
+    out += "\"browserUrl\":" + json_string(item.browserUrl) + ",";
   }
   out += "\"status\":" + json_string(item.status) + ",";
   out += "\"progress\":" + std::to_string(item.progress) + ",";

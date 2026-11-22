@@ -1,5 +1,7 @@
 #include <atomic>
 #include <cctype>
+#include <cerrno>
+#include <chrono>
 #include <csignal>
 #include <cstring>
 #include <filesystem>
@@ -8,7 +10,9 @@
 #include <sstream>
 #include <string>
 #include <thread>
+#include <vector>
 
+#include "catalog_sync.hpp"
 #include "download_manager.hpp"
 #include "fs_service.hpp"
 #include "json_util.hpp"
@@ -34,11 +38,19 @@ void handle_signal(int) {
   }
 }
 
+enum class OpenMode {
+  Auto,
+  ForceOpen,
+  NoOpen,
+};
+
 struct ServerConfig {
   std::string host = "127.0.0.1";
   int port = 9021;
   std::string staticDir;
   std::string rootDir;
+  std::string catalogCacheDir;
+  OpenMode openMode = OpenMode::Auto;
 };
 
 struct HttpRequest {
@@ -57,13 +69,17 @@ std::string mime_type_for_path(const std::string& path) {
   if (ext == ".html" || ext == ".htm") return "text/html; charset=utf-8";
   if (ext == ".js" || ext == ".mjs") return "application/javascript; charset=utf-8";
   if (ext == ".css") return "text/css; charset=utf-8";
-  if (ext == ".json") return "application/json; charset=utf-8";
+  if (ext == ".json" || ext == ".map") return "application/json; charset=utf-8";
+  if (ext == ".svg") return "image/svg+xml";
   if (ext == ".png") return "image/png";
   if (ext == ".jpg" || ext == ".jpeg") return "image/jpeg";
   if (ext == ".webp") return "image/webp";
-  if (ext == ".svg") return "image/svg+xml";
+  if (ext == ".avif") return "image/avif";
   if (ext == ".ico") return "image/x-icon";
   if (ext == ".woff2") return "font/woff2";
+  if (ext == ".woff") return "font/woff";
+  if (ext == ".ttf") return "font/ttf";
+  if (ext == ".txt") return "text/plain; charset=utf-8";
   if (ext == ".zip") return "application/zip";
   return "application/octet-stream";
 }
@@ -83,13 +99,15 @@ void send_http_response(
     int status,
     const std::string& statusText,
     const std::string& contentType,
-    const std::string& body) {
+    const std::string& body,
+    const std::string& cacheControl = "private, no-store",
+    bool sendBody = true) {
   std::ostringstream hdr;
   hdr << "HTTP/1.1 " << status << " " << statusText << "\r\n";
   hdr << "Access-Control-Allow-Origin: *\r\n";
   hdr << "Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS\r\n";
   hdr << "Access-Control-Allow-Headers: Content-Type, Accept\r\n";
-  hdr << "Cache-Control: private, no-store\r\n";
+  hdr << "Cache-Control: " << (cacheControl.empty() ? "private, no-store" : cacheControl) << "\r\n";
   if (!contentType.empty()) {
     hdr << "Content-Type: " << contentType << "\r\n";
   }
@@ -98,13 +116,62 @@ void send_http_response(
 
   std::string headerStr = hdr.str();
   send_all(sock, headerStr.data(), headerStr.size());
-  if (!body.empty()) {
+  if (sendBody && !body.empty()) {
     send_all(sock, body.data(), body.size());
   }
 }
 
+void send_redirect(socket_t sock, const std::string& location) {
+  std::ostringstream hdr;
+  hdr << "HTTP/1.1 302 Found\r\n";
+  hdr << "Location: " << location << "\r\n";
+  hdr << "Cache-Control: no-cache\r\n";
+  hdr << "Content-Length: 0\r\n";
+  hdr << "Connection: close\r\n\r\n";
+
+  std::string headerStr = hdr.str();
+  send_all(sock, headerStr.data(), headerStr.size());
+}
+
 void send_json(socket_t sock, int status, const std::string& statusText, const std::string& json) {
-  send_http_response(sock, status, statusText, "application/json; charset=utf-8", json);
+  send_http_response(sock, status, statusText, "application/json; charset=utf-8", json, "private, no-store", true);
+}
+
+std::string cache_control_for_static(const std::string& urlPath, const fs::path& resolvedFile) {
+  if (urlPath.rfind("/_next/static/", 0) == 0) {
+    return "public, max-age=31536000, immutable";
+  }
+  if (resolvedFile.extension() == ".html" || resolvedFile.extension() == ".htm") {
+    return "no-cache";
+  }
+  return "public, max-age=300";
+}
+
+std::string auto_detect_static_dir() {
+  std::error_code ec;
+  std::vector<fs::path> candidates;
+#if defined(__PS5__) || defined(__PROSPERO__)
+  candidates.emplace_back("/app0/assets/out");
+  candidates.emplace_back("/data/emustore/out");
+#endif
+  fs::path exeDir = get_executable_dir();
+  if (!exeDir.empty()) {
+    candidates.push_back(exeDir / "out");
+  }
+  candidates.emplace_back("out");
+  candidates.emplace_back("../out");
+  if (!exeDir.empty()) {
+    candidates.push_back(exeDir / ".." / ".." / "out");
+  }
+
+  for (const fs::path& dir : candidates) {
+    if (!fs::exists(dir, ec) || !fs::is_directory(dir, ec)) continue;
+    if (fs::is_regular_file(dir / "index.html", ec) || fs::is_regular_file(dir / "tr" / "index.html", ec)) {
+      fs::path canon = fs::weakly_canonical(dir, ec);
+      return from_fs_path(ec ? dir.lexically_normal() : canon);
+    }
+  }
+  return {};
 }
 
 bool read_http_request(socket_t sock, HttpRequest& req) {
@@ -176,11 +243,18 @@ bool read_http_request(socket_t sock, HttpRequest& req) {
   return true;
 }
 
-bool try_serve_static(socket_t sock, const ServerConfig& cfg, const std::string& urlPath) {
+bool try_serve_static(
+    socket_t sock,
+    const ServerConfig& cfg,
+    const std::string& method,
+    const std::string& urlPath) {
   if (cfg.staticDir.empty()) return false;
+  if (urlPath == "/api" || urlPath.rfind("/api/", 0) == 0) return false;
 
   std::string decoded = url_decode(urlPath, false);
-  if (decoded.find('\0') != std::string::npos || decoded.find("..") != std::string::npos) {
+  if (decoded.find('\0') != std::string::npos ||
+      decoded.find('\\') != std::string::npos ||
+      decoded.find("..") != std::string::npos) {
     send_json(sock, 400, "Bad Request", "{\"error\":\"Invalid static path\"}");
     return true;
   }
@@ -188,18 +262,36 @@ bool try_serve_static(socket_t sock, const ServerConfig& cfg, const std::string&
   while (!decoded.empty() && decoded.front() == '/') {
     decoded.erase(decoded.begin());
   }
-  if (decoded.empty()) decoded = "index.html";
+  while (!decoded.empty() && decoded.back() == '/') {
+    decoded.pop_back();
+  }
 
   std::error_code ec;
   fs::path staticRoot = fs::weakly_canonical(to_fs_path(cfg.staticDir), ec);
   if (ec || !fs::exists(staticRoot, ec)) return false;
 
+  if (decoded.empty()) {
+    if (fs::is_regular_file(staticRoot / "index.html", ec)) {
+      decoded = "index.html";
+    } else if (fs::is_regular_file(staticRoot / "tr" / "index.html", ec)) {
+      send_redirect(sock, "/tr/");
+      return true;
+    } else {
+      return false;
+    }
+  }
+
   fs::path candidate = staticRoot / to_fs_path(decoded);
   if (fs::is_directory(candidate, ec)) {
     candidate /= "index.html";
-  } else if (!fs::exists(candidate, ec) && candidate.extension().empty()) {
-    fs::path htmlCandidate = to_fs_path(from_fs_path(candidate) + ".html");
-    if (fs::is_regular_file(htmlCandidate, ec)) candidate = htmlCandidate;
+  } else if (!fs::exists(candidate, ec)) {
+    fs::path indexCandidate = candidate / "index.html";
+    if (fs::is_regular_file(indexCandidate, ec)) {
+      candidate = indexCandidate;
+    } else if (candidate.extension().empty()) {
+      fs::path htmlCandidate = to_fs_path(from_fs_path(candidate) + ".html");
+      if (fs::is_regular_file(htmlCandidate, ec)) candidate = htmlCandidate;
+    }
   }
 
   fs::path canonCandidate = fs::weakly_canonical(candidate, ec);
@@ -214,11 +306,67 @@ bool try_serve_static(socket_t sock, const ServerConfig& cfg, const std::string&
   std::ostringstream ss;
   ss << file.rdbuf();
   std::string content = ss.str();
-  send_http_response(sock, 200, "OK", mime_type_for_path(from_fs_path(canonCandidate)), content);
+  std::string cacheControl = cache_control_for_static(urlPath, canonCandidate);
+  bool sendBody = (method != "HEAD");
+  send_http_response(
+      sock,
+      200,
+      "OK",
+      mime_type_for_path(from_fs_path(canonCandidate)),
+      content,
+      cacheControl,
+      sendBody);
   return true;
 }
 
-void handle_client(socket_t sock, const ServerConfig& cfg, DownloadManager& manager) {
+bool probe_existing_daemon_health(const std::string& host, int port) {
+  std::string probeHost = (host.empty() || host == "0.0.0.0") ? "127.0.0.1" : host;
+  socket_t sock = socket(AF_INET, SOCK_STREAM, 0);
+  if (sock == INVALID_SOCK) return false;
+
+  set_socket_timeouts(sock, 1200);
+
+  sockaddr_in target{};
+  target.sin_family = AF_INET;
+  target.sin_port = htons(static_cast<uint16_t>(port));
+  if (inet_pton(AF_INET, probeHost.c_str(), &target.sin_addr) != 1) {
+    close_socket(sock);
+    return false;
+  }
+
+  if (connect(sock, reinterpret_cast<sockaddr*>(&target), sizeof(target)) != 0) {
+    close_socket(sock);
+    return false;
+  }
+
+  std::string req =
+      "GET /api/native/health HTTP/1.1\r\nHost: " + probeHost +
+      "\r\nConnection: close\r\n\r\n";
+  if (!send_all(sock, req.data(), req.size())) {
+    close_socket(sock);
+    return false;
+  }
+
+  std::string reply;
+  char buf[1024];
+  for (;;) {
+    int n = recv(sock, buf, sizeof(buf), 0);
+    if (n <= 0) break;
+    reply.append(buf, static_cast<size_t>(n));
+    if (reply.size() >= 4096) break;
+  }
+  close_socket(sock);
+
+  return reply.find("200") != std::string::npos &&
+         reply.find("emustore-daemon") != std::string::npos &&
+         reply.find("\"ok\":true") != std::string::npos;
+}
+
+void handle_client(
+    socket_t sock,
+    const ServerConfig& cfg,
+    DownloadManager& manager,
+    CatalogSyncService& catalogSync) {
   set_socket_timeouts(sock, 5000);
   HttpRequest req;
   if (!read_http_request(sock, req)) {
@@ -242,6 +390,34 @@ void handle_client(socket_t sock, const ServerConfig& cfg, DownloadManager& mana
     json += "\"rootDir\":" + json_string(cfg.rootDir);
     json.push_back('}');
     send_json(sock, 200, "OK", json);
+  } else if (req.method == "GET" && req.path == "/api/native/catalog/status") {
+    send_json(sock, 200, "OK", catalogSync.get_status_json());
+  } else if (req.method == "POST" && req.path == "/api/native/catalog/sync") {
+    std::string baseUrl = json_get_string(req.body, "baseUrl").value_or("");
+    std::vector<std::string> platforms =
+        json_get_string_array(req.body, "platforms").value_or(std::vector<std::string>{});
+    CatalogSyncResponse syncResp = catalogSync.sync(baseUrl, platforms);
+    const char* statusText = syncResp.httpStatus == 200 ? "OK" : "Bad Request";
+    send_json(sock, syncResp.httpStatus, statusText, syncResp.bodyJson);
+  } else if (req.method == "DELETE" && req.path == "/api/native/catalog") {
+    int removed = catalogSync.clear_cache();
+    send_json(sock, 200, "OK", "{\"ok\":true,\"removed\":" + std::to_string(removed) + "}");
+  } else if (req.method == "GET" && req.path.rfind("/api/native/catalog/", 0) == 0) {
+    std::string platform = url_decode(req.path.substr(std::strlen("/api/native/catalog/")), false);
+    if (!catalogSync.is_valid_platform(platform)) {
+      send_json(sock, 400, "Bad Request", "{\"ok\":false,\"error\":\"Unsupported platform catalog\"}");
+    } else if (auto cachedJson = catalogSync.read_cached_catalog(platform)) {
+      send_http_response(
+          sock,
+          200,
+          "OK",
+          "application/json; charset=utf-8",
+          *cachedJson,
+          "private, no-store",
+          true);
+    } else {
+      send_json(sock, 404, "Not Found", "{\"ok\":false,\"error\":\"Catalog is not cached\"}");
+    }
   } else if (req.method == "GET" && req.path == "/api/fs/list") {
     std::string requestedPath = parse_query_param(req.query, "path").value_or("");
     DirectoryListing listing = list_directory(requestedPath, cfg.rootDir);
@@ -303,7 +479,9 @@ void handle_client(socket_t sock, const ServerConfig& cfg, DownloadManager& mana
     } else {
       send_json(sock, 404, "Not Found", "{\"error\":\"Unknown downloads endpoint\"}");
     }
-  } else if ((req.method == "GET" || req.method == "HEAD") && try_serve_static(sock, cfg, req.path)) {
+  } else if (req.path == "/api" || req.path.rfind("/api/", 0) == 0) {
+    send_json(sock, 404, "Not Found", "{\"error\":\"Not found\"}");
+  } else if ((req.method == "GET" || req.method == "HEAD") && try_serve_static(sock, cfg, req.method, req.path)) {
     // Served static asset
   } else {
     send_json(sock, 404, "Not Found", "{\"error\":\"Not found\"}");
@@ -313,7 +491,9 @@ void handle_client(socket_t sock, const ServerConfig& cfg, DownloadManager& mana
 }
 
 void print_usage(const char* argv0) {
-  std::cout << "Usage: " << argv0 << " [--port=9021] [--host=127.0.0.1] [--static-dir=PATH] [--root-dir=PATH]\n";
+  std::cout << "Usage: " << argv0
+            << " [--port=9021] [--host=127.0.0.1] [--static-dir=PATH] [--root-dir=PATH]"
+            << " [--catalog-cache-dir=PATH] [--open | --no-open]\n";
 }
 
 }  // namespace
@@ -325,6 +505,10 @@ int main(int argc, char* argv[]) {
     if (arg == "--help" || arg == "-h") {
       print_usage(argv[0]);
       return 0;
+    } else if (arg == "--open") {
+      cfg.openMode = OpenMode::ForceOpen;
+    } else if (arg == "--no-open") {
+      cfg.openMode = OpenMode::NoOpen;
     } else if (arg.rfind("--port=", 0) == 0) {
       cfg.port = std::stoi(arg.substr(7));
     } else if (arg == "--port" && i + 1 < argc) {
@@ -341,11 +525,19 @@ int main(int argc, char* argv[]) {
       cfg.rootDir = arg.substr(11);
     } else if (arg == "--root-dir" && i + 1 < argc) {
       cfg.rootDir = argv[++i];
+    } else if (arg.rfind("--catalog-cache-dir=", 0) == 0) {
+      cfg.catalogCacheDir = arg.substr(20);
+    } else if (arg == "--catalog-cache-dir" && i + 1 < argc) {
+      cfg.catalogCacheDir = argv[++i];
     } else {
       std::cerr << "Unknown argument: " << arg << "\n";
       print_usage(argv[0]);
       return 1;
     }
+  }
+
+  if (cfg.staticDir.empty()) {
+    cfg.staticDir = auto_detect_static_dir();
   }
 
   init_networking();
@@ -359,11 +551,23 @@ int main(int argc, char* argv[]) {
   socket_t listenSock = socket(AF_INET, SOCK_STREAM, 0);
   if (listenSock == INVALID_SOCK) {
     std::cerr << "Failed creating TCP socket.\n";
+#ifdef EMUSTORE_USE_CURL
+    curl_global_cleanup();
+#endif
+    cleanup_networking();
     return 1;
   }
 
+#ifdef _WIN32
+  #ifndef SO_EXCLUSIVEADDRUSE
+    #define SO_EXCLUSIVEADDRUSE ((int)(~SO_REUSEADDR))
+  #endif
+  int exclusive = 1;
+  setsockopt(listenSock, SOL_SOCKET, SO_EXCLUSIVEADDRUSE, reinterpret_cast<const char*>(&exclusive), sizeof(exclusive));
+#else
   int reuse = 1;
   setsockopt(listenSock, SOL_SOCKET, SO_REUSEADDR, reinterpret_cast<const char*>(&reuse), sizeof(reuse));
+#endif
 
   sockaddr_in addr{};
   addr.sin_family = AF_INET;
@@ -371,26 +575,79 @@ int main(int argc, char* argv[]) {
   if (inet_pton(AF_INET, cfg.host.c_str(), &addr.sin_addr) != 1) {
     std::cerr << "Invalid bind IP address: " << cfg.host << "\n";
     close_socket(listenSock);
+#ifdef EMUSTORE_USE_CURL
+    curl_global_cleanup();
+#endif
+    cleanup_networking();
     return 1;
   }
 
   if (bind(listenSock, reinterpret_cast<sockaddr*>(&addr), sizeof(addr)) != 0) {
-    std::cerr << "Failed binding to " << cfg.host << ":" << cfg.port << "\n";
+#ifdef _WIN32
+    int bindErr = WSAGetLastError();
+    bool portInUse = (bindErr == WSAEADDRINUSE || bindErr == WSAEACCES);
+#else
+    bool portInUse = (errno == EADDRINUSE);
+#endif
     close_socket(listenSock);
+
+    if (portInUse && probe_existing_daemon_health(cfg.host, cfg.port)) {
+      std::cout << "EmuStore daemon is already running on http://" << cfg.host << ":" << cfg.port << ".\n";
+#ifdef _WIN32
+      if (cfg.openMode != OpenMode::NoOpen) {
+        std::string launchHost = (cfg.host == "0.0.0.0") ? "127.0.0.1" : cfg.host;
+        std::string launchUrl = "http://" + launchHost + ":" + std::to_string(cfg.port) + "/tr/";
+        launch_windows_app_window(launchUrl);
+#ifdef EMUSTORE_USE_CURL
+        curl_global_cleanup();
+#endif
+        cleanup_networking();
+        return 0;
+      }
+#endif
+      std::cerr << "Port " << cfg.port << " is already in use by an existing EmuStore daemon.\n";
+    } else {
+      std::cerr << "Failed binding to " << cfg.host << ":" << cfg.port
+                << (portInUse ? " (port already in use)" : "") << "\n";
+    }
+#ifdef EMUSTORE_USE_CURL
+    curl_global_cleanup();
+#endif
+    cleanup_networking();
     return 1;
   }
 
   if (listen(listenSock, 32) != 0) {
     std::cerr << "Failed listening on port " << cfg.port << "\n";
     close_socket(listenSock);
+#ifdef EMUSTORE_USE_CURL
+    curl_global_cleanup();
+#endif
+    cleanup_networking();
     return 1;
   }
 
   g_listenSocket = listenSock;
   DownloadManager manager;
+  CatalogSyncService catalogSync(cfg.catalogCacheDir);
 
   std::cout << "EmuStore native daemon listening on http://" << cfg.host << ":" << cfg.port
-            << " (" << emustore_platform_name() << ")\n" << std::flush;
+            << " (" << emustore_platform_name() << ")";
+  if (!cfg.staticDir.empty()) {
+    std::cout << " [static: " << cfg.staticDir << "]";
+  }
+  std::cout << " [catalog-cache: " << catalogSync.cache_dir() << "]\n" << std::flush;
+
+#ifdef _WIN32
+  if (cfg.openMode == OpenMode::ForceOpen || (cfg.openMode == OpenMode::Auto && !cfg.staticDir.empty())) {
+    std::string launchHost = (cfg.host == "0.0.0.0") ? "127.0.0.1" : cfg.host;
+    std::string launchUrl = "http://" + launchHost + ":" + std::to_string(cfg.port) + "/tr/";
+    std::thread([launchUrl]() {
+      std::this_thread::sleep_for(std::chrono::milliseconds(150));
+      launch_windows_app_window(launchUrl);
+    }).detach();
+  }
+#endif
 
   while (g_running.load()) {
     socket_t clientSock = accept(listenSock, nullptr, nullptr);
@@ -398,8 +655,8 @@ int main(int argc, char* argv[]) {
       if (!g_running.load()) break;
       continue;
     }
-    std::thread([clientSock, &cfg, &manager]() {
-      handle_client(clientSock, cfg, manager);
+    std::thread([clientSock, &cfg, &manager, &catalogSync]() {
+      handle_client(clientSock, cfg, manager, catalogSync);
     }).detach();
   }
 

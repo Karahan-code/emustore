@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { PLATFORM_CATALOG_IDS, type PlatformCatalogId } from "@/lib/catalog/platforms";
+import { isPlatformCatalogId, PLATFORM_CATALOG_IDS, type PlatformCatalogId } from "@/lib/catalog/platforms";
 import type { Locale } from "@/lib/catalog/types";
 import type { Messages } from "@/lib/i18n/dictionaries";
 import { APP_VERSION } from "@/lib/app-info";
@@ -15,8 +15,8 @@ type ReportResult = { status: number | null; key: ReportStatusKey };
 type ErrorReportFormProps = {
   locale: Locale;
   messages: Messages;
-  initialItemSlug: string;
-  initialPlatform: PlatformCatalogId | "";
+  initialItemSlug?: string;
+  initialPlatform?: PlatformCatalogId | "";
 };
 
 export function ErrorReportForm({
@@ -27,11 +27,16 @@ export function ErrorReportForm({
 }: ErrorReportFormProps) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const paramPlatform = searchParams.get("platform");
+  const resolvedInitialPlatform =
+    initialPlatform ?? (isPlatformCatalogId(paramPlatform) ? paramPlatform : "");
+  const resolvedInitialSlug = initialItemSlug ?? searchParams.get("itemSlug") ?? "";
+
   const [category, setCategory] = useState<ReportCategory>("bug");
   const [message, setMessage] = useState("");
   const [steps, setSteps] = useState("");
-  const [itemSlug, setItemSlug] = useState(initialItemSlug);
-  const [platform, setPlatform] = useState<PlatformCatalogId | "">(initialPlatform);
+  const [itemSlug, setItemSlug] = useState(resolvedInitialSlug);
+  const [platform, setPlatform] = useState<PlatformCatalogId | "">(resolvedInitialPlatform);
   const [contactEmail, setContactEmail] = useState("");
   const [isSending, setIsSending] = useState(false);
   const [result, setResult] = useState<ReportResult | null>(null);
@@ -45,33 +50,66 @@ export function ErrorReportForm({
       return;
     }
 
+    const webhookRaw = process.env.NEXT_PUBLIC_REPORT_WEBHOOK_URL?.trim();
+    if (!webhookRaw) {
+      setResult({ status: 503, key: "unavailable503" });
+      return;
+    }
+
+    let destination: URL;
+    try {
+      destination = new URL(webhookRaw);
+    } catch {
+      setResult({ status: 503, key: "unavailable503" });
+      return;
+    }
+
+    if (
+      destination.protocol !== "https:" &&
+      destination.hostname !== "localhost" &&
+      destination.hostname !== "127.0.0.1"
+    ) {
+      setResult({ status: 503, key: "unavailable503" });
+      return;
+    }
+
     const query = searchParams.toString();
     const currentRoute = query ? `${pathname}?${query}` : pathname;
     const payload = {
-      category,
-      message: message.trim(),
-      locale,
-      route: currentRoute,
-      clientVersion: APP_VERSION,
-      ...(steps.trim() ? { steps: steps.trim() } : {}),
-      ...(itemSlug.trim() ? { itemSlug: itemSlug.trim() } : {}),
-      ...(platform ? { platform } : {}),
-      ...(contactEmail.trim() ? { contactEmail: contactEmail.trim() } : {}),
+      reportId: typeof crypto !== "undefined" && typeof crypto.randomUUID === "function"
+        ? crypto.randomUUID()
+        : `${Date.now()}`,
+      receivedAt: new Date().toISOString(),
+      report: {
+        category,
+        message: message.trim(),
+        locale,
+        route: currentRoute,
+        clientVersion: APP_VERSION,
+        ...(steps.trim() ? { steps: steps.trim() } : {}),
+        ...(itemSlug.trim() ? { itemSlug: itemSlug.trim() } : {}),
+        ...(platform ? { platform } : {}),
+        ...(contactEmail.trim() ? { contactEmail: contactEmail.trim() } : {}),
+      },
     };
 
     setIsSending(true);
     try {
-      const response = await fetch("/api/v1/reports", {
+      const response = await fetch(destination.toString(), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
 
-      if (response.status === 202) setResult({ status: 202, key: "sent202" });
-      else if (response.status === 400) setResult({ status: 400, key: "validation400" });
-      else if (response.status === 502) setResult({ status: 502, key: "delivery502" });
-      else if (response.status === 503) setResult({ status: 503, key: "unavailable503" });
-      else setResult({ status: response.status, key: "unexpectedError" });
+      if (response.status === 202 || response.status === 200 || response.status === 201) {
+        setResult({ status: 202, key: "sent202" });
+      } else if (response.status === 400) {
+        setResult({ status: 400, key: "validation400" });
+      } else if (response.status >= 500) {
+        setResult({ status: 502, key: "delivery502" });
+      } else {
+        setResult({ status: response.status, key: "unexpectedError" });
+      }
     } catch {
       setResult({ status: null, key: "networkError" });
     } finally {

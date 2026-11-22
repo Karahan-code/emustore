@@ -4,17 +4,20 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
 import { useCollections } from "@/components/shell/collections-provider";
+import { useOtaCatalog } from "@/components/shell/ota-catalog-provider";
 import type { DownloadItemStatus } from "@/lib/catalog/collections";
 import { formatFileSize } from "@/lib/catalog/format";
 import { isPlatformCatalogId, PLATFORM_CATALOG_IDS, PLATFORM_CATALOGS, type PlatformCatalogId } from "@/lib/catalog/platforms";
+import { getLiveCatalogItem } from "@/lib/catalog/ota-store";
 import type { CatalogItem, Locale } from "@/lib/catalog/types";
 import { interpolate, type Messages } from "@/lib/i18n/dictionaries";
 import { isArchiveFormat, readInstallPreferences } from "@/lib/install/install-preferences";
 import { createLinkCaptureAdapter } from "@/lib/install/link-capture";
 import {
   DEFAULT_SUGGESTED_PATHS,
-  mergeTargetPathPreferences,
-  TARGET_PATH_STORAGE_KEY,
+  isVirtualPlaceholderPath,
+  readTargetPathPreferences,
+  TARGET_PATHS_UPDATED_EVENT,
   type TargetPathPreferences,
 } from "@/lib/install/target-paths";
 import {
@@ -29,8 +32,6 @@ type DownloadsPanelProps = {
   messages: Messages;
 };
 
-type DetailResponse = { data: CatalogItem };
-
 type DisplayRow = {
   key: string;
   catalogId: PlatformCatalogId;
@@ -44,6 +45,7 @@ type DisplayRow = {
   targetPath: string;
   installedPath?: string;
   resolvedUrl?: string;
+  browserUrl?: string;
   status: DownloadItemStatus;
   progress: number;
   speedBps: number;
@@ -60,10 +62,8 @@ function formatSpeed(speedBps: number, locale: Locale): string {
 
 export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
   const collections = useCollections();
+  const otaCatalog = useOtaCatalog();
   const linkCaptureAdapter = useMemo(() => createLinkCaptureAdapter(), []);
-  const [itemsByKey, setItemsByKey] = useState<Record<string, CatalogItem>>({});
-  const [loadedKey, setLoadedKey] = useState<string>("");
-  const [failed, setFailed] = useState(false);
   const [paths, setPaths] = useState<TargetPathPreferences>({ ...DEFAULT_SUGGESTED_PATHS });
   const [daemonHealth, setDaemonHealth] = useState<NativeHealth | null>(null);
   const [daemonDownloads, setDaemonDownloads] = useState<NativeDownloadRecord[]>([]);
@@ -72,21 +72,19 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
   const previewTimersRef = useRef<Map<string, number>>(new Map());
 
   const references = collections.queue;
-  const referenceKey = references.map((entry) => `${entry.catalogId}:${entry.slug}`).join("|");
 
   useEffect(() => {
-    let active = true;
-    queueMicrotask(() => {
-      if (!active) return;
-      try {
-        const stored = window.localStorage.getItem(TARGET_PATH_STORAGE_KEY);
-        setPaths(mergeTargetPathPreferences(stored ? (JSON.parse(stored) as unknown) : null));
-      } catch {
-        setPaths({ ...DEFAULT_SUGGESTED_PATHS });
-      }
-    });
+    const syncPaths = () => {
+      setPaths(readTargetPathPreferences());
+    };
+    queueMicrotask(syncPaths);
+    window.addEventListener(TARGET_PATHS_UPDATED_EVENT, syncPaths);
+    window.addEventListener("storage", syncPaths);
+    window.addEventListener("focus", syncPaths);
     return () => {
-      active = false;
+      window.removeEventListener(TARGET_PATHS_UPDATED_EVENT, syncPaths);
+      window.removeEventListener("storage", syncPaths);
+      window.removeEventListener("focus", syncPaths);
     };
   }, []);
 
@@ -100,45 +98,17 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
     };
   }, []);
 
-  useEffect(() => {
-    if (!collections.ready) return;
-    if (references.length === 0) return;
-
-    const controller = new AbortController();
-    Promise.all(
-      references.map(async (reference) => {
-        const query = new URLSearchParams({ platform: reference.catalogId, locale });
-        try {
-          const response = await fetch(`/api/v1/items/${encodeURIComponent(reference.slug)}?${query}`, {
-            cache: "no-store",
-            signal: controller.signal,
-          });
-          if (!response.ok) return undefined;
-          return ((await response.json()) as DetailResponse).data;
-        } catch (error) {
-          if (error instanceof Error && error.name === "AbortError") throw error;
-          return undefined;
-        }
-      }),
-    )
-      .then((results) => {
-        if (controller.signal.aborted) return;
-        const map: Record<string, CatalogItem> = {};
-        for (const item of results) {
-          if (item) map[`${item.catalogId}:${item.slug}`] = item;
-        }
-        setItemsByKey(map);
-        setLoadedKey(referenceKey);
-        setFailed(false);
-      })
-      .catch((error: unknown) => {
-        if (error instanceof Error && error.name === "AbortError") return;
-        setFailed(true);
-        setLoadedKey(referenceKey);
-      });
-
-    return () => controller.abort();
-  }, [collections.ready, locale, referenceKey, references]);
+  const itemsByKey = useMemo(() => {
+    const map: Record<string, CatalogItem> = {};
+    if (!collections.ready) return map;
+    for (const reference of references) {
+      const item = getLiveCatalogItem(otaCatalog, reference.catalogId, reference.slug);
+      if (item) {
+        map[`${item.catalogId}:${item.slug}`] = item;
+      }
+    }
+    return map;
+  }, [collections.ready, otaCatalog, references]);
 
   const refreshDaemonState = useCallback(async () => {
     const health = await nativeBridge.getHealth();
@@ -149,9 +119,15 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
       return;
     }
 
+    const latestPaths = readTargetPathPreferences();
+    const firstLocalPath = PLATFORM_CATALOG_IDS
+      .map((id) => latestPaths[id])
+      .find((candidate) => candidate && !isVirtualPlaceholderPath(candidate));
+    const probePath = health.rootDir || firstLocalPath || "";
+
     const [downloads, listing] = await Promise.all([
       nativeBridge.listDownloads(),
-      nativeBridge.listDirectory(health.rootDir || ""),
+      nativeBridge.listDirectory(probePath),
     ]);
 
     if (downloads) {
@@ -213,6 +189,13 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
         queueEntry.progress ??
         (status === "installed" || status === "ready_to_install" ? 100 : 0);
 
+      const savedPlatformPath = paths[queueEntry.catalogId];
+      const resolvedTargetPath =
+        daemonRecord?.targetDir ??
+        (queueEntry.targetPath && (!isVirtualPlaceholderPath(queueEntry.targetPath) || isVirtualPlaceholderPath(savedPlatformPath))
+          ? queueEntry.targetPath
+          : savedPlatformPath);
+
       combined.push({
         key,
         catalogId: queueEntry.catalogId,
@@ -223,9 +206,10 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
         format,
         sizeBytes: daemonRecord?.totalBytes || queueEntry.sizeBytes || selectedSource?.sizeBytes || catalogItem?.sizeBytes || 0,
         sha256: queueEntry.sha256 ?? selectedSource?.sha256,
-        targetPath: daemonRecord?.targetDir ?? queueEntry.targetPath ?? paths[queueEntry.catalogId],
+        targetPath: resolvedTargetPath,
         installedPath: daemonRecord?.installedPath ?? queueEntry.installedPath,
         resolvedUrl: queueEntry.resolvedUrl ?? daemonRecord?.url,
+        browserUrl: daemonRecord?.browserUrl ?? queueEntry.browserUrl ?? selectedSource?.browserUrl,
         status,
         progress,
         speedBps: daemonRecord?.speedBps ?? 0,
@@ -253,6 +237,7 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
         targetPath: daemonRecord.targetDir,
         installedPath: daemonRecord.installedPath,
         resolvedUrl: daemonRecord.url,
+        browserUrl: daemonRecord.browserUrl,
         status: daemonRecord.status,
         progress: daemonRecord.progress,
         speedBps: daemonRecord.speedBps,
@@ -269,12 +254,17 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
   async function handleInstall(row: DisplayRow) {
     setFeedback(null);
     const prefs = readInstallPreferences();
+    const latestPaths = readTargetPathPreferences();
+    const installTargetDir =
+      isVirtualPlaceholderPath(row.targetPath) || latestPaths[row.catalogId] !== row.targetPath
+        ? latestPaths[row.catalogId]
+        : row.targetPath;
 
     if (row.daemonId && daemonHealth) {
       const updated = await nativeBridge.installArchive(row.daemonId, {
         deleteArchive: prefs.deleteArchiveAfterInstall,
         flattenSingleRoot: true,
-        targetDir: row.targetPath,
+        targetDir: installTargetDir,
       });
       if (updated) {
         setDaemonDownloads((current) =>
@@ -292,7 +282,11 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
     }
 
     let stepProgress = 12;
-    collections.updateQueueEntry(reference, { status: "extracting", progress: stepProgress });
+    collections.updateQueueEntry(reference, {
+      status: "extracting",
+      progress: stepProgress,
+      targetPath: installTargetDir,
+    });
 
     const timerId = window.setInterval(() => {
       stepProgress = Math.min(100, stepProgress + 22);
@@ -302,7 +296,8 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
         collections.updateQueueEntry(reference, {
           status: "installed",
           progress: 100,
-          installedPath: row.targetPath,
+          targetPath: installTargetDir,
+          installedPath: installTargetDir,
         });
         setFeedback(messages.downloads.previewInstallDone);
       } else {
@@ -314,6 +309,42 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
     }, 220);
 
     previewTimersRef.current.set(row.key, timerId);
+  }
+
+  async function handleRetryDownload(row: DisplayRow) {
+    if (!row.resolvedUrl || !daemonHealth) return;
+    setFeedback(null);
+    const latestTargetDir = readTargetPathPreferences()[row.catalogId] ?? row.targetPath;
+
+    if (row.daemonId) {
+      await nativeBridge.cancelDownload(row.daemonId);
+    }
+
+    const started = await nativeBridge.startDownload({
+      catalogId: row.catalogId,
+      slug: row.slug,
+      title: row.title,
+      url: row.resolvedUrl,
+      format: row.format,
+      targetDir: latestTargetDir,
+      sizeBytes: row.sizeBytes,
+      ...(row.sha256 ? { sha256: row.sha256 } : {}),
+    });
+
+    if (started) {
+      collections.updateQueueEntry(
+        { catalogId: row.catalogId, slug: row.slug },
+        {
+          downloadId: started.id,
+          targetPath: latestTargetDir,
+          status: started.status,
+          progress: started.progress,
+          errorMessage: started.error,
+          browserUrl: started.browserUrl,
+        },
+      );
+      void refreshDaemonState();
+    }
   }
 
   async function handlePauseResume(row: DisplayRow) {
@@ -345,7 +376,7 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
     collections.removeQueue({ catalogId: row.catalogId, slug: row.slug });
   }
 
-  const loading = !collections.ready || (references.length > 0 && loadedKey !== referenceKey);
+  const loading = !collections.ready;
   const totalBytes = rows.reduce((total, row) => total + row.sizeBytes, 0);
   const activeRows = rows.filter(
     (row) => row.status === "downloading" || row.status === "extracting",
@@ -373,7 +404,7 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
       <div className="saved-page__heading">
         <p className="eyebrow">{messages.navigation.downloads}</p>
         <h1>{messages.downloads.title}</h1>
-        <p>{messages.downloads.queueNote}</p>
+        <p>{daemonHealth ? messages.downloads.liveQueueNote : messages.downloads.queueNote}</p>
         <span className={`connection-pill${isLocalConnected ? " connection-pill--local" : ""}`}>
           <span className="connection-pill__dot" aria-hidden="true" />
           <span>{connectionLabel}</span>
@@ -392,12 +423,7 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
             </p>
           ) : null}
           {loading ? <div className="status-panel" role="status">…</div> : null}
-          {failed ? (
-            <div className="status-panel status-panel--error" role="alert">
-              {messages.errors.catalogUnavailable}
-            </div>
-          ) : null}
-          {!loading && !failed && rows.length === 0 ? (
+          {!loading && rows.length === 0 ? (
             <div className="status-panel status-panel--empty" role="status">
               {messages.downloads.empty}
             </div>
@@ -411,8 +437,10 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
               const isDownloading = row.status === "downloading";
               const isPaused = row.status === "paused";
               const isInstalled = row.status === "installed";
+              const isRequiresBrowserVerify = row.status === "requires_browser_verify";
               const isError = row.status === "error";
               const speedLabel = formatSpeed(row.speedBps, locale);
+              const verifyHref = row.browserUrl ?? row.resolvedUrl;
 
               return (
                 <article className="queue-row" key={row.key} data-gamepad-item>
@@ -431,7 +459,7 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
                     <span className="queue-row__path" title={row.installedPath ?? row.targetPath}>
                       {isInstalled && row.installedPath
                         ? `${messages.downloads.installedTo}: ${row.installedPath}`
-                        : `${messages.downloads.targetPath}: ${row.targetPath}`}
+                        : `${daemonHealth ? messages.downloads.targetFolder : messages.downloads.targetPath}: ${row.targetPath}`}
                     </span>
 
                     <div className="queue-row__metadata">
@@ -445,6 +473,11 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
                       {isInstalled ? (
                         <span className="queue-row__status queue-row__status--installed">
                           {messages.downloads.installed}
+                        </span>
+                      ) : null}
+                      {isRequiresBrowserVerify ? (
+                        <span className="queue-row__status queue-row__status--error">
+                          {messages.downloads.requiresBrowserVerify}
                         </span>
                       ) : null}
                       {isPaused ? (
@@ -504,15 +537,47 @@ export function DownloadsPanel({ locale, messages }: DownloadsPanelProps) {
                   </div>
 
                   <div className="queue-row__actions">
-                    {isReadyToInstall || (isError && row.isArchive) ? (
+                    {isReadyToInstall ? (
                       <button
                         className="button button--primary queue-row__install"
                         type="button"
                         data-gamepad-hint={messages.downloads.install}
                         onClick={() => void handleInstall(row)}
                       >
-                        {isError ? messages.downloads.retryInstall : messages.downloads.install}
+                        {messages.downloads.install}
                       </button>
+                    ) : null}
+
+                    {isError && row.isArchive && !row.resolvedUrl ? (
+                      <button
+                        className="button button--primary queue-row__install"
+                        type="button"
+                        data-gamepad-hint={messages.downloads.install}
+                        onClick={() => void handleInstall(row)}
+                      >
+                        {messages.downloads.retryInstall}
+                      </button>
+                    ) : null}
+
+                    {isError && row.resolvedUrl && daemonHealth ? (
+                      <button
+                        className="button button--primary queue-row__install"
+                        type="button"
+                        onClick={() => void handleRetryDownload(row)}
+                      >
+                        {messages.downloads.retryDownload}
+                      </button>
+                    ) : null}
+
+                    {isRequiresBrowserVerify && verifyHref ? (
+                      <a
+                        className="button button--quiet queue-row__install"
+                        href={verifyHref}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {messages.downloads.openBrowserVerify}
+                      </a>
                     ) : null}
 
                     {(isDownloading || isPaused) && row.daemonId && daemonHealth ? (

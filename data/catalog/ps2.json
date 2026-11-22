@@ -18,8 +18,8 @@
     },
     "developer": "RAWG",
     "version": "2004",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4517036032,
+    "sizeBytesEstimated": false,
     "ratingScore": 93,
     "metacritic": 93,
     "rating": 4.5,
@@ -88,7 +88,19 @@
       "story-rich"
     ],
     "sourceUrl": "https://rawg.io/games/grand-theft-auto-san-andreas",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/grand-theft-auto-san-andreas-usa-v-3.00_202209/Grand%20Theft%20Auto%20-%20San%20Andreas%20(USA)%20(v3.00).iso",
+        "format": ".iso",
+        "sizeBytes": 4517036032,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:15:30.457Z"
+      }
+    ],
     "updatedAt": "2026-11-18T21:42:55.000Z",
     "sampleData": false
   },
@@ -204,8 +216,8 @@
     },
     "developer": "RAWG",
     "version": "2002",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4657774592,
+    "sizeBytesEstimated": false,
     "ratingScore": 94,
     "metacritic": 94,
     "rating": 4.44,
@@ -274,7 +286,19 @@
       "open-world"
     ],
     "sourceUrl": "https://rawg.io/games/grand-theft-auto-vice-city",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/ps2-grand-theft-auto-vice-city-gta-vc-rus-ntsc-v2.01-official-definitive-edition-russian-translation/Grand%20Theft%20Auto%20-%20Vice%20City%20(RUSSIAN)%20(v2.01).iso",
+        "format": ".iso",
+        "sizeBytes": 4657774592,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:16:02.730Z"
+      }
+    ],
     "updatedAt": "2026-11-01T17:08:30.000Z",
     "sampleData": false
   },
@@ -390,15 +414,15 @@
     },
     "developer": "RAWG",
     "version": "2001",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 1101321490,
+    "sizeBytesEstimated": false,
     "ratingScore": 93,
     "metacritic": 93,
     "rating": 4.16,
     "ratingsCount": 1653,
     "releasedAt": "2001-10-22",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "7-Zip archive",
+    "fileExtension": ".7z",
     "coverPath": "https://cdn2.steamgriddb.com/grid/7856a3a5b530f10a69bec1c57d90330e.png",
     "screenshots": [
       {
@@ -460,7 +484,19 @@
       "story-rich"
     ],
     "sourceUrl": "https://rawg.io/games/grand-theft-auto-iii",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/grand-theft-auto-iii-pal-1.40/Grand%20Theft%20Auto%20III%20(Europe)%20(En%2CFr%2CDe%2CEs%2CIt)%20(v1.40).7z",
+        "format": ".7z",
+        "sizeBytes": 1101321490,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:16:24.787Z"
+      }
+    ],
     "updatedAt": "2026-11-20T06:19:40.000Z",
     "sampleData": false
   },
@@ -483,8 +519,8 @@
     },
     "developer": "RAWG",
     "version": "2005",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4435836928,
+    "sizeBytesEstimated": false,
     "ratingScore": 83,
     "metacritic": 83,
     "rating": 4.4,
@@ -553,7 +589,19 @@
       "atmospheric"
     ],
     "sourceUrl": "https://rawg.io/games/resident-evil-4",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/resident-evil-4-usa_202408/Resident%20Evil%204%20(USA).iso",
+        "format": ".iso",
+        "sizeBytes": 4435836928,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:16:39.773Z"
+      }
+    ],
     "updatedAt": "2026-11-01T10:49:54.000Z",
     "sampleData": false
   },
@@ -1039,15 +1087,15 @@
     },
     "developer": "RAWG",
     "version": "2006",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2837260587,
+    "sizeBytesEstimated": false,
     "ratingScore": 82,
     "metacritic": 82,
     "rating": 4.31,
     "ratingsCount": 1045,
     "releasedAt": "2006-05-29",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "ZIP archive",
+    "fileExtension": ".zip",
     "coverPath": "https://cdn2.steamgriddb.com/grid/947681124aee4951c310b0dab1e91fea.png",
     "screenshots": [
       {
@@ -1109,7 +1157,19 @@
       "third-person"
     ],
     "sourceUrl": "https://rawg.io/games/hitman-blood-money",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/hbmps2usa/Hitman%20-%20Blood%20Money%20(USA).zip",
+        "format": ".zip",
+        "sizeBytes": 2837260587,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:17:57.855Z"
+      }
+    ],
     "updatedAt": "2026-10-19T10:49:46.000Z",
     "sampleData": false
   },
@@ -1132,8 +1192,8 @@
     },
     "developer": "RAWG",
     "version": "2003",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2602237952,
+    "sizeBytesEstimated": false,
     "ratingScore": 80,
     "metacritic": 80,
     "rating": 4.42,
@@ -1202,7 +1262,19 @@
       "character"
     ],
     "sourceUrl": "https://rawg.io/games/max-payne-2-the-fall-of-max-payne",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/ps2-essential-max-payne-2-the-fall-of-max-payne/Max_Payne_2_The_Fall_of_Max_Payne.iso",
+        "format": ".iso",
+        "sizeBytes": 2602237952,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:18:05.918Z"
+      }
+    ],
     "updatedAt": "2026-10-30T08:59:42.000Z",
     "sampleData": false
   },
@@ -1225,8 +1297,8 @@
     },
     "developer": "RAWG",
     "version": "2005",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4665671680,
+    "sizeBytesEstimated": false,
     "ratingScore": 78,
     "metacritic": 78,
     "rating": 4.21,
@@ -1295,7 +1367,19 @@
       "co-op"
     ],
     "sourceUrl": "https://rawg.io/games/star-wars-battlefront-ii-2",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/star-wars-battlefront-ii-usa-v-2.01/Star%20Wars%20-%20Battlefront%20II%20(USA)%20(v2.01).iso",
+        "format": ".iso",
+        "sizeBytes": 4665671680,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:18:17.966Z"
+      }
+    ],
     "updatedAt": "2026-10-22T10:26:54.000Z",
     "sampleData": false
   },
@@ -1411,8 +1495,8 @@
     },
     "developer": "RAWG",
     "version": "2006",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4632899584,
+    "sizeBytesEstimated": false,
     "ratingScore": 82,
     "metacritic": 82,
     "rating": 3.91,
@@ -1481,7 +1565,19 @@
       "action-adventure"
     ],
     "sourceUrl": "https://rawg.io/games/tomb-raider-legend",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/tomb-raider-legend-895695/Tomb%20Raider%20-%20Legend.iso",
+        "format": ".iso",
+        "sizeBytes": 4632899584,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:18:48.073Z"
+      }
+    ],
     "updatedAt": "2026-10-02T19:31:27.000Z",
     "sampleData": false
   },
@@ -1783,8 +1879,8 @@
     },
     "developer": "RAWG",
     "version": "2003",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2409725952,
+    "sizeBytesEstimated": false,
     "ratingScore": 89,
     "metacritic": 89,
     "rating": 4.22,
@@ -1853,7 +1949,19 @@
       "third-person"
     ],
     "sourceUrl": "https://rawg.io/games/prince-of-persia-the-sands-of-time",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/prince-of-persia-the-sands-of-time-usa-en-fr-es-ps2_202601_v1/Prince%20of%20Persia%20-%20The%20Sands%20of%20Time%20(USA)%20(En%2CFr%2CEs).iso",
+        "format": ".iso",
+        "sizeBytes": 2409725952,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:19:42.185Z"
+      }
+    ],
     "updatedAt": "2026-10-30T09:00:10.000Z",
     "sampleData": false
   },
@@ -2062,8 +2170,8 @@
     },
     "developer": "RAWG",
     "version": "2004",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4095705088,
+    "sizeBytesEstimated": false,
     "ratingScore": 83,
     "metacritic": 83,
     "rating": 4.4,
@@ -2132,7 +2240,19 @@
       "open-world"
     ],
     "sourceUrl": "https://rawg.io/games/prince-of-persia-warrior-within",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/prince-of-persia-warrior-within-europe-australia-en-fr-de-es-it-nl/Prince%20of%20Persia%20-%20Warrior%20Within%20(Europe%2C%20Australia)%20(En%2CFr%2CDe%2CEs%2CIt%2CNl).iso",
+        "format": ".iso",
+        "sizeBytes": 4095705088,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:20:40.473Z"
+      }
+    ],
     "updatedAt": "2026-10-30T08:59:48.000Z",
     "sampleData": false
   },
@@ -2155,8 +2275,8 @@
     },
     "developer": "RAWG",
     "version": "2004",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4357357568,
+    "sizeBytesEstimated": false,
     "ratingScore": 77,
     "metacritic": 77,
     "rating": 3.93,
@@ -2225,7 +2345,19 @@
       "third-person"
     ],
     "sourceUrl": "https://rawg.io/games/hitman-3-contracts",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/Hitman-Contracts-PS2/Hitman%20Contracts.iso",
+        "format": ".iso",
+        "sizeBytes": 4357357568,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:20:54.621Z"
+      }
+    ],
     "updatedAt": "2026-08-24T17:10:14.000Z",
     "sampleData": false
   },
@@ -2341,8 +2473,8 @@
     },
     "developer": "RAWG",
     "version": "2006",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 3170402304,
+    "sizeBytesEstimated": false,
     "ratingScore": 76,
     "metacritic": 76,
     "rating": 4.33,
@@ -2411,7 +2543,19 @@
       "classic"
     ],
     "sourceUrl": "https://rawg.io/games/flatout-2",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/flat-out-2-pl/FlatOut%202%20(PL).iso",
+        "format": ".iso",
+        "sizeBytes": 3170402304,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:21:34.862Z"
+      }
+    ],
     "updatedAt": "2026-10-30T09:00:03.000Z",
     "sampleData": false
   },
@@ -2434,8 +2578,8 @@
     },
     "developer": "RAWG",
     "version": "2007",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 8533671936,
+    "sizeBytesEstimated": false,
     "ratingScore": 93,
     "metacritic": 93,
     "rating": 4.39,
@@ -2504,7 +2648,19 @@
       "history"
     ],
     "sourceUrl": "https://rawg.io/games/god-of-war-ii",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/scus-974.81.-god-of-war-ii/God%20of%20War%20II%20(USA).iso",
+        "format": ".iso",
+        "sizeBytes": 8533671936,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:21:48.680Z"
+      }
+    ],
     "updatedAt": "2026-10-17T02:19:28.000Z",
     "sampleData": false
   },
@@ -2804,14 +2960,14 @@
     },
     "developer": "RAWG",
     "version": "2005",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 722817275,
+    "sizeBytesEstimated": false,
     "ratingScore": 53,
     "rating": 2.67,
     "ratingsCount": 137,
     "releasedAt": "2005-04-15",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "ZIP archive",
+    "fileExtension": ".zip",
     "coverPath": "https://cdn2.steamgriddb.com/grid/88462c7dc10920038fac70011d7e3c10.png",
     "screenshots": [
       {
@@ -2873,7 +3029,19 @@
       "classic"
     ],
     "sourceUrl": "https://rawg.io/games/kao-the-kangaroo-round-2",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/kaothekangarooround2europe/Kao%20the%20Kangaroo%20-%20Round%202%20(Europe).zip",
+        "format": ".zip",
+        "sizeBytes": 722817275,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:22:40.136Z"
+      }
+    ],
     "updatedAt": "2026-04-27T15:49:38.000Z",
     "sampleData": false
   },
@@ -3360,8 +3528,8 @@
     },
     "developer": "RAWG",
     "version": "2005",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 2873245696,
+    "sizeBytesEstimated": false,
     "ratingScore": 92,
     "metacritic": 92,
     "rating": 4.38,
@@ -3430,7 +3598,19 @@
       "co-op"
     ],
     "sourceUrl": "https://rawg.io/games/splinter-cell-chaos-theory",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/tom-clancys-splinter-cell-chaos-theory_202506/Tom%20Clancy's%20Splinter%20Cell%20-%20Chaos%20Theory.iso",
+        "format": ".iso",
+        "sizeBytes": 2873245696,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:24:07.314Z"
+      }
+    ],
     "updatedAt": "2026-10-16T11:03:04.000Z",
     "sampleData": false
   },
@@ -3546,15 +3726,15 @@
     },
     "developer": "RAWG",
     "version": "2013",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 3059185934,
+    "sizeBytesEstimated": false,
     "ratingScore": 86,
     "metacritic": 86,
     "rating": 3.44,
     "ratingsCount": 462,
     "releasedAt": "2013-09-23",
-    "fileFormat": "ISO disc image",
-    "fileExtension": ".iso",
+    "fileFormat": "CHD disc image",
+    "fileExtension": ".chd",
     "coverPath": "https://cdn2.steamgriddb.com/grid/fc80088e4d37d4ca60158963a487432e.png",
     "screenshots": [
       {
@@ -3616,7 +3796,19 @@
       "soccer"
     ],
     "sourceUrl": "https://rawg.io/games/fifa-14",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/fifa-14-europe-en-es-pt-pl_202607/FIFA%2014%20(Europe)%20(EnEsPtPl).chd",
+        "format": ".chd",
+        "sizeBytes": 3059185934,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:24:36.875Z"
+      }
+    ],
     "updatedAt": "2026-05-02T02:58:36.000Z",
     "sampleData": false
   },
@@ -4011,8 +4203,8 @@
     },
     "developer": "RAWG",
     "version": "2001",
-    "sizeBytes": 2684354560,
-    "sizeBytesEstimated": true,
+    "sizeBytes": 4657840128,
+    "sizeBytesEstimated": false,
     "ratingScore": 77,
     "metacritic": 77,
     "rating": 3.92,
@@ -4081,7 +4273,19 @@
       "horror"
     ],
     "sourceUrl": "https://rawg.io/games/legacy-of-kain-soul-reaver-2",
-    "sources": [],
+    "sources": [
+      {
+        "id": "synced-1",
+        "provider": "archive.org",
+        "deliveryMode": "direct",
+        "url": "https://archive.org/download/ps2-essential-legacy-of-kain-soul-reaver-2/Legacy_of_Kain_Soul_Reaver_2.iso",
+        "format": ".iso",
+        "sizeBytes": 4657840128,
+        "requiresVerification": false,
+        "priority": 1,
+        "sourceCheckedAt": "2026-11-22T17:25:51.170Z"
+      }
+    ],
     "updatedAt": "2026-09-24T17:30:01.000Z",
     "sampleData": false
   },

@@ -21,7 +21,7 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 export function resolveUpdateRepo(
-  envValue = process.env.EMUSTORE_GITHUB_REPO,
+  envValue = process.env.NEXT_PUBLIC_EMUSTORE_GITHUB_REPO ?? process.env.EMUSTORE_GITHUB_REPO,
 ): string {
   const candidate = envValue?.trim();
   if (candidate && REPO_PATTERN.test(candidate)) {
@@ -126,6 +126,7 @@ export type CheckForUpdatesOptions = {
   repo?: string;
   currentVersion?: string;
   fetchImpl?: typeof fetch;
+  signal?: AbortSignal;
 };
 
 export async function checkForUpdates(
@@ -138,16 +139,28 @@ export async function checkForUpdates(
   const checkedAt = new Date().toISOString();
   const fetchImpl = options.fetchImpl ?? fetch;
 
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), UPDATE_TIMEOUT_MS);
+  const onParentAbort = () => controller.abort();
+  if (options.signal) {
+    if (options.signal.aborted) controller.abort();
+    else options.signal.addEventListener("abort", onParentAbort, { once: true });
+  }
+
+  const headers: Record<string, string> = {
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+  };
+  if (typeof window === "undefined") {
+    headers["User-Agent"] = "emustore-update-checker";
+  }
+
   let response: Response;
   try {
     response = await fetchImpl(endpoint, {
       cache: "no-store",
-      headers: {
-        Accept: "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "emustore-update-checker",
-      },
-      signal: AbortSignal.timeout(UPDATE_TIMEOUT_MS),
+      headers,
+      signal: controller.signal,
     });
   } catch (error) {
     return {
@@ -161,6 +174,9 @@ export async function checkForUpdates(
       checkedAt,
       message: error instanceof Error ? error.message : "Network request failed.",
     };
+  } finally {
+    clearTimeout(timeoutId);
+    options.signal?.removeEventListener("abort", onParentAbort);
   }
 
   if (response.status === 404) {

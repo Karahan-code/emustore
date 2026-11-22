@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import { LOCAL_BRIDGE_ORIGIN } from "@/lib/install/link-capture";
+import { checkForUpdates } from "@/lib/updates/updater";
 import {
   isUpdateCheckResult,
   type UpdateCheckResult,
@@ -112,14 +113,7 @@ export function writeDismissedTag(tag: string): void {
 
 export async function fetchUpdateStatus(signal?: AbortSignal): Promise<UpdateCheckResult | null> {
   try {
-    const response = await fetch("/api/v1/updates", {
-      cache: "no-store",
-      headers: { Accept: "application/json" },
-      signal,
-    });
-    if (!response.ok) return null;
-    const payload: unknown = await response.json();
-    if (!isUpdateCheckResult(payload)) return null;
+    const payload = await checkForUpdates({ signal });
     writeCachedUpdateCheck(payload);
     return payload;
   } catch {

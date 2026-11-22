@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { CatalogFacets, CatalogItemType, CatalogSort, Locale } from "@/lib/catalog/types";
 import type { Messages } from "@/lib/i18n/dictionaries";
 
-type FilterKey = "q" | "type" | "category" | "format" | "sort";
+type FilterKey = "q" | "type" | "category" | "format" | "sort" | "downloadable";
 
 type CatalogFilterBarProps = {
   facets: CatalogFacets | null;
@@ -15,6 +15,8 @@ type CatalogFilterBarProps = {
   format: string;
   query: string;
   sort: CatalogSort;
+  downloadableOnly: boolean;
+  downloadableCount: number;
   onChange: (key: FilterKey, value: string) => void;
   onClear: () => void;
 };
@@ -30,6 +32,8 @@ export function CatalogFilterBar({
   format,
   query,
   sort,
+  downloadableOnly,
+  downloadableCount,
   onChange,
   onClear,
 }: CatalogFilterBarProps) {
@@ -52,6 +56,16 @@ export function CatalogFilterBar({
             aria-label={messages.catalog.search}
           />
         </label>
+        <button
+          className={`filter-pill filter-pill--downloadable${downloadableOnly ? " filter-pill--downloadable-active" : ""}`}
+          type="button"
+          aria-pressed={downloadableOnly}
+          onClick={() => onChange("downloadable", downloadableOnly ? "" : "1")}
+        >
+          <span className="filter-pill__dot" aria-hidden="true" />
+          <span>{messages.filters.downloadableOnly}</span>
+          <span className="filter-pill__count">{downloadableCount}</span>
+        </button>
         <button className={`filter-pill${open ? " filter-pill--active" : ""}`} type="button" onClick={() => setOpen((value) => !value)} aria-expanded={open} aria-controls="browse-filter-panel" data-gamepad-filters>
           <span aria-hidden="true">△</span>{messages.filters.title}
         </button>
@@ -66,7 +80,7 @@ export function CatalogFilterBar({
           </select>
           <span aria-hidden="true">⌄</span>
         </label>
-        {query || type || category || format ? (
+        {query || type || category || format || downloadableOnly ? (
           <button className="filter-clear" type="button" onClick={onClear}>{messages.filters.clear}</button>
         ) : null}
       </div>
