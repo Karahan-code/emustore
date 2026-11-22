@@ -6,6 +6,17 @@ export type CatalogReference = {
   slug: string;
 };
 
+export const DOWNLOAD_ITEM_STATUSES = [
+  "queued",
+  "downloading",
+  "paused",
+  "ready_to_install",
+  "extracting",
+  "installed",
+  "error",
+] as const;
+export type DownloadItemStatus = (typeof DOWNLOAD_ITEM_STATUSES)[number];
+
 export type QueueEntry = CatalogReference & {
   sourceId?: string;
   provider?: string;
@@ -17,6 +28,11 @@ export type QueueEntry = CatalogReference & {
   targetPath?: string;
   resolvedUrl?: string;
   queuedAt?: string;
+  status?: DownloadItemStatus;
+  progress?: number;
+  downloadId?: string;
+  installedPath?: string;
+  errorMessage?: string;
 };
 
 export const FAVORITES_STORAGE_KEY = "emustore.favorites.v1";
@@ -62,7 +78,12 @@ export function isQueueEntry(value: unknown): value is QueueEntry {
     (candidate.sha256 === undefined || (typeof candidate.sha256 === "string" && /^[a-f0-9]{64}$/i.test(candidate.sha256))) &&
     (candidate.targetPath === undefined || (typeof candidate.targetPath === "string" && candidate.targetPath.length <= 256)) &&
     (candidate.resolvedUrl === undefined || isHttpUrl(candidate.resolvedUrl)) &&
-    (candidate.queuedAt === undefined || (typeof candidate.queuedAt === "string" && !Number.isNaN(Date.parse(candidate.queuedAt))))
+    (candidate.queuedAt === undefined || (typeof candidate.queuedAt === "string" && !Number.isNaN(Date.parse(candidate.queuedAt)))) &&
+    (candidate.status === undefined || (typeof candidate.status === "string" && DOWNLOAD_ITEM_STATUSES.some((status) => status === candidate.status))) &&
+    (candidate.progress === undefined || (typeof candidate.progress === "number" && Number.isFinite(candidate.progress) && candidate.progress >= 0 && candidate.progress <= 100)) &&
+    (candidate.downloadId === undefined || (typeof candidate.downloadId === "string" && candidate.downloadId.length <= 80)) &&
+    (candidate.installedPath === undefined || (typeof candidate.installedPath === "string" && candidate.installedPath.length <= 512)) &&
+    (candidate.errorMessage === undefined || (typeof candidate.errorMessage === "string" && candidate.errorMessage.length <= 400))
   );
 }
 

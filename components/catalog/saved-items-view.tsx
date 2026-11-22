@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { ArtworkImage } from "@/components/catalog/artwork-image";
 import { CollectionToggle } from "@/components/catalog/collection-toggle";
 import { GameCard } from "@/components/catalog/game-card";
+import { DownloadsPanel } from "@/components/downloads/downloads-panel";
 import { useCollections } from "@/components/shell/collections-provider";
 import { PLATFORM_CATALOGS, PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
 import type { CatalogItem, Locale } from "@/lib/catalog/types";
@@ -82,6 +83,10 @@ export function SavedItemsView({ kind, locale, messages }: SavedItemsViewProps) 
         return total + (entry?.sizeBytes ?? source?.sizeBytes ?? item.sizeBytes);
       }, 0)
     : items.reduce((total, item) => total + item.sizeBytes, 0);
+
+  if (kind === "queue") {
+    return <DownloadsPanel locale={locale} messages={messages} />;
+  }
 
   if (kind === "favorites") {
     return (

@@ -4,8 +4,10 @@ import { useEffect, useMemo, useRef, useState, type KeyboardEvent } from "react"
 import { LinkCaptureModal } from "@/components/catalog/link-capture-modal";
 import { useCollections } from "@/components/shell/collections-provider";
 import { formatFileSize } from "@/lib/catalog/format";
+import { isArchiveFormat } from "@/lib/install/install-preferences";
 import { DEFAULT_SUGGESTED_PATHS, mergeTargetPathPreferences, TARGET_PATH_STORAGE_KEY } from "@/lib/install/target-paths";
 import { createLinkCaptureAdapter } from "@/lib/install/link-capture";
+import { nativeBridge } from "@/lib/native/bridge";
 import type { CatalogItem, DownloadSource, Locale } from "@/lib/catalog/types";
 import type { Messages } from "@/lib/i18n/dictionaries";
 
@@ -63,9 +65,43 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
     }
   }
 
-  function addSourceToQueue(source: DownloadSource, resolvedUrl?: string, targetPathOverride?: string) {
+  async function addSourceToQueue(
+    source: DownloadSource,
+    resolvedUrl?: string,
+    targetPathOverride?: string,
+  ) {
     const selectedTargetPath = targetPathOverride ?? readSuggestedTargetPath(item);
     setTargetPath(selectedTargetPath);
+    const effectiveUrl = resolvedUrl ?? (source.deliveryMode === "direct" ? source.url : undefined);
+    const archive = isArchiveFormat(source.format);
+    let downloadId: string | undefined;
+    let status: "ready_to_install" | "installed" | "queued" | "downloading" | "paused" | "extracting" | "error" =
+      archive ? "ready_to_install" : "installed";
+    let progress = 100;
+    let installedPath: string | undefined = archive ? undefined : selectedTargetPath;
+
+    if (effectiveUrl) {
+      const health = await nativeBridge.getHealth();
+      if (health) {
+        const started = await nativeBridge.startDownload({
+          catalogId: item.catalogId,
+          slug: item.slug,
+          title: item.title[locale],
+          url: effectiveUrl,
+          format: source.format,
+          targetDir: selectedTargetPath,
+          sizeBytes: source.sizeBytes,
+          ...(source.sha256 ? { sha256: source.sha256 } : {}),
+        });
+        if (started) {
+          downloadId = started.id;
+          status = started.status;
+          progress = started.progress;
+          installedPath = started.installedPath;
+        }
+      }
+    }
+
     collections.addToQueue({
       catalogId: item.catalogId,
       slug: item.slug,
@@ -77,8 +113,12 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
       sizeBytes: source.sizeBytes,
       ...(source.sha256 ? { sha256: source.sha256 } : {}),
       targetPath: selectedTargetPath,
-      ...(resolvedUrl ? { resolvedUrl } : {}),
+      ...(effectiveUrl ? { resolvedUrl: effectiveUrl } : {}),
       queuedAt: new Date().toISOString(),
+      status,
+      progress,
+      ...(downloadId ? { downloadId } : {}),
+      ...(installedPath ? { installedPath } : {}),
     });
     setFeedback(resolvedUrl ? messages.downloads.linkCaptured : messages.downloads.addedToQueue);
   }
@@ -92,7 +132,7 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
       return;
     }
     if (source.deliveryMode === "direct" || source.deliveryMode === "github_api") {
-      addSourceToQueue(source);
+      void addSourceToQueue(source);
       return;
     }
     setFeedback(messages.details.debridUnavailable);
@@ -181,7 +221,7 @@ export function DownloadSourcePanel({ item, locale, messages }: DownloadSourcePa
           messages={messages}
           onClose={() => { setActiveSource(null); setIsOpen(true); }}
           onConfirm={(resolvedUrl) => {
-            addSourceToQueue(activeSource, resolvedUrl, targetPath);
+            void addSourceToQueue(activeSource, resolvedUrl, targetPath);
             setActiveSource(null);
             setIsOpen(true);
           }}

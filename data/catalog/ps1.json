@@ -21,9 +21,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 90,
+    "metacritic": 90,
+    "rating": 4.33,
+    "ratingsCount": 941,
+    "releasedAt": "1998-01-21",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/d64/d646810b629081cc12aec49ed9f49441.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/0dcc410f031086c33eb571e62007951b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/666/6663aaa821121053170b9d74dd593976.jpg",
@@ -71,8 +75,10 @@
     "artwork": {
       "query": "Resident Evil 2 (1998)",
       "rawgSlug": "resident-evil-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 25577,
+      "syncedAt": "2026-11-22T15:11:24.809Z"
     },
     "tags": [
       "singleplayer",
@@ -82,7 +88,7 @@
       "horror"
     ],
     "sourceUrl": "https://rawg.io/games/resident-evil-2",
-    "sources": [],
+    "sources": ["https://static.romsgames.net/a20261122Ph5CACyXyg6/output.bin?mediaId=57235&attach=Resident_Evil_2%28E%29%28Disc_1%29%28Leon%29%255BSLES-00972%255D.rar"],
     "updatedAt": "2026-10-17T18:08:05.000Z",
     "sampleData": false
   },
@@ -108,9 +114,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 3.55,
+    "ratingsCount": 560,
+    "releasedAt": "1997-09-19",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/2ae/2aedae90b1377a0f3e5ce54d24f8e41a.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/80c1f602065ea6c3e6db56273de523cb.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/268/268976f935b78965d4612b3ca0d6596d.jpg",
@@ -158,8 +168,10 @@
     "artwork": {
       "query": "Oddworld: Abe's Oddysee",
       "rawgSlug": "oddworld-abes-oddysee",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1490,
+      "syncedAt": "2026-11-22T15:11:25.039Z"
     },
     "tags": [
       "singleplayer",
@@ -195,9 +207,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 91,
+    "metacritic": 91,
+    "rating": 4.19,
+    "ratingsCount": 811,
+    "releasedAt": "1996-03-22",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/510/51039d0ec5dc8c3e08ae4374dfceecec.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/af37c0651e1224f45466dcb8fc082b8f.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/9d4/9d4ecb66c0c6c1aa5d8d138f140ee11f.jpg",
@@ -245,8 +261,10 @@
     "artwork": {
       "query": "Resident Evil",
       "rawgSlug": "resident-evil",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4793,
+      "syncedAt": "2026-11-22T15:11:25.827Z"
     },
     "tags": [
       "gameplay-feature-multiple-endings",
@@ -282,9 +300,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.36,
+    "ratingsCount": 1050,
+    "releasedAt": "1997-01-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/6c0/6c00ee85d1344f58c469e8e47fd8ae7c.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/fb038c3ed829a992d6d4cc3ce6654290.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/be5/be56be936c65efe4d40eba39ffad9efe.jpg",
@@ -332,8 +354,10 @@
     "artwork": {
       "query": "Final Fantasy VII (1997)",
       "rawgSlug": "final-fantasy-vii",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8631,
+      "syncedAt": "2026-11-22T15:11:26.078Z"
     },
     "tags": [
       "singleplayer",
@@ -369,9 +393,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 74,
+    "rating": 3.68,
+    "ratingsCount": 274,
+    "releasedAt": "1993-12-30",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/010/0101f021b2dc123c98969fda7e4bcd92.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/f47313385d07341062472b571e029e32.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/f3b/f3b2c05594a9572c81092428fc60099a.jpg",
@@ -419,8 +446,10 @@
     "artwork": {
       "query": "X-COM: UFO Defense",
       "rawgSlug": "ufo-enemy-unknown",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 24482,
+      "syncedAt": "2026-11-22T15:11:26.837Z"
     },
     "tags": [
       "singleplayer",
@@ -456,9 +485,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 69,
+    "metacritic": 69,
+    "rating": 3.77,
+    "ratingsCount": 308,
+    "releasedAt": "1997-10-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/cfc/cfc91eccc1de338b75a0576310ccbcec.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4a8eaf9e3f33cd033aa0bc42b446a427.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/53d/53de369b7c7da59c1239372516a994fd.jpg",
@@ -506,8 +539,10 @@
     "artwork": {
       "query": "Tomb Raider II",
       "rawgSlug": "tomb-raider-ii",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2399,
+      "syncedAt": "2026-11-22T15:11:27.121Z"
     },
     "tags": [
       "singleplayer",
@@ -543,9 +578,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "rating": 4.31,
+    "ratingsCount": 567,
+    "releasedAt": "1999-01-25",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/96a/96a48ac7487d9db9179d83170afcb16a.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/dcd9d88bc4e54d6aaaec310696f34b16.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/df2/df2c33c4ca5829e815d70d64c4deb2d1.jpg",
@@ -593,8 +631,10 @@
     "artwork": {
       "query": "Worms Armageddon",
       "rawgSlug": "worms-armageddon",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2186,
+      "syncedAt": "2026-11-22T15:11:27.875Z"
     },
     "tags": [
       "singleplayer",
@@ -630,9 +670,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 73,
+    "rating": 3.65,
+    "ratingsCount": 262,
+    "releasedAt": "1995-02-28",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/5ad/5ad8b055d14c14fd626d5eb42f218bc6.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/5d1633ade7aed302c261f97ee5a8bedd.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/5c7/5c7781d721b1a489ebeab74dca56b062.jpg",
@@ -680,8 +723,10 @@
     "artwork": {
       "query": "Star Wars: Dark Forces",
       "rawgSlug": "star-wars-dark-forces-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 5496,
+      "syncedAt": "2026-11-22T15:11:28.153Z"
     },
     "tags": [
       "singleplayer",
@@ -717,9 +762,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "rating": 4.15,
+    "ratingsCount": 786,
+    "releasedAt": "1996-09-09",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/bc1/bc141ec3f4ca8d1d14f0ab4e4f9e654d.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/8282b546dda9ec05515966ba0fe3e5d1.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/8b4/8b4571baa92c91ab5b483d0cb85b4e11.jpg",
@@ -767,8 +815,10 @@
     "artwork": {
       "query": "Crash Bandicoot",
       "rawgSlug": "crash-bandicoot",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 38107,
+      "syncedAt": "2026-11-22T15:11:28.920Z"
     },
     "tags": [
       "playstation-platinum-range-releases",
@@ -804,9 +854,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "rating": 4.17,
+    "ratingsCount": 414,
+    "releasedAt": "1997-12-09",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/0c5/0c5fcdf04048200da14b90e0e6cfaf6b.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/5e26badb3867ac7f26d3624ca39a9df4.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/734/7348ea07bea4f6f99e2f416bc9dc9203.jpg",
@@ -854,8 +907,10 @@
     "artwork": {
       "query": "Quake II",
       "rawgSlug": "quake-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2534,
+      "syncedAt": "2026-11-22T15:11:29.165Z"
     },
     "tags": [
       "singleplayer",
@@ -891,9 +946,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 67,
+    "rating": 3.37,
+    "ratingsCount": 142,
+    "releasedAt": "2000-11-17",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/ff1/ff1f2c5ca5bd645b6ab10e15c0bcce23.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/87368138229b6995db6b5c482f90a5bf.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/f7a/f7ae674ad38448c9fba7c85d64cd381e.jpg",
@@ -941,8 +999,10 @@
     "artwork": {
       "query": "Tomb Raider V: Chronicles",
       "rawgSlug": "tomb-raider-chronicles",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1785,
+      "syncedAt": "2026-11-22T15:11:29.946Z"
     },
     "tags": [
       "singleplayer",
@@ -978,9 +1038,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 91,
+    "metacritic": 91,
+    "rating": 4.35,
+    "ratingsCount": 650,
+    "releasedAt": "1998-10-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/837/837a609b0584db5d03534c8e767861b1.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/04514b9893dd1719269aea025015ebe9.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/dc7/dc7fb4fedf8ad8a1754287f6a32a787c_rqbUCMw.jpg",
@@ -1028,8 +1092,10 @@
     "artwork": {
       "query": "Crash Bandicoot 3: Warped",
       "rawgSlug": "crash-bandicoot-warped",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 35404,
+      "syncedAt": "2026-11-22T15:11:30.202Z"
     },
     "tags": [
       "singleplayer",
@@ -1057,17 +1123,20 @@
       "tr": "Crash Bandicoot 2: Cortex Strikes Back"
     },
     "description": {
-      "en": "Platformer title released in 1997 for PlayStation 1 (Score 86/100).",
-      "tr": "1997 yılında çıkan PlayStation 1 için Platform oyunu (Puan 86/100)."
+      "en": "Platformer title released in 1997 for PlayStation 1 (Score 85/100).",
+      "tr": "1997 yılında çıkan PlayStation 1 için Platform oyunu (Puan 85/100)."
     },
     "developer": "RAWG",
     "version": "1997",
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
-    "ratingScore": 86,
+    "ratingScore": 85,
+    "rating": 4.27,
+    "ratingsCount": 615,
+    "releasedAt": "1997-11-01",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/a84/a84dc4980063ce934705ea5d8d241939.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4bdf589279f3060aaa0fd967c3c8a80b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/0b2/0b2b0ad4e1e77192b2e1c1025b85069c.jpg",
@@ -1115,8 +1184,10 @@
     "artwork": {
       "query": "Crash Bandicoot 2: Cortex Strikes Back",
       "rawgSlug": "crash-bandicoot-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 35113,
+      "syncedAt": "2026-11-22T15:11:30.998Z"
     },
     "tags": [
       "singleplayer",
@@ -1127,7 +1198,7 @@
     ],
     "sourceUrl": "https://rawg.io/games/crash-bandicoot-2",
     "sources": [],
-    "updatedAt": "2026-10-27T04:54:53.000Z",
+    "updatedAt": "2026-11-21T23:10:28.000Z",
     "sampleData": false
   },
   {
@@ -1152,6 +1223,9 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 75,
+    "rating": 3.73,
+    "ratingsCount": 172,
+    "releasedAt": "1999-10-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
     "coverPath": "https://media.rawg.io/media/games/cff/cff82846d13e80b50529db058367d221.jpg",
@@ -1239,9 +1313,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "rating": 4.34,
+    "ratingsCount": 534,
+    "releasedAt": "1999-12-02",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/2f2/2f2eb93e32d400677b0b27f4686f7b4f.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/1580cb083169e06b7e5af0481196b674.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c61/c6164c0b74d510ee7657cab07888dd03.jpg",
@@ -1289,8 +1366,10 @@
     "artwork": {
       "query": "Quake III Arena",
       "rawgSlug": "quake-iii-arena-1999",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2255,
+      "syncedAt": "2026-11-22T15:11:31.752Z"
     },
     "tags": [
       "singleplayer",
@@ -1326,9 +1405,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 84,
+    "metacritic": 84,
+    "rating": 4.35,
+    "ratingsCount": 579,
+    "releasedAt": "2000-07-07",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/826/82626e2d7ee7d96656fb9838c2ef7302.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/afd61904eb25c8efcf646d0b04c521f9.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/59d/59d17999a5d83ebd50fb66cdbe842eab.jpg",
@@ -1376,8 +1459,10 @@
     "artwork": {
       "query": "Final Fantasy IX",
       "rawgSlug": "final-fantasy-ix",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8025,
+      "syncedAt": "2026-11-22T15:11:31.993Z"
     },
     "tags": [
       "singleplayer",
@@ -1413,9 +1498,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 94,
+    "metacritic": 94,
+    "rating": 4.39,
+    "ratingsCount": 1175,
+    "releasedAt": "1998-09-03",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/bbc/bbce6f1659d35ffc16aed8b66e9990a1.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/3ac4511ba0302570efea191ea1a2d0b4.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/f22/f2220a7412d41e7242d90e06e4d13e4f.jpg",
@@ -1463,8 +1552,10 @@
     "artwork": {
       "query": "Metal Gear Solid",
       "rawgSlug": "metal-gear-solid-1",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 34558,
+      "syncedAt": "2026-11-22T15:11:32.778Z"
     },
     "tags": [
       "singleplayer",
@@ -1499,9 +1590,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 91,
+    "metacritic": 91,
+    "rating": 4.08,
+    "ratingsCount": 247,
+    "releasedAt": "1999-08-16",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/84d/84da5a0c948592becea7a022e151a8b0.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4ef81cfbbfcabdabfb8388a0514b5a32.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/336/3368fde646e599594debcfe972dbfef2.jpg",
@@ -1549,8 +1644,10 @@
     "artwork": {
       "query": "Legacy of Kain: Soul Reaver",
       "rawgSlug": "legacy-of-kain-soul-reaver",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2383,
+      "syncedAt": "2026-11-22T15:11:33.011Z"
     },
     "tags": [
       "singleplayer",
@@ -1586,9 +1683,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 76,
+    "rating": 3.79,
+    "ratingsCount": 261,
+    "releasedAt": "1995-01-01",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/8fc/8fcc2ff5c7bcdb58199b1a4326817ceb.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/e110761eaf7da2a6a514091b57328643.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/8a5/8a552b7ff88f5162a8215f8cd2875f4f.jpg",
@@ -1636,8 +1736,10 @@
     "artwork": {
       "query": "Worms",
       "rawgSlug": "worms",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 21505,
+      "syncedAt": "2026-11-22T15:11:33.787Z"
     },
     "tags": [
       "singleplayer",
@@ -1673,9 +1775,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 70,
+    "metacritic": 70,
+    "rating": 4.01,
+    "ratingsCount": 451,
+    "releasedAt": "1999-10-22",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/623/623eff489e5fcfd3d684e902d3efad8b.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c336e823d31280b5ded5f32cdaa0fe0c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/989/98958b3ea7aa183dc9f3963bf2ac59b2.jpg",
@@ -1723,8 +1829,10 @@
     "artwork": {
       "query": "Grand Theft Auto 2",
       "rawgSlug": "grand-theft-auto-2-1999",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1358,
+      "syncedAt": "2026-11-22T15:11:34.067Z"
     },
     "tags": [
       "singleplayer",
@@ -1760,9 +1868,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 90,
+    "metacritic": 90,
+    "rating": 4.28,
+    "ratingsCount": 422,
+    "releasedAt": "1999-02-11",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/f77/f77510051b6a61decc35c5257193fc9e.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/6a8df01cf0d21e57333bbaa108877383.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/e36/e36375d17c71328adf39ead2b9254fe9.jpg",
@@ -1810,8 +1922,10 @@
     "artwork": {
       "query": "FINAL FANTASY VIII",
       "rawgSlug": "final-fantasy-viii",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8639,
+      "syncedAt": "2026-11-22T15:11:34.840Z"
     },
     "tags": [
       "singleplayer",
@@ -1847,9 +1961,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 77,
+    "rating": 3.85,
+    "ratingsCount": 409,
+    "releasedAt": "1997-10-21",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/786/786f9a212646c793ccbad196cba2cf36.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/830d8cfa42c682e73a8b476c2de17134.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/8f5/8f577f88855945518d24edf59dba9dff.jpg",
@@ -1897,8 +2014,10 @@
     "artwork": {
       "query": "Grand Theft Auto",
       "rawgSlug": "grand-theft-auto-1998",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1357,
+      "syncedAt": "2026-11-22T15:11:35.072Z"
     },
     "tags": [
       "singleplayer",
@@ -1934,9 +2053,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 69,
+    "rating": 3.45,
+    "ratingsCount": 128,
+    "releasedAt": "1995-03-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/75c/75c109a3b66c84787f137d948292c44a_DIwNRKi.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c9b7db2d847e72e4cf34458ab1b17f68.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/4ec/4ec63f00bdd2bdf3fe19bd0a59910e30.jpg",
@@ -1984,8 +2106,10 @@
     "artwork": {
       "query": "X-COM: Terror From the Deep",
       "rawgSlug": "x-com-terror-from-the-deep",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 24022,
+      "syncedAt": "2026-11-22T15:11:35.827Z"
     },
     "tags": [
       "singleplayer",
@@ -2021,9 +2145,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "rating": 4.13,
+    "ratingsCount": 149,
+    "releasedAt": "1996-05-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/6cc/6ccd31115c74d58edb41d0855567d00f.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/59a58382d7d556e4857553efb76c4bd2.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/fd9/fd95d43b694daa6065c84b3341ac0b27.jpg",
@@ -2071,8 +2198,10 @@
     "artwork": {
       "query": "Final DOOM",
       "rawgSlug": "final-doom",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2476,
+      "syncedAt": "2026-11-22T15:11:36.117Z"
     },
     "tags": [
       "singleplayer",
@@ -2108,9 +2237,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 93,
+    "metacritic": 93,
+    "rating": 4.34,
+    "ratingsCount": 570,
+    "releasedAt": "1997-03-20",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/45d/45da4dc311d84b79230317d7b24a3dec.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/13e50e203d8be253cc8cd7fbe1509c63.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/114/114e8be5bec2594bb15c6dbd28fd0f5d.jpg",
@@ -2158,8 +2291,10 @@
     "artwork": {
       "query": "Castlevania: Symphony of the Night",
       "rawgSlug": "castlevania-sotn",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 37654,
+      "syncedAt": "2026-11-22T15:11:36.875Z"
     },
     "tags": [
       "singleplayer",
@@ -2170,7 +2305,7 @@
     ],
     "sourceUrl": "https://rawg.io/games/castlevania-sotn",
     "sources": [],
-    "updatedAt": "2026-10-17T02:23:04.000Z",
+    "updatedAt": "2026-11-21T22:16:26.000Z",
     "sampleData": false
   },
   {
@@ -2195,9 +2330,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.38,
+    "ratingsCount": 856,
+    "releasedAt": "1993-12-10",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/47b/47b50d880be8453bf9cda6e5c007bc26.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/ef58f7ffe086514aa0164c7fc4f6cea8.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/ed8/ed891c2d8a68424565d3a23d46f665eb.jpg",
@@ -2224,8 +2363,10 @@
     "artwork": {
       "query": "DOOM",
       "rawgSlug": "doom-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2460,
+      "syncedAt": "2026-11-22T15:11:37.136Z"
     },
     "tags": [
       "singleplayer",
@@ -2261,9 +2402,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 82,
+    "rating": 4.1,
+    "ratingsCount": 146,
+    "releasedAt": "1998-11-17",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/ba5/ba5f0dd05f44cc48c918683764e3a125.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/55d8e5f063980efddb64e772442c3ab2.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/2ef/2ef3de460e645166d52ff900317deacb.jpg",
@@ -2311,8 +2455,10 @@
     "artwork": {
       "query": "Oddworld: Abe's Exoddus",
       "rawgSlug": "oddworld-abes-exoddus",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1491,
+      "syncedAt": "2026-11-22T15:11:37.881Z"
     },
     "tags": [
       "singleplayer",
@@ -2348,9 +2494,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 84,
+    "rating": 4.19,
+    "ratingsCount": 442,
+    "releasedAt": "1998-09-09",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/243/2434639122ce19d4811048cd11ab5ba0.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a99316b58bd2d4539e9153e24f616e6f.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/7a3/7a3527964b9227b22aff358e277e2b01.jpg",
@@ -2398,8 +2547,10 @@
     "artwork": {
       "query": "Spyro the Dragon",
       "rawgSlug": "spyro-the-dragon-2007",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 36851,
+      "syncedAt": "2026-11-22T15:11:38.142Z"
     },
     "tags": [
       "singleplayer",
@@ -2435,9 +2586,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 56,
+    "rating": 2.81,
+    "ratingsCount": 59,
+    "releasedAt": "1996-10-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/458/458b15ae352f92a2cb160d16c03dd4cf.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/da7c7a3482f8c61a3fe48d75c291a23c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/869/86953bea568ccdcb8e5a65a9ad92934f.jpg",
@@ -2485,8 +2639,10 @@
     "artwork": {
       "query": "Syndicate Wars",
       "rawgSlug": "syndicate-wars",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 5246316,
+      "syncedAt": "2026-11-22T15:11:38.920Z"
     },
     "tags": [
       "singleplayer",
@@ -2522,9 +2678,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 42,
+    "rating": 2.1,
+    "ratingsCount": 40,
+    "releasedAt": "2011-10-19",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/df5/df5eee47410d0625f4f2ef708c95faf9.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/061573ca4ba2b0e068e0614d6d17ac3e.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/710/71019caeb1ac85078ec6571d091891bc.jpg",
@@ -2572,8 +2731,10 @@
     "artwork": {
       "query": "Worms Pinball",
       "rawgSlug": "worms-pinball",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 21516,
+      "syncedAt": "2026-11-22T15:11:39.149Z"
     },
     "tags": [
       "singleplayer",
@@ -2609,9 +2770,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "metacritic": 86,
+    "rating": 4.36,
+    "ratingsCount": 672,
+    "releasedAt": "1999-01-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/15d/15db2360d1130ba8c10573586588b0bd.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/1aed88b7fdc56b77d7971de724e7c6d0.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/eb4/eb4dc938cb3467681355bd4e67765a8c.jpg",
@@ -2659,8 +2824,10 @@
     "artwork": {
       "query": "Silent Hill",
       "rawgSlug": "silent-hill",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 37313,
+      "syncedAt": "2026-11-22T15:11:39.919Z"
     },
     "tags": [
       "singleplayer",
@@ -2671,7 +2838,7 @@
     ],
     "sourceUrl": "https://rawg.io/games/silent-hill",
     "sources": [],
-    "updatedAt": "2026-11-21T05:51:06.000Z",
+    "updatedAt": "2026-11-21T23:10:23.000Z",
     "sampleData": false
   },
   {
@@ -2696,9 +2863,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "rating": 4.15,
+    "ratingsCount": 349,
+    "releasedAt": "1999-10-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/8da/8da6960974c2348585e6e99603c52126.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4a24f609d9b51d5470c74c0631497ad4.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/65d/65d0f15c475cf51efd86aa9a2391524a.jpg",
@@ -2739,8 +2909,10 @@
     "artwork": {
       "query": "Spyro 2: Ripto's Rage!",
       "rawgSlug": "spyro-2-riptos-rage",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 37069,
+      "syncedAt": "2026-11-22T15:11:40.170Z"
     },
     "tags": [
       "singleplayer",
@@ -2776,9 +2948,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "rating": 4.15,
+    "ratingsCount": 269,
+    "releasedAt": "1996-04-19",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/3c3/3c39531ddeb8cf8c12ab3f0b6ec968d3.jpeg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/2eb8302605d2cacb6457d1f4af221875.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/8fc/8fc0f0b362c415057a0fa09ffae215ed.jpg",
@@ -2826,8 +3001,10 @@
     "artwork": {
       "query": "METAL SLUG",
       "rawgSlug": "metal-slug",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 7487,
+      "syncedAt": "2026-11-22T15:11:40.944Z"
     },
     "tags": [
       "singleplayer",
@@ -2838,7 +3015,7 @@
     ],
     "sourceUrl": "https://rawg.io/games/metal-slug",
     "sources": [],
-    "updatedAt": "2026-10-27T04:55:53.000Z",
+    "updatedAt": "2026-11-21T23:16:16.000Z",
     "sampleData": false
   },
   {
@@ -2863,9 +3040,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 71,
+    "rating": 3.56,
+    "ratingsCount": 176,
+    "releasedAt": "1997-04-30",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/19c/19ca7f49ab8f11e213de811f260f6786.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/3aca62adf17c838f9c55c3e61d1cb88c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c9c/c9ca76922550c1cdfbb0ccdd988cad72.jpg",
@@ -2913,8 +3093,10 @@
     "artwork": {
       "query": "MDK",
       "rawgSlug": "mdk",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8309,
+      "syncedAt": "2026-11-22T15:11:41.177Z"
     },
     "tags": [
       "singleplayer",
@@ -2950,9 +3132,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 76,
+    "rating": 3.8,
+    "ratingsCount": 112,
+    "releasedAt": "1995-10-30",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/0fa/0fa357fe0160e2b592a6fafff0e6683e.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/19bc302af9c5056c233dc2305619041d.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/35a/35a486c5f5e47a14e01f6f5087ea8262.jpg",
@@ -3000,8 +3185,10 @@
     "artwork": {
       "query": "HeXen: Beyond Heretic",
       "rawgSlug": "hexen-for-windows-95",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2642,
+      "syncedAt": "2026-11-22T15:11:41.942Z"
     },
     "tags": [
       "singleplayer",
@@ -3037,9 +3224,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 67,
+    "metacritic": 67,
+    "rating": 4,
+    "ratingsCount": 163,
+    "releasedAt": "1998-10-01",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/1a8/1a870c422546de20efd4b0477aed1846.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9c953d23c6ae4d05c88728e328ddb386.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/e10/e1088b6f1448a3afd7b7f703f83ebc32.jpg",
@@ -3087,8 +3278,10 @@
     "artwork": {
       "query": "MediEvil I",
       "rawgSlug": "medievil",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 35594,
+      "syncedAt": "2026-11-22T15:11:42.200Z"
     },
     "tags": [
       "singleplayer",
@@ -3123,6 +3316,10 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 61,
+    "metacritic": 61,
+    "rating": 3.05,
+    "ratingsCount": 58,
+    "releasedAt": "2001-02-15",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
     "coverPath": "https://media.rawg.io/media/games/2e8/2e8063435066d63339f137fc71a73f4e.jpg",
@@ -3210,9 +3407,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 94,
+    "metacritic": 94,
+    "rating": 4.4,
+    "ratingsCount": 540,
+    "releasedAt": "1996-12-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/923/923a5dd13b6e79dd23ab2d09934f0e8d.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/cced2922f69c1c789ba9d1c9c4210b1c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b0c/b0cbda2b3b1e42de773ae747363d6095.jpg",
@@ -3260,8 +3461,10 @@
     "artwork": {
       "query": "Diablo",
       "rawgSlug": "diablo",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 34237,
+      "syncedAt": "2026-11-22T15:11:43.233Z"
     },
     "tags": [
       "singleplayer",
@@ -3297,9 +3500,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 96,
+    "metacritic": 96,
+    "rating": 4.36,
+    "ratingsCount": 569,
+    "releasedAt": "1997-03-20",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/4aa/4aa1440932f4a12d9d0ea70a5e2164f6.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a85032c0a15f3c7048a8077595f2ee66.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/78b/78bc6da0a5957f2013fff93b698b7cb6_OHGlt5j.jpg",
@@ -3333,8 +3540,10 @@
     "artwork": {
       "query": "Tekken 3",
       "rawgSlug": "tekken-3",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 34876,
+      "syncedAt": "2026-11-22T15:11:43.487Z"
     },
     "tags": [
       "singleplayer",
@@ -3370,9 +3579,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 84,
+    "metacritic": 84,
+    "rating": 4.35,
+    "ratingsCount": 305,
+    "releasedAt": "1996-01-29",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/4e2/4e2270713ba0d59ea1dba61158ff842e.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4fcf86be9106bf001cd5c131c72c5aae.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c2a/c2a8e47cc09826c6744609d0b0d4c49b_vslVHgi.jpg",
@@ -3420,8 +3633,10 @@
     "artwork": {
       "query": "Duke Nukem 3D",
       "rawgSlug": "duke-nukem-3d",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 7166,
+      "syncedAt": "2026-11-22T15:11:44.258Z"
     },
     "tags": [
       "singleplayer",
@@ -3457,9 +3672,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 60,
+    "metacritic": 60,
+    "rating": 3.99,
+    "ratingsCount": 487,
+    "releasedAt": "2001-11-16",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/fd6/fd6e2692bd4eeb470bccbf282155839b.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/eaea07c9b307dcd104753f3b41eed9d1.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/d16/d16fb6f5b7a05f23efe5e584423d9607.jpg",
@@ -3507,8 +3726,10 @@
     "artwork": {
       "query": "Harry Potter and the Sorcerer's Stone",
       "rawgSlug": "harry-potter-and-the-philosophers-stone",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 33736,
+      "syncedAt": "2026-11-22T15:11:44.509Z"
     },
     "tags": [
       "singleplayer",
@@ -3544,9 +3765,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 69,
+    "rating": 3.43,
+    "ratingsCount": 60,
+    "releasedAt": "2001-11-15",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/6a1/6a18cc31c5662a272af468f7d85c7528.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/48dabb65fcf645f8d7f8a8ec26b3e010.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/cde/cdeec34ebeed439fc7c9b5c2bb77ec2a.jpg",
@@ -3594,8 +3818,10 @@
     "artwork": {
       "query": "Oddworld: Munch's Oddysee (1997)",
       "rawgSlug": "oddworld-munchs-oddysee",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1492,
+      "syncedAt": "2026-11-22T15:11:45.271Z"
     },
     "tags": [
       "singleplayer",
@@ -3631,9 +3857,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 65,
+    "rating": 3.24,
+    "ratingsCount": 51,
+    "releasedAt": "1996-10-31",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/8b8/8b8348ef4dc763cb3ddf579c4a20bedd.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/d651e8b28b7b9d8255c100c68da879b0.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b2c/b2c45a30320d57733f60328241e35be8.jpg",
@@ -3681,8 +3910,10 @@
     "artwork": {
       "query": "Pandemonium!",
       "rawgSlug": "pandemonium",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2808,
+      "syncedAt": "2026-11-22T15:11:45.517Z"
     },
     "tags": [
       "singleplayer",
@@ -3718,9 +3949,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "metacritic": 87,
+    "rating": 4.29,
+    "ratingsCount": 401,
+    "releasedAt": "2000-09-15",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/1cf/1cf9e301f1d27172546dcabc2f6cb597.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a5a05cfb6a67ef504abc480cea798fec.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/772/7726b749fb283d2d22851ce48f615cff.jpg",
@@ -3768,8 +4003,10 @@
     "artwork": {
       "query": "Spider-Man (2000)",
       "rawgSlug": "spider-man-2000",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 37423,
+      "syncedAt": "2026-11-22T15:11:46.281Z"
     },
     "tags": [
       "narration",
@@ -3805,9 +4042,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 81,
+    "rating": 4.05,
+    "ratingsCount": 135,
+    "releasedAt": "1998-02-23",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/b10/b10ec870bdea34d4947e1ac3b0f1461a.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/36de309602983818b4c2b9b606ef4ff4.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/98e/98e14ebabafd41ebf17581b65e1f6fb1.jpg",
@@ -3855,8 +4095,10 @@
     "artwork": {
       "query": "METAL SLUG 2",
       "rawgSlug": "metal-slug-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 7488,
+      "syncedAt": "2026-11-22T15:11:46.539Z"
     },
     "tags": [
       "singleplayer",
@@ -3892,9 +4134,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.2,
+    "ratingsCount": 417,
+    "releasedAt": "2000-02-04",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/639/639b45004ba5ff983d790f39641393c7.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c60880d86249cb6b52cf3ab7eee27480.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/e3b/e3b6f9afe556e5bc08aa439e52137cad.jpg",
@@ -3942,8 +4188,10 @@
     "artwork": {
       "query": "The Sims",
       "rawgSlug": "the-sims",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 37838,
+      "syncedAt": "2026-11-22T15:11:47.301Z"
     },
     "tags": [
       "sandbox",
@@ -3979,9 +4227,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "rating": 4.3,
+    "ratingsCount": 229,
+    "releasedAt": "1997-03-30",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/screenshots/fc5/fc52d6a48ea3596563f4853c71ea8028.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/8bb83e1a8cc4cd736672877bc83149ea.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/ea3/ea352c543fdd669b6dedc9d72093c06e.jpg",
@@ -4029,8 +4280,10 @@
     "artwork": {
       "query": "Theme Hospital",
       "rawgSlug": "theme-hospital",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 29846,
+      "syncedAt": "2026-11-22T15:11:47.549Z"
     },
     "tags": [
       "singleplayer",
@@ -4066,9 +4319,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.09,
+    "ratingsCount": 293,
+    "releasedAt": "1996-10-25",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/44f/44f1fd0d156a5a6ee47ec00b90441b15.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c7cc7c9e1bebd8802a9044957e025e7a.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/87f/87f113bb6650bb462cc50e9cfc068e27.jpg",
@@ -4116,8 +4373,10 @@
     "artwork": {
       "query": "Tomb Raider (1996)",
       "rawgSlug": "tomb-raider-1996",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2385,
+      "syncedAt": "2026-11-22T15:11:48.320Z"
     },
     "tags": [
       "city",
@@ -4152,9 +4411,13 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 75,
+    "metacritic": 75,
+    "rating": 4.34,
+    "ratingsCount": 358,
+    "releasedAt": "1999-09-22",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/1b2/1b28e8ecb335bfdfbb85510d82810fbb.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/39e1dd25e194367c68f7d040750f184b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b9b/b9bee4017197d132b8c55da5e6e89c57.jpg",
@@ -4202,8 +4465,10 @@
     "artwork": {
       "query": "Resident Evil 3: Nemesis",
       "rawgSlug": "resident-evil-3-nemesis",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 37599,
+      "syncedAt": "2026-11-22T15:11:48.869Z"
     },
     "tags": [
       "singleplayer",
@@ -4239,9 +4504,12 @@
     "sizeBytes": 524288000,
     "sizeBytesEstimated": true,
     "ratingScore": 53,
+    "rating": 2.63,
+    "ratingsCount": 27,
+    "releasedAt": "1998-03-18",
     "fileFormat": "CHD disc image",
     "fileExtension": ".chd",
-    "coverPath": "https://media.rawg.io/media/games/91b/91bd28ff21189e0b8a838d1412a392c1.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/6c267fb142cd39d09c21b69fb95d5352.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/a29/a29281408b690ee7ddf65292ca171ba3.jpg",
@@ -4289,8 +4557,10 @@
     "artwork": {
       "query": "Deathtrap Dungeon",
       "rawgSlug": "deathtrap-dungeon",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2861,
+      "syncedAt": "2026-11-22T15:11:49.477Z"
     },
     "tags": [
       "singleplayer",

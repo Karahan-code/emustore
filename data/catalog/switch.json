@@ -21,9 +21,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 92,
+    "metacritic": 92,
+    "rating": 4.64,
+    "ratingsCount": 7300,
+    "releasedAt": "2015-05-18",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/618/618c2031a07bbff6b4f611f10b6bcdbc.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4904f82c12cecf6ec070fe77d7e913ce.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/1ac/1ac19f31974314855ad7be266adeb500.jpg",
@@ -71,8 +75,10 @@
     "artwork": {
       "query": "The Witcher 3: Wild Hunt",
       "rawgSlug": "the-witcher-3-wild-hunt",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4265,
+      "syncedAt": "2026-11-22T15:12:41.231Z"
     },
     "tags": [
       "singleplayer",
@@ -108,9 +114,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 90,
+    "metacritic": 90,
+    "rating": 4.48,
+    "ratingsCount": 5067,
+    "releasedAt": "2007-10-09",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/7fa/7fa0b586293c5861ee32490e953a4996.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/41a69c66f821f25c8184aea3bb35225d.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/99e/99e94bd55eb75fa6e75c3dcbb1a570b2.jpg",
@@ -158,8 +168,10 @@
     "artwork": {
       "query": "Portal",
       "rawgSlug": "portal",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9022,
+      "syncedAt": "2026-11-22T15:12:41.480Z"
     },
     "tags": [
       "singleplayer",
@@ -195,9 +207,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 94,
+    "metacritic": 94,
+    "rating": 4.42,
+    "ratingsCount": 4968,
+    "releasedAt": "2011-11-11",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/7cf/7cfc9220b401b7a300e409e539c9afd5.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/d17f1582a4c9ae2078ae91ca7b5645ea.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/3bd/3bd2710bd1ffb6664fdea7b83afd067e.jpg",
@@ -245,8 +261,10 @@
     "artwork": {
       "query": "The Elder Scrolls V: Skyrim",
       "rawgSlug": "the-elder-scrolls-v-skyrim",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 22493,
+      "syncedAt": "2026-11-22T15:12:42.244Z"
     },
     "tags": [
       "singleplayer",
@@ -282,9 +300,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 94,
+    "metacritic": 94,
+    "rating": 4.38,
+    "ratingsCount": 4190,
+    "releasedAt": "2013-03-26",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/fc1/fc1307a2774506b5bd65d7e8424664a7.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/b937a56ac2082006f7b0a40ab60fe958.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/bf0/bf07e2c6d2c888d372917d9ef453c8a4.jpg",
@@ -332,8 +354,10 @@
     "artwork": {
       "query": "BioShock Infinite",
       "rawgSlug": "bioshock-infinite",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 29288,
+      "syncedAt": "2026-11-22T15:12:42.494Z"
     },
     "tags": [
       "singleplayer",
@@ -369,9 +393,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.14,
+    "ratingsCount": 3412,
+    "releasedAt": "2010-07-21",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/942/9424d6bb763dc38d9378b488603c87fa.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/97e147b55c7b8f6e9d79100fd40d68a0.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/512/512f4bc2092016478ddcb9e7e60aeec0.jpg",
@@ -419,8 +447,10 @@
     "artwork": {
       "query": "Limbo",
       "rawgSlug": "limbo",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 12128,
+      "syncedAt": "2026-11-22T15:12:43.258Z"
     },
     "tags": [
       "singleplayer",
@@ -431,7 +461,7 @@
     ],
     "sourceUrl": "https://rawg.io/games/limbo",
     "sources": [],
-    "updatedAt": "2026-10-30T09:00:24.000Z",
+    "updatedAt": "2026-11-22T09:39:15.000Z",
     "sampleData": false
   },
   {
@@ -456,9 +486,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 4.38,
+    "ratingsCount": 3646,
+    "releasedAt": "2016-05-12",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/e6b2e5d385c1503fbd55b97ba5dc4b77.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/353/353c1e834e7da7d6ceaa6beaff529c29.jpg",
@@ -506,8 +540,10 @@
     "artwork": {
       "query": "DOOM (2016)",
       "rawgSlug": "doom",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8103,
+      "syncedAt": "2026-11-22T15:12:43.516Z"
     },
     "tags": [
       "singleplayer",
@@ -543,9 +579,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 73,
+    "metacritic": 73,
+    "rating": 4.23,
+    "ratingsCount": 3067,
+    "releasedAt": "2020-12-10",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/26d/26d4437715bee60138dab4a7c8c59c92.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/f39b781760a403dedaa05587e8889c1a.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/814/814c25d6fd1fd34a4e6dade645a3bda7.jpg",
@@ -593,8 +633,10 @@
     "artwork": {
       "query": "Cyberpunk 2077",
       "rawgSlug": "cyberpunk-2077",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 5209422,
+      "syncedAt": "2026-11-22T15:12:44.811Z"
     },
     "tags": [
       "singleplayer",
@@ -630,9 +672,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 81,
+    "metacritic": 81,
+    "rating": 4.08,
+    "ratingsCount": 2486,
+    "releasedAt": "2011-05-16",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/f46/f466571d536f2e3ea9e815ad17177501.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9ef7f9b81c2532880cfe5cf53f0c906d.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/3af/3afd69426804e7162edbe03cd9f8d0f4.jpg",
@@ -680,8 +726,10 @@
     "artwork": {
       "query": "Terraria",
       "rawgSlug": "terraria",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1226,
+      "syncedAt": "2026-11-22T15:12:45.081Z"
     },
     "tags": [
       "singleplayer",
@@ -717,9 +765,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 73,
+    "metacritic": 73,
+    "rating": 3.42,
+    "ratingsCount": 2123,
+    "releasedAt": "2013-03-25",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/f87/f87457e8347484033cb34cde6101d08d.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4e2a3c5332c92654090b105e3723479f.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/2e1/2e15c9f4cca692ebca67b7652e559f6d.jpg",
@@ -767,8 +819,10 @@
     "artwork": {
       "query": "Warframe",
       "rawgSlug": "warframe",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2506,
+      "syncedAt": "2026-11-22T15:12:45.844Z"
     },
     "tags": [
       "singleplayer",
@@ -804,9 +858,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "metacritic": 86,
+    "rating": 3.93,
+    "ratingsCount": 2873,
+    "releasedAt": "2015-07-07",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/8cc/8cce7c0e99dcc43d66c8efd42f9d03e3.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/e4e4005042cf598805d581754fe9256f.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/6a0/6a0745d9dcd0f7a368d372260baf91aa.jpg",
@@ -854,8 +912,10 @@
     "artwork": {
       "query": "Rocket League",
       "rawgSlug": "rocket-league",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 3113,
+      "syncedAt": "2026-11-22T15:12:46.094Z"
     },
     "tags": [
       "singleplayer",
@@ -891,9 +951,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 81,
+    "metacritic": 81,
+    "rating": 4.24,
+    "ratingsCount": 2700,
+    "releasedAt": "2015-06-23",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/310/3106b0e012271c5ffb16497b070be739.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/f84188cb2659a5c8c875d7f0e9fc847c.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/1ed/1ed7f33789fdb79dbe7ae346f7b24fdf.jpg",
@@ -941,8 +1005,10 @@
     "artwork": {
       "query": "Batman: Arkham Knight",
       "rawgSlug": "batman-arkham-knight",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1947,
+      "syncedAt": "2026-11-22T15:12:46.875Z"
     },
     "tags": [
       "singleplayer",
@@ -978,9 +1044,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "metacritic": 80,
+    "rating": 3.63,
+    "ratingsCount": 2425,
+    "releasedAt": "2019-02-04",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/737/737ea5662211d2e0bbd6f5989189e4f1.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/0d7a3aef18b1eb97e70a5148e2a2646f.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/a59/a593423f503eae7f29cd642827cda18d.jpg",
@@ -1028,8 +1098,10 @@
     "artwork": {
       "query": "Apex Legends",
       "rawgSlug": "apex-legends",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 35001,
+      "syncedAt": "2026-11-22T15:12:47.145Z"
     },
     "tags": [
       "multiplayer",
@@ -1065,9 +1137,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.4,
+    "ratingsCount": 2784,
+    "releasedAt": "2017-02-23",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/4cf/4cfc6b7f1850590a4634b08bfab308ab.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/d18c832e8c956b4ef8b92862e6bf470d.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/6b3/6b309936c1fe07e9b7fa5e62a372790d.jpg",
@@ -1115,8 +1191,10 @@
     "artwork": {
       "query": "Hollow Knight",
       "rawgSlug": "hollow-knight",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 7545,
+      "syncedAt": "2026-11-22T15:12:47.913Z"
     },
     "tags": [
       "singleplayer",
@@ -1152,9 +1230,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 81,
+    "metacritic": 81,
+    "rating": 4.04,
+    "ratingsCount": 1654,
+    "releasedAt": "2017-04-27",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/8a0/8a02f84a5916ede2f923b88d5f8217ba.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c39bfb2804dded8db959a0c87d483072.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/00a/00a53be1dcfba6c63ac6807637c4a45a.jpg",
@@ -1202,8 +1284,10 @@
     "artwork": {
       "query": "Little Nightmares",
       "rawgSlug": "little-nightmares",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9974,
+      "syncedAt": "2026-11-22T15:12:48.160Z"
     },
     "tags": [
       "singleplayer",
@@ -1239,6 +1323,10 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 92,
+    "metacritic": 92,
+    "rating": 4.36,
+    "ratingsCount": 2502,
+    "releasedAt": "2012-04-23",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
     "coverPath": "https://media.rawg.io/media/games/8d6/8d69eb6c32ed6acfd75f82d532144993.jpg",
@@ -1326,9 +1414,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.07,
+    "ratingsCount": 1969,
+    "releasedAt": "2010-02-09",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/157/15742f2f67eacff546738e1ab5c19d20.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9c0f08094da979791e461b24cb90efa7.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/a13/a130b342c9830f9c56d65c204638fe17.jpg",
@@ -1376,8 +1468,10 @@
     "artwork": {
       "query": "BioShock 2",
       "rawgSlug": "bioshock-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 29202,
+      "syncedAt": "2026-11-22T15:12:49.181Z"
     },
     "tags": [
       "singleplayer",
@@ -1413,9 +1507,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 89,
+    "metacritic": 89,
+    "rating": 4.39,
+    "ratingsCount": 2488,
+    "releasedAt": "2016-02-25",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/713/713269608dc8f2f40f5a670a14b2de94.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/cf30b40a1573a32248fcd0ba94e67652.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b72/b722b1746256f64ce5e15558d1ac7613.jpg",
@@ -1463,8 +1561,10 @@
     "artwork": {
       "query": "Stardew Valley",
       "rawgSlug": "stardew-valley",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9569,
+      "syncedAt": "2026-11-22T15:12:49.441Z"
     },
     "tags": [
       "singleplayer",
@@ -1500,9 +1600,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 4.38,
+    "ratingsCount": 2668,
+    "releasedAt": "2012-10-22",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/9fa/9fa63622543e5d4f6d99aa9d73b043de.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9fad6725914cafe948673da493a02c5b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/38b/38b9bb0de0a380434b78587e132b2e21.jpg",
@@ -1550,8 +1654,10 @@
     "artwork": {
       "query": "Hotline Miami",
       "rawgSlug": "hotline-miami",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2228,
+      "syncedAt": "2026-11-22T15:12:50.196Z"
     },
     "tags": [
       "singleplayer",
@@ -1587,9 +1693,12 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "rating": 4.24,
+    "ratingsCount": 1432,
+    "releasedAt": "2016-09-15",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/be0/be01c3d7d8795a45615da139322ca080.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a131d2c50f69d09b10a8bd38b387f8af.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c70/c709280e11aabec614d0aafb5779114a.jpg",
@@ -1630,8 +1739,10 @@
     "artwork": {
       "query": "BioShock Remastered",
       "rawgSlug": "bioshock-remastered",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9418,
+      "syncedAt": "2026-11-22T15:12:50.457Z"
     },
     "tags": [
       "singleplayer",
@@ -1667,9 +1778,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "metacritic": 80,
+    "rating": 3.76,
+    "ratingsCount": 1874,
+    "releasedAt": "2013-09-03",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/9dd/9ddabb34840ea9227556670606cf8ea3.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/25644b95de790aea9e0cb3d19b17a945.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/83f/83ff600f8e2dd8507e7961d3e9f32126.jpg",
@@ -1717,8 +1832,10 @@
     "artwork": {
       "query": "Outlast",
       "rawgSlug": "outlast",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2697,
+      "syncedAt": "2026-11-22T15:12:51.235Z"
     },
     "tags": [
       "singleplayer",
@@ -1754,9 +1871,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.22,
+    "ratingsCount": 2318,
+    "releasedAt": "2017-08-07",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/63f/63f0e68688cad279ed38cde931dbfcdb.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/e26c3e20ad7c46dbb43e2b08fdeb48bd.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/662/66282cb9d0c743ca5d8cb8a1585c8207.jpg",
@@ -1804,8 +1925,10 @@
     "artwork": {
       "query": "Hellblade: Senua's Sacrifice",
       "rawgSlug": "hellblade-senuas-sacrifice",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9603,
+      "syncedAt": "2026-11-22T15:12:51.491Z"
     },
     "tags": [
       "singleplayer",
@@ -1841,9 +1964,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 4.16,
+    "ratingsCount": 2673,
+    "releasedAt": "2013-10-29",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/849/849414b978db37d4563ff9e4b0d3a787.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/73273bfc99cf06ef1cbde5663b73704b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/46d/46de97777c05efb26597b215735dcd84.jpg",
@@ -1891,8 +2018,10 @@
     "artwork": {
       "query": "Assassin’s Creed IV: Black Flag",
       "rawgSlug": "assassins-creed-iv-black-flag",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2778,
+      "syncedAt": "2026-11-22T15:12:52.245Z"
     },
     "tags": [
       "singleplayer",
@@ -1928,9 +2057,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 79,
+    "metacritic": 79,
+    "rating": 3.76,
+    "ratingsCount": 1658,
+    "releasedAt": "2012-11-19",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/d46/d46373f39458670305704ef089387520.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/dbc9df90257ced5f4c3f7a31e0ac2692.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/1b9/1b935461ecbdaf9ce51a8d3f02d6848e.jpg",
@@ -1978,8 +2111,10 @@
     "artwork": {
       "query": "Hitman: Absolution",
       "rawgSlug": "hitman-absolution",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1784,
+      "syncedAt": "2026-11-22T15:12:52.495Z"
     },
     "tags": [
       "singleplayer",
@@ -2015,9 +2150,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.16,
+    "ratingsCount": 2085,
+    "releasedAt": "2011-05-17",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/e2d/e2d3f396b16dded0f841c17c9799a882.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a551f123e505d4d5d75058aae10e993b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c08/c0823f02236f076a7a36ff5f3571558e.jpg",
@@ -2065,8 +2204,10 @@
     "artwork": {
       "query": "L.A. Noire",
       "rawgSlug": "la-noire",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1282,
+      "syncedAt": "2026-11-22T15:12:53.254Z"
     },
     "tags": [
       "singleplayer",
@@ -2102,9 +2243,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "metacritic": 87,
+    "rating": 3.98,
+    "ratingsCount": 1779,
+    "releasedAt": "2010-10-20",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/e04/e04963f3ac4c4fa83a1dc0b9231e50db.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/4e17fdfe672e908e42d1e3746afd279b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b1e/b1e6c4d530035326da66fb85ae57519b.jpg",
@@ -2152,8 +2297,10 @@
     "artwork": {
       "query": "Super Meat Boy",
       "rawgSlug": "super-meat-boy",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9347,
+      "syncedAt": "2026-11-22T15:12:53.510Z"
     },
     "tags": [
       "singleplayer",
@@ -2189,9 +2336,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 76,
+    "metacritic": 76,
+    "rating": 4.13,
+    "ratingsCount": 1711,
+    "releasedAt": "2014-08-25",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/7a4/7a45e4cdc5b07f316d49cf147b083b27.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/eeea010691e509dc2b3dce3821f08877.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/111/11118bdcf7cd62d35f63826c79983e16.jpg",
@@ -2239,8 +2390,10 @@
     "artwork": {
       "query": "Metro: Last Light Redux",
       "rawgSlug": "metro-last-light-redux",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4100,
+      "syncedAt": "2026-11-22T15:12:54.268Z"
     },
     "tags": [
       "singleplayer",
@@ -2276,9 +2429,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.09,
+    "ratingsCount": 1938,
+    "releasedAt": "2014-08-25",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/4fb/4fb548e4816c84d1d70f1a228fb167cc.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/520af64f8851d9cd11e5ebdc1c6a4f0e.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/432/432cf94eb1f25d7415f05def5d18cedc.jpg",
@@ -2326,8 +2483,10 @@
     "artwork": {
       "query": "Metro 2033 Redux",
       "rawgSlug": "metro-redux",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4079,
+      "syncedAt": "2026-11-22T15:12:54.523Z"
     },
     "tags": [
       "singleplayer",
@@ -2363,9 +2522,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 93,
+    "metacritic": 93,
+    "rating": 4.41,
+    "ratingsCount": 2132,
+    "releasedAt": "2020-09-17",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/1f4/1f47a270b8f241e4676b14d39ec620f7.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/ce8a253393a1bbbb3d72cd2093b81ede.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/546/546826ed2cde2dec94e1b470c8cbb9ac.jpg",
@@ -2413,8 +2576,10 @@
     "artwork": {
       "query": "Hades",
       "rawgSlug": "hades-2018",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4997889,
+      "syncedAt": "2026-11-22T15:12:55.320Z"
     },
     "tags": [
       "singleplayer",
@@ -2450,9 +2615,12 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "rating": 4,
+    "ratingsCount": 1014,
+    "releasedAt": "2016-09-15",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/7c4/7c448374df84b607f67ce9182a3a3ca7.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/6944d6e4078d4103781501c552ed8971.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/f8f/f8f97169e49ff503f182cb480c75d377.jpg",
@@ -2500,8 +2668,10 @@
     "artwork": {
       "query": "BioShock 2 Remastered",
       "rawgSlug": "bioshock-2-remastered",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9419,
+      "syncedAt": "2026-11-22T15:12:55.550Z"
     },
     "tags": [
       "singleplayer",
@@ -2537,9 +2707,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "metacritic": 86,
+    "rating": 4.37,
+    "ratingsCount": 2191,
+    "releasedAt": "2017-03-17",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/5a4/5a44112251d70a25291cc33757220fce.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/6dc08e2dd57f32063fd0834694003042.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/286/28651ead277f96a8b950ded95b617b25.jpg",
@@ -2587,8 +2761,10 @@
     "artwork": {
       "query": "NieR:Automata",
       "rawgSlug": "nierautomata",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 13971,
+      "syncedAt": "2026-11-22T15:12:56.330Z"
     },
     "tags": [
       "singleplayer",
@@ -2624,9 +2800,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.44,
+    "ratingsCount": 3181,
+    "releasedAt": "2009-05-10",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/b4e/b4e4c73d5aa4ec66bbf75375c4847a2b.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a73027901f88055aaa0fd1a9e25d36c7.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/324/32454b11adde40d87c046f310f0d710d.jpg",
@@ -2674,8 +2854,10 @@
     "artwork": {
       "query": "Minecraft",
       "rawgSlug": "minecraft",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 38365,
+      "syncedAt": "2026-11-22T15:12:56.570Z"
     },
     "tags": [
       "multiplayer",
@@ -2711,9 +2893,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "metacritic": 80,
+    "rating": 3.74,
+    "ratingsCount": 1360,
+    "releasedAt": "2020-08-04",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/5eb/5eb49eb2fa0738fdb5bacea557b1bc57.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/1fbfa92495d30d20aa39fd57cee4bf0a.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/1c5/1c5d40d58ac34b04576ffd7072989eea.jpg",
@@ -2761,8 +2947,10 @@
     "artwork": {
       "query": "Fall Guys: Ultimate Knockout",
       "rawgSlug": "fall-guys",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 5173422,
+      "syncedAt": "2026-11-22T15:12:57.340Z"
     },
     "tags": [
       "steam-achievements",
@@ -2798,9 +2986,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 4.33,
+    "ratingsCount": 2006,
+    "releasedAt": "2017-01-23",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/cee/cee577e2097a59b77193fe2bce94667d.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/1bd92fc1a8d57db76db351e77904387e.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/9c7/9c7016a1d1a8f66d67266e35452a3cf4.jpg",
@@ -2848,8 +3040,10 @@
     "artwork": {
       "query": "Resident Evil 7: Biohazard",
       "rawgSlug": "resident-evil-7-biohazard",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 9774,
+      "syncedAt": "2026-11-22T15:12:57.602Z"
     },
     "tags": [
       "singleplayer",
@@ -2885,9 +3079,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "metacritic": 86,
+    "rating": 4.15,
+    "ratingsCount": 1671,
+    "releasedAt": "2011-07-20",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/f99/f9979698c43fd84c3ab69280576dd3af.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/079230e29195cac1ce62e737740797a0.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/24c/24c8d0fb4059edb73e8ee2157a17b1c1.jpg",
@@ -2935,8 +3133,10 @@
     "artwork": {
       "query": "Bastion",
       "rawgSlug": "bastion",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1240,
+      "syncedAt": "2026-11-22T15:12:58.360Z"
     },
     "tags": [
       "singleplayer",
@@ -2972,9 +3172,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 78,
+    "metacritic": 78,
+    "rating": 3.08,
+    "ratingsCount": 1428,
+    "releasedAt": "2016-09-15",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/d2c/d2c74dacd89fd817c2deb625b01adb1a.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/507c9dcd6538b05090d22c4b73c535a7.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/014/014f87c62cbff3027ddcf9779f2ac18c.jpg",
@@ -3022,8 +3226,10 @@
     "artwork": {
       "query": "Paladins",
       "rawgSlug": "paladins",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 10732,
+      "syncedAt": "2026-11-22T15:12:58.610Z"
     },
     "tags": [
       "steam-achievements",
@@ -3059,9 +3265,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 70,
+    "metacritic": 70,
+    "rating": 3.08,
+    "ratingsCount": 678,
+    "releasedAt": "2015-06-02",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/58a/58ac7f6569259dcc0b60b921869b19fc.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/2fb88ee97a699cbd93cb7f3859951f69.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/660/660811527f1b41a42ae101148295d66b.jpg",
@@ -3109,8 +3319,10 @@
     "artwork": {
       "query": "ARK: Survival Evolved",
       "rawgSlug": "ark-survival-evolved",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 6511,
+      "syncedAt": "2026-11-22T15:12:59.361Z"
     },
     "tags": [
       "singleplayer",
@@ -3146,9 +3358,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 4.12,
+    "ratingsCount": 1541,
+    "releasedAt": "2015-03-10",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/25c/25c4776ab5723d5d735d8bf617ca12d9.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/913f5bf763c8f0e93c9f8dd63ff3782c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c0c/c0c098666e5ee532a8b1459fce1b3a01.jpg",
@@ -3196,8 +3412,10 @@
     "artwork": {
       "query": "Cities: Skylines",
       "rawgSlug": "cities-skylines",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 3192,
+      "syncedAt": "2026-11-22T15:12:59.623Z"
     },
     "tags": [
       "singleplayer",
@@ -3233,9 +3451,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 92,
+    "metacritic": 92,
+    "rating": 4.35,
+    "ratingsCount": 1904,
+    "releasedAt": "2015-09-14",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/ffe/ffed87105b14f5beff72ff44a7793fd5.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/aba1e5182d973f43f2b3fd755f8e2314.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/f06/f0657f2790937cf09c34f0aa65e81d7d.jpg",
@@ -3283,8 +3505,10 @@
     "artwork": {
       "query": "Undertale",
       "rawgSlug": "undertale",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8643,
+      "syncedAt": "2026-11-22T15:13:00.404Z"
     },
     "tags": [
       "singleplayer",
@@ -3320,9 +3544,12 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 55,
+    "rating": 2.73,
+    "ratingsCount": 1125,
+    "releasedAt": "2014-07-07",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/18c/18ca24ed4b700668c36b11ebc35f3d23.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/93944f4f9bf3d0899caa71f26b4860d5.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/9d4/9d47e01a1cf7bb9e1631209508871bad.jpg",
@@ -3370,8 +3597,10 @@
     "artwork": {
       "query": "Unturned",
       "rawgSlug": "unturned",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4815,
+      "syncedAt": "2026-11-22T15:13:00.660Z"
     },
     "tags": [
       "singleplayer",
@@ -3407,9 +3636,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 90,
+    "metacritic": 90,
+    "rating": 4.18,
+    "ratingsCount": 1647,
+    "releasedAt": "2013-08-07",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/b6b/b6b20bfc4b34e312dbc8aac53c95a348.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/075647d73efd90ca8bce86297c93e106.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/14d/14dcdb86ae346a69022ab5837016fdc1.jpg",
@@ -3457,8 +3690,10 @@
     "artwork": {
       "query": "Brothers: A Tale of Two Sons",
       "rawgSlug": "brothers-a-tale-of-two-sons-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2390,
+      "syncedAt": "2026-11-22T15:13:01.413Z"
     },
     "tags": [
       "singleplayer",
@@ -3494,9 +3729,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "metacritic": 87,
+    "rating": 4.38,
+    "ratingsCount": 2601,
+    "releasedAt": "2016-06-28",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/d5a/d5a24f9f71315427fa6e966fdd98dfa6.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/3240f70f7ea5d523e886a8327cd49ce9.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/3a0/3a049846766e09f8883badea6538e736.jpg",
@@ -3544,8 +3783,10 @@
     "artwork": {
       "query": "INSIDE",
       "rawgSlug": "inside",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4799,
+      "syncedAt": "2026-11-22T15:13:01.684Z"
     },
     "tags": [
       "singleplayer",
@@ -3556,7 +3797,7 @@
     ],
     "sourceUrl": "https://rawg.io/games/inside",
     "sources": [],
-    "updatedAt": "2026-10-30T09:00:33.000Z",
+    "updatedAt": "2026-11-22T09:40:33.000Z",
     "sampleData": false
   },
   {
@@ -3581,9 +3822,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 76,
+    "metacritic": 76,
+    "rating": 2.99,
+    "ratingsCount": 572,
+    "releasedAt": "2010-06-01",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/0fd/0fd84d36596a83ef2e5a35f63a072218.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/987715e8b1a1774d5080e3a6be6d0dbb.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/a98/a98a26bc099f56ad0f89fa7f51b7e839.jpg",
@@ -3631,8 +3876,10 @@
     "artwork": {
       "query": "SEGA Mega Drive and Genesis Classics",
       "rawgSlug": "sega-mega-drive-and-genesis-classics",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 5353218,
+      "syncedAt": "2026-11-22T15:13:02.420Z"
     },
     "tags": [
       "singleplayer",
@@ -3668,9 +3915,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 81,
+    "metacritic": 81,
+    "rating": 4.3,
+    "ratingsCount": 2514,
+    "releasedAt": "2016-02-08",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/0be/0bea0a08a4d954337305391b778a7f37.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/aa9264d85b7225106a396c7816efc645.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/e86/e86b8c787467f28f816eb59c5a7e8799.jpg",
@@ -3718,8 +3969,10 @@
     "artwork": {
       "query": "Firewatch",
       "rawgSlug": "firewatch",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8275,
+      "syncedAt": "2026-11-22T15:13:02.692Z"
     },
     "tags": [
       "atmospheric",
@@ -3730,7 +3983,7 @@
     ],
     "sourceUrl": "https://rawg.io/games/firewatch",
     "sources": [],
-    "updatedAt": "2026-10-27T14:22:56.000Z",
+    "updatedAt": "2026-11-22T08:58:43.000Z",
     "sampleData": false
   },
   {
@@ -3755,9 +4008,12 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 64,
+    "rating": 3.22,
+    "ratingsCount": 1115,
+    "releasedAt": "2014-04-30",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/35b/35b47c4d85cd6e08f3e2ca43ea5ce7bb.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/820b5138a91b4a3ef9a7024cbbcc9af9.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/68e/68e9226c1c45af8bab290580f7456be2.jpg",
@@ -3805,8 +4061,10 @@
     "artwork": {
       "query": "Brawlhalla",
       "rawgSlug": "brawlhalla",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4248,
+      "syncedAt": "2026-11-22T15:13:03.458Z"
     },
     "tags": [
       "singleplayer",
@@ -3842,9 +4100,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 3.97,
+    "ratingsCount": 2116,
+    "releasedAt": "2018-10-05",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/c6b/c6bd26767c1053fef2b10bb852943559.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/132d16811e7db45a5c501541c275851c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/412/412b1dd5c880b80d8404451d3ff44360.jpg",
@@ -3892,8 +4154,10 @@
     "artwork": {
       "query": "Assassin's Creed Odyssey",
       "rawgSlug": "assassins-creed-odyssey",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 26179,
+      "syncedAt": "2026-11-22T15:13:03.728Z"
     },
     "tags": [
       "singleplayer",
@@ -3929,9 +4193,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 75,
+    "metacritic": 75,
+    "rating": 3.71,
+    "ratingsCount": 1591,
+    "releasedAt": "2016-08-09",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/174/1743b3dd185bda4a7be349347d4064df.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c8d77146931324f4001237a93fe4ba8c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/34a/34a9f8a7a487e90c51d0ed1782a122f8.jpg",
@@ -3979,8 +4247,10 @@
     "artwork": {
       "query": "No Man's Sky",
       "rawgSlug": "no-mans-sky",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 3779,
+      "syncedAt": "2026-11-22T15:13:04.502Z"
     },
     "tags": [
       "singleplayer",
@@ -4016,9 +4286,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 81,
+    "metacritic": 81,
+    "rating": 4.21,
+    "ratingsCount": 1477,
+    "releasedAt": "2014-10-05",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/daa/daaee07fcb40744d90cf8142f94a241f.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/ad8051d447566eee214f867ccff406f8.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/df3/df311b578fbaa587c8ba2d768bcf18d7.jpg",
@@ -4066,8 +4340,10 @@
     "artwork": {
       "query": "Alien: Isolation",
       "rawgSlug": "alien-isolation",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2108,
+      "syncedAt": "2026-11-22T15:13:04.747Z"
     },
     "tags": [
       "singleplayer",
@@ -4103,9 +4379,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 91,
+    "metacritic": 91,
+    "rating": 4.36,
+    "ratingsCount": 1373,
+    "releasedAt": "2019-10-14",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/840/8408ad3811289a6a5830cae60fb0b62a.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/e17233dc1c4e3457d5a259c06c7eb502.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/6a0/6a0ec32ec86894561d88ede9f165a343.jpg",
@@ -4153,8 +4433,10 @@
     "artwork": {
       "query": "Disco Elysium",
       "rawgSlug": "disco-elysium",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 18262,
+      "syncedAt": "2026-11-22T15:13:05.513Z"
     },
     "tags": [
       "singleplayer",
@@ -4190,9 +4472,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "metacritic": 87,
+    "rating": 4.37,
+    "ratingsCount": 2053,
+    "releasedAt": "2017-09-29",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/226/2262cea0b385db6cf399f4be831603b0.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/25dcf1554f13c36b512dfe907acc77d3.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/f07/f07f356b4d50a0035efcb6abf3834e4e.jpg",
@@ -4240,8 +4526,10 @@
     "artwork": {
       "query": "Cuphead",
       "rawgSlug": "cuphead",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 3583,
+      "syncedAt": "2026-11-22T15:13:05.769Z"
     },
     "tags": [
       "singleplayer",
@@ -4277,9 +4565,13 @@
     "sizeBytes": 4294967296,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 3.77,
+    "ratingsCount": 1221,
+    "releasedAt": "2010-01-05",
     "fileFormat": "NSP package",
     "fileExtension": ".nsp",
-    "coverPath": "https://media.rawg.io/media/games/8d4/8d46786ca86b1d95f3dc7e700e2dc4dd.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/8453819ef3f6a62387a07652bb084844.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/5f8/5f81dd045727d7d3df37434051f3e58d.jpg",
@@ -4327,8 +4619,10 @@
     "artwork": {
       "query": "Darksiders",
       "rawgSlug": "darksiders",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 13207,
+      "syncedAt": "2026-11-22T15:13:06.267Z"
     },
     "tags": [
       "singleplayer",

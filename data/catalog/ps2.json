@@ -21,9 +21,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 93,
+    "metacritic": 93,
+    "rating": 4.5,
+    "ratingsCount": 4125,
+    "releasedAt": "2004-10-26",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/960/960b601d9541cec776c5fa42a00bf6c4.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c4e954b93dc03b0f846db4051a1e6d25.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/679/679c267107151f01696d3c8ea71ac650.jpg",
@@ -71,8 +75,10 @@
     "artwork": {
       "query": "Grand Theft Auto: San Andreas",
       "rawgSlug": "grand-theft-auto-san-andreas",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1352,
+      "syncedAt": "2026-11-22T15:11:50.267Z"
     },
     "tags": [
       "singleplayer",
@@ -108,9 +114,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 96,
+    "metacritic": 96,
+    "rating": 4.38,
+    "ratingsCount": 2459,
+    "releasedAt": "1998-11-19",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/6c5/6c55e22185876626881b76c11922b073.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/10f16ffcd88e1cf00e43178442437763.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/345/3458269ae8ea44a6b8c8268d39fe36a1.jpg",
@@ -158,8 +168,10 @@
     "artwork": {
       "query": "Half-Life",
       "rawgSlug": "half-life",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 21207,
+      "syncedAt": "2026-11-22T15:11:50.537Z"
     },
     "tags": [
       "singleplayer",
@@ -195,9 +207,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 94,
+    "metacritic": 94,
+    "rating": 4.44,
+    "ratingsCount": 3140,
+    "releasedAt": "2002-10-27",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/13a/13a528ac9cf48bbb6be5d35fe029336d.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/c35f96e6c46a58248ab0ca39bae23039.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/dfd/dfd73edec49df98ca9cd6736eeba1049.jpg",
@@ -245,8 +261,10 @@
     "artwork": {
       "query": "Grand Theft Auto: Vice City",
       "rawgSlug": "grand-theft-auto-vice-city",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1351,
+      "syncedAt": "2026-11-22T15:11:51.318Z"
     },
     "tags": [
       "singleplayer",
@@ -282,9 +300,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "metacritic": 87,
+    "rating": 4.05,
+    "ratingsCount": 987,
+    "releasedAt": "2005-04-01",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/c89/c89ca70716080733d03724277df2c6c7.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/3ef66143a4e5311332f23b364425643e.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/2de/2dea22a973d765a5383940307b368268.jpg",
@@ -332,8 +354,10 @@
     "artwork": {
       "query": "Psychonauts",
       "rawgSlug": "psychonauts",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 8240,
+      "syncedAt": "2026-11-22T15:11:51.563Z"
     },
     "tags": [
       "singleplayer",
@@ -369,9 +393,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 93,
+    "metacritic": 93,
+    "rating": 4.16,
+    "ratingsCount": 1653,
+    "releasedAt": "2001-10-22",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/5fa/5fae5fec3c943179e09da67a4427d68f.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/7856a3a5b530f10a69bec1c57d90330e.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/eda/eda58fc81f11086dd2c2bb0c49175a31.jpg",
@@ -419,8 +447,10 @@
     "artwork": {
       "query": "Grand Theft Auto III",
       "rawgSlug": "grand-theft-auto-iii",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1350,
+      "syncedAt": "2026-11-22T15:11:52.361Z"
     },
     "tags": [
       "singleplayer",
@@ -456,9 +486,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.4,
+    "ratingsCount": 1870,
+    "releasedAt": "2005-01-11",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/fee/fee0100afd87b52bfbd33e26689fa26c.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/46cc597bae1fee3cd19314f32c6cb4f0.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/d26/d26bbb090817a799df765d2fd4e90d33.jpg",
@@ -506,8 +540,10 @@
     "artwork": {
       "query": "Resident Evil 4 (2005)",
       "rawgSlug": "resident-evil-4",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 3168,
+      "syncedAt": "2026-11-22T15:11:52.644Z"
     },
     "tags": [
       "singleplayer",
@@ -543,9 +579,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 82,
+    "metacritic": 82,
+    "rating": 3.94,
+    "ratingsCount": 804,
+    "releasedAt": "2002-01-09",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/852/8522935d8ab27b610a254b52de0da212.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/42a4bc0ab5c0df63a8e370f0130059c6.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/3e4/3e4e5de1a34fdc606eb142a772373470.jpg",
@@ -593,8 +633,10 @@
     "artwork": {
       "query": "Syberia",
       "rawgSlug": "syberia",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 11686,
+      "syncedAt": "2026-11-22T15:11:53.389Z"
     },
     "tags": [
       "singleplayer",
@@ -630,9 +672,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "metacritic": 80,
+    "rating": 3.89,
+    "ratingsCount": 579,
+    "releasedAt": "2004-03-30",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/c00/c003705c0eaed100397ae408b7b89e90.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/1f0b2b76c879c52e827a4553f7d9d3cc.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/01f/01fc8293f8b686f2b7ba3e62bcbf54d1.jpg",
@@ -680,8 +726,10 @@
     "artwork": {
       "query": "Syberia 2",
       "rawgSlug": "syberia-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 11693,
+      "syncedAt": "2026-11-22T15:11:53.649Z"
     },
     "tags": [
       "singleplayer",
@@ -717,6 +765,10 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.36,
+    "ratingsCount": 1319,
+    "releasedAt": "2002-08-28",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
     "coverPath": "https://media.rawg.io/media/games/74c/74ca0ec569682a150f3c6f9f661fb6a5.jpg",
@@ -804,9 +856,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 89,
+    "metacritic": 89,
+    "rating": 4.44,
+    "ratingsCount": 2084,
+    "releasedAt": "2001-07-25",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/2f5/2f5eb72fe45540e93ac2726877551a20.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/623e5a1136651b875b7124e55ce30f59.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/fc9/fc9cef07344793d0a5dc7b1eaac1ad5b.jpg",
@@ -854,8 +910,10 @@
     "artwork": {
       "query": "Max Payne",
       "rawgSlug": "max-payne",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1354,
+      "syncedAt": "2026-11-22T15:11:54.656Z"
     },
     "tags": [
       "singleplayer",
@@ -891,9 +949,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 90,
+    "metacritic": 90,
+    "rating": 4.12,
+    "ratingsCount": 577,
+    "releasedAt": "2000-06-22",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/screenshots/67e/67e5be6ad7a555248f50bd367e9a071c.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/2448225d3dfa0dc52632c746aa76b66e.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/4b0/4b0245e2c4c5399b3ac90678c13cb4e1.jpg",
@@ -941,8 +1003,10 @@
     "artwork": {
       "query": "Deus Ex: Game of the Year Edition",
       "rawgSlug": "deus-ex-game-of-the-year-edition",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 20721,
+      "syncedAt": "2026-11-22T15:11:54.930Z"
     },
     "tags": [
       "singleplayer",
@@ -978,9 +1042,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 82,
+    "metacritic": 82,
+    "rating": 4.31,
+    "ratingsCount": 1045,
+    "releasedAt": "2006-05-29",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/233/233cdc08cce0228f6f35222eca3bff92.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/947681124aee4951c310b0dab1e91fea.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/ed9/ed9660d9057ac1f6a17cbce0949bda28.jpg",
@@ -1028,8 +1096,10 @@
     "artwork": {
       "query": "Hitman: Blood Money",
       "rawgSlug": "hitman-blood-money",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 20490,
+      "syncedAt": "2026-11-22T15:11:55.704Z"
     },
     "tags": [
       "singleplayer",
@@ -1065,9 +1135,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "metacritic": 80,
+    "rating": 4.42,
+    "ratingsCount": 1640,
+    "releasedAt": "2003-10-14",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/6fd/6fd971ffa72faa1758960d25ef6196bc.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/275a5602cd91a468a0e10c226a03a39c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/69f/69f55950ca3dd483cff0e2c74726a520.jpg",
@@ -1115,8 +1189,10 @@
     "artwork": {
       "query": "Max Payne 2: The Fall of Max Payne",
       "rawgSlug": "max-payne-2-the-fall-of-max-payne",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1355,
+      "syncedAt": "2026-11-22T15:11:55.963Z"
     },
     "tags": [
       "physics",
@@ -1152,9 +1228,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 78,
+    "metacritic": 78,
+    "rating": 4.21,
+    "ratingsCount": 853,
+    "releasedAt": "2005-10-30",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/662/6625a20ca1d13699ee7c191b20a02408.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/aa9ee5a5b1155137461f9e4c7389f038.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/331/331498527090104a46dc68a6c6db4865.jpg",
@@ -1202,8 +1282,10 @@
     "artwork": {
       "query": "Star Wars: Battlefront II (2005)",
       "rawgSlug": "star-wars-battlefront-ii-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 17304,
+      "syncedAt": "2026-11-22T15:11:56.720Z"
     },
     "tags": [
       "singleplayer",
@@ -1239,9 +1321,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "metacritic": 87,
+    "rating": 3.95,
+    "ratingsCount": 652,
+    "releasedAt": "2002-10-01",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/683/6833fbb183fd72a61c032501e3bc6d36.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/5b2f16e950daeab64b597227513d743b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/fec/fecd9e01b9d72507a4ee54247a40b429.jpg",
@@ -1289,8 +1375,10 @@
     "artwork": {
       "query": "Hitman 2: Silent Assassin",
       "rawgSlug": "hitman-2-silent-assassin",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 20452,
+      "syncedAt": "2026-11-22T15:11:56.956Z"
     },
     "tags": [
       "singleplayer",
@@ -1326,9 +1414,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 82,
+    "metacritic": 82,
+    "rating": 3.91,
+    "ratingsCount": 535,
+    "releasedAt": "2006-04-06",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/9d4/9d45e22df640fcb6f4b754aa3491ae09.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a848cc1453ca277b30ae6522836f0f73.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/d50/d508d6fd1c2ffc3834583ee5d5334e41.jpg",
@@ -1376,8 +1468,10 @@
     "artwork": {
       "query": "Tomb Raider: Legend",
       "rawgSlug": "tomb-raider-legend",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 21208,
+      "syncedAt": "2026-11-22T15:11:57.763Z"
     },
     "tags": [
       "singleplayer",
@@ -1413,9 +1507,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 3.95,
+    "ratingsCount": 452,
+    "releasedAt": "2007-06-01",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/791/791abcd56601482964f0fee6d8ab6a61.jpeg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/e92bd2c8f2224850546c0717d75c20da.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/6da/6dada7b369848680060d1cb84144599c.jpg",
@@ -1463,8 +1561,10 @@
     "artwork": {
       "query": "Tomb Raider: Anniversary",
       "rawgSlug": "tomb-raider-anniversary",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 25644,
+      "syncedAt": "2026-11-22T15:11:58.011Z"
     },
     "tags": [
       "singleplayer",
@@ -1500,9 +1600,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 75,
+    "metacritic": 75,
+    "rating": 3.3,
+    "ratingsCount": 447,
+    "releasedAt": "2006-09-22",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/e60/e601c02ec49ef4f1d5ef147994b3935f.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9707fe6c04d0d1a0e611ad54ec908ceb.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/95e/95ec507c456d78a46031a4b3a852d7a9.jpg",
@@ -1550,8 +1654,10 @@
     "artwork": {
       "query": "Just Cause",
       "rawgSlug": "just-cause",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 20573,
+      "syncedAt": "2026-11-22T15:11:58.764Z"
     },
     "tags": [
       "singleplayer",
@@ -1587,9 +1693,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 89,
+    "metacritic": 89,
+    "rating": 3.9,
+    "ratingsCount": 883,
+    "releasedAt": "2004-03-22",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/2ee/2eef5ed5e82c28d1299ecc2a0e60f2cb.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/37a05c2bc9e34c4228911a726d0da702.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/38b/38b5f39e5fdbb92c1c7ce3794bda4427.jpg",
@@ -1637,8 +1747,10 @@
     "artwork": {
       "query": "Far Cry",
       "rawgSlug": "far-cry",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1432,
+      "syncedAt": "2026-11-22T15:11:59.022Z"
     },
     "tags": [
       "singleplayer",
@@ -1674,9 +1786,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 89,
+    "metacritic": 89,
+    "rating": 4.22,
+    "ratingsCount": 945,
+    "releasedAt": "2003-10-28",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/99b/99b39612e864d6ddfdb2c407fd9010a1.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/6a8cfab2aa11fbb342063df25c16a5f1.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/dad/dad830dc8b54abcaabe1af03763d8f00.jpg",
@@ -1724,8 +1840,10 @@
     "artwork": {
       "query": "Prince of Persia: The Sands of Time",
       "rawgSlug": "prince-of-persia-the-sands-of-time",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1438,
+      "syncedAt": "2026-11-22T15:11:59.790Z"
     },
     "tags": [
       "singleplayer",
@@ -1761,9 +1879,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.45,
+    "ratingsCount": 1814,
+    "releasedAt": "2005-11-15",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/41b/41ba37b6a3e706dc1d27d49afbf0f72a.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/bcee397c146136f405865adcf1655207.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c96/c962d8c17a532f240c1a25af6a5f0e6f.jpg",
@@ -1811,8 +1933,10 @@
     "artwork": {
       "query": "Need For Speed: Most Wanted",
       "rawgSlug": "need-for-speed-most-wanted",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 38250,
+      "syncedAt": "2026-11-22T15:12:00.047Z"
     },
     "tags": [
       "race",
@@ -1848,9 +1972,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "metacritic": 80,
+    "rating": 3.77,
+    "ratingsCount": 495,
+    "releasedAt": "2008-09-23",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/9f7/9f750cb69a31a42648f45e3681abed3a.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/241562e415e4bce8ab9bfdc4942e4b84.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/efa/efadd7fbae3685f22147aa4a895d86ee.jpg",
@@ -1898,8 +2026,10 @@
     "artwork": {
       "query": "LEGO Batman",
       "rawgSlug": "lego-batman",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1996,
+      "syncedAt": "2026-11-22T15:12:00.823Z"
     },
     "tags": [
       "singleplayer",
@@ -1935,9 +2065,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 83,
+    "metacritic": 83,
+    "rating": 4.4,
+    "ratingsCount": 852,
+    "releasedAt": "2004-11-30",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/459/459ac8745027643ed7338516c0025cf7.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/0e81202a194c3198d45cceb0edec2ff0.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/0ce/0ceb9d871ae97cbd0aa29b27f09eb933.jpg",
@@ -1985,8 +2119,10 @@
     "artwork": {
       "query": "Prince of Persia: Warrior Within",
       "rawgSlug": "prince-of-persia-warrior-within",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1430,
+      "syncedAt": "2026-11-22T15:12:01.127Z"
     },
     "tags": [
       "singleplayer",
@@ -2022,9 +2158,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 77,
+    "metacritic": 77,
+    "rating": 3.93,
+    "ratingsCount": 485,
+    "releasedAt": "2004-04-20",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/07b/07b5abbe6330a76d6b30636d3aa5e0f3.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9ede30813e3c7500c9f11ba389cf5ae8.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/2f8/2f8a819c6e851904dc8377e426ab0f83.jpg",
@@ -2072,8 +2212,10 @@
     "artwork": {
       "query": "Hitman: Contracts",
       "rawgSlug": "hitman-3-contracts",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2926,
+      "syncedAt": "2026-11-22T15:12:01.953Z"
     },
     "tags": [
       "singleplayer",
@@ -2109,9 +2251,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 85,
+    "metacritic": 85,
+    "rating": 4.12,
+    "ratingsCount": 714,
+    "releasedAt": "2005-12-01",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/dd7/dd72d8a527cd9245c7eb7cd05aa53efa.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/abae7d98a0ce038be2705fc36f5de8d9.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/807/807f8303d9be7d35f07a4eab1f55feb9.jpg",
@@ -2159,8 +2305,10 @@
     "artwork": {
       "query": "Prince of Persia: The Two Thrones",
       "rawgSlug": "prince-of-persia-the-two-thrones",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1433,
+      "syncedAt": "2026-11-22T15:12:02.214Z"
     },
     "tags": [
       "singleplayer",
@@ -2196,9 +2344,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 76,
+    "metacritic": 76,
+    "rating": 4.33,
+    "ratingsCount": 649,
+    "releasedAt": "2006-06-29",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/d3e/d3e2a3bc62a62bc9b70d6ebe0f54f040.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/13214f4a050bdb0da70401b84b5321e5.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/5de/5de1980fc2486fa44d307eee36b7500d.jpg",
@@ -2246,8 +2398,10 @@
     "artwork": {
       "query": "FlatOut 2",
       "rawgSlug": "flatout-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 4512,
+      "syncedAt": "2026-11-22T15:12:02.980Z"
     },
     "tags": [
       "singleplayer",
@@ -2283,9 +2437,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 93,
+    "metacritic": 93,
+    "rating": 4.39,
+    "ratingsCount": 979,
+    "releasedAt": "2007-03-13",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/615/615e9fc0a325e0d87b84dad029b8b7b9.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/7f5c8cbd9c1a9f0fbbb793d440dfd8e3.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/0f3/0f36aa71136875a52805a063541cbc11.jpg",
@@ -2333,8 +2491,10 @@
     "artwork": {
       "query": "God of War II",
       "rawgSlug": "god-of-war-ii",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 35531,
+      "syncedAt": "2026-11-22T15:12:03.218Z"
     },
     "tags": [
       "war",
@@ -2370,9 +2530,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 82,
+    "metacritic": 82,
+    "rating": 3.83,
+    "ratingsCount": 432,
+    "releasedAt": "1999-01-01",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/d9b/d9bbb8e69f53c4c42b8ff928cb581548.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/6003822a5989689befd308ce1be4ac75.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/876/876310aca1fd31e5d12689a1f2d5123e.jpg",
@@ -2420,8 +2584,10 @@
     "artwork": {
       "query": "Crazy Taxi (1999)",
       "rawgSlug": "crazy-taxi",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 21778,
+      "syncedAt": "2026-11-22T15:12:03.988Z"
     },
     "tags": [
       "singleplayer",
@@ -2457,9 +2623,12 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 79,
+    "rating": 3.97,
+    "ratingsCount": 370,
+    "releasedAt": "2000-03-23",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/screenshots/df1/df1a27300bf1e4696734b437d81b0fcf.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/a49646ec0f73e4f4d604ace0f5772dfb.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/67c/67cca01ffc66931a1171fee0d26cba5a.jpg",
@@ -2507,8 +2676,10 @@
     "artwork": {
       "query": "METAL SLUG 3",
       "rawgSlug": "metal-slug-3",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 3006,
+      "syncedAt": "2026-11-22T15:12:04.233Z"
     },
     "tags": [
       "singleplayer",
@@ -2544,9 +2715,12 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 62,
+    "rating": 3.11,
+    "ratingsCount": 190,
+    "releasedAt": "2003-06-19",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/9f1/9f14ee1ccd4995ba93be9b80d0ee30d7.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/2f384466a8f3cc12bbd45d984ff77765.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/19c/19ceb6a4171f5f6e6fa405470f108385.jpg",
@@ -2594,8 +2768,10 @@
     "artwork": {
       "query": "Tomb Raider: The Angel of Darkness",
       "rawgSlug": "tomb-raider-the-angel-of-darkness",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2389,
+      "syncedAt": "2026-11-22T15:12:05.021Z"
     },
     "tags": [
       "singleplayer",
@@ -2631,9 +2807,12 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 53,
+    "rating": 2.67,
+    "ratingsCount": 137,
+    "releasedAt": "2005-04-15",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/83a/83af36d8924271087360d142d34f0960.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/88462c7dc10920038fac70011d7e3c10.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/abd/abd4391ce54f19fe89ede9351bfac931.jpg",
@@ -2681,8 +2860,10 @@
     "artwork": {
       "query": "KAO the Kangaroo: Round 2",
       "rawgSlug": "kao-the-kangaroo-round-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 5097870,
+      "syncedAt": "2026-11-22T15:12:05.266Z"
     },
     "tags": [
       "singleplayer",
@@ -2718,9 +2899,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 84,
+    "metacritic": 84,
+    "rating": 4.36,
+    "ratingsCount": 520,
+    "releasedAt": "2003-11-11",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/ee5/ee5e06ae04f89f0a73b2af9e8015cae2.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9599bdab29c403b39cf3df8634b11b63.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/d22/d221ec754934fe0964eb6f1c3e269ffd.jpg",
@@ -2768,8 +2953,10 @@
     "artwork": {
       "query": "Beyond Good & Evil",
       "rawgSlug": "beyond-good-evil",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1453,
+      "syncedAt": "2026-11-22T15:12:06.032Z"
     },
     "tags": [
       "singleplayer",
@@ -2805,9 +2992,12 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "rating": 4.34,
+    "ratingsCount": 534,
+    "releasedAt": "1999-12-02",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/2f2/2f2eb93e32d400677b0b27f4686f7b4f.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/1580cb083169e06b7e5af0481196b674.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/c61/c6164c0b74d510ee7657cab07888dd03.jpg",
@@ -2855,8 +3045,10 @@
     "artwork": {
       "query": "Quake III Arena",
       "rawgSlug": "quake-iii-arena-1999",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2255,
+      "syncedAt": "2026-11-22T15:12:06.269Z"
     },
     "tags": [
       "singleplayer",
@@ -2892,9 +3084,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 72,
+    "metacritic": 72,
+    "rating": 4.03,
+    "ratingsCount": 404,
+    "releasedAt": "2004-11-05",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/b39/b39e0b98ac821bbc630948054b4e5041.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9468cd74fd7afafa69f438db8ae4efaf.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b8a/b8a513a8369ade22d1a5161be45384c5.jpg",
@@ -2942,8 +3138,10 @@
     "artwork": {
       "query": "FlatOut",
       "rawgSlug": "flatout",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 17890,
+      "syncedAt": "2026-11-22T15:12:07.056Z"
     },
     "tags": [
       "singleplayer",
@@ -2979,9 +3177,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 88,
+    "metacritic": 88,
+    "rating": 4.22,
+    "ratingsCount": 471,
+    "releasedAt": "2001-11-20",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/b47/b47c20aa6cfd4c825d37e2bc68462e9c.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/376fa4e9db29db031e42237b552e0dd1.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/353/353cfa6ff48c00c77f4b7e723454eaf6.jpg",
@@ -3029,8 +3231,10 @@
     "artwork": {
       "query": "Return to Castle Wolfenstein",
       "rawgSlug": "return-to-castle-wolfenstein",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 29937,
+      "syncedAt": "2026-11-22T15:12:07.312Z"
     },
     "tags": [
       "singleplayer",
@@ -3066,9 +3270,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 82,
+    "metacritic": 82,
+    "rating": 4.39,
+    "ratingsCount": 1286,
+    "releasedAt": "2004-11-15",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/dc6/dc68ca77e06ad993aade7faf645f5ec2.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/8e4374a54f3a61fa403d8d70c99bca08.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/9ec/9eca49be680b10fbc6198fa1df4a4c6d.jpg",
@@ -3116,8 +3324,10 @@
     "artwork": {
       "query": "Need for Speed: Underground 2",
       "rawgSlug": "need-for-speed-underground-2-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 29882,
+      "syncedAt": "2026-11-22T15:12:08.094Z"
     },
     "tags": [
       "singleplayer",
@@ -3153,9 +3363,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 92,
+    "metacritic": 92,
+    "rating": 4.38,
+    "ratingsCount": 490,
+    "releasedAt": "2005-03-21",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/83b/83b59a9d512bec8bc8bda6b539b215b2.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/923ccbcec867ebc5588386df7c370c55.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/29a/29ae9a41676aba7fdfb9e3c776044ca2.jpg",
@@ -3203,8 +3417,10 @@
     "artwork": {
       "query": "Tom Clancy's Splinter Cell Chaos Theory",
       "rawgSlug": "splinter-cell-chaos-theory",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1436,
+      "syncedAt": "2026-11-22T15:12:08.347Z"
     },
     "tags": [
       "singleplayer",
@@ -3240,9 +3456,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 91,
+    "metacritic": 91,
+    "rating": 4.18,
+    "ratingsCount": 493,
+    "releasedAt": "2002-11-17",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/104/104e82a52297cc7ddd3b05b7e68be04f.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/f2aa417ab5eec093fb1699b3c789caff.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/324/324a9256904c32b384b747191608a861.jpg",
@@ -3290,8 +3510,10 @@
     "artwork": {
       "query": "Tom Clancy's Splinter Cell",
       "rawgSlug": "splinter-cell",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1435,
+      "syncedAt": "2026-11-22T15:12:09.131Z"
     },
     "tags": [
       "singleplayer",
@@ -3327,9 +3549,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "metacritic": 86,
+    "rating": 3.44,
+    "ratingsCount": 462,
+    "releasedAt": "2013-09-23",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/9ca/9ca31615beee447f3ae1dc9b3b736dce.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/fc80088e4d37d4ca60158963a487432e.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b30/b30793b3b7ec8130dfd5b08ff678c230.jpg",
@@ -3377,8 +3603,10 @@
     "artwork": {
       "query": "FIFA 14",
       "rawgSlug": "fifa-14",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 5248134,
+      "syncedAt": "2026-11-22T15:12:09.376Z"
     },
     "tags": [
       "3d",
@@ -3414,9 +3642,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 87,
+    "metacritic": 87,
+    "rating": 4.23,
+    "ratingsCount": 220,
+    "releasedAt": "2001-09-20",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/screenshots/39b/39beb43bceb3dcca896c128ddeccec48.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/5b34f52c8cfb9f3fa83613822ba0118c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/45b/45ba5925c52c942faea8e452d77947b3.jpg",
@@ -3464,8 +3696,10 @@
     "artwork": {
       "query": "Commandos 2: Men of Courage",
       "rawgSlug": "commandos-2-men-of-courage",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 20364,
+      "syncedAt": "2026-11-22T15:12:10.136Z"
     },
     "tags": [
       "singleplayer",
@@ -3501,9 +3735,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 78,
+    "metacritic": 78,
+    "rating": 3.88,
+    "ratingsCount": 286,
+    "releasedAt": "2001-05-01",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/a81/a81632a0060ca9fc0e33552a5c52bb9e.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/8af0a1fdf1fb6005665d2bc4d5fa7c77.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/194/1949724f9cba3c8c51e9de9827637375.jpg",
@@ -3551,8 +3789,10 @@
     "artwork": {
       "query": "Red Faction",
       "rawgSlug": "red-faction",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1844,
+      "syncedAt": "2026-11-22T15:12:10.405Z"
     },
     "tags": [
       "singleplayer",
@@ -3588,9 +3828,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 86,
+    "metacritic": 86,
+    "rating": 3.8,
+    "ratingsCount": 180,
+    "releasedAt": "2007-02-17",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/screenshots/bac/bac1670a3d55d603171224368cb8bed8.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/83b87a84ea2340caa3d87df9fcd9b7c7.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/7c3/7c3a4a1cbba4052d54a1791cca7f91be.jpg",
@@ -3638,8 +3882,10 @@
     "artwork": {
       "query": "Supreme Commander",
       "rawgSlug": "supreme-commander",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 31188,
+      "syncedAt": "2026-11-22T15:12:11.169Z"
     },
     "tags": [
       "singleplayer",
@@ -3675,9 +3921,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 72,
+    "metacritic": 72,
+    "rating": 3.88,
+    "ratingsCount": 230,
+    "releasedAt": "2003-11-18",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/33b/33b8837b3f396612d458414798524897.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/76053d99c8df098f62f5a59ab074d78b.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/bbe/bbecf8633419dc37f6592fbdba34bc29.jpg",
@@ -3725,8 +3975,10 @@
     "artwork": {
       "query": "XIII",
       "rawgSlug": "xiii",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 33643,
+      "syncedAt": "2026-11-22T15:12:11.439Z"
     },
     "tags": [
       "singleplayer",
@@ -3762,9 +4014,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 77,
+    "metacritic": 77,
+    "rating": 3.92,
+    "ratingsCount": 160,
+    "releasedAt": "2001-10-29",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/837/8375a78025f2f969743c8f4aaa0e9774.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/84fae78a4db92b0b5098b00b787bc4d4.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/5a2/5a2478faa1aa4205f4ca8a05722be805.jpg",
@@ -3812,8 +4068,10 @@
     "artwork": {
       "query": "Legacy of Kain: Soul Reaver 2",
       "rawgSlug": "legacy-of-kain-soul-reaver-2",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2384,
+      "syncedAt": "2026-11-22T15:12:12.224Z"
     },
     "tags": [
       "singleplayer",
@@ -3849,9 +4107,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 65,
+    "metacritic": 65,
+    "rating": 3.21,
+    "ratingsCount": 536,
+    "releasedAt": "2008-11-18",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/4ad/4ad6ab9cfe8146224330598a4a62fb14.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/f619679ba92005bcb5c0d31e77fe4055.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/b81/b81554a2ec8e3bbd9f65ccd5f9a6bd20.jpg",
@@ -3899,8 +4161,10 @@
     "artwork": {
       "query": "Need For Speed Undercover",
       "rawgSlug": "nfs-undercover",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1555,
+      "syncedAt": "2026-11-22T15:12:12.469Z"
     },
     "tags": [
       "singleplayer",
@@ -3936,9 +4200,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 75,
+    "metacritic": 75,
+    "rating": 3.91,
+    "ratingsCount": 355,
+    "releasedAt": "2003-11-19",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/c23/c23b578d6a9dd1c73ee403157184e793.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/09b15aeee2bc9c47f03de9e6180d28a5.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/56d/56d4464eca2b1db2a08366b5fa116bf7.jpg",
@@ -3986,8 +4254,10 @@
     "artwork": {
       "query": "Manhunt",
       "rawgSlug": "manhunt",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1353,
+      "syncedAt": "2026-11-22T15:12:13.226Z"
     },
     "tags": [
       "singleplayer",
@@ -4023,9 +4293,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 70,
+    "metacritic": 70,
+    "rating": 3.94,
+    "ratingsCount": 144,
+    "releasedAt": "2003-12-15",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/f49/f49f056eb2ca381b739462927250d6fb.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/054f88803bf898dfae9c10d31eb9040c.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/72a/72ad35a3a41f0915e98b231e865e3682.jpg",
@@ -4073,8 +4347,10 @@
     "artwork": {
       "query": "Legacy of Kain: Defiance",
       "rawgSlug": "legacy-of-kain-defiance",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 2362,
+      "syncedAt": "2026-11-22T15:12:13.489Z"
     },
     "tags": [
       "singleplayer",
@@ -4110,9 +4386,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 76,
+    "metacritic": 76,
+    "rating": 3.37,
+    "ratingsCount": 179,
+    "releasedAt": "2005-10-18",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/screenshots/a8a/a8adfa5d6c07c7ee2afbb9535dafec48.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/9547fdc30796b4fc1932f75d28e9a1a5.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/9f2/9f25ddfc153140ba2822dc3b448787ec.jpg",
@@ -4160,8 +4440,10 @@
     "artwork": {
       "query": "Sniper Elite",
       "rawgSlug": "sniper-elite",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 7651,
+      "syncedAt": "2026-11-22T15:12:14.242Z"
     },
     "tags": [
       "singleplayer",
@@ -4197,9 +4479,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 80,
+    "metacritic": 80,
+    "rating": 3.81,
+    "ratingsCount": 345,
+    "releasedAt": "2006-10-17",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/33d/33d72d63a624f17431d39922359c7bf8.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/0a2344aa9cd83016f0066d8f316709f7.jpg",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/a97/a97bcc6fab8284cc2c0345fcb16f0038.jpg",
@@ -4247,8 +4533,10 @@
     "artwork": {
       "query": "Tom Clancy's Splinter Cell Double Agent",
       "rawgSlug": "tcs-sc-double-agent",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 1437,
+      "syncedAt": "2026-11-22T15:12:14.538Z"
     },
     "tags": [
       "singleplayer",
@@ -4284,9 +4572,13 @@
     "sizeBytes": 2684354560,
     "sizeBytesEstimated": true,
     "ratingScore": 94,
+    "metacritic": 94,
+    "rating": 4.36,
+    "ratingsCount": 729,
+    "releasedAt": "2005-03-22",
     "fileFormat": "ISO disc image",
     "fileExtension": ".iso",
-    "coverPath": "https://media.rawg.io/media/games/1aa/1aa4ca34a8a6bb57a2e065c8332dc230.jpg",
+    "coverPath": "https://cdn2.steamgriddb.com/grid/7f5c8cbd9c1a9f0fbbb793d440dfd8e3.png",
     "screenshots": [
       {
         "src": "https://media.rawg.io/media/screenshots/d3e/d3ee4420b00d327de2c58ba67f5795a2.jpg",
@@ -4320,8 +4612,10 @@
     "artwork": {
       "query": "God of War I",
       "rawgSlug": "god-of-war",
-      "coverProvider": "rawg",
-      "screenshotProvider": "rawg"
+      "coverProvider": "steamgriddb",
+      "screenshotProvider": "rawg",
+      "steamGridDbId": 35531,
+      "syncedAt": "2026-11-22T15:12:15.052Z"
     },
     "tags": [
       "atmospheric",

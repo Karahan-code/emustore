@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AppUpdatePanel } from "@/components/settings/app-update-panel";
+import { ArchiveInstallSettings } from "@/components/settings/archive-install-settings";
 import { TargetPathSettings } from "@/components/settings/target-path-settings";
 import { UiSoundToggle } from "@/components/settings/ui-sound-toggle";
 import { APP_VERSION } from "@/lib/app-info";
@@ -24,6 +25,7 @@ export default async function SettingsPage({ params }: SettingsPageProps) {
       </section>
 
       <TargetPathSettings messages={messages} />
+      <ArchiveInstallSettings messages={messages} />
       <UiSoundToggle messages={messages} />
 
       <section className="report-callout">

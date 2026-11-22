@@ -19,6 +19,7 @@ type CollectionsContextValue = {
   isQueued: (reference: CatalogReference) => boolean;
   toggleFavorite: (reference: CatalogReference) => void;
   addToQueue: (entry: QueueEntry) => void;
+  updateQueueEntry: (reference: CatalogReference, patch: Partial<QueueEntry>) => void;
   removeFavorite: (reference: CatalogReference) => void;
   removeQueue: (reference: CatalogReference) => void;
 };
@@ -70,6 +71,20 @@ export function CollectionsProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
+  const updateQueueEntry = useCallback((reference: CatalogReference, patch: Partial<QueueEntry>) => {
+    setQueue((current) => {
+      let changed = false;
+      const next = current.map((entry) => {
+        if (entry.catalogId !== reference.catalogId || entry.slug !== reference.slug) return entry;
+        changed = true;
+        return { ...entry, ...patch };
+      });
+      if (!changed) return current;
+      try { window.localStorage.setItem(DOWNLOAD_QUEUE_STORAGE_KEY, JSON.stringify(next)); } catch { /* keep this browser session usable */ }
+      return next;
+    });
+  }, []);
+
   const removeFavorite = useCallback((reference: CatalogReference) => {
     setFavorites((current) => {
       const next = current.filter((entry) => !(entry.catalogId === reference.catalogId && entry.slug === reference.slug));
@@ -94,9 +109,10 @@ export function CollectionsProvider({ children }: { children: ReactNode }) {
     isQueued: (reference) => hasCatalogReference(queue, reference),
     toggleFavorite,
     addToQueue,
+    updateQueueEntry,
     removeFavorite,
     removeQueue,
-  }), [favorites, queue, ready, removeFavorite, removeQueue, toggleFavorite, addToQueue]);
+  }), [favorites, queue, ready, removeFavorite, removeQueue, toggleFavorite, addToQueue, updateQueueEntry]);
 
   return <CollectionsContext.Provider value={value}>{children}</CollectionsContext.Provider>;
 }

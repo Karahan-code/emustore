@@ -265,7 +265,23 @@ a { color: inherit; text-decoration: none; }
 .queue-row__metadata { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; color: #8f8f8f; font-family: var(--font-geist-mono), Consolas, monospace; font-size: 9px; }
 .queue-row__metadata code { overflow-wrap: anywhere; color: #bdbdbd; font-size: 8px; }
 .queue-row__captured-link { width: fit-content; color: #e5e5e5; font-size: 9px; text-decoration: underline; text-underline-offset: 3px; }
-.queue-row__actions { display: flex; align-items: center; gap: 8px; }
+.queue-row__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.queue-row__install { min-height: 32px; padding: 0 12px; font-size: 10px; }
+.queue-row__remove { display: inline-grid; width: 31px; height: 31px; flex: 0 0 auto; place-items: center; padding: 0; border: 1px solid #3b3b3b; border-radius: 50%; background: rgba(17, 17, 17, 0.94); color: #e5e5e5; font-size: 17px; line-height: 1; }
+.queue-row__remove:hover { border-color: #666666; background: #181818; color: #ffffff; }
+.queue-row__status { display: inline-flex; min-height: 19px; align-items: center; padding: 0 6px; border: 1px solid #343434; border-radius: 3px; background: #141414; color: #cccccc; font-size: 8px; font-weight: 700; }
+.queue-row__status--ready { border-color: #ffffff; background: #ffffff; color: #000000; }
+.queue-row__status--installed { border-color: #464646; background: #1b1b1b; color: #ffffff; }
+.queue-row__status--error { border-color: #5b3737; background: #1d1111; color: #ffbcbc; }
+.queue-row__progress-wrap { display: grid; gap: 4px; margin-top: 2px; }
+.queue-row__progress-label { display: flex; align-items: center; justify-content: space-between; gap: 8px; color: #cfcfcf; font-family: var(--font-geist-mono), Consolas, monospace; font-size: 9px; }
+.queue-row__progress { width: 100%; height: 5px; overflow: hidden; border-radius: 999px; background: #1e1e1e; }
+.queue-row__progress-bar { height: 100%; border-radius: 999px; background: #ffffff; transition: width 150ms ease; }
+.storage-bar-block { display: grid; gap: 6px; margin: 12px 0 10px; }
+.storage-bar { width: 100%; height: 7px; overflow: hidden; border: 1px solid #2b2b2b; border-radius: 999px; background: #080808; }
+.storage-bar__fill { height: 100%; background: #ffffff; transition: width 200ms ease; }
+.storage-bar__caption { margin: 0; color: #bdbdbd; font-family: var(--font-geist-mono), Consolas, monospace; font-size: 9px; }
+.activity-active-list { margin-top: 8px; }
 .queue-row__actions .collection-toggle--compact { position: static; }
 .queue-row__game-link { display: inline-flex; min-height: 32px; align-items: center; gap: 3px; color: #dedede; font-size: 10px; white-space: nowrap; }
 .queue-row__game-link:hover { color: #ffffff; }
@@ -398,7 +414,7 @@ a { color: inherit; text-decoration: none; }
 .settings-page__intro > p:last-child { max-width: 680px; margin: 0; color: #999999; font-size: 11px; line-height: 1.55; }
 .settings-panel { padding: clamp(16px, 2.5vw, 25px); border: 1px solid #262626; border-radius: 7px; background: #111111; }
 .settings-panel__heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 18px; }
-.ui-sound-panel { margin-top: 12px; }
+.ui-sound-panel, .archive-install-panel { margin-top: 12px; }
 .ui-sound-toggle { display: inline-flex; flex: 0 0 auto; align-items: center; gap: 10px; color: #dddddd; font-size: 10px; font-weight: 650; }
 .ui-sound-toggle input { width: 18px; height: 18px; accent-color: #ffffff; }
 .settings-panel__heading h2, .report-form-panel__heading h2, .report-callout h2 { margin: 4px 0 0; color: #ffffff; font-size: clamp(18px, 2vw, 25px); font-weight: 700; letter-spacing: -0.03em; }
@@ -410,6 +426,20 @@ a { color: inherit; text-decoration: none; }
 .target-path-card__topline p { margin: 3px 0 0; color: #777777; font-size: 9px; }
 .target-path-card__platform { color: #f1f1f1; font-size: 12px; font-weight: 700; }
 .target-path-field, .report-field { display: grid; min-width: 0; gap: 6px; }
+.target-path-input-row { display: flex; min-width: 0; align-items: center; gap: 6px; }
+.target-path-input-row input { flex: 1 1 auto; }
+.target-path-browse { min-height: 37px; flex: 0 0 auto; padding: 0 10px; font-size: 10px; }
+.folder-picker-overlay { position: fixed; z-index: 95; inset: 0; display: grid; place-items: center; overflow-y: auto; padding: 18px; background: rgba(0, 0, 0, 0.86); }
+.folder-picker-dialog { display: grid; gap: 12px; width: min(100%, 560px); max-height: calc(100dvh - 36px); padding: clamp(16px, 3vw, 24px); border: 1px solid #363636; border-radius: 8px; background: #111111; color: #ffffff; box-shadow: 0 24px 90px rgba(0, 0, 0, 0.8); }
+.folder-picker-path { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 10px; border: 1px solid #2b2b2b; border-radius: 5px; background: #080808; }
+.folder-picker-path code { overflow-wrap: anywhere; color: #ffffff; font-family: var(--font-geist-mono), Consolas, monospace; font-size: 10px; }
+.folder-picker-path span { color: #9c9c9c; font-family: var(--font-geist-mono), Consolas, monospace; font-size: 9px; }
+.folder-picker-list { display: grid; gap: 5px; max-height: 290px; overflow-y: auto; padding: 4px; border: 1px solid #262626; border-radius: 5px; background: #080808; }
+.folder-picker-item { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 10px; min-height: 36px; padding: 0 11px; border: 1px solid transparent; border-radius: 4px; background: #111111; color: #eeeeee; font-size: 11px; text-align: left; }
+.folder-picker-item:hover { border-color: #464646; background: #1b1b1b; color: #ffffff; }
+.folder-picker-item small { color: #8c8c8c; font-size: 10px; }
+.folder-picker-empty { margin: 14px; color: #8c8c8c; font-size: 10px; text-align: center; }
+.folder-picker-footer { display: flex; justify-content: flex-end; gap: 10px; padding-top: 8px; border-top: 1px solid #262626; }
 .target-path-field > span, .report-field > span { color: #aaaaaa; font-size: 9px; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; }
 .target-path-field input, .report-field input, .report-field select, .report-field textarea { display: block; width: 100%; min-width: 0; border: 1px solid #303030; border-radius: 4px; background: #111111; color: #ffffff; font-size: 11px; }
 .target-path-field input, .report-field input, .report-field select { min-height: 37px; padding: 0 10px; }

@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState, type FormEvent } from "react";
-import { PLATFORM_CATALOG_IDS } from "@/lib/catalog/platforms";
+import { useEffect, useRef, useState, type FormEvent, type KeyboardEvent } from "react";
+import { PLATFORM_CATALOG_IDS, type PlatformCatalogId } from "@/lib/catalog/platforms";
 import type { Messages } from "@/lib/i18n/dictionaries";
 import {
   DEFAULT_SUGGESTED_PATHS,
@@ -11,6 +11,10 @@ import {
   TARGET_PATH_STORAGE_KEY,
   type TargetPathPreferences,
 } from "@/lib/install/target-paths";
+import {
+  nativeBridge,
+  type NativeDirectoryListing,
+} from "@/lib/native/bridge";
 
 type TargetPathSettingsProps = {
   messages: Messages;
@@ -18,22 +22,93 @@ type TargetPathSettingsProps = {
 
 type Notice = "saved" | "reset" | "invalid" | "storage" | null;
 
+function formatBytesCompact(bytes: number): string {
+  if (!Number.isFinite(bytes) || bytes <= 0) return "0 B";
+  const units = ["B", "KB", "MB", "GB", "TB"];
+  let value = bytes;
+  let idx = 0;
+  while (value >= 1024 && idx < units.length - 1) {
+    value /= 1024;
+    idx += 1;
+  }
+  return `${value >= 100 || idx === 0 ? Math.round(value) : value.toFixed(1)} ${units[idx]}`;
+}
+
 export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
   const [paths, setPaths] = useState<TargetPathPreferences>({ ...DEFAULT_SUGGESTED_PATHS });
   const [ready, setReady] = useState(false);
   const [dirty, setDirty] = useState(false);
   const [notice, setNotice] = useState<Notice>(null);
+  const [daemonConnected, setDaemonConnected] = useState(false);
+  const [pickerPlatform, setPickerPlatform] = useState<PlatformCatalogId | null>(null);
+  const [pickerListing, setPickerListing] = useState<NativeDirectoryListing | null>(null);
+  const [pickerLoading, setPickerLoading] = useState(false);
+  const dialogRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    try {
-      const stored = window.localStorage.getItem(TARGET_PATH_STORAGE_KEY);
-      if (stored) setPaths(mergeTargetPathPreferences(JSON.parse(stored) as unknown));
-    } catch {
-      setNotice("storage");
-    } finally {
-      setReady(true);
-    }
+    let active = true;
+    queueMicrotask(() => {
+      if (!active) return;
+      try {
+        const stored = window.localStorage.getItem(TARGET_PATH_STORAGE_KEY);
+        if (stored) setPaths(mergeTargetPathPreferences(JSON.parse(stored) as unknown));
+      } catch {
+        setNotice("storage");
+      } finally {
+        setReady(true);
+      }
+    });
+
+    void nativeBridge.getHealth().then((health) => {
+      if (active) setDaemonConnected(Boolean(health));
+    });
+
+    return () => {
+      active = false;
+    };
   }, []);
+
+  useEffect(() => {
+    if (pickerPlatform) {
+      dialogRef.current?.querySelector<HTMLElement>("button:not(:disabled)")?.focus();
+    }
+  }, [pickerPlatform, pickerListing]);
+
+  async function loadPickerDirectory(dirPath = "") {
+    setPickerLoading(true);
+    const listing = await nativeBridge.listDirectory(dirPath);
+    setPickerLoading(false);
+    if (listing) {
+      setPickerListing(listing);
+    }
+  }
+
+  async function openFolderPicker(platform: PlatformCatalogId) {
+    setPickerPlatform(platform);
+    const currentValue = paths[platform]?.trim() ?? "";
+    const initialPath = /^(?:USB|SD):/i.test(currentValue) ? "" : currentValue;
+    await loadPickerDirectory(initialPath);
+    if (!pickerListing && initialPath) {
+      await loadPickerDirectory("");
+    }
+  }
+
+  function trapPickerFocus(event: KeyboardEvent<HTMLElement>) {
+    if (event.key !== "Tab") return;
+    const focusable = dialogRef.current?.querySelectorAll<HTMLElement>(
+      "button:not(:disabled), [href], [tabindex]:not([tabindex='-1'])",
+    );
+    if (!focusable?.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (event.shiftKey && document.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && document.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
 
   function persist(nextPaths: TargetPathPreferences, noticeType: Exclude<Notice, "invalid" | null>) {
     try {
@@ -89,6 +164,8 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
             ? messages.settings.unsaved
             : "";
 
+  const directories = (pickerListing?.entries ?? []).filter((entry) => entry.isDir);
+
   return (
     <section className="settings-panel" aria-labelledby="target-paths-heading">
       <div className="settings-panel__heading">
@@ -117,21 +194,33 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
                 </div>
                 <label className="target-path-field" htmlFor={inputId}>
                   <span>{messages.settings.pathLabel}</span>
-                  <input
-                    id={inputId}
-                    type="text"
-                    inputMode="text"
-                    autoComplete="off"
-                    spellCheck={false}
-                    maxLength={256}
-                    value={paths[platform]}
-                    disabled={!ready}
-                    onChange={(event) => {
-                      setPaths((current) => ({ ...current, [platform]: event.target.value }));
-                      setDirty(true);
-                      setNotice(null);
-                    }}
-                  />
+                  <div className="target-path-input-row">
+                    <input
+                      id={inputId}
+                      type="text"
+                      inputMode="text"
+                      autoComplete="off"
+                      spellCheck={false}
+                      maxLength={256}
+                      value={paths[platform]}
+                      disabled={!ready}
+                      onChange={(event) => {
+                        setPaths((current) => ({ ...current, [platform]: event.target.value }));
+                        setDirty(true);
+                        setNotice(null);
+                      }}
+                    />
+                    {daemonConnected ? (
+                      <button
+                        className="button button--quiet target-path-browse"
+                        type="button"
+                        disabled={!ready}
+                        onClick={() => void openFolderPicker(platform)}
+                      >
+                        {messages.settings.browseFolder}
+                      </button>
+                    ) : null}
+                  </div>
                 </label>
                 <p className="target-path-card__default">
                   <span>{messages.settings.defaultPath}</span>
@@ -163,6 +252,103 @@ export function TargetPathSettings({ messages }: TargetPathSettingsProps) {
         </div>
       </form>
       <p className="settings-panel__footnote">{messages.settings.storageNote}</p>
+
+      {pickerPlatform ? (
+        <div
+          className="folder-picker-overlay"
+          onMouseDown={(event) => {
+            if (event.target === event.currentTarget) setPickerPlatform(null);
+          }}
+        >
+          <section
+            ref={dialogRef}
+            className="folder-picker-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="folder-picker-title"
+            onKeyDown={trapPickerFocus}
+          >
+            <div className="section-heading section-heading--compact">
+              <div>
+                <p className="eyebrow">{messages.navigation[pickerPlatform]}</p>
+                <h2 id="folder-picker-title">{messages.settings.folderPickerTitle}</h2>
+              </div>
+              <button
+                className="icon-button"
+                type="button"
+                data-gamepad-close
+                aria-label={messages.settings.folderClose}
+                onClick={() => setPickerPlatform(null)}
+              >
+                ×
+              </button>
+            </div>
+
+            <div className="folder-picker-path">
+              <code>{pickerListing?.path || "/"}</code>
+              {pickerListing && pickerListing.totalBytes > 0 ? (
+                <span>
+                  {formatBytesCompact(pickerListing.freeBytes)} / {formatBytesCompact(pickerListing.totalBytes)}
+                </span>
+              ) : null}
+            </div>
+
+            <div className="folder-picker-list" aria-busy={pickerLoading}>
+              {pickerListing?.parentPath !== null && pickerListing?.parentPath !== undefined ? (
+                <button
+                  className="folder-picker-item"
+                  type="button"
+                  disabled={pickerLoading}
+                  onClick={() => void loadPickerDirectory(pickerListing.parentPath ?? "")}
+                >
+                  <span>..</span>
+                  <small>{messages.settings.folderParent}</small>
+                </button>
+              ) : null}
+              {directories.length === 0 && !pickerLoading ? (
+                <p className="folder-picker-empty">{messages.settings.folderEmpty}</p>
+              ) : null}
+              {directories.map((entry) => (
+                <button
+                  className="folder-picker-item"
+                  type="button"
+                  key={entry.path}
+                  disabled={pickerLoading}
+                  onClick={() => void loadPickerDirectory(entry.path)}
+                >
+                  <span>{entry.name}</span>
+                  <small aria-hidden="true">›</small>
+                </button>
+              ))}
+            </div>
+
+            <div className="folder-picker-footer">
+              <button
+                className="button button--quiet"
+                type="button"
+                onClick={() => setPickerPlatform(null)}
+              >
+                {messages.details.cancelCapture}
+              </button>
+              <button
+                className="button button--primary"
+                type="button"
+                disabled={!pickerListing?.path}
+                onClick={() => {
+                  if (pickerListing?.path) {
+                    setPaths((current) => ({ ...current, [pickerPlatform]: pickerListing.path }));
+                    setDirty(true);
+                    setNotice(null);
+                  }
+                  setPickerPlatform(null);
+                }}
+              >
+                {messages.settings.folderSelectCurrent}
+              </button>
+            </div>
+          </section>
+        </div>
+      ) : null}
     </section>
   );
 }

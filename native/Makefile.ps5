@@ -1,0 +1,29 @@
+# Starter cross-compile recipe for PS5 Payload / OpenOrbis SDK (WSL2 / Linux)
+# Requires PS5_PAYLOAD_SDK to be exported in the environment.
+
+ifndef PS5_PAYLOAD_SDK
+  $(error PS5_PAYLOAD_SDK is not set. Point it to your PS5 Payload SDK root.)
+endif
+
+CXX      := $(PS5_PAYLOAD_SDK)/bin/prospero-clang++
+STRIP    := $(PS5_PAYLOAD_SDK)/bin/prospero-strip
+
+CXXFLAGS := -std=c++17 -O2 -Wall -Wextra -D__PS5__ -D__PROSPERO__ -Isrc
+LDFLAGS  := -lz -lpthread
+
+SRCS     := src/main.cpp src/fs_service.cpp src/zip_extractor.cpp src/download_manager.cpp
+OBJS     := $(SRCS:.cpp=.o)
+TARGET   := emustore-daemon.elf
+
+.PHONY: all clean
+
+all: $(TARGET)
+
+$(TARGET): $(OBJS)
+	$(CXX) $(OBJS) -o $@ $(LDFLAGS)
+
+src/%.o: src/%.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJS) $(TARGET)

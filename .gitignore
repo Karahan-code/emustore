@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# native C/C++ build artifacts
+/native/build/
+/native/build-*
